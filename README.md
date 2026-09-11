@@ -687,30 +687,49 @@ Las User Stories fueron agrupadas en seis Epics que representan las principales 
 
 ## 3.3. Product Backlog
 
-Las historias fueron priorizadas considerando primero las funciones necesarias para que la plataforma pueda ser utilizada de manera básica y luego aquellas que complementan la experiencia del usuario.
+| Orden | ID | Título | Epic | Prioridad | Story Points | Estado |
+|---:|---|---|---|---|---:|---|
+| 1 | US-06 | Registrar una empresa | EP-02 | Alta | 5 | Pendiente |
+| 2 | US-07 | Iniciar sesión | EP-02 | Alta | 5 | Pendiente |
+| 3 | US-09 | Consultar perfil de la empresa | EP-02 | Media | 2 | Pendiente |
+| 4 | US-10 | Actualizar datos de la empresa | EP-02 | Media | 3 | Pendiente |
+| 5 | US-11 | Registrar una fuente de emisión | EP-03 | Alta | 5 | Pendiente |
+| 6 | US-12 | Clasificar una emisión por alcance | EP-03 | Alta | 3 | Pendiente |
+| 7 | US-13 | Consultar emisiones registradas | EP-03 | Alta | 3 | Pendiente |
+| 8 | US-14 | Editar una emisión | EP-03 | Alta | 3 | Pendiente |
+| 9 | US-15 | Eliminar una emisión | EP-03 | Media | 2 | Pendiente |
+| 10 | US-16 | Visualizar total de emisiones | EP-04 | Alta | 3 | Pendiente |
+| 11 | US-17 | Visualizar emisiones por alcance | EP-04 | Alta | 5 | Pendiente |
+| 12 | US-18 | Buscar una emisión | EP-04 | Media | 2 | Pendiente |
+| 13 | US-19 | Filtrar emisiones por alcance | EP-04 | Media | 3 | Pendiente |
+| 14 | US-20 | Comparar emisiones por periodo | EP-04 | Media | 5 | Pendiente |
+| 15 | US-21 | Registrar una meta ambiental | EP-05 | Alta | 3 | Pendiente |
+| 16 | US-22 | Consultar metas ambientales | EP-05 | Alta | 3 | Pendiente |
+| 17 | US-23 | Editar una meta ambiental | EP-05 | Media | 3 | Pendiente |
+| 18 | US-24 | Actualizar estado de una meta | EP-05 | Media | 2 | Pendiente |
+| 19 | US-25 | Eliminar una meta | EP-05 | Baja | 2 | Pendiente |
+| 20 | US-26 | Consultar resumen ambiental | EP-06 | Alta | 3 | Pendiente |
+| 21 | US-27 | Generar reporte ambiental | EP-06 | Alta | 5 | Pendiente |
+| 22 | US-28 | Descargar reporte ambiental | EP-06 | Media | 3 | Pendiente |
+| 23 | US-29 | Generar reporte por periodo | EP-06 | Media | 5 | Pendiente |
+| 24 | US-30 | Consultar reportes anteriores | EP-06 | Baja | 3 | Pendiente |
+| 25 | US-01 | Conocer EcoTrack | EP-01 | Alta | 2 | Pendiente |
+| 26 | US-02 | Conocer los beneficios de EcoTrack | EP-01 | Media | 2 | Pendiente |
+| 27 | US-03 | Conocer las funcionalidades principales | EP-01 | Media | 2 | Pendiente |
+| 28 | US-04 | Conocer los planes disponibles | EP-01 | Baja | 2 | Pendiente |
+| 29 | US-05 | Contactar al equipo de EcoTrack | EP-01 | Media | 3 | Pendiente |
+| 30 | US-08 | Recuperar contraseña | EP-02 | Media | 3 | Pendiente |
 
-| ID | User Story | Prioridad | Story Points | Estado |
-|---|---|---:|---:|---|
-| US01 | Como usuario de una empresa, quiero registrar los datos principales de mi empresa para empezar a usar EcoTrack con información de mi organización. | Alta | 3 | Pendiente |
-| US02 | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña para entrar a mi cuenta y usar las funciones de la plataforma. | Alta | 5 | Pendiente |
-| US03 | Como responsable de sostenibilidad, quiero ver un resumen general en el dashboard para conocer rápidamente la situación ambiental de la empresa. | Alta | 5 | Pendiente |
-| US04 | Como analista ambiental, quiero registrar una fuente de emisión para tener un control de las actividades que generan emisiones. | Alta | 5 | Pendiente |
-| US05 | Como analista ambiental, quiero indicar si una emisión pertenece al alcance 1, 2 o 3 para mantener la información mejor organizada. | Alta | 3 | Pendiente |
-| US06 | Como responsable de sostenibilidad, quiero ver todas las emisiones registradas para revisar la información guardada en la plataforma. | Alta | 3 | Pendiente |
-| US07 | Como analista ambiental, quiero editar una emisión para corregir datos que estén equivocados o desactualizados. | Alta | 3 | Pendiente |
-| US08 | Como analista ambiental, quiero eliminar una emisión para quitar registros que ya no sean necesarios. | Media | 2 | Pendiente |
-| US09 | Como usuario de EcoTrack, quiero buscar una emisión por su nombre para encontrar información de manera más rápida. | Media | 2 | Pendiente |
-| US10 | Como responsable de sostenibilidad, quiero filtrar las emisiones por alcance para revisar cada tipo de emisión por separado. | Media | 3 | Pendiente |
-| US11 | Como responsable de sostenibilidad, quiero ver el total de emisiones registradas para tener una idea general de la huella de carbono de la empresa. | Alta | 3 | Pendiente |
-| US12 | Como gerente de operaciones, quiero ver las emisiones separadas por alcance para identificar qué tipo de emisión tiene mayor presencia. | Media | 5 | Pendiente |
-| US13 | Como responsable de sostenibilidad, quiero revisar las emisiones por fecha para comparar cómo han cambiado con el paso del tiempo. | Media | 3 | Pendiente |
-| US14 | Como responsable de sostenibilidad, quiero registrar una meta de reducción para definir un objetivo ambiental para la empresa. | Alta | 3 | Pendiente |
-| US15 | Como gerente de operaciones, quiero ver las metas ambientales registradas para conocer los objetivos que la empresa tiene pendientes. | Media | 3 | Pendiente |
-| US16 | Como responsable de sostenibilidad, quiero cambiar el estado de una meta para saber si sigue activa o ya fue completada. | Media | 2 | Pendiente |
-| US17 | Como responsable de sostenibilidad, quiero ver un resumen de la información ambiental para revisar los datos más importantes en un solo lugar. | Media | 3 | Pendiente |
-| US18 | Como responsable de sostenibilidad, quiero descargar un reporte ambiental para guardar o compartir la información de la empresa. | Baja | 5 | Pendiente |
-| US19 | Como usuario de EcoTrack, quiero ver el perfil de la empresa para revisar los datos registrados de mi organización. | Baja | 2 | Pendiente |
-| US20 | Como usuario autorizado, quiero editar los datos de la empresa para mantener actualizada la información del perfil. | Baja | 3 | Pendiente |
+### Epics relacionados
+
+| Epic ID | Epic |
+|---|---|
+| EP-01 | Landing Page e información de EcoTrack |
+| EP-02 | Gestión de cuenta y empresa |
+| EP-03 | Gestión de emisiones |
+| EP-04 | Dashboard y análisis de emisiones |
+| EP-05 | Gestión de metas ambientales |
+| EP-06 | Reportes ambientales |
 
 ---
 
