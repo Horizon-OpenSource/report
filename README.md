@@ -14,9 +14,9 @@
 
 **Código del curso:** 1ASI0729
 
-**NRC:** [NRC]
+**NRC:** 7753
 
-**Docente del curso:** [Nombre del docente]
+**Docente del curso:** Bautista Ubillús, Efraín Ricardo
 
 ---
 
@@ -28,11 +28,11 @@
 
 ### Integrantes
 
-- [Apellidos y nombres] - [Código]
-- [Apellidos y nombres] - [Código]
-- [Apellidos y nombres] - [Código]
-- [Apellidos y nombres] - [Código]
-- [Apellidos y nombres] - [Código]
+- Lacuta Lima, Alex Rodrigo - U20241G396
+- Espinoza Flores, Aaron André - U202222859
+- Payesa Torres, Harrison Hubert - U202221024
+- Tello Murga, Javier Oswaldo - U202218387
+- Torres Diaz, Rolando Andre - U202323369
 
 ### Fecha
 
@@ -46,33 +46,65 @@ Septiembre, 2026
 
 | Versión | Fecha | Autor | Descripción de modificación |
 |---|---|---|---|
-| | | | |
+| 0.1 | 10/09/2026 | Tello Murga, Javier Oswaldo | Se creó la estructura base del informe. |
 
 ---
 
 # Project Report Collaboration Insights
 
-<!--
-Colocar el URL del repositorio del Project Report.
-Agregar las evidencias de colaboración y commits correspondientes
-a cada entrega.
--->
+## Repositories
+
+| URL de la organización del proyecto | URL del repositorio del report |
+|---|---|
+| [https://github.com/Horizon-OpenSource](https://github.com/Horizon-OpenSource) | [https://github.com/Horizon-OpenSource/report](https://github.com/Horizon-OpenSource/report) |
+
+| URL del repositorio del Landing Page | URL del repositorio del Frontend |
+|---|---|
+| Pendiente de creación | Pendiente de creación |
+
+| URL del repositorio del Backend |
+|---|
+| Pendiente de creación |
+
+---
 
 ## AV1
 
-<!-- Completar para AV1 -->
+Durante el desarrollo del AV1, los integrantes del equipo realizaron sus aportes al Project Report mediante GitHub, utilizando ramas `feature/*`, GitFlow y Conventional Commits para mantener un flujo de trabajo organizado y colaborativo.
+
+### Collaboration Insights
+
+![Project Report Collaboration Insights - AV1](img/av1-report-collaboration-insights.png)
+
+---
 
 ## TB1
 
-<!-- Completar para TB1 -->
+Durante el desarrollo del TB1, el equipo continuará trabajando colaborativamente sobre el Project Report, incorporando las mejoras y nuevos artefactos correspondientes a la entrega.
+
+### Collaboration Insights
+
+![Project Report Collaboration Insights - TB1](img/tb1-report-collaboration-insights.png)
+
+---
 
 ## AV2
 
-<!-- Completar para AV2 -->
+Durante el desarrollo del AV2, los integrantes continuarán registrando sus contribuciones al informe y los avances correspondientes al proyecto mediante el repositorio de GitHub.
+
+### Collaboration Insights
+
+![Project Report Collaboration Insights - AV2](img/av2-report-collaboration-insights.png)
+
+---
 
 ## TB2
 
-<!-- Completar para TB2 -->
+Durante el desarrollo del TB2, se registrará la participación final de los integrantes en la elaboración y actualización del Project Report, evidenciando la colaboración realizada durante la etapa final del proyecto.
+
+### Collaboration Insights
+
+![Project Report Collaboration Insights - TB2](img/tb2-report-collaboration-insights.png)
 
 ---
 
@@ -160,27 +192,27 @@ a cada entrega.
             - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
             - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
         - [5.2.2. Sprint 2](#522-sprint-2)
-            - [5.2.2.1. Sprint Planning 1](#5221-sprint-planning-2)
+            - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
             - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
-            - [5.2.2.3. Sprint Backlog 1](#5223-sprint-backlog-2)
+            - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
             - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
             - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
             - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
             - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
             - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
         - [5.2.3. Sprint 3](#523-sprint-3)
-            - [5.2.3.1. Sprint Planning 1](#5231-sprint-planning-3)
+            - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
             - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
-            - [5.2.3.3. Sprint Backlog 1](#5233-sprint-backlog-3)
+            - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
             - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
             - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
             - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
             - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
             - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
         - [5.2.4. Sprint 4](#524-sprint-4)
-            - [5.2.4.1. Sprint Planning 1](#5241-sprint-planning-4)
+            - [5.2.4.1. Sprint Planning 4](#5241-sprint-planning-4)
             - [5.2.4.2. Aspect Leaders and Collaborators](#5242-aspect-leaders-and-collaborators)
-            - [5.2.4.3. Sprint Backlog 1](#5243-sprint-backlog-4)
+            - [5.2.4.3. Sprint Backlog 4](#5243-sprint-backlog-4)
             - [5.2.4.4. Development Evidence for Sprint Review](#5244-development-evidence-for-sprint-review)
             - [5.2.4.5. Execution Evidence for Sprint Review](#5245-execution-evidence-for-sprint-review)
             - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5246-services-documentation-evidence-for-sprint-review)
