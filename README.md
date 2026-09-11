@@ -583,7 +583,33 @@ Ambos segmentos comparten la necesidad de contar con información ambiental orga
 
 ### 2.2.1. Diseño de entrevistas
 
-<!-- Completar -->
+Las preguntas buscan identificar cómo gestionan actualmente la información ambiental, qué dificultades encuentran y qué funcionalidades podrían resultarles más útiles dentro de una plataforma como EcoTrack.
+
+#### Segmento 1: Empresas exportadoras
+
+1. ¿Cómo registra actualmente su empresa la información relacionada con emisiones, consumo de energía, combustibles o transporte?
+2. ¿Qué áreas de la empresa participan en la recopilación de esta información?
+3. ¿Qué dificultades encuentran al momento de reunir y organizar los datos ambientales?
+4. ¿Con qué frecuencia necesitan elaborar reportes ambientales o de sostenibilidad?
+5. ¿Qué tan complicado resulta identificar cuáles son las actividades que generan mayores emisiones?
+6. ¿Actualmente utilizan alguna herramienta digital, software o principalmente hojas de cálculo para gestionar esta información?
+7. ¿Qué información consideran más importante visualizar para conocer el desempeño ambiental de la empresa?
+8. ¿Qué tan útil sería para ustedes contar con una plataforma que centralice la información y calcule automáticamente las emisiones?
+9. ¿Consideran importante poder establecer metas de reducción de emisiones y hacer seguimiento de su avance?
+10. ¿Qué funcionalidad considerarían indispensable en una plataforma de gestión de huella de carbono?
+
+#### Segmento 2: Corporaciones y medianas empresas industriales
+
+1. ¿Cómo se recopila actualmente la información ambiental proveniente de las diferentes áreas de la empresa?
+2. ¿Qué tipo de datos relacionados con emisiones o consumo de recursos registran con mayor frecuencia?
+3. ¿Qué problemas suelen presentarse cuando la información proviene de distintas áreas o responsables?
+4. ¿Cómo realizan actualmente el seguimiento de las emisiones o del desempeño ambiental de la empresa?
+5. ¿Qué tan sencillo o complicado es comparar los resultados ambientales entre diferentes periodos?
+6. ¿Utilizan actualmente dashboards, reportes o indicadores para analizar la información ambiental?
+7. ¿Qué indicadores consideran más importantes para tomar decisiones relacionadas con sostenibilidad?
+8. ¿Qué tan útil sería contar con una plataforma donde puedan consultar emisiones, metas y reportes en un mismo lugar?
+9. ¿La empresa establece actualmente objetivos o metas de reducción de emisiones? ¿Cómo realizan su seguimiento?
+10. ¿Qué funcionalidad les ayudaría más a mejorar la gestión ambiental dentro de la organización?
 
 ### 2.2.2. Registro de entrevistas
 
