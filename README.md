@@ -381,8 +381,31 @@ establecido en el Anexo A del enunciado.
 
 ### 4.1.2. Web Style Guidelines
 
-<!-- Completar -->
+Los Web Style Guidelines de EcoTrack definen la aplicación práctica de la identidad visual en componentes de interfaz web responsive. Estos lineamientos consideran botones, cards, campos de formulario y criterios de adaptación a diferentes resoluciones de pantalla, manteniendo coherencia con los principios de Material Design y con la identidad visual establecida previamente.
 
+#### Button Components
+
+Los botones de EcoTrack siguen una jerarquía visual que permite diferenciar acciones principales, secundarias y complementarias. Los estados de interacción mantienen una respuesta visual consistente para facilitar la identificación de acciones disponibles dentro de la interfaz.
+
+Los botones principales utilizan Primary Green para resaltar acciones relevantes, mientras que los secundarios utilizan variantes outlined, text o teal según el nivel de jerarquía requerido. Asimismo, se consideran estados Hover, Active y Disabled para mantener claridad durante la interacción del usuario.
+
+![EcoTrack Button Components](./assets/chapter-04/style-guidelines/web/button-components.png)
+
+#### Cards & Form Fields
+
+Las Cards y los Form Fields de EcoTrack mantienen una estructura visual simple, legible y consistente con Material Design. Los componentes utilizan bordes suaves, separación clara entre contenidos y estados visuales que permiten identificar acciones, datos y posibles errores.
+
+Las cards se utilizan para mostrar indicadores, información resumida y funcionalidades relacionadas con la gestión de emisiones, mientras que los formularios facilitan la interacción de usuarios interesados en registrar información o solicitar contacto con la plataforma.
+
+![EcoTrack Cards and Form Fields](./assets/chapter-04/style-guidelines/web/cards-form-fields.png)
+
+#### Responsive Behavior
+
+Los componentes web de EcoTrack se adaptan a diferentes resoluciones de pantalla para mantener legibilidad, jerarquía visual y facilidad de interacción. En Desktop, Tablet y Mobile se conserva consistencia visual en botones, cards y formularios, reorganizando el contenido según el espacio disponible.
+
+En Desktop se aprovecha una distribución más amplia en columnas; en Tablet se reduce el número de columnas manteniendo separación y jerarquía; y en Mobile los componentes se organizan principalmente en una sola columna, priorizando la interacción táctil y la claridad del contenido.
+
+![EcoTrack Responsive Behavior](./assets/chapter-04/style-guidelines/web/responsive-behavior.png)
 ---
 
 ## 4.2. Information Architecture
