@@ -331,176 +331,146 @@ De esta manera, EcoTrack busca centralizar diferentes procesos ambientales dentr
 
 ### 1.2.1. Antecedentes y problemática
 
-En los últimos años, las organizaciones han comenzado a prestar mayor atención al impacto ambiental generado por sus actividades. Sin embargo, muchas empresas todavía presentan dificultades para registrar, organizar y analizar la información relacionada con sus emisiones de gases de efecto invernadero.
+Actualmente, las empresas tienen una mayor necesidad de conocer y controlar el impacto ambiental generado por sus operaciones. Actividades como el consumo de electricidad, uso de combustibles, transporte, operación de maquinaria y diferentes procesos productivos generan emisiones de gases de efecto invernadero que deben ser registradas y analizadas. El GHG Protocol establece lineamientos para que las organizaciones elaboren inventarios corporativos de emisiones y clasifica las emisiones en Scope 1, Scope 2 y Scope 3. Además, la norma ISO 14064-1 establece principios y requisitos para la cuantificación y reporte de emisiones y remociones de gases de efecto invernadero a nivel organizacional. :contentReference[oaicite:0]{index=0}
 
-Para comprender mejor esta problemática, se utiliza el enfoque de las **5W y 2H**.
+Para comprender mejor la problemática relacionada con EcoTrack, se aplicó la técnica de las **5W y 2H: Who, What, Where, When, Why, How y How Much**.
 
-#### What? — ¿Qué ocurre?
+#### Who? — ¿Quiénes presentan el problema?
 
-Muchas empresas gestionan la información relacionada con emisiones, consumo energético, combustibles, transporte y otros recursos mediante hojas de cálculo, documentos separados o registros manuales.
+La problemática afecta principalmente a empresas exportadoras, corporaciones y medianas empresas industriales que necesitan gestionar información relacionada con sus emisiones y desempeño ambiental.
 
-Esto dificulta la centralización de la información y puede generar errores durante el registro, procesamiento y análisis de los datos ambientales.
+Dentro de estas organizaciones, los principales involucrados son responsables de sostenibilidad, analistas ambientales, gerentes de operaciones, supervisores de producción y personal administrativo encargado de recopilar o analizar información ambiental.
 
-Además, la elaboración de reportes puede convertirse en un proceso repetitivo, debido a que la información debe recopilarse desde diferentes áreas antes de poder ser analizada.
+#### What? — ¿Cuál es el problema?
 
-#### Who? — ¿Quiénes se ven afectados?
+Muchas organizaciones todavía realizan procesos de contabilidad de carbono mediante recopilación manual de información y hojas de cálculo. Esto puede generar dificultades para consolidar datos provenientes de distintas áreas, además de incrementar el riesgo de información incompleta o incorrecta. :contentReference[oaicite:1]{index=1}
 
-Los principales afectados son las empresas que necesitan medir y controlar su impacto ambiental, especialmente aquellas que pertenecen a sectores como:
-
-- Agricultura.
-- Industria textil.
-- Minería.
-- Manufactura.
-- Empresas exportadoras.
-- Empresas industriales.
-
-Dentro de estas organizaciones, los usuarios más afectados son los responsables de sostenibilidad, analistas ambientales, gerentes de operaciones, supervisores, personal administrativo y trabajadores encargados de elaborar reportes ambientales.
-
-#### When? — ¿Cuándo ocurre?
-
-El problema se presenta principalmente cuando las empresas necesitan:
-
-- Registrar información relacionada con sus actividades y emisiones.
-- Elaborar reportes ambientales.
-- Comparar resultados entre diferentes periodos.
-- Evaluar el cumplimiento de objetivos ambientales.
-- Preparar información para auditorías o certificaciones.
-- Identificar las actividades que producen mayores emisiones.
-
-También puede presentarse de forma constante durante las actividades diarias de registro y seguimiento ambiental.
+Esto dificulta mantener todos los datos organizados en un mismo lugar y puede generar problemas como duplicidad de información, errores durante el registro, dificultad para realizar comparaciones y mayor tiempo para elaborar reportes.
 
 #### Where? — ¿Dónde ocurre?
 
-La problemática ocurre dentro de las organizaciones que manejan información ambiental proveniente de diferentes áreas, sedes o procesos.
+La problemática se presenta dentro de organizaciones donde la información ambiental proviene de diferentes áreas, como producción, logística, operaciones, administración y sostenibilidad.
 
-Por ejemplo, los datos pueden encontrarse distribuidos entre las áreas de operaciones, producción, logística, administración y sostenibilidad.
+Los datos relacionados con carbono, energía, residuos y otros indicadores pueden encontrarse distribuidos entre distintas fuentes o áreas de la organización, dificultando su consolidación para análisis y toma de decisiones. :contentReference[oaicite:2]{index=2}
 
-Esto puede dificultar que los responsables ambientales tengan acceso a una única fuente de información actualizada.
+#### When? — ¿Cuándo ocurre?
+
+El problema ocurre principalmente cuando las empresas necesitan:
+
+- Registrar nuevas fuentes de emisión.
+- Recopilar información proveniente de distintas áreas.
+- Calcular su huella de carbono.
+- Comparar resultados de diferentes periodos.
+- Elaborar reportes ambientales.
+- Evaluar el cumplimiento de metas de reducción.
+- Preparar información para auditorías o certificaciones.
+
+El GHG Protocol destaca la necesidad de que las organizaciones midan y reporten sus emisiones, mientras que ISO 14064-1 establece requisitos relacionados con el diseño, desarrollo, gestión y reporte de inventarios organizacionales de gases de efecto invernadero. :contentReference[oaicite:3]{index=3}
 
 #### Why? — ¿Por qué ocurre?
 
-Esta situación ocurre principalmente porque muchas empresas todavía dependen de herramientas separadas o procesos manuales para gestionar su información ambiental.
+La problemática se origina principalmente por la dependencia de procesos manuales y herramientas que funcionan de manera separada.
 
 Entre las principales causas se encuentran:
 
-- Uso de hojas de cálculo independientes.
-- Información distribuida en diferentes áreas.
+- Uso frecuente de hojas de cálculo.
+- Información distribuida entre distintas áreas.
 - Falta de automatización en los cálculos.
 - Ausencia de una plataforma centralizada.
 - Registro manual de información.
-- Dificultad para realizar seguimiento histórico.
-- Falta de indicadores ambientales actualizados.
+- Dificultad para mantener un historial organizado.
+- Falta de indicadores actualizados.
 
-Como consecuencia, aumenta la posibilidad de errores y se requiere más tiempo para organizar y analizar la información.
+La recopilación manual de datos y el uso de hojas de cálculo pueden incrementar el riesgo de errores, pérdida de productividad y dificultades para consolidar información de sostenibilidad. :contentReference[oaicite:4]{index=4}
 
 #### How? — ¿Cómo se presenta el problema?
 
-El problema se presenta cuando los responsables ambientales deben recopilar información desde diferentes fuentes, organizarla manualmente y posteriormente realizar cálculos relacionados con las emisiones.
+Los responsables ambientales deben recopilar información desde distintas fuentes, organizarla manualmente y realizar posteriormente los cálculos necesarios.
 
-Este proceso puede dificultar la identificación rápida de las principales fuentes de emisión y el seguimiento de los objetivos ambientales de la organización.
+Este proceso puede dificultar la identificación de las principales fuentes de emisión y retrasar la generación de información necesaria para la toma de decisiones.
 
-Además, cuando la información cambia o se actualiza, puede ser necesario modificar nuevamente diferentes documentos o registros.
+Cuando los datos cambian o se actualizan, también puede ser necesario modificar diferentes archivos o documentos de forma manual. La gestión manual de estos datos puede requerir una cantidad considerable de tiempo y trabajo, especialmente cuando se deben administrar factores de emisión y múltiples fuentes de información. :contentReference[oaicite:5]{index=5}
 
-#### How much? — ¿Cuánto impacto genera?
+#### How Much? — ¿Qué impacto genera?
 
-El impacto puede reflejarse principalmente en el tiempo y esfuerzo necesario para gestionar la información ambiental.
+El impacto se refleja principalmente en el tiempo y esfuerzo necesarios para organizar, calcular y analizar la información ambiental.
 
-El uso de procesos manuales puede ocasionar:
+Entre sus principales consecuencias se encuentran:
 
 - Mayor tiempo para elaborar reportes.
-- Duplicación de información.
 - Mayor posibilidad de errores humanos.
-- Dificultad para mantener información actualizada.
-- Mayor esfuerzo para comparar periodos.
-- Menor rapidez en la toma de decisiones.
+- Duplicación de información.
+- Dificultad para mantener los datos actualizados.
+- Mayor esfuerzo para comparar resultados.
+- Menor rapidez para tomar decisiones.
 
-En esta etapa del proyecto todavía no se cuenta con una medición cuantitativa exacta del tiempo o costo generado por esta problemática. Estos datos serán obtenidos posteriormente mediante las entrevistas realizadas a los segmentos objetivo.
+En esta primera etapa todavía no se cuenta con valores cuantitativos definitivos sobre el impacto económico o el tiempo perdido. Estos datos serán obtenidos y contrastados mediante las entrevistas realizadas a representantes de los segmentos objetivo.
 
 #### Problemática identificada
 
-A partir del análisis realizado, se identifica que las empresas necesitan una forma más organizada de gestionar la información relacionada con sus emisiones y desempeño ambiental.
+A partir del análisis realizado, se identifica la necesidad de contar con una solución que permita centralizar la información ambiental de las empresas, facilitar el cálculo de emisiones y brindar una forma más sencilla de visualizar y analizar sus resultados.
 
-Por ello, EcoTrack propone una plataforma web que permita centralizar el registro de información, automatizar cálculos relacionados con la huella de carbono, visualizar indicadores mediante dashboards y realizar seguimiento de objetivos ambientales.
-
-De esta manera, se busca reducir la dependencia de procesos manuales y facilitar el acceso a información que permita tomar mejores decisiones relacionadas con sostenibilidad.
+EcoTrack busca responder a esta problemática mediante una plataforma web orientada a la gestión de la huella de carbono empresarial, permitiendo registrar emisiones, consultar indicadores, establecer metas ambientales y generar reportes.
 
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-Actualmente, muchas empresas presentan dificultades para gestionar de manera centralizada la información relacionada con sus emisiones de gases de efecto invernadero. En varios casos, los datos se encuentran distribuidos en hojas de cálculo, documentos independientes o diferentes sistemas, lo que dificulta su análisis y seguimiento.
 
-Los responsables de sostenibilidad, analistas ambientales y personal encargado de operaciones necesitan una herramienta que les permita registrar, organizar y consultar esta información de forma más sencilla. La falta de centralización puede generar errores, duplicidad de datos, mayor tiempo en la elaboración de reportes y dificultades para identificar las principales fuentes de emisión.
+El estado actual de la gestión de emisiones de gases de efecto invernadero en empresas exportadoras, corporaciones y medianas empresas industriales se encuentra principalmente enfocado en el uso de hojas de cálculo, documentos independientes y procesos manuales para registrar, organizar y analizar información ambiental.
 
-Por ello, se plantea el siguiente problema:
+Las soluciones y procesos utilizados actualmente no siempre permiten centralizar de manera sencilla la información proveniente de distintas áreas, automatizar los cálculos de emisiones, realizar seguimiento de objetivos ambientales y generar reportes desde un mismo entorno.
 
-> Las empresas necesitan una plataforma digital que les permita centralizar la información relacionada con sus emisiones de carbono, automatizar sus cálculos y visualizar indicadores ambientales, con el fin de facilitar el análisis de su impacto ambiental y apoyar la toma de decisiones relacionadas con sostenibilidad.
+EcoTrack busca cubrir esta necesidad mediante una plataforma web B2B que permita centralizar el registro de emisiones, realizar cálculos de huella de carbono, visualizar indicadores ambientales, establecer metas de reducción y generar reportes.
 
-También se identifica una segunda necesidad relacionada con el seguimiento de objetivos ambientales:
+Nuestro enfoque inicial estará dirigido a empresas exportadoras y a corporaciones y medianas empresas industriales que necesiten mejorar la forma en que gestionan su información ambiental.
 
-> Las organizaciones necesitan realizar un seguimiento de sus metas y planes de reducción de emisiones para conocer si las acciones implementadas están contribuyendo realmente a disminuir su huella de carbono.
+Sabremos que la propuesta está generando resultados cuando los usuarios pertenecientes a estos segmentos puedan registrar y consultar su información ambiental de manera centralizada, identificar sus principales fuentes de emisión y considerar útil el uso de EcoTrack para reducir el esfuerzo requerido en sus procesos actuales.
 
 #### 1.2.2.2. Lean UX Assumptions
 
 ##### Business Assumptions
 
-- Creemos que las empresas necesitan mejorar la forma en que registran y gestionan la información relacionada con sus emisiones de gases de efecto invernadero.
-- Creemos que las organizaciones estarían dispuestas a utilizar una plataforma digital para centralizar su información ambiental.
-- Creemos que automatizar el cálculo de la huella de carbono permitirá reducir errores y disminuir el tiempo empleado en procesos manuales.
-- Creemos que los dashboards facilitarán la interpretación de los indicadores ambientales.
-- Creemos que la generación automática de reportes será una funcionalidad valorada por las empresas que deben presentar información ambiental.
-- Creemos que las organizaciones necesitan realizar seguimiento de sus metas y planes de reducción de emisiones.
-- Creemos que un modelo de suscripción SaaS permitirá ofrecer diferentes niveles de servicio según el tamaño y las necesidades de cada empresa.
+- Creemos que las empresas tienen interés en mejorar la forma en que gestionan y analizan sus emisiones de gases de efecto invernadero.
+- Creemos que existe una oportunidad para ofrecer una plataforma web especializada en centralizar información ambiental empresarial.
+- Creemos que un modelo Software as a Service (SaaS) puede permitir que EcoTrack sea utilizado por organizaciones con diferentes necesidades.
+- Creemos que las empresas podrían valorar una solución que reduzca la dependencia de hojas de cálculo y procesos manuales.
+- Creemos que ofrecer diferentes planes de suscripción puede facilitar la adaptación de EcoTrack a empresas de distintos tamaños.
+
+##### Business Outcome Assumptions
+
+- Creemos que EcoTrack puede incrementar la cantidad de empresas que utilizan herramientas digitales para gestionar su información ambiental.
+- Creemos que centralizar la información puede reducir el tiempo empleado por las empresas en organizar datos ambientales.
+- Creemos que la generación de reportes puede incrementar el uso recurrente de la plataforma.
+- Creemos que los dashboards y herramientas de seguimiento pueden favorecer la permanencia de los usuarios dentro del producto.
+- Creemos que una experiencia sencilla puede contribuir a aumentar la adopción de EcoTrack entre los segmentos objetivo.
 
 ##### User Assumptions
 
-- Los principales usuarios de EcoTrack serán responsables de sostenibilidad, analistas ambientales, gerentes de operaciones y personal administrativo.
-- Los usuarios necesitan registrar información de diferentes fuentes de emisión dentro de una misma plataforma.
-- Los usuarios necesitan consultar indicadores ambientales de manera clara y sencilla.
-- Los usuarios necesitan comparar sus niveles de emisiones entre diferentes periodos.
-- Los usuarios necesitan identificar cuáles son las actividades o procesos que generan mayores emisiones.
-- Los usuarios necesitan elaborar reportes ambientales para auditorías, certificaciones o procesos internos.
-- Los usuarios necesitan establecer objetivos de reducción y revisar su nivel de cumplimiento.
-- Los usuarios valorarán una interfaz sencilla, debido a que no todos cuentan con conocimientos técnicos especializados.
-- Los usuarios preferirán reducir el uso de hojas de cálculo y documentos separados para gestionar la información ambiental.
+- Creemos que los principales usuarios serán responsables de sostenibilidad, analistas ambientales, gerentes de operaciones y personal administrativo.
+- Creemos que los usuarios actualmente utilizan diferentes herramientas para registrar y consultar información ambiental.
+- Creemos que los usuarios necesitan revisar periódicamente sus emisiones y resultados.
+- Creemos que parte de los usuarios no cuenta con conocimientos técnicos avanzados sobre sistemas de información.
+- Creemos que los usuarios necesitan información organizada para poder comunicar los resultados ambientales dentro de sus empresas.
 
-#### 1.2.2.3. Lean UX Hypothesis Statements
+##### User Outcome and Benefit Assumptions
 
-##### Hypothesis 1
+- Creemos que los usuarios desean reducir el tiempo necesario para organizar información ambiental.
+- Creemos que los usuarios necesitan identificar rápidamente las principales fuentes de emisión.
+- Creemos que los usuarios buscan disminuir errores relacionados con cálculos manuales.
+- Creemos que los usuarios necesitan comparar resultados entre diferentes periodos.
+- Creemos que los usuarios desean realizar seguimiento de sus objetivos de reducción de emisiones.
+- Creemos que los usuarios necesitan generar reportes de manera más sencilla para procesos internos, auditorías o certificaciones.
 
-Creemos que si EcoTrack permite centralizar en una sola plataforma la información relacionada con las emisiones de gases de efecto invernadero, entonces los responsables de sostenibilidad podrán reducir el tiempo utilizado para organizar y consultar datos ambientales.
+##### Feature Assumptions
 
-Sabremos que esta hipótesis es válida cuando los usuarios indiquen que actualmente utilizan varias herramientas, hojas de cálculo o documentos separados y consideren útil contar con una plataforma centralizada.
+- Creemos que una funcionalidad para registrar y clasificar fuentes de emisión permitirá centralizar la información ambiental de las empresas.
+- Creemos que un cálculo automático de la huella de carbono ayudará a reducir el esfuerzo y los posibles errores de los cálculos manuales.
+- Creemos que un dashboard con indicadores ambientales permitirá comprender mejor la situación de las emisiones de la organización.
+- Creemos que una funcionalidad para registrar y hacer seguimiento de metas ambientales permitirá controlar mejor los objetivos de reducción.
+- Creemos que la generación de reportes ambientales permitirá recopilar y compartir información de manera más sencilla.
 
-##### Hypothesis 2
 
-Creemos que si EcoTrack automatiza el cálculo de la huella de carbono, entonces las empresas podrán disminuir los errores asociados a los cálculos manuales y obtener resultados con mayor rapidez.
-
-Sabremos que esta hipótesis es válida cuando los usuarios manifiesten que el cálculo manual de emisiones representa una dificultad o requiere una cantidad importante de tiempo.
-
-##### Hypothesis 3
-
-Creemos que si EcoTrack ofrece dashboards con indicadores ambientales claros, entonces los usuarios podrán identificar con mayor facilidad las principales fuentes de emisión dentro de su organización.
-
-Sabremos que esta hipótesis es válida cuando los usuarios puedan interpretar correctamente la información presentada y utilizarla para reconocer las actividades que generan un mayor impacto ambiental.
-
-##### Hypothesis 4
-
-Creemos que si EcoTrack permite establecer metas y planes de reducción de emisiones, entonces las organizaciones podrán realizar un mejor seguimiento de sus objetivos de sostenibilidad.
-
-Sabremos que esta hipótesis es válida cuando los usuarios consideren importante comparar sus resultados actuales con metas previamente establecidas y revisar su progreso periódicamente.
-
-##### Hypothesis 5
-
-Creemos que si EcoTrack permite generar reportes ambientales de manera automática, entonces las empresas podrán reducir el esfuerzo necesario para preparar información destinada a auditorías, certificaciones o procesos internos.
-
-Sabremos que esta hipótesis es válida cuando los usuarios indiquen que actualmente la elaboración de reportes ambientales es un proceso repetitivo, manual o que requiere recopilar información de diferentes áreas.
-
-##### Hypothesis 6
-
-Creemos que si EcoTrack ofrece una interfaz sencilla y organizada, entonces los usuarios podrán utilizar la plataforma sin necesidad de contar con conocimientos técnicos avanzados.
-
-Sabremos que esta hipótesis es válida cuando los usuarios puedan completar tareas principales, como registrar emisiones, consultar indicadores y generar reportes, sin requerir asistencia constante.
 
 #### 1.2.2.4. Lean UX Canvas
 
@@ -583,37 +553,17 @@ Ambos segmentos comparten la necesidad de contar con información ambiental orga
 
 ### 2.2.1. Diseño de entrevistas
 
-Las preguntas buscan identificar cómo gestionan actualmente la información ambiental, qué dificultades encuentran y qué funcionalidades podrían resultarles más útiles dentro de una plataforma como EcoTrack.
+Las preguntas buscan identificar cómo gestionan actualmente la información ambiental, qué dificultades encuentran y qué funcionalidades podrían resultarles más útiles dentro de EcoTrack.
 
 #### Segmento 1: Empresas exportadoras
 
-1. ¿Cómo registra actualmente su empresa la información relacionada con emisiones, consumo de energía, combustibles o transporte?
-2. ¿Qué áreas de la empresa participan en la recopilación de esta información?
-3. ¿Qué dificultades encuentran al momento de reunir y organizar los datos ambientales?
-4. ¿Con qué frecuencia necesitan elaborar reportes ambientales o de sostenibilidad?
-5. ¿Qué tan complicado resulta identificar cuáles son las actividades que generan mayores emisiones?
-6. ¿Actualmente utilizan alguna herramienta digital, software o principalmente hojas de cálculo para gestionar esta información?
-7. ¿Qué información consideran más importante visualizar para conocer el desempeño ambiental de la empresa?
-8. ¿Qué tan útil sería para ustedes contar con una plataforma que centralice la información y calcule automáticamente las emisiones?
-9. ¿Consideran importante poder establecer metas de reducción de emisiones y hacer seguimiento de su avance?
-10. ¿Qué funcionalidad considerarían indispensable en una plataforma de gestión de huella de carbono?
-
-#### Segmento 2: Corporaciones y medianas empresas industriales
-
-1. ¿Cómo se recopila actualmente la información ambiental proveniente de las diferentes áreas de la empresa?
-2. ¿Qué tipo de datos relacionados con emisiones o consumo de recursos registran con mayor frecuencia?
-3. ¿Qué problemas suelen presentarse cuando la información proviene de distintas áreas o responsables?
-4. ¿Cómo realizan actualmente el seguimiento de las emisiones o del desempeño ambiental de la empresa?
-5. ¿Qué tan sencillo o complicado es comparar los resultados ambientales entre diferentes periodos?
-6. ¿Utilizan actualmente dashboards, reportes o indicadores para analizar la información ambiental?
-7. ¿Qué indicadores consideran más importantes para tomar decisiones relacionadas con sostenibilidad?
-8. ¿Qué tan útil sería contar con una plataforma donde puedan consultar emisiones, metas y reportes en un mismo lugar?
-9. ¿La empresa establece actualmente objetivos o metas de reducción de emisiones? ¿Cómo realizan su seguimiento?
-10. ¿Qué funcionalidad les ayudaría más a mejorar la gestión ambiental dentro de la organización?
+<!-- Completar -->
 
 ### 2.2.2. Registro de entrevistas
 
 <!-- Completar -->
+
+---
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -715,36 +665,36 @@ Las User Stories fueron agrupadas en seis Epics que representan las principales 
 
 | Orden | ID | Título | Epic | Prioridad | Story Points | Estado |
 |---:|---|---|---|---|---:|---|
-| 1 | US-06 | Registrar una empresa | EP-02 | Alta | 5 | Pendiente |
-| 2 | US-07 | Iniciar sesión | EP-02 | Alta | 5 | Pendiente |
-| 3 | US-09 | Consultar perfil de la empresa | EP-02 | Media | 2 | Pendiente |
-| 4 | US-10 | Actualizar datos de la empresa | EP-02 | Media | 3 | Pendiente |
-| 5 | US-11 | Registrar una fuente de emisión | EP-03 | Alta | 5 | Pendiente |
-| 6 | US-12 | Clasificar una emisión por alcance | EP-03 | Alta | 3 | Pendiente |
-| 7 | US-13 | Consultar emisiones registradas | EP-03 | Alta | 3 | Pendiente |
-| 8 | US-14 | Editar una emisión | EP-03 | Alta | 3 | Pendiente |
-| 9 | US-15 | Eliminar una emisión | EP-03 | Media | 2 | Pendiente |
-| 10 | US-16 | Visualizar total de emisiones | EP-04 | Alta | 3 | Pendiente |
-| 11 | US-17 | Visualizar emisiones por alcance | EP-04 | Alta | 5 | Pendiente |
-| 12 | US-18 | Buscar una emisión | EP-04 | Media | 2 | Pendiente |
-| 13 | US-19 | Filtrar emisiones por alcance | EP-04 | Media | 3 | Pendiente |
-| 14 | US-20 | Comparar emisiones por periodo | EP-04 | Media | 5 | Pendiente |
-| 15 | US-21 | Registrar una meta ambiental | EP-05 | Alta | 3 | Pendiente |
-| 16 | US-22 | Consultar metas ambientales | EP-05 | Alta | 3 | Pendiente |
-| 17 | US-23 | Editar una meta ambiental | EP-05 | Media | 3 | Pendiente |
-| 18 | US-24 | Actualizar estado de una meta | EP-05 | Media | 2 | Pendiente |
-| 19 | US-25 | Eliminar una meta | EP-05 | Baja | 2 | Pendiente |
-| 20 | US-26 | Consultar resumen ambiental | EP-06 | Alta | 3 | Pendiente |
-| 21 | US-27 | Generar reporte ambiental | EP-06 | Alta | 5 | Pendiente |
-| 22 | US-28 | Descargar reporte ambiental | EP-06 | Media | 3 | Pendiente |
-| 23 | US-29 | Generar reporte por periodo | EP-06 | Media | 5 | Pendiente |
-| 24 | US-30 | Consultar reportes anteriores | EP-06 | Baja | 3 | Pendiente |
-| 25 | US-01 | Conocer EcoTrack | EP-01 | Alta | 2 | Pendiente |
-| 26 | US-02 | Conocer los beneficios de EcoTrack | EP-01 | Media | 2 | Pendiente |
-| 27 | US-03 | Conocer las funcionalidades principales | EP-01 | Media | 2 | Pendiente |
-| 28 | US-04 | Conocer los planes disponibles | EP-01 | Baja | 2 | Pendiente |
-| 29 | US-05 | Contactar al equipo de EcoTrack | EP-01 | Media | 3 | Pendiente |
-| 30 | US-08 | Recuperar contraseña | EP-02 | Media | 3 | Pendiente |
+| 1 | US-01 | Conocer EcoTrack | EP-01 | Alta | 2 | Pendiente |
+| 2 | US-02 | Conocer los beneficios de EcoTrack | EP-01 | Media | 2 | Pendiente |
+| 3 | US-03 | Conocer las funcionalidades principales | EP-01 | Media | 2 | Pendiente |
+| 4 | US-04 | Conocer los planes disponibles | EP-01 | Baja | 2 | Pendiente |
+| 5 | US-05 | Contactar al equipo de EcoTrack | EP-01 | Media | 3 | Pendiente |
+| 6 | US-06 | Registrar una empresa | EP-02 | Alta | 5 | Pendiente |
+| 7 | US-07 | Iniciar sesión | EP-02 | Alta | 5 | Pendiente |
+| 8 | US-08 | Recuperar contraseña | EP-02 | Media | 3 | Pendiente |
+| 9 | US-09 | Consultar perfil de la empresa | EP-02 | Media | 2 | Pendiente |
+| 10 | US-10 | Actualizar datos de la empresa | EP-02 | Media | 3 | Pendiente |
+| 11 | US-11 | Registrar una fuente de emisión | EP-03 | Alta | 5 | Pendiente |
+| 12 | US-12 | Clasificar una emisión por alcance | EP-03 | Alta | 3 | Pendiente |
+| 13 | US-13 | Consultar emisiones registradas | EP-03 | Alta | 3 | Pendiente |
+| 14 | US-14 | Editar una emisión | EP-03 | Alta | 3 | Pendiente |
+| 15 | US-15 | Eliminar una emisión | EP-03 | Media | 2 | Pendiente |
+| 16 | US-16 | Visualizar total de emisiones | EP-04 | Alta | 3 | Pendiente |
+| 17 | US-17 | Visualizar emisiones por alcance | EP-04 | Alta | 5 | Pendiente |
+| 18 | US-18 | Buscar una emisión | EP-04 | Media | 2 | Pendiente |
+| 19 | US-19 | Filtrar emisiones por alcance | EP-04 | Media | 3 | Pendiente |
+| 20 | US-20 | Comparar emisiones por periodo | EP-04 | Media | 5 | Pendiente |
+| 21 | US-21 | Registrar una meta ambiental | EP-05 | Alta | 3 | Pendiente |
+| 22 | US-22 | Consultar metas ambientales | EP-05 | Alta | 3 | Pendiente |
+| 23 | US-23 | Editar una meta ambiental | EP-05 | Media | 3 | Pendiente |
+| 24 | US-24 | Actualizar estado de una meta | EP-05 | Media | 2 | Pendiente |
+| 25 | US-25 | Eliminar una meta | EP-05 | Baja | 2 | Pendiente |
+| 26 | US-26 | Consultar resumen ambiental | EP-06 | Alta | 3 | Pendiente |
+| 27 | US-27 | Generar reporte ambiental | EP-06 | Alta | 5 | Pendiente |
+| 28 | US-28 | Descargar reporte ambiental | EP-06 | Media | 3 | Pendiente |
+| 29 | US-29 | Generar reporte por periodo | EP-06 | Media | 5 | Pendiente |
+| 30 | US-30 | Consultar reportes anteriores | EP-06 | Baja | 3 | Pendiente |
 
 ### Epics relacionados
 
@@ -1093,7 +1043,13 @@ Explicar:
 
 # Bibliografía
 
-<!-- Completar -->
+Greenhouse Gas Protocol. (s. f.). *Corporate Standard*. World Resources Institute & World Business Council for Sustainable Development. https://ghgprotocol.org/corporate-standard
+
+Greenhouse Gas Protocol. (s. f.). *Standards & Guidance*. World Resources Institute & World Business Council for Sustainable Development. https://ghgprotocol.org/standards-guidance
+
+International Organization for Standardization. (2018). *ISO 14064-1:2018 Greenhouse gases — Part 1: Specification with guidance at the organization level for quantification and reporting of greenhouse gas emissions and removals*. ISO. https://www.iso.org/standard/66453.html
+
+IBM. (2023). *What is carbon accounting?* IBM. https://www.ibm.com/think/topics/carbon-accounting
 
 ---
 
