@@ -387,10 +387,38 @@ establecido en el Anexo A del enunciado.
 
 ## 4.2. Information Architecture
 
+La Information Architecture de EcoTrack busca organizar el contenido de los productos digitales de manera clara y predecible, permitiendo que visitantes y usuarios puedan identificar rápidamente la información y las funcionalidades disponibles.
+
+Para ello, se consideran sistemas de organización jerárquicos, secuenciales y por tópicos, aplicados de acuerdo con el tipo de contenido presentado tanto en el Landing Page como en la Web Application.
+
 ### 4.2.1. Organization Systems
 
-<!-- Completar -->
+En la Landing Page de EcoTrack se empleará principalmente una organización jerárquica y secuencial.
 
+La organización jerárquica permite priorizar la información más relevante para el visitante. El recorrido comienza con la presentación de la marca y la propuesta de valor de EcoTrack, seguido del problema que busca resolver, sus principales beneficios, funcionalidades, clasificación de emisiones, funcionamiento general de la plataforma, estándares considerados, planes de suscripción y finalmente las acciones de contacto.
+
+Por otro lado, la organización secuencial permite que el visitante recorra el contenido progresivamente de arriba hacia abajo, facilitando la comprensión de la propuesta antes de llegar a las llamadas a la acción.
+
+Asimismo, se emplea una organización por tópicos para agrupar contenido relacionado. Dentro de la sección Features, las funcionalidades se organizan en registro de emisiones, cálculo de huella de carbono, dashboard de indicadores, metas de reducción y reportes. Del mismo modo, las emisiones se agrupan según Scope 1, Scope 2 y Scope 3.
+
+La estructura general planteada para el Landing Page sigue el siguiente orden:
+
+1. Navbar
+2. Hero / Propuesta de valor
+3. Problema y beneficios
+4. Features
+5. Emission Scopes
+6. How It Works
+7. Standards
+8. Plans
+9. Call To Action
+10. Footer
+
+La sección Plans permitirá presentar las alternativas de suscripción de EcoTrack de acuerdo con el modelo SaaS planteado para la solución. En esta etapa todavía no se especifican nombres, precios o características particulares de los planes, debido a que estos deberán definirse posteriormente como parte del modelo de negocio.
+
+En la Web Application se mantendrá una estructura jerárquica basada en los principales módulos funcionales de EcoTrack, como Dashboard, Emissions, Goals y Reports. Cuando corresponda, los registros podrán organizarse cronológicamente para facilitar la consulta de información asociada a distintos periodos.
+
+![EcoTrack Organization System](./assets/chapter-04/information-architecture/organization-system.png)
 ### 4.2.2. Labeling Systems
 
 <!-- Completar -->
