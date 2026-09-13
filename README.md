@@ -561,7 +561,59 @@ El uso de `UTF-8` permite representar correctamente los caracteres utilizados de
 
 ### 4.2.4. Searching Systems
 
-<!-- Completar -->
+El Searching System de EcoTrack estará orientado principalmente a la Web Application, debido a que los usuarios deberán consultar información ambiental acumulada a lo largo del tiempo, como registros de emisiones, metas ambientales y reportes.
+
+En la Landing Page no se implementará un sistema de búsqueda interno, ya que el contenido se encontrará organizado de forma secuencial y podrá recorrerse mediante las opciones disponibles en el Navbar. De esta manera, los visitantes podrán acceder directamente a secciones como Features, Emission Scopes, How It Works, Standards, Plans y Contact sin necesidad de utilizar un buscador.
+
+En la Web Application se utilizarán mecanismos de búsqueda y filtrado de acuerdo con el tipo de información disponible en cada módulo.
+
+#### Emissions
+
+El módulo Emissions permitirá localizar registros relacionados con las fuentes de emisión de la organización. Los usuarios podrán utilizar una búsqueda textual para encontrar registros a partir del nombre o información asociada a la fuente de emisión.
+
+Asimismo, se considerarán filtros como:
+
+- Scope de emisión: Scope 1, Scope 2 o Scope 3.
+- Periodo de registro.
+- Fuente de emisión.
+
+Los resultados serán presentados de manera estructurada en una tabla, permitiendo visualizar la información principal de cada registro y acceder a sus respectivos detalles.
+
+#### Dashboard
+
+El Dashboard no requerirá una búsqueda textual tradicional. En su lugar, se utilizarán filtros que permitan modificar la información presentada en los indicadores y visualizaciones.
+
+Entre los filtros considerados se encuentran:
+
+- Periodo de análisis.
+- Scope de emisión.
+
+Esto permitirá que el usuario consulte los indicadores correspondientes a diferentes periodos y tipos de emisiones sin abandonar el Dashboard.
+
+#### Goals
+
+En el módulo Goals, los usuarios podrán localizar las metas ambientales registradas mediante su nombre y aplicar filtros relacionados con su estado o periodo.
+
+Los resultados se mostrarán mediante una lista estructurada de metas, incluyendo información relevante para facilitar el seguimiento de los objetivos de reducción establecidos por la organización.
+
+#### Reports
+
+El módulo Reports permitirá buscar los reportes generados dentro de EcoTrack y consultar aquellos asociados a diferentes periodos.
+
+Se considerarán opciones como:
+
+- Búsqueda por nombre del reporte.
+- Filtro por periodo.
+
+Los resultados serán presentados en una lista organizada que permitirá identificar el reporte y acceder a su información correspondiente.
+
+#### Presentation of Search Results
+
+Los resultados de búsqueda y filtrado deberán mantener una presentación clara y consistente con el Design System de EcoTrack. Las tablas, listas y demás componentes utilizados deberán mostrar únicamente la información necesaria para identificar cada elemento y acceder posteriormente a información más detallada.
+
+Cuando una búsqueda o combinación de filtros no encuentre resultados, la interfaz mostrará un mensaje informativo que indique al usuario que no existen registros coincidentes, permitiéndole modificar o eliminar los criterios utilizados.
+
+De esta manera, el Searching System busca reducir el esfuerzo necesario para localizar información ambiental dentro de EcoTrack y evitar que los usuarios se sientan desorientados cuando el volumen de registros aumente.
 
 ### 4.2.5. Navigation Systems
 
