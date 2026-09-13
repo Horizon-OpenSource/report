@@ -442,7 +442,122 @@ La selección de estas etiquetas busca mantener simplicidad, facilitar el recono
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-<!-- Completar -->
+Los SEO Tags y Meta Tags de EcoTrack permiten describir e identificar el contenido principal de las páginas que forman parte de la experiencia web. Estos elementos serán definidos tanto para el Landing Page como para las principales páginas de la Web Application, manteniendo una terminología relacionada con sostenibilidad, gestión ambiental y huella de carbono.
+
+Para las páginas principales se consideran elementos como Title, Description, Keywords y Author. Asimismo, se incluyen configuraciones básicas relacionadas con la codificación de caracteres y la adaptación responsive de las interfaces.
+
+#### Landing Page
+
+El Landing Page de EcoTrack utilizará los siguientes SEO Tags y Meta Tags:
+
+```html
+<title>EcoTrack | Gestión de Huella de Carbono</title>
+
+<meta
+  name="description"
+  content="EcoTrack es una plataforma web B2B que permite a las organizaciones centralizar, analizar y gestionar información relacionada con su huella de carbono."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, huella de carbono, emisiones GEI, sostenibilidad empresarial, gestión ambiental, Scope 1, Scope 2, Scope 3, GHG Protocol, ISO 14064"
+>
+
+<meta name="author" content="Horizon">
+```
+
+El Title permite identificar a EcoTrack y relacionarlo directamente con la gestión de la huella de carbono. La Description resume la propuesta principal de la plataforma, mientras que Keywords incluye términos relacionados con el dominio del producto, los tipos de emisiones considerados y los principales estándares ambientales contemplados.
+
+#### Web Application - Dashboard
+
+La página principal de la Web Application permitirá visualizar indicadores relacionados con la información ambiental registrada por la organización.
+
+```html
+<title>Dashboard | EcoTrack</title>
+
+<meta
+  name="description"
+  content="Visualiza indicadores ambientales y consulta información relacionada con las emisiones registradas por la organización en EcoTrack."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, dashboard ambiental, indicadores ambientales, emisiones, huella de carbono"
+>
+
+<meta name="author" content="Horizon">
+```
+
+#### Web Application - Emissions
+
+La sección Emissions estará orientada al registro y consulta de las fuentes de emisión consideradas por la organización.
+
+```html
+<title>Emissions | EcoTrack</title>
+
+<meta
+  name="description"
+  content="Registra y consulta información relacionada con las fuentes de emisión de Scope 1, Scope 2 y Scope 3 de la organización."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, emisiones, Scope 1, Scope 2, Scope 3, gases de efecto invernadero"
+>
+
+<meta name="author" content="Horizon">
+```
+
+#### Web Application - Goals
+
+La sección Goals permitirá gestionar los objetivos ambientales y realizar seguimiento de las metas de reducción de emisiones definidas por la organización.
+
+```html
+<title>Goals | EcoTrack</title>
+
+<meta
+  name="description"
+  content="Define y realiza seguimiento de los objetivos de reducción de emisiones establecidos por la organización."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, metas ambientales, reducción de emisiones, sostenibilidad, objetivos ambientales"
+>
+
+<meta name="author" content="Horizon">
+```
+
+#### Web Application - Reports
+
+La sección Reports estará orientada a la consulta y generación de reportes relacionados con la información ambiental almacenada en EcoTrack.
+
+```html
+<title>Reports | EcoTrack</title>
+
+<meta
+  name="description"
+  content="Consulta y genera reportes relacionados con la huella de carbono y la gestión ambiental de la organización."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, reportes ambientales, huella de carbono, sostenibilidad, emisiones"
+>
+
+<meta name="author" content="Horizon">
+```
+
+#### General Meta Tags
+
+Todas las páginas que forman parte de la experiencia web de EcoTrack considerarán configuraciones básicas para asegurar una correcta interpretación del contenido y su adaptación a diferentes dispositivos.
+
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+El uso de `UTF-8` permite representar correctamente los caracteres utilizados dentro de la interfaz, mientras que el Meta Tag `viewport` permite adaptar el contenido al ancho disponible en dispositivos Desktop, Tablet y Mobile.
 
 ### 4.2.4. Searching Systems
 
