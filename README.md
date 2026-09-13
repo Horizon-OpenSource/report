@@ -617,7 +617,63 @@ De esta manera, el Searching System busca reducir el esfuerzo necesario para loc
 
 ### 4.2.5. Navigation Systems
 
-<!-- Completar -->
+El Navigation System de EcoTrack busca permitir que visitantes y usuarios puedan desplazarse entre las diferentes secciones y funcionalidades de forma clara, predecible y consistente.
+
+La navegación se adaptará al tipo de producto utilizado. El Landing Page estará orientado principalmente a presentar EcoTrack y guiar al visitante hacia información relevante y acciones de contacto, mientras que la Web Application permitirá acceder a los diferentes módulos relacionados con la gestión de información ambiental.
+
+#### Landing Page Navigation
+
+El Landing Page utilizará una navegación principalmente secuencial y mediante enlaces internos hacia sus diferentes secciones.
+
+El Navbar permitirá acceder directamente a las principales áreas de contenido mediante las siguientes etiquetas:
+
+- Home
+- Features
+- How It Works
+- Standards
+- Plans
+- Contact
+
+Al seleccionar una opción del Navbar, el visitante será dirigido hacia la sección correspondiente dentro del mismo Landing Page.
+
+Además del Navbar, se utilizarán Call To Action ubicados en puntos relevantes del recorrido para facilitar el acceso a acciones relacionadas con EcoTrack. Entre ellos se consideran acciones como `Get Started` y `Learn More`.
+
+La navegación principal seguirá el siguiente recorrido:
+
+`Home → Features → Emission Scopes → How It Works → Standards → Plans → Contact`
+
+El contenido estará organizado verticalmente, permitiendo que el visitante también pueda recorrer el Landing Page mediante scrolling sin necesidad de utilizar obligatoriamente el Navbar.
+
+En dispositivos Mobile, la navegación se adaptará al espacio disponible mediante un menú compacto que permita mantener acceso a las mismas secciones principales.
+
+#### Web Application Navigation
+
+La Web Application utilizará una navegación jerárquica basada en sus principales módulos funcionales.
+
+Los usuarios podrán acceder a secciones como:
+
+- Dashboard
+- Emissions
+- Goals
+- Reports
+- Organization
+- Profile
+
+El Dashboard funcionará como punto principal de entrada a la aplicación y permitirá visualizar un resumen de la información ambiental de la organización.
+
+Desde la navegación principal, el usuario podrá acceder directamente a módulos específicos sin necesidad de seguir un recorrido secuencial. Por ejemplo, podrá ingresar desde Dashboard hacia Emissions para consultar registros, hacia Goals para revisar objetivos de reducción o hacia Reports para acceder a los reportes disponibles.
+
+Dentro de los módulos se utilizarán acciones contextuales para acceder a niveles más detallados de información. Por ejemplo, desde una lista de emisiones el usuario podrá seleccionar un registro para consultar sus detalles o realizar las acciones disponibles sobre dicho elemento.
+
+#### Navigation Consistency
+
+Las opciones de navegación mantendrán etiquetas y ubicaciones consistentes en las diferentes interfaces de EcoTrack. Una misma sección o acción conservará la misma denominación para evitar confusión durante el uso del producto.
+
+Asimismo, se indicará visualmente la sección activa dentro de la Web Application, permitiendo que el usuario pueda identificar en todo momento en qué parte del sistema se encuentra.
+
+Los elementos interactivos, como enlaces, botones y opciones del menú, deberán presentar estados visuales que permitan reconocer cuándo pueden ser seleccionados o cuándo se encuentran activos.
+
+De esta manera, el Navigation System de EcoTrack busca facilitar el recorrido entre contenidos y funcionalidades, reducir la cantidad de pasos necesarios para completar una tarea y mantener una experiencia coherente entre el Landing Page y la Web Application.
 
 ---
 
