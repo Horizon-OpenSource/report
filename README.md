@@ -419,9 +419,26 @@ La sección Plans permitirá presentar las alternativas de suscripción de EcoTr
 En la Web Application se mantendrá una estructura jerárquica basada en los principales módulos funcionales de EcoTrack, como Dashboard, Emissions, Goals y Reports. Cuando corresponda, los registros podrán organizarse cronológicamente para facilitar la consulta de información asociada a distintos periodos.
 
 ![EcoTrack Organization System](./assets/chapter-04/information-architecture/organization-system.png)
+
 ### 4.2.2. Labeling Systems
 
-<!-- Completar -->
+El Labeling System de EcoTrack busca representar la información y las acciones mediante etiquetas breves, claras y consistentes, reduciendo la posibilidad de confusión durante la navegación.
+
+En la Landing Page se utilizarán etiquetas reconocibles para identificar las principales secciones de contenido. Entre ellas se consideran Home, Features, How It Works, Emission Scopes, Standards, Plans y Contact. Asimismo, las llamadas a la acción utilizarán etiquetas como Get Started y Learn More, permitiendo que el visitante identifique rápidamente la acción esperada.
+
+En la Web Application se utilizarán etiquetas asociadas directamente con los principales módulos funcionales de EcoTrack, como Dashboard, Emissions, Goals, Reports, Organization y Profile. Dentro del módulo Emissions se mantendrán las etiquetas Scope 1, Scope 2 y Scope 3 para representar la clasificación de emisiones considerada por la plataforma.
+
+Las acciones dentro de la interfaz utilizarán labels cortos y consistentes, por ejemplo Add Emission, View Details, Generate Report, Create Goal, Edit, Delete, Save y Cancel. De esta manera, una misma acción conservará la misma denominación en diferentes partes del producto.
+
+La selección de estas etiquetas busca mantener simplicidad, facilitar el reconocimiento de la información y mantener una terminología coherente entre el Landing Page y la Web Application.
+
+| Contexto | Labels principales |
+| --- | --- |
+| Landing Page | Home, Features, How It Works, Emission Scopes, Standards, Plans, Contact |
+| Call To Action | Get Started, Learn More |
+| Web Application | Dashboard, Emissions, Goals, Reports, Organization, Profile |
+| Emission Categories | Scope 1, Scope 2, Scope 3 |
+| Actions | Add Emission, View Details, Generate Report, Create Goal, Edit, Delete, Save, Cancel |
 
 ### 4.2.3. SEO Tags and Meta Tags
 
