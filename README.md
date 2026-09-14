@@ -508,9 +508,71 @@ Las decisiones planteadas en ambas versiones buscan mantener una jerarquía visu
 
 ### 4.3.2. Landing Page Mock-up
 
-<!-- Completar -->
+El Landing Page Mock-up de EcoTrack representa la propuesta visual de alta fidelidad desarrollada a partir de los Wireframes definidos previamente. La propuesta aplica los lineamientos establecidos en las General Style Guidelines y Web Style Guidelines, manteniendo consistencia entre la identidad visual, los componentes de interfaz y la Information Architecture del producto.
 
----
+El Mock-up fue elaborado en Figma y considera versiones para Desktop Web Browser y Mobile Web Browser. Ambas versiones mantienen la misma estructura de información y funcionalidades, adaptando la distribución de los componentes de acuerdo con el espacio disponible.
+
+La identidad visual de EcoTrack utiliza principalmente tonalidades verdes y teal asociadas con sostenibilidad, tecnología y análisis de información ambiental. Asimismo, se utilizan colores neutros para fondos, superficies y contenido textual, permitiendo mantener una jerarquía visual clara.
+
+Roboto se utiliza como tipografía principal debido a su legibilidad en interfaces digitales. La jerarquía tipográfica diferencia títulos, subtítulos, contenido principal y textos complementarios mediante variaciones de tamaño y peso.
+
+Los componentes visuales, como Buttons, Cards, Form Fields y elementos de navegación, mantienen criterios consistentes de espaciado, bordes, estados y jerarquía visual de acuerdo con el Design System planteado para EcoTrack.
+
+El Navbar incorpora la identidad de EcoTrack, las principales opciones de navegación, una Call To Action y un selector de idioma. English se presenta como idioma predeterminado, mientras que Latin American Spanish se considera como segunda alternativa dentro de la experiencia.
+
+La sección Hero utiliza una composición destacada que presenta la propuesta de valor de EcoTrack junto con una representación visual de la futura interfaz de la plataforma. Esta representación incluye indicadores relacionados con emisiones, Scope 1, Scope 2, Scope 3, tendencias y objetivos de reducción.
+
+Problem & Benefits utiliza elementos visuales y Cards para representar el problema relacionado con la dispersión de información ambiental y los beneficios principales asociados con la centralización y análisis de dicha información.
+
+La sección Features presenta las funcionalidades principales mediante Cards visualmente consistentes. Estas incluyen Emission Registration, Carbon Footprint Calculation, Indicators Dashboard, Reduction Goals y Reports.
+
+Emission Scopes utiliza una composición diferenciada para Scope 1, Scope 2 y Scope 3, permitiendo identificar visualmente cada categoría de emisiones considerada por EcoTrack.
+
+How It Works representa el flujo principal de uso mediante cinco pasos:
+
+`Register Emissions → Calculate Carbon Footprint → Analyze Indicators → Define Reduction Goals → Generate Reports`
+
+La sección Standards presenta GHG Protocol e ISO 14064 como referencias consideradas dentro del dominio de EcoTrack. La propuesta visual evita representar estas referencias como certificaciones o acreditaciones de la plataforma.
+
+Subscription Plans presenta la estructura prevista para las futuras alternativas de suscripción de EcoTrack. Debido a que los nombres, precios y características específicas de los planes todavía no han sido definidos, se utilizan contenidos visuales genéricos que permiten representar la estructura sin establecer condiciones comerciales definitivas.
+
+La sección Contact utiliza un formulario orientado a organizaciones interesadas en obtener información adicional sobre EcoTrack. Los Form Fields mantienen labels visibles y una jerarquía clara para Company Name, Corporate Email, Sector, Phone y Message, además de una opción de consentimiento y la Call To Action `Send Request`.
+
+Finalmente, el Footer utiliza una superficie oscura que contrasta con el contenido principal y agrupa la identidad de EcoTrack, enlaces de navegación, información corporativa y espacios destinados a información legal.
+
+#### Desktop Web Browser
+
+La versión Desktop aprovecha el espacio horizontal para presentar composiciones de múltiples columnas, Cards distribuidas horizontalmente y una mayor separación entre contenido textual y elementos visuales.
+
+![EcoTrack Desktop Mock-up - Hero and Problem](./assets/chapter-04/landing-page-ui-design/mockup-desktop-01-hero-problem.png)
+
+![EcoTrack Desktop Mock-up - Features and Emission Scopes](./assets/chapter-04/landing-page-ui-design/mockup-desktop-02-features-scopes.png)
+
+![EcoTrack Desktop Mock-up - How It Works and Standards](./assets/chapter-04/landing-page-ui-design/mockup-desktop-03-how-standards.png)
+
+![EcoTrack Desktop Mock-up - Plans, Contact and Footer](./assets/chapter-04/landing-page-ui-design/mockup-desktop-04-plans-contact-footer.png)
+
+#### Mobile Web Browser
+
+La versión Mobile conserva la misma identidad visual y arquitectura de información de la versión Desktop, reorganizando los componentes en una estructura vertical.
+
+El Navbar utiliza una configuración compacta, mientras que Cards, funcionalidades, Emission Scopes, Standards y Subscription Plans se presentan de forma apilada.
+
+How It Works adapta el recorrido horizontal de Desktop a una secuencia vertical, facilitando la lectura de los pasos en pantallas pequeñas.
+
+Los Buttons y Form Fields se adaptan al espacio disponible, manteniendo dimensiones apropiadas para interacción táctil y separación suficiente entre elementos interactivos.
+
+![EcoTrack Mobile Mock-up - Hero and Problem](./assets/chapter-04/landing-page-ui-design/mockup-mobile-01-hero-problem.png)
+
+![EcoTrack Mobile Mock-up - Features and Emission Scopes](./assets/chapter-04/landing-page-ui-design/mockup-mobile-02-features-scopes.png)
+
+![EcoTrack Mobile Mock-up - How It Works and Standards](./assets/chapter-04/landing-page-ui-design/mockup-mobile-03-how-standards.png)
+
+![EcoTrack Mobile Mock-up - Subscription Plans](./assets/chapter-04/landing-page-ui-design/mockup-mobile-04-plans.png)
+
+![EcoTrack Mobile Mock-up - Contact and Footer](./assets/chapter-04/landing-page-ui-design/mockup-mobile-05-contact-footer.png)
+
+La propuesta busca mantener una experiencia consistente entre Desktop y Mobile, aplicando la identidad visual de EcoTrack, una jerarquía clara, componentes reutilizables y una distribución responsive que facilite la comprensión y navegación del Landing Page.
 
 ## 4.4. Web Applications UX/UI Design
 
