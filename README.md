@@ -444,25 +444,293 @@ En Desktop se aprovecha una distribución más amplia en columnas; en Tablet se 
 
 ## 4.2. Information Architecture
 
+La Information Architecture de EcoTrack busca organizar el contenido de los productos digitales de manera clara y predecible, permitiendo que visitantes y usuarios puedan identificar rápidamente la información y las funcionalidades disponibles.
+
+Para ello, se consideran sistemas de organización jerárquicos, secuenciales y por tópicos, aplicados de acuerdo con el tipo de contenido presentado tanto en el Landing Page como en la Web Application.
+
 ### 4.2.1. Organization Systems
 
-<!-- Completar -->
+En la Landing Page de EcoTrack se empleará principalmente una organización jerárquica y secuencial.
+
+La organización jerárquica permite priorizar la información más relevante para el visitante. El recorrido comienza con la presentación de la marca y la propuesta de valor de EcoTrack, seguido del problema que busca resolver, sus principales beneficios, funcionalidades, clasificación de emisiones, funcionamiento general de la plataforma, estándares considerados, planes de suscripción y finalmente las acciones de contacto.
+
+Por otro lado, la organización secuencial permite que el visitante recorra el contenido progresivamente de arriba hacia abajo, facilitando la comprensión de la propuesta antes de llegar a las llamadas a la acción.
+
+Asimismo, se emplea una organización por tópicos para agrupar contenido relacionado. Dentro de la sección Features, las funcionalidades se organizan en registro de emisiones, cálculo de huella de carbono, dashboard de indicadores, metas de reducción y reportes. Del mismo modo, las emisiones se agrupan según Scope 1, Scope 2 y Scope 3.
+
+La estructura general planteada para el Landing Page sigue el siguiente orden:
+
+1. Navbar
+2. Hero / Propuesta de valor
+3. Problema y beneficios
+4. Features
+5. Emission Scopes
+6. How It Works
+7. Standards
+8. Plans
+9. Call To Action
+10. Footer
+
+La sección Plans permitirá presentar las alternativas de suscripción de EcoTrack de acuerdo con el modelo SaaS planteado para la solución. En esta etapa todavía no se especifican nombres, precios o características particulares de los planes, debido a que estos deberán definirse posteriormente como parte del modelo de negocio.
+
+En la Web Application se mantendrá una estructura jerárquica basada en los principales módulos funcionales de EcoTrack, como Dashboard, Emissions, Goals y Reports. Cuando corresponda, los registros podrán organizarse cronológicamente para facilitar la consulta de información asociada a distintos periodos.
+
+![EcoTrack Organization System](./assets/chapter-04/information-architecture/organization-system.png)
 
 ### 4.2.2. Labeling Systems
 
-<!-- Completar -->
+El Labeling System de EcoTrack busca representar la información y las acciones mediante etiquetas breves, claras y consistentes, reduciendo la posibilidad de confusión durante la navegación.
+
+En la Landing Page se utilizarán etiquetas reconocibles para identificar las principales secciones de contenido. Entre ellas se consideran Home, Features, How It Works, Emission Scopes, Standards, Plans y Contact. Asimismo, las llamadas a la acción utilizarán etiquetas como Get Started y Learn More, permitiendo que el visitante identifique rápidamente la acción esperada.
+
+En la Web Application se utilizarán etiquetas asociadas directamente con los principales módulos funcionales de EcoTrack, como Dashboard, Emissions, Goals, Reports, Organization y Profile. Dentro del módulo Emissions se mantendrán las etiquetas Scope 1, Scope 2 y Scope 3 para representar la clasificación de emisiones considerada por la plataforma.
+
+Las acciones dentro de la interfaz utilizarán labels cortos y consistentes, por ejemplo Add Emission, View Details, Generate Report, Create Goal, Edit, Delete, Save y Cancel. De esta manera, una misma acción conservará la misma denominación en diferentes partes del producto.
+
+La selección de estas etiquetas busca mantener simplicidad, facilitar el reconocimiento de la información y mantener una terminología coherente entre el Landing Page y la Web Application.
+
+| Contexto | Labels principales |
+| --- | --- |
+| Landing Page | Home, Features, How It Works, Emission Scopes, Standards, Plans, Contact |
+| Call To Action | Get Started, Learn More |
+| Web Application | Dashboard, Emissions, Goals, Reports, Organization, Profile |
+| Emission Categories | Scope 1, Scope 2, Scope 3 |
+| Actions | Add Emission, View Details, Generate Report, Create Goal, Edit, Delete, Save, Cancel |
 
 ### 4.2.3. SEO Tags and Meta Tags
 
-<!-- Completar -->
+Los SEO Tags y Meta Tags de EcoTrack permiten describir e identificar el contenido principal de las páginas que forman parte de la experiencia web. Estos elementos serán definidos tanto para el Landing Page como para las principales páginas de la Web Application, manteniendo una terminología relacionada con sostenibilidad, gestión ambiental y huella de carbono.
+
+Para las páginas principales se consideran elementos como Title, Description, Keywords y Author. Asimismo, se incluyen configuraciones básicas relacionadas con la codificación de caracteres y la adaptación responsive de las interfaces.
+
+#### Landing Page
+
+El Landing Page de EcoTrack utilizará los siguientes SEO Tags y Meta Tags:
+
+```html
+<title>EcoTrack | Gestión de Huella de Carbono</title>
+
+<meta
+  name="description"
+  content="EcoTrack es una plataforma web B2B que permite a las organizaciones centralizar, analizar y gestionar información relacionada con su huella de carbono."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, huella de carbono, emisiones GEI, sostenibilidad empresarial, gestión ambiental, Scope 1, Scope 2, Scope 3, GHG Protocol, ISO 14064"
+>
+
+<meta name="author" content="Horizon">
+```
+
+El Title permite identificar a EcoTrack y relacionarlo directamente con la gestión de la huella de carbono. La Description resume la propuesta principal de la plataforma, mientras que Keywords incluye términos relacionados con el dominio del producto, los tipos de emisiones considerados y los principales estándares ambientales contemplados.
+
+#### Web Application - Dashboard
+
+La página principal de la Web Application permitirá visualizar indicadores relacionados con la información ambiental registrada por la organización.
+
+```html
+<title>Dashboard | EcoTrack</title>
+
+<meta
+  name="description"
+  content="Visualiza indicadores ambientales y consulta información relacionada con las emisiones registradas por la organización en EcoTrack."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, dashboard ambiental, indicadores ambientales, emisiones, huella de carbono"
+>
+
+<meta name="author" content="Horizon">
+```
+
+#### Web Application - Emissions
+
+La sección Emissions estará orientada al registro y consulta de las fuentes de emisión consideradas por la organización.
+
+```html
+<title>Emissions | EcoTrack</title>
+
+<meta
+  name="description"
+  content="Registra y consulta información relacionada con las fuentes de emisión de Scope 1, Scope 2 y Scope 3 de la organización."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, emisiones, Scope 1, Scope 2, Scope 3, gases de efecto invernadero"
+>
+
+<meta name="author" content="Horizon">
+```
+
+#### Web Application - Goals
+
+La sección Goals permitirá gestionar los objetivos ambientales y realizar seguimiento de las metas de reducción de emisiones definidas por la organización.
+
+```html
+<title>Goals | EcoTrack</title>
+
+<meta
+  name="description"
+  content="Define y realiza seguimiento de los objetivos de reducción de emisiones establecidos por la organización."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, metas ambientales, reducción de emisiones, sostenibilidad, objetivos ambientales"
+>
+
+<meta name="author" content="Horizon">
+```
+
+#### Web Application - Reports
+
+La sección Reports estará orientada a la consulta y generación de reportes relacionados con la información ambiental almacenada en EcoTrack.
+
+```html
+<title>Reports | EcoTrack</title>
+
+<meta
+  name="description"
+  content="Consulta y genera reportes relacionados con la huella de carbono y la gestión ambiental de la organización."
+>
+
+<meta
+  name="keywords"
+  content="EcoTrack, reportes ambientales, huella de carbono, sostenibilidad, emisiones"
+>
+
+<meta name="author" content="Horizon">
+```
+
+#### General Meta Tags
+
+Todas las páginas que forman parte de la experiencia web de EcoTrack considerarán configuraciones básicas para asegurar una correcta interpretación del contenido y su adaptación a diferentes dispositivos.
+
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+El uso de `UTF-8` permite representar correctamente los caracteres utilizados dentro de la interfaz, mientras que el Meta Tag `viewport` permite adaptar el contenido al ancho disponible en dispositivos Desktop, Tablet y Mobile.
 
 ### 4.2.4. Searching Systems
 
-<!-- Completar -->
+El Searching System de EcoTrack estará orientado principalmente a la Web Application, debido a que los usuarios deberán consultar información ambiental acumulada a lo largo del tiempo, como registros de emisiones, metas ambientales y reportes.
+
+En la Landing Page no se implementará un sistema de búsqueda interno, ya que el contenido se encontrará organizado de forma secuencial y podrá recorrerse mediante las opciones disponibles en el Navbar. De esta manera, los visitantes podrán acceder directamente a secciones como Features, Emission Scopes, How It Works, Standards, Plans y Contact sin necesidad de utilizar un buscador.
+
+En la Web Application se utilizarán mecanismos de búsqueda y filtrado de acuerdo con el tipo de información disponible en cada módulo.
+
+#### Emissions
+
+El módulo Emissions permitirá localizar registros relacionados con las fuentes de emisión de la organización. Los usuarios podrán utilizar una búsqueda textual para encontrar registros a partir del nombre o información asociada a la fuente de emisión.
+
+Asimismo, se considerarán filtros como:
+
+- Scope de emisión: Scope 1, Scope 2 o Scope 3.
+- Periodo de registro.
+- Fuente de emisión.
+
+Los resultados serán presentados de manera estructurada en una tabla, permitiendo visualizar la información principal de cada registro y acceder a sus respectivos detalles.
+
+#### Dashboard
+
+El Dashboard no requerirá una búsqueda textual tradicional. En su lugar, se utilizarán filtros que permitan modificar la información presentada en los indicadores y visualizaciones.
+
+Entre los filtros considerados se encuentran:
+
+- Periodo de análisis.
+- Scope de emisión.
+
+Esto permitirá que el usuario consulte los indicadores correspondientes a diferentes periodos y tipos de emisiones sin abandonar el Dashboard.
+
+#### Goals
+
+En el módulo Goals, los usuarios podrán localizar las metas ambientales registradas mediante su nombre y aplicar filtros relacionados con su estado o periodo.
+
+Los resultados se mostrarán mediante una lista estructurada de metas, incluyendo información relevante para facilitar el seguimiento de los objetivos de reducción establecidos por la organización.
+
+#### Reports
+
+El módulo Reports permitirá buscar los reportes generados dentro de EcoTrack y consultar aquellos asociados a diferentes periodos.
+
+Se considerarán opciones como:
+
+- Búsqueda por nombre del reporte.
+- Filtro por periodo.
+
+Los resultados serán presentados en una lista organizada que permitirá identificar el reporte y acceder a su información correspondiente.
+
+#### Presentation of Search Results
+
+Los resultados de búsqueda y filtrado deberán mantener una presentación clara y consistente con el Design System de EcoTrack. Las tablas, listas y demás componentes utilizados deberán mostrar únicamente la información necesaria para identificar cada elemento y acceder posteriormente a información más detallada.
+
+Cuando una búsqueda o combinación de filtros no encuentre resultados, la interfaz mostrará un mensaje informativo que indique al usuario que no existen registros coincidentes, permitiéndole modificar o eliminar los criterios utilizados.
+
+De esta manera, el Searching System busca reducir el esfuerzo necesario para localizar información ambiental dentro de EcoTrack y evitar que los usuarios se sientan desorientados cuando el volumen de registros aumente.
 
 ### 4.2.5. Navigation Systems
 
-<!-- Completar -->
+El Navigation System de EcoTrack busca permitir que visitantes y usuarios puedan desplazarse entre las diferentes secciones y funcionalidades de forma clara, predecible y consistente.
+
+La navegación se adaptará al tipo de producto utilizado. El Landing Page estará orientado principalmente a presentar EcoTrack y guiar al visitante hacia información relevante y acciones de contacto, mientras que la Web Application permitirá acceder a los diferentes módulos relacionados con la gestión de información ambiental.
+
+#### Landing Page Navigation
+
+El Landing Page utilizará una navegación principalmente secuencial y mediante enlaces internos hacia sus diferentes secciones.
+
+El Navbar permitirá acceder directamente a las principales áreas de contenido mediante las siguientes etiquetas:
+
+- Home
+- Features
+- How It Works
+- Standards
+- Plans
+- Contact
+
+Al seleccionar una opción del Navbar, el visitante será dirigido hacia la sección correspondiente dentro del mismo Landing Page.
+
+Además del Navbar, se utilizarán Call To Action ubicados en puntos relevantes del recorrido para facilitar el acceso a acciones relacionadas con EcoTrack. Entre ellos se consideran acciones como `Get Started` y `Learn More`.
+
+La navegación principal seguirá el siguiente recorrido:
+
+`Home → Features → Emission Scopes → How It Works → Standards → Plans → Contact`
+
+El contenido estará organizado verticalmente, permitiendo que el visitante también pueda recorrer el Landing Page mediante scrolling sin necesidad de utilizar obligatoriamente el Navbar.
+
+En dispositivos Mobile, la navegación se adaptará al espacio disponible mediante un menú compacto que permita mantener acceso a las mismas secciones principales.
+
+#### Web Application Navigation
+
+La Web Application utilizará una navegación jerárquica basada en sus principales módulos funcionales.
+
+Los usuarios podrán acceder a secciones como:
+
+- Dashboard
+- Emissions
+- Goals
+- Reports
+- Organization
+- Profile
+
+El Dashboard funcionará como punto principal de entrada a la aplicación y permitirá visualizar un resumen de la información ambiental de la organización.
+
+Desde la navegación principal, el usuario podrá acceder directamente a módulos específicos sin necesidad de seguir un recorrido secuencial. Por ejemplo, podrá ingresar desde Dashboard hacia Emissions para consultar registros, hacia Goals para revisar objetivos de reducción o hacia Reports para acceder a los reportes disponibles.
+
+Dentro de los módulos se utilizarán acciones contextuales para acceder a niveles más detallados de información. Por ejemplo, desde una lista de emisiones el usuario podrá seleccionar un registro para consultar sus detalles o realizar las acciones disponibles sobre dicho elemento.
+
+#### Navigation Consistency
+
+Las opciones de navegación mantendrán etiquetas y ubicaciones consistentes en las diferentes interfaces de EcoTrack. Una misma sección o acción conservará la misma denominación para evitar confusión durante el uso del producto.
+
+Asimismo, se indicará visualmente la sección activa dentro de la Web Application, permitiendo que el usuario pueda identificar en todo momento en qué parte del sistema se encuentra.
+
+Los elementos interactivos, como enlaces, botones y opciones del menú, deberán presentar estados visuales que permitan reconocer cuándo pueden ser seleccionados o cuándo se encuentran activos.
+
+De esta manera, el Navigation System de EcoTrack busca facilitar el recorrido entre contenidos y funcionalidades, reducir la cantidad de pasos necesarios para completar una tarea y mantener una experiencia coherente entre el Landing Page y la Web Application.
 
 ---
 
