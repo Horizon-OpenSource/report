@@ -377,12 +377,69 @@ establecido en el Anexo A del enunciado.
 
 ### 4.1.1. General Style Guidelines
 
-<!-- Completar -->
+La identidad visual de EcoTrack ha sido planteada para transmitir sostenibilidad, tecnología, confianza y profesionalismo. Estas características se relacionan con la naturaleza del producto, ya que EcoTrack es una plataforma web B2B orientada a la gestión de la huella de carbono y de información ambiental en organizaciones.
+
+Como referencia para mantener consistencia visual, legibilidad y facilidad de uso en los diferentes productos digitales, se consideran principios de Material Design. A partir de ello, se establecen lineamientos generales relacionados con el Branding, la Color Palette, la Typography, el Spacing y el Tone of Voice de EcoTrack.
+
+#### Branding
+
+La identidad de EcoTrack combina conceptos relacionados con sostenibilidad, monitoreo ambiental y análisis de información. El nombre de la marca se acompaña de un elemento gráfico simple que busca representar el seguimiento y análisis de indicadores relacionados con la huella de carbono.
+
+La identidad visual busca mantener una apariencia moderna y profesional, acorde con una plataforma utilizada por organizaciones que necesitan registrar, analizar y monitorear sus emisiones de gases de efecto invernadero.
+
+![EcoTrack Branding](./assets/chapter-04/style-guidelines/branding-guidelines.png)
+
+#### Color Palette
+
+La paleta de colores de EcoTrack está compuesta principalmente por tonalidades verdes y teal. El verde se utiliza como color principal por su asociación con sostenibilidad y gestión ambiental, mientras que el teal complementa la identidad al aportar una percepción relacionada con tecnología, información y análisis de datos.
+
+![EcoTrack Color Palette](./assets/chapter-04/style-guidelines/color-palette.png)
+
+#### Typography
+
+Roboto será la tipografía principal utilizada en EcoTrack debido a su legibilidad en interfaces digitales y su relación con los principios de Material Design. Se utiliza una jerarquía tipográfica que permite diferenciar títulos, subtítulos, contenido descriptivo, etiquetas y datos.
+
+![EcoTrack Typography](./assets/chapter-04/style-guidelines/typography-hierarchy.png)
+
+#### Spacing
+
+EcoTrack utiliza un sistema de espaciado basado en múltiplos de 8 px con el objetivo de mantener consistencia entre componentes, secciones y diferentes resoluciones de pantalla.
+
+![EcoTrack Spacing System](./assets/chapter-04/style-guidelines/spacing-system.png)
+
+#### Tone of Voice
+
+EcoTrack utiliza un tono profesional, claro, confiable y orientado a datos. La comunicación busca facilitar la comprensión de información ambiental y apoyar la toma de decisiones, evitando mensajes ambiguos, exagerados o que atribuyan capacidades que la plataforma no ofrece.
+
+![EcoTrack Tone of Voice](./assets/chapter-04/style-guidelines/tone-of-voice.png)
 
 ### 4.1.2. Web Style Guidelines
 
-<!-- Completar -->
+Los Web Style Guidelines de EcoTrack definen la aplicación práctica de la identidad visual en componentes de interfaz web responsive. Estos lineamientos consideran botones, cards, campos de formulario y criterios de adaptación a diferentes resoluciones de pantalla, manteniendo coherencia con los principios de Material Design y con la identidad visual establecida previamente.
 
+#### Button Components
+
+Los botones de EcoTrack siguen una jerarquía visual que permite diferenciar acciones principales, secundarias y complementarias. Los estados de interacción mantienen una respuesta visual consistente para facilitar la identificación de acciones disponibles dentro de la interfaz.
+
+Los botones principales utilizan Primary Green para resaltar acciones relevantes, mientras que los secundarios utilizan variantes outlined, text o teal según el nivel de jerarquía requerido. Asimismo, se consideran estados Hover, Active y Disabled para mantener claridad durante la interacción del usuario.
+
+![EcoTrack Button Components](./assets/chapter-04/style-guidelines/web/button-components.png)
+
+#### Cards & Form Fields
+
+Las Cards y los Form Fields de EcoTrack mantienen una estructura visual simple, legible y consistente con Material Design. Los componentes utilizan bordes suaves, separación clara entre contenidos y estados visuales que permiten identificar acciones, datos y posibles errores.
+
+Las cards se utilizan para mostrar indicadores, información resumida y funcionalidades relacionadas con la gestión de emisiones, mientras que los formularios facilitan la interacción de usuarios interesados en registrar información o solicitar contacto con la plataforma.
+
+![EcoTrack Cards and Form Fields](./assets/chapter-04/style-guidelines/web/cards-form-fields.png)
+
+#### Responsive Behavior
+
+Los componentes web de EcoTrack se adaptan a diferentes resoluciones de pantalla para mantener legibilidad, jerarquía visual y facilidad de interacción. En Desktop, Tablet y Mobile se conserva consistencia visual en botones, cards y formularios, reorganizando el contenido según el espacio disponible.
+
+En Desktop se aprovecha una distribución más amplia en columnas; en Tablet se reduce el número de columnas manteniendo separación y jerarquía; y en Mobile los componentes se organizan principalmente en una sola columna, priorizando la interacción táctil y la claridad del contenido.
+
+![EcoTrack Responsive Behavior](./assets/chapter-04/style-guidelines/web/responsive-behavior.png)
 ---
 
 ## 4.2. Information Architecture
