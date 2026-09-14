@@ -281,8 +281,74 @@ En las siguientes tablas se describen las acciones realizadas y las conclusiones
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-<!-- Completar perfil de cada integrante -->
+A continuación, se presentan los perfiles de los integrantes del equipo Horizon, destacando su formación académica, conocimientos y participación dentro del desarrollo del proyecto.
 
+---
+
+#### Rolando Andre Torres Diaz
+
+<p align="center">
+  <img src="assets/chapter-01/team/rolando-torres.jpg" alt="Rolando Andre Torres Diaz" width="180"/>
+</p>
+
+**Código UPC:** [Código del estudiante]  
+**Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
+
+---
+
+#### Lacuta Lima, Alex Rodrigo
+
+<p align="center">
+  <img src="assets/chapter-01/team/alex-lacuta.jpg" alt="Alex Rodrigo Lacuta Lima" width="180"/>
+</p>
+
+**Código UPC:** [Código del estudiante]  
+**Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
+
+---
+
+#### Espinoza Flores, Aaron André
+
+<p align="center">
+  <img src="assets/chapter-01/team/aaron-espinoza.jpg" alt="Aaron André Espinoza Flores" width="180"/>
+</p>
+
+**Código UPC:** [Código del estudiante]  
+**Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
+
+---
+
+#### Payesa Torres, Harrison Hubert
+
+<p align="center">
+  <img src="assets/chapter-01/team/harrison-payesa.jpg" alt="Harrison Hubert Payesa Torres" width="180"/>
+</p>
+
+**Código UPC:** [Código del estudiante]  
+**Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
+
+---
+
+#### Tello Murga, Javier Oswaldo
+
+<p align="center">
+  <img src="assets/chapter-01/team/javier-tello.jpg" alt="Javier Oswaldo Tello Murga" width="180"/>
+</p>
+
+**Código UPC:** [Código del estudiante]  
+**Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en desarrollo de software, desarrollo web, Git y GitHub, así como experiencia académica trabajando con diferentes tecnologías y herramientas. Durante el desarrollo del proyecto participará en actividades de documentación, diseño, desarrollo e integración de los productos digitales del equipo.
+
+---
 ---
 
 ## 1.2. Solution Profile
