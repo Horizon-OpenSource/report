@@ -736,15 +736,168 @@ De esta manera, el Navigation System de EcoTrack busca facilitar el recorrido en
 
 ## 4.3. Landing Page UI Design
 
+El Landing Page UI Design de EcoTrack traduce las decisiones definidas previamente en las Style Guidelines y la Information Architecture hacia una propuesta visual y de interacción para el sitio web del producto.
+
+La propuesta está orientada a presentar EcoTrack de manera clara a organizaciones interesadas en mejorar la gestión de su información ambiental, permitiendo conocer la propuesta de valor, funcionalidades principales, clasificación de emisiones, proceso general de uso, estándares considerados, planes de suscripción y medios de contacto con Horizon.
+
+El diseño considera versiones para Desktop Web Browser y Mobile Web Browser, manteniendo una estructura responsive y una jerarquía de información consistente entre ambos formatos.
+
+Asimismo, se consideran criterios de Internationalization mediante English y Latin American Spanish, utilizando English como idioma predeterminado de la experiencia.
+
 ### 4.3.1. Landing Page Wireframe
 
-<!-- Completar -->
+El Landing Page Wireframe de EcoTrack representa la estructura inicial de la interfaz antes de aplicar los elementos visuales definitivos del Design System.
+
+El wireframe fue elaborado en Figma y utiliza una representación de baja fidelidad basada principalmente en escala de grises, componentes simples y placeholders. Su objetivo es validar la organización del contenido, jerarquía visual, navegación y adaptación responsive antes de desarrollar el Mock-up final.
+
+La estructura general del Landing Page está compuesta por las siguientes secciones:
+
+1. Navbar
+2. Hero / Value Proposition
+3. Problem & Benefits
+4. Features
+5. Emission Scopes
+6. How It Works
+7. Standards
+8. Subscription Plans
+9. Contact
+10. Footer
+
+El Navbar permite acceder directamente a las principales secciones del Landing Page mediante las opciones Home, Features, How It Works, Standards, Plans y Contact. Asimismo, incorpora un selector de idioma para alternar entre English y Latin American Spanish, manteniendo English como idioma predeterminado.
+
+La sección Hero presenta la propuesta principal de EcoTrack y contiene las principales Call To Action de la experiencia. También incluye un espacio destinado a representar visualmente la futura interfaz de la plataforma.
+
+Problem & Benefits presenta inicialmente la problemática relacionada con la gestión de información ambiental distribuida en hojas de cálculo, documentos y procesos manuales. Posteriormente, se muestran beneficios relacionados con la centralización, análisis y organización de la información ambiental.
+
+La sección Features presenta las principales capacidades consideradas para EcoTrack: Emission Registration, Carbon Footprint Calculation, Indicators Dashboard, Reduction Goals y Reports.
+
+Emission Scopes organiza la información ambiental mediante Scope 1, Scope 2 y Scope 3, permitiendo presentar de manera diferenciada las categorías de emisiones consideradas por la plataforma.
+
+How It Works utiliza una estructura secuencial para representar el flujo principal de uso de EcoTrack:
+
+`Register Emissions → Calculate Carbon Footprint → Analyze Indicators → Define Reduction Goals → Generate Reports`
+
+La sección Standards presenta GHG Protocol e ISO 14064 como referencias consideradas dentro de la propuesta de EcoTrack, sin representar certificaciones o cumplimiento formal del producto.
+
+Subscription Plans representa la futura presentación de las alternativas de suscripción asociadas al modelo Software as a Service de EcoTrack. Debido a que los nombres, precios, características y límites específicos de los planes todavía no han sido definidos, el wireframe utiliza placeholders que permiten establecer únicamente la estructura visual prevista para esta sección.
+
+La sección Contact está orientada a organizaciones interesadas en obtener información adicional sobre EcoTrack. Para ello, se incluye un formulario compuesto por Company Name, Corporate Email, Sector, Phone, Message y una opción de consentimiento para ser contactado por Horizon.
+
+Finalmente, el Footer agrupa enlaces principales de navegación, información de Horizon y EcoTrack, datos de contacto y espacios destinados a información legal.
+
+#### Desktop Web Browser
+
+La versión Desktop utiliza una estructura amplia que permite distribuir el contenido en diferentes columnas de acuerdo con el tipo de información presentada.
+
+En el Hero se emplea una distribución de dos columnas para separar la propuesta de valor de la representación de la plataforma. Problem & Benefits utiliza una composición similar para diferenciar la problemática de los beneficios.
+
+Las funcionalidades y los Emission Scopes se distribuyen horizontalmente mediante Cards, mientras que How It Works utiliza una secuencia horizontal de cinco pasos. Standards utiliza una composición de dos columnas y Subscription Plans presenta sus Cards en paralelo.
+
+La sección Contact emplea una distribución de dos columnas, mostrando información introductoria y de contacto en un lado y el formulario empresarial en el otro.
+
+![EcoTrack Desktop Wireframe - Hero and Problem](./assets/chapter-04/landing-page-ui-design/wireframe-desktop-01-hero-problem.png)
+
+![EcoTrack Desktop Wireframe - Features and Emission Scopes](./assets/chapter-04/landing-page-ui-design/wireframe-desktop-02-features-scopes.png)
+
+![EcoTrack Desktop Wireframe - How It Works and Standards](./assets/chapter-04/landing-page-ui-design/wireframe-desktop-03-how-standards.png)
+
+![EcoTrack Desktop Wireframe - Plans, Contact and Footer](./assets/chapter-04/landing-page-ui-design/wireframe-desktop-04-plans-contact-footer.png)
+
+#### Mobile Web Browser
+
+La versión Mobile mantiene la misma Information Architecture de la versión Desktop, pero reorganiza los componentes en una estructura principalmente vertical para adaptarse al espacio disponible.
+
+El Navbar utiliza una navegación compacta mediante un menú desplegable y mantiene disponible el selector de idioma.
+
+El Hero organiza primero la propuesta de valor y las Call To Action, seguido por la representación visual de la plataforma.
+
+Las Cards correspondientes a Benefits, Features, Emission Scopes, Standards y Subscription Plans se presentan de manera apilada.
+
+How It Works transforma la secuencia horizontal utilizada en Desktop en un flujo vertical, facilitando la lectura de los pasos en dispositivos Mobile.
+
+La sección Contact presenta primero la información introductoria y posteriormente el formulario, cuyos campos ocupan el espacio disponible para facilitar la interacción mediante dispositivos táctiles.
+
+El Footer reorganiza sus diferentes grupos de enlaces en bloques verticales, manteniendo la misma información disponible en la versión Desktop.
+
+![EcoTrack Mobile Wireframe - Hero and Problem](./assets/chapter-04/landing-page-ui-design/wireframe-mobile-01-hero-problem.png)
+
+![EcoTrack Mobile Wireframe - Features and Emission Scopes](./assets/chapter-04/landing-page-ui-design/wireframe-mobile-02-features-scopes.png)
+
+![EcoTrack Mobile Wireframe - How It Works and Standards](./assets/chapter-04/landing-page-ui-design/wireframe-mobile-03-how-standards.png)
+
+![EcoTrack Mobile Wireframe - Subscription Plans](./assets/chapter-04/landing-page-ui-design/wireframe-mobile-04-plans.png)
+
+![EcoTrack Mobile Wireframe - Contact and Footer](./assets/chapter-04/landing-page-ui-design/wireframe-mobile-05-contact-footer.png)
+
+Las decisiones planteadas en ambas versiones buscan mantener una jerarquía visual clara, navegación predecible, consistencia entre componentes y adaptación responsive. Asimismo, se consideran elementos orientados a inclusive design como una estructura de encabezados reconocible, labels visibles en los formularios, áreas de interacción apropiadas para dispositivos táctiles y una navegación que no depende exclusivamente del color.
 
 ### 4.3.2. Landing Page Mock-up
 
-<!-- Completar -->
+El Landing Page Mock-up de EcoTrack representa la propuesta visual de alta fidelidad desarrollada a partir de los Wireframes definidos previamente. La propuesta aplica los lineamientos establecidos en las General Style Guidelines y Web Style Guidelines, manteniendo consistencia entre la identidad visual, los componentes de interfaz y la Information Architecture del producto.
 
----
+El Mock-up fue elaborado en Figma y considera versiones para Desktop Web Browser y Mobile Web Browser. Ambas versiones mantienen la misma estructura de información y funcionalidades, adaptando la distribución de los componentes de acuerdo con el espacio disponible.
+
+La identidad visual de EcoTrack utiliza principalmente tonalidades verdes y teal asociadas con sostenibilidad, tecnología y análisis de información ambiental. Asimismo, se utilizan colores neutros para fondos, superficies y contenido textual, permitiendo mantener una jerarquía visual clara.
+
+Roboto se utiliza como tipografía principal debido a su legibilidad en interfaces digitales. La jerarquía tipográfica diferencia títulos, subtítulos, contenido principal y textos complementarios mediante variaciones de tamaño y peso.
+
+Los componentes visuales, como Buttons, Cards, Form Fields y elementos de navegación, mantienen criterios consistentes de espaciado, bordes, estados y jerarquía visual de acuerdo con el Design System planteado para EcoTrack.
+
+El Navbar incorpora la identidad de EcoTrack, las principales opciones de navegación, una Call To Action y un selector de idioma. English se presenta como idioma predeterminado, mientras que Latin American Spanish se considera como segunda alternativa dentro de la experiencia.
+
+La sección Hero utiliza una composición destacada que presenta la propuesta de valor de EcoTrack junto con una representación visual de la futura interfaz de la plataforma. Esta representación incluye indicadores relacionados con emisiones, Scope 1, Scope 2, Scope 3, tendencias y objetivos de reducción.
+
+Problem & Benefits utiliza elementos visuales y Cards para representar el problema relacionado con la dispersión de información ambiental y los beneficios principales asociados con la centralización y análisis de dicha información.
+
+La sección Features presenta las funcionalidades principales mediante Cards visualmente consistentes. Estas incluyen Emission Registration, Carbon Footprint Calculation, Indicators Dashboard, Reduction Goals y Reports.
+
+Emission Scopes utiliza una composición diferenciada para Scope 1, Scope 2 y Scope 3, permitiendo identificar visualmente cada categoría de emisiones considerada por EcoTrack.
+
+How It Works representa el flujo principal de uso mediante cinco pasos:
+
+`Register Emissions → Calculate Carbon Footprint → Analyze Indicators → Define Reduction Goals → Generate Reports`
+
+La sección Standards presenta GHG Protocol e ISO 14064 como referencias consideradas dentro del dominio de EcoTrack. La propuesta visual evita representar estas referencias como certificaciones o acreditaciones de la plataforma.
+
+Subscription Plans presenta la estructura prevista para las futuras alternativas de suscripción de EcoTrack. Debido a que los nombres, precios y características específicas de los planes todavía no han sido definidos, se utilizan contenidos visuales genéricos que permiten representar la estructura sin establecer condiciones comerciales definitivas.
+
+La sección Contact utiliza un formulario orientado a organizaciones interesadas en obtener información adicional sobre EcoTrack. Los Form Fields mantienen labels visibles y una jerarquía clara para Company Name, Corporate Email, Sector, Phone y Message, además de una opción de consentimiento y la Call To Action `Send Request`.
+
+Finalmente, el Footer utiliza una superficie oscura que contrasta con el contenido principal y agrupa la identidad de EcoTrack, enlaces de navegación, información corporativa y espacios destinados a información legal.
+
+#### Desktop Web Browser
+
+La versión Desktop aprovecha el espacio horizontal para presentar composiciones de múltiples columnas, Cards distribuidas horizontalmente y una mayor separación entre contenido textual y elementos visuales.
+
+![EcoTrack Desktop Mock-up - Hero and Problem](./assets/chapter-04/landing-page-ui-design/mockup-desktop-01-hero-problem.png)
+
+![EcoTrack Desktop Mock-up - Features and Emission Scopes](./assets/chapter-04/landing-page-ui-design/mockup-desktop-02-features-scopes.png)
+
+![EcoTrack Desktop Mock-up - How It Works and Standards](./assets/chapter-04/landing-page-ui-design/mockup-desktop-03-how-standards.png)
+
+![EcoTrack Desktop Mock-up - Plans, Contact and Footer](./assets/chapter-04/landing-page-ui-design/mockup-desktop-04-plans-contact-footer.png)
+
+#### Mobile Web Browser
+
+La versión Mobile conserva la misma identidad visual y arquitectura de información de la versión Desktop, reorganizando los componentes en una estructura vertical.
+
+El Navbar utiliza una configuración compacta, mientras que Cards, funcionalidades, Emission Scopes, Standards y Subscription Plans se presentan de forma apilada.
+
+How It Works adapta el recorrido horizontal de Desktop a una secuencia vertical, facilitando la lectura de los pasos en pantallas pequeñas.
+
+Los Buttons y Form Fields se adaptan al espacio disponible, manteniendo dimensiones apropiadas para interacción táctil y separación suficiente entre elementos interactivos.
+
+![EcoTrack Mobile Mock-up - Hero and Problem](./assets/chapter-04/landing-page-ui-design/mockup-mobile-01-hero-problem.png)
+
+![EcoTrack Mobile Mock-up - Features and Emission Scopes](./assets/chapter-04/landing-page-ui-design/mockup-mobile-02-features-scopes.png)
+
+![EcoTrack Mobile Mock-up - How It Works and Standards](./assets/chapter-04/landing-page-ui-design/mockup-mobile-03-how-standards.png)
+
+![EcoTrack Mobile Mock-up - Subscription Plans](./assets/chapter-04/landing-page-ui-design/mockup-mobile-04-plans.png)
+
+![EcoTrack Mobile Mock-up - Contact and Footer](./assets/chapter-04/landing-page-ui-design/mockup-mobile-05-contact-footer.png)
+
+La propuesta busca mantener una experiencia consistente entre Desktop y Mobile, aplicando la identidad visual de EcoTrack, una jerarquía clara, componentes reutilizables y una distribución responsive que facilite la comprensión y navegación del Landing Page.
 
 ## 4.4. Web Applications UX/UI Design
 
