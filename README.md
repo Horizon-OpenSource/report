@@ -236,11 +236,39 @@ Durante el desarrollo del TB2, se registrará la participación final de los int
 
 # Student Outcome
 
-<!--
-Incluir el párrafo introductorio y el cuadro del Student Outcome
-establecido en el Anexo A del enunciado.
--->
+El curso contribuye al cumplimiento del **ABET – EAC – Student Outcome 3**:
 
+> **Capacidad de comunicarse efectivamente con un rango de audiencias.**
+
+En las siguientes tablas se describen las acciones realizadas y las conclusiones de cada integrante del equipo, con el objetivo de evidenciar el cumplimiento del Student Outcome durante las diferentes entregas del proyecto.
+
+---
+
+## Criterio específico 1
+
+### Comunica oralmente con efectividad a diferentes rangos de audiencia
+
+| Integrante | Entrega | Acciones realizadas | Conclusiones |
+|---|---|---|---|
+| Rolando Andre Torres Diaz | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Lacuta Lima, Alex Rodrigo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Espinoza Flores, Aaron André | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Payesa Torres, Harrison Hubert | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Tello Murga, Javier Oswaldo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
+
+---
+
+## Criterio específico 2
+
+### Comunica por escrito con efectividad a diferentes rangos de audiencia
+
+| Integrante | Entrega | Acciones realizadas | Conclusiones |
+|---|---|---|---|
+| Rolando Andre Torres Diaz | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Lacuta Lima, Alex Rodrigo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Espinoza Flores, Aaron André | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Payesa Torres, Harrison Hubert | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Tello Murga, Javier Oswaldo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
 ---
 
 # Capítulo I: Introducción
