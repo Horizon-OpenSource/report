@@ -377,7 +377,41 @@ establecido en el Anexo A del enunciado.
 
 ### 4.1.1. General Style Guidelines
 
-<!-- Completar -->
+La identidad visual de EcoTrack ha sido planteada para transmitir sostenibilidad, tecnología, confianza y profesionalismo. Estas características se relacionan con la naturaleza del producto, ya que EcoTrack es una plataforma web B2B orientada a la gestión de la huella de carbono y de información ambiental en organizaciones.
+
+Como referencia para mantener consistencia visual, legibilidad y facilidad de uso en los diferentes productos digitales, se consideran principios de Material Design. A partir de ello, se establecen lineamientos generales relacionados con el Branding, la Color Palette, la Typography, el Spacing y el Tone of Voice de EcoTrack.
+
+#### Branding
+
+La identidad de EcoTrack combina conceptos relacionados con sostenibilidad, monitoreo ambiental y análisis de información. El nombre de la marca se acompaña de un elemento gráfico simple que busca representar el seguimiento y análisis de indicadores relacionados con la huella de carbono.
+
+La identidad visual busca mantener una apariencia moderna y profesional, acorde con una plataforma utilizada por organizaciones que necesitan registrar, analizar y monitorear sus emisiones de gases de efecto invernadero.
+
+![EcoTrack Branding](./assets/chapter-04/style-guidelines/branding-guidelines.png)
+
+#### Color Palette
+
+La paleta de colores de EcoTrack está compuesta principalmente por tonalidades verdes y teal. El verde se utiliza como color principal por su asociación con sostenibilidad y gestión ambiental, mientras que el teal complementa la identidad al aportar una percepción relacionada con tecnología, información y análisis de datos.
+
+![EcoTrack Color Palette](./assets/chapter-04/style-guidelines/color-palette.png)
+
+#### Typography
+
+Roboto será la tipografía principal utilizada en EcoTrack debido a su legibilidad en interfaces digitales y su relación con los principios de Material Design. Se utiliza una jerarquía tipográfica que permite diferenciar títulos, subtítulos, contenido descriptivo, etiquetas y datos.
+
+![EcoTrack Typography](./assets/chapter-04/style-guidelines/typography-hierarchy.png)
+
+#### Spacing
+
+EcoTrack utiliza un sistema de espaciado basado en múltiplos de 8 px con el objetivo de mantener consistencia entre componentes, secciones y diferentes resoluciones de pantalla.
+
+![EcoTrack Spacing System](./assets/chapter-04/style-guidelines/spacing-system.png)
+
+#### Tone of Voice
+
+EcoTrack utiliza un tono profesional, claro, confiable y orientado a datos. La comunicación busca facilitar la comprensión de información ambiental y apoyar la toma de decisiones, evitando mensajes ambiguos, exagerados o que atribuyan capacidades que la plataforma no ofrece.
+
+![EcoTrack Tone of Voice](./assets/chapter-04/style-guidelines/tone-of-voice.png)
 
 ### 4.1.2. Web Style Guidelines
 
