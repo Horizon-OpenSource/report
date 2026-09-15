@@ -713,7 +713,49 @@ Las User Stories y Technical Stories identificadas para EcoTrack se organizan en
 
 ## 3.3. Product Backlog
 
-<!-- Completar -->
+| Orden | ID | Título | Epic | Prioridad | Story Points | Estado |
+|---:|---|---|---|---|---:|---|
+| 1 | US-01 | Conocer EcoTrack | EP-01 | Alta | 2 | Pendiente |
+| 2 | US-02 | Conocer los beneficios de EcoTrack | EP-01 | Media | 2 | Pendiente |
+| 3 | US-03 | Conocer las funcionalidades principales | EP-01 | Media | 2 | Pendiente |
+| 4 | US-04 | Conocer los planes disponibles | EP-01 | Baja | 2 | Pendiente |
+| 5 | US-05 | Contactar al equipo de EcoTrack | EP-01 | Media | 3 | Pendiente |
+| 6 | US-06 | Registrar una empresa | EP-02 | Alta | 5 | Pendiente |
+| 7 | US-07 | Iniciar sesión | EP-02 | Alta | 5 | Pendiente |
+| 8 | US-08 | Recuperar contraseña | EP-02 | Media | 3 | Pendiente |
+| 9 | US-09 | Consultar perfil de la empresa | EP-02 | Media | 2 | Pendiente |
+| 10 | US-10 | Actualizar datos de la empresa | EP-02 | Media | 3 | Pendiente |
+| 11 | US-11 | Registrar una fuente de emisión | EP-03 | Alta | 5 | Pendiente |
+| 12 | US-12 | Clasificar una emisión por alcance | EP-03 | Alta | 3 | Pendiente |
+| 13 | US-13 | Consultar emisiones registradas | EP-03 | Alta | 3 | Pendiente |
+| 14 | US-14 | Editar una emisión | EP-03 | Alta | 3 | Pendiente |
+| 15 | US-15 | Eliminar una emisión | EP-03 | Media | 2 | Pendiente |
+| 16 | US-16 | Visualizar total de emisiones | EP-04 | Alta | 3 | Pendiente |
+| 17 | US-17 | Visualizar emisiones por alcance | EP-04 | Alta | 5 | Pendiente |
+| 18 | US-18 | Buscar una emisión | EP-04 | Media | 2 | Pendiente |
+| 19 | US-19 | Filtrar emisiones por alcance | EP-04 | Media | 3 | Pendiente |
+| 20 | US-20 | Comparar emisiones por periodo | EP-04 | Media | 5 | Pendiente |
+| 21 | US-21 | Registrar una meta ambiental | EP-05 | Alta | 3 | Pendiente |
+| 22 | US-22 | Consultar metas ambientales | EP-05 | Alta | 3 | Pendiente |
+| 23 | US-23 | Editar una meta ambiental | EP-05 | Media | 3 | Pendiente |
+| 24 | US-24 | Actualizar estado de una meta | EP-05 | Media | 2 | Pendiente |
+| 25 | US-25 | Eliminar una meta | EP-05 | Baja | 2 | Pendiente |
+| 26 | US-26 | Consultar resumen ambiental | EP-06 | Alta | 3 | Pendiente |
+| 27 | US-27 | Generar reporte ambiental | EP-06 | Alta | 5 | Pendiente |
+| 28 | US-28 | Descargar reporte ambiental | EP-06 | Media | 3 | Pendiente |
+| 29 | US-29 | Generar reporte por periodo | EP-06 | Media | 5 | Pendiente |
+| 30 | US-30 | Consultar reportes anteriores | EP-06 | Baja | 3 | Pendiente |
+
+### Epics relacionados
+
+| Epic ID | Epic |
+|---|---|
+| EP-01 | Landing Page e información de EcoTrack |
+| EP-02 | Gestión de cuenta y empresa |
+| EP-03 | Gestión de emisiones |
+| EP-04 | Dashboard y análisis de emisiones |
+| EP-05 | Gestión de metas ambientales |
+| EP-06 | Reportes ambientales |
 
 ---
 
