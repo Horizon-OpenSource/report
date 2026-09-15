@@ -571,73 +571,296 @@ Ambos segmentos comparten la necesidad de contar con información ambiental orga
 
 # Capítulo II: Requirements Elicitation & Analysis
 
+Este capítulo presenta el proceso de obtención y análisis de información para **EcoTrack**, una plataforma web B2B SaaS desarrollada por **Horizon** para apoyar a empresas exportadoras, corporaciones y medianas empresas industriales en el registro, cálculo, análisis y gestión de sus emisiones de gases de efecto invernadero.
+
 ## 2.1. Competidores
+
+Para el análisis de competidores se consideraron productos digitales y servicios que atienden necesidades relacionadas con medición de huella de carbono, gestión de información ambiental, reportes ESG y seguimiento de objetivos de sostenibilidad. EcoTrack compite principalmente con plataformas internacionales de gestión de carbono y, de forma indirecta, con consultoras ambientales que realizan mediciones y reportes mediante servicios especializados.
+
+Los competidores seleccionados son:
+
+- **Greenly:** plataforma orientada a medir, analizar y reducir emisiones de carbono empresariales.
+- **Plan A:** plataforma de gestión de carbono y descarbonización corporativa enfocada en reportes ESG y reducción de emisiones.
+- **Persefoni:** plataforma de contabilidad de carbono y gestión climática para empresas con necesidades avanzadas de reporte.
 
 ### 2.1.1. Análisis competitivo
 
-<!-- Completar -->
+El objetivo del análisis competitivo es responder: **¿Cómo puede EcoTrack ofrecer una solución accesible, centralizada y adaptada a empresas latinoamericanas que necesitan medir, analizar y reportar su huella de carbono sin depender de hojas de cálculo o sistemas separados?**
+
+| Perfil | Horizon / EcoTrack | Greenly | Plan A | Persefoni |
+|---|---|---|---|---|
+| Overview | Plataforma web B2B SaaS para registrar emisiones, calcular huella de carbono, visualizar dashboards, crear metas ambientales y generar reportes. | Plataforma digital para medición y reducción de emisiones empresariales. | Plataforma para contabilidad de carbono, descarbonización y reportes ESG. | Plataforma de contabilidad de carbono y gestión climática empresarial. |
+| Ventaja competitiva | Enfoque en empresas exportadoras e industriales de Latinoamérica, precios en soles, planes escalables y gestión centralizada por sedes. | Reconocimiento internacional y enfoque en reducción de carbono. | Enfoque estratégico en sostenibilidad corporativa y cumplimiento ESG. | Solución robusta para organizaciones con alta exigencia de reporte climático. |
+| ¿Qué valor ofrece a los clientes? | Centraliza información ambiental, reduce dependencia de hojas de cálculo, calcula emisiones y facilita reportes ambientales. | Ayuda a medir emisiones y definir acciones de reducción. | Permite planificar estrategias de descarbonización y monitorear resultados. | Permite gestionar inventarios de carbono y reportes con trazabilidad. |
+| Mercado objetivo | Empresas exportadoras, corporaciones y medianas empresas industriales que requieren gestionar emisiones y reportes ambientales. | Empresas que desean medir y reducir su huella de carbono. | Empresas medianas y grandes con objetivos ESG. | Corporaciones con necesidades complejas de contabilidad de carbono. |
+| Estrategias de marketing | Mensaje centrado en simplicidad, accesibilidad, centralización y soporte para auditorías o requerimientos ambientales. | Posicionamiento como solución climática integral. | Comunicación enfocada en cumplimiento ESG y descarbonización. | Comunicación orientada a precisión, cumplimiento y gestión climática empresarial. |
+| Productos & Servicios | Registro de emisiones, cálculo de huella de carbono, dashboards, reportes, metas ambientales, planes de reducción, importación CSV y API empresarial. | Medición de carbono, análisis de datos y recomendaciones de reducción. | Gestión de emisiones, objetivos de reducción y reportes ESG. | Contabilidad de carbono, reportes climáticos y análisis de emisiones. |
+| Precios & Costos | Plan Básico S/ 199, Plan Pro S/ 499 y Plan Empresa desde S/ 1,200 mensuales. | Costos variables según empresa y alcance del servicio. | Costos variables según tamaño y necesidades de la organización. | Costos orientados a empresas con necesidades avanzadas. |
+| Canales de distribución | Landing Page, Web Application, ventas B2B, contacto comercial y suscripción SaaS. | Sitio web, demostraciones comerciales y ventas B2B. | Sitio web, ventas consultivas y contacto empresarial. | Sitio web, ventas empresariales y demostraciones comerciales. |
+
+#### Análisis SWOT
+
+| Elemento | Horizon / EcoTrack | Greenly | Plan A | Persefoni |
+|---|---|---|---|---|
+| Fortalezas | Precios definidos, enfoque regional, planes escalables, módulos claros y orientación a empresas exportadoras e industriales. | Marca internacional reconocida y experiencia en medición de carbono. | Enfoque sólido en descarbonización y reportes ESG. | Plataforma robusta para contabilidad de carbono empresarial. |
+| Debilidades | Marca nueva, menor reconocimiento inicial y necesidad de validar la propuesta con usuarios reales. | Puede percibirse como menos adaptada a necesidades locales latinoamericanas. | Puede resultar compleja para empresas que recién inician gestión ambiental. | Puede estar más orientada a corporaciones grandes que a medianas empresas. |
+| Oportunidades | Crecimiento de exigencias ambientales para exportación, auditorías, certificaciones y reportes de sostenibilidad. | Expansión hacia nuevos mercados y empresas con objetivos climáticos. | Mayor presión regulatoria y corporativa sobre reportes ESG. | Mayor demanda de contabilidad climática en organizaciones globales. |
+| Amenazas | Competidores internacionales con mayor presupuesto y consultoras ambientales con relaciones previas. | Aparición de soluciones regionales más económicas. | Competencia de plataformas especializadas por sector. | Competencia de consultoras y soluciones internas empresariales. |
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-<!-- Completar -->
+EcoTrack utilizará una estrategia de diferenciación basada en accesibilidad, adaptación al contexto latinoamericano y facilidad de uso para empresas que aún gestionan su información ambiental mediante hojas de cálculo o documentos dispersos.
 
----
+1. **Enfoque en segmentos específicos.** EcoTrack priorizará empresas exportadoras, corporaciones y medianas empresas industriales que necesitan centralizar información ambiental para responder a auditorías, certificaciones, clientes internacionales o decisiones internas de sostenibilidad.
+2. **Planes de suscripción claros.** La plataforma ofrecerá planes Básico, Pro y Empresa, permitiendo que las organizaciones inicien con funcionalidades esenciales y escalen hacia capacidades avanzadas como Alcance 3, múltiples sedes, importación CSV y EcoTrack API.
+3. **Centralización de información ambiental.** EcoTrack reducirá la dependencia de hojas de cálculo mediante un entorno único para registrar fuentes de emisión, sedes, periodos, cálculos, metas y reportes.
+4. **Facilidad para reportar.** La generación de reportes ambientales permitirá que responsables de sostenibilidad y analistas ambientales comuniquen resultados de forma más rápida y ordenada.
+5. **Adaptación a empresas con múltiples sedes.** El Plan Empresa permitirá gestionar sedes, unidades de negocio, roles avanzados y consolidación de información ambiental.
 
 ## 2.2. Entrevistas
 
+Las entrevistas permitirán validar la problemática identificada, conocer los procesos actuales de los segmentos objetivo y obtener información para elaborar los artefactos de Needfinding. Para cada segmento se deberán realizar entre 3 y 5 entrevistas registradas en video.
+
 ### 2.2.1. Diseño de entrevistas
 
-Las preguntas buscan identificar cómo gestionan actualmente la información ambiental, qué dificultades encuentran y qué funcionalidades podrían resultarles más útiles dentro de EcoTrack.
+#### Objetivo general
+
+Identificar cómo las empresas exportadoras, corporaciones y medianas empresas industriales registran, calculan, analizan y reportan actualmente su información ambiental, con el fin de validar las necesidades que EcoTrack busca atender.
 
 #### Segmento 1: Empresas exportadoras
 
-<!-- Completar -->
+| # | Pregunta |
+|---|---|
+| 1 | ¿Qué tipo de información ambiental les solicitan actualmente clientes, certificadoras o socios comerciales? |
+| 2 | ¿Con qué frecuencia preparan reportes o evidencias relacionadas con emisiones, consumo energético, transporte, residuos u otros indicadores ambientales? |
+| 3 | ¿Qué herramientas utilizan actualmente para registrar y consolidar la información ambiental de la empresa? |
+| 4 | ¿Qué dificultades aparecen cuando la información ambiental se encuentra en hojas de cálculo, documentos o sistemas separados? |
+| 5 | ¿Qué datos relacionados con consumo de energía, combustible, transporte o procesos productivos son más importantes para sus reportes? |
+| 6 | ¿Qué consecuencias comerciales podría tener no contar con información ambiental actualizada o confiable? |
+| 7 | ¿Qué tan útil sería contar con una plataforma que calcule la huella de carbono y genere reportes ambientales por periodo? |
+| 8 | ¿Qué información debería mostrar un dashboard ambiental para ayudarles a responder mejor a clientes, auditorías o certificaciones? |
+
+#### Segmento 2: Corporaciones y medianas empresas industriales
+
+| # | Pregunta |
+|---|---|
+| 1 | ¿Cuáles son las principales fuentes de consumo energético o emisiones dentro de las operaciones de la empresa? |
+| 2 | ¿La empresa registra información ambiental por sede, planta, área o unidad de negocio? ¿Cómo se organiza actualmente esa información? |
+| 3 | ¿Quiénes participan en la recolección, revisión y aprobación de los datos ambientales? |
+| 4 | ¿Qué procesos actuales dependen de hojas de cálculo, correos, documentos o registros manuales? |
+| 5 | ¿Qué dificultades aparecen al comparar consumos o emisiones entre diferentes periodos, sedes o áreas? |
+| 6 | ¿Qué indicadores ambientales necesita revisar la gerencia para tomar decisiones operativas o de sostenibilidad? |
+| 7 | ¿Qué valor tendría asignar metas de reducción por sede, área o fuente de emisión y hacer seguimiento a su avance? |
+| 8 | ¿Qué tan importante sería contar con dashboards, reportes e historial de cálculos dentro de una sola plataforma? |
 
 ### 2.2.2. Registro de entrevistas
 
-<!-- Completar -->
+Las entrevistas se registrarán en video y se consolidarán en un único archivo publicado en Microsoft Stream. Cada entrevista deberá incluir información del entrevistado, segmento objetivo, screenshot del video, URL, timing de inicio, duración y resumen descriptivo de las respuestas.
 
----
+| Campo | Detalle |
+|---|---|
+| Nombre del archivo | upc-pre-202620-1asi0729-7753-horizon-needfinding-sprint-1.mp4 |
+| Plataforma | Microsoft Stream |
+| URL del video | [Completar URL de Microsoft Stream] |
+| Duración total | [Completar duración total] |
+
+#### Registro de entrevistas del Segmento 1: Empresas exportadoras
+
+| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duración |
+|---|---|---:|---|---|---|---|---|---|---|
+| E01 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+| E02 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+| E03 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+
+#### Registro de entrevistas del Segmento 2: Corporaciones y medianas empresas industriales
+
+| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duración |
+|---|---|---:|---|---|---|---|---|---|---|
+| E04 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+| E05 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+| E06 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
 
 ### 2.2.3. Análisis de entrevistas
 
-<!-- Completar -->
+El análisis de entrevistas deberá completarse con los resultados obtenidos luego de realizar las entrevistas reales. Esta sección permitirá identificar patrones por segmento, sustentar los User Personas y justificar las principales necesidades que serán atendidas por EcoTrack.
 
----
+| Segmento | Variable de análisis | Resultado esperado | Sustento |
+|---|---|---|---|
+| Empresas exportadoras | Uso de hojas de cálculo para registrar información ambiental | [Completar %] | Entrevistas E01, E02 y E03 |
+| Empresas exportadoras | Necesidad de reportes para clientes, certificadoras o socios comerciales | [Completar %] | Entrevistas E01, E02 y E03 |
+| Empresas exportadoras | Dificultad para consolidar datos de consumo energético, combustible o transporte | [Completar %] | Entrevistas E01, E02 y E03 |
+| Empresas exportadoras | Interés en dashboards y reportes ambientales por periodo | [Completar %] | Entrevistas E01, E02 y E03 |
+| Corporaciones y medianas empresas industriales | Registro de información por sede, planta o área | [Completar %] | Entrevistas E04, E05 y E06 |
+| Corporaciones y medianas empresas industriales | Dificultad para comparar emisiones o consumos entre periodos | [Completar %] | Entrevistas E04, E05 y E06 |
+| Corporaciones y medianas empresas industriales | Necesidad de indicadores para gerencia | [Completar %] | Entrevistas E04, E05 y E06 |
+| Corporaciones y medianas empresas industriales | Interés en metas ambientales y seguimiento de planes de reducción | [Completar %] | Entrevistas E04, E05 y E06 |
+
+Para el Segmento 1 se espera validar si las empresas exportadoras necesitan información ambiental ordenada para responder a exigencias externas. Para el Segmento 2 se espera validar si las corporaciones y medianas empresas industriales requieren consolidar información de distintas sedes, áreas o procesos productivos.
 
 ## 2.3. Needfinding
 
+El proceso de Needfinding permite transformar la información obtenida en entrevistas y análisis competitivo en una comprensión clara de las necesidades de los usuarios.
+
 ### 2.3.1. User Personas
 
-<!-- Completar -->
+#### User Persona 1: Valeria Rojas
+
+| Campo | Descripción |
+|---|---|
+| Segmento | Empresas exportadoras |
+| Edad | 34 años |
+| Cargo | Responsable de sostenibilidad |
+| Perfil | Profesional encargada de organizar información ambiental para clientes, certificaciones y reportes internos. |
+| Objetivos | Preparar reportes ambientales confiables, responder solicitudes externas y mantener información actualizada sobre emisiones. |
+| Frustraciones | Datos dispersos, cálculos manuales, dificultad para validar información y presión por responder rápido a clientes o auditorías. |
+| Necesidades | Centralizar datos, generar reportes por periodo, consultar historial de emisiones y reducir errores de registro. |
+| Canales digitales | Correo electrónico, hojas de cálculo, plataformas de gestión documental y reuniones virtuales. |
+
+#### User Persona 2: Carlos Medina
+
+| Campo | Descripción |
+|---|---|
+| Segmento | Corporaciones y medianas empresas industriales |
+| Edad | 41 años |
+| Cargo | Gerente de operaciones |
+| Perfil | Responsable de supervisar procesos productivos, consumo de recursos y desempeño operativo en una empresa con varias áreas o sedes. |
+| Objetivos | Controlar consumos, identificar fuentes de emisión relevantes y tomar decisiones para mejorar la eficiencia operativa. |
+| Frustraciones | Falta de visibilidad por sede, dificultad para comparar periodos, información incompleta y dependencia de reportes elaborados manualmente. |
+| Necesidades | Dashboards por sede, indicadores ambientales, comparación entre periodos y seguimiento de metas de reducción. |
+| Canales digitales | Sistemas internos, correo electrónico, hojas de cálculo, dashboards corporativos y reportes ejecutivos. |
 
 ### 2.3.2. User Task Matrix
 
-<!-- Completar -->
+| Task | Valeria Rojas - Frecuencia | Valeria Rojas - Importancia | Carlos Medina - Frecuencia | Carlos Medina - Importancia |
+|---|---|---|---|---|
+| Recolectar datos ambientales desde distintas áreas | Alta | Alta | Media | Alta |
+| Consolidar información en hojas de cálculo | Alta | Alta | Media | Media |
+| Validar datos antes de preparar reportes | Alta | Alta | Media | Alta |
+| Calcular emisiones por periodo | Media | Alta | Media | Media |
+| Preparar reportes ambientales | Alta | Alta | Baja | Media |
+| Responder solicitudes de clientes, auditorías o certificaciones | Alta | Alta | Baja | Media |
+| Revisar consumos por sede o área | Media | Media | Alta | Alta |
+| Comparar emisiones entre periodos | Media | Alta | Alta | Alta |
+| Definir metas de reducción | Baja | Media | Media | Alta |
+| Hacer seguimiento a planes de reducción | Baja | Media | Alta | Alta |
+
+Después de revisar la matriz, se observa que Valeria Rojas concentra mayor frecuencia en actividades de recopilación, validación y reporte, mientras que Carlos Medina prioriza la comparación de información, revisión de indicadores y seguimiento de acciones de reducción.
 
 ### 2.3.3. User Journey Mapping
 
-<!-- Completar -->
+Los User Journey Maps representan la experiencia actual de los usuarios sin EcoTrack. Para esta etapa se consideran journeys As-Is, centrados en cómo los usuarios realizan hoy sus tareas ambientales mediante procesos manuales, hojas de cálculo y coordinación entre áreas.
+
+#### User Journey Map As-Is: Valeria Rojas
+
+| Etapa | Acción | Pensamiento | Emoción | Pain Point | Oportunidad |
+|---|---|---|---|---|---|
+| Recibe solicitud ambiental | Cliente o certificadora solicita información ambiental actualizada. | Necesito responder con datos confiables. | Preocupación | No toda la información está centralizada. | Centralizar solicitudes y datos por periodo. |
+| Solicita datos internos | Pide información a operaciones, logística y administración. | Dependo de que otras áreas respondan a tiempo. | Ansiedad | La información llega en distintos formatos. | Estandarizar registros ambientales. |
+| Consolida información | Organiza datos en hojas de cálculo. | Debo revisar que no existan errores. | Cansancio | Riesgo de duplicidad o datos incompletos. | Automatizar validaciones y cálculos. |
+| Prepara reporte | Redacta resultados y adjunta evidencias. | El reporte debe ser claro y defendible. | Presión | La preparación toma mucho tiempo. | Generar reportes ambientales automáticamente. |
+| Envía información | Comparte el reporte con cliente, certificadora o gerencia. | Espero que no soliciten correcciones. | Incertidumbre | Difícil rastrear cambios o evidencias. | Mantener historial y trazabilidad. |
+
+#### User Journey Map As-Is: Carlos Medina
+
+| Etapa | Acción | Pensamiento | Emoción | Pain Point | Oportunidad |
+|---|---|---|---|---|---|
+| Revisa consumos | Solicita información de consumo energético, combustible o producción. | Necesito entender dónde se consume más. | Interés | Los datos no siempre llegan completos. | Consolidar datos por sede o área. |
+| Compara periodos | Contrasta información mensual o trimestral. | Debo identificar tendencias relevantes. | Frustración | La comparación manual toma tiempo. | Mostrar comparaciones automáticas. |
+| Identifica problemas | Busca áreas con alto consumo o emisiones elevadas. | Debo priorizar acciones. | Preocupación | No hay indicadores visuales actualizados. | Implementar dashboards ambientales. |
+| Coordina acciones | Propone iniciativas de reducción con responsables. | Necesito que el equipo haga seguimiento. | Responsabilidad | No existe seguimiento centralizado. | Gestionar metas y planes de reducción. |
+| Evalúa resultados | Revisa si las acciones redujeron consumos o emisiones. | Necesito evidencia para justificar decisiones. | Incertidumbre | Difícil medir avance real. | Relacionar metas con indicadores y reportes. |
 
 ### 2.3.4. Empathy Mapping
 
-<!-- Completar -->
+Los Empathy Maps permiten comprender lo que cada User Persona dice, piensa, hace y necesita en relación con la gestión ambiental. Estos artefactos se elaborarán en UXPressia y se incorporarán como capturas en el informe.
 
----
+#### Empathy Map: Valeria Rojas
+
+| Dimensión | Descripción |
+|---|---|
+| ¿Qué dice? | “Necesito información ambiental confiable para responder a clientes y certificadoras.” |
+| ¿Qué piensa y siente? | Siente presión por entregar reportes correctos y preocupación por posibles errores en los datos. |
+| ¿Qué ve? | Hojas de cálculo, correos, documentos dispersos y solicitudes ambientales cada vez más frecuentes. |
+| ¿Qué escucha? | Clientes, gerencia y certificadoras piden evidencia clara y actualizada. |
+| ¿Qué hace? | Solicita datos, valida información, consolida registros y prepara reportes. |
+| Pains | Datos dispersos, cálculos manuales, poco historial y dificultad para sustentar evidencias. |
+| Gains | Reportes rápidos, información centralizada, historial confiable y menor esfuerzo operativo. |
+
+#### Empathy Map: Carlos Medina
+
+| Dimensión | Descripción |
+|---|---|
+| ¿Qué dice? | “Necesito saber qué sede o proceso genera mayor impacto para tomar decisiones.” |
+| ¿Qué piensa y siente? | Siente responsabilidad por mejorar la eficiencia operativa y reducir consumos. |
+| ¿Qué ve? | Información distribuida por áreas, reportes manuales y poca visibilidad de indicadores ambientales. |
+| ¿Qué escucha? | Gerencia solicita resultados medibles y equipos operativos reportan datos de forma irregular. |
+| ¿Qué hace? | Revisa consumos, compara periodos, coordina acciones de mejora y evalúa resultados. |
+| Pains | Falta de dashboards, dificultad para comparar periodos y ausencia de seguimiento centralizado. |
+| Gains | Indicadores por sede, comparación automática, metas ambientales y planes de reducción visibles. |
 
 ## 2.4. Big Picture Event Storming
 
-<!-- Completar -->
+El Big Picture Event Storming permite representar visualmente los principales eventos del dominio de EcoTrack. Esta técnica ayuda a comprender el flujo general del negocio, identificar procesos relevantes y reconocer oportunidades para estructurar la solución.
 
----
+| Evento de dominio | Descripción |
+|---|---|
+| Organization Registered | Una empresa se registra en EcoTrack para gestionar su información ambiental. |
+| User Invited | Un administrador invita usuarios de la organización y asigna roles. |
+| Facility Registered | Se registra una sede, planta o unidad de negocio. |
+| Emission Source Registered | Se registra una fuente de emisión asociada a una sede, alcance y categoría. |
+| Activity Data Recorded | Se registra información de actividad, como consumo de energía, combustible, transporte o residuos. |
+| Emission Factor Selected | Se selecciona un factor de emisión para realizar el cálculo correspondiente. |
+| Carbon Footprint Calculated | Se calcula la huella de carbono para un periodo determinado. |
+| Emissions History Reviewed | El usuario consulta el historial de emisiones registradas. |
+| Environmental Dashboard Updated | El dashboard ambiental muestra indicadores actualizados. |
+| Reduction Goal Created | Se crea una meta ambiental para reducir emisiones o consumos. |
+| Reduction Plan Created | Se crea un plan de reducción asociado a una meta ambiental. |
+| Initiative Registered | Se registra una iniciativa ambiental vinculada a un plan de reducción. |
+| Progress Reviewed | Se revisa el avance de una meta o plan ambiental. |
+| Environmental Report Generated | Se genera un reporte ambiental en PDF o formato exportable. |
+| CSV Data Imported | Una empresa del Plan Empresa importa datos mediante un archivo CSV estándar. |
+| External System Data Received | EcoTrack recibe información desde un sistema externo mediante la EcoTrack API. |
+
+### Bounded Contexts preliminares
+
+- **Identity and Access Management:** gestión de usuarios, autenticación, roles y permisos.
+- **Organization Management:** gestión de organizaciones, sedes y unidades de negocio.
+- **Emissions Management:** registro de fuentes de emisión y datos de actividad.
+- **Carbon Footprint Calculation:** selección de factores de emisión y cálculo de resultados por alcance y periodo.
+- **Goals and Reduction Plans:** creación de metas ambientales, planes de reducción e iniciativas.
+- **Analytics and Reports:** dashboards, indicadores, comparación entre periodos y generación de reportes.
+- **Data Integration:** importación mediante CSV y recepción de datos mediante EcoTrack API.
 
 ## 2.5. Ubiquitous Language
 
-<!-- Completar -->
+El Ubiquitous Language define términos del dominio ambiental que serán utilizados por el equipo Horizon y los stakeholders durante el desarrollo de EcoTrack. Los términos se presentan en inglés, mientras que las definiciones se redactan en español para mantener claridad en el informe.
+
+| Term | Definition |
+|---|---|
+| Carbon Footprint | Total de emisiones de gases de efecto invernadero generadas directa o indirectamente por una organización durante un periodo determinado. |
+| Greenhouse Gas Emissions | Emisiones de gases que contribuyen al calentamiento global y que pueden generarse por actividades productivas, transporte, energía o procesos industriales. |
+| Emission Source | Actividad, proceso, equipo o recurso que genera emisiones dentro de una organización. |
+| Scope 1 | Emisiones directas generadas por fuentes propias o controladas por la empresa. |
+| Scope 2 | Emisiones indirectas asociadas al consumo de electricidad, energía o calefacción adquirida por la empresa. |
+| Scope 3 | Otras emisiones indirectas generadas en la cadena de valor de la organización. |
+| Activity Data | Dato operativo usado para calcular emisiones, como litros de combustible, kWh consumidos, toneladas transportadas o kilómetros recorridos. |
+| Emission Factor | Valor que permite convertir un dato de actividad en una cantidad estimada de emisiones. |
+| Facility | Sede, planta, almacén u operación física donde se registran consumos y emisiones. |
+| Business Unit | Unidad organizacional que agrupa operaciones, áreas o procesos dentro de una empresa. |
+| Environmental Indicator | Métrica utilizada para evaluar el desempeño ambiental de una organización. |
+| Sustainability Report | Documento que comunica resultados, indicadores y acciones ambientales de una organización. |
+| Reduction Goal | Meta definida para disminuir emisiones, consumo energético u otro impacto ambiental. |
+| Reduction Plan | Conjunto de acciones organizadas para alcanzar una meta ambiental. |
+| Environmental Initiative | Acción específica ejecutada para reducir emisiones o mejorar el desempeño ambiental. |
+| Audit Evidence | Documento, registro o archivo que sustenta un dato ambiental, cálculo o resultado ante una revisión. |
+| CSV Import | Carga de información ambiental mediante un archivo con formato estándar. |
+| EcoTrack API | Interfaz estándar que permite recibir información ambiental desde sistemas externos de una empresa. |
+| Dashboard | Vista que presenta indicadores ambientales mediante gráficos, tarjetas y comparaciones. |
+| Reporting Period | Periodo de tiempo utilizado para registrar, calcular y analizar emisiones. |
 
 ---
 
-# Capítulo III: Requirements Specification
+# CapÃ­tulo III: Requirements Specification
 
 ## 3.1. User Stories
 
