@@ -723,7 +723,7 @@ Las estimaciones se expresan mediante Story Points utilizando los valores 1, 2, 
 
 ![Product Backlog - EcoTrack](assets/chapter-03/product-backlog.png)
 
-**URL pública del Product Backlog:** https://trello.com/invite/b/6aa986f27a19691869af8ac9/ATTId7519e1a2a964206d641f085935a961b50511C39/horizon-ecotrack
+**URL pública del Product Backlog:** https://trello.com/b/EEnlW0f1
 
 | Orden | User Story Id | Título | Descripción | Story Points |
 |---:|---|---|---|---:|
