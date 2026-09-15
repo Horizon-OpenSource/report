@@ -249,43 +249,323 @@ establecido en el Anexo A del enunciado.
 
 ### 1.1.1. Descripción de la Startup
 
-<!-- Completar -->
+**Horizon** es una startup tecnológica orientada al desarrollo de soluciones digitales que permitan a las empresas mejorar la gestión de sus procesos ambientales y avanzar hacia modelos de operación más sostenibles.
+
+La startup surge a partir de la necesidad de muchas organizaciones de conocer con mayor precisión el impacto ambiental generado por sus actividades. Actualmente, empresas de sectores como agricultura, minería, industria textil y manufactura necesitan medir sus emisiones de gases de efecto invernadero, controlar el uso de recursos y elaborar reportes ambientales para cumplir con diferentes estándares nacionales e internacionales.
+
+Sin embargo, en muchas organizaciones esta información se encuentra distribuida en hojas de cálculo, documentos y distintos sistemas, lo que dificulta su análisis y aumenta el tiempo necesario para elaborar reportes ambientales.
+
+Frente a esta situación, Horizon propone el desarrollo de **EcoTrack**, una plataforma web B2B enfocada en centralizar y automatizar la medición y gestión de la huella de carbono de las organizaciones.
+
+EcoTrack permitirá registrar diferentes fuentes de emisiones, calcular la huella de carbono empresarial, visualizar indicadores ambientales mediante dashboards y establecer planes de reducción de emisiones. De esta manera, las organizaciones podrán disponer de información más organizada para tomar decisiones relacionadas con sostenibilidad y gestión ambiental.
+
+Además, la plataforma busca facilitar el trabajo relacionado con estándares como el **GHG Protocol**, **ISO 14064** y otras metodologías vinculadas con la medición de emisiones de gases de efecto invernadero.
+
+| Característica | Descripción |
+|---|---|
+| **Nombre de la Startup** | Horizon |
+| **Nombre del producto** | EcoTrack |
+| **Tipo de solución** | Plataforma web B2B de gestión ambiental |
+| **Sector** | Tecnología y sostenibilidad |
+| **Modelo de negocio** | Software as a Service (SaaS) |
+
+---
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-<!-- Completar perfil de cada integrante -->
 
 ---
 
 ## 1.2. Solution Profile
 
+EcoTrack es una plataforma web B2B diseñada para ayudar a las empresas a medir, gestionar y reducir su impacto ambiental mediante el registro y análisis de sus emisiones de gases de efecto invernadero.
+
+La solución permitirá que las organizaciones registren información relacionada con consumo energético, transporte, combustibles, procesos industriales y otras actividades que generan emisiones. A partir de estos datos, EcoTrack podrá calcular indicadores relacionados con la huella de carbono de la organización.
+
+La plataforma considera los tres principales alcances utilizados para clasificar las emisiones empresariales:
+
+- **Alcance 1:** emisiones directas generadas por fuentes que pertenecen o son controladas por la empresa.
+- **Alcance 2:** emisiones indirectas relacionadas con la generación de electricidad, energía o calefacción adquirida por la empresa.
+- **Alcance 3:** otras emisiones indirectas producidas dentro de la cadena de valor de la organización.
+
+Además del registro y cálculo de emisiones, EcoTrack contará con herramientas de visualización mediante dashboards, generación de reportes ambientales y establecimiento de objetivos de reducción.
+
+Entre las principales funcionalidades propuestas se encuentran:
+
+1. Gestión de usuarios, organizaciones, sedes, roles y permisos.
+2. Registro y gestión de fuentes de emisión correspondientes a los Alcances 1, 2 y 3.
+3. Cálculo automático de la huella de carbono mediante factores de emisión.
+4. Consulta de resultados de emisiones por alcance y periodo.
+5. Creación y seguimiento de metas ambientales y planes de reducción.
+6. Registro de iniciativas ambientales relacionadas con los objetivos de reducción.
+7. Visualización de dashboards e indicadores ambientales.
+8. Comparación de emisiones entre diferentes periodos.
+9. Identificación de las principales fuentes de emisión.
+10. Generación de reportes ambientales.
+
+De esta manera, EcoTrack busca centralizar los principales procesos relacionados con la gestión de la huella de carbono empresarial dentro de una sola plataforma, reduciendo la dependencia de hojas de cálculo y facilitando el análisis y seguimiento de la información ambiental.
+
+---
+
 ### 1.2.1. Antecedentes y problemática
 
-<!-- Completar -->
+Actualmente, las empresas tienen una mayor necesidad de conocer y controlar el impacto ambiental generado por sus operaciones. Actividades como el consumo de electricidad, uso de combustibles, transporte, operación de maquinaria y diferentes procesos productivos generan emisiones de gases de efecto invernadero que deben ser registradas y analizadas. El GHG Protocol establece lineamientos para que las organizaciones elaboren inventarios corporativos de emisiones y clasifica las emisiones en Scope 1, Scope 2 y Scope 3. Además, la norma ISO 14064-1 establece principios y requisitos para la cuantificación y reporte de emisiones y remociones de gases de efecto invernadero a nivel organizacional.
+
+Para comprender mejor la problemática relacionada con EcoTrack, se aplicó la técnica de las **5W y 2H: Who, What, Where, When, Why, How y How Much**.
+
+#### Who? — ¿Quiénes presentan el problema?
+
+La problemática afecta principalmente a empresas exportadoras, corporaciones y medianas empresas industriales que necesitan gestionar información relacionada con sus emisiones y desempeño ambiental.
+
+Dentro de estas organizaciones, los principales involucrados son responsables de sostenibilidad, analistas ambientales, gerentes de operaciones, supervisores de producción y personal administrativo encargado de recopilar o analizar información ambiental.
+
+#### What? — ¿Cuál es el problema?
+
+Muchas organizaciones todavía realizan procesos de contabilidad de carbono mediante recopilación manual de información y hojas de cálculo. Esto puede generar dificultades para consolidar datos provenientes de distintas áreas, además de incrementar el riesgo de información incompleta o incorrecta.
+
+Esto dificulta mantener todos los datos organizados en un mismo lugar y puede generar problemas como duplicidad de información, errores durante el registro, dificultad para realizar comparaciones y mayor tiempo para elaborar reportes.
+
+#### Where? — ¿Dónde ocurre?
+
+La problemática se presenta dentro de organizaciones donde la información ambiental proviene de diferentes áreas, como producción, logística, operaciones, administración y sostenibilidad.
+
+Los datos relacionados con carbono, energía, residuos y otros indicadores pueden encontrarse distribuidos entre distintas fuentes o áreas de la organización, dificultando su consolidación para análisis y toma de decisiones.
+
+#### When? — ¿Cuándo ocurre?
+
+El problema ocurre principalmente cuando las empresas necesitan:
+
+- Registrar nuevas fuentes de emisión.
+- Recopilar información proveniente de distintas áreas.
+- Calcular su huella de carbono.
+- Comparar resultados de diferentes periodos.
+- Elaborar reportes ambientales.
+- Evaluar el cumplimiento de metas de reducción.
+- Preparar información para auditorías o certificaciones.
+
+El GHG Protocol destaca la necesidad de que las organizaciones midan y reporten sus emisiones, mientras que ISO 14064-1 establece requisitos relacionados con el diseño, desarrollo, gestión y reporte de inventarios organizacionales de gases de efecto invernadero.
+
+#### Why? — ¿Por qué ocurre?
+
+La problemática se origina principalmente por la dependencia de procesos manuales y herramientas que funcionan de manera separada.
+
+Entre las principales causas se encuentran:
+
+- Uso frecuente de hojas de cálculo.
+- Información distribuida entre distintas áreas.
+- Falta de automatización en los cálculos.
+- Ausencia de una plataforma centralizada.
+- Registro manual de información.
+- Dificultad para mantener un historial organizado.
+- Falta de indicadores actualizados.
+
+La recopilación manual de datos y el uso de hojas de cálculo pueden incrementar el riesgo de errores, pérdida de productividad y dificultades para consolidar información de sostenibilidad.
+
+#### How? — ¿Cómo se presenta el problema?
+
+Los responsables ambientales deben recopilar información desde distintas fuentes, organizarla manualmente y realizar posteriormente los cálculos necesarios.
+
+Este proceso puede dificultar la identificación de las principales fuentes de emisión y retrasar la generación de información necesaria para la toma de decisiones.
+
+Cuando los datos cambian o se actualizan, también puede ser necesario modificar diferentes archivos o documentos de forma manual. La gestión manual de estos datos puede requerir una cantidad considerable de tiempo y trabajo, especialmente cuando se deben administrar factores de emisión y múltiples fuentes de información.
+
+#### How Much? — ¿Qué impacto genera?
+
+El impacto se refleja principalmente en el tiempo y esfuerzo necesarios para organizar, calcular y analizar la información ambiental.
+
+Entre sus principales consecuencias se encuentran:
+
+- Mayor tiempo para elaborar reportes.
+- Mayor posibilidad de errores humanos.
+- Duplicación de información.
+- Dificultad para mantener los datos actualizados.
+- Mayor esfuerzo para comparar resultados.
+- Menor rapidez para tomar decisiones.
+
+En esta primera etapa todavía no se cuenta con valores cuantitativos definitivos sobre el impacto económico o el tiempo perdido. Estos datos serán obtenidos y contrastados mediante las entrevistas realizadas a representantes de los segmentos objetivo.
+
+#### Problemática identificada
+
+A partir del análisis realizado, se identifica la necesidad de contar con una solución que permita centralizar la información ambiental de las empresas, facilitar el cálculo de emisiones y brindar una forma más sencilla de visualizar y analizar sus resultados.
+
+EcoTrack busca responder a esta problemática mediante una plataforma web orientada a la gestión de la huella de carbono empresarial, permitiendo registrar emisiones, consultar indicadores, establecer metas ambientales y generar reportes.
 
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-<!-- Completar -->
+
+El estado actual de la gestión de emisiones de gases de efecto invernadero en empresas exportadoras, corporaciones y medianas empresas industriales se encuentra principalmente enfocado en el uso de hojas de cálculo, documentos independientes y procesos manuales para registrar, organizar y analizar información ambiental.
+
+Las soluciones y procesos utilizados actualmente no siempre permiten centralizar de manera sencilla la información proveniente de distintas áreas, automatizar los cálculos de emisiones, realizar seguimiento de objetivos ambientales y generar reportes desde un mismo entorno.
+
+EcoTrack busca cubrir esta necesidad mediante una plataforma web B2B que permita centralizar el registro de emisiones, realizar cálculos de huella de carbono, visualizar indicadores ambientales, establecer metas de reducción y generar reportes.
+
+Nuestro enfoque inicial estará dirigido a empresas exportadoras y a corporaciones y medianas empresas industriales que necesiten mejorar la forma en que gestionan su información ambiental.
+
+Sabremos que la propuesta está generando resultados cuando los usuarios pertenecientes a estos segmentos puedan registrar y consultar su información ambiental de manera centralizada, identificar sus principales fuentes de emisión y considerar útil el uso de EcoTrack para reducir el esfuerzo requerido en sus procesos actuales.
 
 #### 1.2.2.2. Lean UX Assumptions
 
-<!-- Completar -->
+##### Business Assumptions
+
+- Creemos que las empresas tienen interés en mejorar la forma en que gestionan y analizan sus emisiones de gases de efecto invernadero.
+- Creemos que existe una oportunidad para ofrecer una plataforma web especializada en centralizar información ambiental empresarial.
+- Creemos que un modelo Software as a Service (SaaS) puede permitir que EcoTrack sea utilizado por organizaciones con diferentes necesidades.
+- Creemos que las empresas podrían valorar una solución que reduzca la dependencia de hojas de cálculo y procesos manuales.
+- Creemos que ofrecer diferentes planes de suscripción puede facilitar la adaptación de EcoTrack a empresas de distintos tamaños.
+
+##### Business Outcome Assumptions
+
+- Creemos que EcoTrack puede incrementar la cantidad de empresas que utilizan herramientas digitales para gestionar su información ambiental.
+- Creemos que centralizar la información puede reducir el tiempo empleado por las empresas en organizar datos ambientales.
+- Creemos que la generación de reportes puede incrementar el uso recurrente de la plataforma.
+- Creemos que los dashboards y herramientas de seguimiento pueden favorecer la permanencia de los usuarios dentro del producto.
+- Creemos que una experiencia sencilla puede contribuir a aumentar la adopción de EcoTrack entre los segmentos objetivo.
+
+##### User Assumptions
+
+- Creemos que los principales usuarios serán responsables de sostenibilidad, analistas ambientales, gerentes de operaciones y personal administrativo.
+- Creemos que los usuarios actualmente utilizan diferentes herramientas para registrar y consultar información ambiental.
+- Creemos que los usuarios necesitan revisar periódicamente sus emisiones y resultados.
+- Creemos que parte de los usuarios no cuenta con conocimientos técnicos avanzados sobre sistemas de información.
+- Creemos que los usuarios necesitan información organizada para poder comunicar los resultados ambientales dentro de sus empresas.
+
+##### User Outcome and Benefit Assumptions
+
+- Creemos que los usuarios desean reducir el tiempo necesario para organizar información ambiental.
+- Creemos que los usuarios necesitan identificar rápidamente las principales fuentes de emisión.
+- Creemos que los usuarios buscan disminuir errores relacionados con cálculos manuales.
+- Creemos que los usuarios necesitan comparar resultados entre diferentes periodos.
+- Creemos que los usuarios desean realizar seguimiento de sus objetivos de reducción de emisiones.
+- Creemos que los usuarios necesitan generar reportes de manera más sencilla para procesos internos, auditorías o certificaciones.
+
+##### Feature Assumptions
+
+- Creemos que una funcionalidad para registrar y clasificar fuentes de emisión permitirá centralizar la información ambiental de las empresas.
+- Creemos que un cálculo automático de la huella de carbono ayudará a reducir el esfuerzo y los posibles errores de los cálculos manuales.
+- Creemos que un dashboard con indicadores ambientales permitirá comprender mejor la situación de las emisiones de la organización.
+- Creemos que una funcionalidad para registrar y hacer seguimiento de metas ambientales permitirá controlar mejor los objetivos de reducción.
+- Creemos que la generación de reportes ambientales permitirá recopilar y compartir información de manera más sencilla.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-<!-- Completar -->
+A partir de los Feature Assumptions identificados, se plantean los siguientes Hypothesis Statements siguiendo la estructura propuesta por Lean UX.
+
+##### Hypothesis Statement 1
+
+We believe we will achieve **a reduction in the time companies spend organizing environmental information**
+
+If **sustainability managers, environmental analysts, operations managers and administrative staff**
+
+Attain **a centralized and structured way to register their emissions information**
+
+With **a feature for registering and classifying emission sources.**
+
+##### Hypothesis Statement 2
+
+We believe we will achieve **a reduction in the effort and potential errors associated with manual carbon footprint calculations**
+
+If **sustainability managers and environmental analysts**
+
+Attain **a simpler and more reliable way to obtain their carbon footprint results**
+
+With **an automatic carbon footprint calculation feature.**
+
+##### Hypothesis Statement 3
+
+We believe we will achieve **greater recurrent use of EcoTrack for environmental information analysis**
+
+If **sustainability managers, environmental analysts and operations managers**
+
+Attain **a clearer understanding of the organization's emissions and environmental indicators**
+
+With **an environmental indicators dashboard.**
+
+##### Hypothesis Statement 4
+
+We believe we will achieve **better follow-up of environmental objectives within organizations**
+
+If **sustainability managers and operations managers**
+
+Attain **greater control over their emission reduction objectives**
+
+With **a feature for registering and tracking environmental goals.**
+
+##### Hypothesis Statement 5
+
+We believe we will achieve **greater recurrent use of the platform for environmental reporting activities**
+
+If **sustainability managers, environmental analysts and administrative staff**
+
+Attain **an easier way to compile and communicate their environmental information**
+
+With **an environmental report generation feature.**
 
 #### 1.2.2.4. Lean UX Canvas
 
-<!-- Completar -->
+![Lean UX Canvas - EcoTrack](assets/chapter-01/lean-ux-canvas.png)
 
 ---
 
 ## 1.3. Segmentos objetivo
 
-<!-- Completar -->
+Para EcoTrack se han identificado dos segmentos objetivo principales. Ambos corresponden a organizaciones que necesitan medir, organizar y analizar información relacionada con sus emisiones de gases de efecto invernadero y su desempeño ambiental.
+
+### Segmento 1: Empresas exportadoras
+
+Este segmento está compuesto por empresas exportadoras de sectores como agricultura, industria textil, minería y otras actividades productivas que participan en mercados nacionales e internacionales.
+
+Como sustento del segmento, el Ministerio de Comercio Exterior y Turismo (MINCETUR) informó que entre enero y noviembre de 2025 el Perú registró 9,641 empresas exportadoras, de las cuales 6,702 correspondían a micro, pequeñas y medianas empresas. Asimismo, durante 2025 las exportaciones peruanas alcanzaron un récord histórico de US$ 90,082 millones. Estas cifras evidencian la existencia de una base empresarial exportadora relevante que debe gestionar información relacionada con sus procesos productivos y su desempeño frente a mercados internacionales.
+
+Estas organizaciones pueden generar emisiones relacionadas con transporte, consumo energético, uso de combustibles, operación de maquinaria y procesos productivos. Además, al trabajar con clientes y mercados internacionales, pueden tener una mayor necesidad de demostrar el cumplimiento de estándares ambientales y políticas de sostenibilidad.
+
+Entre sus principales necesidades se encuentran:
+
+- Registrar sus fuentes de emisión.
+- Calcular su huella de carbono.
+- Organizar información ambiental.
+- Generar reportes de sostenibilidad.
+- Realizar seguimiento de indicadores ambientales.
+- Cumplir con requisitos relacionados con certificaciones o estándares ambientales.
+
+Los principales usuarios dentro de estas empresas serían:
+
+- Responsables de sostenibilidad.
+- Analistas ambientales.
+- Gerentes de operaciones.
+- Personal encargado de calidad.
+- Personal encargado de certificaciones.
+
+EcoTrack busca ayudar a este segmento mediante una plataforma que permita centralizar la información ambiental y facilitar el seguimiento de sus emisiones.
+
+### Segmento 2: Corporaciones y medianas empresas industriales
+
+Este segmento está compuesto por corporaciones y medianas empresas industriales que buscan controlar y reducir el impacto ambiental generado por sus operaciones.
+
+Como sustento del segmento, el Ministerio de Comercio Exterior y Turismo (MINCETUR) informó que entre enero y noviembre de 2025 el Perú registró 9,641 empresas exportadoras, de las cuales 6,702 correspondían a micro, pequeñas y medianas empresas. Asimismo, durante 2025 las exportaciones peruanas alcanzaron un récord histórico de US$ 90,082 millones. Estas cifras evidencian la existencia de una base empresarial exportadora relevante que debe gestionar información relacionada con sus procesos productivos y su desempeño frente a mercados internacionales.
+
+Estas organizaciones pueden producir emisiones provenientes del consumo de electricidad, combustibles, transporte, maquinaria, residuos y distintos procesos productivos. Debido a que la información puede provenir de diferentes áreas de la empresa, uno de sus principales problemas es mantener los datos organizados y actualizados.
+
+Entre sus principales necesidades se encuentran:
+
+- Centralizar información proveniente de diferentes áreas.
+- Identificar las principales fuentes de emisión.
+- Comparar resultados entre diferentes periodos.
+- Visualizar indicadores mediante dashboards.
+- Establecer metas de reducción de emisiones.
+- Realizar seguimiento de sus objetivos ambientales.
+- Generar reportes para procesos internos, auditorías o certificaciones.
+
+Los principales usuarios dentro de este segmento serían:
+
+- Gerentes de operaciones.
+- Responsables de sostenibilidad.
+- Analistas ambientales.
+- Supervisores de producción.
+- Personal administrativo.
+
+Ambos segmentos comparten la necesidad de contar con información ambiental organizada, comprensible y actualizada que les permita tomar mejores decisiones relacionadas con la reducción de emisiones y la sostenibilidad.
 
 ---
 
@@ -307,11 +587,17 @@ establecido en el Anexo A del enunciado.
 
 ### 2.2.1. Diseño de entrevistas
 
+Las preguntas buscan identificar cómo gestionan actualmente la información ambiental, qué dificultades encuentran y qué funcionalidades podrían resultarles más útiles dentro de EcoTrack.
+
+#### Segmento 1: Empresas exportadoras
+
 <!-- Completar -->
 
 ### 2.2.2. Registro de entrevistas
 
 <!-- Completar -->
+
+---
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -355,7 +641,51 @@ establecido en el Anexo A del enunciado.
 
 ## 3.1. User Stories
 
-<!-- Completar -->
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|---|---|---|---|---|
+| US-01 | Conocer EcoTrack | Como visitante, quiero conocer qué es EcoTrack y cuál es su propósito, para entender cómo puede ayudar a mi empresa con la gestión ambiental. | **Escenario 1:** Given que el visitante accede al sitio de EcoTrack, When consulta la información principal del producto, Then conoce el propósito de la plataforma y el problema que busca resolver.<br><br>**Escenario 2:** Given que el visitante desea conocer más sobre EcoTrack, When revisa la información disponible, Then identifica las principales características de la solución. | EP-01 |
+| US-02 | Conocer los beneficios de EcoTrack | Como visitante, quiero conocer los principales beneficios de EcoTrack, para evaluar si la solución puede ser útil para mi empresa. | **Escenario 1:** Given que el visitante está interesado en EcoTrack, When consulta los beneficios del producto, Then conoce cómo la plataforma puede ayudar a centralizar y analizar información ambiental.<br><br>**Escenario 2:** Given que el visitante pertenece a uno de los segmentos objetivo, When revisa los beneficios, Then identifica ventajas relacionadas con la gestión de emisiones y reportes. | EP-01 |
+| US-03 | Conocer las funcionalidades principales | Como visitante, quiero conocer las principales funcionalidades de EcoTrack, para saber qué herramientas ofrece la plataforma. | **Escenario 1:** Given que el visitante desea conocer las funciones de EcoTrack, When consulta la información del producto, Then puede identificar funciones relacionadas con emisiones, indicadores, metas y reportes.<br><br>**Escenario 2:** Given que el visitante busca una solución ambiental, When revisa las funcionalidades, Then puede determinar si estas responden a sus necesidades. | EP-01 |
+| US-04 | Conocer los planes disponibles | Como visitante, quiero conocer los planes ofrecidos por EcoTrack, para identificar cuál se adapta mejor a las necesidades de mi empresa. | **Escenario 1:** Given que el visitante desea conocer las opciones disponibles, When consulta los planes de EcoTrack, Then puede conocer las características principales de cada alternativa.<br><br>**Escenario 2:** Given que existen diferentes planes, When el visitante los compara, Then puede identificar las diferencias entre ellos. | EP-01 |
+| US-05 | Contactar al equipo de EcoTrack | Como visitante, quiero enviar una consulta al equipo de EcoTrack, para solicitar más información sobre el producto. | **Escenario 1:** Given que el visitante desea contactar al equipo, When proporciona información válida y envía su consulta, Then la solicitud queda registrada.<br><br>**Escenario 2:** Given que falta información necesaria, When el visitante intenta enviar la consulta, Then la solicitud no se registra hasta completar los datos requeridos. | EP-01 |
+| US-06 | Registrar una empresa | Como representante de una empresa, quiero registrar mi organización en EcoTrack, para comenzar a gestionar su información ambiental. | **Escenario 1:** Given que la empresa todavía no se encuentra registrada, When el usuario proporciona los datos requeridos, Then la empresa queda registrada en EcoTrack.<br><br>**Escenario 2:** Given que existen datos obligatorios sin completar, When el usuario intenta registrar la empresa, Then el registro no se completa. | EP-02 |
+| US-07 | Iniciar sesión | Como usuario registrado, quiero iniciar sesión en EcoTrack, para acceder a la información de mi empresa. | **Escenario 1:** Given que el usuario posee credenciales válidas, When inicia sesión, Then obtiene acceso a las funciones correspondientes a su cuenta.<br><br>**Escenario 2:** Given que las credenciales no son válidas, When el usuario intenta iniciar sesión, Then el acceso es rechazado. | EP-02 |
+| US-08 | Recuperar contraseña | Como usuario registrado, quiero recuperar el acceso a mi cuenta si olvido mi contraseña, para poder continuar utilizando EcoTrack. | **Escenario 1:** Given que el usuario posee una cuenta registrada, When solicita recuperar su contraseña utilizando un correo válido, Then recibe las indicaciones necesarias para recuperar el acceso.<br><br>**Escenario 2:** Given que el correo no corresponde a una cuenta registrada, When solicita la recuperación, Then el sistema informa que no puede continuar con el proceso. | EP-02 |
+| US-09 | Consultar perfil de la empresa | Como usuario de EcoTrack, quiero consultar los datos de mi empresa, para verificar que la información registrada sea correcta. | **Escenario 1:** Given que el usuario pertenece a una empresa registrada, When consulta el perfil de la organización, Then puede revisar sus datos registrados.<br><br>**Escenario 2:** Given que la empresa cuenta con información registrada, When el usuario consulta su perfil, Then los datos corresponden a la organización asociada a su cuenta. | EP-02 |
+| US-10 | Actualizar datos de la empresa | Como usuario autorizado, quiero actualizar los datos de mi empresa, para mantener su información al día. | **Escenario 1:** Given que el usuario cuenta con permisos para modificar la información, When actualiza datos válidos, Then los cambios quedan registrados.<br><br>**Escenario 2:** Given que existen datos obligatorios inválidos, When intenta guardar los cambios, Then la información anterior se mantiene hasta corregirlos. | EP-02 |
+| US-11 | Registrar una fuente de emisión | Como analista ambiental, quiero registrar una fuente de emisión, para llevar un control de las actividades que generan emisiones en la empresa. | **Escenario 1:** Given que el analista cuenta con información de una actividad generadora de emisiones, When registra los datos requeridos, Then la fuente queda almacenada.<br><br>**Escenario 2:** Given que faltan datos obligatorios, When intenta registrar la fuente, Then el registro no se completa. | EP-03 |
+| US-12 | Clasificar una emisión por alcance | Como analista ambiental, quiero clasificar una emisión como alcance 1, 2 o 3, para organizar correctamente la información ambiental. | **Escenario 1:** Given que existe una fuente de emisión, When el analista selecciona su alcance correspondiente, Then la emisión queda asociada a dicha clasificación.<br><br>**Escenario 2:** Given que una emisión no posee alcance definido, When se intenta completar su registro, Then se solicita una clasificación válida. | EP-03 |
+| US-13 | Consultar emisiones registradas | Como responsable de sostenibilidad, quiero consultar las emisiones registradas, para conocer las actividades que generan emisiones dentro de la empresa. | **Escenario 1:** Given que existen emisiones registradas, When el usuario consulta los registros, Then puede acceder a la información de las emisiones de su empresa.<br><br>**Escenario 2:** Given que no existen emisiones registradas, When el usuario realiza la consulta, Then se informa que todavía no existen registros. | EP-03 |
+| US-14 | Editar una emisión | Como analista ambiental, quiero modificar una emisión registrada, para corregir información incorrecta o desactualizada. | **Escenario 1:** Given que existe una emisión registrada, When el analista modifica sus datos con valores válidos, Then la información queda actualizada.<br><br>**Escenario 2:** Given que los nuevos datos no son válidos, When intenta guardar los cambios, Then la información anterior se mantiene. | EP-03 |
+| US-15 | Eliminar una emisión | Como analista ambiental, quiero eliminar una emisión incorrecta, para evitar que información no válida afecte los resultados ambientales. | **Escenario 1:** Given que existe una emisión registrada, When el analista confirma su eliminación, Then la emisión deja de formar parte de los registros activos.<br><br>**Escenario 2:** Given que el analista no confirma la eliminación, When cancela la operación, Then la emisión permanece registrada. | EP-03 |
+| US-16 | Visualizar total de emisiones | Como responsable de sostenibilidad, quiero conocer el total de emisiones registradas, para tener una visión general del impacto ambiental de la empresa. | **Escenario 1:** Given que existen emisiones registradas, When el usuario consulta el resumen ambiental, Then obtiene el total correspondiente.<br><br>**Escenario 2:** Given que se registra una nueva emisión, When se actualiza la información ambiental, Then el total considera el nuevo registro. | EP-04 |
+| US-17 | Visualizar emisiones por alcance | Como responsable de sostenibilidad, quiero conocer las emisiones correspondientes a cada alcance, para identificar qué categoría tiene mayor impacto. | **Escenario 1:** Given que existen emisiones clasificadas, When el usuario consulta la distribución por alcance, Then obtiene los resultados correspondientes a los alcances 1, 2 y 3.<br><br>**Escenario 2:** Given que un alcance no posee registros, When se consulta la distribución, Then su valor se presenta sin emisiones registradas. | EP-04 |
+| US-18 | Buscar una emisión | Como usuario de EcoTrack, quiero buscar una emisión registrada, para encontrar información específica rápidamente. | **Escenario 1:** Given que existe una emisión relacionada con el término buscado, When el usuario realiza una búsqueda, Then obtiene los registros coincidentes.<br><br>**Escenario 2:** Given que no existe una coincidencia, When realiza la búsqueda, Then se informa que no existen resultados relacionados. | EP-04 |
+| US-19 | Filtrar emisiones por alcance | Como responsable de sostenibilidad, quiero filtrar las emisiones según su alcance, para analizar cada categoría por separado. | **Escenario 1:** Given que existen emisiones de diferentes alcances, When el usuario selecciona un alcance, Then obtiene únicamente las emisiones correspondientes.<br><br>**Escenario 2:** Given que existe un filtro aplicado, When el usuario decide consultar todas las emisiones, Then vuelve a obtener el conjunto completo de registros. | EP-04 |
+| US-20 | Comparar emisiones por periodo | Como responsable de sostenibilidad, quiero comparar las emisiones entre diferentes periodos, para conocer cómo ha cambiado el desempeño ambiental de la empresa. | **Escenario 1:** Given que existen registros de diferentes periodos, When el usuario selecciona dos periodos para comparar, Then obtiene los resultados de ambos.<br><br>**Escenario 2:** Given que un periodo no posee información suficiente, When se realiza la comparación, Then se informa la falta de datos para dicho periodo. | EP-04 |
+| US-21 | Registrar una meta ambiental | Como responsable de sostenibilidad, quiero registrar una meta de reducción de emisiones, para establecer un objetivo ambiental para la empresa. | **Escenario 1:** Given que el usuario desea establecer una meta, When registra un objetivo y una fecha válida, Then la meta queda registrada.<br><br>**Escenario 2:** Given que los datos de la meta están incompletos, When intenta registrarla, Then el registro no se completa. | EP-05 |
+| US-22 | Consultar metas ambientales | Como responsable de sostenibilidad, quiero consultar las metas ambientales de la empresa, para conocer los objetivos establecidos. | **Escenario 1:** Given que existen metas registradas, When el usuario consulta las metas ambientales, Then puede conocer sus principales datos y estado.<br><br>**Escenario 2:** Given que no existen metas registradas, When realiza la consulta, Then se informa que todavía no existen objetivos definidos. | EP-05 |
+| US-23 | Editar una meta ambiental | Como responsable de sostenibilidad, quiero modificar una meta ambiental, para mantener sus objetivos actualizados. | **Escenario 1:** Given que existe una meta registrada, When el usuario modifica sus datos con información válida, Then la meta queda actualizada.<br><br>**Escenario 2:** Given que los nuevos datos no son válidos, When intenta guardar los cambios, Then la información anterior se conserva. | EP-05 |
+| US-24 | Actualizar estado de una meta | Como responsable de sostenibilidad, quiero actualizar el estado de una meta, para indicar si continúa pendiente o ya fue completada. | **Escenario 1:** Given que existe una meta activa, When el usuario registra que fue alcanzada, Then la meta queda identificada como completada.<br><br>**Escenario 2:** Given que una meta continúa en desarrollo, When el usuario consulta su estado, Then permanece registrada como activa. | EP-05 |
+| US-25 | Eliminar una meta | Como responsable de sostenibilidad, quiero eliminar una meta que ya no sea necesaria, para mantener actualizados los objetivos ambientales. | **Escenario 1:** Given que existe una meta registrada, When el usuario confirma su eliminación, Then la meta deja de formar parte de los objetivos activos.<br><br>**Escenario 2:** Given que el usuario cancela la eliminación, When finaliza la operación, Then la meta permanece registrada. | EP-05 |
+| US-26 | Consultar resumen ambiental | Como responsable de sostenibilidad, quiero consultar un resumen de la información ambiental, para conocer los principales resultados de la empresa en un solo lugar. | **Escenario 1:** Given que existen datos ambientales registrados, When el usuario solicita el resumen, Then obtiene información sobre emisiones y metas ambientales.<br><br>**Escenario 2:** Given que se actualizan los registros ambientales, When se consulta nuevamente el resumen, Then los resultados consideran los datos actualizados. | EP-06 |
+| US-27 | Generar reporte ambiental | Como responsable de sostenibilidad, quiero generar un reporte ambiental, para reunir los principales resultados de la empresa. | **Escenario 1:** Given que existen datos ambientales registrados, When el usuario solicita generar un reporte, Then se crea un reporte con la información correspondiente.<br><br>**Escenario 2:** Given que no existe información suficiente, When intenta generar el reporte, Then se informa que faltan datos para completar el documento. | EP-06 |
+| US-28 | Descargar reporte ambiental | Como responsable de sostenibilidad, quiero descargar un reporte generado, para conservarlo o compartirlo con otras personas de la organización. | **Escenario 1:** Given que existe un reporte generado, When el usuario solicita su descarga, Then obtiene el documento correspondiente.<br><br>**Escenario 2:** Given que todavía no existe un reporte generado, When intenta descargarlo, Then se informa que primero debe existir un reporte disponible. | EP-06 |
+| US-29 | Generar reporte por periodo | Como responsable de sostenibilidad, quiero generar un reporte correspondiente a un periodo específico, para analizar los resultados ambientales de ese intervalo. | **Escenario 1:** Given que existen datos dentro del periodo seleccionado, When el usuario genera el reporte, Then el documento considera únicamente dicha información.<br><br>**Escenario 2:** Given que el periodo seleccionado no contiene registros, When se solicita el reporte, Then se informa que no existen datos disponibles para ese intervalo. | EP-06 |
+| US-30 | Consultar reportes anteriores | Como responsable de sostenibilidad, quiero consultar los reportes generados anteriormente, para revisar información ambiental de periodos anteriores. | **Escenario 1:** Given que existen reportes generados previamente, When el usuario consulta el historial, Then puede acceder a los reportes disponibles.<br><br>**Escenario 2:** Given que todavía no existen reportes anteriores, When consulta el historial, Then se informa que no existen documentos registrados. | EP-06 |
+
+### Epics
+
+Las User Stories fueron agrupadas en seis Epics que representan las principales áreas funcionales consideradas para EcoTrack.
+
+| Epic ID | Título | Descripción |
+|---|---|---|
+| EP-01 | Landing Page e información de EcoTrack | Reúne las funcionalidades destinadas a presentar EcoTrack, sus beneficios, características y planes a los visitantes interesados en la solución. |
+| EP-02 | Gestión de cuenta y empresa | Agrupa las funcionalidades relacionadas con el acceso a EcoTrack y la administración de la información básica de la empresa. |
+| EP-03 | Gestión de emisiones | Comprende las funcionalidades necesarias para registrar, clasificar, consultar, editar y eliminar información relacionada con las emisiones de la organización. |
+| EP-04 | Dashboard y análisis de emisiones | Agrupa las funcionalidades orientadas a consultar indicadores, buscar información, aplicar filtros y comparar el comportamiento de las emisiones. |
+| EP-05 | Gestión de metas ambientales | Comprende las funcionalidades relacionadas con la creación, consulta y seguimiento de los objetivos de reducción de emisiones de la organización. |
+| EP-06 | Reportes ambientales | Agrupa las funcionalidades relacionadas con la consulta de resultados ambientales y la generación, descarga y revisión de reportes. |
 
 ---
 
@@ -367,7 +697,49 @@ establecido en el Anexo A del enunciado.
 
 ## 3.3. Product Backlog
 
-<!-- Completar -->
+| Orden | ID | Título | Epic | Prioridad | Story Points | Estado |
+|---:|---|---|---|---|---:|---|
+| 1 | US-01 | Conocer EcoTrack | EP-01 | Alta | 2 | Pendiente |
+| 2 | US-02 | Conocer los beneficios de EcoTrack | EP-01 | Media | 2 | Pendiente |
+| 3 | US-03 | Conocer las funcionalidades principales | EP-01 | Media | 2 | Pendiente |
+| 4 | US-04 | Conocer los planes disponibles | EP-01 | Baja | 2 | Pendiente |
+| 5 | US-05 | Contactar al equipo de EcoTrack | EP-01 | Media | 3 | Pendiente |
+| 6 | US-06 | Registrar una empresa | EP-02 | Alta | 5 | Pendiente |
+| 7 | US-07 | Iniciar sesión | EP-02 | Alta | 5 | Pendiente |
+| 8 | US-08 | Recuperar contraseña | EP-02 | Media | 3 | Pendiente |
+| 9 | US-09 | Consultar perfil de la empresa | EP-02 | Media | 2 | Pendiente |
+| 10 | US-10 | Actualizar datos de la empresa | EP-02 | Media | 3 | Pendiente |
+| 11 | US-11 | Registrar una fuente de emisión | EP-03 | Alta | 5 | Pendiente |
+| 12 | US-12 | Clasificar una emisión por alcance | EP-03 | Alta | 3 | Pendiente |
+| 13 | US-13 | Consultar emisiones registradas | EP-03 | Alta | 3 | Pendiente |
+| 14 | US-14 | Editar una emisión | EP-03 | Alta | 3 | Pendiente |
+| 15 | US-15 | Eliminar una emisión | EP-03 | Media | 2 | Pendiente |
+| 16 | US-16 | Visualizar total de emisiones | EP-04 | Alta | 3 | Pendiente |
+| 17 | US-17 | Visualizar emisiones por alcance | EP-04 | Alta | 5 | Pendiente |
+| 18 | US-18 | Buscar una emisión | EP-04 | Media | 2 | Pendiente |
+| 19 | US-19 | Filtrar emisiones por alcance | EP-04 | Media | 3 | Pendiente |
+| 20 | US-20 | Comparar emisiones por periodo | EP-04 | Media | 5 | Pendiente |
+| 21 | US-21 | Registrar una meta ambiental | EP-05 | Alta | 3 | Pendiente |
+| 22 | US-22 | Consultar metas ambientales | EP-05 | Alta | 3 | Pendiente |
+| 23 | US-23 | Editar una meta ambiental | EP-05 | Media | 3 | Pendiente |
+| 24 | US-24 | Actualizar estado de una meta | EP-05 | Media | 2 | Pendiente |
+| 25 | US-25 | Eliminar una meta | EP-05 | Baja | 2 | Pendiente |
+| 26 | US-26 | Consultar resumen ambiental | EP-06 | Alta | 3 | Pendiente |
+| 27 | US-27 | Generar reporte ambiental | EP-06 | Alta | 5 | Pendiente |
+| 28 | US-28 | Descargar reporte ambiental | EP-06 | Media | 3 | Pendiente |
+| 29 | US-29 | Generar reporte por periodo | EP-06 | Media | 5 | Pendiente |
+| 30 | US-30 | Consultar reportes anteriores | EP-06 | Baja | 3 | Pendiente |
+
+### Epics relacionados
+
+| Epic ID | Epic |
+|---|---|
+| EP-01 | Landing Page e información de EcoTrack |
+| EP-02 | Gestión de cuenta y empresa |
+| EP-03 | Gestión de emisiones |
+| EP-04 | Dashboard y análisis de emisiones |
+| EP-05 | Gestión de metas ambientales |
+| EP-06 | Reportes ambientales |
 
 ---
 
@@ -1183,7 +1555,13 @@ Explicar:
 
 # Bibliografía
 
-<!-- Completar -->
+Greenhouse Gas Protocol. (s. f.). *Corporate Standard*. World Resources Institute & World Business Council for Sustainable Development. https://ghgprotocol.org/corporate-standard
+
+Greenhouse Gas Protocol. (s. f.). *Standards & Guidance*. World Resources Institute & World Business Council for Sustainable Development. https://ghgprotocol.org/standards-guidance
+
+International Organization for Standardization. (2018). *ISO 14064-1:2018 Greenhouse gases — Part 1: Specification with guidance at the organization level for quantification and reporting of greenhouse gas emissions and removals*. ISO. https://www.iso.org/standard/66453.html
+
+IBM. (2023). *What is carbon accounting?* IBM. https://www.ibm.com/think/topics/carbon-accounting
 
 ---
 
