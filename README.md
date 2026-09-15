@@ -292,17 +292,18 @@ Además del registro y cálculo de emisiones, EcoTrack contará con herramientas
 
 Entre las principales funcionalidades propuestas se encuentran:
 
-1. Gestión de usuarios, organización, sedes, roles y permisos.
-2. Registro y gestión de fuentes de emisión correspondientes a los alcances 1, 2 y 3.
+1. Gestión de usuarios, organizaciones, sedes, roles y permisos.
+2. Registro y gestión de fuentes de emisión correspondientes a los Alcances 1, 2 y 3.
 3. Cálculo automático de la huella de carbono mediante factores de emisión.
-4. Consulta de resultados por alcance y periodo.
+4. Consulta de resultados de emisiones por alcance y periodo.
 5. Creación y seguimiento de metas ambientales y planes de reducción.
-6. Visualización de dashboards e indicadores ambientales.
-7. Comparación de emisiones entre diferentes periodos.
-8. Identificación de las principales fuentes de emisión.
-9. Generación de reportes ambientales.
+6. Registro de iniciativas ambientales relacionadas con los objetivos de reducción.
+7. Visualización de dashboards e indicadores ambientales.
+8. Comparación de emisiones entre diferentes periodos.
+9. Identificación de las principales fuentes de emisión.
+10. Generación de reportes ambientales.
 
-De esta manera, EcoTrack busca centralizar diferentes procesos ambientales dentro de una sola plataforma, reduciendo el uso de hojas de cálculo y facilitando el análisis de la información.
+De esta manera, EcoTrack busca centralizar los principales procesos relacionados con la gestión de la huella de carbono empresarial dentro de una sola plataforma, reduciendo la dependencia de hojas de cálculo y facilitando el análisis y seguimiento de la información ambiental.
 
 ---
 
@@ -447,7 +448,59 @@ Sabremos que la propuesta está generando resultados cuando los usuarios pertene
 - Creemos que una funcionalidad para registrar y hacer seguimiento de metas ambientales permitirá controlar mejor los objetivos de reducción.
 - Creemos que la generación de reportes ambientales permitirá recopilar y compartir información de manera más sencilla.
 
+#### 1.2.2.3. Lean UX Hypothesis Statements
 
+A partir de los Feature Assumptions identificados, se plantean los siguientes Hypothesis Statements siguiendo la estructura propuesta por Lean UX.
+
+##### Hypothesis Statement 1
+
+We believe we will achieve **a reduction in the time companies spend organizing environmental information**
+
+If **sustainability managers, environmental analysts, operations managers and administrative staff**
+
+Attain **a centralized and structured way to register their emissions information**
+
+With **a feature for registering and classifying emission sources.**
+
+##### Hypothesis Statement 2
+
+We believe we will achieve **a reduction in the effort and potential errors associated with manual carbon footprint calculations**
+
+If **sustainability managers and environmental analysts**
+
+Attain **a simpler and more reliable way to obtain their carbon footprint results**
+
+With **an automatic carbon footprint calculation feature.**
+
+##### Hypothesis Statement 3
+
+We believe we will achieve **greater recurrent use of EcoTrack for environmental information analysis**
+
+If **sustainability managers, environmental analysts and operations managers**
+
+Attain **a clearer understanding of the organization's emissions and environmental indicators**
+
+With **an environmental indicators dashboard.**
+
+##### Hypothesis Statement 4
+
+We believe we will achieve **better follow-up of environmental objectives within organizations**
+
+If **sustainability managers and operations managers**
+
+Attain **greater control over their emission reduction objectives**
+
+With **a feature for registering and tracking environmental goals.**
+
+##### Hypothesis Statement 5
+
+We believe we will achieve **greater recurrent use of the platform for environmental reporting activities**
+
+If **sustainability managers, environmental analysts and administrative staff**
+
+Attain **an easier way to compile and communicate their environmental information**
+
+With **an environmental report generation feature.**
 
 #### 1.2.2.4. Lean UX Canvas
 
