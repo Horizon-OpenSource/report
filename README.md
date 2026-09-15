@@ -516,6 +516,8 @@ Para EcoTrack se han identificado dos segmentos objetivo principales. Ambos corr
 
 Este segmento está compuesto por empresas exportadoras de sectores como agricultura, industria textil, minería y otras actividades productivas que participan en mercados nacionales e internacionales.
 
+Como sustento del segmento, el Ministerio de Comercio Exterior y Turismo (MINCETUR) informó que entre enero y noviembre de 2025 el Perú registró 9,641 empresas exportadoras, de las cuales 6,702 correspondían a micro, pequeñas y medianas empresas. Asimismo, durante 2025 las exportaciones peruanas alcanzaron un récord histórico de US$ 90,082 millones. Estas cifras evidencian la existencia de una base empresarial exportadora relevante que debe gestionar información relacionada con sus procesos productivos y su desempeño frente a mercados internacionales.
+
 Estas organizaciones pueden generar emisiones relacionadas con transporte, consumo energético, uso de combustibles, operación de maquinaria y procesos productivos. Además, al trabajar con clientes y mercados internacionales, pueden tener una mayor necesidad de demostrar el cumplimiento de estándares ambientales y políticas de sostenibilidad.
 
 Entre sus principales necesidades se encuentran:
@@ -540,6 +542,8 @@ EcoTrack busca ayudar a este segmento mediante una plataforma que permita centra
 ### Segmento 2: Corporaciones y medianas empresas industriales
 
 Este segmento está compuesto por corporaciones y medianas empresas industriales que buscan controlar y reducir el impacto ambiental generado por sus operaciones.
+
+Como sustento del segmento, el Ministerio de Comercio Exterior y Turismo (MINCETUR) informó que entre enero y noviembre de 2025 el Perú registró 9,641 empresas exportadoras, de las cuales 6,702 correspondían a micro, pequeñas y medianas empresas. Asimismo, durante 2025 las exportaciones peruanas alcanzaron un récord histórico de US$ 90,082 millones. Estas cifras evidencian la existencia de una base empresarial exportadora relevante que debe gestionar información relacionada con sus procesos productivos y su desempeño frente a mercados internacionales.
 
 Estas organizaciones pueden producir emisiones provenientes del consumo de electricidad, combustibles, transporte, maquinaria, residuos y distintos procesos productivos. Debido a que la información puede provenir de diferentes áreas de la empresa, uno de sus principales problemas es mantener los datos organizados y actualizados.
 
