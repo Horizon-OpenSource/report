@@ -504,7 +504,7 @@ With **an environmental report generation feature.**
 
 #### 1.2.2.4. Lean UX Canvas
 
-![Lean UX Canvas - EcoTrack](assets/chapter-01/LeanUxCanvas.png)
+![Lean UX Canvas - EcoTrack](assets/chapter-01/lean-ux-canvas.png)
 
 ---
 
