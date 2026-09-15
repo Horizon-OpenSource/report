@@ -273,29 +273,6 @@ Además, la plataforma busca facilitar el trabajo relacionado con estándares co
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-#### Rolando Andre Torres Diaz
-
-Soy Rolando Andre Torres Diaz, estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). A lo largo de la carrera he ido adquiriendo conocimientos relacionados con programación, desarrollo de software, bases de datos, diseño de aplicaciones y tecnologías web.
-
-Dentro del desarrollo de EcoTrack participaré en distintas etapas del proyecto, como el análisis de requerimientos, diseño de la solución, desarrollo de funcionalidades, gestión de la base de datos y elaboración de la documentación.
-
-Mi objetivo dentro de este proyecto es aplicar los conocimientos que he adquirido durante la carrera para contribuir al desarrollo de una solución que responda a las necesidades de los usuarios y que también pueda continuar mejorándose mediante nuevas funcionalidades en el futuro.
-
-#### Lacuta Lima, Alex Rodrigo
-
-<!-- Completar perfil del integrante -->
-
-#### Espinoza Flores, Aaron André
-
-<!-- Completar perfil del integrante -->
-
-#### Payesa Torres, Harrison Hubert
-
-<!-- Completar perfil del integrante -->
-
-#### Tello Murga, Javier Oswaldo
-
-<!-- Completar perfil del integrante -->
 
 ---
 
@@ -315,15 +292,15 @@ Además del registro y cálculo de emisiones, EcoTrack contará con herramientas
 
 Entre las principales funcionalidades propuestas se encuentran:
 
-1. Registro de fuentes de emisión correspondientes a los alcances 1, 2 y 3.
-2. Cálculo de la huella de carbono.
-3. Dashboard de indicadores ambientales.
-4. Creación de planes de reducción y descarbonización.
-5. Establecimiento y seguimiento de metas ambientales.
-6. Generación de reportes de sostenibilidad.
-7. Registro y consulta de iniciativas relacionadas con bonos de carbono.
-8. Posible integración futura con dispositivos IoT.
-9. Uso futuro de analítica predictiva para analizar tendencias de consumo y emisiones.
+1. Gestión de usuarios, organización, sedes, roles y permisos.
+2. Registro y gestión de fuentes de emisión correspondientes a los alcances 1, 2 y 3.
+3. Cálculo automático de la huella de carbono mediante factores de emisión.
+4. Consulta de resultados por alcance y periodo.
+5. Creación y seguimiento de metas ambientales y planes de reducción.
+6. Visualización de dashboards e indicadores ambientales.
+7. Comparación de emisiones entre diferentes periodos.
+8. Identificación de las principales fuentes de emisión.
+9. Generación de reportes ambientales.
 
 De esta manera, EcoTrack busca centralizar diferentes procesos ambientales dentro de una sola plataforma, reduciendo el uso de hojas de cálculo y facilitando el análisis de la información.
 
@@ -331,7 +308,7 @@ De esta manera, EcoTrack busca centralizar diferentes procesos ambientales dentr
 
 ### 1.2.1. Antecedentes y problemática
 
-Actualmente, las empresas tienen una mayor necesidad de conocer y controlar el impacto ambiental generado por sus operaciones. Actividades como el consumo de electricidad, uso de combustibles, transporte, operación de maquinaria y diferentes procesos productivos generan emisiones de gases de efecto invernadero que deben ser registradas y analizadas. El GHG Protocol establece lineamientos para que las organizaciones elaboren inventarios corporativos de emisiones y clasifica las emisiones en Scope 1, Scope 2 y Scope 3. Además, la norma ISO 14064-1 establece principios y requisitos para la cuantificación y reporte de emisiones y remociones de gases de efecto invernadero a nivel organizacional. :contentReference[oaicite:0]{index=0}
+Actualmente, las empresas tienen una mayor necesidad de conocer y controlar el impacto ambiental generado por sus operaciones. Actividades como el consumo de electricidad, uso de combustibles, transporte, operación de maquinaria y diferentes procesos productivos generan emisiones de gases de efecto invernadero que deben ser registradas y analizadas. El GHG Protocol establece lineamientos para que las organizaciones elaboren inventarios corporativos de emisiones y clasifica las emisiones en Scope 1, Scope 2 y Scope 3. Además, la norma ISO 14064-1 establece principios y requisitos para la cuantificación y reporte de emisiones y remociones de gases de efecto invernadero a nivel organizacional.
 
 Para comprender mejor la problemática relacionada con EcoTrack, se aplicó la técnica de las **5W y 2H: Who, What, Where, When, Why, How y How Much**.
 
@@ -343,7 +320,7 @@ Dentro de estas organizaciones, los principales involucrados son responsables de
 
 #### What? — ¿Cuál es el problema?
 
-Muchas organizaciones todavía realizan procesos de contabilidad de carbono mediante recopilación manual de información y hojas de cálculo. Esto puede generar dificultades para consolidar datos provenientes de distintas áreas, además de incrementar el riesgo de información incompleta o incorrecta. :contentReference[oaicite:1]{index=1}
+Muchas organizaciones todavía realizan procesos de contabilidad de carbono mediante recopilación manual de información y hojas de cálculo. Esto puede generar dificultades para consolidar datos provenientes de distintas áreas, además de incrementar el riesgo de información incompleta o incorrecta.
 
 Esto dificulta mantener todos los datos organizados en un mismo lugar y puede generar problemas como duplicidad de información, errores durante el registro, dificultad para realizar comparaciones y mayor tiempo para elaborar reportes.
 
@@ -351,7 +328,7 @@ Esto dificulta mantener todos los datos organizados en un mismo lugar y puede ge
 
 La problemática se presenta dentro de organizaciones donde la información ambiental proviene de diferentes áreas, como producción, logística, operaciones, administración y sostenibilidad.
 
-Los datos relacionados con carbono, energía, residuos y otros indicadores pueden encontrarse distribuidos entre distintas fuentes o áreas de la organización, dificultando su consolidación para análisis y toma de decisiones. :contentReference[oaicite:2]{index=2}
+Los datos relacionados con carbono, energía, residuos y otros indicadores pueden encontrarse distribuidos entre distintas fuentes o áreas de la organización, dificultando su consolidación para análisis y toma de decisiones.
 
 #### When? — ¿Cuándo ocurre?
 
@@ -365,7 +342,7 @@ El problema ocurre principalmente cuando las empresas necesitan:
 - Evaluar el cumplimiento de metas de reducción.
 - Preparar información para auditorías o certificaciones.
 
-El GHG Protocol destaca la necesidad de que las organizaciones midan y reporten sus emisiones, mientras que ISO 14064-1 establece requisitos relacionados con el diseño, desarrollo, gestión y reporte de inventarios organizacionales de gases de efecto invernadero. :contentReference[oaicite:3]{index=3}
+El GHG Protocol destaca la necesidad de que las organizaciones midan y reporten sus emisiones, mientras que ISO 14064-1 establece requisitos relacionados con el diseño, desarrollo, gestión y reporte de inventarios organizacionales de gases de efecto invernadero.
 
 #### Why? — ¿Por qué ocurre?
 
@@ -381,7 +358,7 @@ Entre las principales causas se encuentran:
 - Dificultad para mantener un historial organizado.
 - Falta de indicadores actualizados.
 
-La recopilación manual de datos y el uso de hojas de cálculo pueden incrementar el riesgo de errores, pérdida de productividad y dificultades para consolidar información de sostenibilidad. :contentReference[oaicite:4]{index=4}
+La recopilación manual de datos y el uso de hojas de cálculo pueden incrementar el riesgo de errores, pérdida de productividad y dificultades para consolidar información de sostenibilidad.
 
 #### How? — ¿Cómo se presenta el problema?
 
@@ -389,7 +366,7 @@ Los responsables ambientales deben recopilar información desde distintas fuente
 
 Este proceso puede dificultar la identificación de las principales fuentes de emisión y retrasar la generación de información necesaria para la toma de decisiones.
 
-Cuando los datos cambian o se actualizan, también puede ser necesario modificar diferentes archivos o documentos de forma manual. La gestión manual de estos datos puede requerir una cantidad considerable de tiempo y trabajo, especialmente cuando se deben administrar factores de emisión y múltiples fuentes de información. :contentReference[oaicite:5]{index=5}
+Cuando los datos cambian o se actualizan, también puede ser necesario modificar diferentes archivos o documentos de forma manual. La gestión manual de estos datos puede requerir una cantidad considerable de tiempo y trabajo, especialmente cuando se deben administrar factores de emisión y múltiples fuentes de información.
 
 #### How Much? — ¿Qué impacto genera?
 
@@ -474,7 +451,7 @@ Sabremos que la propuesta está generando resultados cuando los usuarios pertene
 
 #### 1.2.2.4. Lean UX Canvas
 
-![Lean UX Canvas - EcoTrack](assets/LeanUxCanvas.png)
+![Lean UX Canvas - EcoTrack](assets/chapter-01/LeanUxCanvas.png)
 
 ---
 
