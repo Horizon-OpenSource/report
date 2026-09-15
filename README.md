@@ -631,27 +631,31 @@ Identificar cómo las empresas exportadoras, corporaciones y medianas empresas i
 
 | # | Pregunta |
 |---|---|
-| 1 | ¿Qué tipo de información ambiental les solicitan actualmente clientes, certificadoras o socios comerciales? |
-| 2 | ¿Con qué frecuencia preparan reportes o evidencias relacionadas con emisiones, consumo energético, transporte, residuos u otros indicadores ambientales? |
-| 3 | ¿Qué herramientas utilizan actualmente para registrar y consolidar la información ambiental de la empresa? |
-| 4 | ¿Qué dificultades aparecen cuando la información ambiental se encuentra en hojas de cálculo, documentos o sistemas separados? |
-| 5 | ¿Qué datos relacionados con consumo de energía, combustible, transporte o procesos productivos son más importantes para sus reportes? |
-| 6 | ¿Qué consecuencias comerciales podría tener no contar con información ambiental actualizada o confiable? |
-| 7 | ¿Qué tan útil sería contar con una plataforma que calcule la huella de carbono y genere reportes ambientales por periodo? |
-| 8 | ¿Qué información debería mostrar un dashboard ambiental para ayudarles a responder mejor a clientes, auditorías o certificaciones? |
+| 1 | Â¿PodrÃ­a describir brevemente el giro de negocio de la empresa y su rol dentro de la organizaciÃ³n? |
+| 2 | Â¿QuÃ© tan importante es actualmente la sostenibilidad ambiental dentro de las decisiones comerciales de la empresa? |
+| 3 | Â¿QuÃ© tipo de informaciÃ³n ambiental les solicitan actualmente clientes, certificadoras o socios comerciales? |
+| 4 | Â¿Con quÃ© frecuencia preparan reportes o evidencias relacionadas con emisiones, consumo energÃ©tico, transporte, residuos u otros indicadores ambientales? |
+| 5 | Â¿QuÃ© herramientas utilizan actualmente para registrar y consolidar la informaciÃ³n ambiental de la empresa? |
+| 6 | Â¿QuÃ© dificultades aparecen cuando la informaciÃ³n ambiental se encuentra en hojas de cÃ¡lculo, documentos o sistemas separados? |
+| 7 | Â¿QuÃ© datos relacionados con consumo de energÃ­a, combustible, transporte o procesos productivos son mÃ¡s importantes para sus reportes? |
+| 8 | Â¿QuÃ© consecuencias comerciales podrÃ­a tener no contar con informaciÃ³n ambiental actualizada o confiable? |
+| 9 | Â¿QuÃ© tan Ãºtil serÃ­a contar con una plataforma que calcule la huella de carbono y genere reportes ambientales por periodo? |
+| 10 | Â¿QuÃ© informaciÃ³n deberÃ­a mostrar un dashboard ambiental para ayudarles a responder mejor a clientes, auditorÃ­as o certificaciones? |
 
 #### Segmento 2: Corporaciones y medianas empresas industriales
 
 | # | Pregunta |
 |---|---|
-| 1 | ¿Cuáles son las principales fuentes de consumo energético o emisiones dentro de las operaciones de la empresa? |
-| 2 | ¿La empresa registra información ambiental por sede, planta, área o unidad de negocio? ¿Cómo se organiza actualmente esa información? |
-| 3 | ¿Quiénes participan en la recolección, revisión y aprobación de los datos ambientales? |
-| 4 | ¿Qué procesos actuales dependen de hojas de cálculo, correos, documentos o registros manuales? |
-| 5 | ¿Qué dificultades aparecen al comparar consumos o emisiones entre diferentes periodos, sedes o áreas? |
-| 6 | ¿Qué indicadores ambientales necesita revisar la gerencia para tomar decisiones operativas o de sostenibilidad? |
-| 7 | ¿Qué valor tendría asignar metas de reducción por sede, área o fuente de emisión y hacer seguimiento a su avance? |
-| 8 | ¿Qué tan importante sería contar con dashboards, reportes e historial de cálculos dentro de una sola plataforma? |
+| 1 | Â¿PodrÃ­a describir brevemente el tipo de operaciones que realiza la empresa y su rol dentro de ellas? |
+| 2 | Â¿QuÃ© importancia tiene actualmente la gestiÃ³n ambiental para la eficiencia operativa y la toma de decisiones de la empresa? |
+| 3 | Â¿CuÃ¡les son las principales fuentes de consumo energÃ©tico o emisiones dentro de las operaciones de la empresa? |
+| 4 | Â¿La empresa registra informaciÃ³n ambiental por sede, planta, Ã¡rea o unidad de negocio? Â¿CÃ³mo se organiza actualmente esa informaciÃ³n? |
+| 5 | Â¿QuiÃ©nes participan en la recolecciÃ³n, revisiÃ³n y aprobaciÃ³n de los datos ambientales? |
+| 6 | Â¿QuÃ© procesos actuales dependen de hojas de cÃ¡lculo, correos, documentos o registros manuales? |
+| 7 | Â¿QuÃ© dificultades aparecen al comparar consumos o emisiones entre diferentes periodos, sedes o Ã¡reas? |
+| 8 | Â¿QuÃ© indicadores ambientales necesita revisar la gerencia para tomar decisiones operativas o de sostenibilidad? |
+| 9 | Â¿QuÃ© valor tendrÃ­a asignar metas de reducciÃ³n por sede, Ã¡rea o fuente de emisiÃ³n y hacer seguimiento a su avance? |
+| 10 | Â¿QuÃ© tan importante serÃ­a contar con dashboards, reportes e historial de cÃ¡lculos dentro de una sola plataforma? |
 
 ### 2.2.2. Registro de entrevistas
 
