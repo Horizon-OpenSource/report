@@ -713,49 +713,64 @@ Las User Stories y Technical Stories identificadas para EcoTrack se organizan en
 
 ## 3.3. Product Backlog
 
-| Orden | ID | Título | Epic | Prioridad | Story Points | Estado |
-|---:|---|---|---|---|---:|---|
-| 1 | US-01 | Conocer EcoTrack | EP-01 | Alta | 2 | Pendiente |
-| 2 | US-02 | Conocer los beneficios de EcoTrack | EP-01 | Media | 2 | Pendiente |
-| 3 | US-03 | Conocer las funcionalidades principales | EP-01 | Media | 2 | Pendiente |
-| 4 | US-04 | Conocer los planes disponibles | EP-01 | Baja | 2 | Pendiente |
-| 5 | US-05 | Contactar al equipo de EcoTrack | EP-01 | Media | 3 | Pendiente |
-| 6 | US-06 | Registrar una empresa | EP-02 | Alta | 5 | Pendiente |
-| 7 | US-07 | Iniciar sesión | EP-02 | Alta | 5 | Pendiente |
-| 8 | US-08 | Recuperar contraseña | EP-02 | Media | 3 | Pendiente |
-| 9 | US-09 | Consultar perfil de la empresa | EP-02 | Media | 2 | Pendiente |
-| 10 | US-10 | Actualizar datos de la empresa | EP-02 | Media | 3 | Pendiente |
-| 11 | US-11 | Registrar una fuente de emisión | EP-03 | Alta | 5 | Pendiente |
-| 12 | US-12 | Clasificar una emisión por alcance | EP-03 | Alta | 3 | Pendiente |
-| 13 | US-13 | Consultar emisiones registradas | EP-03 | Alta | 3 | Pendiente |
-| 14 | US-14 | Editar una emisión | EP-03 | Alta | 3 | Pendiente |
-| 15 | US-15 | Eliminar una emisión | EP-03 | Media | 2 | Pendiente |
-| 16 | US-16 | Visualizar total de emisiones | EP-04 | Alta | 3 | Pendiente |
-| 17 | US-17 | Visualizar emisiones por alcance | EP-04 | Alta | 5 | Pendiente |
-| 18 | US-18 | Buscar una emisión | EP-04 | Media | 2 | Pendiente |
-| 19 | US-19 | Filtrar emisiones por alcance | EP-04 | Media | 3 | Pendiente |
-| 20 | US-20 | Comparar emisiones por periodo | EP-04 | Media | 5 | Pendiente |
-| 21 | US-21 | Registrar una meta ambiental | EP-05 | Alta | 3 | Pendiente |
-| 22 | US-22 | Consultar metas ambientales | EP-05 | Alta | 3 | Pendiente |
-| 23 | US-23 | Editar una meta ambiental | EP-05 | Media | 3 | Pendiente |
-| 24 | US-24 | Actualizar estado de una meta | EP-05 | Media | 2 | Pendiente |
-| 25 | US-25 | Eliminar una meta | EP-05 | Baja | 2 | Pendiente |
-| 26 | US-26 | Consultar resumen ambiental | EP-06 | Alta | 3 | Pendiente |
-| 27 | US-27 | Generar reporte ambiental | EP-06 | Alta | 5 | Pendiente |
-| 28 | US-28 | Descargar reporte ambiental | EP-06 | Media | 3 | Pendiente |
-| 29 | US-29 | Generar reporte por periodo | EP-06 | Media | 5 | Pendiente |
-| 30 | US-30 | Consultar reportes anteriores | EP-06 | Baja | 3 | Pendiente |
+El Product Backlog de EcoTrack reúne y prioriza las User Stories y Technical Stories identificadas para el desarrollo del producto. La priorización considera principalmente el valor que cada historia aporta a los segmentos objetivo, así como las funcionalidades necesarias para construir progresivamente la propuesta de valor de EcoTrack.
 
-### Epics relacionados
+Las historias relacionadas con el Landing Page se consideran desde el primer Sprint debido a que representan el primer punto de contacto entre EcoTrack y sus potenciales usuarios. Posteriormente, se priorizan las funcionalidades principales relacionadas con el registro de emisiones, cálculo de huella de carbono, análisis de resultados, gestión de metas y generación de reportes.
 
-| Epic ID | Epic |
-|---|---|
-| EP-01 | Landing Page e información de EcoTrack |
-| EP-02 | Gestión de cuenta y empresa |
-| EP-03 | Gestión de emisiones |
-| EP-04 | Dashboard y análisis de emisiones |
-| EP-05 | Gestión de metas ambientales |
-| EP-06 | Reportes ambientales |
+Las estimaciones se expresan mediante Story Points utilizando los valores 1, 2, 3, 5 y 8, considerando la complejidad relativa de cada historia.
+
+### Product Backlog
+
+![Product Backlog - EcoTrack](assets/chapter-03/product-backlog.png)
+
+**URL pública del Product Backlog:** [Agregar URL de la herramienta utilizada]
+
+| Orden | User Story Id | Título | Descripción | Story Points |
+|---:|---|---|---|---:|
+| 1 | US-01 | Conocer EcoTrack | Como visitante, quiero conocer qué es EcoTrack y cuál es su propósito, para entender cómo puede ayudar a mi empresa con la gestión ambiental. | 2 |
+| 2 | US-03 | Conocer las funcionalidades principales | Como visitante, quiero conocer las principales funcionalidades de EcoTrack, para saber qué herramientas ofrece la plataforma. | 2 |
+| 3 | US-04 | Conocer los planes disponibles | Como visitante, quiero conocer los planes ofrecidos por EcoTrack, para identificar cuál se adapta mejor a las necesidades de mi empresa. | 2 |
+| 4 | US-02 | Conocer los beneficios de EcoTrack | Como visitante, quiero conocer los principales beneficios de EcoTrack, para evaluar si la solución puede ser útil para mi empresa. | 2 |
+| 5 | US-05 | Contactar al equipo de EcoTrack | Como visitante, quiero enviar una consulta al equipo de EcoTrack, para solicitar más información sobre el producto. | 3 |
+| 6 | US-11 | Registrar una fuente de emisión | Como analista ambiental, quiero registrar una fuente de emisión, para llevar un control de las actividades que generan emisiones en la empresa. | 5 |
+| 7 | US-12 | Clasificar una emisión por alcance | Como analista ambiental, quiero clasificar una emisión como Alcance 1, 2 o 3, para organizar correctamente la información ambiental. | 3 |
+| 8 | US-34 | Calcular huella de carbono | Como analista ambiental, quiero calcular automáticamente la huella de carbono utilizando los datos registrados, para obtener los resultados de emisiones de la organización. | 8 |
+| 9 | US-35 | Consultar resultados por alcance | Como analista ambiental, quiero consultar los resultados del cálculo por alcance, para conocer la contribución de los Alcances 1, 2 y 3 a la huella de carbono. | 3 |
+| 10 | US-36 | Consultar resultados por periodo | Como responsable de sostenibilidad, quiero consultar los resultados de huella de carbono correspondientes a un periodo, para analizar el desempeño ambiental de la organización. | 3 |
+| 11 | US-16 | Visualizar total de emisiones | Como responsable de sostenibilidad, quiero conocer el total de emisiones registradas, para tener una visión general del impacto ambiental de la empresa. | 3 |
+| 12 | US-17 | Visualizar emisiones por alcance | Como responsable de sostenibilidad, quiero conocer las emisiones correspondientes a cada alcance, para identificar qué categoría tiene mayor impacto. | 5 |
+| 13 | US-26 | Consultar resumen ambiental | Como responsable de sostenibilidad, quiero consultar un resumen de la información ambiental, para conocer los principales resultados de la empresa en un solo lugar. | 3 |
+| 14 | US-20 | Comparar emisiones por periodo | Como responsable de sostenibilidad, quiero comparar las emisiones entre diferentes periodos, para conocer cómo ha cambiado el desempeño ambiental de la empresa. | 5 |
+| 15 | US-27 | Generar reporte ambiental | Como responsable de sostenibilidad, quiero generar un reporte ambiental, para reunir los principales resultados de la empresa. | 5 |
+| 16 | US-29 | Generar reporte por periodo | Como responsable de sostenibilidad, quiero generar un reporte correspondiente a un periodo específico, para analizar los resultados ambientales de ese intervalo. | 5 |
+| 17 | US-28 | Descargar reporte ambiental | Como responsable de sostenibilidad, quiero descargar un reporte generado, para conservarlo o compartirlo con otras personas de la organización. | 3 |
+| 18 | US-21 | Registrar una meta ambiental | Como responsable de sostenibilidad, quiero registrar una meta de reducción de emisiones, para establecer un objetivo ambiental para la empresa. | 3 |
+| 19 | US-38 | Crear un plan de reducción | Como responsable de sostenibilidad, quiero crear un plan de reducción de emisiones, para definir las acciones que permitan alcanzar los objetivos ambientales de la organización. | 5 |
+| 20 | US-39 | Registrar una iniciativa ambiental | Como responsable de sostenibilidad, quiero registrar iniciativas ambientales dentro de un plan de reducción, para llevar un control de las acciones realizadas por la organización. | 3 |
+| 21 | US-40 | Consultar progreso de objetivos | Como responsable de sostenibilidad, quiero consultar el progreso de las metas y planes de reducción, para evaluar el cumplimiento de los objetivos ambientales. | 5 |
+| 22 | US-22 | Consultar metas ambientales | Como responsable de sostenibilidad, quiero consultar las metas ambientales de la empresa, para conocer los objetivos establecidos. | 3 |
+| 23 | US-23 | Editar una meta ambiental | Como responsable de sostenibilidad, quiero modificar una meta ambiental, para mantener sus objetivos actualizados. | 3 |
+| 24 | US-24 | Actualizar estado de una meta | Como responsable de sostenibilidad, quiero actualizar el estado de una meta, para indicar si continúa pendiente o ya fue completada. | 2 |
+| 25 | US-13 | Consultar historial de emisiones | Como responsable de sostenibilidad, quiero consultar el historial de emisiones registradas, para revisar la información ambiental de la empresa a lo largo del tiempo. | 3 |
+| 26 | US-14 | Editar una emisión | Como analista ambiental, quiero modificar una emisión registrada, para corregir información incorrecta o desactualizada. | 3 |
+| 27 | US-18 | Buscar una emisión | Como usuario de EcoTrack, quiero buscar una emisión registrada, para encontrar información específica rápidamente. | 2 |
+| 28 | US-19 | Filtrar emisiones por alcance | Como responsable de sostenibilidad, quiero filtrar las emisiones según su alcance, para analizar cada categoría por separado. | 3 |
+| 29 | US-37 | Consultar historial de cálculos | Como analista ambiental, quiero consultar el historial de cálculos de huella de carbono, para revisar los resultados obtenidos anteriormente. | 3 |
+| 30 | US-30 | Consultar reportes anteriores | Como responsable de sostenibilidad, quiero consultar los reportes generados anteriormente, para revisar información ambiental de periodos anteriores. | 3 |
+| 31 | US-06 | Registrar una empresa | Como representante de una empresa, quiero registrar mi organización en EcoTrack, para comenzar a gestionar su información ambiental. | 5 |
+| 32 | US-07 | Iniciar sesión | Como usuario registrado, quiero iniciar sesión en EcoTrack, para acceder a la información de mi empresa. | 5 |
+| 33 | US-09 | Consultar perfil de la empresa | Como usuario de EcoTrack, quiero consultar los datos de mi empresa, para verificar que la información registrada sea correcta. | 2 |
+| 34 | US-10 | Actualizar datos de la empresa | Como usuario autorizado, quiero actualizar los datos de mi empresa, para mantener su información al día. | 3 |
+| 35 | US-31 | Gestionar usuarios de la organización | Como administrador, quiero gestionar los usuarios de mi organización, para controlar quiénes pueden acceder a EcoTrack. | 5 |
+| 36 | US-32 | Gestionar sedes | Como administrador, quiero registrar y consultar las sedes de mi organización, para organizar la información ambiental según su ubicación. | 5 |
+| 37 | US-33 | Gestionar roles y permisos | Como administrador, quiero asignar roles y permisos a los usuarios, para controlar las acciones que pueden realizar dentro de EcoTrack. | 5 |
+| 38 | US-08 | Recuperar contraseña | Como usuario registrado, quiero recuperar el acceso a mi cuenta si olvido mi contraseña, para poder continuar utilizando EcoTrack. | 3 |
+| 39 | US-41 | Importar emisiones mediante CSV | Como analista ambiental, quiero importar registros de emisiones mediante un archivo CSV, para registrar grandes cantidades de información sin ingresarlas manualmente. | 5 |
+| 40 | TS-01 | Registrar emisión mediante EcoTrack API | Como Developer, quiero enviar registros de emisiones mediante la EcoTrack API, para integrar sistemas empresariales externos con EcoTrack. | 8 |
+| 41 | TS-02 | Consultar emisiones mediante EcoTrack API | Como Developer, quiero consultar registros de emisiones mediante la EcoTrack API, para utilizar la información ambiental de EcoTrack desde otros sistemas. | 5 |
+| 42 | TS-03 | Consultar resultados de huella de carbono mediante API | Como Developer, quiero consultar resultados de huella de carbono mediante la EcoTrack API, para utilizar los resultados ambientales desde sistemas externos. | 5 |
+| 43 | US-15 | Eliminar una emisión | Como analista ambiental, quiero eliminar una emisión incorrecta, para evitar que información no válida afecte los resultados ambientales. | 2 |
+| 44 | US-25 | Eliminar una meta | Como responsable de sostenibilidad, quiero eliminar una meta que ya no sea necesaria, para mantener actualizados los objetivos ambientales. | 2 |
 
 ---
 
