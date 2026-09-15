@@ -631,31 +631,31 @@ Identificar cómo las empresas exportadoras, corporaciones y medianas empresas i
 
 | # | Pregunta |
 |---|---|
-| 1 | Â¿PodrÃ­a describir brevemente el giro de negocio de la empresa y su rol dentro de la organizaciÃ³n? |
-| 2 | Â¿QuÃ© tan importante es actualmente la sostenibilidad ambiental dentro de las decisiones comerciales de la empresa? |
-| 3 | Â¿QuÃ© tipo de informaciÃ³n ambiental les solicitan actualmente clientes, certificadoras o socios comerciales? |
-| 4 | Â¿Con quÃ© frecuencia preparan reportes o evidencias relacionadas con emisiones, consumo energÃ©tico, transporte, residuos u otros indicadores ambientales? |
-| 5 | Â¿QuÃ© herramientas utilizan actualmente para registrar y consolidar la informaciÃ³n ambiental de la empresa? |
-| 6 | Â¿QuÃ© dificultades aparecen cuando la informaciÃ³n ambiental se encuentra en hojas de cÃ¡lculo, documentos o sistemas separados? |
-| 7 | Â¿QuÃ© datos relacionados con consumo de energÃ­a, combustible, transporte o procesos productivos son mÃ¡s importantes para sus reportes? |
-| 8 | Â¿QuÃ© consecuencias comerciales podrÃ­a tener no contar con informaciÃ³n ambiental actualizada o confiable? |
-| 9 | Â¿QuÃ© tan Ãºtil serÃ­a contar con una plataforma que calcule la huella de carbono y genere reportes ambientales por periodo? |
-| 10 | Â¿QuÃ© informaciÃ³n deberÃ­a mostrar un dashboard ambiental para ayudarles a responder mejor a clientes, auditorÃ­as o certificaciones? |
+| 1 | Podria describir brevemente el giro de negocio de la empresa y su rol dentro de la organizacion? |
+| 2 | Que tan importante es actualmente la sostenibilidad ambiental dentro de las decisiones comerciales de la empresa? |
+| 3 | Que tipo de informacion ambiental les solicitan actualmente clientes, certificadoras o socios comerciales? |
+| 4 | Con que frecuencia preparan reportes o evidencias relacionadas con emisiones, consumo energetico, transporte, residuos u otros indicadores ambientales? |
+| 5 | Que herramientas utilizan actualmente para registrar y consolidar la informacion ambiental de la empresa? |
+| 6 | Que dificultades aparecen cuando la informacion ambiental se encuentra en hojas de calculo, documentos o sistemas separados? |
+| 7 | Que datos relacionados con consumo de energia, combustible, transporte o procesos productivos son mas importantes para sus reportes? |
+| 8 | Que consecuencias comerciales podria tener no contar con informacion ambiental actualizada o confiable? |
+| 9 | Que tan util seria contar con una plataforma que calcule la huella de carbono y genere reportes ambientales por periodo? |
+| 10 | Que informacion deberia mostrar un dashboard ambiental para ayudarles a responder mejor a clientes, auditorias o certificaciones? |
 
 #### Segmento 2: Corporaciones y medianas empresas industriales
 
 | # | Pregunta |
 |---|---|
-| 1 | Â¿PodrÃ­a describir brevemente el tipo de operaciones que realiza la empresa y su rol dentro de ellas? |
-| 2 | Â¿QuÃ© importancia tiene actualmente la gestiÃ³n ambiental para la eficiencia operativa y la toma de decisiones de la empresa? |
-| 3 | Â¿CuÃ¡les son las principales fuentes de consumo energÃ©tico o emisiones dentro de las operaciones de la empresa? |
-| 4 | Â¿La empresa registra informaciÃ³n ambiental por sede, planta, Ã¡rea o unidad de negocio? Â¿CÃ³mo se organiza actualmente esa informaciÃ³n? |
-| 5 | Â¿QuiÃ©nes participan en la recolecciÃ³n, revisiÃ³n y aprobaciÃ³n de los datos ambientales? |
-| 6 | Â¿QuÃ© procesos actuales dependen de hojas de cÃ¡lculo, correos, documentos o registros manuales? |
-| 7 | Â¿QuÃ© dificultades aparecen al comparar consumos o emisiones entre diferentes periodos, sedes o Ã¡reas? |
-| 8 | Â¿QuÃ© indicadores ambientales necesita revisar la gerencia para tomar decisiones operativas o de sostenibilidad? |
-| 9 | Â¿QuÃ© valor tendrÃ­a asignar metas de reducciÃ³n por sede, Ã¡rea o fuente de emisiÃ³n y hacer seguimiento a su avance? |
-| 10 | Â¿QuÃ© tan importante serÃ­a contar con dashboards, reportes e historial de cÃ¡lculos dentro de una sola plataforma? |
+| 1 | Podria describir brevemente el tipo de operaciones que realiza la empresa y su rol dentro de ellas? |
+| 2 | Que importancia tiene actualmente la gestion ambiental para la eficiencia operativa y la toma de decisiones de la empresa? |
+| 3 | Cuales son las principales fuentes de consumo energetico o emisiones dentro de las operaciones de la empresa? |
+| 4 | La empresa registra informacion ambiental por sede, planta, area o unidad de negocio? Como se organiza actualmente esa informacion? |
+| 5 | Quienes participan en la recoleccion, revision y aprobacion de los datos ambientales? |
+| 6 | Que procesos actuales dependen de hojas de calculo, correos, documentos o registros manuales? |
+| 7 | Que dificultades aparecen al comparar consumos o emisiones entre diferentes periodos, sedes o areas? |
+| 8 | Que indicadores ambientales necesita revisar la gerencia para tomar decisiones operativas o de sostenibilidad? |
+| 9 | Que valor tendria asignar metas de reduccion por sede, area o fuente de emision y hacer seguimiento a su avance? |
+| 10 | Que tan importante seria contar con dashboards, reportes e historial de calculos dentro de una sola plataforma? |
 
 ### 2.2.2. Registro de entrevistas
 
