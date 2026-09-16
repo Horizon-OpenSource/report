@@ -672,7 +672,7 @@ Las entrevistas fueron registradas en video y publicadas mediante enlaces de Sha
 
 | Entrevista | Nombres y apellidos | Edad | Distrito | Ocupacion / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duracion |
 |---|---|---:|---|---|---|---|---|---|---|
-| E01 | Manuel Alejandro Marina Vazquez | 28 | [Completar] | Personal relacionado con transporte | Transporte / operaciones de movilidad empresarial | [Insertar imagen] | [Video Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg) | 00:00:00 | [Completar] |
+| E01 | Manuel Alejandro Marina Vazquez | 28 | [Completar] | Personal relacionado con transporte | Transporte / operaciones de movilidad empresarial | ![Entrevista Segmento 1](assets/chapter-02/interviews/entrevista-seg-1.png) | [Video Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg) | 00:00:00 | 4:34 |
 
 **Resumen de la entrevista E01:**  
 Manuel Alejandro Marina Vazquez indico que su rol esta relacionado principalmente con actividades de transporte. Desde su experiencia, la sostenibilidad ambiental si es considerada por la empresa, especialmente porque se ha empezado a usar combustible a gas en lugar de combustible convencional. Esta decision se relaciona tanto con la reduccion de costos como con un menor impacto ambiental.
@@ -685,7 +685,7 @@ Tambien menciono que la herramienta utilizada actualmente para registrar y conso
 
 | Entrevista | Nombres y apellidos | Edad | Distrito | Ocupacion / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duracion |
 |---|---|---:|---|---|---|---|---|---|---|
-| E02 | Renzo Santos | 26 | [Completar] | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | [Insertar imagen] | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse) | 00:00:00 | [Completar] |
+| E02 | Renzo Santos | 26 | [Completar] | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | ![Entrevista Segmento 2](assets/chapter-02/interviews/entrevista-seg-2.png) | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse) | 00:00:00 | 6:42 |
 
 **Resumen de la entrevista E02:**  
 Renzo Santos explico que la empresa donde trabaja se dedica a la produccion y transformacion de bienes industriales. Sus operaciones incluyen abastecimiento de materias primas, procesos de fabricacion y mantenimiento. Su rol se relaciona con el seguimiento de operaciones y registros internos de revision.
