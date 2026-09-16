@@ -659,47 +659,78 @@ Identificar cómo las empresas exportadoras, corporaciones y medianas empresas i
 
 ### 2.2.2. Registro de entrevistas
 
-Las entrevistas se registrarán en video y se consolidarán en un único archivo publicado en Microsoft Stream. Cada entrevista deberá incluir información del entrevistado, segmento objetivo, screenshot del video, URL, timing de inicio, duración y resumen descriptivo de las respuestas.
+Las entrevistas fueron registradas en video y publicadas mediante enlaces de SharePoint. Para esta etapa se cuenta con una entrevista por cada segmento objetivo. Cada registro incluye informacion del entrevistado, segmento objetivo, enlace del video y un resumen descriptivo de las respuestas obtenidas.
 
 | Campo | Detalle |
 |---|---|
-| Nombre del archivo | upc-pre-202620-1asi0729-7753-horizon-needfinding-sprint-1.mp4 |
-| Plataforma | Microsoft Stream |
-| URL del video | [Completar URL de Microsoft Stream] |
-| Duración total | [Completar duración total] |
+| Nombre del archivo - Segmento 1 | Entrevista_Seg1_AaronEspinoza.mp4 |
+| Nombre del archivo - Segmento 2 | Entrevista_Seg2_AaronEspinoza.mp4 |
+| Plataforma | SharePoint / Microsoft Stream |
+| Entrevistador | Espinoza Flores, Aaron Andre |
 
 #### Registro de entrevistas del Segmento 1: Empresas exportadoras
 
-| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duración |
+| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupacion / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duracion |
 |---|---|---:|---|---|---|---|---|---|---|
-| E01 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
-| E02 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
-| E03 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+| E01 | Manuel Alejandro Marina Vazquez | 28 | [Completar] | Personal relacionado con transporte | Transporte / operaciones de movilidad empresarial | [Insertar imagen] | [Video Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg) | 00:00:00 | [Completar] |
+
+**Resumen de la entrevista E01:**  
+Manuel Alejandro Marina Vazquez indico que su rol esta relacionado principalmente con actividades de transporte. Desde su experiencia, la sostenibilidad ambiental si es considerada por la empresa, especialmente porque se ha empezado a usar combustible a gas en lugar de combustible convencional. Esta decision se relaciona tanto con la reduccion de costos como con un menor impacto ambiental.
+
+El entrevistado senalo que los clientes o socios comerciales solicitan poca informacion ambiental; sin embargo, dentro de las operaciones de transporte se elaboran reportes semanales porque los vehiculos se movilizan diariamente y requieren mantenimiento constante. Estos reportes permiten revisar si la quema de gas es adecuada, si existen fallas o si algun vehiculo supera ciertos parametros operativos.
+
+Tambien menciono que la herramienta utilizada actualmente para registrar y consolidar informacion es Excel. Esta situacion genera dificultades porque no todos los trabajadores dominan la herramienta, lo que ocasiona dependencia de otras personas para obtener informacion. Los datos mas importantes para sus reportes son el consumo de GNV y las refacciones o mantenimientos necesarios para los vehiculos. Finalmente, considero que una plataforma como EcoTrack seria util porque permitiria calcular la huella de carbono, generar reportes por periodo y comunicar a clientes o interesados que la empresa se preocupa por la gestion ambiental.
 
 #### Registro de entrevistas del Segmento 2: Corporaciones y medianas empresas industriales
 
-| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duración |
+| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupacion / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duracion |
 |---|---|---:|---|---|---|---|---|---|---|
-| E04 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
-| E05 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
-| E06 | [Completar] | [Completar] | [Completar] | [Completar] | [Completar] | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+| E02 | Renzo Santos | 26 | [Completar] | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | [Insertar imagen] | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse) | 00:00:00 | [Completar] |
 
-### 2.2.3. Análisis de entrevistas
+**Resumen de la entrevista E02:**  
+Renzo Santos explico que la empresa donde trabaja se dedica a la produccion y transformacion de bienes industriales. Sus operaciones incluyen abastecimiento de materias primas, procesos de fabricacion y mantenimiento. Su rol se relaciona con el seguimiento de operaciones y registros internos de revision.
 
-El análisis de entrevistas deberá completarse con los resultados obtenidos luego de realizar las entrevistas reales. Esta sección permitirá identificar patrones por segmento, sustentar los User Personas y justificar las principales necesidades que serán atendidas por EcoTrack.
+El entrevistado considero que la gestion ambiental es muy importante porque permite conocer cuanto consume la empresa y que impacto generan sus operaciones. Ademas, esta informacion ayuda a identificar oportunidades para reducir consumo de energia y otros recursos, controlar costos, atender requisitos ambientales y facilitar decisiones gerenciales basadas en informacion y no solo en estimaciones.
 
-| Segmento | Variable de análisis | Resultado esperado | Sustento |
+Respecto a las principales fuentes de consumo y emisiones, menciono el consumo electrico de planta, oficinas, maquinaria y transporte asociado al uso de gasolina en vehiculos. Tambien indico que la informacion ambiental se genera desde distintas areas o unidades de negocio y actualmente se organiza mediante hojas de calculo, documentos y registros separados. Esto dificulta la consolidacion, especialmente cuando cada area trabaja con formatos o niveles de detalle diferentes.
+
+Finalmente, destaco que contar con dashboards, reportes e historial de calculos en una sola plataforma seria muy importante porque reduciria el tiempo dedicado a consolidar informacion, facilitaria revisiones y aprobaciones, permitiria a la gerencia visualizar rapidamente el estado ambiental de la empresa y mantendria trazabilidad para comparar resultados entre periodos.
+
+### 2.2.3. Analisis de entrevistas
+
+A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con una entrevista por segmento, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
+
+| Segmento | Variable de analisis | Resultado | Sustento |
 |---|---|---|---|
-| Empresas exportadoras | Uso de hojas de cálculo para registrar información ambiental | [Completar %] | Entrevistas E01, E02 y E03 |
-| Empresas exportadoras | Necesidad de reportes para clientes, certificadoras o socios comerciales | [Completar %] | Entrevistas E01, E02 y E03 |
-| Empresas exportadoras | Dificultad para consolidar datos de consumo energético, combustible o transporte | [Completar %] | Entrevistas E01, E02 y E03 |
-| Empresas exportadoras | Interés en dashboards y reportes ambientales por periodo | [Completar %] | Entrevistas E01, E02 y E03 |
-| Corporaciones y medianas empresas industriales | Registro de información por sede, planta o área | [Completar %] | Entrevistas E04, E05 y E06 |
-| Corporaciones y medianas empresas industriales | Dificultad para comparar emisiones o consumos entre periodos | [Completar %] | Entrevistas E04, E05 y E06 |
-| Corporaciones y medianas empresas industriales | Necesidad de indicadores para gerencia | [Completar %] | Entrevistas E04, E05 y E06 |
-| Corporaciones y medianas empresas industriales | Interés en metas ambientales y seguimiento de planes de reducción | [Completar %] | Entrevistas E04, E05 y E06 |
+| Empresas exportadoras | Uso de hojas de calculo para registrar informacion ambiental | 100% | El entrevistado del Segmento 1 indico que actualmente utiliza Excel para registrar y consolidar informacion. |
+| Empresas exportadoras | Necesidad de reportes ambientales o de transporte por periodo | 100% | El entrevistado menciono que se elaboran reportes semanales relacionados con vehiculos, consumo de GNV y mantenimiento. |
+| Empresas exportadoras | Dificultad para consolidar datos o usar herramientas actuales | 100% | El entrevistado senalo que se pierde al usar Excel y necesita apoyo de otras personas para obtener informacion. |
+| Empresas exportadoras | Interes en una plataforma para calcular huella de carbono y generar reportes | 100% | El entrevistado considero util una plataforma que calcule huella de carbono y muestre informacion ambiental en dashboards. |
+| Corporaciones y medianas empresas industriales | Registro de informacion por area o unidad de negocio | 100% | El entrevistado del Segmento 2 indico que la informacion se genera desde distintas areas o unidades de negocio. |
+| Corporaciones y medianas empresas industriales | Dependencia de hojas de calculo, correos o registros manuales | 100% | El entrevistado senalo que se usan hojas de calculo, documentos, registros separados y archivos recibidos por correo. |
+| Corporaciones y medianas empresas industriales | Dificultad para comparar emisiones o consumos entre periodos, sedes o areas | 100% | El entrevistado menciono problemas por formatos distintos, niveles de detalle diferentes e inconsistencias entre sedes. |
+| Corporaciones y medianas empresas industriales | Interes en dashboards, reportes e historial de calculos | 100% | El entrevistado afirmo que seria muy importante centralizar dashboards, reportes e historial para reducir tiempo y mantener trazabilidad. |
 
-Para el Segmento 1 se espera validar si las empresas exportadoras necesitan información ambiental ordenada para responder a exigencias externas. Para el Segmento 2 se espera validar si las corporaciones y medianas empresas industriales requieren consolidar información de distintas sedes, áreas o procesos productivos.
+#### Analisis del Segmento 1: Empresas exportadoras
+
+El entrevistado del Segmento 1 evidencia que, aunque los clientes o socios comerciales no siempre solicitan informacion ambiental de forma frecuente, la empresa si realiza controles internos asociados al transporte. El uso de GNV, el mantenimiento de vehiculos y la revision de parametros operativos son elementos importantes para controlar costos y reducir impacto ambiental.
+
+El principal problema identificado es la dependencia de Excel para registrar y consultar informacion. Esta herramienta puede dificultar el trabajo cuando el usuario no cuenta con dominio suficiente, generando perdida de tiempo y dependencia de otras personas. Por ello, EcoTrack representa una oportunidad para centralizar datos de combustible, transporte y mantenimiento, generar reportes por periodo y comunicar de forma mas clara el compromiso ambiental de la empresa.
+
+#### Analisis del Segmento 2: Corporaciones y medianas empresas industriales
+
+El entrevistado del Segmento 2 confirma que las empresas industriales manejan informacion ambiental distribuida entre distintas areas, como produccion, mantenimiento, administracion y sostenibilidad. Las principales fuentes de consumo o emisiones identificadas son electricidad en planta, oficinas, maquinaria y transporte.
+
+El problema mas relevante es la falta de estandarizacion y centralizacion. La informacion se registra en hojas de calculo, documentos, correos y registros separados, lo que dificulta comparar periodos, sedes o areas. Por ello, EcoTrack puede aportar valor mediante dashboards, reportes, historial de calculos, indicadores por alcance y seguimiento de metas ambientales.
+
+#### Principales hallazgos generales
+
+- Ambos segmentos utilizan o dependen de hojas de calculo para gestionar informacion ambiental.
+- Ambos segmentos reconocen valor en centralizar informacion en una sola plataforma.
+- El Segmento 1 prioriza informacion relacionada con transporte, GNV y mantenimiento de vehiculos.
+- El Segmento 2 prioriza informacion por area, planta, unidad de negocio, consumo electrico, maquinaria y transporte.
+- Los dashboards y reportes son considerados utiles para comunicar resultados y apoyar la toma de decisiones.
+- La trazabilidad historica es necesaria para comparar resultados entre periodos y sustentar decisiones futuras.
 
 ## 2.3. Needfinding
 
@@ -707,26 +738,26 @@ El proceso de Needfinding permite transformar la información obtenida en entrev
 
 ### 2.3.1. User Personas
 
-#### User Persona 1: Valeria Rojas
+#### User Persona 1: Manuel Marina
 
 | Campo | Descripción |
 |---|---|
 | Segmento | Empresas exportadoras |
 | Edad | 34 años |
-| Cargo | Responsable de sostenibilidad |
+| Cargo | Personal relacionado con transporte |
 | Perfil | Profesional encargada de organizar información ambiental para clientes, certificaciones y reportes internos. |
 | Objetivos | Preparar reportes ambientales confiables, responder solicitudes externas y mantener información actualizada sobre emisiones. |
 | Frustraciones | Datos dispersos, cálculos manuales, dificultad para validar información y presión por responder rápido a clientes o auditorías. |
-| Necesidades | Centralizar datos, generar reportes por periodo, consultar historial de emisiones y reducir errores de registro. |
+| Necesidades | Centralizar datos de GNV, mantenimiento y transporte, generar reportes semanales y visualizar indicadores ambientales en una plataforma sencilla. |
 | Canales digitales | Correo electrónico, hojas de cálculo, plataformas de gestión documental y reuniones virtuales. |
 
-#### User Persona 2: Carlos Medina
+#### User Persona 2: Renzo Santos
 
 | Campo | Descripción |
 |---|---|
 | Segmento | Corporaciones y medianas empresas industriales |
 | Edad | 41 años |
-| Cargo | Gerente de operaciones |
+| Cargo | Trabajador interno de seguimiento de operaciones |
 | Perfil | Responsable de supervisar procesos productivos, consumo de recursos y desempeño operativo en una empresa con varias áreas o sedes. |
 | Objetivos | Controlar consumos, identificar fuentes de emisión relevantes y tomar decisiones para mejorar la eficiencia operativa. |
 | Frustraciones | Falta de visibilidad por sede, dificultad para comparar periodos, información incompleta y dependencia de reportes elaborados manualmente. |
@@ -735,7 +766,7 @@ El proceso de Needfinding permite transformar la información obtenida en entrev
 
 ### 2.3.2. User Task Matrix
 
-| Task | Valeria Rojas - Frecuencia | Valeria Rojas - Importancia | Carlos Medina - Frecuencia | Carlos Medina - Importancia |
+| Task | Manuel Marina - Frecuencia | Manuel Marina - Importancia | Renzo Santos - Frecuencia | Renzo Santos - Importancia |
 |---|---|---|---|---|
 | Recolectar datos ambientales desde distintas áreas | Alta | Alta | Media | Alta |
 | Consolidar información en hojas de cálculo | Alta | Alta | Media | Media |
@@ -748,13 +779,13 @@ El proceso de Needfinding permite transformar la información obtenida en entrev
 | Definir metas de reducción | Baja | Media | Media | Alta |
 | Hacer seguimiento a planes de reducción | Baja | Media | Alta | Alta |
 
-Después de revisar la matriz, se observa que Valeria Rojas concentra mayor frecuencia en actividades de recopilación, validación y reporte, mientras que Carlos Medina prioriza la comparación de información, revisión de indicadores y seguimiento de acciones de reducción.
+Después de revisar la matriz, se observa que Manuel Marina concentra mayor frecuencia en actividades de recopilación, validación y reporte, mientras que Renzo Santos prioriza la comparación de información, revisión de indicadores y seguimiento de acciones de reducción.
 
 ### 2.3.3. User Journey Mapping
 
 Los User Journey Maps representan la experiencia actual de los usuarios sin EcoTrack. Para esta etapa se consideran journeys As-Is, centrados en cómo los usuarios realizan hoy sus tareas ambientales mediante procesos manuales, hojas de cálculo y coordinación entre áreas.
 
-#### User Journey Map As-Is: Valeria Rojas
+#### User Journey Map As-Is: Manuel Marina
 
 | Etapa | Acción | Pensamiento | Emoción | Pain Point | Oportunidad |
 |---|---|---|---|---|---|
@@ -764,7 +795,7 @@ Los User Journey Maps representan la experiencia actual de los usuarios sin EcoT
 | Prepara reporte | Redacta resultados y adjunta evidencias. | El reporte debe ser claro y defendible. | Presión | La preparación toma mucho tiempo. | Generar reportes ambientales automáticamente. |
 | Envía información | Comparte el reporte con cliente, certificadora o gerencia. | Espero que no soliciten correcciones. | Incertidumbre | Difícil rastrear cambios o evidencias. | Mantener historial y trazabilidad. |
 
-#### User Journey Map As-Is: Carlos Medina
+#### User Journey Map As-Is: Renzo Santos
 
 | Etapa | Acción | Pensamiento | Emoción | Pain Point | Oportunidad |
 |---|---|---|---|---|---|
@@ -778,7 +809,7 @@ Los User Journey Maps representan la experiencia actual de los usuarios sin EcoT
 
 Los Empathy Maps permiten comprender lo que cada User Persona dice, piensa, hace y necesita en relación con la gestión ambiental. Estos artefactos se elaborarán en UXPressia y se incorporarán como capturas en el informe.
 
-#### Empathy Map: Valeria Rojas
+#### Empathy Map: Manuel Marina
 
 | Dimensión | Descripción |
 |---|---|
@@ -790,7 +821,7 @@ Los Empathy Maps permiten comprender lo que cada User Persona dice, piensa, hace
 | Pains | Datos dispersos, cálculos manuales, poco historial y dificultad para sustentar evidencias. |
 | Gains | Reportes rápidos, información centralizada, historial confiable y menor esfuerzo operativo. |
 
-#### Empathy Map: Carlos Medina
+#### Empathy Map: Renzo Santos
 
 | Dimensión | Descripción |
 |---|---|
