@@ -697,6 +697,7 @@ Actualmente utilizan Excel, cuadernos y fotografias, sin contar con un software 
 | Entrevista | Nombres y apellidos | Edad | Distrito | Ocupacion / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duracion |
 |---|---|---:|---|---|---|---|---|---|---|
 | E03 | Renzo Santos | 26 | Pueblo Libre | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | ![Entrevista Segmento 2](assets/chapter-02/interviews/entrevista-seg-2.png) | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse) | 00:00:00 | 6:42 |
+| E04 | Norvil Perez | 30 | [Completar] | Supervisor de operaciones | Procesamiento y envasado de alimentos | [Insertar imagen] | [Video Segmento 2 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4) | 00:00:00 | [Completar] |
 
 **Resumen de la entrevista E03:**  
 Renzo Santos explico que la empresa donde trabaja se dedica a la produccion y transformacion de bienes industriales. Sus operaciones incluyen abastecimiento de materias primas, procesos de fabricacion y mantenimiento. Su rol se relaciona con el seguimiento de operaciones y registros internos de revision.
@@ -707,9 +708,19 @@ Respecto a las principales fuentes de consumo y emisiones, menciono el consumo e
 
 Finalmente, destaco que contar con dashboards, reportes e historial de calculos en una sola plataforma seria muy importante porque reduciria el tiempo dedicado a consolidar informacion, facilitaria revisiones y aprobaciones, permitiria a la gerencia visualizar rapidamente el estado ambiental de la empresa y mantendria trazabilidad para comparar resultados entre periodos.
 
+
+**Resumen de la entrevista E04:**  
+Norvil Perez explico que trabaja como supervisor de operaciones en una empresa dedicada al procesamiento y envasado de alimentos. Las operaciones incluyen recepcion de materia prima, seleccion, limpieza, procesamiento, envasado, almacenamiento y distribucion. Dentro de su rol coordina parte de la produccion, revisa el cumplimiento de procesos y controla consumos como energia, combustible y materiales usados durante la operacion.
+
+El entrevistado senalo que la gestion ambiental ha adquirido mayor importancia porque ya no se percibe solo como cumplimiento, sino tambien como una herramienta para controlar costos. Si una maquina consume mas energia de lo normal o un proceso genera demasiados residuos, esto impacta tanto en el ambiente como en los gastos operativos de la empresa.
+
+Las principales fuentes de consumo y emisiones identificadas son la electricidad usada por maquinas de produccion, equipos de refrigeracion, iluminacion y almacenamiento, ademas del gas utilizado en procesos que requieren calor y el combustible de vehiculos para transporte de productos o recojo de materia prima. La informacion se registra por areas dentro de la planta, pero no existe un sistema centralizado. Produccion, mantenimiento y administracion manejan registros separados en Excel, documentos, recibos, correos o WhatsApp.
+
+Entre las dificultades mencionadas estan la busqueda de informacion en varios archivos, diferencias de formato entre meses, datos incompletos y archivos no actualizados. Para gerencia, los indicadores mas importantes son consumo de electricidad, combustible, agua, residuos, emisiones, consumo por area y comparaciones por periodo. Finalmente, considero valioso contar con EcoTrack para visualizar dashboards, reportes, historial de calculos, metas por area y comparaciones mensuales o anuales sin preparar todo manualmente.
+
 ### 2.2.3. Analisis de entrevistas
 
-A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con dos entrevistas para el Segmento 1 y una entrevista para el Segmento 2, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
+A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con dos entrevistas por segmento, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
 
 | Segmento | Variable de analisis | Resultado | Sustento |
 |---|---|---|---|
