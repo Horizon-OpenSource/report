@@ -707,7 +707,7 @@ Las User Stories y Technical Stories identificadas para EcoTrack se organizan en
 
 ## 3.2. Impact Mapping
 
-<!-- Completar -->
+![Impact Mapping - EcoTrack](assets/chapter-03/impact-mapping.png)
 
 ---
 
