@@ -775,107 +775,64 @@ El problema mas relevante es la falta de estandarizacion y centralizacion. La in
 - Los dashboards y reportes son considerados utiles para comunicar resultados y apoyar la toma de decisiones.
 - La trazabilidad historica es necesaria para comparar resultados entre periodos y sustentar decisiones futuras.
 
-## 2.3. Needfinding
+## 2.3. Needfinding.
+A continuacion se presentan los User Personas representativos de los segmentos objetivo definidos a partir de la sintesis de hallazgos de las entrevistas y el analisis cualitativo-estadistico realizado para EcoTrack.
 
-El proceso de Needfinding permite transformar la información obtenida en entrevistas y análisis competitivo en una comprensión clara de las necesidades de los usuarios.
+### 2.3.1. User Personas.
+A continuacion, se presentan las fichas de User Persona elaboradas para cada uno de los dos segmentos objetivo. Cada ficha integra los hallazgos de las entrevistas, incluyendo caracteristicas demograficas, personalidad, habilidades, marcas e influencias, dispositivos de preferencia y canales de interaccion.
 
-### 2.3.1. User Personas
+* **Segmento 1: Empresas exportadoras**
 
-#### User Persona 1: Manuel Marina
+  ![User Persona Empresa Exportadora](assets/chapter-02/user-persona-empresa-exportadora.png)
 
-| Campo | Descripción |
-|---|---|
-| Segmento | Empresas exportadoras |
-| Edad | 34 años |
-| Cargo | Personal relacionado con transporte |
-| Perfil | Profesional encargada de organizar información ambiental para clientes, certificaciones y reportes internos. |
-| Objetivos | Preparar reportes ambientales confiables, responder solicitudes externas y mantener información actualizada sobre emisiones. |
-| Frustraciones | Datos dispersos, cálculos manuales, dificultad para validar información y presión por responder rápido a clientes o auditorías. |
-| Necesidades | Centralizar datos de GNV, mantenimiento y transporte, generar reportes semanales y visualizar indicadores ambientales en una plataforma sencilla. |
-| Canales digitales | Correo electrónico, hojas de cálculo, plataformas de gestión documental y reuniones virtuales. |
+* **Segmento 2: Corporaciones y medianas empresas industriales**
 
-#### User Persona 2: Renzo Santos
+    ![User Persona Empresa Industrial](assets/chapter-02/user-persona-empresa-industrial.png)
 
-| Campo | Descripción |
-|---|---|
-| Segmento | Corporaciones y medianas empresas industriales |
-| Edad | 41 años |
-| Cargo | Trabajador interno de seguimiento de operaciones |
-| Perfil | Responsable de supervisar procesos productivos, consumo de recursos y desempeño operativo en una empresa con varias áreas o sedes. |
-| Objetivos | Controlar consumos, identificar fuentes de emisión relevantes y tomar decisiones para mejorar la eficiencia operativa. |
-| Frustraciones | Falta de visibilidad por sede, dificultad para comparar periodos, información incompleta y dependencia de reportes elaborados manualmente. |
-| Necesidades | Dashboards por sede, indicadores ambientales, comparación entre periodos y seguimiento de metas de reducción. |
-| Canales digitales | Sistemas internos, correo electrónico, hojas de cálculo, dashboards corporativos y reportes ejecutivos. |
+### 2.3.2. User Task Matrix.
+La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada segmento de usuario objetivo frente a la solucion. Se analizan segun su frecuencia de ejecucion y la importancia estrategica que representan para cumplir las metas descritas en los User Personas.
 
-### 2.3.2. User Task Matrix
+| Tarea | Empresas exportadoras (Frecuencia / Importancia) | Corporaciones y medianas empresas industriales (Frecuencia / Importancia) |
+| :--- | :---: | :---: |
+| **Registrar consumos de energia, combustible, transporte, agua y residuos** | Alta / Alta | Alta / Alta |
+| **Consolidar informacion ambiental proveniente de diferentes areas** | Alta / Alta | Alta / Alta |
+| **Calcular la huella de carbono por periodo, alcance o fuente de emision** | Media / Alta | Alta / Alta |
+| **Generar reportes ambientales para clientes, certificaciones o auditorias** | Alta / Alta | Media / Alta |
+| **Revisar dashboards con indicadores de consumo, emisiones y tendencias** | Media / Alta | Alta / Alta |
+| **Comparar resultados entre meses, sedes, plantas, areas o procesos** | Media / Media | Alta / Alta |
+| **Definir metas de reduccion y realizar seguimiento de acciones ambientales** | Media / Alta | Alta / Alta |
+| **Mantener evidencias y trazabilidad de los registros ambientales** | Alta / Alta | Media / Alta |
 
-| Task | Manuel Marina - Frecuencia | Manuel Marina - Importancia | Renzo Santos - Frecuencia | Renzo Santos - Importancia |
-|---|---|---|---|---|
-| Recolectar datos ambientales desde distintas áreas | Alta | Alta | Media | Alta |
-| Consolidar información en hojas de cálculo | Alta | Alta | Media | Media |
-| Validar datos antes de preparar reportes | Alta | Alta | Media | Alta |
-| Calcular emisiones por periodo | Media | Alta | Media | Media |
-| Preparar reportes ambientales | Alta | Alta | Baja | Media |
-| Responder solicitudes de clientes, auditorías o certificaciones | Alta | Alta | Baja | Media |
-| Revisar consumos por sede o área | Media | Media | Alta | Alta |
-| Comparar emisiones entre periodos | Media | Alta | Alta | Alta |
-| Definir metas de reducción | Baja | Media | Media | Alta |
-| Hacer seguimiento a planes de reducción | Baja | Media | Alta | Alta |
+#### Hallazgos clave de la matriz:
 
-Después de revisar la matriz, se observa que Manuel Marina concentra mayor frecuencia en actividades de recopilación, validación y reporte, mientras que Renzo Santos prioriza la comparación de información, revisión de indicadores y seguimiento de acciones de reducción.
+* **Empresas exportadoras:** Priorizan la organizacion de evidencias ambientales, la generacion de reportes y la trazabilidad de informacion solicitada por clientes, socios comerciales, auditorias o certificaciones.
+* **Corporaciones y medianas empresas industriales:** Se concentran en centralizar informacion proveniente de plantas, areas y unidades operativas, comparar indicadores por periodo y tomar decisiones basadas en consumos, emisiones y metas ambientales.
 
-### 2.3.3. User Journey Mapping
+### 2.3.3. User Journey Mapping.
+A continuacion, se presenta el User Journey Mapping (Mapa de Experiencia del Usuario) que describe las etapas clave del recorrido de cada segmento objetivo frente a la solucion, incluyendo los puntos de contacto, emociones y oportunidades de mejora.
 
-Los User Journey Maps representan la experiencia actual de los usuarios sin EcoTrack. Para esta etapa se consideran journeys As-Is, centrados en cómo los usuarios realizan hoy sus tareas ambientales mediante procesos manuales, hojas de cálculo y coordinación entre áreas.
+* **Segmento 1: Empresas exportadoras**
+  El siguiente Journey Map ilustra el proceso que sigue una responsable de Calidad y Sostenibilidad de una empresa exportadora para recopilar datos ambientales, preparar evidencias para clientes o certificadoras y responder a observaciones de auditoria. El recorrido muestra como actualmente depende de hojas de calculo, cuadernos, recibos y documentos dispersos, lo que genera riesgo de perdida de informacion, retrasos y dificultad para demostrar cumplimiento ambiental.
 
-#### User Journey Map As-Is: Manuel Marina
+    ![User Journey Mapping Empresa Exportadora](assets/chapter-02/user-journey-map-empresa-exportadora.png)
 
-| Etapa | Acción | Pensamiento | Emoción | Pain Point | Oportunidad |
-|---|---|---|---|---|---|
-| Recibe solicitud ambiental | Cliente o certificadora solicita información ambiental actualizada. | Necesito responder con datos confiables. | Preocupación | No toda la información está centralizada. | Centralizar solicitudes y datos por periodo. |
-| Solicita datos internos | Pide información a operaciones, logística y administración. | Dependo de que otras áreas respondan a tiempo. | Ansiedad | La información llega en distintos formatos. | Estandarizar registros ambientales. |
-| Consolida información | Organiza datos en hojas de cálculo. | Debo revisar que no existan errores. | Cansancio | Riesgo de duplicidad o datos incompletos. | Automatizar validaciones y cálculos. |
-| Prepara reporte | Redacta resultados y adjunta evidencias. | El reporte debe ser claro y defendible. | Presión | La preparación toma mucho tiempo. | Generar reportes ambientales automáticamente. |
-| Envía información | Comparte el reporte con cliente, certificadora o gerencia. | Espero que no soliciten correcciones. | Incertidumbre | Difícil rastrear cambios o evidencias. | Mantener historial y trazabilidad. |
+* **Segmento 2: Corporaciones y medianas empresas industriales**
+  El siguiente Journey Map muestra el proceso de un supervisor o responsable operativo de una empresa industrial para reunir informacion de consumo energetico, combustible, materiales y residuos desde diferentes areas. El recorrido evidencia como la informacion distribuida en archivos, correos, registros manuales o mensajes dificulta comparar periodos, calcular emisiones y presentar reportes confiables para gerencia.
 
-#### User Journey Map As-Is: Renzo Santos
+![User Journey Mapping Empresa Industrial](assets/chapter-02/user-journey-map-empresa-industrial.png)
 
-| Etapa | Acción | Pensamiento | Emoción | Pain Point | Oportunidad |
-|---|---|---|---|---|---|
-| Revisa consumos | Solicita información de consumo energético, combustible o producción. | Necesito entender dónde se consume más. | Interés | Los datos no siempre llegan completos. | Consolidar datos por sede o área. |
-| Compara periodos | Contrasta información mensual o trimestral. | Debo identificar tendencias relevantes. | Frustración | La comparación manual toma tiempo. | Mostrar comparaciones automáticas. |
-| Identifica problemas | Busca áreas con alto consumo o emisiones elevadas. | Debo priorizar acciones. | Preocupación | No hay indicadores visuales actualizados. | Implementar dashboards ambientales. |
-| Coordina acciones | Propone iniciativas de reducción con responsables. | Necesito que el equipo haga seguimiento. | Responsabilidad | No existe seguimiento centralizado. | Gestionar metas y planes de reducción. |
-| Evalúa resultados | Revisa si las acciones redujeron consumos o emisiones. | Necesito evidencia para justificar decisiones. | Incertidumbre | Difícil medir avance real. | Relacionar metas con indicadores y reportes. |
+### 2.3.4. Empathy Mapping.
+El Mapa de Empatia sintetiza las observaciones e impresiones recopiladas durante las entrevistas, permitiendo profundizar en los aspectos emocionales y actitudinales de los dos segmentos de usuario objetivo de EcoTrack.
 
-### 2.3.4. Empathy Mapping
+#### Empathy Map 1: Responsable de Calidad y Sostenibilidad (Empresa exportadora)
+El siguiente Mapa de Empatia profundiza en la experiencia de una responsable de Calidad y Sostenibilidad de una empresa exportadora. Se identifican sus principales pensamientos y sentimientos (preocupacion por cumplir auditorias, necesidad de informacion confiable), lo que ve en su entorno (registros en Excel, documentos fisicos, fotos y evidencias dispersas), lo que oye de clientes y certificadoras (solicitudes de informacion ambiental y trazabilidad), lo que dice y hace (consolidar datos manualmente, preparar reportes por mes o lote), asi como sus principales pains (perdida de informacion, duplicidad de archivos, observaciones de auditoria) y gains (reducir tiempo, generar reportes ordenados y demostrar cumplimiento ambiental).
 
-Los Empathy Maps permiten comprender lo que cada User Persona dice, piensa, hace y necesita en relación con la gestión ambiental. Estos artefactos se elaborarán en UXPressia y se incorporarán como capturas en el informe.
+![Empathy Map Empresa Exportadora](assets/chapter-02/empathy-map-empresa-exportadora.png)
 
-#### Empathy Map: Manuel Marina
+#### Empathy Map 2: Responsable Operativo Industrial (Corporacion o mediana empresa industrial)
+El siguiente Mapa de Empatia analiza la experiencia de un responsable operativo industrial. Se exploran sus pensamientos y sentimientos (presion por controlar consumos, necesidad de reportes claros para gerencia), lo que ve (datos separados por areas, sedes o plantas), lo que oye (solicitudes de administracion, mantenimiento, operaciones y sostenibilidad), lo que dice y hace (revisar consumos, consolidar informacion, comparar periodos), y sus pains (formatos inconsistentes, informacion incompleta, mucho tiempo de consolidacion) y gains (centralizar informacion, visualizar indicadores, comparar resultados y hacer seguimiento de metas de reduccion).
 
-| Dimensión | Descripción |
-|---|---|
-| ¿Qué dice? | “Necesito información ambiental confiable para responder a clientes y certificadoras.” |
-| ¿Qué piensa y siente? | Siente presión por entregar reportes correctos y preocupación por posibles errores en los datos. |
-| ¿Qué ve? | Hojas de cálculo, correos, documentos dispersos y solicitudes ambientales cada vez más frecuentes. |
-| ¿Qué escucha? | Clientes, gerencia y certificadoras piden evidencia clara y actualizada. |
-| ¿Qué hace? | Solicita datos, valida información, consolida registros y prepara reportes. |
-| Pains | Datos dispersos, cálculos manuales, poco historial y dificultad para sustentar evidencias. |
-| Gains | Reportes rápidos, información centralizada, historial confiable y menor esfuerzo operativo. |
-
-#### Empathy Map: Renzo Santos
-
-| Dimensión | Descripción |
-|---|---|
-| ¿Qué dice? | “Necesito saber qué sede o proceso genera mayor impacto para tomar decisiones.” |
-| ¿Qué piensa y siente? | Siente responsabilidad por mejorar la eficiencia operativa y reducir consumos. |
-| ¿Qué ve? | Información distribuida por áreas, reportes manuales y poca visibilidad de indicadores ambientales. |
-| ¿Qué escucha? | Gerencia solicita resultados medibles y equipos operativos reportan datos de forma irregular. |
-| ¿Qué hace? | Revisa consumos, compara periodos, coordina acciones de mejora y evalúa resultados. |
-| Pains | Falta de dashboards, dificultad para comparar periodos y ausencia de seguimiento centralizado. |
-| Gains | Indicadores por sede, comparación automática, metas ambientales y planes de reducción visibles. |
-
+![Empathy Map Empresa Industrial](assets/chapter-02/empathy-map-empresa-industrial.png)
 ## 2.4. Big Picture Event Storming
 
 El Big Picture Event Storming permite representar visualmente los principales eventos del dominio de EcoTrack. Esta técnica ayuda a comprender el flujo general del negocio, identificar procesos relevantes y reconocer oportunidades para estructurar la solución.
