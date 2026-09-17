@@ -699,6 +699,7 @@ Actualmente utilizan Excel, cuadernos y fotografias, sin contar con un software 
 | E03 | Renzo Santos | 26 | Pueblo Libre | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | ![Entrevista Segmento 2](assets/chapter-02/interviews/entrevista-seg-2.png) | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse) | 00:00:00 | 6:42 |
 | E04 | Norvil Perez | 30 | [Completar] | Supervisor de operaciones | Procesamiento y envasado de alimentos | [Insertar imagen] | [Video Segmento 2 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4) | 00:00:00 | 8:11 |
 | E05 | [Nombre no especificado] | [Completar] | [Completar] | Encargada de Calidad y Sostenibilidad | Empresa pequena del rubro textil / confeccion de prendas de vestir | [Insertar imagen] | [Video Segmento 2 - Empresa textil](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU) | 00:00:00 | 7:43 |
+| E06 | Rosa Torres | 49 | [Completar] | Gerente de taller automotriz | Taller de pintura automotriz | [Insertar imagen] | [Video Segmento 2 - Rosa Torres](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQA4osdYU2cVTppdGXpQ4q-KAU9E4b1CVAsdStJ2Ntr-FHI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZqWiQC) | 00:00:00 | 8:52 |
 
 **Resumen de la entrevista E03:**  
 Renzo Santos explico que la empresa donde trabaja se dedica a la produccion y transformacion de bienes industriales. Sus operaciones incluyen abastecimiento de materias primas, procesos de fabricacion y mantenimiento. Su rol se relaciona con el seguimiento de operaciones y registros internos de revision.
@@ -729,9 +730,19 @@ Respecto a los reportes, la empresa lleva registros mensuales de electricidad, a
 
 Actualmente usan Excel, registros fisicos, recibos de electricidad y agua, y documentos relacionados con residuos. La informacion esta distribuida en varios archivos y se consolida manualmente. Esto genera demora para encontrar y ordenar informacion, duplicidad de archivos, registros incorrectos y confusion por versiones diferentes. Finalmente, la entrevistada considero util una plataforma simple que registre consumos y residuos, calcule indicadores automaticamente, genere reportes para clientes y permita comparar datos por mes.
 
+
+**Resumen de la entrevista E06:**  
+Rosa Torres explico que trabaja como gerente de un taller de pintura automotriz dedicado a la reparacion y pintado de vehiculos. Las operaciones principales incluyen lijado, preparacion de superficies, pintado y acabado. Su rol consiste en supervisar al personal, las compras y los trabajos realizados dentro del taller.
+
+La entrevistada senalo que la gestion ambiental es importante porque el taller utiliza pinturas, thinner, solventes y otros productos que generan residuos, vapores y olores durante los trabajos de pintura. Ademas, el desperdicio de materiales representa un costo operativo, por lo que controlar estos consumos tambien beneficia la eficiencia del negocio. Sin embargo, actualmente no cuentan con un sistema especifico para gestionar informacion ambiental.
+
+Las principales fuentes de consumo e impacto son la electricidad usada por compresores, maquinas de lijado y el area de pintura, asi como el uso de pintura, thinner y solventes. La informacion se encuentra distribuida entre facturas, registros de compras, hojas de Excel y anotaciones manuales. La revision la realiza principalmente la gerente del taller, con apoyo de trabajadores y de la persona encargada de compras.
+
+Entre las dificultades identificadas esta la imposibilidad de comparar con precision los consumos entre meses, debido a que no siempre se conoce cuanto material se uso realmente por trabajo o cuanto se desperdicio. Los indicadores mas relevantes para el taller son consumo de electricidad, agua, pintura, solventes, residuos y material utilizado por vehiculo o trabajo. Finalmente, considero util contar con EcoTrack para visualizar consumos, residuos, avances y metas de reduccion en una plataforma sencilla, adecuada para un taller pequeno.
+
 ### 2.2.3. Analisis de entrevistas
 
-A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con dos entrevistas para el Segmento 1 y tres entrevistas para el Segmento 2, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
+A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con dos entrevistas para el Segmento 1 y cuatro entrevistas para el Segmento 2, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
 
 | Segmento | Variable de analisis | Resultado | Sustento |
 |---|---|---|---|
