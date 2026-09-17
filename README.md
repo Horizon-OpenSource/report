@@ -663,10 +663,9 @@ Las entrevistas fueron registradas en video y publicadas mediante enlaces de Sha
 
 | Campo | Detalle |
 |---|---|
-| Nombre del archivo - Segmento 1 | Entrevista_Seg1_AaronEspinoza.mp4 |
-| Nombre del archivo - Segmento 2 | Entrevista_Seg2_AaronEspinoza.mp4 |
 | Plataforma | SharePoint / Microsoft Stream |
-| Entrevistador | Espinoza Flores, Aaron Andre |
+| Entrevistadores | Espinoza Flores, Aaron Andre; Lacuta Lima, Alex Rodrigo; Tello Murga, Javier Oswaldo; Torres Diaz, Rolando Andre; Payesa Torres, Harrison Hubert |
+| Evidencias de entrevistas | Cada registro de entrevista incluye su URL de video, screenshot, timing y duracion en las tablas por segmento. |
 
 #### Registro de entrevistas del Segmento 1: Empresas exportadoras
 
