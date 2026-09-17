@@ -674,6 +674,7 @@ Las entrevistas fueron registradas en video y publicadas mediante enlaces de Sha
 |---|---|---:|---|---|---|---|---|---|---|
 | E01 | Manuel Alejandro Marina Vazquez | 28 | San Martin de Porres | Personal relacionado con transporte | Transporte / operaciones de movilidad empresarial | ![Entrevista Segmento 1](assets/chapter-02/interviews/entrevista-seg-1.png) | [Video Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg) | 00:00:00 | 4:34 |
 | E02 | Shadina Lurdes Lopez Hugarte | 28 | [Completar] | Encargada de Calidad y Sostenibilidad | Agroindustria pequena / procesamiento de frutas y verduras | [Insertar imagen] | [Video Segmento 1 - Shadina Lopez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQD_2azhBwEOQ6Atj3XxRSFmATIBispPszUQmCmKSsdnDUo?e=yKkGmJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00:00 | 5:23 |
+| E03 | [Nombre no especificado] | [Completar] | [Completar] | Encargada de Calidad y Sostenibilidad | Empresa pequena del rubro textil / confeccion de prendas de vestir | [Insertar imagen] | [Video Segmento 1 - Empresa textil](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU) | 00:00:00 | 7:43 |
 
 **Resumen de la entrevista E01:**  
 Manuel Alejandro Marina Vazquez indico que su rol esta relacionado principalmente con actividades de transporte. Desde su experiencia, la sostenibilidad ambiental si es considerada por la empresa, especialmente porque se ha empezado a usar combustible a gas en lugar de combustible convencional. Esta decision se relaciona tanto con la reduccion de costos como con un menor impacto ambiental.
@@ -696,12 +697,12 @@ Actualmente utilizan Excel, cuadernos y fotografias, sin contar con un software 
 
 | Entrevista | Nombres y apellidos | Edad | Distrito | Ocupacion / cargo | Empresa / sector | Screenshot | URL del video | Timing | Duracion |
 |---|---|---:|---|---|---|---|---|---|---|
-| E03 | Renzo Santos | 26 | Pueblo Libre | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | ![Entrevista Segmento 2](assets/chapter-02/interviews/entrevista-seg-2.png) | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse) | 00:00:00 | 6:42 |
-| E04 | Norvil Perez | 30 | [Completar] | Supervisor de operaciones | Procesamiento y envasado de alimentos | [Insertar imagen] | [Video Segmento 2 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4) | 00:00:00 | 8:11 |
-| E05 | [Nombre no especificado] | [Completar] | [Completar] | Encargada de Calidad y Sostenibilidad | Empresa pequena del rubro textil / confeccion de prendas de vestir | [Insertar imagen] | [Video Segmento 2 - Empresa textil](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU) | 00:00:00 | 7:43 |
+| E04 | Renzo Santos | 26 | Pueblo Libre | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | ![Entrevista Segmento 2](assets/chapter-02/interviews/entrevista-seg-2.png) | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse) | 00:00:00 | 6:42 |
+| E05 | Norvil Perez | 30 | [Completar] | Supervisor de operaciones | Procesamiento y envasado de alimentos | [Insertar imagen] | [Video Segmento 2 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4) | 00:00:00 | 8:11 |
+
 | E06 | Rosa Torres | 49 | [Completar] | Gerente de taller automotriz | Taller de pintura automotriz | [Insertar imagen] | [Video Segmento 2 - Rosa Torres](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQA4osdYU2cVTppdGXpQ4q-KAU9E4b1CVAsdStJ2Ntr-FHI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZqWiQC) | 00:00:00 | 8:52 |
 
-**Resumen de la entrevista E03:**  
+**Resumen de la entrevista E04:**  
 Renzo Santos explico que la empresa donde trabaja se dedica a la produccion y transformacion de bienes industriales. Sus operaciones incluyen abastecimiento de materias primas, procesos de fabricacion y mantenimiento. Su rol se relaciona con el seguimiento de operaciones y registros internos de revision.
 
 El entrevistado considero que la gestion ambiental es muy importante porque permite conocer cuanto consume la empresa y que impacto generan sus operaciones. Ademas, esta informacion ayuda a identificar oportunidades para reducir consumo de energia y otros recursos, controlar costos, atender requisitos ambientales y facilitar decisiones gerenciales basadas en informacion y no solo en estimaciones.
@@ -711,7 +712,7 @@ Respecto a las principales fuentes de consumo y emisiones, menciono el consumo e
 Finalmente, destaco que contar con dashboards, reportes e historial de calculos en una sola plataforma seria muy importante porque reduciria el tiempo dedicado a consolidar informacion, facilitaria revisiones y aprobaciones, permitiria a la gerencia visualizar rapidamente el estado ambiental de la empresa y mantendria trazabilidad para comparar resultados entre periodos.
 
 
-**Resumen de la entrevista E04:**  
+**Resumen de la entrevista E05:**  
 Norvil Perez explico que trabaja como supervisor de operaciones en una empresa dedicada al procesamiento y envasado de alimentos. Las operaciones incluyen recepcion de materia prima, seleccion, limpieza, procesamiento, envasado, almacenamiento y distribucion. Dentro de su rol coordina parte de la produccion, revisa el cumplimiento de procesos y controla consumos como energia, combustible y materiales usados durante la operacion.
 
 El entrevistado senalo que la gestion ambiental ha adquirido mayor importancia porque ya no se percibe solo como cumplimiento, sino tambien como una herramienta para controlar costos. Si una maquina consume mas energia de lo normal o un proceso genera demasiados residuos, esto impacta tanto en el ambiente como en los gastos operativos de la empresa.
@@ -721,7 +722,7 @@ Las principales fuentes de consumo y emisiones identificadas son la electricidad
 Entre las dificultades mencionadas estan la busqueda de informacion en varios archivos, diferencias de formato entre meses, datos incompletos y archivos no actualizados. Para gerencia, los indicadores mas importantes son consumo de electricidad, combustible, agua, residuos, emisiones, consumo por area y comparaciones por periodo. Finalmente, considero valioso contar con EcoTrack para visualizar dashboards, reportes, historial de calculos, metas por area y comparaciones mensuales o anuales sin preparar todo manualmente.
 
 
-**Resumen de la entrevista E05:**  
+**Resumen de la entrevista E03:**  
 La entrevistada explico que trabaja en una empresa pequena del rubro textil dedicada a la confeccion de prendas de vestir para clientes locales y pedidos de empresas que comercializan productos en el extranjero. La empresa cuenta con aproximadamente 30 trabajadores, y su rol se relaciona con el area de Calidad, sostenibilidad y cumplimiento de requisitos solicitados por clientes.
 
 La sostenibilidad ambiental ha tomado mayor importancia dentro de las decisiones comerciales, debido a que algunos clientes solicitan informacion sobre consumo de energia, agua, residuos textiles, materiales utilizados, productos quimicos y condiciones de produccion. Esto demuestra que la informacion ambiental empieza a influir en la capacidad de responder a clientes y mantener oportunidades comerciales.
@@ -742,14 +743,14 @@ Entre las dificultades identificadas esta la imposibilidad de comparar con preci
 
 ### 2.2.3. Analisis de entrevistas
 
-A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con dos entrevistas para el Segmento 1 y cuatro entrevistas para el Segmento 2, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
+A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con tres entrevistas para el Segmento 1 y tres entrevistas para el Segmento 2, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
 
 | Segmento | Variable de analisis | Resultado | Sustento |
 |---|---|---|---|
-| Empresas exportadoras | Uso de hojas de calculo para registrar informacion ambiental | 100% | Los entrevistados E01 y E02 indicaron que utilizan Excel para registrar o consolidar informacion ambiental. |
-| Empresas exportadoras | Necesidad de reportes ambientales o de transporte por periodo | 100% | E01 menciono reportes semanales de transporte, mientras que E02 indico registros mensuales, auditorias anuales y reportes por lote. |
-| Empresas exportadoras | Dificultad para consolidar datos o usar herramientas actuales | 100% | E01 senalo dificultad para usar Excel y E02 menciono perdida de datos, falta de respaldo y versiones distintas. |
-| Empresas exportadoras | Interes en una plataforma para calcular huella de carbono y generar reportes | 100% | E01 considero util calcular huella de carbono y E02 valoro una plataforma simple con carga desde celular y reportes por periodo. |
+| Empresas exportadoras | Uso de hojas de calculo para registrar informacion ambiental | 100% | Los entrevistados E01, E02 y E03 indicaron que utilizan Excel o registros fisicos para registrar o consolidar informacion ambiental. |
+| Empresas exportadoras | Necesidad de reportes ambientales o de transporte por periodo | 100% | E01 menciono reportes semanales de transporte, E02 indico registros mensuales, auditorias anuales y reportes por lote, y E03 senalo reportes mensuales y solicitudes de clientes o auditorias varias veces al anio. |
+| Empresas exportadoras | Dificultad para consolidar datos o usar herramientas actuales | 100% | E01 senalo dificultad para usar Excel, E02 menciono perdida de datos, falta de respaldo y versiones distintas, y E03 indico demora para ordenar informacion, duplicidad de archivos y confusion por versiones diferentes. |
+| Empresas exportadoras | Interes en una plataforma para calcular huella de carbono y generar reportes | 100% | E01 considero util calcular huella de carbono, E02 valoro una plataforma simple con carga desde celular y reportes por periodo, y E03 considero util calcular indicadores y generar reportes para clientes. |
 | Corporaciones y medianas empresas industriales | Registro de informacion por area o unidad de negocio | 100% | El entrevistado del Segmento 2 indico que la informacion se genera desde distintas areas o unidades de negocio. |
 | Corporaciones y medianas empresas industriales | Dependencia de hojas de calculo, correos o registros manuales | 100% | El entrevistado senalo que se usan hojas de calculo, documentos, registros separados y archivos recibidos por correo. |
 | Corporaciones y medianas empresas industriales | Dificultad para comparar emisiones o consumos entre periodos, sedes o areas | 100% | El entrevistado menciono problemas por formatos distintos, niveles de detalle diferentes e inconsistencias entre sedes. |
@@ -757,9 +758,9 @@ A partir de las entrevistas realizadas, se identificaron hallazgos preliminares 
 
 #### Analisis del Segmento 1: Empresas exportadoras
 
-Las entrevistas del Segmento 1 evidencian dos escenarios complementarios. Por un lado, una operacion de transporte donde se controlan datos de GNV, mantenimiento de vehiculos y parametros operativos. Por otro lado, una agroindustria pequena donde se registran datos de agua, energia, residuos, insumos, empaques y transporte local para clientes exportadores y certificaciones de Buenas Practicas Agricolas.
+Las entrevistas del Segmento 1 evidencian tres escenarios complementarios. Por un lado, una operacion de transporte donde se controlan datos de GNV, mantenimiento de vehiculos y parametros operativos. Por otro lado, una agroindustria pequena donde se registran datos de agua, energia, residuos, insumos, empaques y transporte local para clientes exportadores y certificaciones de Buenas Practicas Agricolas. Finalmente, una empresa textil pequena que necesita responder a clientes sobre energia, agua, residuos textiles, materiales, productos quimicos y condiciones de produccion.
 
-El principal problema identificado es la dependencia de Excel, cuadernos, fotografias y registros manuales para registrar y consultar informacion. Estas herramientas pueden generar perdida de datos, falta de respaldo, versiones diferentes y dependencia de otras personas para obtener informacion. Por ello, EcoTrack representa una oportunidad para centralizar datos de combustible, transporte, mantenimiento, agua, energia, residuos y empaques, generando reportes por periodo o lote y comunicando de forma mas clara el compromiso ambiental de la empresa.
+El principal problema identificado es la dependencia de Excel, cuadernos, fotografias y registros manuales para registrar y consultar informacion. Estas herramientas pueden generar perdida de datos, falta de respaldo, versiones diferentes y dependencia de otras personas para obtener informacion. Por ello, EcoTrack representa una oportunidad para centralizar datos de combustible, transporte, mantenimiento, agua, energia, residuos, empaques, materiales y productos quimicos, generando reportes por periodo o lote y comunicando de forma mas clara el compromiso ambiental de la empresa.
 
 #### Analisis del Segmento 2: Corporaciones y medianas empresas industriales
 
@@ -771,7 +772,7 @@ El problema mas relevante es la falta de estandarizacion y centralizacion. La in
 
 - Ambos segmentos utilizan o dependen de hojas de calculo para gestionar informacion ambiental.
 - Ambos segmentos reconocen valor en centralizar informacion en una sola plataforma.
-- El Segmento 1 prioriza informacion relacionada con transporte, GNV, mantenimiento de vehiculos, consumo de agua, energia, residuos, empaques y evidencias para certificaciones.
+- El Segmento 1 prioriza informacion relacionada con transporte, GNV, mantenimiento de vehiculos, consumo de agua, energia, residuos, empaques, materiales, productos quimicos y evidencias para clientes o certificaciones.
 - El Segmento 2 prioriza informacion por area, planta, unidad de negocio, consumo electrico, maquinaria y transporte.
 - Los dashboards y reportes son considerados utiles para comunicar resultados y apoyar la toma de decisiones.
 - La trazabilidad historica es necesaria para comparar resultados entre periodos y sustentar decisiones futuras.
