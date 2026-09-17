@@ -698,6 +698,7 @@ Actualmente utilizan Excel, cuadernos y fotografias, sin contar con un software 
 |---|---|---:|---|---|---|---|---|---|---|
 | E03 | Renzo Santos | 26 | Pueblo Libre | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | ![Entrevista Segmento 2](assets/chapter-02/interviews/entrevista-seg-2.png) | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse) | 00:00:00 | 6:42 |
 | E04 | Norvil Perez | 30 | [Completar] | Supervisor de operaciones | Procesamiento y envasado de alimentos | [Insertar imagen] | [Video Segmento 2 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4) | 00:00:00 | 8:11 |
+| E05 | [Nombre no especificado] | [Completar] | [Completar] | Encargada de Calidad y Sostenibilidad | Empresa pequena del rubro textil / confeccion de prendas de vestir | [Insertar imagen] | [Video Segmento 2 - Empresa textil](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU) | 00:00:00 | 7:43 |
 
 **Resumen de la entrevista E03:**  
 Renzo Santos explico que la empresa donde trabaja se dedica a la produccion y transformacion de bienes industriales. Sus operaciones incluyen abastecimiento de materias primas, procesos de fabricacion y mantenimiento. Su rol se relaciona con el seguimiento de operaciones y registros internos de revision.
@@ -718,9 +719,19 @@ Las principales fuentes de consumo y emisiones identificadas son la electricidad
 
 Entre las dificultades mencionadas estan la busqueda de informacion en varios archivos, diferencias de formato entre meses, datos incompletos y archivos no actualizados. Para gerencia, los indicadores mas importantes son consumo de electricidad, combustible, agua, residuos, emisiones, consumo por area y comparaciones por periodo. Finalmente, considero valioso contar con EcoTrack para visualizar dashboards, reportes, historial de calculos, metas por area y comparaciones mensuales o anuales sin preparar todo manualmente.
 
+
+**Resumen de la entrevista E05:**  
+La entrevistada explico que trabaja en una empresa pequena del rubro textil dedicada a la confeccion de prendas de vestir para clientes locales y pedidos de empresas que comercializan productos en el extranjero. La empresa cuenta con aproximadamente 30 trabajadores, y su rol se relaciona con el area de Calidad, sostenibilidad y cumplimiento de requisitos solicitados por clientes.
+
+La sostenibilidad ambiental ha tomado mayor importancia dentro de las decisiones comerciales, debido a que algunos clientes solicitan informacion sobre consumo de energia, agua, residuos textiles, materiales utilizados, productos quimicos y condiciones de produccion. Esto demuestra que la informacion ambiental empieza a influir en la capacidad de responder a clientes y mantener oportunidades comerciales.
+
+Respecto a los reportes, la empresa lleva registros mensuales de electricidad, agua y residuos. Cuando existe una auditoria o un cliente importante solicita informacion, los responsables deben reunir los datos y preparar reportes varias veces durante el anio. Los datos mas importantes son el consumo electrico de maquinas de confeccion, el agua usada en procesos, residuos de tela, empaques, combustible para transporte y emisiones aproximadas.
+
+Actualmente usan Excel, registros fisicos, recibos de electricidad y agua, y documentos relacionados con residuos. La informacion esta distribuida en varios archivos y se consolida manualmente. Esto genera demora para encontrar y ordenar informacion, duplicidad de archivos, registros incorrectos y confusion por versiones diferentes. Finalmente, la entrevistada considero util una plataforma simple que registre consumos y residuos, calcule indicadores automaticamente, genere reportes para clientes y permita comparar datos por mes.
+
 ### 2.2.3. Analisis de entrevistas
 
-A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con dos entrevistas por segmento, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
+A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con dos entrevistas para el Segmento 1 y tres entrevistas para el Segmento 2, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
 
 | Segmento | Variable de analisis | Resultado | Sustento |
 |---|---|---|---|
