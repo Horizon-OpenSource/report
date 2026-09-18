@@ -2148,9 +2148,35 @@ https://youtu.be/u3VgMwPC1w8
 
 La evidencia presentada permite comprobar el cumplimiento del Sprint Goal, ya que los visitantes pueden acceder públicamente al Landing Page, navegar por sus principales secciones e identificar la propuesta de valor, capacidades, planes y mecanismos de contacto de EcoTrack.
 
-## 5.2.1.6. Services Documentation Evidence for Sprint Review
+### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 1, el alcance de implementación del equipo Horizon estuvo enfocado en el desarrollo y despliegue de la primera versión del Landing Page de EcoTrack.
+
+En esta iteración no se implementaron RESTful Web Services ni endpoints asociados al backend de la solución. Por este motivo, no se generó documentación de servicios mediante OpenAPI Specification o Swagger durante Sprint 1.
+
+Los Web Services forman parte del alcance técnico definido para EcoTrack y serán implementados en posteriores Sprints utilizando Java, Spring Boot y Spring Data JPA. Una vez que el backend sea incorporado al desarrollo, esta sección incluirá la documentación correspondiente a los endpoints implementados, considerando:
+
+- HTTP method.
+- Endpoint path.
+- Request parameters.
+- Request body, cuando corresponda.
+- Response structure.
+- HTTP status codes.
+- Examples of requests and responses.
+- OpenAPI / Swagger documentation URL.
+- Related repository and commit identifiers.
+
+Para Sprint 1, el estado de documentación de servicios es el siguiente:
+
+| Service Documentation Item | Sprint 1 Status |
+|---|---|
+| RESTful Web Services implementation | Not implemented in this Sprint |
+| OpenAPI Specification | Not applicable in Sprint 1 |
+| Swagger documentation | Not applicable in Sprint 1 |
+| Documented endpoints | 0 |
+| Backend repository evidence | Not applicable in Sprint 1 |
+
+La ausencia de endpoints documentados en esta iteración responde al alcance planificado del Sprint y no representa una funcionalidad pendiente dentro de los objetivos definidos para Sprint 1. La implementación y documentación de Web Services será incorporada progresivamente cuando estos productos formen parte del alcance de los siguientes Sprints.
 
 ## 5.2.1.7. Software Deployment Evidence for Sprint Review
 
