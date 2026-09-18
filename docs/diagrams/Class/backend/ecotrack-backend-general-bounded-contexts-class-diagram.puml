@@ -1,0 +1,45 @@
+@startuml
+title EcoTrack Platform - Backend Bounded Contexts
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+class "IAM" as BackendIAM <<Bounded Context>> {}
+class "Organization Management" as BackendOrgMgmt <<Bounded Context>> {}
+class "Emissions Management" as BackendEmissions <<Bounded Context>> {}
+class "Carbon Footprint Calculation" as BackendFootprint <<Bounded Context>> {}
+class "Goals and Reduction Plans" as BackendGoals <<Bounded Context>> {}
+class "Analytics and Reports" as BackendAnalytics <<Bounded Context>> {}
+class "Data Integration" as BackendDataIntegration <<Bounded Context>> {}
+class "Shared Kernel" as BackendSharedKernel <<Bounded Context>> {}
+class "Integration Events" as BackendIntegrationEvents <<Pattern>> {}
+
+BackendOrgMgmt ..> BackendIAM : user scope
+BackendEmissions ..> BackendOrgMgmt : facility scope
+BackendFootprint ..> BackendEmissions : activity data
+BackendGoals ..> BackendFootprint : footprint results
+BackendDataIntegration ..> BackendEmissions : imported data
+BackendAnalytics ..> BackendOrgMgmt : organization metrics
+BackendAnalytics ..> BackendEmissions : emissions metrics
+BackendAnalytics ..> BackendFootprint : footprint metrics
+BackendAnalytics ..> BackendGoals : goals metrics
+
+BackendIAM ..> BackendIntegrationEvents : UserRegistered
+BackendOrgMgmt ..> BackendIntegrationEvents : OrganizationRegistered / FacilityRegistered
+BackendEmissions ..> BackendIntegrationEvents : EmissionSourceRegistered / ActivityDataRecorded
+BackendFootprint ..> BackendIntegrationEvents : FootprintCalculated
+BackendGoals ..> BackendIntegrationEvents : GoalCreated / PlanCreated / InitiativeCreated
+BackendDataIntegration ..> BackendIntegrationEvents : CsvImported / ExternalDataReceived
+BackendIntegrationEvents ..> BackendAnalytics : RecordAnalyticsEventCommand
+
+BackendIAM ..> BackendSharedKernel : shared value objects
+BackendOrgMgmt ..> BackendSharedKernel : shared value objects
+BackendEmissions ..> BackendSharedKernel : shared value objects
+BackendFootprint ..> BackendSharedKernel : shared value objects
+BackendGoals ..> BackendSharedKernel : shared value objects
+BackendAnalytics ..> BackendSharedKernel : shared value objects
+BackendDataIntegration ..> BackendSharedKernel : shared value objects
+
+@enduml

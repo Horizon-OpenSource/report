@@ -1,0 +1,81 @@
+@startuml
+title EcoTrack Platform - IAM Backend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class UserJpaRepository {
+    +findById(id: Long): User
+    +findByEmail(email: Email): User
+    +findByOrganizationId(organizationId: Long): List<User>
+    +save(user: User): User
+  }
+
+  class PasswordResetTokenJpaRepository {
+    +findByToken(token: String): PasswordResetToken
+    +save(token: PasswordResetToken): PasswordResetToken
+  }
+
+  class UserEntity {
+    +id: Long
+    +organizationId: Long
+    +fullName: String
+    +email: String
+    +passwordHash: String
+    +role: String
+    +status: String
+  }
+
+  class PasswordResetTokenEntity {
+    +id: Long
+    +userId: Long
+    +token: String
+    +expiresAt: LocalDateTime
+    +used: boolean
+  }
+
+  class BCryptPasswordHasher {
+    +hash(rawPassword: String): PasswordHash
+    +matches(rawPassword: String, hash: PasswordHash): boolean
+  }
+
+  class JwtAuthenticationService {
+    +authenticate(email: String, password: String): String
+    +validateToken(token: String): boolean
+  }
+
+  class SmtpEmailSender {
+    +sendPasswordResetEmail(to: String, token: String): void
+  }
+
+  UserJpaRepository ..> UserEntity
+  PasswordResetTokenJpaRepository ..> PasswordResetTokenEntity
+}
+
+package "Interfaces REST" as Backend_iam_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_iam_Application <<layer>> {
+}
+package "Domain" as Backend_iam_Domain <<layer>> {
+}
+
+UserJpaRepository ..> Backend_iam_Domain : implements UserRepository
+PasswordResetTokenJpaRepository ..> Backend_iam_Domain : implements PasswordResetTokenRepository
+BCryptPasswordHasher ..> Backend_iam_Domain : implements PasswordHasher
+JwtAuthenticationService ..> Backend_iam_Domain : implements AuthenticationService
+SmtpEmailSender ..> Backend_iam_Application : implements EmailSenderPort
+Backend_iam_Application ..> UserJpaRepository : uses
+Backend_iam_Application ..> BCryptPasswordHasher : uses
+Backend_iam_Application ..> JwtAuthenticationService : uses
+Backend_iam_Application ..> SmtpEmailSender : uses
+
+@enduml

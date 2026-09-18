@@ -1,0 +1,96 @@
+@startuml
+title EcoTrack Platform - IAM Backend Interfaces REST Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Interfaces REST" {
+  class AuthController {
+    +registerOrganizationAdmin(resource: RegisterOrganizationAdminResource): UserResource
+    +registerUser(resource: RegisterUserResource): UserResource
+    +signIn(resource: SignInResource): TokenResource
+    +requestPasswordReset(resource: RequestPasswordResetResource): void
+    +resetPassword(resource: ResetPasswordResource): void
+    +assignRole(userId: Long, resource: AssignRoleResource): UserResource
+  }
+
+  class RegisterOrganizationAdminResource {
+    +organizationName: String
+    +fullName: String
+    +email: String
+    +password: String
+  }
+
+  class RegisterUserResource {
+    +fullName: String
+    +email: String
+    +password: String
+    +role: String
+  }
+
+  class SignInResource {
+    +email: String
+    +password: String
+  }
+
+  class AssignRoleResource {
+    +role: String
+  }
+
+  class RequestPasswordResetResource {
+    +email: String
+  }
+
+  class ResetPasswordResource {
+    +token: String
+    +newPassword: String
+  }
+
+  class UserResource {
+    +id: Long
+    +organizationId: Long
+    +fullName: String
+    +email: String
+    +role: String
+    +status: String
+  }
+
+  class TokenResource {
+    +accessToken: String
+    +expiresAt: LocalDateTime
+  }
+
+  class UserResourceAssembler {
+    +{static} toResourceFrom(user: User): UserResource
+  }
+
+  AuthController ..> RegisterOrganizationAdminResource
+  AuthController ..> RegisterUserResource
+  AuthController ..> SignInResource
+  AuthController ..> AssignRoleResource
+  AuthController ..> RequestPasswordResetResource
+  AuthController ..> ResetPasswordResource
+  AuthController ..> UserResource
+  AuthController ..> TokenResource
+  UserResourceAssembler ..> UserResource
+}
+
+package "Application" as Backend_iam_Application <<layer>> {
+}
+package "Domain" as Backend_iam_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_iam_Infrastructure <<layer>> {
+}
+
+AuthController ..> Backend_iam_Application : delegates use cases
+UserResourceAssembler ..> Backend_iam_Domain : reads aggregates
+
+@enduml

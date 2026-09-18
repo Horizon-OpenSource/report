@@ -1,0 +1,146 @@
+@startuml
+title EcoTrack Platform - IAM Backend Domain Layer - User Aggregate
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain / User Aggregate" {
+
+  package "Aggregates" {
+    class User <<Aggregate Root>> {
+      +id: Long
+      +organizationId: Long
+      +fullName: String
+      -email: Email
+      -passwordHash: PasswordHash
+      -role: RoleType
+      -status: UserStatus
+      +registeredAt: LocalDateTime
+      +signIn(rawPassword: String, hasher: PasswordHasher): boolean
+      +assignRole(role: RoleType): void
+      +disable(): void
+    }
+  }
+
+  package "Value Objects" {
+    class Email <<record>> {
+      +value: String
+      +Email(value: String)
+    }
+    class PasswordHash <<record>> {
+      +value: String
+    }
+    enum RoleType {
+      ADMINISTRATOR
+      ENVIRONMENTAL_ANALYST
+      SUSTAINABILITY_MANAGER
+    }
+    enum UserStatus {
+      ACTIVE
+      DISABLED
+    }
+  }
+
+  package "Commands" {
+    class RegisterOrganizationAdminCommand {
+      +organizationName: String
+      +fullName: String
+      +email: String
+      +password: String
+    }
+    class RegisterUserCommand {
+      +organizationId: Long
+      +fullName: String
+      +email: String
+      +password: String
+      +role: RoleType
+    }
+    class SignInCommand {
+      +email: String
+      +password: String
+    }
+    class AssignRoleCommand {
+      +userId: Long
+      +role: RoleType
+    }
+  }
+
+  package "Queries" {
+    class GetUserByIdQuery {
+      +userId: Long
+    }
+    class GetUsersByOrganizationQuery {
+      +organizationId: Long
+    }
+  }
+
+  package "Events" {
+    class UserRegisteredEvent {
+      +userId: Long
+      +organizationId: Long
+      +occurredOn: LocalDateTime
+    }
+    class RoleAssignedEvent {
+      +userId: Long
+      +role: RoleType
+      +occurredOn: LocalDateTime
+    }
+  }
+
+  package "Services" {
+    interface PasswordHasher {
+      +hash(rawPassword: String): PasswordHash
+      +matches(rawPassword: String, hash: PasswordHash): boolean
+    }
+    interface AuthenticationService {
+      +authenticate(email: String, password: String): String
+    }
+  }
+
+  package "Repositories" {
+    interface UserRepository {
+      +findById(id: Long): User
+      +findByEmail(email: Email): User
+      +findByOrganizationId(organizationId: Long): List<User>
+      +save(user: User): User
+    }
+  }
+
+  User "1" *-- "1" Email
+  User "1" *-- "1" PasswordHash
+  User "1" *-- "1" RoleType
+  User "1" *-- "1" UserStatus
+  User ..> PasswordHasher
+  UserRepository ..> User
+}
+
+package "Interfaces REST" as Backend_iam_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_iam_Application <<layer>> {
+}
+package "Infrastructure" as Backend_iam_Infrastructure <<layer>> {
+}
+
+Backend_iam_Interfaces_REST ..> User : resources from
+Backend_iam_Application ..> RegisterOrganizationAdminCommand : handles
+Backend_iam_Application ..> RegisterUserCommand : handles
+Backend_iam_Application ..> SignInCommand : handles
+Backend_iam_Application ..> AssignRoleCommand : handles
+Backend_iam_Infrastructure ..> UserRepository : implements
+Backend_iam_Infrastructure ..> PasswordHasher : implements
+Backend_iam_Infrastructure ..> AuthenticationService : implements
+
+@enduml
