@@ -1,0 +1,93 @@
+@startuml
+title EcoTrack Platform - IAM Frontend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class AuthApiService {
+    +signIn(request: SignInRequest): Observable<TokenResponse>
+    +registerOrganizationAdmin(request: RegisterOrganizationAdminRequest): Observable<UserResponse>
+    +registerUser(request: RegisterUserRequest): Observable<UserResponse>
+    +assignRole(userId: number, request: AssignRoleRequest): Observable<UserResponse>
+    +requestPasswordReset(request: RequestPasswordResetRequest): Observable<void>
+    +resetPassword(request: ResetPasswordRequest): Observable<void>
+    +getUsersByOrganization(organizationId: number): Observable<UserResponse[]>
+  }
+
+  interface SignInRequest {
+    +email: String
+    +password: String
+  }
+  interface RegisterOrganizationAdminRequest {
+    +organizationName: String
+    +fullName: String
+    +email: String
+    +password: String
+  }
+  interface RegisterUserRequest {
+    +fullName: String
+    +email: String
+    +password: String
+    +role: String
+  }
+  interface AssignRoleRequest {
+    +role: String
+  }
+  interface RequestPasswordResetRequest {
+    +email: String
+  }
+  interface ResetPasswordRequest {
+    +token: String
+    +newPassword: String
+  }
+  interface UserResponse {
+    +id: number
+    +organizationId: number
+    +fullName: String
+    +email: String
+    +role: String
+    +status: String
+  }
+  interface TokenResponse {
+    +accessToken: String
+    +expiresAt: String
+  }
+
+  class UserAssembler {
+    +{static} toViewModel(response: UserResponse): UserViewModel
+  }
+
+  AuthApiService ..> SignInRequest
+  AuthApiService ..> RegisterOrganizationAdminRequest
+  AuthApiService ..> RegisterUserRequest
+  AuthApiService ..> AssignRoleRequest
+  AuthApiService ..> RequestPasswordResetRequest
+  AuthApiService ..> ResetPasswordRequest
+  AuthApiService ..> UserResponse
+  AuthApiService ..> TokenResponse
+  UserAssembler ..> UserResponse
+}
+
+package "Presentation" as Frontend_iam_Presentation <<layer>> {
+}
+package "Application" as Frontend_iam_Application <<layer>> {
+}
+package "Domain" as Frontend_iam_Domain <<layer>> {
+}
+package "EcoTrack Backend API" as Backend <<external>> {
+}
+
+Frontend_iam_Application ..> AuthApiService : requests
+AuthApiService ..> Backend : HTTPS / JSON
+UserAssembler ..> Frontend_iam_Domain : produces
+
+@enduml

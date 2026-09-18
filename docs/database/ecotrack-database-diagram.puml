@@ -1,0 +1,211 @@
+@startuml
+title EcoTrack - Database Diagram
+hide circle
+skinparam linetype ortho
+skinparam roundcorner 5
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #4A4A4A
+  ArrowColor #4A4A4A
+  FontColor #17324D
+  AttributeFontColor #333333
+  AttributeFontSize 12
+  FontSize 13
+  FontStyle bold
+}
+
+' ===================== Organization Management =====================
+entity Organization {
+  * id : UUID <<PK>>
+  --
+  name : VARCHAR(255)
+  sector : VARCHAR(100)
+  plan : VARCHAR(50)
+  created_at : DATETIME
+}
+
+entity Facility {
+  * id : UUID <<PK>>
+  --
+  * organization_id : UUID <<FK>>
+  name : VARCHAR(255)
+  address : VARCHAR(255)
+  created_at : DATETIME
+}
+
+entity BusinessUnit {
+  * id : UUID <<PK>>
+  --
+  * organization_id : UUID <<FK>>
+  name : VARCHAR(255)
+}
+
+' ===================== IAM =====================
+entity "User" as UserTable {
+  * id : UUID <<PK>>
+  --
+  * organization_id : UUID <<FK>>
+  full_name : VARCHAR(255)
+  email : VARCHAR(255)
+  password_hash : VARCHAR(255)
+  role : VARCHAR(50)
+  status : VARCHAR(50)
+  registered_at : DATETIME
+}
+
+entity PasswordResetToken {
+  * id : UUID <<PK>>
+  --
+  * user_id : UUID <<FK>>
+  token : VARCHAR(255)
+  expires_at : DATETIME
+  used : BOOLEAN
+}
+
+' ===================== Emissions Management =====================
+entity EmissionSource {
+  * id : UUID <<PK>>
+  --
+  * facility_id : UUID <<FK>>
+  name : VARCHAR(255)
+  type : VARCHAR(100)
+  scope : VARCHAR(20)
+  created_at : DATETIME
+}
+
+entity ActivityData {
+  * id : UUID <<PK>>
+  --
+  * emission_source_id : UUID <<FK>>
+  period : VARCHAR(20)
+  quantity : DOUBLE
+  unit : VARCHAR(20)
+  origin : VARCHAR(20)
+  recorded_at : DATETIME
+}
+
+' ===================== Carbon Footprint Calculation =====================
+entity EmissionFactor {
+  * id : UUID <<PK>>
+  --
+  name : VARCHAR(255)
+  scope : VARCHAR(20)
+  value : DOUBLE
+  unit : VARCHAR(20)
+  source : VARCHAR(255)
+}
+
+entity FootprintCalculation {
+  * id : UUID <<PK>>
+  --
+  * organization_id : UUID <<FK>>
+  * activity_data_id : UUID <<FK>>
+  * emission_factor_id : UUID <<FK>>
+  result_value : DOUBLE
+  period : VARCHAR(20)
+  calculated_at : DATETIME
+}
+
+' ===================== Goals and Reduction Plans =====================
+entity Goal {
+  * id : UUID <<PK>>
+  --
+  * organization_id : UUID <<FK>>
+  name : VARCHAR(255)
+  target_value : DOUBLE
+  target_date : DATE
+  status : VARCHAR(50)
+}
+
+entity ReductionPlan {
+  * id : UUID <<PK>>
+  --
+  * goal_id : UUID <<FK>>
+  name : VARCHAR(255)
+  description : VARCHAR(500)
+  status : VARCHAR(50)
+}
+
+entity Initiative {
+  * id : UUID <<PK>>
+  --
+  * reduction_plan_id : UUID <<FK>>
+  name : VARCHAR(255)
+  description : VARCHAR(500)
+  status : VARCHAR(50)
+}
+
+' ===================== Analytics and Reports =====================
+entity Indicator {
+  * id : UUID <<PK>>
+  --
+  * organization_id : UUID <<FK>>
+  type : VARCHAR(50)
+  value : DOUBLE
+  period : VARCHAR(20)
+}
+
+entity Report {
+  * id : UUID <<PK>>
+  --
+  * organization_id : UUID <<FK>>
+  period : VARCHAR(20)
+  generated_at : DATETIME
+  file_url : VARCHAR(255)
+}
+
+' ===================== Data Integration =====================
+entity ImportBatch {
+  * id : UUID <<PK>>
+  --
+  * organization_id : UUID <<FK>>
+  file_name : VARCHAR(255)
+  status : VARCHAR(50)
+  imported_at : DATETIME
+}
+
+entity ExternalDataRecord {
+  * id : UUID <<PK>>
+  --
+  * import_batch_id : UUID <<FK>>
+  activity_data_id : UUID <<FK>>
+  raw_payload : VARCHAR(2000)
+  processed_at : DATETIME
+}
+
+entity ApiKey {
+  * id : UUID <<PK>>
+  --
+  * organization_id : UUID <<FK>>
+  key_hash : VARCHAR(255)
+  created_at : DATETIME
+  revoked_at : DATETIME
+}
+
+' ===================== Relationships =====================
+Organization ||--o{ Facility
+Organization ||--o{ BusinessUnit
+Organization ||--o{ UserTable
+Organization ||--o{ FootprintCalculation
+Organization ||--o{ Goal
+Organization ||--o{ Indicator
+Organization ||--o{ Report
+Organization ||--o{ ImportBatch
+Organization ||--o{ ApiKey
+
+UserTable ||--o{ PasswordResetToken
+
+Facility ||--o{ EmissionSource
+
+EmissionSource ||--o{ ActivityData
+
+ActivityData ||--o{ FootprintCalculation
+EmissionFactor ||--o{ FootprintCalculation
+
+Goal ||--o{ ReductionPlan
+ReductionPlan ||--o{ Initiative
+
+ImportBatch ||--o{ ExternalDataRecord
+ActivityData ||--o{ ExternalDataRecord
+
+@enduml

@@ -1,0 +1,50 @@
+@startuml
+title EcoTrack Platform - IAM Frontend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class AuthFacade {
+    +currentUser: UserViewModel
+    +signIn(email: String, password: String): void
+    +signOut(): void
+    +registerOrganizationAdmin(request: RegisterOrganizationAdminRequest): void
+    +requestPasswordReset(email: String): void
+    +resetPassword(token: String, newPassword: String): void
+  }
+
+  class UserStore {
+    +users: UserViewModel[]
+    +loading: boolean
+    +loadUsersByOrganization(organizationId: number): void
+    +registerUser(request: RegisterUserRequest): void
+    +assignRole(userId: number, role: RoleType): void
+  }
+
+  AuthFacade ..> UserStore
+}
+
+package "Presentation" as Frontend_iam_Presentation <<layer>> {
+}
+package "Domain" as Frontend_iam_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_iam_Infrastructure <<layer>> {
+}
+
+Frontend_iam_Presentation ..> AuthFacade : dispatches
+Frontend_iam_Presentation ..> UserStore : dispatches
+AuthFacade ..> Frontend_iam_Domain : updates
+UserStore ..> Frontend_iam_Domain : updates
+AuthFacade ..> Frontend_iam_Infrastructure : requests
+UserStore ..> Frontend_iam_Infrastructure : requests
+
+@enduml

@@ -1,0 +1,80 @@
+@startuml
+title EcoTrack Platform - IAM Frontend Presentation Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Presentation" {
+  class LoginComponent {
+    +email: String
+    +password: String
+    +onSubmit(): void
+  }
+
+  class RegisterOrganizationComponent {
+    +organizationName: String
+    +fullName: String
+    +email: String
+    +password: String
+    +onSubmit(): void
+  }
+
+  class UserManagementComponent {
+    +users: UserViewModel[]
+    +onInviteUser(): void
+    +onAssignRole(userId: number): void
+  }
+
+  class RoleAssignmentComponent {
+    +userId: number
+    +selectedRole: RoleType
+    +onConfirm(): void
+  }
+
+  class RequestPasswordResetComponent {
+    +email: String
+    +onSubmit(): void
+  }
+
+  class ResetPasswordComponent {
+    +token: String
+    +newPassword: String
+    +onSubmit(): void
+  }
+
+  class IamRoutes {
+    +routes: Routes
+  }
+
+  IamRoutes ..> LoginComponent
+  IamRoutes ..> RegisterOrganizationComponent
+  IamRoutes ..> UserManagementComponent
+  IamRoutes ..> RoleAssignmentComponent
+  IamRoutes ..> RequestPasswordResetComponent
+  IamRoutes ..> ResetPasswordComponent
+}
+
+package "Application" as Frontend_iam_Application <<layer>> {
+}
+package "Domain" as Frontend_iam_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_iam_Infrastructure <<layer>> {
+}
+
+LoginComponent ..> Frontend_iam_Application : dispatches
+RegisterOrganizationComponent ..> Frontend_iam_Application : dispatches
+UserManagementComponent ..> Frontend_iam_Application : dispatches
+RoleAssignmentComponent ..> Frontend_iam_Application : dispatches
+RequestPasswordResetComponent ..> Frontend_iam_Application : dispatches
+ResetPasswordComponent ..> Frontend_iam_Application : dispatches
+UserManagementComponent ..> Frontend_iam_Domain : reads
+
+@enduml

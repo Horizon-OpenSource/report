@@ -1,0 +1,21 @@
+@startuml
+title EcoTrack Platform - IAM Frontend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "IAM Frontend Bounded Context" {
+  class "Presentation" as Frontend_iam_Presentation <<layer>>
+  class "Application" as Frontend_iam_Application <<layer>>
+  class "Domain" as Frontend_iam_Domain <<layer>>
+  class "Infrastructure" as Frontend_iam_Infrastructure <<layer>>
+}
+
+Frontend_iam_Presentation ..> Frontend_iam_Application : dispatches actions
+Frontend_iam_Application ..> Frontend_iam_Domain : reads / updates view models
+Frontend_iam_Application ..> Frontend_iam_Infrastructure : requests data
+Frontend_iam_Infrastructure ..> Frontend_iam_Domain : maps responses to
+
+@enduml

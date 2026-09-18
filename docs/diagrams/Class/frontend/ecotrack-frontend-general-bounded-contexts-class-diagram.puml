@@ -1,0 +1,36 @@
+@startuml
+title EcoTrack WebApp - Frontend Bounded Contexts
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+class "IAM" as FrontendIAM <<Bounded Context>> {}
+class "Organization Management" as FrontendOrgMgmt <<Bounded Context>> {}
+class "Emissions Management" as FrontendEmissions <<Bounded Context>> {}
+class "Carbon Footprint Calculation" as FrontendFootprint <<Bounded Context>> {}
+class "Goals and Reduction Plans" as FrontendGoals <<Bounded Context>> {}
+class "Analytics and Reports" as FrontendAnalytics <<Bounded Context>> {}
+class "Data Integration" as FrontendDataIntegration <<Bounded Context>> {}
+class "Shared Kernel" as FrontendSharedKernel <<Bounded Context>> {}
+
+FrontendIAM ..> FrontendSharedKernel : session / layout
+FrontendOrgMgmt ..> FrontendIAM : user scope
+FrontendOrgMgmt ..> FrontendSharedKernel : layout and state
+FrontendEmissions ..> FrontendOrgMgmt : facility scope
+FrontendEmissions ..> FrontendSharedKernel : layout and state
+FrontendFootprint ..> FrontendEmissions : activity data
+FrontendFootprint ..> FrontendSharedKernel : layout and state
+FrontendGoals ..> FrontendFootprint : footprint results
+FrontendGoals ..> FrontendSharedKernel : layout and state
+FrontendDataIntegration ..> FrontendEmissions : imported data
+FrontendDataIntegration ..> FrontendIAM : role check
+FrontendDataIntegration ..> FrontendSharedKernel : layout and state
+FrontendAnalytics ..> FrontendOrgMgmt : organization metrics
+FrontendAnalytics ..> FrontendEmissions : emissions metrics
+FrontendAnalytics ..> FrontendFootprint : footprint metrics
+FrontendAnalytics ..> FrontendGoals : goals metrics
+FrontendAnalytics ..> FrontendSharedKernel : charts and cards
+
+@enduml
