@@ -1917,9 +1917,54 @@ v1.0.0
 
 # 5.2.1. Sprint 1
 
-## 5.2.1.1. Sprint Planning 1
+### 5.2.1.1. Sprint Planning 1
 
-<!-- Completar -->
+El Sprint Planning 1 se realizó al inicio de la segunda semana del proyecto con la participación de todos los integrantes de Horizon. La reunión se llevó a cabo de manera presencial en el salón de clases después de finalizar la sesión del curso.
+
+Durante esta reunión se definió el alcance inicial de implementación para Sprint 1, priorizando la construcción y publicación de la primera versión del Landing Page de EcoTrack. Asimismo, se revisaron las User Stories relacionadas con la presentación del producto, sus beneficios, principales funcionalidades, planes disponibles y mecanismos de contacto.
+
+La coordinación iniciada durante la reunión presencial continuó el mismo día mediante WhatsApp. A lo largo del Sprint, el equipo mantuvo reuniones adicionales antes y después de las clases, además de sesiones virtuales principalmente mediante Discord, con el objetivo de revisar avances, coordinar actividades y resolver observaciones relacionadas con la entrega.
+
+| Sprint Planning Background | Details |
+|---|---|
+| **Sprint #** | Sprint 1 |
+| **Date** | 2026-08-31 |
+| **Time** | 10:30 PM |
+| **Location** | Presencial, salón de clases después de la sesión del curso |
+| **Prepared By** | Tello Murga, Javier Oswaldo |
+| **Attendees to Planning Meeting** | Lacuta Lima, Alex Rodrigo; Espinoza Flores, Aaron André; Payesa Torres, Harrison Hubert; Tello Murga, Javier Oswaldo; Torres Diaz, Rolando Andre |
+| **Sprint 0 Review Summary** | No aplica. Sprint 1 corresponde a la primera iteración de desarrollo del proyecto. |
+| **Sprint 0 Retrospective Summary** | No aplica. Al tratarse del primer Sprint, no existe una iteración anterior sobre la cual realizar una retrospectiva. |
+
+#### Sprint Goal & User Stories
+
+El objetivo del Sprint 1 se orienta a proporcionar a los potenciales clientes de EcoTrack un primer punto de contacto digital que permita comprender la propuesta de valor de la solución y acceder a información relevante sobre el producto.
+
+**Sprint 1 Goal**
+
+> Our focus is on providing potential EcoTrack customers with a responsive and publicly available Landing Page that clearly communicates the product purpose, benefits, main capabilities, subscription plans and contact options.
+>
+> We believe it delivers a clear first understanding of EcoTrack to exporting companies, corporations and medium-sized industrial companies interested in improving the management of their environmental information.
+>
+> This will be confirmed when visitors can access the deployed Landing Page, navigate through its main sections and identify the EcoTrack value proposition, core capabilities, available plans and contact information.
+
+Las User Stories consideradas para el alcance de Sprint 1 corresponden a las historias de mayor prioridad relacionadas con el Landing Page:
+
+| User Story Id | User Story Title | Story Points |
+|---|---|---:|
+| US-01 | Conocer EcoTrack | 2 |
+| US-03 | Conocer las funcionalidades principales | 2 |
+| US-04 | Conocer los planes disponibles | 2 |
+| US-02 | Conocer los beneficios de EcoTrack | 2 |
+| US-05 | Contactar al equipo de EcoTrack | 3 |
+| **Total** |  | **11** |
+
+| Sprint Metric | Value |
+|---|---:|
+| **Sprint 1 Velocity** | 11 Story Points |
+| **Sum of Story Points** | 11 Story Points |
+
+El alcance seleccionado mantiene coherencia con la prioridad definida en el Product Backlog, donde las primeras User Stories están orientadas al Landing Page. De esta manera, el Sprint permite disponer de una primera versión visible y desplegada de EcoTrack que servirá como base para las siguientes iteraciones del producto.
 
 ## 5.2.1.2. Aspect Leaders and Collaborators
 
