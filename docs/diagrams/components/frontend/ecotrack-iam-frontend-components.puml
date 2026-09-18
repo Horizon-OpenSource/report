@@ -1,0 +1,30 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - IAM Frontend Components Diagram
+
+Container_Boundary(iam, "IAM Frontend Bounded Context") {
+  Component(presentation, "Presentation Layer", "Pages / Components / Routes", "Renders login, organization sign-up, user invitation and role/permission management views.")
+  Component(application, "Application Layer", "Facade / Store", "Coordinates session, sign-up, password recovery and reset, user invitation and role assignment.")
+  Component(domain, "Domain Layer", "Models / Rules", "Defines users, roles, permissions and invitation rules at the view level.")
+  Component(infrastructure, "Infrastructure Layer", "API Clients / Resources / Assemblers", "Consumes the auth, user and role resources, and maps responses to frontend models.")
+}
+
+System_Ext(backend, "EcoTrack Backend API", "REST API consumed by this frontend context.")
+Component_Ext(shared, "Shared Kernel Frontend", "Shared UI / Session", "Provides layout, session, preferences and UI primitives.")
+Component_Ext(orgMgmt, "Organization Management", "Frontend Context", "Uses the authenticated user's scope to resolve the active organization.")
+Component_Ext(analytics, "Analytics and Reports", "Frontend Context", "Uses the user's role to filter access to dashboards and reports.")
+Component_Ext(dataIntegration, "Data Integration", "Frontend Context", "Uses the user's role to enable CSV import and API key management.")
+
+Rel(presentation, application, "Dispatches UI actions")
+Rel(application, domain, "Applies feature rules")
+Rel(application, infrastructure, "Requests data")
+Rel(infrastructure, backend, "Consumes REST endpoints")
+Rel(presentation, shared, "Uses layout / UI primitives")
+Rel(application, shared, "Uses session / preferences")
+Rel(application, orgMgmt, "Coordinates with")
+Rel(application, analytics, "Coordinates with")
+Rel(application, dataIntegration, "Coordinates with")
+
+SHOW_LEGEND()
+@enduml

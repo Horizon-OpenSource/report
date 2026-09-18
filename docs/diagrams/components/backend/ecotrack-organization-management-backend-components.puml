@@ -1,0 +1,27 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Organization Management Backend Components Diagram
+
+Container(spa, "EcoTrack SPA", "Angular", "Browser runtime that consumes this bounded context over HTTPS.")
+
+Container_Boundary(orgMgmt, "Organization Management Backend Bounded Context") {
+  Component(interfaces, "Interfaces REST Layer", "REST / Resources", "The OrganizationController translates organization, facility and business unit resources into commands and queries.")
+  Component(application, "Application Layer", "Command Services / Query Services / Ports", "Coordinates organization registration, facility management and business unit assignment.")
+  Component(domain, "Domain Layer", "Aggregates / Policies", "Owns organizations, facilities, business units and membership invariants.")
+  Component(infrastructure, "Infrastructure Layer", "JPA Adapters", "Implements the organization, facility and business unit repositories.")
+}
+
+Component_Ext(iamApi, "IAM API", "External Bounded Context", "Validates the requesting user's scope and permissions.")
+ContainerDb(db, "EcoTrack Database", "PostgreSQL", "Stores organizations, facilities and business units.")
+
+Rel(spa, interfaces, "Calls REST endpoints", "JSON / HTTPS")
+Rel(interfaces, application, "Delegates use cases")
+Rel(application, domain, "Applies business rules")
+Rel(application, iamApi, "Validates user scope")
+Rel(application, infrastructure, "Requests persistence")
+Rel(infrastructure, domain, "Maps persisted state")
+Rel(infrastructure, db, "Reads from and writes to")
+
+SHOW_LEGEND()
+@enduml

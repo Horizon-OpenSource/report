@@ -1,0 +1,65 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Backend General Components Diagram
+
+Container(spa, "EcoTrack SPA", "Angular", "Consumes the backend capabilities over HTTPS.")
+
+Container_Boundary(backend, "EcoTrack Backend Bounded Context Map") {
+  Component(apiSurface, "REST API Surface", "Spring Boot Entry Points", "Receives requests from the SPA and dispatches them to the bounded contexts.")
+
+  Component(shared, "Shared Kernel API", "Bounded Context Component", "Security, OpenAPI, CORS and common platform configuration.")
+  Component(iam, "IAM API", "Bounded Context Component", "Authentication, users, roles and permissions.")
+  Component(orgMgmt, "Organization Management API", "Bounded Context Component", "Organizations, facilities and business units.")
+  Component(emissions, "Emissions Management API", "Bounded Context Component", "Emission sources and activity data.")
+  Component(footprint, "Carbon Footprint Calculation API", "Bounded Context Component", "Emission factors and footprint calculation by scope and period.")
+  Component(goals, "Goals and Reduction Plans API", "Bounded Context Component", "Environmental goals, reduction plans and initiatives.")
+  Component(analytics, "Analytics and Reports API", "Bounded Context Component", "Dashboards, indicators, comparisons and reports.")
+  Component(dataIntegration, "Data Integration API", "Bounded Context Component", "CSV import and data reception via the EcoTrack API.")
+
+  Component(eventBus, "Integration Event Bus", "Spring Application Events", "Publishes confirmed domain activity as integration events.")
+  Component(persistence, "Persistence Access", "Repositories / Adapters", "Groups the JPA repositories used by the bounded contexts.")
+}
+
+ContainerDb(db, "EcoTrack Database", "PostgreSQL", "Persists the data of all bounded contexts.")
+
+Rel(spa, apiSurface, "Calls", "JSON / HTTPS")
+Rel(apiSurface, shared, "Route")
+Rel(apiSurface, iam, "Route")
+Rel(apiSurface, orgMgmt, "Route")
+Rel(apiSurface, emissions, "Route")
+Rel(apiSurface, footprint, "Route")
+Rel(apiSurface, goals, "Route")
+Rel(apiSurface, analytics, "Route")
+Rel(apiSurface, dataIntegration, "Route")
+
+Rel(orgMgmt, iam, "User scope")
+Rel(emissions, orgMgmt, "Facility scope")
+Rel(footprint, emissions, "Activity data")
+Rel(goals, footprint, "Footprint results")
+Rel(dataIntegration, emissions, "Imported data")
+Rel(analytics, orgMgmt, "Organization metrics")
+Rel(analytics, emissions, "Emissions metrics")
+Rel(analytics, footprint, "Footprint metrics")
+Rel(analytics, goals, "Goals metrics")
+
+Rel(iam, eventBus, "User invited")
+Rel(orgMgmt, eventBus, "Organization / facility registered")
+Rel(emissions, eventBus, "Emission source / activity recorded")
+Rel(footprint, eventBus, "Footprint calculated")
+Rel(goals, eventBus, "Goal / plan / initiative created")
+Rel(dataIntegration, eventBus, "CSV imported / external data received")
+Rel(eventBus, analytics, "RecordAnalyticsEventCommand")
+
+Rel(shared, persistence, "Persist")
+Rel(iam, persistence, "Persist")
+Rel(orgMgmt, persistence, "Persist")
+Rel(emissions, persistence, "Persist")
+Rel(footprint, persistence, "Persist")
+Rel(goals, persistence, "Persist")
+Rel(analytics, persistence, "Persist")
+Rel(dataIntegration, persistence, "Persist")
+Rel(persistence, db, "Reads from and writes to", "JPA / SQL")
+
+SHOW_LEGEND()
+@enduml

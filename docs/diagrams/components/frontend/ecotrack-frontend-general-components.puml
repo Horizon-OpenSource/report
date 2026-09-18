@@ -1,0 +1,60 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Frontend General Components Diagram
+
+Person(user, "EcoTrack User", "Uses the SPA from the browser.")
+
+Container_Boundary(frontend, "EcoTrack Frontend Bounded Context Map") {
+  Component(layout, "App Layout", "Angular Shell", "Topbar, navigation, organization switcher and router outlet.")
+  Component(router, "App Router", "Angular Router", "Routes to the frontend bounded contexts.")
+
+  Component(shared, "Shared Kernel Context", "Bounded Context Component", "Session, layout, configuration and platform services.")
+  Component(iam, "IAM Context", "Bounded Context Component", "Authentication, users, roles and permissions.")
+  Component(orgMgmt, "Organization Management Context", "Bounded Context Component", "Organizations, facilities and business units.")
+  Component(emissions, "Emissions Management Context", "Bounded Context Component", "Emission sources and activity data.")
+  Component(footprint, "Carbon Footprint Calculation Context", "Bounded Context Component", "Emission factors and footprint calculation by scope and period.")
+  Component(goals, "Goals and Reduction Plans Context", "Bounded Context Component", "Environmental goals, reduction plans and initiatives.")
+  Component(analytics, "Analytics and Reports Context", "Bounded Context Component", "Dashboards, indicators, comparisons and reports.")
+  Component(dataIntegration, "Data Integration Context", "Bounded Context Component", "CSV import and data reception via the EcoTrack API.")
+
+  Component(apiClients, "API Clients", "Angular Infrastructure", "Typed services that consume the backend REST API.")
+}
+
+System_Ext(backend, "EcoTrack Backend API", "Spring Boot REST API consumed by the frontend contexts.")
+
+Rel(user, layout, "Uses")
+Rel(layout, router, "Routed views")
+
+Rel(router, shared, "Routes")
+Rel(router, iam, "Routes")
+Rel(router, orgMgmt, "Routes")
+Rel(router, emissions, "Routes")
+Rel(router, footprint, "Routes")
+Rel(router, goals, "Routes")
+Rel(router, analytics, "Routes")
+Rel(router, dataIntegration, "Routes")
+
+Rel(iam, shared, "UI session")
+Rel(orgMgmt, iam, "User scope")
+Rel(emissions, orgMgmt, "Facility scope")
+Rel(footprint, emissions, "Activity data")
+Rel(goals, footprint, "Footprint results")
+Rel(dataIntegration, emissions, "Imported data")
+Rel(analytics, orgMgmt, "Organization metrics")
+Rel(analytics, emissions, "Emissions metrics")
+Rel(analytics, footprint, "Footprint metrics")
+Rel(analytics, goals, "Goals metrics")
+
+Rel(shared, apiClients, "REST services")
+Rel(iam, apiClients, "REST services")
+Rel(orgMgmt, apiClients, "REST services")
+Rel(emissions, apiClients, "REST services")
+Rel(footprint, apiClients, "REST services")
+Rel(goals, apiClients, "REST services")
+Rel(analytics, apiClients, "REST services")
+Rel(dataIntegration, apiClients, "REST services")
+Rel(apiClients, backend, "Calls", "JSON / HTTPS")
+
+SHOW_LEGEND()
+@enduml

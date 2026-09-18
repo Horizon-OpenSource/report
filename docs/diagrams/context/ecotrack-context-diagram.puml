@@ -1,0 +1,19 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title EcoTrack - C4 Context Diagram
+
+Person(user, "EcoTrack User", "Administrator, environmental analyst or sustainability manager who manages their company's environmental information.")
+
+System(ecotrack, "EcoTrack", "Platform for recording emissions, calculating carbon footprint, setting reduction goals and generating environmental reports.")
+
+System_Ext(externalBusiness, "External Business System", "External business system (ERP or other) that sends or queries environmental information through the EcoTrack API.")
+System_Ext(emailProvider, "Email Provider", "Delivers account invitation and password recovery emails.")
+
+Rel(user, ecotrack, "Uses", "HTTPS")
+Rel(ecotrack, externalBusiness, "Sends results to", "HTTPS / REST API")
+Rel(externalBusiness, ecotrack, "Imports emission data into", "EcoTrack API")
+Rel(ecotrack, emailProvider, "Sends invitation and recovery emails using", "SMTP / HTTPS")
+
+SHOW_LEGEND()
+@enduml

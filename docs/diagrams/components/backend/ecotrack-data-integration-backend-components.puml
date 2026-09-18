@@ -1,0 +1,31 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Data Integration Backend Components Diagram
+
+Container(spa, "EcoTrack SPA", "Angular", "Browser runtime that consumes this bounded context over HTTPS.")
+System_Ext(external, "External Business System", "Sends environmental data through the EcoTrack API using an issued API key.")
+
+Container_Boundary(dataIntegration, "Data Integration Backend Bounded Context") {
+  Component(interfaces, "Interfaces REST Layer", "REST / Resources", "The DataIntegrationController translates CSV import, API key and external data resources into commands and queries.")
+  Component(application, "Application Layer", "Command Services / Query Services / Ports", "Coordinates CSV parsing and validation, API key issuance and external data ingestion.")
+  Component(domain, "Domain Layer", "Aggregates / Policies", "Owns import batches, external data records and API key policies.")
+  Component(infrastructure, "Infrastructure Layer", "CSV Parser / JPA / Security Adapters", "Implements the CSV parser, the repositories and API key hashing and validation.")
+}
+
+Component_Ext(iamApi, "IAM API", "External Bounded Context", "Validates the requesting user's role for CSV import and API key management.")
+Component_Ext(emissionsApi, "Emissions Management API", "External Bounded Context", "Receives the activity data imported through this context.")
+ContainerDb(db, "EcoTrack Database", "PostgreSQL", "Stores import batches, external data records and API keys.")
+
+Rel(spa, interfaces, "Calls REST endpoints", "JSON / HTTPS")
+Rel(external, interfaces, "Sends data", "EcoTrack API / HTTPS")
+Rel(interfaces, application, "Delegates use cases")
+Rel(application, domain, "Applies business rules")
+Rel(application, iamApi, "Validates user role / API key")
+Rel(application, emissionsApi, "Delivers imported activity data")
+Rel(application, infrastructure, "Requests parsing / persistence")
+Rel(infrastructure, domain, "Maps persisted state")
+Rel(infrastructure, db, "Reads from and writes to")
+
+SHOW_LEGEND()
+@enduml

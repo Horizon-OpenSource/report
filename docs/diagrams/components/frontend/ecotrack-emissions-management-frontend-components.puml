@@ -1,0 +1,30 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Emissions Management Frontend Components Diagram
+
+Container_Boundary(emissions, "Emissions Management Frontend Bounded Context") {
+  Component(presentation, "Presentation Layer", "Pages / Components / Routes", "Renders emission source registration, activity data entry and emissions history views.")
+  Component(application, "Application Layer", "Facade / Store", "Coordinates emission source registration, activity data recording and emissions history review.")
+  Component(domain, "Domain Layer", "Models / Rules", "Defines emission sources, activity records and emission scopes at the view level.")
+  Component(infrastructure, "Infrastructure Layer", "API Clients / Resources / Assemblers", "Consumes the emission source and activity data resources, and maps responses to frontend models.")
+}
+
+System_Ext(backend, "EcoTrack Backend API", "REST API consumed by this frontend context.")
+Component_Ext(shared, "Shared Kernel Frontend", "Shared UI / Session", "Provides layout, session, preferences and UI primitives.")
+Component_Ext(orgMgmt, "Organization Management", "Frontend Context", "Provides the facility catalog used to scope emission sources.")
+Component_Ext(footprint, "Carbon Footprint Calculation", "Frontend Context", "Uses recorded activity data to run footprint calculations.")
+Component_Ext(dataIntegration, "Data Integration", "Frontend Context", "Delivers activity data imported from CSV files or the EcoTrack API.")
+
+Rel(presentation, application, "Dispatches UI actions")
+Rel(application, domain, "Applies feature rules")
+Rel(application, infrastructure, "Requests data")
+Rel(infrastructure, backend, "Consumes REST endpoints")
+Rel(presentation, shared, "Uses layout / UI primitives")
+Rel(application, shared, "Uses session / preferences")
+Rel(orgMgmt, application, "Coordinates with")
+Rel(footprint, application, "Coordinates with")
+Rel(dataIntegration, application, "Coordinates with")
+
+SHOW_LEGEND()
+@enduml

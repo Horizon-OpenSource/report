@@ -1,0 +1,32 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title EcoTrack - C4 Container Diagram
+
+Person(user, "EcoTrack User", "Administrator, environmental analyst or sustainability manager who manages their company's environmental information.")
+
+System_Boundary(ecotrack, "EcoTrack") {
+  Container(webapp, "Web Application", "Static Hosting", "Serves the public landing page (value proposition, Basic/Pro/Enterprise plans, contact flows) and delivers the compiled SPA to the user's browser.")
+  Container(spa, "EcoTrack SPA", "Angular", "Single-page application that runs in the user's browser and provides full authenticated functionality.")
+  Container(api, "Backend API", "Spring Boot", "Modular monolith organized by DDD bounded contexts.")
+  ContainerDb(db, "EcoTrack Database", "PostgreSQL", "Persists organizations, facilities, emission sources, calculations, goals and reports.")
+}
+
+System_Ext(hosting, "Cloud Hosting Platform", "Runs the Web Application, the Backend API and the Database.")
+System_Ext(externalBusiness, "External Business System", "Sends or queries environmental data through the EcoTrack API.")
+System_Ext(emailProvider, "Email Provider", "Delivers account invitation and password recovery emails.")
+
+Rel(user, webapp, "Visits EcoTrack using", "HTTPS")
+Rel(webapp, spa, "Delivers to the user's browser")
+Rel(user, spa, "Interacts with", "HTTPS")
+Rel(spa, api, "Calls", "JSON / HTTPS")
+Rel(api, db, "Reads from and writes to", "JPA / SQL")
+Rel(api, externalBusiness, "Integrates with", "EcoTrack API / HTTPS")
+Rel(api, emailProvider, "Sends invitation and recovery emails using", "SMTP / HTTPS")
+
+Rel(webapp, hosting, "Runs on")
+Rel(api, hosting, "Runs on")
+Rel(db, hosting, "Runs on")
+
+SHOW_LEGEND()
+@enduml
