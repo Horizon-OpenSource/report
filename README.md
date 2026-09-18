@@ -2090,9 +2090,63 @@ Entre las contribuciones realizadas durante Sprint 1 se identifican:
 
 Finalmente, los cambios de las diferentes feature branches fueron integrados en `develop` y posteriormente consolidados en `main` mediante el Pull Request #7. Este proceso produjo la versión estable utilizada para el despliegue del Landing Page y para la release `v1.0.0`.
 
-## 5.2.1.5. Execution Evidence for Sprint Review
+### 5.2.1.5. Execution Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 1, Horizon completó la primera versión funcional del Landing Page de EcoTrack. La implementación permite presentar públicamente la propuesta de valor del producto, sus segmentos objetivo, principales capacidades, proceso de funcionamiento, información sobre emisiones, planes disponibles y canales de contacto.
+
+El Landing Page fue desarrollado aplicando Responsive Web Design, navegación entre secciones, internacionalización en inglés y español y mejoras de accesibilidad. La versión resultante fue integrada en la rama estable y posteriormente desplegada mediante GitHub Pages.
+
+La versión implementada durante Sprint 1 puede ser consultada en:
+
+**EcoTrack Landing Page:**  
+https://horizon-opensource.github.io/landing-page/
+
+A continuación, se presentan las principales vistas implementadas durante el Sprint.
+
+#### Landing Page Hero
+
+La vista inicial presenta la identidad de EcoTrack y comunica su propuesta principal de valor relacionada con la centralización, medición y gestión de la huella de carbono organizacional.
+
+![EcoTrack Landing Page Hero](assets/chapter-05/sprint-01-hero.png)
+
+#### Target Customer Segments
+
+La sección de segmentos objetivo presenta los principales grupos de organizaciones para los cuales EcoTrack ha sido diseñado: empresas exportadoras y corporaciones o medianas empresas industriales.
+
+![EcoTrack Target Customer Segments](assets/chapter-05/sprint-01-target-segments.png)
+
+#### Core Capabilities
+
+La sección de capacidades principales comunica las funcionalidades centrales consideradas dentro de EcoTrack, incluyendo gestión organizacional, gestión de emisiones, cálculo de huella de carbono, metas y planes de reducción, y analítica y reportes.
+
+![EcoTrack Core Capabilities](assets/chapter-05/sprint-01-features.png)
+
+#### How EcoTrack Works
+
+La sección How It Works resume el flujo general que sigue una organización al utilizar EcoTrack, desde el registro de emisiones hasta la generación de información útil para el seguimiento y reporte ambiental.
+
+![EcoTrack How It Works](assets/chapter-05/sprint-01-how-it-works.png)
+
+#### Subscription Plans
+
+La Landing Page presenta los planes comerciales disponibles para EcoTrack, permitiendo que los potenciales clientes comparen las alternativas definidas para diferentes niveles de necesidad y tamaño organizacional.
+
+![EcoTrack Subscription Plans](assets/chapter-05/sprint-01-plans-contact.png)
+
+#### Contact Section
+
+La sección de contacto permite que los potenciales clientes identifiquen los canales disponibles para solicitar información adicional sobre EcoTrack y establecer comunicación con el equipo Horizon.
+
+![EcoTrack Contact Section](assets/chapter-05/sprint-01-contact.png)
+
+#### Sprint 1 Execution Video
+
+Como evidencia complementaria de ejecución, el equipo realizó una demostración de la versión desplegada del Landing Page. El video presenta la navegación entre las principales secciones, el comportamiento responsive, el cambio de idioma y las funcionalidades implementadas durante Sprint 1.
+
+**Video URL:**  
+https://youtu.be/u3VgMwPC1w8
+
+La evidencia presentada permite comprobar el cumplimiento del Sprint Goal, ya que los visitantes pueden acceder públicamente al Landing Page, navegar por sus principales secciones e identificar la propuesta de valor, capacidades, planes y mecanismos de contacto de EcoTrack.
 
 ## 5.2.1.6. Services Documentation Evidence for Sprint Review
 
