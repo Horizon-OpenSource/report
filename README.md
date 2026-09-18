@@ -1715,7 +1715,6 @@ Este módulo Angular se encarga de la carga de archivos CSV y de la configuraci�
 
 Este diagrama muestra la interacción con un actor externo (`External Business System`), ya que Data Integration es la puerta de entrada para datos de terceros. Su Application Layer valida la identidad del emisor contra la IAM API (por rol de usuario o API Key) antes de enviar la información a la Emissions Management API. Con esto se conecta el Context Diagram con el detalle de componentes del sistema.
 
-
 ---
 
 ## 4.7. Software Object-Oriented Design
@@ -1740,35 +1739,177 @@ Este diagrama muestra la interacción con un actor externo (`External Business S
 
 ### 5.1.1. Software Development Environment Configuration
 
-<!-- Completar -->
+Para el desarrollo de EcoTrack, el equipo Horizon utiliza un conjunto de herramientas que permiten gestionar las diferentes actividades del ciclo de vida del producto, incluyendo gestión del proyecto, definición y documentación de requisitos, diseño UX/UI, desarrollo de software, control de versiones, comunicación entre los integrantes, pruebas y despliegue.
+
+La selección de estas herramientas busca mantener un entorno de trabajo colaborativo y consistente entre los miembros del equipo, además de cumplir con las tecnologías y restricciones establecidas para el desarrollo del proyecto.
+
+| Activity | Tool | Purpose in the Project | Reference |
+|---|---|---|---|
+| Project Management | Trello | Gestionar el Product Backlog y los Sprint Backlogs, organizar las actividades del equipo y realizar seguimiento del estado de los User Stories y Work Items durante cada Sprint. | https://trello.com/ |
+| Requirements Management | GitHub / Markdown | Mantener bajo control de versiones los User Stories, Technical Stories, Product Backlog, documentación de requisitos y demás artefactos incluidos en el Project Report. | https://github.com/ |
+| UX Research & Lean UX | UXPressia | Elaborar artefactos relacionados con el análisis de usuarios y Lean UX, como User Personas, Empathy Maps y Lean UX Canvas utilizados durante la definición de EcoTrack. | https://uxpressia.com/ |
+| UX/UI Design | Figma | Diseñar los Wireframes y Mock-ups del Landing Page y de la futura Web Application de EcoTrack, así como mantener los principales lineamientos visuales del producto. | https://www.figma.com/ |
+| Software Development | JetBrains WebStorm | Entorno de desarrollo utilizado para implementar, editar y mantener el código fuente del Landing Page de EcoTrack. | https://www.jetbrains.com/webstorm/ |
+| Landing Page Development | HTML5, CSS3 & JavaScript | Tecnologías utilizadas para desarrollar la estructura, presentación, responsividad, internacionalización e interacciones del Landing Page. | https://developer.mozilla.org/ |
+| Version Control | Git | Gestionar localmente los cambios realizados en el código fuente y la documentación, permitiendo el trabajo mediante ramas y el seguimiento del historial de modificaciones. | https://git-scm.com/ |
+| Source Code Hosting & Collaboration | GitHub | Alojar los repositorios de Horizon y gestionar branches, commits, Pull Requests, merges, releases y colaboración entre los integrantes del equipo. | https://github.com/ |
+| Testing & Browser Inspection | Google Chrome / Chrome DevTools | Verificar la visualización, responsividad, navegación, accesibilidad y comportamiento del Landing Page en diferentes tamaños de pantalla. | https://developer.chrome.com/docs/devtools/ |
+| Software Deployment | GitHub Pages | Publicar la primera versión del Landing Page de EcoTrack a partir del repositorio alojado en GitHub y permitir su acceso mediante una URL pública. | https://pages.github.com/ |
+| Team Communication & Meetings | Discord | Realizar reuniones virtuales de coordinación, planificación y seguimiento del trabajo desarrollado por los integrantes de Horizon. | https://discord.com/ |
+| Team Communication | WhatsApp | Mantener comunicación rápida entre los miembros del equipo para coordinaciones, avisos y seguimiento de actividades del proyecto. | https://www.whatsapp.com/ |
+| Frontend Web Application | Angular, TypeScript & Angular Material | Tecnologías establecidas para el desarrollo de la Web Application de EcoTrack en los siguientes Sprints. Angular será utilizado como framework frontend, TypeScript como lenguaje de programación y Angular Material como biblioteca de componentes UI. | https://angular.dev/ |
+| Backend Web Services | Java, Spring Boot & Spring Data JPA | Tecnologías establecidas para implementar los RESTful Web Services de EcoTrack en las siguientes iteraciones del proyecto. | https://spring.io/projects/spring-boot |
+| API Documentation | OpenAPI / Swagger | Documentar los endpoints REST que se implementarán para los Web Services de EcoTrack, especificando operaciones, parámetros, requests y responses. | https://swagger.io/specification/ |
+
+Durante el Sprint 1, el esfuerzo de implementación se concentra principalmente en el Landing Page de EcoTrack. Este producto es desarrollado utilizando HTML5, CSS3 y JavaScript y se encuentra publicado mediante GitHub Pages.
+
+La primera versión desplegada se encuentra disponible en:
+
+**EcoTrack Landing Page:**  
+https://horizon-opensource.github.io/landing-page/
+
+El código fuente correspondiente se encuentra alojado en el repositorio oficial de Horizon:
+
+**Landing Page Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+Las tecnologías Angular, TypeScript, Angular Material, Java, Spring Boot, Spring Data JPA y OpenAPI/Swagger forman parte del stack definido para EcoTrack y serán incorporadas progresivamente cuando el alcance de los siguientes Sprints incluya la Frontend Web Application y los RESTful Web Services.
 
 ### 5.1.2. Source Code Management
 
-<!--
-Incluir URLs de:
-- Project Report
-- Landing Page
-- Frontend Web Application
-- Web Services
+El equipo Horizon utiliza Git como sistema de control de versiones distribuido y GitHub como plataforma principal para el alojamiento, seguimiento e integración del código fuente y de la documentación asociada al proyecto EcoTrack.
 
-Explicar:
-- GitFlow
-- main
-- develop
-- feature/*
-- release/*
-- hotfix/*
-- Conventional Commits
-- Semantic Versioning
--->
+El uso de GitHub permite mantener un historial verificable de modificaciones, trabajar de forma paralela mediante branches, revisar cambios mediante Pull Requests y publicar versiones estables de los productos desarrollados.
+
+Actualmente, Horizon mantiene los siguientes repositorios:
+
+| Product / Artifact | Repository |
+|---|---|
+| Project Report | https://github.com/Horizon-OpenSource/report |
+| Landing Page | https://github.com/Horizon-OpenSource/landing-page |
+| Frontend Web Application | Pendiente de implementación en los siguientes Sprints |
+| Web Services | Pendiente de implementación en los siguientes Sprints |
+
+La organización de GitHub utilizada por el equipo se encuentra disponible en:
+
+https://github.com/orgs/Horizon-OpenSource/repositories
+
+#### GitFlow Workflow
+
+Para organizar el trabajo colaborativo, Horizon adopta GitFlow como estrategia de branching. Esta estructura permite separar el desarrollo activo de las versiones estables y facilita que cada integrante trabaje en funcionalidades o artefactos específicos sin modificar directamente las ramas principales.
+
+Las ramas consideradas por el equipo son las siguientes:
+
+| Branch | Purpose |
+|---|---|
+| `main` | Contiene versiones estables del producto y sirve como referencia para releases y despliegues. |
+| `develop` | Funciona como rama de integración para los cambios desarrollados durante cada Sprint. |
+| `feature/*` | Permite desarrollar funcionalidades, secciones del reporte o mejoras específicas antes de integrarlas a `develop`. |
+| `release/*` | Se utiliza para preparar una nueva versión estable antes de integrarla a `main`. |
+| `hotfix/*` | Permite realizar correcciones urgentes sobre una versión ya publicada. |
+
+El flujo general aplicado por el equipo es el siguiente:
+
+1. Se actualiza la rama `develop` con los últimos cambios disponibles.
+2. Se crea una rama `feature/*` a partir de `develop`.
+3. El integrante implementa los cambios correspondientes en su feature branch.
+4. Los cambios se registran mediante commits utilizando Conventional Commits.
+5. La rama se publica en GitHub.
+6. Se crea un Pull Request hacia `develop`.
+7. El equipo revisa los cambios y resuelve posibles conflictos.
+8. Una vez aprobados, los cambios son integrados mediante merge.
+9. Cuando se dispone de una versión estable, esta se integra a `main` y puede ser utilizada para generar una release.
+
+En el repositorio del Project Report se han utilizado, entre otras, ramas con la siguiente convención:
+
+```text
+feature/chapter-02-requirements-analysis
+feature/chapter-03-user-stories
+feature/chapter-03-product-backlog
+feature/chapter-05-software-configuration-management
+```
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
-<!-- Completar -->
+El equipo Horizon define convenciones de código para mantener consistencia, legibilidad y mantenibilidad en los diferentes productos de EcoTrack. Estas reglas se aplican tanto al Landing Page implementado durante Sprint 1 como a la futura Frontend Web Application y a los RESTful Web Services.
+
+Como regla general, los nombres utilizados en el código fuente se redactan en inglés. Asimismo, se adoptan convenciones reconocidas para HTML, CSS, JavaScript, TypeScript, Angular, Java y Spring Boot.
+
+#### HTML5 Conventions
+
+Para la estructura de la Landing Page se utiliza HTML5 semántico. Esto permite organizar el contenido de manera clara y mejorar tanto la accesibilidad como la interpretación del documento por navegadores y herramientas de asistencia.
+
+Las principales convenciones aplicadas son:
+
+- Utilizar etiquetas HTML5 semánticas como `header`, `nav`, `main`, `section`, `article` y `footer`.
+- Escribir etiquetas y atributos en minúsculas.
+- Mantener una jerarquía consistente de encabezados.
+- Utilizar nombres descriptivos en inglés para atributos `id` y `class`.
+- Incluir el atributo `alt` en las imágenes que transmiten información.
+- Utilizar atributos ARIA cuando sean necesarios para mejorar la accesibilidad.
+- Evitar estilos y scripts embebidos cuando puedan mantenerse en archivos independientes.
+- Mantener una indentación consistente dentro del documento.
+
+Ejemplo:
+
+```html
+<section id="features" class="features-section">
+  <div class="section-header">
+    <span class="section-label">Core Capabilities</span>
+    <h2>Everything you need to manage your carbon footprint</h2>
+  </div>
+</section>
+```
+---
 
 ### 5.1.4. Software Deployment Configuration
 
-<!-- Completar -->
+El equipo Horizon define una estrategia de despliegue para los diferentes productos digitales que conforman EcoTrack. El objetivo es que las versiones estables del software puedan ser publicadas a partir del código fuente almacenado en GitHub y queden disponibles mediante URLs accesibles para usuarios y miembros del equipo.
+
+Durante Sprint 1, el producto desplegado corresponde al Landing Page de EcoTrack. La Frontend Web Application y los RESTful Web Services serán desplegados en posteriores Sprints, cuando formen parte del alcance de implementación correspondiente.
+
+#### Landing Page Deployment
+
+El Landing Page de EcoTrack fue desarrollado utilizando HTML5, CSS3 y JavaScript y se encuentra almacenado en el repositorio oficial de Horizon:
+
+**Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+Para la publicación de la primera versión se utilizó **GitHub Pages** como plataforma de despliegue.
+
+La configuración utilizada fue la siguiente:
+
+| Deployment Property | Configuration |
+|---|---|
+| Product | EcoTrack Landing Page |
+| Source Code Repository | https://github.com/Horizon-OpenSource/landing-page |
+| Deployment Platform | GitHub Pages |
+| Deployment Branch | `main` |
+| Deployment Mode | Manual configuration for the first stable version |
+| Release | `v1.0.0` |
+| Public URL | https://horizon-opensource.github.io/landing-page/ |
+
+El proceso realizado para desplegar la primera versión estable del Landing Page fue el siguiente:
+
+1. Se verificó localmente el funcionamiento del Landing Page, incluyendo navegación, contenido, diseño responsive e internacionalización.
+2. Los cambios desarrollados fueron integrados en el repositorio oficial de Horizon.
+3. Se consolidó una versión estable del producto en la rama `main`.
+4. Desde la configuración del repositorio en GitHub se habilitó GitHub Pages.
+5. Se seleccionó la rama `main` como fuente para la publicación.
+6. GitHub Pages procesó los archivos estáticos del proyecto y generó una URL pública.
+7. Se verificó el correcto acceso al Landing Page desplegado desde diferentes tamaños de pantalla.
+8. Una vez validada la primera versión estable, se creó la release `v1.0.0` utilizando Semantic Versioning.
+
+La versión desplegada se encuentra disponible en:
+
+**EcoTrack Landing Page:**  
+https://horizon-opensource.github.io/landing-page/
+
+La release correspondiente se identifica como:
+
+```text
+v1.0.0
+```
 
 ---
 
