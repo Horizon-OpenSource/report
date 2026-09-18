@@ -2178,9 +2178,65 @@ Para Sprint 1, el estado de documentación de servicios es el siguiente:
 
 La ausencia de endpoints documentados en esta iteración responde al alcance planificado del Sprint y no representa una funcionalidad pendiente dentro de los objetivos definidos para Sprint 1. La implementación y documentación de Web Services será incorporada progresivamente cuando estos productos formen parte del alcance de los siguientes Sprints.
 
-## 5.2.1.7. Software Deployment Evidence for Sprint Review
+### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 1, Horizon realizó el despliegue de la primera versión estable del Landing Page de EcoTrack. El objetivo del proceso fue disponer de una versión pública y accesible del producto que permitiera validar el resultado de la implementación realizada durante la iteración.
+
+El Landing Page se encuentra alojado en el repositorio oficial de Horizon:
+
+**Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+Para el despliegue se utilizó **GitHub Pages**, aprovechando que el producto fue desarrollado utilizando HTML5, CSS3 y JavaScript y no requiere un proceso de compilación asociado a un framework frontend.
+
+La configuración inicial del despliegue fue realizada manualmente y se utilizó la rama `main` como fuente de la versión estable.
+
+La información principal del despliegue es la siguiente:
+
+| Deployment Item | Sprint 1 Configuration |
+|---|---|
+| Product | EcoTrack Landing Page |
+| Repository | https://github.com/Horizon-OpenSource/landing-page |
+| Deployment Platform | GitHub Pages |
+| Source Branch | `main` |
+| Deployment Configuration | Manual configuration for the first deployed version |
+| Stable Release | `v1.0.0` |
+| Public URL | https://horizon-opensource.github.io/landing-page/ |
+| Status | Deployed |
+
+#### GitHub Pages Configuration
+
+Para realizar la publicación, se configuró GitHub Pages desde la sección de configuración del repositorio del Landing Page. La rama `main` fue utilizada como fuente para publicar la versión estable del producto.
+
+La siguiente captura evidencia la configuración utilizada para el despliegue mediante GitHub Pages:
+
+![Sprint 1 GitHub Pages Configuration](assets/chapter-05/sprint-01-github-pages-configuration.png)
+
+El proceso aplicado durante Sprint 1 fue el siguiente:
+
+1. Se verificó localmente el funcionamiento de las secciones implementadas en el Landing Page.
+2. Las funcionalidades desarrolladas en las diferentes feature branches fueron integradas progresivamente en `develop`.
+3. Los cambios consolidados fueron revisados antes de preparar la versión estable.
+4. La rama `develop` fue integrada en `main` mediante Pull Request.
+5. Se configuró GitHub Pages para publicar el contenido disponible desde la rama `main`.
+6. Se verificó el acceso a la URL pública generada.
+7. Se comprobó la navegación y visualización de las principales secciones de EcoTrack desde la versión desplegada.
+8. La versión estable fue identificada mediante la release `v1.0.0`.
+
+#### Deployed Landing Page
+
+Como resultado del proceso de deployment, la Landing Page quedó disponible públicamente mediante la siguiente dirección:
+
+**EcoTrack Landing Page:**  
+https://horizon-opensource.github.io/landing-page/
+
+La siguiente evidencia muestra la primera versión desplegada y accesible públicamente:
+
+![Sprint 1 EcoTrack Landing Page Deployment](assets/chapter-05/sprint-01-landing-deployed.png)
+
+El despliegue permitió cumplir con uno de los principales resultados esperados para Sprint 1: disponer de una primera versión funcional y pública del Landing Page de EcoTrack. Esta versión permite acceder a la propuesta de valor, segmentos objetivo, principales capacidades, alcances de emisiones, proceso de funcionamiento, estándares de referencia, planes de suscripción y canales de contacto del producto.
+
+La publicación realizada durante Sprint 1 servirá como base para las siguientes iteraciones, en las que el Landing Page podrá continuar evolucionando junto con la futura Frontend Web Application y los RESTful Web Services.
 
 ## 5.2.1.8. Team Collaboration Insights during Sprint
 
