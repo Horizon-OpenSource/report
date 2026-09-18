@@ -1304,13 +1304,110 @@ La propuesta busca mantener una experiencia consistente entre Desktop y Mobile, 
 
 ## 4.4. Web Applications UX/UI Design
 
+Esta sección presenta la propuesta de UX/UI de la Web Application de EcoTrack. El diseño se construye a partir de las User Stories, User Personas, Information Architecture y Style Guidelines previamente definidas, buscando mantener una experiencia consistente para la gestión de información ambiental de las organizaciones.
+
+La Web Application está orientada principalmente a usuarios responsables de sostenibilidad, analistas ambientales y administradores de organizaciones. La propuesta contempla los principales módulos funcionales de EcoTrack: Dashboard, Emissions, Carbon Footprint, Goals, Reports y Organization.
+
+Los diseños consideran una estructura de navegación jerárquica y consistente, componentes reutilizables y estados de interacción que permiten representar escenarios normales, validaciones y resultados de las operaciones. Asimismo, se mantienen los criterios de legibilidad, jerarquía visual, consistencia y diseño inclusivo establecidos en las Web Style Guidelines.
+
 ### 4.4.1. Web Applications Wireframes
 
-<!-- Completar -->
+Los Wireframes de la Web Application de EcoTrack representan la estructura y organización de las principales interfaces que permiten a los usuarios registrar, consultar y gestionar información relacionada con las emisiones y la huella de carbono de una organización.
+
+La propuesta se desarrolló considerando las funcionalidades definidas para EcoTrack y las decisiones establecidas previamente en la arquitectura de información. La aplicación mantiene una estructura de navegación consistente entre sus diferentes módulos, permitiendo acceder a funcionalidades como Dashboard, Emissions, Carbon Footprint, Goals, Reports y Organization.
+
+Los Wireframes fueron elaborados en Figma y se presentan agrupados según los principales procesos funcionales de la aplicación. Cada grupo reúne las pantallas correspondientes a un mismo proceso, incluyendo tanto estados iniciales como estados resultantes de las interacciones del usuario.
+
+Asimismo, se consideraron diferentes estados de interacción de las interfaces, tales como formularios vacíos, formularios con información ingresada, estados de validación, errores y confirmaciones de operaciones.
+Esto permite representar no solamente la estructura de las pantallas, sino también el comportamiento esperado de la interfaz ante las acciones del usuario.
+
+#### Authentication
+
+El primer grupo corresponde al proceso de autenticación de usuarios. Los Wireframes representan la pantalla inicial de inicio de sesión, el ingreso de credenciales y el estado mostrado cuando las credenciales proporcionadas no son válidas.
+
+La interfaz mantiene una estructura simple y centrada en la tarea principal, presentando los campos de correo electrónico y contraseña junto con las acciones necesarias para iniciar sesión o recuperar las credenciales.
+
+![Authentication Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Authentication.png)
+
+*Figura 4.1. Wireframes correspondientes al proceso de autenticación.*
+
+#### Organization Registration
+
+El segundo grupo representa el proceso de registro de una nueva organización en EcoTrack. Se incluyen el formulario inicial, el formulario con información ingresada, el estado de validación y la confirmación de registro exitoso.
+
+La información se organiza en grupos relacionados con los datos de la organización y los datos de la cuenta del usuario. Los campos requeridos se identifican mediante labels explícitos y los estados de error permiten comunicar al usuario qué información necesita ser corregida.
+
+![Organization Registration Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Organization-Registration.png)
+
+*Figura 4.2. Wireframes correspondientes al registro de una organización.*
+
+#### Emission Registration
+
+El tercer grupo corresponde al registro de emisiones. La propuesta contempla el listado de emisiones y el formulario para agregar nuevos registros, junto con diferentes estados del formulario durante la interacción.
+
+Los campos se organizan de acuerdo con la información necesaria para registrar una emisión, incluyendo la fuente de emisión, categoría, alcance, unidad, periodo y demás datos relacionados. Se incluyen estados de formulario vacío, información ingresada, validación y confirmación de registro exitoso.
+
+![Emission Registration Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Emission-Registration.png)
+
+*Figura 4.3. Wireframes correspondientes al registro y consulta de emisiones.*
+
+#### Carbon Footprint Calculation
+
+El cuarto grupo representa el proceso de cálculo y consulta de la huella de carbono. Se incluyen las interfaces utilizadas para configurar el cálculo, revisar los datos considerados, consultar los resultados por alcance y analizar los resultados por periodo.
+
+La información se presenta de manera progresiva para facilitar la comprensión del proceso: primero se seleccionan los parámetros del cálculo, luego se revisan los datos utilizados y finalmente se presentan los resultados obtenidos. También se incluye el historial de cálculos para permitir la consulta de operaciones realizadas anteriormente.
+
+![Carbon Footprint Calculation Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Carbon-Footprint-Calculation.png)
+
+*Figura 4.4. Wireframes correspondientes al cálculo y consulta de la huella de carbono.*
+
+#### Goal Creation
+
+El quinto grupo corresponde a la gestión de metas y planes de reducción. Los Wireframes representan el listado de metas, la creación de una nueva meta, los diferentes estados del formulario y la edición de una meta existente.
+
+La interfaz organiza la información de la meta mediante campos claramente identificados y proporciona acciones diferenciadas para crear, guardar o cancelar una operación. Los estados de validación permiten representar las condiciones en las que el usuario debe corregir información antes de guardar los cambios.
+
+![Goal Creation Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Goal-Creation.png)
+
+*Figura 4.5. Wireframes correspondientes a la creación y gestión de metas de reducción.*
+
+#### Report Generation
+
+El sexto grupo representa el proceso de generación y consulta de reportes ambientales. Se incluyen los estados iniciales del módulo Reports, la configuración del reporte, la selección del periodo, la generación del reporte y la visualización de los reportes disponibles.
+
+La interfaz permite al usuario configurar los parámetros necesarios antes de generar un reporte. También se contemplan escenarios en los que no existen datos suficientes para realizar la operación, comunicando esta condición mediante un estado informativo.
+
+![Report Generation Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Report-Generation.png)
+
+*Figura 4.6. Wireframes correspondientes a la generación y consulta de reportes.*
+
+#### Organization Management
+
+El último grupo corresponde a la administración de la información de la organización. Los Wireframes representan la consulta de los datos actuales, la edición de la información, los estados de validación y la confirmación de una actualización exitosa.
+
+La interfaz diferencia claramente entre la visualización de la información y las acciones de modificación. Los campos del formulario se mantienen organizados de acuerdo con el tipo de información que debe ser gestionada, mientras que los mensajes de validación permiten identificar los datos que requieren corrección.
+
+![Organization Management Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Organization-Management.png)
+
+*Figura 4.7. Wireframes correspondientes a la consulta y administración de la organización.*
+
+#### Consideraciones de UX/UI
+
+En conjunto, los Wireframes mantienen una estructura visual y de navegación consistente entre los diferentes módulos de EcoTrack. La navegación lateral permite acceder de manera persistente a las principales áreas funcionales de la aplicación, mientras que el contenido principal se adapta a la tarea que el usuario está realizando.
+
+La organización de los contenidos utiliza una jerarquía visual que diferencia títulos, secciones, información principal y acciones. Los formularios mantienen labels visibles y agrupan los campos relacionados para facilitar su comprensión y completar las tareas de manera secuencial.
+
+Los estados de validación y confirmación forman parte de la propuesta de interacción. Los mensajes de error permiten identificar la información que debe corregirse y los estados de éxito comunican que una operación fue completada correctamente.
+
+Desde el punto de vista del diseño inclusivo, la propuesta prioriza textos explícitos, labels visibles y una jerarquía de información clara para que las acciones y los contenidos puedan ser comprendidos sin depender únicamente de elementos visuales como el color. Estas decisiones son consistentes con el enfoque de accesibilidad e internacionalización establecido para los productos digitales del proyecto.
+
+Finalmente, la organización de las interfaces mantiene correspondencia con la arquitectura de información definida para EcoTrack. Los módulos y etiquetas utilizados en la navegación permiten relacionar las diferentes funcionalidades con las tareas que el usuario debe realizar dentro de la aplicación.
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+
 <!-- Completar -->
+
 
 ### 4.4.3. Web Applications Mock-ups
 
