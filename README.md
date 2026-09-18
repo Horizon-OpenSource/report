@@ -1728,9 +1728,11 @@ Este diagrama muestra la interacción con un actor externo (`External Business S
 
 ## 4.8. Database Design
 
-### 4.8.1. Database Diagrams
+### 4.8. Database Design
 
-<!-- Completar -->
+#### 4.8.1. Database Diagrams
+
+![EcoTrack Platform - Database Diagram](docs/database/ecotrack-database-diagram-EcoTrack_Platform__Database.png)
 
 ---
 
