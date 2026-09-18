@@ -1715,7 +1715,6 @@ Este módulo Angular se encarga de la carga de archivos CSV y de la configuraci�
 
 Este diagrama muestra la interacción con un actor externo (`External Business System`), ya que Data Integration es la puerta de entrada para datos de terceros. Su Application Layer valida la identidad del emisor contra la IAM API (por rol de usuario o API Key) antes de enviar la información a la Emissions Management API. Con esto se conecta el Context Diagram con el detalle de componentes del sistema.
 
-
 ---
 
 ## 4.7. Software Object-Oriented Design
@@ -1740,7 +1739,41 @@ Este diagrama muestra la interacción con un actor externo (`External Business S
 
 ### 5.1.1. Software Development Environment Configuration
 
-<!-- Completar -->
+Para el desarrollo de EcoTrack, el equipo Horizon utiliza un conjunto de herramientas que permiten gestionar las diferentes actividades del ciclo de vida del producto, incluyendo gestión del proyecto, definición y documentación de requisitos, diseño UX/UI, desarrollo de software, control de versiones, comunicación entre los integrantes, pruebas y despliegue.
+
+La selección de estas herramientas busca mantener un entorno de trabajo colaborativo y consistente entre los miembros del equipo, además de cumplir con las tecnologías y restricciones establecidas para el desarrollo del proyecto.
+
+| Activity | Tool | Purpose in the Project | Reference |
+|---|---|---|---|
+| Project Management | Trello | Gestionar el Product Backlog y los Sprint Backlogs, organizar las actividades del equipo y realizar seguimiento del estado de los User Stories y Work Items durante cada Sprint. | https://trello.com/ |
+| Requirements Management | GitHub / Markdown | Mantener bajo control de versiones los User Stories, Technical Stories, Product Backlog, documentación de requisitos y demás artefactos incluidos en el Project Report. | https://github.com/ |
+| UX Research & Lean UX | UXPressia | Elaborar artefactos relacionados con el análisis de usuarios y Lean UX, como User Personas, Empathy Maps y Lean UX Canvas utilizados durante la definición de EcoTrack. | https://uxpressia.com/ |
+| UX/UI Design | Figma | Diseñar los Wireframes y Mock-ups del Landing Page y de la futura Web Application de EcoTrack, así como mantener los principales lineamientos visuales del producto. | https://www.figma.com/ |
+| Software Development | JetBrains WebStorm | Entorno de desarrollo utilizado para implementar, editar y mantener el código fuente del Landing Page de EcoTrack. | https://www.jetbrains.com/webstorm/ |
+| Landing Page Development | HTML5, CSS3 & JavaScript | Tecnologías utilizadas para desarrollar la estructura, presentación, responsividad, internacionalización e interacciones del Landing Page. | https://developer.mozilla.org/ |
+| Version Control | Git | Gestionar localmente los cambios realizados en el código fuente y la documentación, permitiendo el trabajo mediante ramas y el seguimiento del historial de modificaciones. | https://git-scm.com/ |
+| Source Code Hosting & Collaboration | GitHub | Alojar los repositorios de Horizon y gestionar branches, commits, Pull Requests, merges, releases y colaboración entre los integrantes del equipo. | https://github.com/ |
+| Testing & Browser Inspection | Google Chrome / Chrome DevTools | Verificar la visualización, responsividad, navegación, accesibilidad y comportamiento del Landing Page en diferentes tamaños de pantalla. | https://developer.chrome.com/docs/devtools/ |
+| Software Deployment | GitHub Pages | Publicar la primera versión del Landing Page de EcoTrack a partir del repositorio alojado en GitHub y permitir su acceso mediante una URL pública. | https://pages.github.com/ |
+| Team Communication & Meetings | Discord | Realizar reuniones virtuales de coordinación, planificación y seguimiento del trabajo desarrollado por los integrantes de Horizon. | https://discord.com/ |
+| Team Communication | WhatsApp | Mantener comunicación rápida entre los miembros del equipo para coordinaciones, avisos y seguimiento de actividades del proyecto. | https://www.whatsapp.com/ |
+| Frontend Web Application | Angular, TypeScript & Angular Material | Tecnologías establecidas para el desarrollo de la Web Application de EcoTrack en los siguientes Sprints. Angular será utilizado como framework frontend, TypeScript como lenguaje de programación y Angular Material como biblioteca de componentes UI. | https://angular.dev/ |
+| Backend Web Services | Java, Spring Boot & Spring Data JPA | Tecnologías establecidas para implementar los RESTful Web Services de EcoTrack en las siguientes iteraciones del proyecto. | https://spring.io/projects/spring-boot |
+| API Documentation | OpenAPI / Swagger | Documentar los endpoints REST que se implementarán para los Web Services de EcoTrack, especificando operaciones, parámetros, requests y responses. | https://swagger.io/specification/ |
+
+Durante el Sprint 1, el esfuerzo de implementación se concentra principalmente en el Landing Page de EcoTrack. Este producto es desarrollado utilizando HTML5, CSS3 y JavaScript y se encuentra publicado mediante GitHub Pages.
+
+La primera versión desplegada se encuentra disponible en:
+
+**EcoTrack Landing Page:**  
+https://horizon-opensource.github.io/landing-page/
+
+El código fuente correspondiente se encuentra alojado en el repositorio oficial de Horizon:
+
+**Landing Page Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+Las tecnologías Angular, TypeScript, Angular Material, Java, Spring Boot, Spring Data JPA y OpenAPI/Swagger forman parte del stack definido para EcoTrack y serán incorporadas progresivamente cuando el alcance de los siguientes Sprints incluya la Frontend Web Application y los RESTful Web Services.
 
 ### 5.1.2. Source Code Management
 
