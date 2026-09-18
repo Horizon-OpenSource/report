@@ -1599,7 +1599,17 @@ La propuesta busca mantener una experiencia consistente entre Desktop y Mobile, 
 
 ### 4.6.2. Software Architecture Context Diagram
 
-<!-- Completar -->
+![Software Architecture Context Diagram](docs/diagrams/context/ecotrack-context-diagram.png)
+
+Este diagrama ubica a EcoTrack como el sistema central, rodeado del único actor
+humano del modelo (`EcoTrack User`, que agrupa los roles de administrador, analista
+ambiental y responsable de sostenibilidad) y de dos sistemas externos con los que
+realmente se integra: el `External Business System`, que envía o consulta datos
+ambientales a través de la EcoTrack API, y el `Email Provider`, que entrega los
+correos de notificación, invitación y recuperación de contraseña. Deliberadamente
+no se incluyen aquí sistemas sin evidencia en el dominio (pasarela de pagos, mapas,
+autenticación externa) ni infraestructura de despliegue (hosting), ya que ese nivel
+de detalle no corresponde al Context Diagram.
 
 ### 4.6.3. Software Architecture Container Diagrams
 
