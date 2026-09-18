@@ -1966,9 +1966,38 @@ Las User Stories consideradas para el alcance de Sprint 1 corresponden a las his
 
 El alcance seleccionado mantiene coherencia con la prioridad definida en el Product Backlog, donde las primeras User Stories están orientadas al Landing Page. De esta manera, el Sprint permite disponer de una primera versión visible y desplegada de EcoTrack que servirá como base para las siguientes iteraciones del producto.
 
-## 5.2.1.2. Aspect Leaders and Collaborators
+### 5.2.1.2. Aspect Leaders and Collaborators
 
-<!-- Completar -->
+Durante Sprint 1, el equipo Horizon organizó el trabajo mediante una Leadership-and-Collaboration Matrix (LACX). Esta matriz permite identificar qué integrante asumió el liderazgo de cada aspecto considerado dentro del alcance del Sprint y qué miembros participaron como colaboradores.
+
+Para esta primera iteración, Javier Oswaldo Tello Murga asumió el liderazgo principal del desarrollo e integración del Landing Page, con la colaboración de los demás integrantes de Horizon. El trabajo conjunto incluyó implementación, revisión de contenido, validación visual, responsividad, internacionalización y despliegue.
+
+Los principales aspectos considerados durante Sprint 1 fueron:
+
+- Landing Page Implementation.
+- UX/UI and Content Integration.
+- Responsive Design and Accessibility.
+- Internationalization.
+- Deployment and Release Management.
+
+La siguiente matriz resume la participación de los integrantes del equipo:
+
+| Team Member | GitHub Username | Landing Page Implementation | UX/UI and Content Integration | Responsive Design and Accessibility | Internationalization | Deployment and Release Management |
+|---|---|---|---|---|---|---|
+| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | C | C | C | C | C |
+| Espinoza Flores, Aaron André | `pisure` | C | C | C | C | C |
+| Payesa Torres, Harrison Hubert | `Harrison1024` | C | C | C | C | C |
+| Tello Murga, Javier Oswaldo | `JavierTello20` | L | L | L | L | L |
+| Torres Diaz, Rolando Andre | `ROLO194` | C | C | C | C | C |
+
+**Legend:**
+
+- `L`: Leader.
+- `C`: Collaborator.
+
+La distribución presentada refleja la dinámica utilizada durante Sprint 1. Aunque el liderazgo principal del desarrollo estuvo a cargo de Javier Tello, los demás integrantes participaron en actividades de revisión, coordinación, validación y soporte durante la construcción de la primera versión del Landing Page.
+
+La coordinación del equipo se realizó mediante reuniones presenciales antes y después de las sesiones del curso, así como mediante Discord y WhatsApp. Esta colaboración permitió revisar avances de manera progresiva y mantener alineados tanto los contenidos del Project Report como la implementación del producto.
 
 ## 5.2.1.3. Sprint Backlog 1
 
