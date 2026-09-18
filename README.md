@@ -1613,7 +1613,9 @@ de detalle no corresponde al Context Diagram.
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-<!-- Completar -->
+![Software Architecture Container Diagram](docs/diagrams/container/ecotrack-container-diagram.png)
+
+Muestra los cuatro containers que conforman la solución: `Web Application` (sirve la landing page pública y entrega la SPA compilada al navegador), `EcoTrack SPA` (la aplicación Angular que corre en el navegador), `Backend API` (monolito modular en Spring Boot) y la base de datos PostgreSQL; junto con los tres sistemas externos de los que depende: `Cloud Hosting Platform` (donde corren los containers desplegables), `External Business System` y `Email Provider`. El usuario tiene dos relaciones directas con el sistema: hacia `Web Application` al conocer la plataforma, y hacia la `SPA` al interactuar con ella, donde `Web Application` entrega la SPA al navegador de por medio.
 
 ### 4.6.4. Software Architecture Components Diagrams
 
