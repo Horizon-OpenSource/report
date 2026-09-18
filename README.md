@@ -240,7 +240,10 @@ Durante el desarrollo del TB2, se registrará la participación final de los int
 Incluir el párrafo introductorio y el cuadro del Student Outcome
 establecido en el Anexo A del enunciado.
 -->
-
+| Criterio Específico | Acciones realizadas | Conclusiones |
+|--|--|--|
+| Comunica oralmente con efectividad a diferentes rangos de audiencia. | **Lacuta Lima, Alex Rodrigo** <br>AV1: Explicó al equipo, con apoyo de un asistente de IA para la generación de diagramas en PlantUML, la arquitectura Domain-Driven del sistema EcoTrack (Context, Container y Component Diagrams del modelo C4), sustentando ante el equipo las decisiones de diseño de los 7 bounded contexts y su correspondencia con el Big Picture Event Storming del Capítulo 2. | AV1: La comunicación oral permitió alinear al equipo sobre la arquitectura de software definida para EcoTrack, facilitando que el resto de integrantes comprendiera las decisiones de diseño antes de continuar con sus respectivas secciones del informe. |
+| Comunica por escrito con efectividad a diferentes rangos de audiencia | **Lacuta Lima, Alex Rodrigo** <br>AV1: Documentó en el README la sección 4.6 (Domain-Driven Software Architecture) con los 18 diagramas C4 en formato PlantUML (Context, Container, Frontend/Backend Components por bounded context), la sección 4.7.1 (Class Diagrams) organizada en niveles de capa y agregado, y la sección 4.8.1 (Database Diagram) con el modelo entidad-relación completo, manteniendo trazabilidad entre el Ubiquitous Language del Capítulo 2 y los nombres de clases y tablas utilizados. | AV1: La documentación escrita del Capítulo 4 dejó evidencia clara y trazable de la arquitectura del sistema, facilitando su revisión técnica y sirviendo de base para las siguientes entregas del proyecto. |
 ---
 
 # Capítulo I: Introducción
