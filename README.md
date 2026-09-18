@@ -2032,9 +2032,64 @@ Las User Stories fueron descompuestas en Work Items considerando las actividades
 
 Al cierre del Sprint 1, las User Stories seleccionadas fueron completadas y la primera versión estable del Landing Page quedó publicada mediante GitHub Pages. Las actividades transversales de responsividad, internacionalización, accesibilidad, revisión y despliegue permitieron complementar las funcionalidades asociadas directamente con cada historia.
 
-## 5.2.1.4. Development Evidence for Sprint Review
+### 5.2.1.4. Development Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 1, el equipo Horizon implementó progresivamente la primera versión del Landing Page de EcoTrack. El desarrollo fue organizado mediante feature branches que posteriormente fueron integradas a `develop` a través de merges y Pull Requests.
+
+La implementación incluyó la estructura inicial del proyecto, navegación responsive, Hero section, presentación del problema y beneficios, segmentos objetivo, capacidades principales de EcoTrack, alcances de emisiones, proceso de funcionamiento, estándares ambientales, planes de suscripción, sección de contacto, footer, internacionalización y mejoras de accesibilidad.
+
+Además, se realizaron ajustes responsive y refinamientos de contenido antes de consolidar la versión estable del producto en la rama `main`.
+
+**Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+Los siguientes commits representan las principales actividades de implementación realizadas durante Sprint 1:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|
+| `Horizon-OpenSource/landing-page` | `main` | `19c8209` | `chore: initialize landing page repository` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-page-structure` | `81d62dc` | `chore(landing): set up landing page project structure` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/header-navigation` | `fa87771` | `feat(header): implement desktop navigation` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/header-navigation` | `679a909` | `feat(header): implement responsive mobile navigation` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/header-navigation` | `c20108c` | `fix(header): add standards navigation link` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/hero-section` | `f635d0f` | `feat(hero): implement responsive EcoTrack hero section` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/hero-section` | `c82e06b` | `fix(header): prevent navigation wrapping on tablet widths` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/problem-benefits` | `19132ab` | `feat(problem): implement problem and benefits section` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/style-modularization` | `81077cf` | `refactor(styles): modularize landing page styles` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/target-segments` | `2bd4430` | `feat(segments): add EcoTrack target segments section` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/features-section` | `43eb7e3` | `feat(features): implement EcoTrack core capabilities section` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/features-section` | `7f4074e` | `feat(features): implement core capabilities and component responsive styles` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/emission-scopes` | `30f0ab9` | `feat(scopes): implement emission scopes section` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/how-it-works` | `4e9bf34` | `feat(process): implement EcoTrack how it works section` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/tablet-layout-fixes` | `21b6cfd` | `fix(responsive): improve tablet layout and process connectors` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `2508ba4` | `feat(ui): add accessible scroll reveal animations` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `8b0c2af` | `feat(hero): add subtle entrance animation` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `07c9b4f` | `fix(navigation): offset anchor scrolling for sticky header` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `ffe96fd` | `feat(navigation): add active section scroll tracking` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/content-copy-refinement` | `25e1769` | `feat(content): refine EcoTrack landing page marketing copy` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `standards-section` | `cc31207` | `feat(standards): implement environmental standards section` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `standards-section` | `d18faa7` | `feat(standards): improve responsive layout` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/plans-and-cta` | `aa591b5` | `feat(plans): implement EcoTrack subscription plans` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/plans-and-cta` | `fd306f2` | `fix(plans): improve responsive pricing layout` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/contact-and-about` | `d33f4f7` | `feat(contact): implement EcoTrack contact section` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/contact-and-about` | `0e72891` | `feat(contact): add temporary handling of the form` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/contact-and-about` | `5b3f4c8` | `feat(styles): add the contact and about` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/footer-structure` | `9bfdb72` | `feat(footer): implement footer structure and include contact/plans styles` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/footer-structure` | `e953e3d` | `feat(footer): implement footer styles` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/i18n-accessibility` | `b5916be` | `feat(i18n): add bilingual translations, accessibility labels and localized metadata` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `main` | `efd7f96` | `Merge pull request #7 from Horizon-OpenSource/develop` | — | 2026-09-18 |
+
+Los commits evidencian una estrategia incremental de desarrollo en la que las diferentes secciones y mejoras fueron implementadas de manera independiente antes de su integración. Asimismo, el historial evidencia la participación de distintos miembros del equipo en la implementación del Landing Page.
+
+Entre las contribuciones realizadas durante Sprint 1 se identifican:
+
+- **Javier Tello Murga:** configuración inicial del proyecto, navegación, Hero, problema y beneficios, segmentos objetivo, capacidades principales, emisión scopes, proceso de funcionamiento, comportamiento responsive, animaciones, contenido e integración general.
+- **Aaron Espinoza (`psure`):** implementación de la sección de estándares ambientales y mejoras responsive asociadas.
+- **Rolando Torres:** implementación de los planes de suscripción y mejoras responsive de la sección de pricing.
+- **Alex Lacuta:** implementación de la sección de contacto, comportamiento inicial del formulario y estilos relacionados.
+- **Harrison Payesa:** implementación del footer e internacionalización, etiquetas de accesibilidad y metadata localizada.
+
+Finalmente, los cambios de las diferentes feature branches fueron integrados en `develop` y posteriormente consolidados en `main` mediante el Pull Request #7. Este proceso produjo la versión estable utilizada para el despliegue del Landing Page y para la release `v1.0.0`.
 
 ## 5.2.1.5. Execution Evidence for Sprint Review
 
