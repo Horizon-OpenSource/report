@@ -1,0 +1,61 @@
+@startuml
+title EcoTrack Platform - IAM Backend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class UserCommandService {
+    +handle(command: RegisterOrganizationAdminCommand): User
+    +handle(command: RegisterUserCommand): User
+    +handle(command: AssignRoleCommand): User
+  }
+
+  class AuthCommandService {
+    +handle(command: SignInCommand): String
+  }
+
+  class PasswordRecoveryCommandService {
+    +handle(command: RequestPasswordResetCommand): void
+    +handle(command: ResetPasswordCommand): void
+  }
+
+  class UserQueryService {
+    +handle(query: GetUserByIdQuery): User
+    +handle(query: GetUsersByOrganizationQuery): List<User>
+  }
+
+  interface EmailSenderPort {
+    +sendPasswordResetEmail(to: String, token: String): void
+  }
+
+  UserCommandService ..> EmailSenderPort
+  PasswordRecoveryCommandService ..> EmailSenderPort
+}
+
+package "Interfaces REST" as Backend_iam_Interfaces_REST <<layer>> {
+}
+package "Domain" as Backend_iam_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_iam_Infrastructure <<layer>> {
+}
+
+Backend_iam_Interfaces_REST ..> UserCommandService : delegates
+Backend_iam_Interfaces_REST ..> AuthCommandService : delegates
+Backend_iam_Interfaces_REST ..> PasswordRecoveryCommandService : delegates
+Backend_iam_Interfaces_REST ..> UserQueryService : delegates
+UserCommandService ..> Backend_iam_Domain : applies rules
+AuthCommandService ..> Backend_iam_Domain : applies rules
+PasswordRecoveryCommandService ..> Backend_iam_Domain : applies rules
+UserQueryService ..> Backend_iam_Domain : reads aggregates
+EmailSenderPort ..> Backend_iam_Infrastructure : implemented by
+
+@enduml

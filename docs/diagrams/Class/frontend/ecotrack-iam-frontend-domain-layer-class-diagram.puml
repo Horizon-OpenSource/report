@@ -1,0 +1,78 @@
+@startuml
+title EcoTrack Platform - IAM Frontend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Models" {
+    class UserViewModel {
+      +id: number
+      +organizationId: number
+      +fullName: String
+      +email: String
+      +role: RoleType
+      +status: UserStatus
+    }
+
+    class SessionViewModel {
+      +accessToken: String
+      +expiresAt: Date
+      +user: UserViewModel
+      +isAuthenticated(): boolean
+    }
+  }
+
+  package "Value Objects" {
+    enum RoleType {
+      ADMINISTRATOR
+      ENVIRONMENTAL_ANALYST
+      SUSTAINABILITY_MANAGER
+    }
+    enum UserStatus {
+      ACTIVE
+      DISABLED
+    }
+  }
+
+  package "Rules" {
+    class RolePermissionRules {
+      +{static} canManageUsers(role: RoleType): boolean
+      +{static} canManageEmissions(role: RoleType): boolean
+      +{static} canManageGoals(role: RoleType): boolean
+      +{static} canViewReports(role: RoleType): boolean
+    }
+  }
+
+  UserViewModel "1" *-- "1" RoleType
+  UserViewModel "1" *-- "1" UserStatus
+  SessionViewModel "1" *-- "1" UserViewModel
+  RolePermissionRules ..> RoleType
+}
+
+package "Presentation" as Frontend_iam_Presentation <<layer>> {
+}
+package "Application" as Frontend_iam_Application <<layer>> {
+}
+package "Infrastructure" as Frontend_iam_Infrastructure <<layer>> {
+}
+
+Frontend_iam_Presentation ..> UserViewModel : renders
+Frontend_iam_Application ..> SessionViewModel : updates
+Frontend_iam_Application ..> UserViewModel : updates
+Frontend_iam_Infrastructure ..> UserViewModel : maps responses to
+
+@enduml
