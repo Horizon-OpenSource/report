@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#111827"/>
+  <rect x="30" y="30" width="840" height="440" rx="24" fill="#1f2937" stroke="#22c55e" stroke-width="6"/>
+  <text x="450" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">Entrevista Segmento 2</text>
+  <text x="450" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#d1d5db">Renzo Santos</text>
+  <text x="450" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#9ca3af">Screenshot de entrevista</text>
+</svg>
