@@ -1405,9 +1405,123 @@ Finalmente, la organización de las interfaces mantiene correspondencia con la a
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+Los Wireflow Diagrams representan los recorridos de interacción de los principales User Goals de la Web Application de EcoTrack. A partir de los Wireframes definidos en la sección anterior, estos diagramas permiten visualizar la secuencia de pantallas, acciones y decisiones que intervienen en cada proceso.
 
-<!-- Completar -->
+Los Wireflows fueron construidos considerando los User Stories definidos para la aplicación y sus respectivos User Goals. Cada flujo incluye los estados principales de las interfaces y, cuando corresponde, rutas alternativas producidas por errores de validación o condiciones que impiden completar una operación.
 
+Asimismo, los cambios de estado de una misma pantalla se representan como nuevos pasos dentro del flujo. De esta manera, el usuario puede visualizar cómo una acción modifica la interfaz y cuáles son las condiciones necesarias para continuar con el proceso.
+
+Los siguientes Wireflows corresponden a los principales procesos de interacción definidos para la Web Application de EcoTrack.
+
+#### WF01 — Authentication
+
+**User Story:** US-07 — Iniciar sesión
+
+**User Goal:**  
+Como usuario registrado, quiero iniciar sesión en EcoTrack, para acceder a la información de mi empresa.
+
+El flujo comienza en la pantalla de inicio de sesión, donde el usuario ingresa su correo electrónico y contraseña. Al seleccionar **Sign In**, el sistema valida las credenciales proporcionadas. Si las credenciales son válidas, el usuario accede al Dashboard. En caso contrario, se muestra un estado de error y el usuario puede intentar nuevamente el proceso.
+
+![WF01 - Authentication](./assets/chapter-04/web-applications-ui-ux/wireflows/wf01-Authentication.png)
+
+*Figura 4.8. Wireflow del proceso de autenticación.*
+
+#### WF02 — Organization Registration
+
+**User Story:** US-06 — Registrar una empresa
+
+**User Goal:**  
+Como representante de una empresa, quiero registrar mi organización en EcoTrack, para comenzar a gestionar su información ambiental.
+
+El flujo inicia desde la pantalla de autenticación, donde el usuario selecciona la opción para crear una organización. Posteriormente completa el formulario con los datos de la organización y de la cuenta de usuario. Al seleccionar **Save Changes**, el sistema valida la información ingresada.
+
+Si los datos son válidos, se muestra la confirmación de creación de la organización y el usuario puede continuar hacia el Dashboard. Si existen datos obligatorios incompletos o inválidos, se muestra el estado de validación y el usuario puede corregir la información para volver a intentar el registro.
+
+![WF02 - Organization Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf02-Organization-Registration.png)
+
+*Figura 4.9. Wireflow del proceso de registro de una organización.*
+
+#### WF03 — Organization Management
+
+**User Story:** US-10 — Actualizar datos de la empresa
+
+**User Goal:**  
+Como usuario autorizado, quiero actualizar los datos de mi empresa, para mantener su información al día.
+
+El flujo comienza en la vista de información de la organización. El usuario selecciona **Edit Organization** y accede al formulario de edición. Después de modificar los datos correspondientes, selecciona **Save Changes**.
+
+El sistema valida la información ingresada. Si los datos son válidos, los cambios se guardan y se muestra la información actualizada de la organización.
+Si existen datos inválidos o incompletos, se presenta el estado de validación y el usuario retorna al formulario para corregir la información.
+
+![WF03 - Organization Management](./assets/chapter-04/web-applications-ui-ux/wireflows/wf03-Organization-Management.png)
+
+*Figura 4.10. Wireflow del proceso de actualización de información de la organización.*
+
+#### WF04 — Emission Registration
+
+**User Story:** US-11 — Registrar una fuente de emisión
+
+**User Goal:**  
+Como analista ambiental, quiero registrar una fuente de emisión, para llevar un control de las actividades que generan emisiones en la empresa.
+
+El flujo inicia en el módulo **Emissions**, donde el usuario selecciona **Add Emission**. Luego completa los datos requeridos para registrar la emisión y selecciona **Save Entry**.
+
+El sistema valida la información proporcionada. Si los datos son válidos, el nuevo registro se incorpora al listado de emisiones y se muestra la confirmación correspondiente. Si la información no es válida, se muestra el estado de validación y el usuario puede corregir los campos antes de volver a guardar el registro.
+
+![WF04 - Emission Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf04-Emission-Registration.png)
+
+*Figura 4.11. Wireflow del proceso de registro de una emisión.*
+
+#### WF05 — Report Generation
+
+**User Story:** US-27 — Generar reporte ambiental
+
+**User Goal:**  
+Como responsable de sostenibilidad, quiero generar un reporte ambiental, para reunir los principales resultados de la empresa.
+
+El flujo comienza en el módulo **Reports**, donde el usuario selecciona **Generate Report**. Posteriormente configura los parámetros requeridos y completa la información correspondiente al reporte.
+
+Al seleccionar nuevamente **Generate Report**, el sistema valida la información y verifica la disponibilidad de datos. Si la información es válida y existen datos disponibles, el reporte es generado y queda disponible en el módulo Reports. Si no existen datos suficientes, se muestra un estado informativo y el usuario puede regresar al formulario para ajustar los parámetros del reporte.
+
+![WF05 - Report Generation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf05-Report-Generation.png)
+
+*Figura 4.12. Wireflow del proceso de generación de un reporte ambiental.*
+
+#### WF06 — Goal Creation
+
+**User Story:** US-21 — Registrar una meta ambiental
+
+**User Goal:**  
+Como responsable de sostenibilidad, quiero registrar una meta de reducción de emisiones, para establecer un objetivo ambiental para la empresa.
+
+El flujo inicia en el módulo **Goals**, donde el usuario selecciona **Create Goal**. A continuación, completa la información correspondiente a la meta y selecciona **Save Goal**.
+
+El sistema valida los datos ingresados. Si la información es válida, la meta queda registrada y el usuario retorna al listado de **Reduction Goals**. Si los datos no son válidos, se muestra el estado de validación y el usuario puede corregir la información para volver a intentar guardar la meta.
+
+![WF06 - Goal Creation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf06-Goal-Creation.png)
+
+*Figura 4.13. Wireflow del proceso de creación de una meta ambiental.*
+
+#### WF07 — Carbon Footprint Calculation
+
+**User Story:** US-34 — Calcular huella de carbono
+
+**User Goal:**  
+Como analista ambiental, quiero calcular automáticamente la huella de carbono utilizando los datos registrados, para obtener los resultados de emisiones de la organización.
+
+El flujo comienza en la sección **Carbon Footprint**, donde el usuario selecciona los parámetros correspondientes al periodo y alcance que desea analizar. Después selecciona **Calculate Footprint** para iniciar el cálculo.
+
+El sistema presenta la información considerada para el cálculo y permite consultar los resultados obtenidos. Finalmente, el usuario puede visualizar los resultados de huella de carbono por periodo y analizar el desempeño ambiental correspondiente.
+
+![WF07 - Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf07-Carbon-Footprint-Calculation.png)
+
+*Figura 4.14. Wireflow del proceso de cálculo de la huella de carbono.*
+
+#### Relación entre Wireflows y User Goals
+
+Los Wireflows presentados representan los principales recorridos funcionales de la Web Application y mantienen correspondencia con los User Stories definidos en la especificación de requisitos. Los flujos abarcan procesos de autenticación, registro y administración de la organización, registro de emisiones, generación de reportes, creación de metas y cálculo de huella de carbono.
+
+La representación de estados alternativos permite incorporar dentro de cada recorrido las condiciones de validación que pueden impedir completar una operación. Esto permite que los Wireflows sirvan posteriormente como base para la elaboración de los User Flow Diagrams, donde estos mismos recorridos serán representados mediante los Mock-ups de alta fidelidad.
 
 ### 4.4.3. Web Applications Mock-ups
 
