@@ -1,0 +1,27 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Carbon Footprint Calculation Backend Components Diagram
+
+Container(spa, "EcoTrack SPA", "Angular", "Browser runtime that consumes this bounded context over HTTPS.")
+
+Container_Boundary(footprint, "Carbon Footprint Calculation Backend Bounded Context") {
+  Component(interfaces, "Interfaces REST Layer", "REST / Resources", "The FootprintController translates emission factor and footprint calculation resources into commands and queries.")
+  Component(application, "Application Layer", "Command Services / Query Services / Ports", "Coordinates emission factor management and footprint calculation execution by scope and period.")
+  Component(domain, "Domain Layer", "Aggregates / Policies", "Owns emission factors, footprint calculations and the calculation formulas.")
+  Component(infrastructure, "Infrastructure Layer", "JPA Adapters", "Implements the emission factor and footprint calculation repositories.")
+}
+
+Component_Ext(emissionsApi, "Emissions Management API", "External Bounded Context", "Provides the activity data used as calculation input.")
+ContainerDb(db, "EcoTrack Database", "PostgreSQL", "Stores emission factors and footprint calculations.")
+
+Rel(spa, interfaces, "Calls REST endpoints", "JSON / HTTPS")
+Rel(interfaces, application, "Delegates use cases")
+Rel(application, domain, "Applies business rules")
+Rel(application, emissionsApi, "Requests activity data")
+Rel(application, infrastructure, "Requests persistence")
+Rel(infrastructure, domain, "Maps persisted state")
+Rel(infrastructure, db, "Reads from and writes to")
+
+SHOW_LEGEND()
+@enduml

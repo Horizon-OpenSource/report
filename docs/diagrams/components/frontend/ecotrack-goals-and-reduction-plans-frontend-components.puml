@@ -1,0 +1,28 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Goals and Reduction Plans Frontend Components Diagram
+
+Container_Boundary(goals, "Goals and Reduction Plans Frontend Bounded Context") {
+  Component(presentation, "Presentation Layer", "Pages / Components / Routes", "Renders goal creation, reduction plan building, initiative tracking and progress views.")
+  Component(application, "Application Layer", "Facade / Store", "Coordinates goal creation, reduction plan definition, initiative registration and progress review.")
+  Component(domain, "Domain Layer", "Models / Rules", "Defines environmental goals, reduction plans, initiatives and progress rules at the view level.")
+  Component(infrastructure, "Infrastructure Layer", "API Clients / Resources / Assemblers", "Consumes the goal, plan and initiative resources, and maps responses to frontend models.")
+}
+
+System_Ext(backend, "EcoTrack Backend API", "REST API consumed by this frontend context.")
+Component_Ext(shared, "Shared Kernel Frontend", "Shared UI / Session", "Provides layout, session, preferences and UI primitives.")
+Component_Ext(footprint, "Carbon Footprint Calculation", "Frontend Context", "Provides footprint results used to measure progress toward goals.")
+Component_Ext(analytics, "Analytics and Reports", "Frontend Context", "Uses goal and plan progress to build dashboards and reports.")
+
+Rel(presentation, application, "Dispatches UI actions")
+Rel(application, domain, "Applies feature rules")
+Rel(application, infrastructure, "Requests data")
+Rel(infrastructure, backend, "Consumes REST endpoints")
+Rel(presentation, shared, "Uses layout / UI primitives")
+Rel(application, shared, "Uses session / preferences")
+Rel(footprint, application, "Coordinates with")
+Rel(analytics, application, "Coordinates with")
+
+SHOW_LEGEND()
+@enduml

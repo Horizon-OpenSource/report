@@ -1,0 +1,30 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Organization Management Frontend Components Diagram
+
+Container_Boundary(orgMgmt, "Organization Management Frontend Bounded Context") {
+  Component(presentation, "Presentation Layer", "Pages / Components / Routes", "Renders organization profile, facility list/create/edit and business unit management views.")
+  Component(application, "Application Layer", "Facade / Store", "Coordinates organization registration, facility management and business unit assignment.")
+  Component(domain, "Domain Layer", "Models / Rules", "Defines organizations, facilities, business units and membership rules at the view level.")
+  Component(infrastructure, "Infrastructure Layer", "API Clients / Resources / Assemblers", "Consumes the organization, facility and business unit resources, and maps responses to frontend models.")
+}
+
+System_Ext(backend, "EcoTrack Backend API", "REST API consumed by this frontend context.")
+Component_Ext(shared, "Shared Kernel Frontend", "Shared UI / Session", "Provides layout, session, preferences and UI primitives.")
+Component_Ext(iam, "IAM", "Frontend Context", "Provides the authenticated user's scope and permissions.")
+Component_Ext(emissions, "Emissions Management", "Frontend Context", "Uses the facility catalog to scope emission sources.")
+Component_Ext(analytics, "Analytics and Reports", "Frontend Context", "Uses the organization structure to group dashboards and reports.")
+
+Rel(presentation, application, "Dispatches UI actions")
+Rel(application, domain, "Applies feature rules")
+Rel(application, infrastructure, "Requests data")
+Rel(infrastructure, backend, "Consumes REST endpoints")
+Rel(presentation, shared, "Uses layout / UI primitives")
+Rel(application, shared, "Uses session / preferences")
+Rel(application, iam, "Coordinates with")
+Rel(emissions, application, "Coordinates with")
+Rel(analytics, application, "Coordinates with")
+
+SHOW_LEGEND()
+@enduml

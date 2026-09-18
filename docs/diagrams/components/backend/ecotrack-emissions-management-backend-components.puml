@@ -1,0 +1,29 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Emissions Management Backend Components Diagram
+
+Container(spa, "EcoTrack SPA", "Angular", "Browser runtime that consumes this bounded context over HTTPS.")
+
+Container_Boundary(emissions, "Emissions Management Backend Bounded Context") {
+  Component(interfaces, "Interfaces REST Layer", "REST / Resources", "The EmissionController translates emission source and activity data resources into commands and queries.")
+  Component(application, "Application Layer", "Command Services / Query Services / Ports", "Coordinates emission source registration, activity data recording and emissions history queries.")
+  Component(domain, "Domain Layer", "Aggregates / Policies", "Owns emission sources, activity records and scope classification rules.")
+  Component(infrastructure, "Infrastructure Layer", "JPA Adapters", "Implements the emission source and activity data repositories.")
+}
+
+Component_Ext(orgMgmtApi, "Organization Management API", "External Bounded Context", "Validates the facility scope for each emission source.")
+Component_Ext(dataIntegrationApi, "Data Integration API", "External Bounded Context", "Delivers activity data imported from CSV files or external systems.")
+ContainerDb(db, "EcoTrack Database", "PostgreSQL", "Stores emission sources and activity data.")
+
+Rel(spa, interfaces, "Calls REST endpoints", "JSON / HTTPS")
+Rel(interfaces, application, "Delegates use cases")
+Rel(application, domain, "Applies business rules")
+Rel(application, orgMgmtApi, "Validates facility scope")
+Rel(dataIntegrationApi, application, "Delivers imported activity data")
+Rel(application, infrastructure, "Requests persistence")
+Rel(infrastructure, domain, "Maps persisted state")
+Rel(infrastructure, db, "Reads from and writes to")
+
+SHOW_LEGEND()
+@enduml

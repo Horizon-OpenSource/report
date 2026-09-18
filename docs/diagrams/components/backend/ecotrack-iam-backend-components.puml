@@ -1,0 +1,25 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - IAM Backend Components Diagram
+
+Container(spa, "EcoTrack SPA", "Angular", "Browser runtime that consumes this bounded context over HTTPS.")
+
+Container_Boundary(iam, "IAM Backend Bounded Context") {
+  Component(interfaces, "Interfaces REST Layer", "REST / Resources", "The AuthController translates authentication, registration, invitation and role resources into commands and queries.")
+  Component(application, "Application Layer", "Command Services / Query Services / Ports", "Coordinates sign-in, organization sign-up, password recovery and reset, user invitation and role assignment.")
+  Component(domain, "Domain Layer", "Aggregates / Policies", "Owns users, roles, permissions, invitation tokens and password reset tokens.")
+  Component(infrastructure, "Infrastructure Layer", "JPA / Security / Delivery Adapters", "Implements repositories, BCrypt hashing, JWT token service and invitation/recovery email delivery.")
+}
+
+ContainerDb(db, "EcoTrack Database", "PostgreSQL", "Stores authentication, users, roles and permissions.")
+
+Rel(spa, interfaces, "Calls REST endpoints", "JSON / HTTPS")
+Rel(interfaces, application, "Delegates use cases")
+Rel(application, domain, "Applies business rules")
+Rel(application, infrastructure, "Uses hashing, tokens and email delivery")
+Rel(infrastructure, domain, "Maps persisted state")
+Rel(infrastructure, db, "Reads from and writes to")
+
+SHOW_LEGEND()
+@enduml
