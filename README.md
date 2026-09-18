@@ -1777,23 +1777,57 @@ Las tecnologías Angular, TypeScript, Angular Material, Java, Spring Boot, Sprin
 
 ### 5.1.2. Source Code Management
 
-<!--
-Incluir URLs de:
-- Project Report
-- Landing Page
-- Frontend Web Application
-- Web Services
+El equipo Horizon utiliza Git como sistema de control de versiones distribuido y GitHub como plataforma principal para el alojamiento, seguimiento e integración del código fuente y de la documentación asociada al proyecto EcoTrack.
 
-Explicar:
-- GitFlow
-- main
-- develop
-- feature/*
-- release/*
-- hotfix/*
-- Conventional Commits
-- Semantic Versioning
--->
+El uso de GitHub permite mantener un historial verificable de modificaciones, trabajar de forma paralela mediante branches, revisar cambios mediante Pull Requests y publicar versiones estables de los productos desarrollados.
+
+Actualmente, Horizon mantiene los siguientes repositorios:
+
+| Product / Artifact | Repository |
+|---|---|
+| Project Report | https://github.com/Horizon-OpenSource/report |
+| Landing Page | https://github.com/Horizon-OpenSource/landing-page |
+| Frontend Web Application | Pendiente de implementación en los siguientes Sprints |
+| Web Services | Pendiente de implementación en los siguientes Sprints |
+
+La organización de GitHub utilizada por el equipo se encuentra disponible en:
+
+https://github.com/orgs/Horizon-OpenSource/repositories
+
+#### GitFlow Workflow
+
+Para organizar el trabajo colaborativo, Horizon adopta GitFlow como estrategia de branching. Esta estructura permite separar el desarrollo activo de las versiones estables y facilita que cada integrante trabaje en funcionalidades o artefactos específicos sin modificar directamente las ramas principales.
+
+Las ramas consideradas por el equipo son las siguientes:
+
+| Branch | Purpose |
+|---|---|
+| `main` | Contiene versiones estables del producto y sirve como referencia para releases y despliegues. |
+| `develop` | Funciona como rama de integración para los cambios desarrollados durante cada Sprint. |
+| `feature/*` | Permite desarrollar funcionalidades, secciones del reporte o mejoras específicas antes de integrarlas a `develop`. |
+| `release/*` | Se utiliza para preparar una nueva versión estable antes de integrarla a `main`. |
+| `hotfix/*` | Permite realizar correcciones urgentes sobre una versión ya publicada. |
+
+El flujo general aplicado por el equipo es el siguiente:
+
+1. Se actualiza la rama `develop` con los últimos cambios disponibles.
+2. Se crea una rama `feature/*` a partir de `develop`.
+3. El integrante implementa los cambios correspondientes en su feature branch.
+4. Los cambios se registran mediante commits utilizando Conventional Commits.
+5. La rama se publica en GitHub.
+6. Se crea un Pull Request hacia `develop`.
+7. El equipo revisa los cambios y resuelve posibles conflictos.
+8. Una vez aprobados, los cambios son integrados mediante merge.
+9. Cuando se dispone de una versión estable, esta se integra a `main` y puede ser utilizada para generar una release.
+
+En el repositorio del Project Report se han utilizado, entre otras, ramas con la siguiente convención:
+
+```text
+feature/chapter-02-requirements-analysis
+feature/chapter-03-user-stories
+feature/chapter-03-product-backlog
+feature/chapter-05-software-configuration-management
+```
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
