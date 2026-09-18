@@ -252,8 +252,7 @@ En las siguientes tablas se describen las acciones realizadas y las conclusiones
 |---|---|---|---|
 | Rolando Andre Torres Diaz | AV1 | Participé en las reuniones del equipo aportando ideas y explicando los avances de las partes que desarrollé en EcoTrack, principalmente relacionadas con las User Stories, Product Backlog e Impact Mapping. También preparé estos temas para poder explicarlos de manera clara durante la exposición del proyecto. | Durante el AV1 pude mejorar la forma en que explico mis ideas y los avances realizados, utilizando un lenguaje más claro y ordenado para que mis compañeros y el docente puedan comprender el trabajo desarrollado. || Lacuta Lima, Alex Rodrigo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
 | Espinoza Flores, Aaron André | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
-| Payesa Torres, Harrison Hubert | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
-| Tello Murga, Javier Oswaldo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Payesa Torres, Harrison Hubert | AV1 | Participé en las reuniones y discusiones del equipo relacionadas con el funcionamiento y objetivo de EcoTrack, aportando ideas sobre la estructura y comportamiento de la Web Application. También expliqué las decisiones tomadas para el diseño de las interfaces y los diferentes flujos de interacción desarrollados en Figma. | Durante el AV1 fortalecí mi capacidad para comunicar ideas de diseño y explicar de manera clara las decisiones relacionadas con el funcionamiento de la aplicación, adaptando la explicación según los integrantes y el contexto de la discusión. || Tello Murga, Javier Oswaldo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
 
 ---
 
@@ -266,8 +265,7 @@ En las siguientes tablas se describen las acciones realizadas y las conclusiones
 | Rolando Andre Torres Diaz | AV1 | Participé en la redacción y actualización de diferentes partes del Project Report de EcoTrack, principalmente en las User Stories, Epics, Product Backlog, Requirements Specification, bibliografía e Impact Mapping. También organicé la información en Markdown y registré los avances realizados mediante commits en GitHub. | Durante el AV1 pude mejorar mi forma de redactar y organizar la información del proyecto, procurando que las ideas sean claras, mantengan un orden adecuado y tengan relación con los demás artefactos desarrollados en EcoTrack. |
 | Lacuta Lima, Alex Rodrigo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
 | Espinoza Flores, Aaron André | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
-| Payesa Torres, Harrison Hubert | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
-| Tello Murga, Javier Oswaldo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Payesa Torres, Harrison Hubert | AV1 | Participé en la documentación del diseño de la Web Application de EcoTrack, desarrollando en Figma los Mock-ups, Wireframes, User Flow Diagrams y el prototipo de las principales funcionalidades. También contribuí a documentar estos avances en el Project Report y a mantener una organización consistente de las interfaces y sus respectivos flujos. | Durante el AV1 mejoré mi capacidad para comunicar por escrito las decisiones de diseño y funcionamiento de la aplicación, organizando la información de manera clara y coherente con los diferentes artefactos desarrollados para EcoTrack. || Tello Murga, Javier Oswaldo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
 ---
 
 # Capítulo I: Introducción
@@ -326,13 +324,13 @@ Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Apli
 #### Payesa Torres, Harrison Hubert
 
 <p align="center">
-  <img src="assets/chapter-01/team/harrison-payesa.jpg" alt="Harrison Hubert Payesa Torres" width="180"/>
+  <img src="assets/chapter-01/team/harrison-payesa.png" alt="Harrison Hubert Payesa Torres" width="180"/>
 </p>
 
 **Código UPC:** [Código del estudiante]  
 **Carrera:** Ingeniería de Software
 
-Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en desarrollo de software y desarrollo web, así como experiencia en el uso de Git y GitHub, Visual Studio Code, HTML, CSS y JavaScript a nivel intermedio. También posee conocimientos intermedios en Python y experiencia trabajando con SQL y C++. Durante el desarrollo del proyecto participará en actividades de diseño, documentación, desarrollo e integración de la Web Application y demás productos digitales del equipo.
 
 ---
 
