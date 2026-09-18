@@ -250,8 +250,7 @@ En las siguientes tablas se describen las acciones realizadas y las conclusiones
 
 | Integrante | Entrega | Acciones realizadas | Conclusiones |
 |---|---|---|---|
-| Rolando Andre Torres Diaz | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
-| Lacuta Lima, Alex Rodrigo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Rolando Andre Torres Diaz | AV1 | Participé en las reuniones del equipo aportando ideas y explicando los avances de las partes que desarrollé en EcoTrack, principalmente relacionadas con las User Stories, Product Backlog e Impact Mapping. También preparé estos temas para poder explicarlos de manera clara durante la exposición del proyecto. | Durante el AV1 pude mejorar la forma en que explico mis ideas y los avances realizados, utilizando un lenguaje más claro y ordenado para que mis compañeros y el docente puedan comprender el trabajo desarrollado. || Lacuta Lima, Alex Rodrigo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
 | Espinoza Flores, Aaron André | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
 | Payesa Torres, Harrison Hubert | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
 | Tello Murga, Javier Oswaldo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación oral.] | [Redactar la conclusión sobre el logro alcanzado.] |
@@ -264,7 +263,7 @@ En las siguientes tablas se describen las acciones realizadas y las conclusiones
 
 | Integrante | Entrega | Acciones realizadas | Conclusiones |
 |---|---|---|---|
-| Rolando Andre Torres Diaz | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
+| Rolando Andre Torres Diaz | AV1 | Participé en la redacción y actualización de diferentes partes del Project Report de EcoTrack, principalmente en las User Stories, Epics, Product Backlog, Requirements Specification, bibliografía e Impact Mapping. También organicé la información en Markdown y registré los avances realizados mediante commits en GitHub. | Durante el AV1 pude mejorar mi forma de redactar y organizar la información del proyecto, procurando que las ideas sean claras, mantengan un orden adecuado y tengan relación con los demás artefactos desarrollados en EcoTrack. |
 | Lacuta Lima, Alex Rodrigo | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
 | Espinoza Flores, Aaron André | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
 | Payesa Torres, Harrison Hubert | AV1 | [Describir las acciones realizadas por el integrante relacionadas con comunicación escrita.] | [Redactar la conclusión sobre el logro alcanzado.] |
