@@ -1917,37 +1917,372 @@ v1.0.0
 
 # 5.2.1. Sprint 1
 
-## 5.2.1.1. Sprint Planning 1
+### 5.2.1.1. Sprint Planning 1
 
-<!-- Completar -->
+El Sprint Planning 1 se realizó al inicio de la segunda semana del proyecto con la participación de todos los integrantes de Horizon. La reunión se llevó a cabo de manera presencial en el salón de clases después de finalizar la sesión del curso.
 
-## 5.2.1.2. Aspect Leaders and Collaborators
+Durante esta reunión se definió el alcance inicial de implementación para Sprint 1, priorizando la construcción y publicación de la primera versión del Landing Page de EcoTrack. Asimismo, se revisaron las User Stories relacionadas con la presentación del producto, sus beneficios, principales funcionalidades, planes disponibles y mecanismos de contacto.
 
-<!-- Completar -->
+La coordinación iniciada durante la reunión presencial continuó el mismo día mediante WhatsApp. A lo largo del Sprint, el equipo mantuvo reuniones adicionales antes y después de las clases, además de sesiones virtuales principalmente mediante Discord, con el objetivo de revisar avances, coordinar actividades y resolver observaciones relacionadas con la entrega.
 
-## 5.2.1.3. Sprint Backlog 1
+| Sprint Planning Background | Details |
+|---|---|
+| **Sprint #** | Sprint 1 |
+| **Date** | 2026-08-31 |
+| **Time** | 10:30 PM |
+| **Location** | Presencial, salón de clases después de la sesión del curso |
+| **Prepared By** | Tello Murga, Javier Oswaldo |
+| **Attendees to Planning Meeting** | Lacuta Lima, Alex Rodrigo; Espinoza Flores, Aaron André; Payesa Torres, Harrison Hubert; Tello Murga, Javier Oswaldo; Torres Diaz, Rolando Andre |
+| **Sprint 0 Review Summary** | No aplica. Sprint 1 corresponde a la primera iteración de desarrollo del proyecto. |
+| **Sprint 0 Retrospective Summary** | No aplica. Al tratarse del primer Sprint, no existe una iteración anterior sobre la cual realizar una retrospectiva. |
 
-<!-- Completar -->
+#### Sprint Goal & User Stories
 
-## 5.2.1.4. Development Evidence for Sprint Review
+El objetivo del Sprint 1 se orienta a proporcionar a los potenciales clientes de EcoTrack un primer punto de contacto digital que permita comprender la propuesta de valor de la solución y acceder a información relevante sobre el producto.
 
-<!-- Completar -->
+**Sprint 1 Goal**
 
-## 5.2.1.5. Execution Evidence for Sprint Review
+> Our focus is on providing potential EcoTrack customers with a responsive and publicly available Landing Page that clearly communicates the product purpose, benefits, main capabilities, subscription plans and contact options.
+>
+> We believe it delivers a clear first understanding of EcoTrack to exporting companies, corporations and medium-sized industrial companies interested in improving the management of their environmental information.
+>
+> This will be confirmed when visitors can access the deployed Landing Page, navigate through its main sections and identify the EcoTrack value proposition, core capabilities, available plans and contact information.
 
-<!-- Completar -->
+Las User Stories consideradas para el alcance de Sprint 1 corresponden a las historias de mayor prioridad relacionadas con el Landing Page:
 
-## 5.2.1.6. Services Documentation Evidence for Sprint Review
+| User Story Id | User Story Title | Story Points |
+|---|---|---:|
+| US-01 | Conocer EcoTrack | 2 |
+| US-03 | Conocer las funcionalidades principales | 2 |
+| US-04 | Conocer los planes disponibles | 2 |
+| US-02 | Conocer los beneficios de EcoTrack | 2 |
+| US-05 | Contactar al equipo de EcoTrack | 3 |
+| **Total** |  | **11** |
 
-<!-- Completar -->
+| Sprint Metric | Value |
+|---|---:|
+| **Sprint 1 Velocity** | 11 Story Points |
+| **Sum of Story Points** | 11 Story Points |
 
-## 5.2.1.7. Software Deployment Evidence for Sprint Review
+El alcance seleccionado mantiene coherencia con la prioridad definida en el Product Backlog, donde las primeras User Stories están orientadas al Landing Page. De esta manera, el Sprint permite disponer de una primera versión visible y desplegada de EcoTrack que servirá como base para las siguientes iteraciones del producto.
 
-<!-- Completar -->
+### 5.2.1.2. Aspect Leaders and Collaborators
 
-## 5.2.1.8. Team Collaboration Insights during Sprint
+Durante Sprint 1, el equipo Horizon organizó el trabajo mediante una Leadership-and-Collaboration Matrix (LACX). Esta matriz permite identificar qué integrante asumió el liderazgo de cada aspecto considerado dentro del alcance del Sprint y qué miembros participaron como colaboradores.
 
-<!-- Completar -->
+Para esta primera iteración, Javier Oswaldo Tello Murga asumió el liderazgo principal del desarrollo e integración del Landing Page, con la colaboración de los demás integrantes de Horizon. El trabajo conjunto incluyó implementación, revisión de contenido, validación visual, responsividad, internacionalización y despliegue.
+
+Los principales aspectos considerados durante Sprint 1 fueron:
+
+- Landing Page Implementation.
+- UX/UI and Content Integration.
+- Responsive Design and Accessibility.
+- Internationalization.
+- Deployment and Release Management.
+
+La siguiente matriz resume la participación de los integrantes del equipo:
+
+| Team Member | GitHub Username | Landing Page Implementation | UX/UI and Content Integration | Responsive Design and Accessibility | Internationalization | Deployment and Release Management |
+|---|---|---|---|---|---|---|
+| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | C | C | C | C | C |
+| Espinoza Flores, Aaron André | `pisure` | C | C | C | C | C |
+| Payesa Torres, Harrison Hubert | `Harrison1024` | C | C | C | C | C |
+| Tello Murga, Javier Oswaldo | `JavierTello20` | L | L | L | L | L |
+| Torres Diaz, Rolando Andre | `ROLO194` | C | C | C | C | C |
+
+**Legend:**
+
+- `L`: Leader.
+- `C`: Collaborator.
+
+La distribución presentada refleja la dinámica utilizada durante Sprint 1. Aunque el liderazgo principal del desarrollo estuvo a cargo de Javier Tello, los demás integrantes participaron en actividades de revisión, coordinación, validación y soporte durante la construcción de la primera versión del Landing Page.
+
+La coordinación del equipo se realizó mediante reuniones presenciales antes y después de las sesiones del curso, así como mediante Discord y WhatsApp. Esta colaboración permitió revisar avances de manera progresiva y mantener alineados tanto los contenidos del Project Report como la implementación del producto.
+
+### 5.2.1.3. Sprint Backlog 1
+
+El Sprint Backlog 1 reúne las User Stories seleccionadas para alcanzar el objetivo de la primera iteración de EcoTrack. El trabajo se concentró en implementar y publicar la primera versión del Landing Page, permitiendo presentar la propuesta de valor del producto, sus beneficios, funcionalidades principales, planes disponibles y canales de contacto.
+
+Las historias seleccionadas corresponden a las primeras prioridades del Product Backlog y suman un total de **11 Story Points**.
+
+Para organizar y realizar seguimiento al trabajo del Sprint, Horizon utilizó el Board público de Trello:
+
+**Sprint Board:**  
+https://trello.com/b/EEnlW0f1
+
+La siguiente captura presenta las User Stories correspondientes al Sprint 1:
+
+![Sprint 1 Backlog Board](assets/chapter-05/sprint-01-backlog-board.png)
+
+Las User Stories fueron descompuestas en Work Items considerando las actividades necesarias para implementar, revisar y desplegar el Landing Page.
+
+| Sprint # | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---:|---|---|
+| Sprint 1 | US-01 | Conocer EcoTrack | T-01 | Implement Landing Page hero | Implementar el Hero y la presentación principal de EcoTrack, comunicando el propósito y propuesta de valor del producto. | 3 | JavierTello20 | Done |
+| Sprint 1 | US-01 | Conocer EcoTrack | T-02 | Review Landing Page content | Revisar que el contenido principal del Landing Page mantenga coherencia con la propuesta de valor y alcance actualizado de EcoTrack. | 2 | JavierTello20 | Done |
+| Sprint 1 | US-02 | Conocer los beneficios de EcoTrack | T-03 | Implement problem and benefits section | Implementar la sección que explica el problema identificado y los principales beneficios que ofrece EcoTrack a sus segmentos objetivo. | 3 | JavierTello20 / alexrodrigoll | Done |
+| Sprint 1 | US-03 | Conocer las funcionalidades principales | T-04 | Implement core capabilities section | Implementar la sección que presenta las principales capacidades de EcoTrack, incluyendo gestión de emisiones, cálculo de huella, metas, analítica y gestión organizacional. | 3 | JavierTello20 | Done |
+| Sprint 1 | — | Additional Sprint Task | T-12 | Implement environmental standards section | Implementar la sección informativa sobre estándares y referencias ambientales consideradas por EcoTrack, incluyendo los ajustes responsive asociados. | 3 | pisure | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience | T-07 | Implement responsive behavior | Adaptar la interfaz para garantizar una correcta visualización en desktop, tablet y mobile. | 4 | JavierTello20 / pisure / ROLO194 | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience | T-08 | Implement internationalization | Implementar soporte de idioma inglés y español, manteniendo inglés como idioma predeterminado. | 3 | Harrison1024 | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience | T-09 | Improve accessibility | Incorporar atributos ARIA, textos alternativos y ajustes de accesibilidad aplicables al Landing Page. | 2 | Harrison1024 / alexrodrigoll | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page delivery | T-10 | Deploy Landing Page | Configurar GitHub Pages y publicar la primera versión estable del Landing Page desde la rama `main`. | 2 | JavierTello20 | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page delivery | T-11 | Validate Sprint 1 implementation | Revisar navegación, contenido, responsividad, idiomas y versión desplegada antes de consolidar la release inicial. | 2 | JavierTello20 | Done |
+
+Al cierre del Sprint 1, las User Stories seleccionadas fueron completadas y la primera versión estable del Landing Page quedó publicada mediante GitHub Pages. Las actividades transversales de responsividad, internacionalización, accesibilidad, revisión y despliegue permitieron complementar las funcionalidades asociadas directamente con cada historia.
+
+### 5.2.1.4. Development Evidence for Sprint Review
+
+Durante Sprint 1, el equipo Horizon implementó progresivamente la primera versión del Landing Page de EcoTrack. El desarrollo fue organizado mediante feature branches que posteriormente fueron integradas a `develop` a través de merges y Pull Requests.
+
+La implementación incluyó la estructura inicial del proyecto, navegación responsive, Hero section, presentación del problema y beneficios, segmentos objetivo, capacidades principales de EcoTrack, alcances de emisiones, proceso de funcionamiento, estándares ambientales, planes de suscripción, sección de contacto, footer, internacionalización y mejoras de accesibilidad.
+
+Además, se realizaron ajustes responsive y refinamientos de contenido antes de consolidar la versión estable del producto en la rama `main`.
+
+**Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+Los siguientes commits representan las principales actividades de implementación realizadas durante Sprint 1:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|
+| `Horizon-OpenSource/landing-page` | `main` | `19c8209` | `chore: initialize landing page repository` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-page-structure` | `81d62dc` | `chore(landing): set up landing page project structure` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/header-navigation` | `fa87771` | `feat(header): implement desktop navigation` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/header-navigation` | `679a909` | `feat(header): implement responsive mobile navigation` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/header-navigation` | `c20108c` | `fix(header): add standards navigation link` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/hero-section` | `f635d0f` | `feat(hero): implement responsive EcoTrack hero section` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/hero-section` | `c82e06b` | `fix(header): prevent navigation wrapping on tablet widths` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/problem-benefits` | `19132ab` | `feat(problem): implement problem and benefits section` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/style-modularization` | `81077cf` | `refactor(styles): modularize landing page styles` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/target-segments` | `2bd4430` | `feat(segments): add EcoTrack target segments section` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/features-section` | `43eb7e3` | `feat(features): implement EcoTrack core capabilities section` | — | 2026-09-15 |
+| `Horizon-OpenSource/landing-page` | `feature/features-section` | `7f4074e` | `feat(features): implement core capabilities and component responsive styles` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/emission-scopes` | `30f0ab9` | `feat(scopes): implement emission scopes section` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/how-it-works` | `4e9bf34` | `feat(process): implement EcoTrack how it works section` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/tablet-layout-fixes` | `21b6cfd` | `fix(responsive): improve tablet layout and process connectors` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `2508ba4` | `feat(ui): add accessible scroll reveal animations` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `8b0c2af` | `feat(hero): add subtle entrance animation` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `07c9b4f` | `fix(navigation): offset anchor scrolling for sticky header` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `ffe96fd` | `feat(navigation): add active section scroll tracking` | — | 2026-09-16 |
+| `Horizon-OpenSource/landing-page` | `feature/content-copy-refinement` | `25e1769` | `feat(content): refine EcoTrack landing page marketing copy` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `standards-section` | `cc31207` | `feat(standards): implement environmental standards section` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `standards-section` | `d18faa7` | `feat(standards): improve responsive layout` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/plans-and-cta` | `aa591b5` | `feat(plans): implement EcoTrack subscription plans` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/plans-and-cta` | `fd306f2` | `fix(plans): improve responsive pricing layout` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/contact-and-about` | `d33f4f7` | `feat(contact): implement EcoTrack contact section` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/contact-and-about` | `0e72891` | `feat(contact): add temporary handling of the form` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/contact-and-about` | `5b3f4c8` | `feat(styles): add the contact and about` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/footer-structure` | `9bfdb72` | `feat(footer): implement footer structure and include contact/plans styles` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/footer-structure` | `e953e3d` | `feat(footer): implement footer styles` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `feature/i18n-accessibility` | `b5916be` | `feat(i18n): add bilingual translations, accessibility labels and localized metadata` | — | 2026-09-17 |
+| `Horizon-OpenSource/landing-page` | `main` | `efd7f96` | `Merge pull request #7 from Horizon-OpenSource/develop` | — | 2026-09-18 |
+
+Los commits evidencian una estrategia incremental de desarrollo en la que las diferentes secciones y mejoras fueron implementadas de manera independiente antes de su integración. Asimismo, el historial evidencia la participación de distintos miembros del equipo en la implementación del Landing Page.
+
+Entre las contribuciones realizadas durante Sprint 1 se identifican:
+
+- **Javier Tello Murga:** configuración inicial del proyecto, navegación, Hero, problema y beneficios, segmentos objetivo, capacidades principales, emisión scopes, proceso de funcionamiento, comportamiento responsive, animaciones, contenido e integración general.
+- **Aaron Espinoza (`psure`):** implementación de la sección de estándares ambientales y mejoras responsive asociadas.
+- **Rolando Torres:** implementación de los planes de suscripción y mejoras responsive de la sección de pricing.
+- **Alex Lacuta:** implementación de la sección de contacto, comportamiento inicial del formulario y estilos relacionados.
+- **Harrison Payesa:** implementación del footer e internacionalización, etiquetas de accesibilidad y metadata localizada.
+
+Finalmente, los cambios de las diferentes feature branches fueron integrados en `develop` y posteriormente consolidados en `main` mediante el Pull Request #7. Este proceso produjo la versión estable utilizada para el despliegue del Landing Page y para la release `v1.0.0`.
+
+### 5.2.1.5. Execution Evidence for Sprint Review
+
+Durante Sprint 1, Horizon completó la primera versión funcional del Landing Page de EcoTrack. La implementación permite presentar públicamente la propuesta de valor del producto, sus segmentos objetivo, principales capacidades, proceso de funcionamiento, información sobre emisiones, planes disponibles y canales de contacto.
+
+El Landing Page fue desarrollado aplicando Responsive Web Design, navegación entre secciones, internacionalización en inglés y español y mejoras de accesibilidad. La versión resultante fue integrada en la rama estable y posteriormente desplegada mediante GitHub Pages.
+
+La versión implementada durante Sprint 1 puede ser consultada en:
+
+**EcoTrack Landing Page:**  
+https://horizon-opensource.github.io/landing-page/
+
+A continuación, se presentan las principales vistas implementadas durante el Sprint.
+
+#### Landing Page Hero
+
+La vista inicial presenta la identidad de EcoTrack y comunica su propuesta principal de valor relacionada con la centralización, medición y gestión de la huella de carbono organizacional.
+
+![EcoTrack Landing Page Hero](assets/chapter-05/sprint-01-hero.png)
+
+#### Target Customer Segments
+
+La sección de segmentos objetivo presenta los principales grupos de organizaciones para los cuales EcoTrack ha sido diseñado: empresas exportadoras y corporaciones o medianas empresas industriales.
+
+![EcoTrack Target Customer Segments](assets/chapter-05/sprint-01-target-segments.png)
+
+#### Core Capabilities
+
+La sección de capacidades principales comunica las funcionalidades centrales consideradas dentro de EcoTrack, incluyendo gestión organizacional, gestión de emisiones, cálculo de huella de carbono, metas y planes de reducción, y analítica y reportes.
+
+![EcoTrack Core Capabilities](assets/chapter-05/sprint-01-features.png)
+
+#### How EcoTrack Works
+
+La sección How It Works resume el flujo general que sigue una organización al utilizar EcoTrack, desde el registro de emisiones hasta la generación de información útil para el seguimiento y reporte ambiental.
+
+![EcoTrack How It Works](assets/chapter-05/sprint-01-how-it-works.png)
+
+#### Subscription Plans
+
+La Landing Page presenta los planes comerciales disponibles para EcoTrack, permitiendo que los potenciales clientes comparen las alternativas definidas para diferentes niveles de necesidad y tamaño organizacional.
+
+![EcoTrack Subscription Plans](assets/chapter-05/sprint-01-plans-contact.png)
+
+#### Contact Section
+
+La sección de contacto permite que los potenciales clientes identifiquen los canales disponibles para solicitar información adicional sobre EcoTrack y establecer comunicación con el equipo Horizon.
+
+![EcoTrack Contact Section](assets/chapter-05/sprint-01-contact.png)
+
+#### Sprint 1 Execution Video
+
+Como evidencia complementaria de ejecución, el equipo realizó una demostración de la versión desplegada del Landing Page. El video presenta la navegación entre las principales secciones, el comportamiento responsive, el cambio de idioma y las funcionalidades implementadas durante Sprint 1.
+
+**Video URL:**  
+https://youtu.be/u3VgMwPC1w8
+
+La evidencia presentada permite comprobar el cumplimiento del Sprint Goal, ya que los visitantes pueden acceder públicamente al Landing Page, navegar por sus principales secciones e identificar la propuesta de valor, capacidades, planes y mecanismos de contacto de EcoTrack.
+
+### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante Sprint 1, el alcance de implementación del equipo Horizon estuvo enfocado en el desarrollo y despliegue de la primera versión del Landing Page de EcoTrack.
+
+En esta iteración no se implementaron RESTful Web Services ni endpoints asociados al backend de la solución. Por este motivo, no se generó documentación de servicios mediante OpenAPI Specification o Swagger durante Sprint 1.
+
+Los Web Services forman parte del alcance técnico definido para EcoTrack y serán implementados en posteriores Sprints utilizando Java, Spring Boot y Spring Data JPA. Una vez que el backend sea incorporado al desarrollo, esta sección incluirá la documentación correspondiente a los endpoints implementados, considerando:
+
+- HTTP method.
+- Endpoint path.
+- Request parameters.
+- Request body, cuando corresponda.
+- Response structure.
+- HTTP status codes.
+- Examples of requests and responses.
+- OpenAPI / Swagger documentation URL.
+- Related repository and commit identifiers.
+
+Para Sprint 1, el estado de documentación de servicios es el siguiente:
+
+| Service Documentation Item | Sprint 1 Status |
+|---|---|
+| RESTful Web Services implementation | Not implemented in this Sprint |
+| OpenAPI Specification | Not applicable in Sprint 1 |
+| Swagger documentation | Not applicable in Sprint 1 |
+| Documented endpoints | 0 |
+| Backend repository evidence | Not applicable in Sprint 1 |
+
+La ausencia de endpoints documentados en esta iteración responde al alcance planificado del Sprint y no representa una funcionalidad pendiente dentro de los objetivos definidos para Sprint 1. La implementación y documentación de Web Services será incorporada progresivamente cuando estos productos formen parte del alcance de los siguientes Sprints.
+
+### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Durante Sprint 1, Horizon realizó el despliegue de la primera versión estable del Landing Page de EcoTrack. El objetivo del proceso fue disponer de una versión pública y accesible del producto que permitiera validar el resultado de la implementación realizada durante la iteración.
+
+El Landing Page se encuentra alojado en el repositorio oficial de Horizon:
+
+**Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+Para el despliegue se utilizó **GitHub Pages**, aprovechando que el producto fue desarrollado utilizando HTML5, CSS3 y JavaScript y no requiere un proceso de compilación asociado a un framework frontend.
+
+La configuración inicial del despliegue fue realizada manualmente y se utilizó la rama `main` como fuente de la versión estable.
+
+La información principal del despliegue es la siguiente:
+
+| Deployment Item | Sprint 1 Configuration |
+|---|---|
+| Product | EcoTrack Landing Page |
+| Repository | https://github.com/Horizon-OpenSource/landing-page |
+| Deployment Platform | GitHub Pages |
+| Source Branch | `main` |
+| Deployment Configuration | Manual configuration for the first deployed version |
+| Stable Release | `v1.0.0` |
+| Public URL | https://horizon-opensource.github.io/landing-page/ |
+| Status | Deployed |
+
+#### GitHub Pages Configuration
+
+Para realizar la publicación, se configuró GitHub Pages desde la sección de configuración del repositorio del Landing Page. La rama `main` fue utilizada como fuente para publicar la versión estable del producto.
+
+La siguiente captura evidencia la configuración utilizada para el despliegue mediante GitHub Pages:
+
+![Sprint 1 GitHub Pages Configuration](assets/chapter-05/sprint-01-github-pages-configuration.png)
+
+El proceso aplicado durante Sprint 1 fue el siguiente:
+
+1. Se verificó localmente el funcionamiento de las secciones implementadas en el Landing Page.
+2. Las funcionalidades desarrolladas en las diferentes feature branches fueron integradas progresivamente en `develop`.
+3. Los cambios consolidados fueron revisados antes de preparar la versión estable.
+4. La rama `develop` fue integrada en `main` mediante Pull Request.
+5. Se configuró GitHub Pages para publicar el contenido disponible desde la rama `main`.
+6. Se verificó el acceso a la URL pública generada.
+7. Se comprobó la navegación y visualización de las principales secciones de EcoTrack desde la versión desplegada.
+8. La versión estable fue identificada mediante la release `v1.0.0`.
+
+#### Deployed Landing Page
+
+Como resultado del proceso de deployment, la Landing Page quedó disponible públicamente mediante la siguiente dirección:
+
+**EcoTrack Landing Page:**  
+https://horizon-opensource.github.io/landing-page/
+
+La siguiente evidencia muestra la primera versión desplegada y accesible públicamente:
+
+![Sprint 1 EcoTrack Landing Page Deployment](assets/chapter-05/sprint-01-landing-deployed.png)
+
+El despliegue permitió cumplir con uno de los principales resultados esperados para Sprint 1: disponer de una primera versión funcional y pública del Landing Page de EcoTrack. Esta versión permite acceder a la propuesta de valor, segmentos objetivo, principales capacidades, alcances de emisiones, proceso de funcionamiento, estándares de referencia, planes de suscripción y canales de contacto del producto.
+
+La publicación realizada durante Sprint 1 servirá como base para las siguientes iteraciones, en las que el Landing Page podrá continuar evolucionando junto con la futura Frontend Web Application y los RESTful Web Services.
+
+### 5.2.1.8. Team Collaboration Insights during Sprint
+
+Durante Sprint 1, los integrantes de Horizon colaboraron en la implementación de la primera versión del Landing Page de EcoTrack utilizando Git y GitHub como principales herramientas para la gestión e integración del código fuente.
+
+El desarrollo fue organizado mediante feature branches, permitiendo que los miembros del equipo trabajaran en diferentes secciones del Landing Page antes de integrar sus cambios a la rama `develop`. Posteriormente, las contribuciones fueron revisadas e integradas mediante Pull Requests y finalmente consolidadas en la rama `main`.
+
+La coordinación del trabajo se realizó mediante reuniones presenciales antes y después de las clases, así como mediante Discord y WhatsApp. Estas reuniones permitieron revisar avances, distribuir actividades, resolver observaciones y mantener consistencia entre el contenido del Project Report y la implementación del Landing Page.
+
+Las principales contribuciones realizadas por los integrantes durante Sprint 1 fueron las siguientes:
+
+| Team Member | GitHub Username | Main Contribution during Sprint 1 |
+|---|---|---|
+| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | Implementación de la sección de contacto, comportamiento inicial del formulario y estilos asociados. También colaboró en actividades de accesibilidad y revisión del Landing Page. |
+| Espinoza Flores, Aaron André | `pisure` | Implementación de la sección de estándares ambientales y mejoras responsive asociadas. |
+| Payesa Torres, Harrison Hubert | `Harrison1024` | Implementación del footer, internacionalización EN/ES, etiquetas de accesibilidad y metadata localizada. |
+| Tello Murga, Javier Oswaldo | `JavierTello20` | Liderazgo e integración general del desarrollo. Implementación de estructura inicial, navegación, Hero, problema y beneficios, segmentos objetivo, capacidades principales, emission scopes, How It Works, responsividad, animaciones, refinamiento de contenido, integración y despliegue. |
+| Torres Diaz, Rolando Andre | `ROLO194` | Implementación de los planes de suscripción y mejoras responsive relacionadas con la sección de pricing. |
+
+#### GitHub Collaboration Evidence
+
+La siguiente evidencia muestra la participación de los integrantes de Horizon en el repositorio del Landing Page durante Sprint 1:
+
+![Sprint 1 GitHub Contributors](assets/chapter-05/sprint-01-github-contributors.png)
+
+![Sprint 1 GitHub commits ](assets/chapter-05/sprint-01-github-commits.png)
+
+El historial de desarrollo evidencia que el trabajo no se concentró únicamente en una sola rama. Las funcionalidades fueron implementadas mediante diferentes branches, entre ellas:
+
+```text
+feature/landing-page-structure
+feature/header-navigation
+feature/hero-section
+feature/problem-benefits
+feature/target-segments
+feature/features-section
+feature/emission-scopes
+feature/how-it-works
+feature/landing-animations
+feature/content-copy-refinement
+standards-section
+feature/plans-and-cta
+feature/contact-and-about
+feature/footer-structure
+feature/i18n-accessibility
+```
 
 ---
 
