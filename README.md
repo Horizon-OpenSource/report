@@ -1833,9 +1833,67 @@ También se incorporan estados de validación y confirmación para proporcionar 
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-<!-- Completar -->
+### 4.4.4. Web Applications User Flow Diagrams
 
----
+Los User Flow Diagrams representan las secuencias de interacción que los usuarios siguen para completar las principales tareas dentro de la Web Application de EcoTrack. Estos diagramas permiten visualizar la relación entre las acciones del usuario, las decisiones del sistema y las diferentes pantallas involucradas en cada proceso.
+
+Los flujos se definieron a partir de las funcionalidades representadas previamente mediante los Wireframes y Mock-ups, manteniendo la correspondencia entre las interfaces y las acciones necesarias para completar cada tarea.
+
+#### Authentication
+
+El primer flujo representa el proceso de autenticación, desde el ingreso de las credenciales hasta el acceso al Dashboard o la corrección de los datos cuando ocurre un error de validación.
+
+![Authentication User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf01-Authentication.png)
+
+*Figura 4.50. User Flow Diagram correspondiente al proceso de autenticación.*
+
+#### Organization Registration
+
+El segundo flujo representa el registro de una nueva organización, incluyendo el ingreso de información, la validación de los datos y la confirmación del registro.
+
+![Organization Registration User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf02-Organization-Registration.png)
+
+*Figura 4.51. User Flow Diagram correspondiente al registro de una organización.*
+
+#### Organization Management
+
+El tercer flujo representa la consulta y actualización de la información de la organización, considerando la edición de datos, la validación y la confirmación de los cambios.
+
+![Organization Management User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf03-Organization-Management.png)
+
+*Figura 4.52. User Flow Diagram correspondiente a la administración de la organización.*
+
+#### Emission Registration
+
+El cuarto flujo representa el registro de emisiones, desde el acceso al listado hasta el ingreso, validación y confirmación de una nueva emisión.
+
+![Emission Registration User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf04-Emission-Registration.png)
+
+*Figura 4.53. User Flow Diagram correspondiente al registro de emisiones.*
+
+#### Report Generation
+
+El quinto flujo representa la generación de reportes ambientales, incluyendo la configuración de parámetros, selección del periodo, validación de disponibilidad de datos y consulta del reporte generado.
+
+![Report Generation User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf05-Report-Generation.png)
+
+*Figura 4.54. User Flow Diagram correspondiente a la generación de reportes.*
+
+#### Goal Creation
+
+El sexto flujo representa la creación y gestión de metas ambientales, considerando el ingreso de información, validación, registro y edición de una meta existente.
+
+![Goal Creation User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf06-Goal-Creation.png)
+
+*Figura 4.55. User Flow Diagram correspondiente a la creación de metas ambientales.*
+
+#### Carbon Footprint Calculation
+
+El séptimo flujo representa el proceso de cálculo y consulta de la huella de carbono, desde la configuración inicial hasta la visualización de resultados e historial de cálculos.
+
+![Carbon Footprint Calculation User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf07-Carbon-Footprint-Calculation.png)
+
+*Figura 4.56. User Flow Diagram correspondiente al cálculo y consulta de la huella de carbono.*
 
 ## 4.5. Web Applications Prototyping
 
