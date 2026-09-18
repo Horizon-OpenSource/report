@@ -1637,7 +1637,199 @@ La representación de estados alternativos permite incorporar dentro de cada rec
 
 ### 4.4.3. Web Applications Mock-ups
 
-<!-- Completar -->
+#### Authentication
+
+El primer grupo corresponde al proceso de autenticación de usuarios de EcoTrack. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines sobre las interfaces de inicio de sesión.
+
+A diferencia de los Wireframes, estas pantallas incorporan la identidad visual de EcoTrack, incluyendo la paleta de colores definida, la tipografía Roboto, componentes de interfaz, iconografía, espaciado y estados visuales. La propuesta mantiene una composición centrada y simple, priorizando la identificación de la acción principal y la legibilidad de los campos de autenticación. Estas decisiones son consistentes con los lineamientos establecidos para botones, campos de formulario y estados de interacción.
+
+Los Mock-ups contemplan diferentes estados del proceso: pantalla inicial de inicio de sesión, formulario con credenciales ingresadas, estado de error de validación y acceso exitoso al Dashboard. De esta manera, se representa visualmente tanto el flujo principal como las respuestas de la interfaz ante diferentes acciones del usuario.
+
+![Login Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login.png)
+
+*Figura 4.15. Mock-up de la pantalla de inicio de sesión.*
+
+![Login Filled Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login-validation.png)
+
+*Figura 4.16. Mock-up del formulario de inicio de sesión con credenciales ingresadas.*
+
+![Login Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login-validation-error.png)
+
+*Figura 4.17. Mock-up del estado de error de validación de inicio de sesión.*
+
+![Login Success Dashboard Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login-success-dashboard.png)
+
+*Figura 4.18. Mock-up del acceso exitoso al Dashboard.*
+
+#### Organization Registration
+
+El segundo grupo corresponde al proceso de registro de una nueva organización en EcoTrack. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines, incorporando la identidad visual de EcoTrack, la paleta de colores, tipografía, componentes de formulario y estados de interacción.
+
+La información se organiza en grupos relacionados con los datos de la organización y los datos de la cuenta del usuario. Los campos requeridos se identifican mediante labels explícitos, mientras que los estados de validación y error proporcionan retroalimentación visual sobre la información ingresada. De esta manera, los Mock-ups representan tanto el formulario inicial como las diferentes respuestas de la interfaz durante el proceso de registro.
+
+![Register Organization Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org.png)
+
+*Figura 4.19. Mock-up del formulario inicial de registro de una organización.*
+
+![Register Organization Validation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org-validation.png)
+
+*Figura 4.20. Mock-up del estado de validación del registro de una organización.*
+
+![Register Organization Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org-validation-error.png)
+
+*Figura 4.21. Mock-up del estado de error de validación del registro de una organización.*
+
+![Register Organization Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org-success.png)
+
+*Figura 4.22. Mock-up del registro exitoso de una organización.*
+
+#### Emission Registration
+
+El tercer grupo corresponde al registro de emisiones. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines para el listado y registro de emisiones dentro de EcoTrack.
+
+La propuesta incorpora la identidad visual de la aplicación mediante la paleta de colores, tipografía Roboto, componentes de interfaz, espaciado, iconografía y estados de interacción. Los campos se organizan de acuerdo con la información necesaria para registrar una emisión, manteniendo una estructura clara para facilitar el ingreso y consulta de los datos.
+
+Los Mock-ups contemplan el listado de emisiones, el formulario vacío, el formulario con información ingresada, el estado de error de validación y la confirmación de un registro exitoso. Esto permite representar visualmente las diferentes respuestas de la interfaz durante el proceso de registro.
+
+![Emissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/emissions.png)
+
+*Figura 4.23. Mock-up del listado de emisiones registradas.*
+
+![Add Emission Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/add-emission-empty.png)
+
+*Figura 4.24. Mock-up del formulario vacío para registrar una nueva emisión.*
+
+![Add Emission Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/add-emission-completed.png)
+
+*Figura 4.25. Mock-up del formulario de registro de emisión con información ingresada.*
+
+![Emission Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/emission-validation-error.png)
+
+*Figura 4.26. Mock-up del estado de error de validación del registro de emisión.*
+
+![Emissions Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/emissions-success.png)
+
+*Figura 4.27. Mock-up de confirmación del registro exitoso de una emisión.*
+
+#### Carbon Footprint Calculation
+
+El cuarto grupo representa el proceso de cálculo y consulta de la huella de carbono. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines para las interfaces relacionadas con la configuración, ejecución y consulta de los cálculos.
+
+La propuesta incorpora la identidad visual de EcoTrack mediante la aplicación de la paleta de colores, tipografía Roboto, componentes de interfaz, espaciado, iconografía y estados visuales. La información se presenta de manera progresiva, permitiendo configurar los parámetros del cálculo, revisar los datos considerados y consultar los resultados obtenidos.
+
+Los Mock-ups contemplan el estado inicial del cálculo, la configuración y ejecución del cálculo, el historial de operaciones realizadas y la visualización de resultados tanto por periodo como por alcance. De esta manera, se representa visualmente la interacción del usuario con las diferentes etapas del proceso de cálculo y consulta de la huella de carbono.
+
+![Carbon Footprint Initial Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-initial.png)
+
+*Figura 4.28. Mock-up del estado inicial del cálculo de la huella de carbono.*
+
+![Carbon Footprint Calculation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-calculate.png)
+
+*Figura 4.29. Mock-up correspondiente a la configuración y cálculo de la huella de carbono.*
+
+![Carbon Footprint History Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-history.png)
+
+*Figura 4.30. Mock-up correspondiente al historial de cálculos de huella de carbono.*
+
+![Carbon Footprint Results Per Period Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-results-period.png)
+
+*Figura 4.31. Mock-up de los resultados de la huella de carbono por periodo.*
+
+![Carbon Footprint Results By Scope Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-results-scope.png)
+
+*Figura 4.32. Mock-up de los resultados de la huella de carbono por alcance.*
+
+#### Goal Creation
+
+El quinto grupo representa la gestión de metas y planes de reducción. Los Mock-ups aplican las decisiones visuales definidas para EcoTrack a las interfaces de consulta, creación y edición de metas ambientales.
+
+La propuesta incorpora la identidad visual de la aplicación mediante la aplicación de la paleta de colores, tipografía, componentes, espaciado, iconografía y estados de interacción. La información de cada meta se organiza mediante campos claramente identificados y acciones diferenciadas para crear, guardar, cancelar o editar una operación.
+
+Los Mock-ups contemplan el listado de metas, el formulario de creación en estado vacío, el ingreso de información, los errores de validación, la confirmación de creación exitosa y la edición de una meta existente. De esta manera, se representan visualmente los principales estados y acciones asociados con la gestión de metas dentro de EcoTrack.
+
+![Goals List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/goals-list.png)
+
+*Figura 4.33. Mock-up correspondiente al listado de metas ambientales.*
+
+![Create Goal Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/create-goal-empty.png)
+
+*Figura 4.34. Mock-up del formulario vacío para la creación de una meta.*
+
+![Create Goal Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/create-goal-validation-error.png)
+
+*Figura 4.35. Mock-up del formulario de creación de una meta con errores de validación.*
+
+![Create Goal Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/create-goal-completed.png)
+
+*Figura 4.36. Mock-up del formulario de creación de una meta con los datos completados.*
+
+![Goals Creation Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/goals-creation-success.png)
+
+*Figura 4.37. Mock-up de confirmación del registro exitoso de una meta.*
+
+![Edit Goal Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/edit-goal.png)
+
+*Figura 4.38. Mock-up correspondiente a la edición de una meta existente.*
+
+#### Report Generation
+
+El sexto grupo representa el proceso de generación y consulta de reportes ambientales. Los Mock-ups aplican la identidad visual de EcoTrack a las interfaces relacionadas con la configuración, generación, descarga y consulta de reportes.
+
+La propuesta incorpora la paleta de colores, tipografía, componentes, espaciado e iconografía definidos para la aplicación, manteniendo una estructura visual consistente entre los diferentes estados. Se contemplan escenarios de configuración, selección de periodo, generación exitosa y ausencia de datos suficientes para completar la operación.
+
+También se representa la disponibilidad del reporte generado para su descarga y la consulta de reportes creados anteriormente. De esta manera, los Mock-ups muestran los principales estados y acciones que forman parte del proceso de gestión de reportes ambientales.
+
+![Reports Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/reports-empty-hifi.png)
+
+*Figura 4.39. Mock-up del estado inicial del módulo de reportes.*
+
+![Generate Report Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-empty-hifi.png)
+
+*Figura 4.40. Mock-up del formulario inicial para generar un reporte.*
+
+![Generate Report Period Selected Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-period-selected-hifi.png)
+
+*Figura 4.41. Mock-up de configuración del reporte con el periodo seleccionado.*
+
+![Generate Report No Data Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-no-data-error-hifi.png)
+
+*Figura 4.42. Mock-up del estado informativo cuando no existen datos suficientes para generar el reporte.*
+
+![Generate Report Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-success-hifi.png)
+
+*Figura 4.43. Mock-up de confirmación de generación exitosa del reporte.*
+
+![Report Download Available Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/report-download-available-hifi.png)
+
+*Figura 4.44. Mock-up del reporte generado con opción de descarga disponible.*
+
+![Reports Previous Reports Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/reports-previous-reports-hifi.png)
+
+*Figura 4.45. Mock-up correspondiente a la consulta de reportes generados anteriormente.*
+
+#### Organization Management
+
+El último grupo corresponde a la administración de la información de la organización. Los Mock-ups representan la consulta de los datos actuales, la edición de la información, los estados de validación y la confirmación de una actualización exitosa.
+
+La interfaz aplica la identidad visual definida para EcoTrack, manteniendo consistencia en colores, tipografía, espaciado, componentes e iconografía. Se diferencia claramente entre la visualización de información y las acciones de modificación, mientras que los formularios organizan los datos de acuerdo con su propósito.
+
+También se incorporan estados de validación y confirmación para proporcionar retroalimentación visual sobre las acciones realizadas durante la gestión de la organización.
+
+![Organization Overview Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-overview.png)
+
+*Figura 4.46. Mock-up correspondiente a la visualización de la información de la organización.*
+
+![Edit Organization Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-edit.png)
+
+*Figura 4.47. Mock-up correspondiente a la edición de la información de la organización.*
+
+![Organization Edit Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-edit-validation-error.png)
+
+*Figura 4.48. Mock-up del estado de error de validación durante la edición de la organización.*
+
+![Organization Update Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-update-success.png)
+
+*Figura 4.49. Mock-up de confirmación de actualización exitosa de la organización.*
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
