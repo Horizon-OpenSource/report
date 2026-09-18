@@ -1831,7 +1831,35 @@ feature/chapter-05-software-configuration-management
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
-<!-- Completar -->
+El equipo Horizon define convenciones de código para mantener consistencia, legibilidad y mantenibilidad en los diferentes productos de EcoTrack. Estas reglas se aplican tanto al Landing Page implementado durante Sprint 1 como a la futura Frontend Web Application y a los RESTful Web Services.
+
+Como regla general, los nombres utilizados en el código fuente se redactan en inglés. Asimismo, se adoptan convenciones reconocidas para HTML, CSS, JavaScript, TypeScript, Angular, Java y Spring Boot.
+
+#### HTML5 Conventions
+
+Para la estructura de la Landing Page se utiliza HTML5 semántico. Esto permite organizar el contenido de manera clara y mejorar tanto la accesibilidad como la interpretación del documento por navegadores y herramientas de asistencia.
+
+Las principales convenciones aplicadas son:
+
+- Utilizar etiquetas HTML5 semánticas como `header`, `nav`, `main`, `section`, `article` y `footer`.
+- Escribir etiquetas y atributos en minúsculas.
+- Mantener una jerarquía consistente de encabezados.
+- Utilizar nombres descriptivos en inglés para atributos `id` y `class`.
+- Incluir el atributo `alt` en las imágenes que transmiten información.
+- Utilizar atributos ARIA cuando sean necesarios para mejorar la accesibilidad.
+- Evitar estilos y scripts embebidos cuando puedan mantenerse en archivos independientes.
+- Mantener una indentación consistente dentro del documento.
+
+Ejemplo:
+
+```html
+<section id="features" class="features-section">
+  <div class="section-header">
+    <span class="section-label">Core Capabilities</span>
+    <h2>Everything you need to manage your carbon footprint</h2>
+  </div>
+</section>
+```
 
 ### 5.1.4. Software Deployment Configuration
 
