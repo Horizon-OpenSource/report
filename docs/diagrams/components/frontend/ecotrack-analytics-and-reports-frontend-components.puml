@@ -1,0 +1,32 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Analytics and Reports Frontend Components Diagram
+
+Container_Boundary(analytics, "Analytics and Reports Frontend Bounded Context") {
+  Component(presentation, "Presentation Layer", "Pages / Components / Routes", "Renders dashboards, indicator views, period comparisons and report export screens.")
+  Component(application, "Application Layer", "Facade / Store", "Coordinates dashboard data aggregation, period comparison queries and report generation requests.")
+  Component(domain, "Domain Layer", "Models / Rules", "Defines indicators, comparison rules and report templates at the view level.")
+  Component(infrastructure, "Infrastructure Layer", "API Clients / Resources / Assemblers", "Consumes the dashboard, indicator and report resources, and maps responses to frontend models.")
+}
+
+System_Ext(backend, "EcoTrack Backend API", "REST API consumed by this frontend context.")
+Component_Ext(shared, "Shared Kernel Frontend", "Shared UI / Session", "Provides layout, session, preferences and UI primitives.")
+Component_Ext(orgMgmt, "Organization Management", "Frontend Context", "Provides organization metrics.")
+Component_Ext(emissions, "Emissions Management", "Frontend Context", "Provides emissions metrics.")
+Component_Ext(footprint, "Carbon Footprint Calculation", "Frontend Context", "Provides footprint metrics.")
+Component_Ext(goals, "Goals and Reduction Plans", "Frontend Context", "Provides goals metrics.")
+
+Rel(presentation, application, "Dispatches UI actions")
+Rel(application, domain, "Applies feature rules")
+Rel(application, infrastructure, "Requests data")
+Rel(infrastructure, backend, "Consumes REST endpoints")
+Rel(presentation, shared, "Uses layout / UI primitives")
+Rel(application, shared, "Uses session / preferences")
+Rel(orgMgmt, application, "Coordinates with")
+Rel(emissions, application, "Coordinates with")
+Rel(footprint, application, "Coordinates with")
+Rel(goals, application, "Coordinates with")
+
+SHOW_LEGEND()
+@enduml

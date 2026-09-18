@@ -1,0 +1,35 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Analytics and Reports Backend Components Diagram
+
+Container(spa, "EcoTrack SPA", "Angular", "Browser runtime that consumes this bounded context over HTTPS.")
+
+Container_Boundary(analytics, "Analytics and Reports Backend Bounded Context") {
+  Component(interfaces, "Interfaces REST Layer", "REST / Resources", "The AnalyticsController translates dashboard, indicator and report resources into commands and queries.")
+  Component(application, "Application Layer", "Command Services / Query Services / Ports", "Coordinates metric aggregation, period comparisons and report generation.")
+  Component(domain, "Domain Layer", "Aggregates / Policies", "Owns indicators, comparison rules and report definitions.")
+  Component(infrastructure, "Infrastructure Layer", "JPA / Report Generation Adapters", "Implements the indicator repositories and the PDF/export report generator.")
+}
+
+Component_Ext(eventBus, "Integration Event Bus", "External Infrastructure", "Delivers domain events used to keep dashboards up to date.")
+Component_Ext(orgMgmtApi, "Organization Management API", "External Bounded Context", "Provides organization metrics.")
+Component_Ext(emissionsApi, "Emissions Management API", "External Bounded Context", "Provides emissions metrics.")
+Component_Ext(footprintApi, "Carbon Footprint Calculation API", "External Bounded Context", "Provides footprint metrics.")
+Component_Ext(goalsApi, "Goals and Reduction Plans API", "External Bounded Context", "Provides goals metrics.")
+ContainerDb(db, "EcoTrack Database", "PostgreSQL", "Stores indicators and report definitions.")
+
+Rel(spa, interfaces, "Calls REST endpoints", "JSON / HTTPS")
+Rel(interfaces, application, "Delegates use cases")
+Rel(application, domain, "Applies business rules")
+Rel(eventBus, application, "RecordAnalyticsEventCommand")
+Rel(application, orgMgmtApi, "Requests organization metrics")
+Rel(application, emissionsApi, "Requests emissions metrics")
+Rel(application, footprintApi, "Requests footprint metrics")
+Rel(application, goalsApi, "Requests goals metrics")
+Rel(application, infrastructure, "Requests persistence / report generation")
+Rel(infrastructure, domain, "Maps persisted state")
+Rel(infrastructure, db, "Reads from and writes to")
+
+SHOW_LEGEND()
+@enduml

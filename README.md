@@ -1607,7 +1607,102 @@ La propuesta busca mantener una experiencia consistente entre Desktop y Mobile, 
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-<!-- Completar -->
+#### 4.6.4.1. Frontend General Components Diagram
+
+![EcoTrack - Frontend General Components Diagram](docs/diagrams/components/frontend/ecotrack-frontend-general-components.png)
+
+En este diagrama se puede ver la SPA de Angular dividida en sus ocho bounded contexts (Shared Kernel, IAM, Organization Management, Emissions Management, Carbon Footprint Calculation, Goals and Reduction Plans, Analytics and Reports y Data Integration). Todos pasan por un `App Router` común y consumen el backend mediante una capa compartida de `API Clients`. Las conexiones entre contextos (por ejemplo, `Emissions Management` hacia `Organization Management`, o `Analytics and Reports` leyendo de los otros cuatro) siguen el orden de dependencia del negocio, lo que permite trazar la arquitectura hasta el modelo de dominio.
+
+#### 4.6.4.1. Backend General Components Diagram
+
+![EcoTrack - Backend General Components Diagram](docs/diagrams/components/backend/ecotrack-backend-general-components.png)
+
+Este es el lado backend del diagrama anterior. Se ve el mismo mapa de ocho bounded contexts, pero ahora como módulos de Spring Boot detrás de un `REST API Surface`. Aparecen dos componentes transversales: el `Integration Event Bus`, que permite que `Analytics and Reports` se entere de lo que pasa en los demás contextos sin acoplarse directamente, y `Persistence Access`, que agrupa los repositorios JPA hacia PostgreSQL. En conjunto, esto confirma que EcoTrack está pensado como un monolito modular.
+
+#### 4.6.4.2. IAM Frontend Components Diagram
+
+![EcoTrack - IAM Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-iam-frontend-components.png)
+
+Aquí se descompone el módulo Angular de IAM en sus cuatro capas (Presentation, Application, Domain e Infrastructure). IAM es el contexto del que todos dependen para la sesión, pero además coordina con Organization Management, Analytics and Reports y Data Integration para resolver la organización activa y habilitar funciones según el rol. Es decir, IAM no solo expone la sesión: también participa en decidir qué vistas o funciones se muestran.
+
+#### 4.6.4.2. IAM Backend Components Diagram
+
+![EcoTrack - IAM Backend Components Diagram](docs/diagrams/components/backend/ecotrack-iam-backend-components.png)
+
+Este diagrama muestra cómo el módulo Spring Boot de IAM procesa las peticiones REST de autenticación, registro, recuperación de contraseña e invitación de usuarios mediante comandos que maneja la Application Layer. La Domain Layer se encarga de las reglas sobre usuarios, roles y tokens, mientras que la Infrastructure Layer resuelve lo técnico: hashing BCrypt, emisión de JWT y envío de correos. Al ser el primer bounded context del backend, marca el patrón de cuatro capas que se repite en los demás.
+
+#### 4.6.4.3. Organization Management Frontend Components Diagram
+
+![EcoTrack - Organization Management Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-organization-management-frontend-components.png)
+
+Este módulo Angular gestiona organizaciones, sedes y unidades de negocio. Su relación con el resto es bidireccional: por un lado consume la sesión de IAM, y por otro es consumido por Emissions Management (que necesita el catálogo de sedes) y por Analytics and Reports (que agrupa métricas por organización). Esto deja a Organization Management como una especie de catálogo maestro dentro del sistema.
+
+#### 4.6.4.3. Organization Management Backend Components Diagram
+
+![EcoTrack - Organization Management Backend Components Diagram](docs/diagrams/components/backend/ecotrack-organization-management-backend-components.png)
+
+El backend de Organization Management valida contra la IAM API el acceso del usuario antes de consultar o modificar organizaciones, sedes y unidades de negocio. A diferencia de IAM, este contexto no maneja tokens ni seguridad propia, así que su Infrastructure Layer solo incluye adaptadores JPA. Es una estructura más simple.
+
+#### 4.6.4.4. Emissions Management Frontend Components Diagram
+
+![EcoTrack - Emissions Management Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-emissions-management-frontend-components.png)
+
+Este es el módulo Angular donde se registran fuentes de emisión y se cargan datos de actividad. Tiene dos formas de ingreso: la manual, desde su propia Presentation Layer, y la automatizada, que llega desde Data Integration. Por eso, Emissions Management termina siendo el punto medio entre la carga manual y la importación de datos ambientales.
+
+#### 4.6.4.4. Emissions Management Backend Components Diagram
+
+![EcoTrack - Emissions Management Backend Components Diagram](docs/diagrams/components/backend/ecotrack-emissions-management-backend-components.png)
+
+Este diagrama muestra cómo el backend de Emissions Management valida el acceso a la sede contra la Organization Management API antes de registrar cualquier fuente de emisión, y cómo recibe en paralelo los datos que procesa la Data Integration API. Es el bounded context con más entradas externas, ya que es la fuente principal de datos de actividad para el cálculo de la huella de carbono.
+
+#### 4.6.4.5. Carbon Footprint Calculation Frontend Components Diagram
+
+![EcoTrack - Carbon Footprint Calculation Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-carbon-footprint-calculation-frontend-components.png)
+
+En este módulo Angular se seleccionan factores de emisión y se solicitan cálculos de huella por alcance y periodo. Se alimenta de los datos de actividad que vienen de Emissions Management, y entrega resultados a Goals and Reduction Plans y a Analytics and Reports. En el diagrama, este contexto queda como una capa de cálculo intermedia que transforma datos de actividad en resultados de huella.
+
+#### 4.6.4.5. Carbon Footprint Calculation Backend Components Diagram
+
+![EcoTrack - Carbon Footprint Calculation Backend Components Diagram](docs/diagrams/components/backend/ecotrack-carbon-footprint-calculation-backend-components.png)
+
+Aquí se ve cómo la Application Layer de este contexto pide datos de actividad a la Emissions Management API antes de hacer los cálculos. La Domain Layer agrupa las fórmulas y reglas necesarias por alcance (Scope 1/2/3) y periodo. Es un contexto cuya responsabilidad principal es el procesamiento y cálculo de datos.
+
+#### 4.6.4.6. Goals and Reduction Plans Frontend Components Diagram
+
+![EcoTrack - Goals and Reduction Plans Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-goals-and-reduction-plans-frontend-components.png)
+
+Este módulo Angular cubre metas, planes de reducción e iniciativas. Su Application Layer coordina con Carbon Footprint Calculation para obtener los resultados de huella y calcular el avance de cada meta, y también se conecta con Analytics and Reports para reflejar ese progreso en los paneles. En general, este módulo trabaja sobre resultados ya agregados.
+
+#### 4.6.4.6. Goals and Reduction Plans Backend Components Diagram
+
+![EcoTrack - Goals and Reduction Plans Backend Components Diagram](docs/diagrams/components/backend/ecotrack-goals-and-reduction-plans-backend-components.png)
+
+En este diagrama se ve cómo la Application Layer del backend consulta la Carbon Footprint Calculation API para comparar el resultado de huella más reciente con la meta definida, y así actualizar el estado de avance de los planes e iniciativas. La Domain Layer contiene las reglas que determinan el progreso hacia un objetivo.
+
+#### 4.6.4.7. Analytics and Reports Frontend Components Diagram
+
+![EcoTrack - Analytics and Reports Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-analytics-and-reports-frontend-components.png)
+
+Este es el módulo Angular que más dependencias recibe en el frontend. Su Application Layer coordina con Organization Management, Emissions Management, Carbon Footprint Calculation y Goals and Reduction Plans para armar los dashboards e indicadores. El diagrama deja claro que Analytics and Reports no genera datos propios: su rol es leer y agregar la información de los demás módulos.
+
+#### 4.6.4.7. Analytics and Reports Backend Components Diagram
+
+![EcoTrack - Analytics and Reports Backend Components Diagram](docs/diagrams/components/backend/ecotrack-analytics-and-reports-backend-components.png)
+
+El backend de Analytics and Reports obtiene datos de dos formas: pide métricas directamente a las cuatro APIs de negocio (Organization Management, Emissions Management, Carbon Footprint Calculation y Goals and Reduction Plans) para consultas directas, y además escucha el `Integration Event Bus` mediante `RecordAnalyticsEventCommand` para actualizar los dashboards cuando hay actividad nueva. Por eso su Infrastructure Layer incluye la lógica de eventos y la generación de reportes en PDF o formato exportable.
+
+#### 4.6.4.8. Data Integration Frontend Components Diagram
+
+![EcoTrack - Data Integration Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-data-integration-frontend-components.png)
+
+Este módulo Angular se encarga de la carga de archivos CSV y de la configuración de API Keys para integraciones externas, según el rol del usuario que valida IAM. Su Application Layer envía los datos de actividad importados a Emissions Management, cerrando así el flujo de carga manual e importada en el frontend.
+
+#### 4.6.4.8. Data Integration Backend Components Diagram
+
+![EcoTrack - Data Integration Backend Components Diagram](docs/diagrams/components/backend/ecotrack-data-integration-backend-components.png)
+
+Este diagrama muestra la interacción con un actor externo (`External Business System`), ya que Data Integration es la puerta de entrada para datos de terceros. Su Application Layer valida la identidad del emisor contra la IAM API (por rol de usuario o API Key) antes de enviar la información a la Emissions Management API. Con esto se conecta el Context Diagram con el detalle de componentes del sistema.
+
 
 ---
 

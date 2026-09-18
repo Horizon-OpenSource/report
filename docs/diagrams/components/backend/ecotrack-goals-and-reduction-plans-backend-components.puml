@@ -1,0 +1,27 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title EcoTrack - Goals and Reduction Plans Backend Components Diagram
+
+Container(spa, "EcoTrack SPA", "Angular", "Browser runtime that consumes this bounded context over HTTPS.")
+
+Container_Boundary(goals, "Goals and Reduction Plans Backend Bounded Context") {
+  Component(interfaces, "Interfaces REST Layer", "REST / Resources", "The GoalController translates goal, plan and initiative resources into commands and queries.")
+  Component(application, "Application Layer", "Command Services / Query Services / Ports", "Coordinates goal creation, reduction plan definition, initiative registration and progress calculation.")
+  Component(domain, "Domain Layer", "Aggregates / Policies", "Owns environmental goals, reduction plans, initiatives and progress rules.")
+  Component(infrastructure, "Infrastructure Layer", "JPA Adapters", "Implements the goal, plan and initiative repositories.")
+}
+
+Component_Ext(footprintApi, "Carbon Footprint Calculation API", "External Bounded Context", "Provides footprint results used to measure progress toward goals.")
+ContainerDb(db, "EcoTrack Database", "PostgreSQL", "Stores goals, reduction plans and initiatives.")
+
+Rel(spa, interfaces, "Calls REST endpoints", "JSON / HTTPS")
+Rel(interfaces, application, "Delegates use cases")
+Rel(application, domain, "Applies business rules")
+Rel(application, footprintApi, "Requests footprint results")
+Rel(application, infrastructure, "Requests persistence")
+Rel(infrastructure, domain, "Maps persisted state")
+Rel(infrastructure, db, "Reads from and writes to")
+
+SHOW_LEGEND()
+@enduml
