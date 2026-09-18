@@ -2238,9 +2238,51 @@ El despliegue permitió cumplir con uno de los principales resultados esperados 
 
 La publicación realizada durante Sprint 1 servirá como base para las siguientes iteraciones, en las que el Landing Page podrá continuar evolucionando junto con la futura Frontend Web Application y los RESTful Web Services.
 
-## 5.2.1.8. Team Collaboration Insights during Sprint
+### 5.2.1.8. Team Collaboration Insights during Sprint
 
-<!-- Completar -->
+Durante Sprint 1, los integrantes de Horizon colaboraron en la implementación de la primera versión del Landing Page de EcoTrack utilizando Git y GitHub como principales herramientas para la gestión e integración del código fuente.
+
+El desarrollo fue organizado mediante feature branches, permitiendo que los miembros del equipo trabajaran en diferentes secciones del Landing Page antes de integrar sus cambios a la rama `develop`. Posteriormente, las contribuciones fueron revisadas e integradas mediante Pull Requests y finalmente consolidadas en la rama `main`.
+
+La coordinación del trabajo se realizó mediante reuniones presenciales antes y después de las clases, así como mediante Discord y WhatsApp. Estas reuniones permitieron revisar avances, distribuir actividades, resolver observaciones y mantener consistencia entre el contenido del Project Report y la implementación del Landing Page.
+
+Las principales contribuciones realizadas por los integrantes durante Sprint 1 fueron las siguientes:
+
+| Team Member | GitHub Username | Main Contribution during Sprint 1 |
+|---|---|---|
+| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | Implementación de la sección de contacto, comportamiento inicial del formulario y estilos asociados. También colaboró en actividades de accesibilidad y revisión del Landing Page. |
+| Espinoza Flores, Aaron André | `pisure` | Implementación de la sección de estándares ambientales y mejoras responsive asociadas. |
+| Payesa Torres, Harrison Hubert | `Harrison1024` | Implementación del footer, internacionalización EN/ES, etiquetas de accesibilidad y metadata localizada. |
+| Tello Murga, Javier Oswaldo | `JavierTello20` | Liderazgo e integración general del desarrollo. Implementación de estructura inicial, navegación, Hero, problema y beneficios, segmentos objetivo, capacidades principales, emission scopes, How It Works, responsividad, animaciones, refinamiento de contenido, integración y despliegue. |
+| Torres Diaz, Rolando Andre | `ROLO194` | Implementación de los planes de suscripción y mejoras responsive relacionadas con la sección de pricing. |
+
+#### GitHub Collaboration Evidence
+
+La siguiente evidencia muestra la participación de los integrantes de Horizon en el repositorio del Landing Page durante Sprint 1:
+
+![Sprint 1 GitHub Contributors](assets/chapter-05/sprint-01-github-contributors.png)
+
+![Sprint 1 GitHub commits ](assets/chapter-05/sprint-01-github-commits.png)
+
+El historial de desarrollo evidencia que el trabajo no se concentró únicamente en una sola rama. Las funcionalidades fueron implementadas mediante diferentes branches, entre ellas:
+
+```text
+feature/landing-page-structure
+feature/header-navigation
+feature/hero-section
+feature/problem-benefits
+feature/target-segments
+feature/features-section
+feature/emission-scopes
+feature/how-it-works
+feature/landing-animations
+feature/content-copy-refinement
+standards-section
+feature/plans-and-cta
+feature/contact-and-about
+feature/footer-structure
+feature/i18n-accessibility
+```
 
 ---
 
