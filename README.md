@@ -1833,8 +1833,6 @@ También se incorporan estados de validación y confirmación para proporcionar 
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-### 4.4.4. Web Applications User Flow Diagrams
-
 Los User Flow Diagrams representan las secuencias de interacción que los usuarios siguen para completar las principales tareas dentro de la Web Application de EcoTrack. Estos diagramas permiten visualizar la relación entre las acciones del usuario, las decisiones del sistema y las diferentes pantallas involucradas en cada proceso.
 
 Los flujos se definieron a partir de las funcionalidades representadas previamente mediante los Wireframes y Mock-ups, manteniendo la correspondencia entre las interfaces y las acciones necesarias para completar cada tarea.
@@ -1895,11 +1893,24 @@ El séptimo flujo representa el proceso de cálculo y consulta de la huella de c
 
 *Figura 4.56. User Flow Diagram correspondiente al cálculo y consulta de la huella de carbono.*
 
+
 ## 4.5. Web Applications Prototyping
 
-<!-- Completar -->
+El prototipo interactivo de la Web Application de EcoTrack fue desarrollado en Figma a partir de los Mock-ups definidos en la sección anterior. Se establecieron conexiones entre las diferentes interfaces para representar la navegación y las principales interacciones de los usuarios.
 
----
+Las interacciones implementadas siguen los flujos funcionales definidos previamente, permitiendo navegar entre los módulos de autenticación, registro y administración de la organización, registro de emisiones, generación de reportes, creación de metas y cálculo de la huella de carbono.
+
+Asimismo, se incorporaron diferentes estados de interacción, incluyendo validaciones, mensajes de error y confirmaciones de operaciones, con el objetivo de representar el comportamiento esperado de la aplicación durante la navegación.
+
+![Prototype Flow](./assets/chapter-04/web-applications-ui-ux/prototype/prototype-flow.png)
+
+*Figura 4.57. Vista general de las conexiones del prototipo interactivo de la Web Application.*
+
+El prototipo completo puede ser revisado mediante el siguiente enlace:
+
+**[Prototipo interactivo de EcoTrack en Figma](https://www.figma.com/design/TB5iPC598xAyU2i39VBbMg/EcoTrack-v1---Web-Application-UX-UI?node-id=2136-2&t=gfEigo8KPkeadZWo-1)**
+
+El enlace permite revisar la navegación entre las principales interfaces y las interacciones definidas para los diferentes procesos funcionales de la aplicación.
 
 ## 4.6. Domain-Driven Software Architecture
 
