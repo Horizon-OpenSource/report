@@ -1327,9 +1327,21 @@ El primer grupo corresponde al proceso de autenticación de usuarios. Los Wirefr
 
 La interfaz mantiene una estructura simple y centrada en la tarea principal, presentando los campos de correo electrónico y contraseña junto con las acciones necesarias para iniciar sesión o recuperar las credenciales.
 
-![Authentication Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Authentication.png)
+![Login](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login.png)
 
-*Figura 4.1. Wireframes correspondientes al proceso de autenticación.*
+*Figura 4.1. Wireframe de la pantalla de inicio de sesión.*
+
+![Login Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login-validation.png)
+
+*Figura 4.2. Wireframe del estado de validación de inicio de sesión.*
+
+![Login Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login-validation-error.png)
+
+*Figura 4.3. Wireframe del estado de error de validación de inicio de sesión.*
+
+![Login Success Dashboard](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login-success-dashboard.png)
+
+*Figura 4.4. Wireframe del acceso exitoso al Dashboard.*
 
 #### Organization Registration
 
@@ -1337,9 +1349,21 @@ El segundo grupo representa el proceso de registro de una nueva organización en
 
 La información se organiza en grupos relacionados con los datos de la organización y los datos de la cuenta del usuario. Los campos requeridos se identifican mediante labels explícitos y los estados de error permiten comunicar al usuario qué información necesita ser corregida.
 
-![Organization Registration Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Organization-Registration.png)
+![Register Organization](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org.png)
 
-*Figura 4.2. Wireframes correspondientes al registro de una organización.*
+*Figura 4.5. Wireframe del formulario inicial de registro de una organización.*
+
+![Register Organization Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org-validation.png)
+
+*Figura 4.6. Wireframe del estado de validación del registro de una organización.*
+
+![Register Organization Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org-validation-error.png)
+
+*Figura 4.7. Wireframe del estado de error de validación del registro de una organización.*
+
+![Register Organization Success](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org-success.png)
+
+*Figura 4.8. Wireframe del registro exitoso de una organización.*
 
 #### Emission Registration
 
@@ -1347,9 +1371,25 @@ El tercer grupo corresponde al registro de emisiones. La propuesta contempla el 
 
 Los campos se organizan de acuerdo con la información necesaria para registrar una emisión, incluyendo la fuente de emisión, categoría, alcance, unidad, periodo y demás datos relacionados. Se incluyen estados de formulario vacío, información ingresada, validación y confirmación de registro exitoso.
 
-![Emission Registration Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Emission-Registration.png)
+![Emissions](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/emissions.png)
 
-*Figura 4.3. Wireframes correspondientes al registro y consulta de emisiones.*
+*Figura 4.9. Wireframe del listado de emisiones registradas.*
+
+![Add Emission Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/add-emission-empty.png)
+
+*Figura 4.10. Wireframe del formulario vacío para registrar una nueva emisión.*
+
+![Add Emission Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/add-emission-completed.png)
+
+*Figura 4.11. Wireframe del formulario de registro de emisión con información ingresada.*
+
+![Emission Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/emission-validation-error.png)
+
+*Figura 4.12. Wireframe del estado de error de validación del registro de emisión.*
+
+![Emissions Success](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/emissions-success.png)
+
+*Figura 4.13. Wireframe de confirmación del registro exitoso de una emisión.*
 
 #### Carbon Footprint Calculation
 
@@ -1357,9 +1397,25 @@ El cuarto grupo representa el proceso de cálculo y consulta de la huella de car
 
 La información se presenta de manera progresiva para facilitar la comprensión del proceso: primero se seleccionan los parámetros del cálculo, luego se revisan los datos utilizados y finalmente se presentan los resultados obtenidos. También se incluye el historial de cálculos para permitir la consulta de operaciones realizadas anteriormente.
 
-![Carbon Footprint Calculation Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Carbon-Footprint-Calculation.png)
+![Carbon Footprint Initial](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-initial.png)
 
-*Figura 4.4. Wireframes correspondientes al cálculo y consulta de la huella de carbono.*
+*Figura 4.14. Wireframe del estado inicial del cálculo de la huella de carbono.*
+
+![Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-calculate.png)
+
+*Figura 4.15. Wireframe correspondiente a la configuración y cálculo de la huella de carbono.*
+
+![Carbon Footprint History](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-history.png)
+
+*Figura 4.16. Wireframe correspondiente al historial de cálculos de huella de carbono.*
+
+![Carbon Footprint Results Per Period](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-results-period.png)
+
+*Figura 4.17. Wireframe de los resultados de la huella de carbono por periodo.*
+
+![Carbon Footprint Results By Scope](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-results-scope.png)
+
+*Figura 4.18. Wireframe de los resultados de la huella de carbono por alcance.*
 
 #### Goal Creation
 
@@ -1367,9 +1423,29 @@ El quinto grupo corresponde a la gestión de metas y planes de reducción. Los W
 
 La interfaz organiza la información de la meta mediante campos claramente identificados y proporciona acciones diferenciadas para crear, guardar o cancelar una operación. Los estados de validación permiten representar las condiciones en las que el usuario debe corregir información antes de guardar los cambios.
 
-![Goal Creation Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Goal-Creation.png)
+![Goals List](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/goals-list.png)
 
-*Figura 4.5. Wireframes correspondientes a la creación y gestión de metas de reducción.*
+*Figura 4.19. Wireframe correspondiente al listado de metas ambientales.*
+
+![Create Goal Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/create-goal-empty.png)
+
+*Figura 4.20. Wireframe del formulario vacío para la creación de una meta.*
+
+![Create Goal Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/create-goal-validation-error.png)
+
+*Figura 4.21. Wireframe del formulario de creación de una meta con errores de validación.*
+
+![Create Goal Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/create-goal-completed.png)
+
+*Figura 4.22. Wireframe del formulario de creación de una meta con los datos completados.*
+
+![Goals Creation Success](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/goals-creation-success.png)
+
+*Figura 4.23. Wireframe de confirmación del registro exitoso de una meta.*
+
+![Edit Goal](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/edit-goal.png)
+
+*Figura 4.24. Wireframe correspondiente a la edición de una meta existente.*
 
 #### Report Generation
 
@@ -1377,9 +1453,33 @@ El sexto grupo representa el proceso de generación y consulta de reportes ambie
 
 La interfaz permite al usuario configurar los parámetros necesarios antes de generar un reporte. También se contemplan escenarios en los que no existen datos suficientes para realizar la operación, comunicando esta condición mediante un estado informativo.
 
-![Report Generation Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Report-Generation.png)
+![Reports Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/reports-empty.png)
 
-*Figura 4.6. Wireframes correspondientes a la generación y consulta de reportes.*
+*Figura 4.25. Wireframe del estado inicial del módulo de reportes.*
+
+![Generate Report Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-empty.png)
+
+*Figura 4.26. Wireframe del formulario inicial para generar un reporte.*
+
+![Generate Report Period Selected](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-period-selected.png)
+
+*Figura 4.27. Wireframe de configuración del reporte con el periodo seleccionado.*
+
+![Generate Report No Data Error](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-no-data-error.png)
+
+*Figura 4.28. Wireframe del estado informativo cuando no existen datos suficientes para generar el reporte.*
+
+![Generate Report Success](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-success.png)
+
+*Figura 4.29. Wireframe de confirmación de generación exitosa del reporte.*
+
+![Report Download Available](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/report-download-available.png)
+
+*Figura 4.30. Wireframe del reporte generado con opción de descarga disponible.*
+
+![Reports Previous Reports](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/reports-previous-reports.png)
+
+*Figura 4.31. Wireframe correspondiente a la consulta de reportes generados anteriormente.*
 
 #### Organization Management
 
@@ -1387,9 +1487,21 @@ El último grupo corresponde a la administración de la información de la organ
 
 La interfaz diferencia claramente entre la visualización de la información y las acciones de modificación. Los campos del formulario se mantienen organizados de acuerdo con el tipo de información que debe ser gestionada, mientras que los mensajes de validación permiten identificar los datos que requieren corrección.
 
-![Organization Management Wireframes](./assets/chapter-04/web-applications-ui-ux/wireframes/Organization-Management.png)
+![Organization Overview](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-overview.png)
 
-*Figura 4.7. Wireframes correspondientes a la consulta y administración de la organización.*
+*Figura 4.32. Wireframe correspondiente a la visualización de la información de la organización.*
+
+![Edit Organization](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-edit.png)
+
+*Figura 4.33. Wireframe correspondiente a la edición de la información de la organización.*
+
+![Organization Edit Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-edit-validation-error.png)
+
+*Figura 4.34. Wireframe del estado de error de validación durante la edición de la organización.*
+
+![Organization Update Success](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-update-success.png)
+
+*Figura 4.35. Wireframe de confirmación de actualización exitosa de la organización.*
 
 #### Consideraciones de UX/UI
 
