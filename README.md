@@ -1860,10 +1860,56 @@ Ejemplo:
   </div>
 </section>
 ```
+---
 
 ### 5.1.4. Software Deployment Configuration
 
-<!-- Completar -->
+El equipo Horizon define una estrategia de despliegue para los diferentes productos digitales que conforman EcoTrack. El objetivo es que las versiones estables del software puedan ser publicadas a partir del código fuente almacenado en GitHub y queden disponibles mediante URLs accesibles para usuarios y miembros del equipo.
+
+Durante Sprint 1, el producto desplegado corresponde al Landing Page de EcoTrack. La Frontend Web Application y los RESTful Web Services serán desplegados en posteriores Sprints, cuando formen parte del alcance de implementación correspondiente.
+
+#### Landing Page Deployment
+
+El Landing Page de EcoTrack fue desarrollado utilizando HTML5, CSS3 y JavaScript y se encuentra almacenado en el repositorio oficial de Horizon:
+
+**Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+Para la publicación de la primera versión se utilizó **GitHub Pages** como plataforma de despliegue.
+
+La configuración utilizada fue la siguiente:
+
+| Deployment Property | Configuration |
+|---|---|
+| Product | EcoTrack Landing Page |
+| Source Code Repository | https://github.com/Horizon-OpenSource/landing-page |
+| Deployment Platform | GitHub Pages |
+| Deployment Branch | `main` |
+| Deployment Mode | Manual configuration for the first stable version |
+| Release | `v1.0.0` |
+| Public URL | https://horizon-opensource.github.io/landing-page/ |
+
+El proceso realizado para desplegar la primera versión estable del Landing Page fue el siguiente:
+
+1. Se verificó localmente el funcionamiento del Landing Page, incluyendo navegación, contenido, diseño responsive e internacionalización.
+2. Los cambios desarrollados fueron integrados en el repositorio oficial de Horizon.
+3. Se consolidó una versión estable del producto en la rama `main`.
+4. Desde la configuración del repositorio en GitHub se habilitó GitHub Pages.
+5. Se seleccionó la rama `main` como fuente para la publicación.
+6. GitHub Pages procesó los archivos estáticos del proyecto y generó una URL pública.
+7. Se verificó el correcto acceso al Landing Page desplegado desde diferentes tamaños de pantalla.
+8. Una vez validada la primera versión estable, se creó la release `v1.0.0` utilizando Semantic Versioning.
+
+La versión desplegada se encuentra disponible en:
+
+**EcoTrack Landing Page:**  
+https://horizon-opensource.github.io/landing-page/
+
+La release correspondiente se identifica como:
+
+```text
+v1.0.0
+```
 
 ---
 
