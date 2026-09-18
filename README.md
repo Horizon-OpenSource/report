@@ -1999,9 +1999,38 @@ La distribución presentada refleja la dinámica utilizada durante Sprint 1. Aun
 
 La coordinación del equipo se realizó mediante reuniones presenciales antes y después de las sesiones del curso, así como mediante Discord y WhatsApp. Esta colaboración permitió revisar avances de manera progresiva y mantener alineados tanto los contenidos del Project Report como la implementación del producto.
 
-## 5.2.1.3. Sprint Backlog 1
+### 5.2.1.3. Sprint Backlog 1
 
-<!-- Completar -->
+El Sprint Backlog 1 reúne las User Stories seleccionadas para alcanzar el objetivo de la primera iteración de EcoTrack. El trabajo se concentró en implementar y publicar la primera versión del Landing Page, permitiendo presentar la propuesta de valor del producto, sus beneficios, funcionalidades principales, planes disponibles y canales de contacto.
+
+Las historias seleccionadas corresponden a las primeras prioridades del Product Backlog y suman un total de **11 Story Points**.
+
+Para organizar y realizar seguimiento al trabajo del Sprint, Horizon utilizó el Board público de Trello:
+
+**Sprint Board:**  
+https://trello.com/b/EEnlW0f1
+
+La siguiente captura presenta las User Stories correspondientes al Sprint 1:
+
+![Sprint 1 Backlog Board](assets/chapter-05/sprint-01-backlog-board.png)
+
+Las User Stories fueron descompuestas en Work Items considerando las actividades necesarias para implementar, revisar y desplegar el Landing Page.
+
+| Sprint # | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---:|---|---|
+| Sprint 1 | US-01 | Conocer EcoTrack | T-01 | Implement Landing Page hero | Implementar el Hero y la presentación principal de EcoTrack, comunicando el propósito y propuesta de valor del producto. | 3 | JavierTello20 | Done |
+| Sprint 1 | US-01 | Conocer EcoTrack | T-02 | Review Landing Page content | Revisar que el contenido principal del Landing Page mantenga coherencia con la propuesta de valor y alcance actualizado de EcoTrack. | 2 | JavierTello20 | Done |
+| Sprint 1 | US-02 | Conocer los beneficios de EcoTrack | T-03 | Implement problem and benefits section | Implementar la sección que explica el problema identificado y los principales beneficios que ofrece EcoTrack a sus segmentos objetivo. | 3 | JavierTello20 | Done |
+| Sprint 1 | US-03 | Conocer las funcionalidades principales | T-04 | Implement core capabilities section | Implementar la sección que presenta las principales capacidades de EcoTrack, incluyendo gestión de emisiones, cálculo de huella, metas, analítica y gestión organizacional. | 3 | pisure | Done |
+| Sprint 1 | US-04 | Conocer los planes disponibles | T-05 | Implement subscription plans section | Implementar la presentación de los planes Basic, Pro y Enterprise, incluyendo sus características principales. | 3 | ROLO194 | Done |
+| Sprint 1 | US-05 | Contactar al equipo de EcoTrack | T-06 | Implement contact section | Implementar la sección de contacto del Landing Page para que los visitantes puedan identificar los canales disponibles para solicitar información. | 2 | alexrodrigoll | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience | T-07 | Implement responsive behavior | Adaptar la interfaz para garantizar una correcta visualización en desktop, tablet y mobile. | 4 | ROLO194 / pisure | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience | T-08 | Implement internationalization | Implementar soporte de idioma inglés y español, manteniendo inglés como idioma predeterminado. | 3 | Harrison1024 | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience | T-09 | Improve accessibility | Incorporar atributos ARIA, textos alternativos y ajustes de accesibilidad aplicables al Landing Page. | 2 | Harrison1024 / alexrodrigoll | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page delivery | T-10 | Deploy Landing Page | Configurar GitHub Pages y publicar la primera versión estable del Landing Page desde la rama `main`. | 2 | JavierTello20 | Done |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page delivery | T-11 | Validate Sprint 1 implementation | Revisar navegación, contenido, responsividad, idiomas y versión desplegada antes de consolidar la release inicial. | 2 | JavierTello20 | Done |
+
+Al cierre del Sprint 1, las User Stories seleccionadas fueron completadas y la primera versión estable del Landing Page quedó publicada mediante GitHub Pages. Las actividades transversales de responsividad, internacionalización, accesibilidad, revisión y despliegue permitieron complementar las funcionalidades asociadas directamente con cada historia.
 
 ## 5.2.1.4. Development Evidence for Sprint Review
 
