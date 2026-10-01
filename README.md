@@ -1809,7 +1809,97 @@ Este diagrama muestra la interacción con un actor externo (`External Business S
 
 ### 4.7.1. Class Diagrams
 
-<!-- Completar -->
+##### Frontend General Bounded Contexts
+
+**EcoTrack WebApp - Frontend Bounded Contexts**
+
+![EcoTrack WebApp - Frontend Bounded Contexts](docs/diagrams/class/frontend/ecotrack-frontend-general-bounded-contexts-class-diagram.png)
+
+##### Frontend IAM
+
+**EcoTrack Platform - IAM Frontend Bounded Context Layers**
+
+![EcoTrack Platform - IAM Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-iam-frontend-class-diagram.png)
+
+---
+
+### 4.7.1.2. Frontend Layer Class Diagrams
+
+##### Frontend IAM Layers
+
+**EcoTrack Platform - IAM Frontend Presentation Layer**
+
+![EcoTrack Platform - IAM Frontend Presentation Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-presentation-layer-class-diagram.png)
+
+###### Application
+
+**EcoTrack Platform - IAM Frontend Application Layer**
+
+![EcoTrack Platform - IAM Frontend Application Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-application-layer-class-diagram.png)
+
+###### Domain
+
+**EcoTrack Platform - IAM Frontend Domain Layer**
+
+![EcoTrack Platform - IAM Frontend Domain Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-domain-layer-class-diagram.png)
+
+###### Infrastructure
+
+**EcoTrack Platform - IAM Frontend Infrastructure Layer**
+
+![EcoTrack Platform - IAM Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-infrastructure-layer-class-diagram.png)
+
+---
+
+### 4.7.1.3. Backend Class Diagrams
+
+##### Backend General Bounded Contexts
+
+**EcoTrack Platform - Backend Bounded Contexts**
+
+![EcoTrack Platform - Backend Bounded Contexts](docs/diagrams/class/backend/ecotrack-backend-general-bounded-contexts-class-diagram.png)
+
+##### Backend IAM
+
+**EcoTrack Platform - IAM Backend Bounded Context Layers**
+
+![EcoTrack Platform - IAM Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-iam-backend-class-diagram.png)
+
+---
+
+### 4.7.1.4. Backend Layer Class Diagrams
+
+##### Backend IAM Layers
+
+###### Interfaces REST
+
+**EcoTrack Platform - IAM Backend Interfaces REST Layer**
+
+![EcoTrack Platform - IAM Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-iam-backend-interfaces-layer-class-diagram.png)
+
+###### Application
+
+**EcoTrack Platform - IAM Backend Application Layer**
+
+![EcoTrack Platform - IAM Backend Application Layer](docs/diagrams/class/backend/ecotrack-iam-backend-application-layer-class-diagram.png)
+
+###### Domain - User Aggregate
+
+**EcoTrack Platform - IAM Backend Domain Layer - User Aggregate**
+
+![EcoTrack Platform - IAM Backend Domain Layer - User Aggregate](docs/diagrams/class/backend/ecotrack-iam-backend-domain-user-aggregate-class-diagram.png)
+
+###### Domain - PasswordResetToken Aggregate
+
+**EcoTrack Platform - IAM Backend Domain Layer - PasswordResetToken Aggregate**
+
+![EcoTrack Platform - IAM Backend Domain Layer - PasswordResetToken Aggregate](docs/diagrams/class/backend/ecotrack-iam-backend-domain-password-reset-aggregate-class-diagram.png)
+
+###### Infrastructure
+
+**EcoTrack Platform - IAM Backend Infrastructure Layer**
+
+![EcoTrack Platform - IAM Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-iam-backend-infrastructure-layer-class-diagram.png)
 
 ---
 
@@ -1817,7 +1907,9 @@ Este diagrama muestra la interacción con un actor externo (`External Business S
 
 ### 4.8.1. Database Diagrams
 
-<!-- Completar -->
+**EcoTrack Platform - Database Diagram**
+
+![EcoTrack Platform - Database Diagram](docs/database/ecotrack-database-diagram-EcoTrack_Platform__Database.png)
 
 ---
 
