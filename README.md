@@ -60,7 +60,7 @@ Septiembre, 2026
 
 | URL del repositorio del Landing Page | URL del repositorio del Frontend |
 |---|---|
-| Pendiente de creación | Pendiente de creación |
+| [https://github.com/Horizon-OpenSource/landing-page](https://github.com/Horizon-OpenSource/landing-page) | Pendiente de creación |
 
 | URL del repositorio del Backend |
 |---|
@@ -236,14 +236,31 @@ Durante el desarrollo del TB2, se registrará la participación final de los int
 
 # Student Outcome
 
-<!--
-Incluir el párrafo introductorio y el cuadro del Student Outcome
-establecido en el Anexo A del enunciado.
--->
-| Criterio Específico | Acciones realizadas | Conclusiones |
-|--|--|--|
-| Comunica oralmente con efectividad a diferentes rangos de audiencia. | **Lacuta Lima, Alex Rodrigo** <br>AV1: Explicó al equipo, con apoyo de un asistente de IA para la generación de diagramas en PlantUML, la arquitectura Domain-Driven del sistema EcoTrack (Context, Container y Component Diagrams del modelo C4), sustentando ante el equipo las decisiones de diseño de los 7 bounded contexts y su correspondencia con el Big Picture Event Storming del Capítulo 2. | AV1: La comunicación oral permitió alinear al equipo sobre la arquitectura de software definida para EcoTrack, facilitando que el resto de integrantes comprendiera las decisiones de diseño antes de continuar con sus respectivas secciones del informe. |
-| Comunica por escrito con efectividad a diferentes rangos de audiencia | **Lacuta Lima, Alex Rodrigo** <br>AV1: Documentó en el README la sección 4.6 (Domain-Driven Software Architecture) con los 18 diagramas C4 en formato PlantUML (Context, Container, Frontend/Backend Components por bounded context), la sección 4.7.1 (Class Diagrams) organizada en niveles de capa y agregado, y la sección 4.8.1 (Database Diagram) con el modelo entidad-relación completo, manteniendo trazabilidad entre el Ubiquitous Language del Capítulo 2 y los nombres de clases y tablas utilizados. | AV1: La documentación escrita del Capítulo 4 dejó evidencia clara y trazable de la arquitectura del sistema, facilitando su revisión técnica y sirviendo de base para las siguientes entregas del proyecto. |
+## Criterio específico 1
+
+### Comunica oralmente con efectividad a diferentes rangos de audiencia
+
+| Integrante | Entrega | Acciones realizadas | Conclusiones |
+|---|---|---|---|
+| Rolando Andre Torres Diaz | AV1 | Participé en las reuniones del equipo aportando ideas y explicando los avances de las partes que desarrollé en EcoTrack, principalmente relacionadas con las User Stories, Product Backlog e Impact Mapping. También preparé estos temas para poder explicarlos de manera clara durante la exposición del proyecto. | Durante el AV1 pude mejorar la forma en que explico mis ideas y los avances realizados, utilizando un lenguaje más claro y ordenado para que mis compañeros y el docente puedan comprender el trabajo desarrollado. |
+| Lacuta Lima, Alex Rodrigo | AV1 | Participé en las reuniones del equipo explicando las decisiones relacionadas con la arquitectura de EcoTrack, incluyendo el Event Storming, los diagramas de Context, Containers y Components, así como los Class Diagrams y Database Diagrams. También coordiné con los demás integrantes para que la arquitectura propuesta mantuviera relación con los requisitos y funcionalidades del producto. | Durante el AV1 fortalecí mi capacidad para explicar conceptos técnicos de arquitectura y diseño de software de manera comprensible, relacionando los diferentes diagramas con el funcionamiento general de EcoTrack y adaptando mis explicaciones al contexto de las reuniones del equipo. |
+| Espinoza Flores, Aaron André | AV1 | Participé en las reuniones y coordinaciones del equipo explicando los resultados obtenidos durante el análisis de competidores, las entrevistas realizadas a los segmentos objetivo y los principales hallazgos obtenidos mediante las técnicas de Needfinding. También comuniqué las necesidades y problemas identificados para que pudieran ser considerados en la definición de EcoTrack. | Durante el AV1 mejoré mi capacidad para comunicar resultados de investigación y análisis de usuarios, explicando de forma más ordenada los hallazgos obtenidos y su relación con las necesidades de los segmentos objetivo y la propuesta de valor de EcoTrack. |
+| Payesa Torres, Harrison Hubert | AV1 | Participé en las reuniones y discusiones del equipo relacionadas con el funcionamiento y objetivo de EcoTrack, aportando ideas sobre la estructura y comportamiento de la Web Application. También expliqué las decisiones tomadas para el diseño de las interfaces y los diferentes flujos de interacción desarrollados en Figma. | Durante el AV1 fortalecí mi capacidad para comunicar ideas de diseño y explicar de manera clara las decisiones relacionadas con el funcionamiento de la aplicación, adaptando la explicación según los integrantes y el contexto de la discusión. |
+| Tello Murga, Javier Oswaldo | AV1 | Lideré gran parte de las reuniones de coordinación de la primera entrega, organizando los avances del equipo y explicando las decisiones relacionadas con la propuesta de EcoTrack, el alcance del producto, la estructura del reporte y la implementación del Landing Page. También comuniqué los avances del Sprint 1, el proceso de integración mediante GitHub y el despliegue de la primera versión del Landing Page. | Durante el AV1 fortalecí mi capacidad de liderazgo y comunicación oral al coordinar el trabajo de los integrantes, explicar decisiones funcionales y técnicas y comunicar los avances del proyecto de forma clara. Esto me permitió adaptar la información según se tratara de coordinación interna, revisión del producto o preparación para la exposición frente al docente. |
+
+---
+
+## Criterio específico 2
+
+### Comunica por escrito con efectividad a diferentes rangos de audiencia
+
+| Integrante | Entrega | Acciones realizadas | Conclusiones |
+|---|---|---|---|
+| Rolando Andre Torres Diaz | AV1 | Participé en la redacción y actualización de diferentes partes del Project Report de EcoTrack, principalmente en las User Stories, Epics, Product Backlog, Requirements Specification, bibliografía e Impact Mapping. También organicé la información en Markdown y registré los avances realizados mediante commits en GitHub. | Durante el AV1 pude mejorar mi forma de redactar y organizar la información del proyecto, procurando que las ideas sean claras, mantengan un orden adecuado y tengan relación con los demás artefactos desarrollados en EcoTrack. |
+| Lacuta Lima, Alex Rodrigo | AV1 | Participé en la documentación del diseño técnico y arquitectura de EcoTrack, desarrollando las secciones correspondientes al Design-Level Event Storming, Software Architecture Context Diagram, Container Diagrams, Components Diagrams, Class Diagrams y Database Diagrams. También redacté las explicaciones necesarias para relacionar estos artefactos con los componentes y responsabilidades de la solución. | Durante el AV1 fortalecí mi capacidad para comunicar por escrito decisiones técnicas y arquitectónicas, procurando que los diagramas y sus explicaciones mantengan consistencia entre sí y permitan comprender de manera progresiva la estructura propuesta para EcoTrack. |
+| Espinoza Flores, Aaron André | AV1 | Participé en la elaboración del Capítulo II del Project Report, documentando el análisis competitivo, las estrategias frente a competidores, el diseño y registro de entrevistas, el análisis de los resultados y los artefactos de Needfinding. Asimismo, desarrollé User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language. | Durante el AV1 mejoré mi capacidad para organizar y comunicar por escrito información obtenida de investigación y entrevistas, transformando los hallazgos de los usuarios en artefactos claros que permiten comprender mejor sus necesidades y relacionarlas con el desarrollo de EcoTrack. |
+| Payesa Torres, Harrison Hubert | AV1 | Participé en la documentación del diseño de la Web Application de EcoTrack, desarrollando en Figma los Mock-ups, Wireframes, User Flow Diagrams y el prototipo de las principales funcionalidades. También contribuí a documentar estos avances en el Project Report y a mantener una organización consistente de las interfaces y sus respectivos flujos. | Durante el AV1 mejoré mi capacidad para comunicar por escrito las decisiones de diseño y funcionamiento de la aplicación, organizando la información de manera clara y coherente con los diferentes artefactos desarrollados para EcoTrack. |
+| Tello Murga, Javier Oswaldo | AV1 | Participé en la redacción, revisión e integración de diferentes secciones del Project Report, incluyendo Student Outcome, Capítulo I, Style Guidelines, Information Architecture y el Capítulo V. Asimismo, documenté el proceso de implementación del Sprint 1, las herramientas y convenciones de desarrollo, los commits realizados, las evidencias de ejecución, colaboración y despliegue del Landing Page. También realicé revisiones para mantener consistencia entre el alcance de EcoTrack, las User Stories, el diseño y la implementación. | Durante el AV1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión de manera estructurada. La elaboración e integración de diferentes capítulos me permitió mejorar la coherencia entre los artefactos del proyecto y presentar evidencias claras sobre el proceso seguido por el equipo desde la definición del producto hasta la implementación y despliegue de su primera versión. |
 ---
 
 # Capítulo I: Introducción
@@ -276,6 +293,72 @@ Además, la plataforma busca facilitar el trabajo relacionado con estándares co
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
+A continuación, se presentan los perfiles de los integrantes del equipo Horizon, destacando su formación académica, conocimientos y participación dentro del desarrollo del proyecto.
+
+---
+
+#### Rolando Andre Torres Diaz
+
+<p align="center">
+  <img src="assets/chapter-01/team/rolando-torres.jpg" alt="Rolando Andre Torres Diaz" width="180"/>
+</p>
+
+**Código UPC:** [Código del estudiante]  
+**Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
+
+---
+
+#### Lacuta Lima, Alex Rodrigo
+
+<p align="center">
+  <img src="assets/chapter-01/team/alex-lacuta.jpg" alt="Alex Rodrigo Lacuta Lima" width="180"/>
+</p>
+
+**Código UPC:** [Código del estudiante]  
+**Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
+
+---
+
+#### Espinoza Flores, Aaron André
+
+<p align="center">
+  <img src="assets/chapter-01/team/aaron_team.jpg" alt="Aaron André Espinoza Flores" width="180"/>
+</p>
+
+**Código UPC:** U202222859
+**Carrera:** Ingeniería de Software
+
+Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Me considero una persona responsable, perseverante y orientada al aprendizaje continuo. Tengo interés en el desarrollo de soluciones tecnológicas que permitan resolver problemas reales mediante el uso de software, metodologías ágiles y buenas prácticas de programación.
+
+---
+
+#### Payesa Torres, Harrison Hubert
+
+<p align="center">
+  <img src="assets/chapter-01/team/harrison-payesa.png" alt="Harrison Hubert Payesa Torres" width="180"/>
+</p>
+
+**Código UPC:** U202221024  
+**Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en desarrollo de software y desarrollo web, así como experiencia en el uso de Git y GitHub, Visual Studio Code, HTML, CSS y JavaScript a nivel intermedio. También posee conocimientos intermedios en Python y experiencia trabajando con SQL y C++. Durante el desarrollo del proyecto participará en actividades de diseño, documentación, desarrollo e integración de la Web Application y demás productos digitales del equipo.
+
+---
+
+#### Tello Murga, Javier Oswaldo
+
+<p align="center">
+  <img src="assets/chapter-01/team/javier-tello.jpg" alt="Javier Oswaldo Tello Murga" width="180"/>
+</p>
+
+**Código UPC:** U202218387  
+**Carrera:** Ingeniería de Software
+
+Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en desarrollo de software, desarrollo web, Git y GitHub, así como experiencia académica trabajando con diferentes tecnologías y herramientas. Durante el desarrollo del proyecto participará en actividades de documentación, diseño, desarrollo e integración de los productos digitales del equipo.
 
 ---
 
@@ -397,17 +480,15 @@ EcoTrack busca responder a esta problemática mediante una plataforma web orient
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-
 El estado actual de la gestión de emisiones de gases de efecto invernadero en empresas exportadoras, corporaciones y medianas empresas industriales se encuentra principalmente enfocado en el uso de hojas de cálculo, documentos independientes y procesos manuales para registrar, organizar y analizar información ambiental.
 
 Las soluciones y procesos utilizados actualmente no siempre permiten centralizar de manera sencilla la información proveniente de distintas áreas, automatizar los cálculos de emisiones, realizar seguimiento de objetivos ambientales y generar reportes desde un mismo entorno.
 
-EcoTrack busca cubrir esta necesidad mediante una plataforma web B2B que permita centralizar el registro de emisiones, realizar cálculos de huella de carbono, visualizar indicadores ambientales, establecer metas de reducción y generar reportes.
+EcoTrack busca cubrir esta necesidad mediante una plataforma web B2B que permita centralizar el registro de fuentes de emisión y datos de actividad, calcular la huella de carbono, visualizar indicadores ambientales, establecer metas y planes de reducción y generar reportes ambientales.
 
-Nuestro enfoque inicial estará dirigido a empresas exportadoras y a corporaciones y medianas empresas industriales que necesiten mejorar la forma en que gestionan su información ambiental.
+Nuestro enfoque inicial estará dirigido a empresas exportadoras y a corporaciones y medianas empresas industriales que necesiten mejorar la forma en que registran, consolidan, analizan y comunican su información ambiental.
 
-Sabremos que la propuesta está generando resultados cuando los usuarios pertenecientes a estos segmentos puedan registrar y consultar su información ambiental de manera centralizada, identificar sus principales fuentes de emisión y considerar útil el uso de EcoTrack para reducir el esfuerzo requerido en sus procesos actuales.
-
+Sabremos que la propuesta está generando resultados cuando, durante las validaciones con representantes de los segmentos objetivo, al menos el 80 % de los participantes pueda completar sin asistencia crítica el flujo principal de registrar información de emisiones, obtener un resultado de huella de carbono y consultar sus principales indicadores; y cuando al menos el 70 % pueda generar o localizar un reporte ambiental correspondiente a un periodo específico en un máximo de cinco minutos.
 #### 1.2.2.2. Lean UX Assumptions
 
 ##### Business Assumptions
@@ -420,12 +501,11 @@ Sabremos que la propuesta está generando resultados cuando los usuarios pertene
 
 ##### Business Outcome Assumptions
 
-- Creemos que EcoTrack puede incrementar la cantidad de empresas que utilizan herramientas digitales para gestionar su información ambiental.
-- Creemos que centralizar la información puede reducir el tiempo empleado por las empresas en organizar datos ambientales.
-- Creemos que la generación de reportes puede incrementar el uso recurrente de la plataforma.
-- Creemos que los dashboards y herramientas de seguimiento pueden favorecer la permanencia de los usuarios dentro del producto.
-- Creemos que una experiencia sencilla puede contribuir a aumentar la adopción de EcoTrack entre los segmentos objetivo.
-
+- Creemos que EcoTrack puede lograr que al menos el 70 % de las organizaciones que completen su registro realicen también su primer registro de información ambiental y su primer cálculo de huella de carbono durante su etapa inicial de uso.
+- Creemos que centralizar la información ambiental en EcoTrack puede reducir en al menos un 30 % el tiempo requerido para recopilar y organizar información proveniente de diferentes áreas, en comparación con el proceso manual utilizado previamente por la organización.
+- Creemos que la automatización del cálculo de huella de carbono puede reducir en al menos un 30 % el tiempo requerido para obtener resultados de emisiones a partir de los datos de actividad registrados.
+- Creemos que los dashboards, indicadores y herramientas de seguimiento pueden lograr que al menos el 60 % de las organizaciones activas consulten nuevamente su información ambiental dentro de un periodo de 30 días.
+- Creemos que la generación de reportes desde EcoTrack puede reducir en al menos un 40 % el tiempo requerido para preparar un reporte ambiental correspondiente a un periodo determinado, en comparación con la preparación manual mediante información distribuida.
 ##### User Assumptions
 
 - Creemos que los principales usuarios serán responsables de sostenibilidad, analistas ambientales, gerentes de operaciones y personal administrativo.
@@ -457,53 +537,53 @@ A partir de los Feature Assumptions identificados, se plantean los siguientes Hy
 
 ##### Hypothesis Statement 1
 
-We believe we will achieve **a reduction in the time companies spend organizing environmental information**
+We believe we will achieve at least a 30% reduction in the time required to organize environmental information
 
-If **sustainability managers, environmental analysts, operations managers and administrative staff**
+If sustainability managers, environmental analysts, operations managers and administrative staff
 
-Attain **a centralized and structured way to register their emissions information**
+Attain a centralized and structured way to register emission sources and activity data
 
-With **a feature for registering and classifying emission sources.**
+With a feature for registering and classifying emission sources and their associated activity data.
 
 ##### Hypothesis Statement 2
 
-We believe we will achieve **a reduction in the effort and potential errors associated with manual carbon footprint calculations**
+We believe we will achieve at least a 30% reduction in the time required to obtain carbon footprint results
 
-If **sustainability managers and environmental analysts**
+If sustainability managers and environmental analysts
 
-Attain **a simpler and more reliable way to obtain their carbon footprint results**
+Attain a more direct and structured way to calculate their organization's greenhouse gas emissions
 
-With **an automatic carbon footprint calculation feature.**
+With an automatic carbon footprint calculation feature based on activity data and emission factors.
 
 ##### Hypothesis Statement 3
 
-We believe we will achieve **greater recurrent use of EcoTrack for environmental information analysis**
+We believe at least 60% of active organizations will return to consult their environmental information within a 30-day period
 
-If **sustainability managers, environmental analysts and operations managers**
+If sustainability managers, environmental analysts and operations managers
 
-Attain **a clearer understanding of the organization's emissions and environmental indicators**
+Attain a clear and centralized understanding of the organization's emissions and environmental indicators
 
-With **an environmental indicators dashboard.**
+With an environmental indicators dashboard.
 
 ##### Hypothesis Statement 4
 
-We believe we will achieve **better follow-up of environmental objectives within organizations**
+We believe at least 60% of organizations that register an environmental goal will consult or update its progress during its reporting period
 
-If **sustainability managers and operations managers**
+If sustainability managers and operations managers
 
-Attain **greater control over their emission reduction objectives**
+Attain greater visibility and control over their emission reduction objectives
 
-With **a feature for registering and tracking environmental goals.**
+With features for environmental goals, reduction plans and progress tracking.
 
 ##### Hypothesis Statement 5
 
-We believe we will achieve **greater recurrent use of the platform for environmental reporting activities**
+We believe we will achieve at least a 40% reduction in the time required to prepare an environmental report
 
-If **sustainability managers, environmental analysts and administrative staff**
+If sustainability managers, environmental analysts and administrative staff
 
-Attain **an easier way to compile and communicate their environmental information**
+Attain a centralized way to compile and communicate environmental results for a selected period
 
-With **an environmental report generation feature.**
+With an environmental report generation feature.
 
 #### 1.2.2.4. Lean UX Canvas
 
@@ -546,7 +626,7 @@ EcoTrack busca ayudar a este segmento mediante una plataforma que permita centra
 
 Este segmento está compuesto por corporaciones y medianas empresas industriales que buscan controlar y reducir el impacto ambiental generado por sus operaciones.
 
-Como sustento del segmento, el Ministerio de Comercio Exterior y Turismo (MINCETUR) informó que entre enero y noviembre de 2025 el Perú registró 9,641 empresas exportadoras, de las cuales 6,702 correspondían a micro, pequeñas y medianas empresas. Asimismo, durante 2025 las exportaciones peruanas alcanzaron un récord histórico de US$ 90,082 millones. Estas cifras evidencian la existencia de una base empresarial exportadora relevante que debe gestionar información relacionada con sus procesos productivos y su desempeño frente a mercados internacionales.
+Como sustento estadístico de este segmento, el Instituto Nacional de Estadística e Informática (INEI), en el informe Perú: Estructura Empresarial, 2024, reportó 2,430 grandes y medianas empresas manufactureras a nivel nacional durante 2024. Asimismo, el 73.2 % de estas empresas se encontraba concentrado en el departamento de Lima. Estas cifras evidencian la presencia de un conjunto relevante de organizaciones manufactureras de mediana y gran escala cuyas operaciones pueden involucrar múltiples áreas, sedes, procesos productivos y fuentes de información que requieren ser gestionadas de manera estructurada.
 
 Estas organizaciones pueden producir emisiones provenientes del consumo de electricidad, combustibles, transporte, maquinaria, residuos y distintos procesos productivos. Debido a que la información puede provenir de diferentes áreas de la empresa, uno de sus principales problemas es mantener los datos organizados y actualizados.
 
@@ -908,66 +988,71 @@ El Ubiquitous Language define términos del dominio ambiental que serán utiliza
 
 En esta sección se presentan las User Stories y Technical Stories identificadas para EcoTrack a partir de las necesidades de los segmentos objetivo y del alcance funcional definido para la solución. Cada User Story describe una necesidad desde la perspectiva de un actor e incluye criterios de aceptación redactados mediante la estructura Given-When-Then.
 
-| Epic / Story ID | Título                                                 | Descripción                                                                                                                                                                         | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                           | Relacionado con (Epic ID) |
-| --------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| US-01           | Conocer EcoTrack                                       | Como visitante, quiero conocer qué es EcoTrack y cuál es su propósito, para entender cómo puede ayudar a mi empresa con la gestión ambiental.                                       | **Escenario 1:** Given que el visitante accede al sitio de EcoTrack, When consulta la información principal del producto, Then se presenta el propósito de la plataforma y el problema que busca resolver.<br><br>**Escenario 2:** Given que el visitante desea conocer más sobre EcoTrack, When revisa la información disponible, Then puede identificar las principales características de la solución.                                                         | EP-01                     |
-| US-02           | Conocer los beneficios de EcoTrack                     | Como visitante, quiero conocer los principales beneficios de EcoTrack, para evaluar si la solución puede ser útil para mi empresa.                                                  | **Escenario 1:** Given que el visitante está interesado en EcoTrack, When consulta los beneficios del producto, Then se presenta información sobre cómo la plataforma ayuda a centralizar y analizar información ambiental.<br><br>**Escenario 2:** Given que el visitante pertenece a uno de los segmentos objetivo, When revisa los beneficios, Then puede identificar ventajas relacionadas con la gestión de emisiones y reportes.                            | EP-01                     |
-| US-03           | Conocer las funcionalidades principales                | Como visitante, quiero conocer las principales funcionalidades de EcoTrack, para saber qué herramientas ofrece la plataforma.                                                       | **Escenario 1:** Given que el visitante desea conocer las funciones de EcoTrack, When consulta la información del producto, Then puede identificar funcionalidades relacionadas con emisiones, cálculo de huella, indicadores, metas y reportes.<br><br>**Escenario 2:** Given que el visitante busca una solución para gestionar información ambiental, When revisa las funcionalidades, Then obtiene información sobre las capacidades principales de EcoTrack. | EP-01                     |
-| US-04           | Conocer los planes disponibles                         | Como visitante, quiero conocer los planes ofrecidos por EcoTrack, para identificar cuál se adapta mejor a las necesidades de mi empresa.                                            | **Escenario 1:** Given que el visitante desea conocer las opciones disponibles, When consulta los planes de EcoTrack, Then puede conocer las características principales de cada alternativa.<br><br>**Escenario 2:** Given que existen diferentes planes, When el visitante los compara, Then puede identificar sus principales diferencias.                                                                                                                     | EP-01                     |
-| US-05           | Contactar al equipo de EcoTrack                        | Como visitante, quiero enviar una consulta al equipo de EcoTrack, para solicitar más información sobre el producto.                                                                 | **Escenario 1:** Given que el visitante desea contactar al equipo, When proporciona información válida y envía su consulta, Then la solicitud queda registrada.<br><br>**Escenario 2:** Given que falta información obligatoria, When el visitante intenta enviar la consulta, Then la solicitud no se registra hasta completar los datos requeridos.                                                                                                             | EP-01                     |
-| US-06           | Registrar una empresa                                  | Como representante de una empresa, quiero registrar mi organización en EcoTrack, para comenzar a gestionar su información ambiental.                                                | **Escenario 1:** Given que la empresa todavía no se encuentra registrada, When el usuario proporciona los datos requeridos, Then la organización queda registrada en EcoTrack.<br><br>**Escenario 2:** Given que existen datos obligatorios sin completar, When el usuario intenta registrar la empresa, Then el registro no se completa.                                                                                                                         | EP-02                     |
-| US-07           | Iniciar sesión                                         | Como usuario registrado, quiero iniciar sesión en EcoTrack, para acceder a la información de mi empresa.                                                                            | **Escenario 1:** Given que el usuario posee credenciales válidas, When inicia sesión, Then obtiene acceso a las funciones correspondientes a su cuenta.<br><br>**Escenario 2:** Given que las credenciales no son válidas, When el usuario intenta iniciar sesión, Then el acceso es rechazado.                                                                                                                                                                   | EP-02                     |
-| US-08           | Recuperar contraseña                                   | Como usuario registrado, quiero recuperar el acceso a mi cuenta si olvido mi contraseña, para poder continuar utilizando EcoTrack.                                                  | **Escenario 1:** Given que el usuario posee una cuenta registrada, When solicita recuperar su contraseña utilizando un correo válido, Then recibe las indicaciones necesarias para recuperar el acceso.<br><br>**Escenario 2:** Given que el correo no corresponde a una cuenta registrada, When solicita la recuperación, Then el sistema informa que no puede continuar con el proceso.                                                                         | EP-02                     |
-| US-09           | Consultar perfil de la empresa                         | Como usuario de EcoTrack, quiero consultar los datos de mi empresa, para verificar que la información registrada sea correcta.                                                      | **Escenario 1:** Given que el usuario pertenece a una empresa registrada, When consulta el perfil de la organización, Then obtiene sus datos registrados.<br><br>**Escenario 2:** Given que la empresa cuenta con información registrada, When el usuario consulta su perfil, Then los datos corresponden a la organización asociada a su cuenta.                                                                                                                 | EP-02                     |
-| US-10           | Actualizar datos de la empresa                         | Como usuario autorizado, quiero actualizar los datos de mi empresa, para mantener su información al día.                                                                            | **Escenario 1:** Given que el usuario cuenta con permisos para modificar la información, When actualiza datos válidos, Then los cambios quedan registrados.<br><br>**Escenario 2:** Given que existen datos obligatorios inválidos, When intenta guardar los cambios, Then la información anterior se mantiene hasta corregirlos.                                                                                                                                 | EP-02                     |
-| US-11           | Registrar una fuente de emisión                        | Como analista ambiental, quiero registrar una fuente de emisión, para llevar un control de las actividades que generan emisiones en la empresa.                                     | **Escenario 1:** Given que el analista cuenta con información de una actividad generadora de emisiones, When registra los datos requeridos, Then la fuente queda almacenada.<br><br>**Escenario 2:** Given que faltan datos obligatorios, When intenta registrar la fuente, Then el registro no se completa.                                                                                                                                                      | EP-03                     |
-| US-12           | Clasificar una emisión por alcance                     | Como analista ambiental, quiero clasificar una emisión como Alcance 1, 2 o 3, para organizar correctamente la información ambiental.                                                | **Escenario 1:** Given que existe una fuente de emisión, When el analista selecciona su alcance correspondiente, Then la emisión queda asociada a dicha clasificación.<br><br>**Escenario 2:** Given que una emisión no posee alcance definido, When se intenta completar su registro, Then se solicita una clasificación válida.                                                                                                                                 | EP-03                     |
-| US-13           | Consultar historial de emisiones                       | Como responsable de sostenibilidad, quiero consultar el historial de emisiones registradas, para revisar la información ambiental de la empresa a lo largo del tiempo.              | **Escenario 1:** Given que existen emisiones registradas, When el usuario consulta el historial, Then obtiene los registros disponibles de la empresa.<br><br>**Escenario 2:** Given que no existen emisiones registradas, When el usuario consulta el historial, Then se informa que todavía no existen registros.                                                                                                                                               | EP-03                     |
-| US-14           | Editar una emisión                                     | Como analista ambiental, quiero modificar una emisión registrada, para corregir información incorrecta o desactualizada.                                                            | **Escenario 1:** Given que existe una emisión registrada, When el analista modifica sus datos con valores válidos, Then la información queda actualizada.<br><br>**Escenario 2:** Given que los nuevos datos no son válidos, When intenta guardar los cambios, Then la información anterior se mantiene.                                                                                                                                                          | EP-03                     |
-| US-15           | Eliminar una emisión                                   | Como analista ambiental, quiero eliminar una emisión incorrecta, para evitar que información no válida afecte los resultados ambientales.                                           | **Escenario 1:** Given que existe una emisión registrada, When el analista confirma su eliminación, Then la emisión deja de formar parte de los registros activos.<br><br>**Escenario 2:** Given que el analista no confirma la eliminación, When cancela la operación, Then la emisión permanece registrada.                                                                                                                                                     | EP-03                     |
-| US-16           | Visualizar total de emisiones                          | Como responsable de sostenibilidad, quiero conocer el total de emisiones registradas, para tener una visión general del impacto ambiental de la empresa.                            | **Escenario 1:** Given que existen emisiones registradas, When el usuario consulta el resumen ambiental, Then obtiene el total correspondiente.<br><br>**Escenario 2:** Given que se registra nueva información ambiental, When se actualizan los indicadores, Then el total considera los registros disponibles.                                                                                                                                                 | EP-06                     |
-| US-17           | Visualizar emisiones por alcance                       | Como responsable de sostenibilidad, quiero conocer las emisiones correspondientes a cada alcance, para identificar qué categoría tiene mayor impacto.                               | **Escenario 1:** Given que existen emisiones clasificadas, When el usuario consulta la distribución por alcance, Then obtiene los resultados correspondientes a los Alcances 1, 2 y 3.<br><br>**Escenario 2:** Given que un alcance no posee registros, When se consulta la distribución, Then se indica que no existen emisiones registradas para dicho alcance.                                                                                                 | EP-06                     |
-| US-18           | Buscar una emisión                                     | Como usuario de EcoTrack, quiero buscar una emisión registrada, para encontrar información específica rápidamente.                                                                  | **Escenario 1:** Given que existe una emisión relacionada con el término buscado, When el usuario realiza una búsqueda, Then obtiene los registros coincidentes.<br><br>**Escenario 2:** Given que no existe una coincidencia, When realiza la búsqueda, Then se informa que no existen resultados relacionados.                                                                                                                                                  | EP-03                     |
-| US-19           | Filtrar emisiones por alcance                          | Como responsable de sostenibilidad, quiero filtrar las emisiones según su alcance, para analizar cada categoría por separado.                                                       | **Escenario 1:** Given que existen emisiones de diferentes alcances, When el usuario selecciona un alcance, Then obtiene únicamente las emisiones correspondientes.<br><br>**Escenario 2:** Given que existe un filtro aplicado, When el usuario solicita consultar todas las emisiones, Then obtiene nuevamente el conjunto completo de registros.                                                                                                               | EP-03                     |
-| US-20           | Comparar emisiones por periodo                         | Como responsable de sostenibilidad, quiero comparar las emisiones entre diferentes periodos, para conocer cómo ha cambiado el desempeño ambiental de la empresa.                    | **Escenario 1:** Given que existen registros de diferentes periodos, When el usuario selecciona dos periodos para comparar, Then obtiene los resultados correspondientes a ambos.<br><br>**Escenario 2:** Given que un periodo no posee información suficiente, When se realiza la comparación, Then se informa la falta de datos para dicho periodo.                                                                                                             | EP-06                     |
-| US-21           | Registrar una meta ambiental                           | Como responsable de sostenibilidad, quiero registrar una meta de reducción de emisiones, para establecer un objetivo ambiental para la empresa.                                     | **Escenario 1:** Given que el usuario desea establecer una meta, When registra un objetivo y una fecha válida, Then la meta queda registrada.<br><br>**Escenario 2:** Given que los datos de la meta están incompletos, When intenta registrarla, Then el registro no se completa.                                                                                                                                                                                | EP-05                     |
-| US-22           | Consultar metas ambientales                            | Como responsable de sostenibilidad, quiero consultar las metas ambientales de la empresa, para conocer los objetivos establecidos.                                                  | **Escenario 1:** Given que existen metas registradas, When el usuario consulta las metas ambientales, Then obtiene sus principales datos y estado.<br><br>**Escenario 2:** Given que no existen metas registradas, When realiza la consulta, Then se informa que todavía no existen objetivos definidos.                                                                                                                                                          | EP-05                     |
-| US-23           | Editar una meta ambiental                              | Como responsable de sostenibilidad, quiero modificar una meta ambiental, para mantener sus objetivos actualizados.                                                                  | **Escenario 1:** Given que existe una meta registrada, When el usuario modifica sus datos con información válida, Then la meta queda actualizada.<br><br>**Escenario 2:** Given que los nuevos datos no son válidos, When intenta guardar los cambios, Then la información anterior se conserva.                                                                                                                                                                  | EP-05                     |
-| US-24           | Actualizar estado de una meta                          | Como responsable de sostenibilidad, quiero actualizar el estado de una meta, para indicar si continúa pendiente o ya fue completada.                                                | **Escenario 1:** Given que existe una meta activa, When el usuario registra que fue alcanzada, Then la meta queda identificada como completada.<br><br>**Escenario 2:** Given que una meta continúa en desarrollo, When el usuario consulta su estado, Then permanece registrada como activa.                                                                                                                                                                     | EP-05                     |
-| US-25           | Eliminar una meta                                      | Como responsable de sostenibilidad, quiero eliminar una meta que ya no sea necesaria, para mantener actualizados los objetivos ambientales.                                         | **Escenario 1:** Given que existe una meta registrada, When el usuario confirma su eliminación, Then la meta deja de formar parte de los objetivos activos.<br><br>**Escenario 2:** Given que el usuario cancela la eliminación, When finaliza la operación, Then la meta permanece registrada.                                                                                                                                                                   | EP-05                     |
-| US-26           | Consultar resumen ambiental                            | Como responsable de sostenibilidad, quiero consultar un resumen de la información ambiental, para conocer los principales resultados de la empresa en un solo lugar.                | **Escenario 1:** Given que existen datos ambientales registrados, When el usuario solicita el resumen, Then obtiene información sobre emisiones, cálculos y metas ambientales.<br><br>**Escenario 2:** Given que se actualizan los registros ambientales, When se consulta nuevamente el resumen, Then los resultados consideran los datos actualizados.                                                                                                          | EP-06                     |
-| US-27           | Generar reporte ambiental                              | Como responsable de sostenibilidad, quiero generar un reporte ambiental, para reunir los principales resultados de la empresa.                                                      | **Escenario 1:** Given que existen datos ambientales registrados, When el usuario solicita generar un reporte, Then se crea un reporte con la información correspondiente.<br><br>**Escenario 2:** Given que no existe información suficiente, When intenta generar el reporte, Then se informa que faltan datos para completar el documento.                                                                                                                     | EP-06                     |
-| US-28           | Descargar reporte ambiental                            | Como responsable de sostenibilidad, quiero descargar un reporte generado, para conservarlo o compartirlo con otras personas de la organización.                                     | **Escenario 1:** Given que existe un reporte generado, When el usuario solicita su descarga, Then obtiene el documento correspondiente.<br><br>**Escenario 2:** Given que todavía no existe un reporte generado, When intenta descargarlo, Then se informa que primero debe existir un reporte disponible.                                                                                                                                                        | EP-06                     |
-| US-29           | Generar reporte por periodo                            | Como responsable de sostenibilidad, quiero generar un reporte correspondiente a un periodo específico, para analizar los resultados ambientales de ese intervalo.                   | **Escenario 1:** Given que existen datos dentro del periodo seleccionado, When el usuario genera el reporte, Then el documento considera únicamente la información correspondiente a dicho periodo.<br><br>**Escenario 2:** Given que el periodo seleccionado no contiene registros, When se solicita el reporte, Then se informa que no existen datos disponibles para ese intervalo.                                                                            | EP-06                     |
-| US-30           | Consultar reportes anteriores                          | Como responsable de sostenibilidad, quiero consultar los reportes generados anteriormente, para revisar información ambiental de periodos anteriores.                               | **Escenario 1:** Given que existen reportes generados previamente, When el usuario consulta el historial, Then obtiene los reportes disponibles.<br><br>**Escenario 2:** Given que todavía no existen reportes anteriores, When consulta el historial, Then se informa que no existen documentos registrados.                                                                                                                                                     | EP-06                     |
-| US-31           | Gestionar usuarios de la organización                  | Como administrador, quiero gestionar los usuarios de mi organización, para controlar quiénes pueden acceder a EcoTrack.                                                             | **Escenario 1:** Given que el administrador pertenece a una organización registrada, When registra un nuevo usuario con datos válidos, Then el usuario queda asociado a la organización.<br><br>**Escenario 2:** Given que los datos obligatorios no son válidos, When intenta registrar al usuario, Then el registro no se completa.                                                                                                                             | EP-02                     |
-| US-32           | Gestionar sedes                                        | Como administrador, quiero registrar y consultar las sedes de mi organización, para organizar la información ambiental según su ubicación.                                          | **Escenario 1:** Given que el administrador cuenta con los datos de una sede, When registra información válida, Then la sede queda asociada a la organización.<br><br>**Escenario 2:** Given que existen sedes registradas, When consulta las sedes de la organización, Then obtiene la información correspondiente.                                                                                                                                              | EP-02                     |
-| US-33           | Gestionar roles y permisos                             | Como administrador, quiero asignar roles y permisos a los usuarios, para controlar las acciones que pueden realizar dentro de EcoTrack.                                             | **Escenario 1:** Given que existe un usuario registrado, When el administrador le asigna un rol válido, Then el usuario obtiene los permisos correspondientes.<br><br>**Escenario 2:** Given que se modifica el rol de un usuario, When se guardan los cambios, Then sus permisos se actualizan según el nuevo rol.                                                                                                                                               | EP-02                     |
-| US-34           | Calcular huella de carbono                             | Como analista ambiental, quiero calcular automáticamente la huella de carbono utilizando los datos registrados, para obtener los resultados de emisiones de la organización.        | **Escenario 1:** Given que existen registros de emisiones con información válida, When el analista solicita el cálculo, Then se calculan las emisiones utilizando los factores de emisión correspondientes.<br><br>**Escenario 2:** Given que no existe información suficiente para realizar el cálculo, When el analista solicita calcular la huella de carbono, Then se informa que faltan datos necesarios.                                                    | EP-04                     |
-| US-35           | Consultar resultados por alcance                       | Como analista ambiental, quiero consultar los resultados del cálculo por alcance, para conocer la contribución de los Alcances 1, 2 y 3 a la huella de carbono.                     | **Escenario 1:** Given que existen cálculos realizados, When el usuario consulta los resultados por alcance, Then obtiene los resultados correspondientes a cada alcance.<br><br>**Escenario 2:** Given que un alcance no posee información disponible, When consulta los resultados, Then se indica que no existen datos para dicho alcance.                                                                                                                     | EP-04                     |
-| US-36           | Consultar resultados por periodo                       | Como responsable de sostenibilidad, quiero consultar los resultados de huella de carbono correspondientes a un periodo, para analizar el desempeño ambiental de la organización.    | **Escenario 1:** Given que existen cálculos para diferentes periodos, When el usuario selecciona un periodo, Then obtiene los resultados correspondientes.<br><br>**Escenario 2:** Given que el periodo seleccionado no posee cálculos registrados, When realiza la consulta, Then se informa que no existen resultados disponibles.                                                                                                                              | EP-04                     |
-| US-37           | Consultar historial de cálculos                        | Como analista ambiental, quiero consultar el historial de cálculos de huella de carbono, para revisar los resultados obtenidos anteriormente.                                       | **Escenario 1:** Given que existen cálculos realizados previamente, When el usuario consulta el historial, Then obtiene los cálculos disponibles por periodo.<br><br>**Escenario 2:** Given que todavía no existen cálculos registrados, When consulta el historial, Then se informa que no existen resultados anteriores.                                                                                                                                        | EP-04                     |
-| US-38           | Crear un plan de reducción                             | Como responsable de sostenibilidad, quiero crear un plan de reducción de emisiones, para definir las acciones que permitan alcanzar los objetivos ambientales de la organización.   | **Escenario 1:** Given que existe una meta ambiental registrada, When el usuario registra un plan de reducción con información válida, Then el plan queda asociado a la meta correspondiente.<br><br>**Escenario 2:** Given que faltan datos obligatorios, When intenta registrar el plan, Then el registro no se completa.                                                                                                                                       | EP-05                     |
-| US-39           | Registrar una iniciativa ambiental                     | Como responsable de sostenibilidad, quiero registrar iniciativas ambientales dentro de un plan de reducción, para llevar un control de las acciones realizadas por la organización. | **Escenario 1:** Given que existe un plan de reducción, When el usuario registra una iniciativa válida, Then la iniciativa queda asociada al plan.<br><br>**Escenario 2:** Given que los datos están incompletos, When intenta registrar la iniciativa, Then el registro no se completa.                                                                                                                                                                          | EP-05                     |
-| US-40           | Consultar progreso de objetivos                        | Como responsable de sostenibilidad, quiero consultar el progreso de las metas y planes de reducción, para evaluar el cumplimiento de los objetivos ambientales.                     | **Escenario 1:** Given que existen metas y planes registrados, When el usuario consulta su progreso, Then obtiene información sobre su estado y avance.<br><br>**Escenario 2:** Given que todavía no existen datos de seguimiento, When consulta el progreso, Then se informa que no existe información disponible.                                                                                                                                               | EP-05                     |
-| US-41           | Importar emisiones mediante CSV                        | Como analista ambiental, quiero importar registros de emisiones mediante un archivo CSV, para registrar grandes cantidades de información sin ingresarlas manualmente.              | **Escenario 1:** Given que el usuario dispone de un archivo CSV con el formato válido, When realiza la importación, Then los registros válidos quedan almacenados en EcoTrack.<br><br>**Escenario 2:** Given que el archivo contiene información inválida o no cumple con el formato requerido, When intenta importarlo, Then se informan los errores encontrados y los registros inválidos no son importados.                                                    | EP-03                     |
-| TS-01           | Registrar emisión mediante EcoTrack API                | Como Developer, quiero enviar registros de emisiones mediante la EcoTrack API, para integrar sistemas empresariales externos con EcoTrack.                                          | **Escenario 1:** Given que el cliente posee credenciales válidas y envía información válida, When realiza una solicitud de registro de emisiones, Then la API registra la información y devuelve una respuesta exitosa.<br><br>**Escenario 2:** Given que la solicitud contiene información inválida, When la API procesa la solicitud, Then devuelve una respuesta indicando los errores encontrados.                                                            | EP-03                     |
-| TS-02           | Consultar emisiones mediante EcoTrack API              | Como Developer, quiero consultar registros de emisiones mediante la EcoTrack API, para utilizar la información ambiental de EcoTrack desde otros sistemas.                          | **Escenario 1:** Given que existen emisiones registradas y el cliente posee autorización válida, When realiza una solicitud de consulta, Then la API devuelve los registros correspondientes.<br><br>**Escenario 2:** Given que el cliente no posee autorización válida, When realiza la solicitud, Then la API rechaza el acceso.                                                                                                                                | EP-03                     |
-| TS-03           | Consultar resultados de huella de carbono mediante API | Como Developer, quiero consultar resultados de huella de carbono mediante la EcoTrack API, para utilizar los resultados ambientales desde sistemas externos.                        | **Escenario 1:** Given que existen cálculos registrados y el cliente posee autorización válida, When solicita los resultados correspondientes, Then la API devuelve la información disponible.<br><br>**Escenario 2:** Given que no existen resultados para los criterios enviados, When se realiza la consulta, Then la API devuelve una respuesta indicando que no existen datos disponibles.                                                                   | EP-04                     |
-
+| Epic / Story ID | Título                                                 | Descripción                                                                                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Relacionado con (Epic ID) |
+|-----------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| US-01           | Conocer EcoTrack                                       | Como visitante, quiero conocer qué es EcoTrack y cuál es su propósito, para entender cómo puede ayudar a mi empresa con la gestión ambiental.                                                                                          | **Escenario 1:** Given que el visitante accede a la información principal de EcoTrack, When consulta la descripción del producto, Then se presenta a EcoTrack como una plataforma web B2B orientada a centralizar la gestión de emisiones y huella de carbono empresarial y se describe la problemática que busca atender.<br><br>**Escenario 2:** Given que el visitante revisa la propuesta de EcoTrack, When consulta sus capacidades principales, Then se presentan como mínimo la gestión de emisiones, el cálculo de huella de carbono, las metas y planes de reducción y la analítica y generación de reportes.                                                                                     | EP-01                     |
+| US-02           | Conocer los beneficios de EcoTrack                     | Como visitante, quiero conocer los principales beneficios de EcoTrack, para evaluar si la solución puede ser útil para mi empresa.                                                                                                     | **Escenario 1:** Given que el visitante consulta los beneficios de EcoTrack, When revisa la información del producto, Then se presentan beneficios relacionados con la centralización de información ambiental, reducción del trabajo manual y consulta y análisis de resultados.<br><br>**Escenario 2:** Given que el visitante revisa la sección de beneficios, When consulta la información disponible, Then se presentan beneficios vinculados con gestión de emisiones, trazabilidad de información ambiental y generación de reportes.                                                                                                                                                               | EP-01                     |
+| US-03           | Conocer las funcionalidades principales                | Como visitante, quiero conocer las principales funcionalidades de EcoTrack, para saber qué herramientas ofrece la plataforma.                                                                                                          | **Escenario 1:** Given que el visitante consulta las funcionalidades de EcoTrack, When revisa las capacidades del producto, Then se presentan funcionalidades relacionadas con gestión organizacional, gestión de emisiones, cálculo de huella de carbono, metas y planes de reducción y analítica y reportes.<br><br>**Escenario 2:** Given que una funcionalidad es presentada en el Landing Page, When el visitante consulta su información, Then se muestra su nombre y una descripción de su propósito dentro de EcoTrack.                                                                                                                                                                            | EP-01                     |
+| US-04           | Conocer los planes disponibles                         | Como visitante, quiero conocer los planes ofrecidos por EcoTrack, para identificar cuál se adapta mejor a las necesidades de mi empresa.                                                                                               | **Escenario 1:** Given que existen planes comerciales definidos para EcoTrack, When el visitante consulta los planes disponibles, Then se presentan el nombre, precio, capacidades incluidas y límites principales de cada plan.<br><br>**Escenario 2:** Given que existen dos o más planes disponibles, When el visitante revisa sus características, Then se muestran las diferencias de capacidades y límites entre las alternativas disponibles.                                                                                                                                                                                                                                                       | EP-01                     |
+| US-05           | Contactar al equipo de EcoTrack                        | Como visitante, quiero enviar una consulta al equipo de EcoTrack, para solicitar más información sobre el producto.                                                                                                                    | **Escenario 1:** Given que el visitante proporciona los datos obligatorios con valores válidos, When envía su consulta, Then la solicitud es aceptada y se informa que fue recibida correctamente.<br><br>**Escenario 2:** Given que uno o más datos obligatorios son inválidos o están incompletos, When el visitante intenta enviar la consulta, Then la solicitud no es aceptada y se identifican los datos que requieren corrección.                                                                                                                                                                                                                                                                   | EP-01                     |
+| US-06           | Registrar una empresa                                  | Como representante de una empresa, quiero registrar mi organización en EcoTrack, para comenzar a gestionar su información ambiental.                                                                                                   | **Escenario 1:** Given que el usuario posee una cuenta válida y su organización todavía no se encuentra registrada, When proporciona los datos obligatorios de la organización con valores válidos, Then la organización queda registrada y asociada a su cuenta.<br><br>**Escenario 2:** Given que existen datos obligatorios incompletos o inválidos, When el usuario intenta registrar la organización, Then el registro no se completa y se informa que la información debe ser corregida.                                                                                                                                                                                                             | EP-02                     |
+| US-07           | Iniciar sesión                                         | Como usuario registrado, quiero iniciar sesión en EcoTrack, para acceder a la información y funcionalidades correspondientes a mi organización.                                                                                        | **Escenario 1:** Given que el usuario posee una cuenta registrada y credenciales válidas, When solicita autenticarse en EcoTrack, Then se establece una sesión válida asociada a su cuenta y organización.<br><br>**Escenario 2:** Given que las credenciales proporcionadas no son válidas, When el usuario intenta autenticarse, Then no se establece una sesión y el acceso es rechazado.                                                                                                                                                                                                                                                                                                               | EP-02                     |
+| US-08           | Recuperar contraseña                                   | Como usuario registrado, quiero recuperar el acceso a mi cuenta si olvido mi contraseña, para poder continuar utilizando EcoTrack.                                                                                                     | **Escenario 1:** Given que el correo proporcionado corresponde a una cuenta registrada, When el usuario solicita recuperar su contraseña, Then EcoTrack genera la solicitud de recuperación y solicita el envío de un correo mediante el servicio de correo configurado.<br><br>**Escenario 2:** Given que el correo proporcionado no corresponde a una cuenta registrada, When se solicita la recuperación de acceso, Then el proceso no genera una recuperación válida y se informa que la solicitud no puede continuar.                                                                                                                                                                                 | EP-02                     |
+| US-09           | Consultar perfil de la empresa                         | Como usuario de EcoTrack, quiero consultar los datos de mi organización, para verificar la información empresarial registrada.                                                                                                         | **Escenario 1:** Given que el usuario pertenece a una organización registrada, When consulta el perfil de su organización, Then obtiene la información registrada correspondiente a dicha organización.<br><br>**Escenario 2:** Given que los datos de la organización han sido actualizados previamente, When el usuario consulta nuevamente su perfil, Then se presenta la información vigente registrada para la organización.                                                                                                                                                                                                                                                                          | EP-02                     |
+| US-10           | Actualizar datos de la empresa                         | Como usuario autorizado, quiero actualizar los datos de mi organización, para mantener su información empresarial vigente.                                                                                                             | **Escenario 1:** Given que el usuario posee permisos para modificar la información de su organización, When registra cambios utilizando datos válidos, Then la información de la organización queda actualizada.<br><br>**Escenario 2:** Given que uno o más datos obligatorios son inválidos o están incompletos, When el usuario intenta guardar los cambios, Then la actualización no se realiza y se mantiene la información registrada anteriormente.                                                                                                                                                                                                                                                 | EP-02                     |
+| US-11           | Registrar una fuente de emisión                        | Como analista ambiental, quiero registrar una fuente de emisión, para identificar las actividades, procesos o recursos que generan emisiones dentro de la organización.                                                                | **Escenario 1:** Given que el analista dispone de la información requerida de una fuente de emisión, When registra sus datos con valores válidos, Then la fuente queda almacenada y asociada a la organización correspondiente.<br><br>**Escenario 2:** Given que uno o más datos obligatorios están incompletos o son inválidos, When el analista intenta registrar la fuente, Then el registro no se completa y se informa que la información debe ser corregida.                                                                                                                                                                                                                                        | EP-03                     |
+| US-12           | Clasificar una fuente de emisión por alcance           | Como analista ambiental, quiero clasificar una fuente de emisión como Alcance 1, 2 o 3, para organizar correctamente la información ambiental de la organización.                                                                      | **Escenario 1:** Given que existe una fuente de emisión registrada, When el analista asigna un alcance válido, Then la fuente queda asociada al Alcance 1, 2 o 3 seleccionado.<br><br>**Escenario 2:** Given que una fuente requiere una clasificación de alcance, When el analista intenta completar su registro sin seleccionar un alcance válido, Then el registro no se completa y se informa que la clasificación es obligatoria.                                                                                                                                                                                                                                                                     | EP-03                     |
+| US-13           | Consultar registros de emisiones                       | Como responsable de sostenibilidad, quiero consultar los registros ambientales de emisiones de mi organización, para revisar la información utilizada en la gestión y cálculo de la huella de carbono.                                 | **Escenario 1:** Given que existen fuentes y datos de actividad registrados, When el usuario consulta los registros de emisiones, Then obtiene la información correspondiente a su organización.<br><br>**Escenario 2:** Given que la organización todavía no posee registros de emisiones, When el usuario realiza la consulta, Then se informa que no existen registros disponibles.                                                                                                                                                                                                                                                                                                                     | EP-03                     |
+| US-14           | Editar un registro de emisión                          | Como analista ambiental, quiero modificar un registro de emisión, para corregir información ambiental incorrecta o desactualizada.                                                                                                     | **Escenario 1:** Given que existe un registro de emisión asociado a la organización, When el analista modifica sus datos utilizando valores válidos, Then la información queda actualizada.<br><br>**Escenario 2:** Given que uno o más valores modificados son inválidos, When el analista intenta guardar los cambios, Then la actualización no se realiza y se mantiene la información registrada anteriormente.                                                                                                                                                                                                                                                                                        | EP-03                     |
+| US-15           | Eliminar un registro de emisión                        | Como analista ambiental, quiero eliminar un registro de emisión incorrecto, para evitar que información no válida sea considerada en los procesos ambientales de la organización.                                                      | **Escenario 1:** Given que existe un registro de emisión y el usuario posee permisos para eliminarlo, When confirma la eliminación, Then el registro deja de formar parte de los registros activos de la organización.<br><br>**Escenario 2:** Given que el usuario inicia la eliminación de un registro, When cancela la operación, Then el registro permanece disponible sin modificaciones.                                                                                                                                                                                                                                                                                                             | EP-03                     |
+| US-16           | Visualizar el total de emisiones calculadas            | Como responsable de sostenibilidad, quiero visualizar el total de emisiones calculadas de mi organización, para conocer su huella de carbono dentro de un periodo determinado.                                                         | **Escenario 1:** Given que existen cálculos de emisiones para el periodo consultado, When el usuario accede al resumen ambiental, Then se presenta el total de emisiones correspondiente expresado en CO₂e.<br><br>**Escenario 2:** Given que no existen cálculos disponibles para el periodo consultado, When el usuario accede al resumen ambiental, Then se informa que no existen resultados disponibles para dicho periodo.                                                                                                                                                                                                                                                                           | EP-06                     |
+| US-17           | Visualizar emisiones calculadas por alcance            | Como responsable de sostenibilidad, quiero visualizar las emisiones calculadas por Alcance 1, 2 y 3, para conocer la contribución de cada alcance a la huella de carbono de la organización.                                           | **Escenario 1:** Given que existen resultados de cálculo clasificados por alcance, When el usuario consulta la distribución de emisiones, Then se presentan los resultados correspondientes a los Alcances 1, 2 y 3 expresados en CO₂e.<br><br>**Escenario 2:** Given que uno de los alcances no posee resultados para el periodo consultado, When se muestra la distribución, Then dicho alcance se presenta sin emisiones calculadas para ese periodo.                                                                                                                                                                                                                                                   | EP-06                     |
+| US-18           | Buscar registros de emisión                            | Como usuario de EcoTrack, quiero buscar registros de emisión, para localizar información ambiental específica dentro de mi organización.                                                                                               | **Escenario 1:** Given que existen registros que coinciden con el criterio de búsqueda, When el usuario realiza la búsqueda, Then obtiene únicamente los registros coincidentes pertenecientes a su organización.<br><br>**Escenario 2:** Given que ningún registro coincide con el criterio ingresado, When el usuario realiza la búsqueda, Then se informa que no existen resultados relacionados.                                                                                                                                                                                                                                                                                                       | EP-03                     |
+| US-19           | Filtrar registros de emisiones por alcance             | Como responsable de sostenibilidad, quiero filtrar los registros de emisiones según su alcance, para consultar por separado la información correspondiente a Alcance 1, 2 o 3.                                                         | **Escenario 1:** Given que existen registros asociados a diferentes alcances, When el usuario selecciona un alcance válido, Then obtiene únicamente los registros correspondientes al alcance seleccionado.<br><br>**Escenario 2:** Given que existe un filtro por alcance aplicado, When el usuario retira el filtro, Then vuelve a obtener el conjunto completo de registros disponibles.                                                                                                                                                                                                                                                                                                                | EP-03                     |
+| US-20           | Comparar emisiones entre periodos                      | Como responsable de sostenibilidad, quiero comparar los resultados de emisiones entre diferentes periodos, para analizar la variación del desempeño ambiental de la organización.                                                      | **Escenario 1:** Given que existen resultados de huella de carbono para dos periodos diferentes, When el usuario selecciona ambos periodos para realizar una comparación, Then EcoTrack presenta los resultados de cada periodo y su variación correspondiente.<br><br>**Escenario 2:** Given que uno de los periodos seleccionados no posee resultados calculados, When el usuario intenta realizar la comparación, Then se informa que no existen datos suficientes para completar la comparación.                                                                                                                                                                                                       | EP-06                     |
+| US-21           | Registrar una meta ambiental                           | Como responsable de sostenibilidad, quiero registrar una meta de reducción de emisiones, para establecer un objetivo ambiental medible para la organización.                                                                           | **Escenario 1:** Given que existen resultados ambientales disponibles para la organización, When el usuario registra una meta con un nombre, valor objetivo y fecha objetivo válidos, Then la meta queda almacenada como un objetivo ambiental activo.<br><br>**Escenario 2:** Given que uno o más datos obligatorios de la meta son inválidos o están incompletos, When el usuario intenta registrarla, Then la meta no se crea y se informa qué información debe ser corregida.                                                                                                                                                                                                                          | EP-05                     |
+| US-22           | Consultar metas ambientales                            | Como responsable de sostenibilidad, quiero consultar las metas ambientales de la organización, para revisar los objetivos de reducción establecidos y su estado.                                                                       | **Escenario 1:** Given que existen metas registradas, When el usuario consulta el módulo de metas, Then obtiene las metas correspondientes a su organización junto con su estado, valor objetivo y fecha objetivo.<br><br>**Escenario 2:** Given que la organización no posee metas registradas, When el usuario realiza la consulta, Then se informa que todavía no existen objetivos ambientales definidos.                                                                                                                                                                                                                                                                                              | EP-05                     |
+| US-23           | Editar una meta ambiental                              | Como responsable de sostenibilidad, quiero actualizar una meta ambiental, para mantener sus objetivos de reducción de acuerdo con las necesidades de la organización.                                                                  | **Escenario 1:** Given que existe una meta registrada, When el usuario modifica sus datos utilizando valores válidos, Then los cambios quedan almacenados en la meta correspondiente.<br><br>**Escenario 2:** Given que los nuevos datos contienen valores inválidos o incompletos, When el usuario intenta guardar la actualización, Then los cambios no se aplican y se conserva la información previamente registrada.                                                                                                                                                                                                                                                                                  | EP-05                     |
+| US-24           | Actualizar estado de una meta                          | Como responsable de sostenibilidad, quiero actualizar el estado de una meta ambiental, para reflejar su situación dentro del proceso de reducción de emisiones.                                                                        | **Escenario 1:** Given que existe una meta activa, When el usuario actualiza su estado utilizando una opción válida, Then la meta queda registrada con el nuevo estado.<br><br>**Escenario 2:** Given que el usuario intenta asignar un estado no permitido, When solicita guardar el cambio, Then el estado de la meta no se modifica.                                                                                                                                                                                                                                                                                                                                                                    | EP-05                     |
+| US-25           | Eliminar una meta                                      | Como responsable de sostenibilidad, quiero eliminar una meta ambiental que ya no deba mantenerse activa, para conservar actualizada la planificación ambiental de la organización.                                                     | **Escenario 1:** Given que existe una meta registrada y el usuario confirma su eliminación, When se procesa la solicitud, Then la meta deja de formar parte de las metas activas de la organización.<br><br>**Escenario 2:** Given que el usuario inicia la eliminación de una meta, When cancela la operación, Then la meta permanece registrada sin modificaciones.                                                                                                                                                                                                                                                                                                                                      | EP-05                     |
+| US-26           | Consultar resumen ambiental                            | Como responsable de sostenibilidad, quiero consultar un resumen de la información ambiental de la organización, para revisar los principales indicadores en un solo lugar.                                                             | **Escenario 1:** Given que existen resultados ambientales disponibles, When el usuario accede al resumen ambiental, Then se presentan como mínimo el total de emisiones calculadas, la distribución por alcance y las metas ambientales registradas.<br><br>**Escenario 2:** Given que todavía no existen resultados suficientes para uno o más indicadores, When el usuario consulta el resumen, Then se muestran únicamente los datos disponibles y se identifica la información que aún no posee resultados.                                                                                                                                                                                            | EP-06                     |
+| US-27           | Generar reporte ambiental consolidado                  | Como responsable de sostenibilidad, quiero generar un reporte ambiental consolidado, para reunir los principales resultados de emisiones y objetivos ambientales de la organización.                                                   | **Escenario 1:** Given que existen resultados ambientales disponibles, When el usuario solicita generar un reporte consolidado, Then EcoTrack genera un reporte que incluye la información ambiental disponible de la organización.<br><br>**Escenario 2:** Given que no existe información ambiental suficiente para generar el reporte, When el usuario realiza la solicitud, Then el reporte no se genera y se informa qué información requerida no se encuentra disponible.                                                                                                                                                                                                                            | EP-06                     |
+| US-28           | Descargar reporte ambiental                            | Como responsable de sostenibilidad, quiero descargar un reporte ambiental generado, para conservarlo o compartirlo fuera de EcoTrack.                                                                                                  | **Escenario 1:** Given que existe un reporte generado disponible, When el usuario solicita descargarlo, Then obtiene el archivo correspondiente en un formato exportable soportado por EcoTrack.<br><br>**Escenario 2:** Given que el reporte solicitado no se encuentra disponible, When el usuario intenta descargarlo, Then la descarga no se realiza y se informa que el documento no está disponible.                                                                                                                                                                                                                                                                                                 | EP-06                     |
+| US-29           | Generar reporte por periodo                            | Como responsable de sostenibilidad, quiero generar un reporte ambiental para un periodo específico, para analizar los resultados correspondientes únicamente a dicho intervalo.                                                        | **Escenario 1:** Given que existen resultados ambientales para el periodo seleccionado, When el usuario solicita generar el reporte, Then EcoTrack genera un documento que contiene únicamente la información correspondiente a ese periodo.<br><br>**Escenario 2:** Given que el periodo seleccionado no posee información ambiental suficiente, When el usuario solicita generar el reporte, Then el documento no se genera y se informa que no existen datos suficientes para dicho periodo.                                                                                                                                                                                                            | EP-06                     |
+| US-30           | Consultar reportes anteriores                          | Como responsable de sostenibilidad, quiero consultar los reportes ambientales generados anteriormente, para revisar documentos correspondientes a diferentes periodos.                                                                 | **Escenario 1:** Given que existen reportes generados previamente, When el usuario consulta el historial de reportes, Then obtiene los documentos disponibles correspondientes a su organización.<br><br>**Escenario 2:** Given que existen reportes de diferentes periodos, When el usuario aplica un filtro por periodo, Then obtiene únicamente los reportes correspondientes al periodo seleccionado.<br><br>**Escenario 3:** Given que no existen reportes que coincidan con los criterios consultados, When el usuario realiza la búsqueda, Then se informa que no existen documentos disponibles.                                                                                                   | EP-06                     |
+| US-31           | Invitar usuario a la organización                      | Como administrador, quiero invitar a un usuario a mi organización, para permitirle acceder a EcoTrack y colaborar en la gestión ambiental.                                                                                             | **Escenario 1:** Given que el administrador pertenece a una organización registrada y proporciona los datos requeridos de un nuevo usuario, When envía una invitación utilizando información válida, Then la invitación queda asociada a la organización y EcoTrack solicita el envío correspondiente mediante el servicio de correo configurado.<br><br>**Escenario 2:** Given que los datos proporcionados para la invitación son inválidos o corresponden a un usuario que no puede ser invitado nuevamente, When el administrador intenta enviar la invitación, Then la solicitud no se completa y se informa que la información debe ser revisada.                                                    | EP-02                     |
+| US-32           | Gestionar sedes                                        | Como administrador, quiero registrar y consultar las sedes de mi organización, para organizar la información ambiental según las ubicaciones donde se desarrollan sus operaciones.                                                     | **Escenario 1:** Given que el administrador proporciona información válida de una nueva sede, When solicita registrarla, Then la sede queda almacenada y asociada a su organización.<br><br>**Escenario 2:** Given que existen sedes registradas para la organización, When el administrador consulta sus sedes, Then obtiene únicamente las sedes asociadas a dicha organización.<br><br>**Escenario 3:** Given que los datos obligatorios de una nueva sede son inválidos o están incompletos, When el administrador intenta registrarla, Then la sede no se crea y se informa que la información debe ser corregida.                                                                                    | EP-02                     |
+| US-33           | Gestionar roles y permisos                             | Como administrador, quiero asignar roles a los usuarios de mi organización, para controlar las acciones que pueden realizar dentro de EcoTrack.                                                                                        | **Escenario 1:** Given que existe un usuario asociado a la organización, When el administrador le asigna un rol válido, Then el usuario queda asociado a los permisos correspondientes a dicho rol.<br><br>**Escenario 2:** Given que un usuario posee un rol asignado, When el administrador cambia su rol por otro válido, Then los permisos del usuario se actualizan de acuerdo con el nuevo rol.<br><br>**Escenario 3:** Given que el administrador intenta asignar un rol no válido, When solicita guardar el cambio, Then la asignación no se modifica.                                                                                                                                             | EP-02                     |
+| US-34           | Calcular huella de carbono                             | Como analista ambiental, quiero calcular automáticamente la huella de carbono utilizando los datos registrados, para obtener los resultados de emisiones de la organización.                                                           | **Escenario 1:** Given que existen datos de actividad válidos asociados a factores de emisión aplicables, When el analista solicita el cálculo para un periodo determinado, Then EcoTrack calcula y registra las emisiones correspondientes expresadas en CO₂e.<br><br>**Escenario 2:** Given que existen datos de actividad sin la información requerida o sin un factor de emisión aplicable, When el analista solicita el cálculo, Then el cálculo no se completa y se informa qué información necesaria se encuentra pendiente.                                                                                                                                                                        | EP-04                     |
+| US-35           | Consultar resultados por alcance                       | Como analista ambiental, quiero consultar los resultados de huella de carbono por Alcance 1, 2 y 3, para conocer la contribución de cada alcance al resultado total de la organización.                                                | **Escenario 1:** Given que existen cálculos de huella de carbono para el periodo consultado, When el usuario solicita los resultados por alcance, Then EcoTrack presenta los resultados correspondientes a Alcance 1, Alcance 2 y Alcance 3 expresados en CO₂e.<br><br>**Escenario 2:** Given que uno de los alcances no posee resultados calculados para el periodo consultado, When el usuario consulta la distribución por alcance, Then dicho alcance se presenta sin resultados disponibles para ese periodo.                                                                                                                                                                                         | EP-04                     |
+| US-36           | Consultar resultados por periodo                       | Como responsable de sostenibilidad, quiero consultar los resultados de huella de carbono correspondientes a un periodo, para analizar el desempeño ambiental de la organización en dicho intervalo.                                    | **Escenario 1:** Given que existen cálculos registrados para diferentes periodos, When el usuario selecciona un periodo disponible, Then obtiene los resultados de huella de carbono correspondientes únicamente a dicho periodo.<br><br>**Escenario 2:** Given que el periodo seleccionado no posee cálculos registrados, When el usuario solicita consultar sus resultados, Then se informa que no existen resultados disponibles para ese periodo.                                                                                                                                                                                                                                                      | EP-04                     |
+| US-37           | Consultar historial de cálculos                        | Como analista ambiental, quiero consultar el historial de cálculos de huella de carbono, para revisar los resultados obtenidos anteriormente por la organización.                                                                      | **Escenario 1:** Given que existen cálculos realizados previamente, When el usuario consulta el historial, Then obtiene los cálculos disponibles identificados por su periodo correspondiente.<br><br>**Escenario 2:** Given que todavía no existen cálculos registrados para la organización, When el usuario consulta el historial, Then se informa que no existen resultados de cálculo anteriores.                                                                                                                                                                                                                                                                                                     | EP-04                     |
+| US-38           | Crear un plan de reducción                             | Como responsable de sostenibilidad, quiero crear un plan de reducción asociado a una meta ambiental, para organizar las acciones destinadas a alcanzar el objetivo de reducción de emisiones.                                          | **Escenario 1:** Given que existe una meta ambiental registrada, When el usuario registra un plan de reducción con la información requerida válida, Then el plan queda almacenado y asociado a la meta correspondiente.<br><br>**Escenario 2:** Given que no existe una meta válida seleccionada o la información obligatoria del plan está incompleta, When el usuario intenta registrar el plan, Then el plan no se crea y se informa qué información debe ser corregida.                                                                                                                                                                                                                                | EP-05                     |
+| US-39           | Registrar una iniciativa ambiental                     | Como responsable de sostenibilidad, quiero registrar una iniciativa ambiental dentro de un plan de reducción, para documentar las acciones que la organización realizará para contribuir al cumplimiento de sus objetivos ambientales. | **Escenario 1:** Given que existe un plan de reducción registrado, When el usuario registra una iniciativa con información válida, Then la iniciativa queda almacenada y asociada al plan correspondiente.<br><br>**Escenario 2:** Given que la información obligatoria de la iniciativa es inválida o está incompleta, When el usuario intenta registrarla, Then la iniciativa no se crea y se informa que la información debe ser corregida.                                                                                                                                                                                                                                                             | EP-05                     |
+| US-40           | Consultar progreso de objetivos                        | Como responsable de sostenibilidad, quiero consultar el progreso de las metas y planes de reducción, para realizar seguimiento de los objetivos ambientales de la organización.                                                        | **Escenario 1:** Given que existen metas y planes de reducción con información de seguimiento disponible, When el usuario consulta su progreso, Then EcoTrack presenta el estado y la información de avance disponible para cada objetivo consultado.<br><br>**Escenario 2:** Given que una meta o plan todavía no posee información de seguimiento disponible, When el usuario consulta su progreso, Then EcoTrack identifica que aún no existe información de avance para dicho elemento.                                                                                                                                                                                                                | EP-05                     |
+| US-41           | Importar emisiones mediante CSV                        | Como analista ambiental, quiero importar información de emisiones mediante un archivo CSV, para registrar múltiples datos ambientales sin ingresarlos individualmente.                                                                 | **Escenario 1:** Given que el usuario proporciona un archivo CSV con una estructura válida y registros correctos, When solicita realizar la importación, Then EcoTrack procesa el archivo y registra la información válida correspondiente a su organización.<br><br>**Escenario 2:** Given que el archivo no cumple con la estructura requerida o contiene registros inválidos, When EcoTrack procesa la importación, Then se identifican los errores encontrados y los registros inválidos no son incorporados.<br><br>**Escenario 3:** Given que la importación contiene registros válidos, When finaliza el procesamiento del archivo, Then EcoTrack informa el resultado de la importación realizada. | EP-03                     |
+| US-42           | Seleccionar un plan de EcoTrack                        | Como visitante, quiero seleccionar uno de los planes disponibles de EcoTrack, para iniciar el proceso de registro con la alternativa que se adapte a las necesidades de mi empresa.                                                    | **Escenario 1:** Given que el visitante se encuentra revisando los planes disponibles, When selecciona un plan para continuar con EcoTrack, Then el plan seleccionado queda identificado para iniciar el proceso de registro de la organización.<br><br>**Escenario 2:** Given que el visitante ha seleccionado previamente un plan, When selecciona una alternativa diferente antes de continuar con el registro, Then la nueva selección reemplaza al plan anteriormente elegido.                                                                                                                                                                                                                        | EP-01                     |
+| US-43           | Acceder a la Web Application desde el Landing Page     | Como visitante, quiero acceder a la Web Application de EcoTrack desde el Landing Page, para registrarme o ingresar a mi cuenta y comenzar a utilizar la plataforma.                                                                    | **Escenario 1:** Given que un visitante desea comenzar a utilizar EcoTrack, When solicita iniciar el proceso de registro desde el Landing Page, Then es dirigido al punto de acceso correspondiente de la Web Application para continuar con el registro.<br><br>**Escenario 2:** Given que un visitante ya posee una cuenta de EcoTrack, When solicita acceder a la plataforma desde el Landing Page, Then es dirigido al punto de autenticación de la Web Application.                                                                                                                                                                                                                                   | EP-01                     |
+| US-44           | Gestionar unidades de negocio                          | Como administrador, quiero registrar y consultar las unidades de negocio de mi organización, para organizar la información ambiental según la estructura interna de la empresa.                                                        | **Escenario 1:** Given que el administrador pertenece a una organización registrada, When registra una unidad de negocio con información válida, Then la unidad queda asociada a la organización correspondiente.<br><br>**Escenario 2:** Given que existen unidades de negocio registradas para la organización, When el administrador consulta sus unidades, Then obtiene únicamente las unidades asociadas a su organización.                                                                                                                                                                                                                                                                           | EP-02                     |
+| US-45           | Registrar datos de actividad                           | Como analista ambiental, quiero registrar datos de actividad asociados a una fuente de emisión, para disponer de la información necesaria para calcular las emisiones de la organización.                                              | **Escenario 1:** Given que existe una fuente de emisión registrada, When el analista registra un valor, una unidad y un periodo válidos, Then el dato de actividad queda asociado a la fuente de emisión correspondiente.<br><br>**Escenario 2:** Given que el dato de actividad contiene información obligatoria inválida o incompleta, When el analista intenta registrarlo, Then el dato no se almacena y se informa que la información debe ser corregida.                                                                                                                                                                                                                                             | EP-03                     |
+| US-46           | Seleccionar factor de emisión                          | Como analista ambiental, quiero asociar un factor de emisión adecuado a los datos de actividad, para calcular la cantidad de emisiones correspondiente.                                                                                | **Escenario 1:** Given que existe un dato de actividad registrado, When el analista selecciona un factor de emisión válido y compatible con la información registrada, Then el factor queda asociado a los datos utilizados para el cálculo.<br><br>**Escenario 2:** Given que no existe un factor de emisión válido asociado a la información requerida para el cálculo, When se intenta calcular las emisiones, Then el cálculo no se completa y se informa que falta un factor de emisión aplicable.                                                                                                                                                                                                    | EP-04                     |
+| US-47           | Crear cuenta de usuario                                | Como representante de una empresa, quiero crear una cuenta en EcoTrack, para acceder a la plataforma e iniciar el registro de mi organización.                                                                                         | **Escenario 1:** Given que el representante todavía no posee una cuenta y proporciona los datos obligatorios con valores válidos, When solicita crear su cuenta, Then EcoTrack registra una nueva cuenta de usuario que puede continuar con el proceso de incorporación de la organización.<br><br>**Escenario 2:** Given que los datos proporcionados son inválidos o corresponden a una cuenta ya registrada, When el representante intenta crear una nueva cuenta, Then la cuenta no se crea y se informa que la solicitud no puede completarse con la información proporcionada.                                                                                                                       | EP-02                     |
+| TS-01           | Registrar emisión mediante EcoTrack API                | Como Developer, quiero enviar registros de emisiones mediante la EcoTrack API, para integrar sistemas empresariales externos con EcoTrack.                                                                                             | **Escenario 1:** Given que el cliente posee credenciales válidas y envía información válida, When realiza una solicitud de registro de emisiones, Then la API registra la información y devuelve una respuesta exitosa.<br><br>**Escenario 2:** Given que la solicitud contiene información inválida, When la API procesa la solicitud, Then devuelve una respuesta indicando los errores encontrados.                                                                                                                                                                                                                                                                                                     | EP-03                     |
+| TS-02           | Consultar emisiones mediante EcoTrack API              | Como Developer, quiero consultar registros de emisiones mediante la EcoTrack API, para utilizar la información ambiental de EcoTrack desde otros sistemas.                                                                             | **Escenario 1:** Given que existen emisiones registradas y el cliente posee autorización válida, When realiza una solicitud de consulta, Then la API devuelve los registros correspondientes.<br><br>**Escenario 2:** Given que el cliente no posee autorización válida, When realiza la solicitud, Then la API rechaza el acceso.                                                                                                                                                                                                                                                                                                                                                                         | EP-03                     |
+| TS-03           | Consultar resultados de huella de carbono mediante API | Como Developer, quiero consultar resultados de huella de carbono mediante la EcoTrack API, para utilizar los resultados ambientales desde sistemas externos.                                                                           | **Escenario 1:** Given que existen cálculos registrados y el cliente posee autorización válida, When solicita los resultados correspondientes, Then la API devuelve la información disponible.<br><br>**Escenario 2:** Given que no existen resultados para los criterios enviados, When se realiza la consulta, Then la API devuelve una respuesta indicando que no existen datos disponibles.                                                                                                                                                                                                                                                                                                            | EP-04                     |
+| TS-04           | Integrar servicio externo de correo electrónico        | Como Developer, quiero integrar EcoTrack con un Email Provider externo, para permitir el envío de correos relacionados con procesos como recuperación de contraseña e invitación de usuarios.                                          | **Escenario 1:** Given que EcoTrack ejecuta una operación que requiere enviar un correo y dispone de un destinatario válido, When el Backend solicita el envío al Email Provider configurado, Then el proveedor procesa la solicitud y devuelve una respuesta exitosa que puede ser gestionada por EcoTrack.<br><br>**Escenario 2:** Given que el Email Provider no se encuentra disponible o rechaza la solicitud, When EcoTrack intenta realizar el envío, Then el sistema recibe y gestiona la respuesta de error sin registrar falsamente el envío como exitoso.                                                                                                                                       | EP-02                     |
 ### Epics
 
-Las User Stories y Technical Stories identificadas para EcoTrack se organizan en seis Epics que representan las principales áreas funcionales del producto y del Landing Page.
+Las User Stories y Technical Stories identificadas para EcoTrack se organizan en seis Epics que representan las principales áreas funcionales del producto, la Landing Page y las capacidades de integración consideradas dentro de la solución.
 
-| Epic ID | Título                                 | Descripción                                                                                                                                                                            |
-| ------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| EP-01   | Landing Page e información de EcoTrack | Reúne las funcionalidades destinadas a presentar EcoTrack, sus beneficios, funcionalidades, planes y medios de contacto a los visitantes interesados en la solución.                   |
-| EP-02   | Gestión de usuarios y organización     | Agrupa las funcionalidades relacionadas con autenticación, usuarios, perfil de la organización, sedes, roles y permisos.                                                               |
-| EP-03   | Gestión de emisiones                   | Comprende las funcionalidades relacionadas con el registro, clasificación, consulta, edición, eliminación, búsqueda, filtrado e importación de información de emisiones.               |
-| EP-04   | Cálculo de huella de carbono           | Agrupa las funcionalidades destinadas al cálculo automático de la huella de carbono, uso de factores de emisión, consulta de resultados por alcance y periodo e historial de cálculos. |
-| EP-05   | Metas y planes de reducción            | Comprende las funcionalidades relacionadas con metas ambientales, planes de reducción, iniciativas ambientales y seguimiento del cumplimiento de objetivos.                            |
-| EP-06   | Analítica y reportes                   | Agrupa las funcionalidades orientadas a dashboards, indicadores ambientales, comparación de emisiones entre periodos, análisis de resultados y generación de reportes ambientales.     |
-
+| Epic ID | Título                                 | Descripción                                                                                                                                                                                                                                                            |
+|---------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| EP-01   | Landing Page e información de EcoTrack | Reúne las funcionalidades destinadas a presentar EcoTrack, sus beneficios, funcionalidades, planes y medios de contacto, además de permitir la selección inicial de un plan y el acceso desde el Landing Page hacia la Web Application.                                |
+| EP-02   | Gestión de usuarios y organización     | Agrupa las funcionalidades relacionadas con registro y autenticación de usuarios, recuperación de acceso, gestión de usuarios, perfil de la organización, sedes, unidades de negocio, roles, permisos y servicios externos asociados a procesos de identidad y acceso. |
+| EP-03   | Gestión de emisiones                   | Comprende las funcionalidades relacionadas con el registro y clasificación de fuentes de emisión, registro de datos de actividad, consulta, edición, eliminación, búsqueda, filtrado e importación de información ambiental.                                           |
+| EP-04   | Cálculo de huella de carbono           | Agrupa las funcionalidades destinadas a la selección y utilización de factores de emisión, cálculo automático de la huella de carbono, consulta de resultados por alcance y periodo, historial de cálculos y consulta de resultados mediante la EcoTrack API.          |
+| EP-05   | Metas y planes de reducción            | Comprende las funcionalidades relacionadas con metas ambientales, planes de reducción, iniciativas ambientales y seguimiento del cumplimiento de objetivos.                                                                                                            |
+| EP-06   | Analítica y reportes                   | Agrupa las funcionalidades orientadas a dashboards, indicadores ambientales, comparación de emisiones entre periodos, análisis de resultados, identificación de las principales fuentes de emisión y generación de reportes ambientales.                               |
 ---
 
 ## 3.2. Impact Mapping
@@ -1570,613 +1655,29 @@ La propuesta busca mantener una experiencia consistente entre Desktop y Mobile, 
 
 ## 4.4. Web Applications UX/UI Design
 
-Esta sección presenta la propuesta de UX/UI de la Web Application de EcoTrack. El diseño se construye a partir de las User Stories, User Personas, Information Architecture y Style Guidelines previamente definidas, buscando mantener una experiencia consistente para la gestión de información ambiental de las organizaciones.
-
-La Web Application está orientada principalmente a usuarios responsables de sostenibilidad, analistas ambientales y administradores de organizaciones. La propuesta contempla los principales módulos funcionales de EcoTrack: Dashboard, Emissions, Carbon Footprint, Goals, Reports y Organization.
-
-Los diseños consideran una estructura de navegación jerárquica y consistente, componentes reutilizables y estados de interacción que permiten representar escenarios normales, validaciones y resultados de las operaciones. Asimismo, se mantienen los criterios de legibilidad, jerarquía visual, consistencia y diseño inclusivo establecidos en las Web Style Guidelines.
-
 ### 4.4.1. Web Applications Wireframes
 
-Los Wireframes de la Web Application de EcoTrack representan la estructura y organización de las principales interfaces que permiten a los usuarios registrar, consultar y gestionar información relacionada con las emisiones y la huella de carbono de una organización.
-
-La propuesta se desarrolló considerando las funcionalidades definidas para EcoTrack y las decisiones establecidas previamente en la arquitectura de información. La aplicación mantiene una estructura de navegación consistente entre sus diferentes módulos, permitiendo acceder a funcionalidades como Dashboard, Emissions, Carbon Footprint, Goals, Reports y Organization.
-
-Los Wireframes fueron elaborados en Figma y se presentan agrupados según los principales procesos funcionales de la aplicación. Cada grupo reúne las pantallas correspondientes a un mismo proceso, incluyendo tanto estados iniciales como estados resultantes de las interacciones del usuario.
-
-Asimismo, se consideraron diferentes estados de interacción de las interfaces, tales como formularios vacíos, formularios con información ingresada, estados de validación, errores y confirmaciones de operaciones.
-Esto permite representar no solamente la estructura de las pantallas, sino también el comportamiento esperado de la interfaz ante las acciones del usuario.
-
-#### Authentication
-
-El primer grupo corresponde al proceso de autenticación de usuarios. Los Wireframes representan la pantalla inicial de inicio de sesión, el ingreso de credenciales y el estado mostrado cuando las credenciales proporcionadas no son válidas.
-
-La interfaz mantiene una estructura simple y centrada en la tarea principal, presentando los campos de correo electrónico y contraseña junto con las acciones necesarias para iniciar sesión o recuperar las credenciales.
-
-![Login](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login.png)
-
-*Figura 4.1. Wireframe de la pantalla de inicio de sesión.*
-
-![Login Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login-validation.png)
-
-*Figura 4.2. Wireframe del estado de validación de inicio de sesión.*
-
-![Login Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login-validation-error.png)
-
-*Figura 4.3. Wireframe del estado de error de validación de inicio de sesión.*
-
-![Login Success Dashboard](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login-success-dashboard.png)
-
-*Figura 4.4. Wireframe del acceso exitoso al Dashboard.*
-
-#### Organization Registration
-
-El segundo grupo representa el proceso de registro de una nueva organización en EcoTrack. Se incluyen el formulario inicial, el formulario con información ingresada, el estado de validación y la confirmación de registro exitoso.
-
-La información se organiza en grupos relacionados con los datos de la organización y los datos de la cuenta del usuario. Los campos requeridos se identifican mediante labels explícitos y los estados de error permiten comunicar al usuario qué información necesita ser corregida.
-
-![Register Organization](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org.png)
-
-*Figura 4.5. Wireframe del formulario inicial de registro de una organización.*
-
-![Register Organization Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org-validation.png)
-
-*Figura 4.6. Wireframe del estado de validación del registro de una organización.*
-
-![Register Organization Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org-validation-error.png)
-
-*Figura 4.7. Wireframe del estado de error de validación del registro de una organización.*
-
-![Register Organization Success](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org-success.png)
-
-*Figura 4.8. Wireframe del registro exitoso de una organización.*
-
-#### Emission Registration
-
-El tercer grupo corresponde al registro de emisiones. La propuesta contempla el listado de emisiones y el formulario para agregar nuevos registros, junto con diferentes estados del formulario durante la interacción.
-
-Los campos se organizan de acuerdo con la información necesaria para registrar una emisión, incluyendo la fuente de emisión, categoría, alcance, unidad, periodo y demás datos relacionados. Se incluyen estados de formulario vacío, información ingresada, validación y confirmación de registro exitoso.
-
-![Emissions](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/emissions.png)
-
-*Figura 4.9. Wireframe del listado de emisiones registradas.*
-
-![Add Emission Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/add-emission-empty.png)
-
-*Figura 4.10. Wireframe del formulario vacío para registrar una nueva emisión.*
-
-![Add Emission Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/add-emission-completed.png)
-
-*Figura 4.11. Wireframe del formulario de registro de emisión con información ingresada.*
-
-![Emission Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/emission-validation-error.png)
-
-*Figura 4.12. Wireframe del estado de error de validación del registro de emisión.*
-
-![Emissions Success](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/emissions-success.png)
-
-*Figura 4.13. Wireframe de confirmación del registro exitoso de una emisión.*
-
-#### Carbon Footprint Calculation
-
-El cuarto grupo representa el proceso de cálculo y consulta de la huella de carbono. Se incluyen las interfaces utilizadas para configurar el cálculo, revisar los datos considerados, consultar los resultados por alcance y analizar los resultados por periodo.
-
-La información se presenta de manera progresiva para facilitar la comprensión del proceso: primero se seleccionan los parámetros del cálculo, luego se revisan los datos utilizados y finalmente se presentan los resultados obtenidos. También se incluye el historial de cálculos para permitir la consulta de operaciones realizadas anteriormente.
-
-![Carbon Footprint Initial](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-initial.png)
-
-*Figura 4.14. Wireframe del estado inicial del cálculo de la huella de carbono.*
-
-![Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-calculate.png)
-
-*Figura 4.15. Wireframe correspondiente a la configuración y cálculo de la huella de carbono.*
-
-![Carbon Footprint History](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-history.png)
-
-*Figura 4.16. Wireframe correspondiente al historial de cálculos de huella de carbono.*
-
-![Carbon Footprint Results Per Period](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-results-period.png)
-
-*Figura 4.17. Wireframe de los resultados de la huella de carbono por periodo.*
-
-![Carbon Footprint Results By Scope](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-results-scope.png)
-
-*Figura 4.18. Wireframe de los resultados de la huella de carbono por alcance.*
-
-#### Goal Creation
-
-El quinto grupo corresponde a la gestión de metas y planes de reducción. Los Wireframes representan el listado de metas, la creación de una nueva meta, los diferentes estados del formulario y la edición de una meta existente.
-
-La interfaz organiza la información de la meta mediante campos claramente identificados y proporciona acciones diferenciadas para crear, guardar o cancelar una operación. Los estados de validación permiten representar las condiciones en las que el usuario debe corregir información antes de guardar los cambios.
-
-![Goals List](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/goals-list.png)
-
-*Figura 4.19. Wireframe correspondiente al listado de metas ambientales.*
-
-![Create Goal Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/create-goal-empty.png)
-
-*Figura 4.20. Wireframe del formulario vacío para la creación de una meta.*
-
-![Create Goal Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/create-goal-validation-error.png)
-
-*Figura 4.21. Wireframe del formulario de creación de una meta con errores de validación.*
-
-![Create Goal Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/create-goal-completed.png)
-
-*Figura 4.22. Wireframe del formulario de creación de una meta con los datos completados.*
-
-![Goals Creation Success](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/goals-creation-success.png)
-
-*Figura 4.23. Wireframe de confirmación del registro exitoso de una meta.*
-
-![Edit Goal](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/edit-goal.png)
-
-*Figura 4.24. Wireframe correspondiente a la edición de una meta existente.*
-
-#### Report Generation
-
-El sexto grupo representa el proceso de generación y consulta de reportes ambientales. Se incluyen los estados iniciales del módulo Reports, la configuración del reporte, la selección del periodo, la generación del reporte y la visualización de los reportes disponibles.
-
-La interfaz permite al usuario configurar los parámetros necesarios antes de generar un reporte. También se contemplan escenarios en los que no existen datos suficientes para realizar la operación, comunicando esta condición mediante un estado informativo.
-
-![Reports Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/reports-empty.png)
-
-*Figura 4.25. Wireframe del estado inicial del módulo de reportes.*
-
-![Generate Report Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-empty.png)
-
-*Figura 4.26. Wireframe del formulario inicial para generar un reporte.*
-
-![Generate Report Period Selected](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-period-selected.png)
-
-*Figura 4.27. Wireframe de configuración del reporte con el periodo seleccionado.*
-
-![Generate Report No Data Error](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-no-data-error.png)
-
-*Figura 4.28. Wireframe del estado informativo cuando no existen datos suficientes para generar el reporte.*
-
-![Generate Report Success](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-success.png)
-
-*Figura 4.29. Wireframe de confirmación de generación exitosa del reporte.*
-
-![Report Download Available](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/report-download-available.png)
-
-*Figura 4.30. Wireframe del reporte generado con opción de descarga disponible.*
-
-![Reports Previous Reports](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/reports-previous-reports.png)
-
-*Figura 4.31. Wireframe correspondiente a la consulta de reportes generados anteriormente.*
-
-#### Organization Management
-
-El último grupo corresponde a la administración de la información de la organización. Los Wireframes representan la consulta de los datos actuales, la edición de la información, los estados de validación y la confirmación de una actualización exitosa.
-
-La interfaz diferencia claramente entre la visualización de la información y las acciones de modificación. Los campos del formulario se mantienen organizados de acuerdo con el tipo de información que debe ser gestionada, mientras que los mensajes de validación permiten identificar los datos que requieren corrección.
-
-![Organization Overview](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-overview.png)
-
-*Figura 4.32. Wireframe correspondiente a la visualización de la información de la organización.*
-
-![Edit Organization](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-edit.png)
-
-*Figura 4.33. Wireframe correspondiente a la edición de la información de la organización.*
-
-![Organization Edit Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-edit-validation-error.png)
-
-*Figura 4.34. Wireframe del estado de error de validación durante la edición de la organización.*
-
-![Organization Update Success](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-update-success.png)
-
-*Figura 4.35. Wireframe de confirmación de actualización exitosa de la organización.*
-
-#### Consideraciones de UX/UI
-
-En conjunto, los Wireframes mantienen una estructura visual y de navegación consistente entre los diferentes módulos de EcoTrack. La navegación lateral permite acceder de manera persistente a las principales áreas funcionales de la aplicación, mientras que el contenido principal se adapta a la tarea que el usuario está realizando.
-
-La organización de los contenidos utiliza una jerarquía visual que diferencia títulos, secciones, información principal y acciones. Los formularios mantienen labels visibles y agrupan los campos relacionados para facilitar su comprensión y completar las tareas de manera secuencial.
-
-Los estados de validación y confirmación forman parte de la propuesta de interacción. Los mensajes de error permiten identificar la información que debe corregirse y los estados de éxito comunican que una operación fue completada correctamente.
-
-Desde el punto de vista del diseño inclusivo, la propuesta prioriza textos explícitos, labels visibles y una jerarquía de información clara para que las acciones y los contenidos puedan ser comprendidos sin depender únicamente de elementos visuales como el color. Estas decisiones son consistentes con el enfoque de accesibilidad e internacionalización establecido para los productos digitales del proyecto.
-
-Finalmente, la organización de las interfaces mantiene correspondencia con la arquitectura de información definida para EcoTrack. Los módulos y etiquetas utilizados en la navegación permiten relacionar las diferentes funcionalidades con las tareas que el usuario debe realizar dentro de la aplicación.
+<!-- Completar -->
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-Los Wireflow Diagrams representan los recorridos de interacción de los principales User Goals de la Web Application de EcoTrack. A partir de los Wireframes definidos en la sección anterior, estos diagramas permiten visualizar la secuencia de pantallas, acciones y decisiones que intervienen en cada proceso.
-
-Los Wireflows fueron construidos considerando los User Stories definidos para la aplicación y sus respectivos User Goals. Cada flujo incluye los estados principales de las interfaces y, cuando corresponde, rutas alternativas producidas por errores de validación o condiciones que impiden completar una operación.
-
-Asimismo, los cambios de estado de una misma pantalla se representan como nuevos pasos dentro del flujo. De esta manera, el usuario puede visualizar cómo una acción modifica la interfaz y cuáles son las condiciones necesarias para continuar con el proceso.
-
-Los siguientes Wireflows corresponden a los principales procesos de interacción definidos para la Web Application de EcoTrack.
-
-#### WF01 — Authentication
-
-**User Story:** US-07 — Iniciar sesión
-
-**User Goal:**  
-Como usuario registrado, quiero iniciar sesión en EcoTrack, para acceder a la información de mi empresa.
-
-El flujo comienza en la pantalla de inicio de sesión, donde el usuario ingresa su correo electrónico y contraseña. Al seleccionar **Sign In**, el sistema valida las credenciales proporcionadas. Si las credenciales son válidas, el usuario accede al Dashboard. En caso contrario, se muestra un estado de error y el usuario puede intentar nuevamente el proceso.
-
-![WF01 - Authentication](./assets/chapter-04/web-applications-ui-ux/wireflows/wf01-Authentication.png)
-
-*Figura 4.8. Wireflow del proceso de autenticación.*
-
-#### WF02 — Organization Registration
-
-**User Story:** US-06 — Registrar una empresa
-
-**User Goal:**  
-Como representante de una empresa, quiero registrar mi organización en EcoTrack, para comenzar a gestionar su información ambiental.
-
-El flujo inicia desde la pantalla de autenticación, donde el usuario selecciona la opción para crear una organización. Posteriormente completa el formulario con los datos de la organización y de la cuenta de usuario. Al seleccionar **Save Changes**, el sistema valida la información ingresada.
-
-Si los datos son válidos, se muestra la confirmación de creación de la organización y el usuario puede continuar hacia el Dashboard. Si existen datos obligatorios incompletos o inválidos, se muestra el estado de validación y el usuario puede corregir la información para volver a intentar el registro.
-
-![WF02 - Organization Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf02-Organization-Registration.png)
-
-*Figura 4.9. Wireflow del proceso de registro de una organización.*
-
-#### WF03 — Organization Management
-
-**User Story:** US-10 — Actualizar datos de la empresa
-
-**User Goal:**  
-Como usuario autorizado, quiero actualizar los datos de mi empresa, para mantener su información al día.
-
-El flujo comienza en la vista de información de la organización. El usuario selecciona **Edit Organization** y accede al formulario de edición. Después de modificar los datos correspondientes, selecciona **Save Changes**.
-
-El sistema valida la información ingresada. Si los datos son válidos, los cambios se guardan y se muestra la información actualizada de la organización.
-Si existen datos inválidos o incompletos, se presenta el estado de validación y el usuario retorna al formulario para corregir la información.
-
-![WF03 - Organization Management](./assets/chapter-04/web-applications-ui-ux/wireflows/wf03-Organization-Management.png)
-
-*Figura 4.10. Wireflow del proceso de actualización de información de la organización.*
-
-#### WF04 — Emission Registration
-
-**User Story:** US-11 — Registrar una fuente de emisión
-
-**User Goal:**  
-Como analista ambiental, quiero registrar una fuente de emisión, para llevar un control de las actividades que generan emisiones en la empresa.
-
-El flujo inicia en el módulo **Emissions**, donde el usuario selecciona **Add Emission**. Luego completa los datos requeridos para registrar la emisión y selecciona **Save Entry**.
-
-El sistema valida la información proporcionada. Si los datos son válidos, el nuevo registro se incorpora al listado de emisiones y se muestra la confirmación correspondiente. Si la información no es válida, se muestra el estado de validación y el usuario puede corregir los campos antes de volver a guardar el registro.
-
-![WF04 - Emission Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf04-Emission-Registration.png)
-
-*Figura 4.11. Wireflow del proceso de registro de una emisión.*
-
-#### WF05 — Report Generation
-
-**User Story:** US-27 — Generar reporte ambiental
-
-**User Goal:**  
-Como responsable de sostenibilidad, quiero generar un reporte ambiental, para reunir los principales resultados de la empresa.
-
-El flujo comienza en el módulo **Reports**, donde el usuario selecciona **Generate Report**. Posteriormente configura los parámetros requeridos y completa la información correspondiente al reporte.
-
-Al seleccionar nuevamente **Generate Report**, el sistema valida la información y verifica la disponibilidad de datos. Si la información es válida y existen datos disponibles, el reporte es generado y queda disponible en el módulo Reports. Si no existen datos suficientes, se muestra un estado informativo y el usuario puede regresar al formulario para ajustar los parámetros del reporte.
-
-![WF05 - Report Generation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf05-Report-Generation.png)
-
-*Figura 4.12. Wireflow del proceso de generación de un reporte ambiental.*
-
-#### WF06 — Goal Creation
-
-**User Story:** US-21 — Registrar una meta ambiental
-
-**User Goal:**  
-Como responsable de sostenibilidad, quiero registrar una meta de reducción de emisiones, para establecer un objetivo ambiental para la empresa.
-
-El flujo inicia en el módulo **Goals**, donde el usuario selecciona **Create Goal**. A continuación, completa la información correspondiente a la meta y selecciona **Save Goal**.
-
-El sistema valida los datos ingresados. Si la información es válida, la meta queda registrada y el usuario retorna al listado de **Reduction Goals**. Si los datos no son válidos, se muestra el estado de validación y el usuario puede corregir la información para volver a intentar guardar la meta.
-
-![WF06 - Goal Creation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf06-Goal-Creation.png)
-
-*Figura 4.13. Wireflow del proceso de creación de una meta ambiental.*
-
-#### WF07 — Carbon Footprint Calculation
-
-**User Story:** US-34 — Calcular huella de carbono
-
-**User Goal:**  
-Como analista ambiental, quiero calcular automáticamente la huella de carbono utilizando los datos registrados, para obtener los resultados de emisiones de la organización.
-
-El flujo comienza en la sección **Carbon Footprint**, donde el usuario selecciona los parámetros correspondientes al periodo y alcance que desea analizar. Después selecciona **Calculate Footprint** para iniciar el cálculo.
-
-El sistema presenta la información considerada para el cálculo y permite consultar los resultados obtenidos. Finalmente, el usuario puede visualizar los resultados de huella de carbono por periodo y analizar el desempeño ambiental correspondiente.
-
-![WF07 - Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf07-Carbon-Footprint-Calculation.png)
-
-*Figura 4.14. Wireflow del proceso de cálculo de la huella de carbono.*
-
-#### Relación entre Wireflows y User Goals
-
-Los Wireflows presentados representan los principales recorridos funcionales de la Web Application y mantienen correspondencia con los User Stories definidos en la especificación de requisitos. Los flujos abarcan procesos de autenticación, registro y administración de la organización, registro de emisiones, generación de reportes, creación de metas y cálculo de huella de carbono.
-
-La representación de estados alternativos permite incorporar dentro de cada recorrido las condiciones de validación que pueden impedir completar una operación. Esto permite que los Wireflows sirvan posteriormente como base para la elaboración de los User Flow Diagrams, donde estos mismos recorridos serán representados mediante los Mock-ups de alta fidelidad.
+<!-- Completar -->
 
 ### 4.4.3. Web Applications Mock-ups
 
-#### Authentication
-
-El primer grupo corresponde al proceso de autenticación de usuarios de EcoTrack. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines sobre las interfaces de inicio de sesión.
-
-A diferencia de los Wireframes, estas pantallas incorporan la identidad visual de EcoTrack, incluyendo la paleta de colores definida, la tipografía Roboto, componentes de interfaz, iconografía, espaciado y estados visuales. La propuesta mantiene una composición centrada y simple, priorizando la identificación de la acción principal y la legibilidad de los campos de autenticación. Estas decisiones son consistentes con los lineamientos establecidos para botones, campos de formulario y estados de interacción.
-
-Los Mock-ups contemplan diferentes estados del proceso: pantalla inicial de inicio de sesión, formulario con credenciales ingresadas, estado de error de validación y acceso exitoso al Dashboard. De esta manera, se representa visualmente tanto el flujo principal como las respuestas de la interfaz ante diferentes acciones del usuario.
-
-![Login Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login.png)
-
-*Figura 4.15. Mock-up de la pantalla de inicio de sesión.*
-
-![Login Filled Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login-validation.png)
-
-*Figura 4.16. Mock-up del formulario de inicio de sesión con credenciales ingresadas.*
-
-![Login Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login-validation-error.png)
-
-*Figura 4.17. Mock-up del estado de error de validación de inicio de sesión.*
-
-![Login Success Dashboard Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login-success-dashboard.png)
-
-*Figura 4.18. Mock-up del acceso exitoso al Dashboard.*
-
-#### Organization Registration
-
-El segundo grupo corresponde al proceso de registro de una nueva organización en EcoTrack. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines, incorporando la identidad visual de EcoTrack, la paleta de colores, tipografía, componentes de formulario y estados de interacción.
-
-La información se organiza en grupos relacionados con los datos de la organización y los datos de la cuenta del usuario. Los campos requeridos se identifican mediante labels explícitos, mientras que los estados de validación y error proporcionan retroalimentación visual sobre la información ingresada. De esta manera, los Mock-ups representan tanto el formulario inicial como las diferentes respuestas de la interfaz durante el proceso de registro.
-
-![Register Organization Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org.png)
-
-*Figura 4.19. Mock-up del formulario inicial de registro de una organización.*
-
-![Register Organization Validation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org-validation.png)
-
-*Figura 4.20. Mock-up del estado de validación del registro de una organización.*
-
-![Register Organization Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org-validation-error.png)
-
-*Figura 4.21. Mock-up del estado de error de validación del registro de una organización.*
-
-![Register Organization Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org-success.png)
-
-*Figura 4.22. Mock-up del registro exitoso de una organización.*
-
-#### Emission Registration
-
-El tercer grupo corresponde al registro de emisiones. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines para el listado y registro de emisiones dentro de EcoTrack.
-
-La propuesta incorpora la identidad visual de la aplicación mediante la paleta de colores, tipografía Roboto, componentes de interfaz, espaciado, iconografía y estados de interacción. Los campos se organizan de acuerdo con la información necesaria para registrar una emisión, manteniendo una estructura clara para facilitar el ingreso y consulta de los datos.
-
-Los Mock-ups contemplan el listado de emisiones, el formulario vacío, el formulario con información ingresada, el estado de error de validación y la confirmación de un registro exitoso. Esto permite representar visualmente las diferentes respuestas de la interfaz durante el proceso de registro.
-
-![Emissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/emissions.png)
-
-*Figura 4.23. Mock-up del listado de emisiones registradas.*
-
-![Add Emission Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/add-emission-empty.png)
-
-*Figura 4.24. Mock-up del formulario vacío para registrar una nueva emisión.*
-
-![Add Emission Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/add-emission-completed.png)
-
-*Figura 4.25. Mock-up del formulario de registro de emisión con información ingresada.*
-
-![Emission Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/emission-validation-error.png)
-
-*Figura 4.26. Mock-up del estado de error de validación del registro de emisión.*
-
-![Emissions Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/emissions-success.png)
-
-*Figura 4.27. Mock-up de confirmación del registro exitoso de una emisión.*
-
-#### Carbon Footprint Calculation
-
-El cuarto grupo representa el proceso de cálculo y consulta de la huella de carbono. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines para las interfaces relacionadas con la configuración, ejecución y consulta de los cálculos.
-
-La propuesta incorpora la identidad visual de EcoTrack mediante la aplicación de la paleta de colores, tipografía Roboto, componentes de interfaz, espaciado, iconografía y estados visuales. La información se presenta de manera progresiva, permitiendo configurar los parámetros del cálculo, revisar los datos considerados y consultar los resultados obtenidos.
-
-Los Mock-ups contemplan el estado inicial del cálculo, la configuración y ejecución del cálculo, el historial de operaciones realizadas y la visualización de resultados tanto por periodo como por alcance. De esta manera, se representa visualmente la interacción del usuario con las diferentes etapas del proceso de cálculo y consulta de la huella de carbono.
-
-![Carbon Footprint Initial Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-initial.png)
-
-*Figura 4.28. Mock-up del estado inicial del cálculo de la huella de carbono.*
-
-![Carbon Footprint Calculation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-calculate.png)
-
-*Figura 4.29. Mock-up correspondiente a la configuración y cálculo de la huella de carbono.*
-
-![Carbon Footprint History Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-history.png)
-
-*Figura 4.30. Mock-up correspondiente al historial de cálculos de huella de carbono.*
-
-![Carbon Footprint Results Per Period Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-results-period.png)
-
-*Figura 4.31. Mock-up de los resultados de la huella de carbono por periodo.*
-
-![Carbon Footprint Results By Scope Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-results-scope.png)
-
-*Figura 4.32. Mock-up de los resultados de la huella de carbono por alcance.*
-
-#### Goal Creation
-
-El quinto grupo representa la gestión de metas y planes de reducción. Los Mock-ups aplican las decisiones visuales definidas para EcoTrack a las interfaces de consulta, creación y edición de metas ambientales.
-
-La propuesta incorpora la identidad visual de la aplicación mediante la aplicación de la paleta de colores, tipografía, componentes, espaciado, iconografía y estados de interacción. La información de cada meta se organiza mediante campos claramente identificados y acciones diferenciadas para crear, guardar, cancelar o editar una operación.
-
-Los Mock-ups contemplan el listado de metas, el formulario de creación en estado vacío, el ingreso de información, los errores de validación, la confirmación de creación exitosa y la edición de una meta existente. De esta manera, se representan visualmente los principales estados y acciones asociados con la gestión de metas dentro de EcoTrack.
-
-![Goals List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/goals-list.png)
-
-*Figura 4.33. Mock-up correspondiente al listado de metas ambientales.*
-
-![Create Goal Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/create-goal-empty.png)
-
-*Figura 4.34. Mock-up del formulario vacío para la creación de una meta.*
-
-![Create Goal Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/create-goal-validation-error.png)
-
-*Figura 4.35. Mock-up del formulario de creación de una meta con errores de validación.*
-
-![Create Goal Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/create-goal-completed.png)
-
-*Figura 4.36. Mock-up del formulario de creación de una meta con los datos completados.*
-
-![Goals Creation Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/goals-creation-success.png)
-
-*Figura 4.37. Mock-up de confirmación del registro exitoso de una meta.*
-
-![Edit Goal Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/edit-goal.png)
-
-*Figura 4.38. Mock-up correspondiente a la edición de una meta existente.*
-
-#### Report Generation
-
-El sexto grupo representa el proceso de generación y consulta de reportes ambientales. Los Mock-ups aplican la identidad visual de EcoTrack a las interfaces relacionadas con la configuración, generación, descarga y consulta de reportes.
-
-La propuesta incorpora la paleta de colores, tipografía, componentes, espaciado e iconografía definidos para la aplicación, manteniendo una estructura visual consistente entre los diferentes estados. Se contemplan escenarios de configuración, selección de periodo, generación exitosa y ausencia de datos suficientes para completar la operación.
-
-También se representa la disponibilidad del reporte generado para su descarga y la consulta de reportes creados anteriormente. De esta manera, los Mock-ups muestran los principales estados y acciones que forman parte del proceso de gestión de reportes ambientales.
-
-![Reports Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/reports-empty-hifi.png)
-
-*Figura 4.39. Mock-up del estado inicial del módulo de reportes.*
-
-![Generate Report Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-empty-hifi.png)
-
-*Figura 4.40. Mock-up del formulario inicial para generar un reporte.*
-
-![Generate Report Period Selected Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-period-selected-hifi.png)
-
-*Figura 4.41. Mock-up de configuración del reporte con el periodo seleccionado.*
-
-![Generate Report No Data Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-no-data-error-hifi.png)
-
-*Figura 4.42. Mock-up del estado informativo cuando no existen datos suficientes para generar el reporte.*
-
-![Generate Report Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-success-hifi.png)
-
-*Figura 4.43. Mock-up de confirmación de generación exitosa del reporte.*
-
-![Report Download Available Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/report-download-available-hifi.png)
-
-*Figura 4.44. Mock-up del reporte generado con opción de descarga disponible.*
-
-![Reports Previous Reports Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/reports-previous-reports-hifi.png)
-
-*Figura 4.45. Mock-up correspondiente a la consulta de reportes generados anteriormente.*
-
-#### Organization Management
-
-El último grupo corresponde a la administración de la información de la organización. Los Mock-ups representan la consulta de los datos actuales, la edición de la información, los estados de validación y la confirmación de una actualización exitosa.
-
-La interfaz aplica la identidad visual definida para EcoTrack, manteniendo consistencia en colores, tipografía, espaciado, componentes e iconografía. Se diferencia claramente entre la visualización de información y las acciones de modificación, mientras que los formularios organizan los datos de acuerdo con su propósito.
-
-También se incorporan estados de validación y confirmación para proporcionar retroalimentación visual sobre las acciones realizadas durante la gestión de la organización.
-
-![Organization Overview Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-overview.png)
-
-*Figura 4.46. Mock-up correspondiente a la visualización de la información de la organización.*
-
-![Edit Organization Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-edit.png)
-
-*Figura 4.47. Mock-up correspondiente a la edición de la información de la organización.*
-
-![Organization Edit Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-edit-validation-error.png)
-
-*Figura 4.48. Mock-up del estado de error de validación durante la edición de la organización.*
-
-![Organization Update Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-update-success.png)
-
-*Figura 4.49. Mock-up de confirmación de actualización exitosa de la organización.*
+<!-- Completar -->
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-Los User Flow Diagrams representan las secuencias de interacción que los usuarios siguen para completar las principales tareas dentro de la Web Application de EcoTrack. Estos diagramas permiten visualizar la relación entre las acciones del usuario, las decisiones del sistema y las diferentes pantallas involucradas en cada proceso.
+<!-- Completar -->
 
-Los flujos se definieron a partir de las funcionalidades representadas previamente mediante los Wireframes y Mock-ups, manteniendo la correspondencia entre las interfaces y las acciones necesarias para completar cada tarea.
-
-#### Authentication
-
-El primer flujo representa el proceso de autenticación, desde el ingreso de las credenciales hasta el acceso al Dashboard o la corrección de los datos cuando ocurre un error de validación.
-
-![Authentication User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf01-Authentication.png)
-
-*Figura 4.50. User Flow Diagram correspondiente al proceso de autenticación.*
-
-#### Organization Registration
-
-El segundo flujo representa el registro de una nueva organización, incluyendo el ingreso de información, la validación de los datos y la confirmación del registro.
-
-![Organization Registration User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf02-Organization-Registration.png)
-
-*Figura 4.51. User Flow Diagram correspondiente al registro de una organización.*
-
-#### Organization Management
-
-El tercer flujo representa la consulta y actualización de la información de la organización, considerando la edición de datos, la validación y la confirmación de los cambios.
-
-![Organization Management User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf03-Organization-Management.png)
-
-*Figura 4.52. User Flow Diagram correspondiente a la administración de la organización.*
-
-#### Emission Registration
-
-El cuarto flujo representa el registro de emisiones, desde el acceso al listado hasta el ingreso, validación y confirmación de una nueva emisión.
-
-![Emission Registration User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf04-Emission-Registration.png)
-
-*Figura 4.53. User Flow Diagram correspondiente al registro de emisiones.*
-
-#### Report Generation
-
-El quinto flujo representa la generación de reportes ambientales, incluyendo la configuración de parámetros, selección del periodo, validación de disponibilidad de datos y consulta del reporte generado.
-
-![Report Generation User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf05-Report-Generation.png)
-
-*Figura 4.54. User Flow Diagram correspondiente a la generación de reportes.*
-
-#### Goal Creation
-
-El sexto flujo representa la creación y gestión de metas ambientales, considerando el ingreso de información, validación, registro y edición de una meta existente.
-
-![Goal Creation User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf06-Goal-Creation.png)
-
-*Figura 4.55. User Flow Diagram correspondiente a la creación de metas ambientales.*
-
-#### Carbon Footprint Calculation
-
-El séptimo flujo representa el proceso de cálculo y consulta de la huella de carbono, desde la configuración inicial hasta la visualización de resultados e historial de cálculos.
-
-![Carbon Footprint Calculation User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf07-Carbon-Footprint-Calculation.png)
-
-*Figura 4.56. User Flow Diagram correspondiente al cálculo y consulta de la huella de carbono.*
-
+---
 
 ## 4.5. Web Applications Prototyping
 
-El prototipo interactivo de la Web Application de EcoTrack fue desarrollado en Figma a partir de los Mock-ups definidos en la sección anterior. Se establecieron conexiones entre las diferentes interfaces para representar la navegación y las principales interacciones de los usuarios.
+<!-- Completar -->
 
-Las interacciones implementadas siguen los flujos funcionales definidos previamente, permitiendo navegar entre los módulos de autenticación, registro y administración de la organización, registro de emisiones, generación de reportes, creación de metas y cálculo de la huella de carbono.
-
-Asimismo, se incorporaron diferentes estados de interacción, incluyendo validaciones, mensajes de error y confirmaciones de operaciones, con el objetivo de representar el comportamiento esperado de la aplicación durante la navegación.
-
-![Prototype Flow](./assets/chapter-04/web-applications-ui-ux/prototype/prototype-flow.png)
-
-*Figura 4.57. Vista general de las conexiones del prototipo interactivo de la Web Application.*
-
-El prototipo completo puede ser revisado mediante el siguiente enlace:
-
-**[Prototipo interactivo de EcoTrack en Figma](https://www.figma.com/design/TB5iPC598xAyU2i39VBbMg/EcoTrack-v1---Web-Application-UX-UI?node-id=2136-2&t=gfEigo8KPkeadZWo-1)**
-
-El enlace permite revisar la navegación entre las principales interfaces y las interacciones definidas para los diferentes procesos funcionales de la aplicación.
+---
 
 ## 4.6. Domain-Driven Software Architecture
 
@@ -2308,110 +1809,15 @@ Este diagrama muestra la interacción con un actor externo (`External Business S
 
 ### 4.7.1. Class Diagrams
 
-### 4.7.1.1. Frontend Class Diagrams
-
-##### Frontend General Bounded Contexts
-
-**EcoTrack WebApp - Frontend Bounded Contexts**
-
-![EcoTrack WebApp - Frontend Bounded Contexts](docs/diagrams/class/frontend/ecotrack-frontend-general-bounded-contexts-class-diagram.png)
-
-##### Frontend IAM
-
-**EcoTrack Platform - IAM Frontend Bounded Context Layers**
-
-![EcoTrack Platform - IAM Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-iam-frontend-class-diagram.png)
+<!-- Completar -->
 
 ---
-
-### 4.7.1.2. Frontend Layer Class Diagrams
-
-##### Frontend IAM Layers
-
-###### Presentation
-
-**EcoTrack Platform - IAM Frontend Presentation Layer**
-
-![EcoTrack Platform - IAM Frontend Presentation Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-presentation-layer-class-diagram.png)
-
-###### Application
-
-**EcoTrack Platform - IAM Frontend Application Layer**
-
-![EcoTrack Platform - IAM Frontend Application Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-application-layer-class-diagram.png)
-
-###### Domain
-
-**EcoTrack Platform - IAM Frontend Domain Layer**
-
-![EcoTrack Platform - IAM Frontend Domain Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-domain-layer-class-diagram.png)
-
-###### Infrastructure
-
-**EcoTrack Platform - IAM Frontend Infrastructure Layer**
-
-![EcoTrack Platform - IAM Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-infrastructure-layer-class-diagram.png)
-
----
-
-### 4.7.1.3. Backend Class Diagrams
-
-##### Backend General Bounded Contexts
-
-**EcoTrack Platform - Backend Bounded Contexts**
-
-![EcoTrack Platform - Backend Bounded Contexts](docs/diagrams/class/backend/ecotrack-backend-general-bounded-contexts-class-diagram.png)
-
-##### Backend IAM
-
-**EcoTrack Platform - IAM Backend Bounded Context Layers**
-
-![EcoTrack Platform - IAM Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-iam-backend-class-diagram.png)
-
----
-
-### 4.7.1.4. Backend Layer Class Diagrams
-
-##### Backend IAM Layers
-
-###### Interfaces REST
-
-**EcoTrack Platform - IAM Backend Interfaces REST Layer**
-
-![EcoTrack Platform - IAM Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-iam-backend-interfaces-layer-class-diagram.png)
-
-###### Application
-
-**EcoTrack Platform - IAM Backend Application Layer**
-
-![EcoTrack Platform - IAM Backend Application Layer](docs/diagrams/class/backend/ecotrack-iam-backend-application-layer-class-diagram.png)
-
-###### Domain - User Aggregate
-
-**EcoTrack Platform - IAM Backend Domain Layer - User Aggregate**
-
-![EcoTrack Platform - IAM Backend Domain Layer - User Aggregate](docs/diagrams/class/backend/ecotrack-iam-backend-domain-user-aggregate-class-diagram.png)
-
-###### Domain - PasswordResetToken Aggregate
-
-**EcoTrack Platform - IAM Backend Domain Layer - PasswordResetToken Aggregate**
-
-![EcoTrack Platform - IAM Backend Domain Layer - PasswordResetToken Aggregate](docs/diagrams/class/backend/ecotrack-iam-backend-domain-password-reset-aggregate-class-diagram.png)
-
-###### Infrastructure
-
-**EcoTrack Platform - IAM Backend Infrastructure Layer**
-
-![EcoTrack Platform - IAM Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-iam-backend-infrastructure-layer-class-diagram.png)
-
 
 ## 4.8. Database Design
 
-### 4.8. Database Design
+### 4.8.1. Database Diagrams
 
-#### 4.8.1. Database Diagrams
-
-![EcoTrack Platform - Database Diagram](docs/database/ecotrack-database-diagram-EcoTrack_Platform__Database.png)
+<!-- Completar -->
 
 ---
 
