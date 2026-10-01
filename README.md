@@ -326,7 +326,7 @@ Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Apli
 #### Espinoza Flores, Aaron André
 
 <p align="center">
-  <img src="assets/chapter-01/team/aaron-espinoza.jpg" alt="Aaron André Espinoza Flores" width="180"/>
+  <img src="assets/chapter-01/team/aaron_team.jpg" alt="Aaron André Espinoza Flores" width="180"/>
 </p>
 
 **Código UPC:** U202222859
@@ -480,17 +480,15 @@ EcoTrack busca responder a esta problemática mediante una plataforma web orient
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-
 El estado actual de la gestión de emisiones de gases de efecto invernadero en empresas exportadoras, corporaciones y medianas empresas industriales se encuentra principalmente enfocado en el uso de hojas de cálculo, documentos independientes y procesos manuales para registrar, organizar y analizar información ambiental.
 
 Las soluciones y procesos utilizados actualmente no siempre permiten centralizar de manera sencilla la información proveniente de distintas áreas, automatizar los cálculos de emisiones, realizar seguimiento de objetivos ambientales y generar reportes desde un mismo entorno.
 
-EcoTrack busca cubrir esta necesidad mediante una plataforma web B2B que permita centralizar el registro de emisiones, realizar cálculos de huella de carbono, visualizar indicadores ambientales, establecer metas de reducción y generar reportes.
+EcoTrack busca cubrir esta necesidad mediante una plataforma web B2B que permita centralizar el registro de fuentes de emisión y datos de actividad, calcular la huella de carbono, visualizar indicadores ambientales, establecer metas y planes de reducción y generar reportes ambientales.
 
-Nuestro enfoque inicial estará dirigido a empresas exportadoras y a corporaciones y medianas empresas industriales que necesiten mejorar la forma en que gestionan su información ambiental.
+Nuestro enfoque inicial estará dirigido a empresas exportadoras y a corporaciones y medianas empresas industriales que necesiten mejorar la forma en que registran, consolidan, analizan y comunican su información ambiental.
 
-Sabremos que la propuesta está generando resultados cuando los usuarios pertenecientes a estos segmentos puedan registrar y consultar su información ambiental de manera centralizada, identificar sus principales fuentes de emisión y considerar útil el uso de EcoTrack para reducir el esfuerzo requerido en sus procesos actuales.
-
+Sabremos que la propuesta está generando resultados cuando, durante las validaciones con representantes de los segmentos objetivo, al menos el 80 % de los participantes pueda completar sin asistencia crítica el flujo principal de registrar información de emisiones, obtener un resultado de huella de carbono y consultar sus principales indicadores; y cuando al menos el 70 % pueda generar o localizar un reporte ambiental correspondiente a un periodo específico en un máximo de cinco minutos.
 #### 1.2.2.2. Lean UX Assumptions
 
 ##### Business Assumptions
@@ -503,12 +501,11 @@ Sabremos que la propuesta está generando resultados cuando los usuarios pertene
 
 ##### Business Outcome Assumptions
 
-- Creemos que EcoTrack puede incrementar la cantidad de empresas que utilizan herramientas digitales para gestionar su información ambiental.
-- Creemos que centralizar la información puede reducir el tiempo empleado por las empresas en organizar datos ambientales.
-- Creemos que la generación de reportes puede incrementar el uso recurrente de la plataforma.
-- Creemos que los dashboards y herramientas de seguimiento pueden favorecer la permanencia de los usuarios dentro del producto.
-- Creemos que una experiencia sencilla puede contribuir a aumentar la adopción de EcoTrack entre los segmentos objetivo.
-
+- Creemos que EcoTrack puede lograr que al menos el 70 % de las organizaciones que completen su registro realicen también su primer registro de información ambiental y su primer cálculo de huella de carbono durante su etapa inicial de uso.
+- Creemos que centralizar la información ambiental en EcoTrack puede reducir en al menos un 30 % el tiempo requerido para recopilar y organizar información proveniente de diferentes áreas, en comparación con el proceso manual utilizado previamente por la organización.
+- Creemos que la automatización del cálculo de huella de carbono puede reducir en al menos un 30 % el tiempo requerido para obtener resultados de emisiones a partir de los datos de actividad registrados.
+- Creemos que los dashboards, indicadores y herramientas de seguimiento pueden lograr que al menos el 60 % de las organizaciones activas consulten nuevamente su información ambiental dentro de un periodo de 30 días.
+- Creemos que la generación de reportes desde EcoTrack puede reducir en al menos un 40 % el tiempo requerido para preparar un reporte ambiental correspondiente a un periodo determinado, en comparación con la preparación manual mediante información distribuida.
 ##### User Assumptions
 
 - Creemos que los principales usuarios serán responsables de sostenibilidad, analistas ambientales, gerentes de operaciones y personal administrativo.
@@ -540,53 +537,53 @@ A partir de los Feature Assumptions identificados, se plantean los siguientes Hy
 
 ##### Hypothesis Statement 1
 
-We believe we will achieve **a reduction in the time companies spend organizing environmental information**
+We believe we will achieve at least a 30% reduction in the time required to organize environmental information
 
-If **sustainability managers, environmental analysts, operations managers and administrative staff**
+If sustainability managers, environmental analysts, operations managers and administrative staff
 
-Attain **a centralized and structured way to register their emissions information**
+Attain a centralized and structured way to register emission sources and activity data
 
-With **a feature for registering and classifying emission sources.**
+With a feature for registering and classifying emission sources and their associated activity data.
 
 ##### Hypothesis Statement 2
 
-We believe we will achieve **a reduction in the effort and potential errors associated with manual carbon footprint calculations**
+We believe we will achieve at least a 30% reduction in the time required to obtain carbon footprint results
 
-If **sustainability managers and environmental analysts**
+If sustainability managers and environmental analysts
 
-Attain **a simpler and more reliable way to obtain their carbon footprint results**
+Attain a more direct and structured way to calculate their organization's greenhouse gas emissions
 
-With **an automatic carbon footprint calculation feature.**
+With an automatic carbon footprint calculation feature based on activity data and emission factors.
 
 ##### Hypothesis Statement 3
 
-We believe we will achieve **greater recurrent use of EcoTrack for environmental information analysis**
+We believe at least 60% of active organizations will return to consult their environmental information within a 30-day period
 
-If **sustainability managers, environmental analysts and operations managers**
+If sustainability managers, environmental analysts and operations managers
 
-Attain **a clearer understanding of the organization's emissions and environmental indicators**
+Attain a clear and centralized understanding of the organization's emissions and environmental indicators
 
-With **an environmental indicators dashboard.**
+With an environmental indicators dashboard.
 
 ##### Hypothesis Statement 4
 
-We believe we will achieve **better follow-up of environmental objectives within organizations**
+We believe at least 60% of organizations that register an environmental goal will consult or update its progress during its reporting period
 
-If **sustainability managers and operations managers**
+If sustainability managers and operations managers
 
-Attain **greater control over their emission reduction objectives**
+Attain greater visibility and control over their emission reduction objectives
 
-With **a feature for registering and tracking environmental goals.**
+With features for environmental goals, reduction plans and progress tracking.
 
 ##### Hypothesis Statement 5
 
-We believe we will achieve **greater recurrent use of the platform for environmental reporting activities**
+We believe we will achieve at least a 40% reduction in the time required to prepare an environmental report
 
-If **sustainability managers, environmental analysts and administrative staff**
+If sustainability managers, environmental analysts and administrative staff
 
-Attain **an easier way to compile and communicate their environmental information**
+Attain a centralized way to compile and communicate environmental results for a selected period
 
-With **an environmental report generation feature.**
+With an environmental report generation feature.
 
 #### 1.2.2.4. Lean UX Canvas
 
@@ -629,7 +626,7 @@ EcoTrack busca ayudar a este segmento mediante una plataforma que permita centra
 
 Este segmento está compuesto por corporaciones y medianas empresas industriales que buscan controlar y reducir el impacto ambiental generado por sus operaciones.
 
-Como sustento del segmento, el Ministerio de Comercio Exterior y Turismo (MINCETUR) informó que entre enero y noviembre de 2025 el Perú registró 9,641 empresas exportadoras, de las cuales 6,702 correspondían a micro, pequeñas y medianas empresas. Asimismo, durante 2025 las exportaciones peruanas alcanzaron un récord histórico de US$ 90,082 millones. Estas cifras evidencian la existencia de una base empresarial exportadora relevante que debe gestionar información relacionada con sus procesos productivos y su desempeño frente a mercados internacionales.
+Como sustento estadístico de este segmento, el Instituto Nacional de Estadística e Informática (INEI), en el informe Perú: Estructura Empresarial, 2024, reportó 2,430 grandes y medianas empresas manufactureras a nivel nacional durante 2024. Asimismo, el 73.2 % de estas empresas se encontraba concentrado en el departamento de Lima. Estas cifras evidencian la presencia de un conjunto relevante de organizaciones manufactureras de mediana y gran escala cuyas operaciones pueden involucrar múltiples áreas, sedes, procesos productivos y fuentes de información que requieren ser gestionadas de manera estructurada.
 
 Estas organizaciones pueden producir emisiones provenientes del consumo de electricidad, combustibles, transporte, maquinaria, residuos y distintos procesos productivos. Debido a que la información puede provenir de diferentes áreas de la empresa, uno de sus principales problemas es mantener los datos organizados y actualizados.
 
