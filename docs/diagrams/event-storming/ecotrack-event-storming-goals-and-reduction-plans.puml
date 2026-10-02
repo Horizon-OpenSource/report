@@ -1,0 +1,85 @@
+@startuml
+title EcoTrack - Goals and Reduction Plans Event Storming
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam rectangle {
+  BorderColor #4A4A4A
+  FontColor #FFFFFF
+  FontStyle bold
+  FontSize 12
+}
+skinparam ArrowColor #4A4A4A
+
+legend top left
+  |<#2D9CDB> Command |
+  |<#F2C94C> Aggregate |
+  |<#F2994A> Domain Event |
+  |<#27AE60> Read Model |
+  |<#9B51E0> Actor |
+  |<#828282> External Context |
+endlegend
+
+actor "Sustainability\nManager" as Manager #9B51E0
+rectangle "Carbon Footprint\nCalculation\n<i>External Context</i>" as Footprint #828282
+
+rectangle "RegisterReductionGoal\n<i>Command</i>" as CmdGoal #2D9CDB
+rectangle "ReductionGoal\n<i>Aggregate</i>" as AggGoal #F2C94C
+rectangle "ReductionGoalRegistered\n<i>Event</i>" as EvtGoal #F2994A
+
+rectangle "EditReductionGoal\n<i>Command</i>" as CmdEdit #2D9CDB
+rectangle "ReductionGoalEdited\n<i>Event</i>" as EvtEdit #F2994A
+
+rectangle "UpdateGoalStatus\n<i>Command</i>" as CmdStatus #2D9CDB
+rectangle "GoalStatusUpdated\n<i>Event</i>" as EvtStatus #F2994A
+
+rectangle "DeleteReductionGoal\n<i>Command</i>" as CmdDelGoal #2D9CDB
+rectangle "ReductionGoalDeleted\n<i>Event</i>" as EvtDelGoal #F2994A
+
+rectangle "CreateReductionPlan\n<i>Command</i>" as CmdPlan #2D9CDB
+rectangle "ReductionPlan\n<i>Aggregate</i>" as AggPlan #F2C94C
+rectangle "ReductionPlanCreated\n<i>Event</i>" as EvtPlan #F2994A
+
+rectangle "RegisterEnvironmentalInitiative\n<i>Command</i>" as CmdInit #2D9CDB
+rectangle "EnvironmentalInitiative\n<i>Aggregate</i>" as AggInit #F2C94C
+rectangle "EnvironmentalInitiativeRegistered\n<i>Event</i>" as EvtInit #F2994A
+
+rectangle "Reduction Goals List\n<i>Read Model</i>" as RmGoals #27AE60
+rectangle "Progress View\n<i>Read Model</i>" as RmProgress #27AE60
+
+Manager --> CmdGoal
+CmdGoal --> AggGoal
+AggGoal --> EvtGoal
+
+Manager --> CmdEdit
+CmdEdit --> AggGoal
+AggGoal --> EvtEdit
+
+Manager --> CmdStatus
+CmdStatus --> AggGoal
+AggGoal --> EvtStatus
+
+Manager --> CmdDelGoal
+CmdDelGoal --> AggGoal
+AggGoal --> EvtDelGoal
+
+Manager --> CmdPlan
+CmdPlan --> AggPlan
+AggGoal "1" *-- "0..*" AggPlan : has
+AggPlan --> EvtPlan
+
+Manager --> CmdInit
+CmdInit --> AggInit
+AggPlan "1" *-- "0..*" AggInit : has
+AggInit --> EvtInit
+
+EvtGoal --> RmGoals
+EvtEdit --> RmGoals
+EvtStatus --> RmGoals
+
+Footprint --> RmProgress : footprint results
+EvtStatus --> RmProgress
+EvtInit --> RmProgress
+
+@enduml
