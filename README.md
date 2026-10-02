@@ -913,7 +913,7 @@ A continuacion, se presentan los User Journey Maps de ambos segmentos. Cada mapa
 
 ### 2.3.4. Empathy Mapping.
 
-El Mapa de Empatia sintetiza las observaciones e impresiones recopiladas durante las entrevistas, permitiendo profundizar en los aspectos emocionales y actitudinales de los dos segmentos de usuario objetivo de EcoTrack.
+El Mapa de Empatia sintetiza las observaciones de las entrevistas mediante siete preguntas: con quien se empatiza, que necesita hacer, que ve, que dice, que hace, que oye y que piensa o siente. Cada mapa tambien presenta los pains y gains del segmento correspondiente.
 
 #### Empathy Map 1: Responsable de Calidad y Sostenibilidad (Empresa exportadora)
 
