@@ -928,39 +928,72 @@ This map represents a composite persona based on interviews E04, E05, and E06. I
 ![Empathy Map - Industrial Company](assets/chapter-02/empathy-map-empresa-industrial.png)
 ## 2.4. Big Picture Event Storming
 
-El Big Picture Event Storming representa el flujo de negocio completo de EcoTrack desde el registro de la organizacion hasta la revision de resultados y la generacion de reportes. El diagrama utiliza actores, comandos, eventos de dominio, politicas y read models para mostrar relaciones y no solo una lista de eventos.
+El equipo llevo a cabo una sesion colaborativa de **Big Picture Event Storming** utilizando la herramienta Miro, con el objetivo de explorar a alto nivel el dominio de gestion ambiental empresarial de EcoTrack. A diferencia de un flujo tecnico o de una secuencia limitada al registro de usuarios, el Big Picture Event Storming se enfoca en capturar el flujo de negocio completo que ocurre en una organizacion: desde la configuracion de la empresa y sus sedes hasta el registro de datos de actividad, el calculo de la huella de carbono, la definicion de metas de reduccion y la generacion de reportes ambientales.
+
+Durante la sesion se identificaron los eventos significativos que ocurren en el ciclo de gestion de emisiones y la interaccion entre los actores del ecosistema. El proceso permitio visualizar el flujo completo del negocio, exponiendo las relaciones entre eventos clave, actores involucrados, sistemas externos y politicas que rigen el comportamiento de EcoTrack.
+
+A continuacion, se presentan los principales elementos identificados en el Big Picture Event Storming.
+
+### Domain Events (Eventos de Dominio)
+
+Eventos expresados en tiempo pasado que representan hechos relevantes ocurridos dentro del proceso de negocio:
+
+- **Organization Registered** (Organizacion registrada)
+- **Facility Registered** (Sede o planta registrada)
+- **User Invited** (Usuario invitado)
+- **Emission Source Registered** (Fuente de emision registrada)
+- **Activity Data Recorded** (Dato de actividad registrado)
+- **Environmental Evidence Uploaded** (Evidencia ambiental cargada)
+- **CSV Data Imported** (Datos CSV importados)
+- **External System Data Received** (Datos de sistema externo recibidos)
+- **Emission Factor Selected** (Factor de emision seleccionado)
+- **Carbon Footprint Calculated** (Huella de carbono calculada)
+- **Emissions History Updated** (Historial de emisiones actualizado)
+- **Environmental Dashboard Updated** (Dashboard ambiental actualizado)
+- **Reduction Goal Created** (Meta de reduccion creada)
+- **Reduction Plan Created** (Plan de reduccion creado)
+- **Environmental Initiative Registered** (Iniciativa ambiental registrada)
+- **Reduction Progress Reviewed** (Avance de reduccion revisado)
+- **Environmental Report Generated** (Reporte ambiental generado)
+- **Audit Evidence Reviewed** (Evidencia de auditoria revisada)
+
+### Actors (Actores)
+
+Personas o sistemas que ejecutan comandos, toman decisiones o generan eventos dentro del dominio:
+
+- **Organization Administrator (Administrador de la organizacion):** Registra la empresa, configura sedes, invita usuarios y asigna roles y permisos.
+- **Sustainability Lead (Responsable de sostenibilidad):** Coordina la recopilacion de datos ambientales, revisa indicadores, crea metas y prepara reportes para clientes, certificaciones o auditorias.
+- **Environmental Analyst (Analista ambiental):** Registra fuentes de emision, datos de actividad, factores de emision y evidencias necesarias para los calculos.
+- **Operations Supervisor (Supervisor de operaciones):** Proporciona y valida consumos de energia, combustible, agua, materiales, transporte y residuos provenientes de las operaciones.
+- **Management (Gerencia):** Consulta dashboards y reportes, compara resultados y aprueba metas, planes o decisiones de reduccion.
+- **External Auditor / Certification Body (Auditor externo / Certificadora):** Revisa reportes, evidencias e historial para verificar la consistencia y trazabilidad de la informacion ambiental.
+
+### External Systems (Sistemas Externos)
+
+- **CSV File / Spreadsheet Source:** Fuente externa utilizada para importar registros ambientales que anteriormente eran gestionados en hojas de calculo.
+- **EcoTrack API / Enterprise System:** Integracion que permite recibir datos desde sistemas empresariales, ERP u otras aplicaciones internas.
+- **Emission Factor Repository:** Fuente de factores de emision utilizados para convertir los datos de actividad en emisiones de CO2e.
+- **Identity and Email Service:** Servicios externos utilizados para autenticacion, invitaciones de usuarios, recuperacion de acceso y notificaciones.
+- **PDF Export Service:** Servicio utilizado para generar y descargar reportes ambientales en un formato compartible.
+
+### Policies (Politicas)
+
+Reglas de negocio que reaccionan ante eventos especificos y activan nuevas acciones dentro del flujo:
+
+- **When Activity Data is Recorded, validate required fields and classify its emission scope:** Cuando se registra un dato de actividad, EcoTrack valida los campos obligatorios y lo relaciona con una fuente, sede, periodo y alcance de emision.
+- **When Valid Activity Data and an Emission Factor are Available, calculate the Carbon Footprint:** Cuando existen datos validos y un factor de emision aplicable, EcoTrack ejecuta el calculo de la huella de carbono.
+- **When the Carbon Footprint is Calculated, update the Dashboard and Emissions History:** Cuando se calcula la huella, se actualizan automaticamente el dashboard y el historial por alcance, fuente, sede y periodo.
+- **When Imported Data contains errors, reject inconsistent rows and request correction:** Cuando una importacion CSV contiene errores, se rechazan las filas inconsistentes y se solicita su correccion antes de incorporarlas al calculo.
+- **When an Emission Threshold is exceeded, notify the Sustainability Lead and Operations Supervisor:** Cuando un consumo o emision supera el umbral definido, se notifica a los responsables para que revisen la causa y definan una accion.
+- **When a Reduction Goal is Created, request a Reduction Plan and responsible owners:** Cuando se crea una meta de reduccion, se solicita asociar un plan, responsables, fechas e iniciativas de seguimiento.
+- **When a Reporting Period is Closed, preserve its calculations and evidence:** Cuando se cierra un periodo de reporte, se conserva el calculo, las evidencias y el historial para mantener la trazabilidad.
+- **When an Environmental Report is Requested, consolidate approved results and audit evidence:** Cuando se solicita un reporte ambiental, EcoTrack consolida resultados aprobados, indicadores y evidencias para generar el documento final.
+
+### Big Picture Event Storming Diagram
+
+El siguiente diagrama integra visualmente actores, comandos, eventos de dominio, politicas, read models y sistemas externos a lo largo del flujo principal de EcoTrack.
 
 ![Big Picture Event Storming de EcoTrack](assets/chapter-02/big-picture-event-storming.svg)
-
-### Leyenda del diagrama
-
-| Elemento | Color | Uso en EcoTrack |
-|---|---|---|
-| Actor | Amarillo | Persona o sistema que inicia una accion. |
-| Command | Azul | Intencion ejecutada dentro del sistema. |
-| Domain Event | Naranja | Hecho relevante que ya ocurrio en el dominio. |
-| Policy | Morado | Regla que reacciona a un evento y activa otra accion. |
-| Read Model | Verde | Informacion preparada para consulta y toma de decisiones. |
-
-### Flujo principal identificado
-
-1. Un administrador registra la organizacion, sedes y usuarios.
-2. Un responsable ambiental registra fuentes de emision y datos de actividad.
-3. EcoTrack valida la informacion, selecciona factores de emision y calcula la huella de carbono.
-4. Los resultados actualizan el dashboard y el historial por alcance y periodo.
-5. Los responsables crean metas, planes e iniciativas de reduccion y revisan su avance.
-6. La organizacion genera reportes para gerencia, clientes, auditorias o certificaciones.
-7. En el Plan Empresa, los datos tambien pueden ingresar mediante CSV o EcoTrack API.
-
-### Bounded Contexts preliminares
-
-- **Identity and Access Management:** autenticacion, usuarios, roles y permisos.
-- **Organization Management:** organizaciones, sedes y unidades de negocio.
-- **Emissions Management:** fuentes de emision y datos de actividad.
-- **Carbon Footprint Calculation:** factores de emision y calculos por alcance y periodo.
-- **Goals and Reduction Plans:** metas, planes, iniciativas y seguimiento.
-- **Analytics and Reports:** dashboard, historial, indicadores y reportes.
-- **Data Integration:** importacion CSV e integracion mediante EcoTrack API.
 ## 2.5. Ubiquitous Language
 
 El Ubiquitous Language define términos del dominio ambiental que serán utilizados por el equipo Horizon y los stakeholders durante el desarrollo de EcoTrack. Los términos se presentan en inglés, mientras que las definiciones se redactan en español para mantener claridad en el informe.
