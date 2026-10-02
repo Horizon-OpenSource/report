@@ -996,33 +996,106 @@ El siguiente diagrama integra visualmente actores, comandos, eventos de dominio,
 ![Big Picture Event Storming de EcoTrack](assets/chapter-02/big-picture-event-storming.svg)
 ## 2.5. Ubiquitous Language
 
-El Ubiquitous Language define términos del dominio ambiental que serán utilizados por el equipo Horizon y los stakeholders durante el desarrollo de EcoTrack. Los términos se presentan en inglés, mientras que las definiciones se redactan en español para mantener claridad en el informe.
+El Ubiquitous Language establece un vocabulario comun para que el equipo Horizon, los usuarios y los stakeholders utilicen los mismos conceptos durante el analisis, diseno y desarrollo de EcoTrack. Los terminos se presentan en ingles, su equivalente en espanol y una definicion contextualizada al dominio de gestion ambiental empresarial.
 
-| Term                     | Definition                                                                                                                                                  |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Carbon Footprint         | Total de emisiones de gases de efecto invernadero generadas directa o indirectamente por una organización durante un periodo determinado.                   |
-| Greenhouse Gas Emissions | Emisiones de gases que contribuyen al calentamiento global y que pueden generarse por actividades productivas, transporte, energía o procesos industriales. |
-| Emission Source          | Actividad, proceso, equipo o recurso que genera emisiones dentro de una organización.                                                                       |
-| Scope 1                  | Emisiones directas generadas por fuentes propias o controladas por la empresa.                                                                              |
-| Scope 2                  | Emisiones indirectas asociadas al consumo de electricidad, energía o calefacción adquirida por la empresa.                                                  |
-| Scope 3                  | Otras emisiones indirectas generadas en la cadena de valor de la organización.                                                                              |
-| Activity Data            | Dato operativo usado para calcular emisiones, como litros de combustible, kWh consumidos, toneladas transportadas o kilómetros recorridos.                  |
-| Emission Factor          | Valor que permite convertir un dato de actividad en una cantidad estimada de emisiones.                                                                     |
-| Facility                 | Sede, planta, almacén u operación física donde se registran consumos y emisiones.                                                                           |
-| Business Unit            | Unidad organizacional que agrupa operaciones, áreas o procesos dentro de una empresa.                                                                       |
-| Environmental Indicator  | Métrica utilizada para evaluar el desempeño ambiental de una organización.                                                                                  |
-| Sustainability Report    | Documento que comunica resultados, indicadores y acciones ambientales de una organización.                                                                  |
-| Reduction Goal           | Meta definida para disminuir emisiones, consumo energético u otro impacto ambiental.                                                                        |
-| Reduction Plan           | Conjunto de acciones organizadas para alcanzar una meta ambiental.                                                                                          |
-| Environmental Initiative | Acción específica ejecutada para reducir emisiones o mejorar el desempeño ambiental.                                                                        |
-| Audit Evidence           | Documento, registro o archivo que sustenta un dato ambiental, cálculo o resultado ante una revisión.                                                        |
-| CSV Import               | Carga de información ambiental mediante un archivo con formato estándar.                                                                                    |
-| EcoTrack API             | Interfaz estándar que permite recibir información ambiental desde sistemas externos de una empresa.                                                         |
-| Dashboard                | Vista que presenta indicadores ambientales mediante gráficos, tarjetas y comparaciones.                                                                     |
-| Reporting Period         | Periodo de tiempo utilizado para registrar, calcular y analizar emisiones.                                                                                  |
+- **Identity & Access Management**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| User | Usuario | Persona que interactua con EcoTrack de acuerdo con los permisos asignados dentro de una organizacion. |
+| Organization Administrator | Administrador de organizacion | Usuario responsable de configurar la empresa, invitar integrantes y administrar roles y permisos. |
+| Register User | Registrar usuario | Accion de crear una cuenta nueva para acceder a EcoTrack. |
+| Login | Iniciar sesion | Proceso de autenticacion mediante credenciales validas para acceder a la plataforma. |
+| Credentials | Credenciales | Conjunto de datos, como correo y contrasena, utilizados para verificar la identidad de un usuario. |
+| User Invited | Usuario invitado | Evento que indica que una persona fue invitada a formar parte de una organizacion. |
+| User Authenticated | Usuario autenticado | Evento que confirma que las credenciales fueron verificadas y se inicio una sesion valida. |
+
+- **Organization Management**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Organization | Organizacion | Empresa registrada en EcoTrack que centraliza su informacion ambiental, usuarios, sedes y reportes. |
+| Facility | Sede o planta | Ubicacion fisica donde se realizan operaciones y se registran consumos, fuentes y emisiones. |
+| Business Unit | Unidad de negocio | Division organizacional utilizada para agrupar areas, procesos u operaciones dentro de una empresa. |
+| Register Organization | Registrar organizacion | Accion mediante la cual un administrador incorpora los datos generales de una empresa. |
+| Register Facility | Registrar sede | Accion de agregar una sede, planta, almacen o centro operativo a una organizacion. |
+| Organization Registered | Organizacion registrada | Evento que confirma la creacion de una organizacion dentro de EcoTrack. |
+| Facility Registered | Sede registrada | Evento que confirma que una sede o planta fue asociada correctamente con una organizacion. |
+
+- **Emissions Management**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Emission Source | Fuente de emision | Actividad, equipo, proceso o recurso que genera emisiones de gases de efecto invernadero. |
+| Activity Data | Dato de actividad | Medida operativa utilizada en un calculo, como kWh, litros de combustible, kilometros o toneladas. |
+| Scope 1 | Alcance 1 | Emisiones directas provenientes de fuentes propiedad de la empresa o controladas por ella. |
+| Scope 2 | Alcance 2 | Emisiones indirectas asociadas con la electricidad o energia adquirida por la empresa. |
+| Scope 3 | Alcance 3 | Otras emisiones indirectas generadas a lo largo de la cadena de valor de la organizacion. |
+| Reporting Period | Periodo de reporte | Intervalo de tiempo utilizado para registrar, calcular, comparar y reportar emisiones. |
+| Environmental Evidence | Evidencia ambiental | Archivo, recibo, fotografia o documento que respalda un dato de actividad registrado. |
+| Activity Data Recorded | Dato de actividad registrado | Evento que indica que un consumo o actividad fue almacenado para un periodo y una fuente determinados. |
+
+- **Carbon Footprint Calculation**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Emission Factor | Factor de emision | Coeficiente que convierte un dato de actividad en una cantidad estimada de emisiones. |
+| Carbon Footprint | Huella de carbono | Total de emisiones de gases de efecto invernadero generadas por una organizacion durante un periodo. |
+| Carbon Dioxide Equivalent (CO2e) | Dioxido de carbono equivalente (CO2e) | Unidad comun que expresa el efecto climatico de diferentes gases de efecto invernadero. |
+| Calculate Carbon Footprint | Calcular huella de carbono | Accion que aplica factores de emision a los datos de actividad validados. |
+| Carbon Footprint Calculated | Huella de carbono calculada | Evento que confirma la obtencion de resultados de emisiones por alcance, fuente, sede y periodo. |
+| Emissions History | Historial de emisiones | Registro cronologico de los calculos realizados y sus resultados anteriores. |
+| Emission Factor Selected | Factor de emision seleccionado | Evento que indica que se eligio el factor aplicable para procesar un dato de actividad. |
+
+- **Goals & Reduction Plans**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Reduction Goal | Meta de reduccion | Resultado medible definido para disminuir emisiones, consumos o impactos dentro de un plazo. |
+| Reduction Plan | Plan de reduccion | Conjunto organizado de acciones, responsables y fechas para alcanzar una meta ambiental. |
+| Environmental Initiative | Iniciativa ambiental | Accion especifica ejecutada para mejorar el desempeno ambiental de la organizacion. |
+| Progress | Avance | Medida que representa el nivel de cumplimiento alcanzado respecto de una meta. |
+| Create Reduction Goal | Crear meta de reduccion | Accion de establecer un valor objetivo, una linea base y una fecha limite. |
+| Reduction Goal Created | Meta de reduccion creada | Evento que confirma que una meta ambiental fue registrada correctamente. |
+| Progress Reviewed | Avance revisado | Evento que indica que un usuario evaluo resultados e iniciativas asociados con una meta. |
+
+- **Analytics & Reports**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Dashboard | Panel de indicadores | Vista que resume consumos, emisiones, tendencias, comparaciones y avance de metas. |
+| Environmental Indicator | Indicador ambiental | Metrica empleada para evaluar el desempeno ambiental de una organizacion. |
+| Environmental Report | Reporte ambiental | Documento que consolida resultados, indicadores, periodos y evidencias ambientales. |
+| Audit Evidence | Evidencia de auditoria | Registro verificable que sustenta un dato, calculo o resultado ante una revision externa. |
+| Generate Environmental Report | Generar reporte ambiental | Accion de consolidar resultados aprobados en un documento descargable. |
+| Environmental Dashboard Updated | Dashboard ambiental actualizado | Evento que confirma que los indicadores reflejan los calculos y datos mas recientes. |
+| Environmental Report Generated | Reporte ambiental generado | Evento que confirma que el reporte fue creado y se encuentra disponible para consulta o descarga. |
+
+- **Data Integration**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| CSV Import | Importacion CSV | Proceso de carga masiva de datos ambientales mediante un archivo con estructura definida. |
+| EcoTrack API | API de EcoTrack | Interfaz que permite recibir o consultar informacion desde sistemas empresariales externos. |
+| External System | Sistema externo | Aplicacion, ERP u otra fuente que intercambia informacion con EcoTrack. |
+| Import Activity Data | Importar datos de actividad | Accion de cargar multiples registros ambientales desde un archivo o una integracion. |
+| CSV Data Imported | Datos CSV importados | Evento que confirma que las filas validas de un archivo fueron incorporadas a la plataforma. |
+| External System Data Received | Datos de sistema externo recibidos | Evento que indica que EcoTrack recibio informacion mediante una integracion autorizada. |
+| Validation Error | Error de validacion | Resultado que identifica un dato incompleto, inconsistente o incompatible con las reglas del dominio. |
+
+- **Plans & Subscriptions**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Subscription | Suscripcion | Relacion activa entre una organizacion y el plan de servicio contratado en EcoTrack. |
+| Basic Plan | Plan Basico | Plan inicial con funcionalidades esenciales para registrar emisiones y consultar resultados. |
+| Pro Plan | Plan Pro | Plan con capacidades ampliadas de analitica, reportes, metas e importacion de datos. |
+| Enterprise Plan | Plan Empresa | Plan orientado a organizaciones con multiples sedes, integraciones y necesidades avanzadas. |
+| Subscription Started | Suscripcion iniciada | Evento que indica que una organizacion comenzo a utilizar un plan determinado. |
+| Plan Changed | Plan modificado | Evento que confirma la actualizacion del plan contratado por una organizacion. |
+| Billing Period | Periodo de facturacion | Intervalo utilizado para calcular y gestionar el cobro recurrente de una suscripcion. |
 
 ---
-
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
