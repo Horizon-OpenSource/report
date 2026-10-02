@@ -865,13 +865,15 @@ A continuacion se presentan los User Personas representativos de los segmentos o
 
 Los User Personas se construyeron como **perfiles compuestos**, no como personas reales adicionales. Cada atributo fue derivado de patrones observados en las seis entrevistas. Para evitar datos inventados, no se asignan edad, distrito, marcas o nivel de habilidad que no hayan sido sustentados por los registros.
 
+Las fichas conservan el formato visual de User Persona (Goals, Quote, Demographic, Background, Motivations, Frustrations, Skills, Technology, Tools y Channels), pero sus rangos, comportamientos y necesidades se sustentan exclusivamente en las entrevistas citadas.
+
 - **Segmento 1: Responsable de Calidad y Sostenibilidad de una empresa exportadora**
 
-  ![User Persona trazable del Segmento 1](assets/chapter-02/user-persona-empresa-exportadora-trazable.svg)
+  ![User Persona trazable del Segmento 1](assets/chapter-02/user-persona-empresa-exportadora-trazable.png)
 
 - **Segmento 2: Responsable de Operaciones de una empresa industrial**
 
-  ![User Persona trazable del Segmento 2](assets/chapter-02/user-persona-empresa-industrial-trazable.svg)
+  ![User Persona trazable del Segmento 2](assets/chapter-02/user-persona-empresa-industrial-trazable.png)
 
 #### Trazabilidad del User Persona del Segmento 1
 
