@@ -989,11 +989,6 @@ Reglas de negocio que reaccionan ante eventos especificos y activan nuevas accio
 - **When a Reporting Period is Closed, preserve its calculations and evidence:** Cuando se cierra un periodo de reporte, se conserva el calculo, las evidencias y el historial para mantener la trazabilidad.
 - **When an Environmental Report is Requested, consolidate approved results and audit evidence:** Cuando se solicita un reporte ambiental, EcoTrack consolida resultados aprobados, indicadores y evidencias para generar el documento final.
 
-### Big Picture Event Storming Diagram
-
-El siguiente diagrama integra visualmente actores, comandos, eventos de dominio, politicas, read models y sistemas externos a lo largo del flujo principal de EcoTrack.
-
-![Big Picture Event Storming de EcoTrack](assets/chapter-02/big-picture-event-storming.svg)
 ## 2.5. Ubiquitous Language
 
 El Ubiquitous Language establece un vocabulario comun para que el equipo Horizon, los usuarios y los stakeholders utilicen los mismos conceptos durante el analisis, diseno y desarrollo de EcoTrack. Los terminos se presentan en ingles, su equivalente en espanol y una definicion contextualizada al dominio de gestion ambiental empresarial.
