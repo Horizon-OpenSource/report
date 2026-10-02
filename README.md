@@ -877,24 +877,26 @@ Las fichas conservan el formato visual de User Persona (Goals, Quote, Demographi
 
 ### 2.3.2. User Task Matrix.
 
-La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada segmento de usuario objetivo frente a la solucion. Se analizan segun su frecuencia de ejecucion y la importancia estrategica que representan para cumplir las metas descritas en los User Personas.
+La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada tipo de usuario frente a la solucion. Se analizan segun su frecuencia de ejecucion y la importancia estrategica que representan para cumplir las metas descritas en los User Personas.
 
-| Tarea                                                                         | Empresas exportadoras (Frecuencia / Importancia) | Corporaciones y medianas empresas industriales (Frecuencia / Importancia) |
-| :---------------------------------------------------------------------------- | :----------------------------------------------: | :-----------------------------------------------------------------------: |
-| **Registrar consumos de energia, combustible, transporte, agua y residuos**   |                   Alta / Alta                    |                                Alta / Alta                                |
-| **Consolidar informacion ambiental proveniente de diferentes areas**          |                   Alta / Alta                    |                                Alta / Alta                                |
-| **Calcular la huella de carbono por periodo, alcance o fuente de emision**    |                   Media / Alta                   |                                Alta / Alta                                |
-| **Generar reportes ambientales para clientes, certificaciones o auditorias**  |                   Alta / Alta                    |                               Media / Alta                                |
-| **Revisar dashboards con indicadores de consumo, emisiones y tendencias**     |                   Media / Alta                   |                                Alta / Alta                                |
-| **Comparar resultados entre meses, sedes, plantas, areas o procesos**         |                  Media / Media                   |                                Alta / Alta                                |
-| **Definir metas de reduccion y realizar seguimiento de acciones ambientales** |                   Media / Alta                   |                                Alta / Alta                                |
-| **Mantener evidencias y trazabilidad de los registros ambientales**           |                   Alta / Alta                    |                               Media / Alta                                |
+| Tarea | Responsable de sostenibilidad de empresa exportadora (Frecuencia / Importancia) | Responsable de operaciones industriales (Frecuencia / Importancia) | Gerencia o auditoria (Frecuencia / Importancia) |
+| :--- | :---: | :---: | :---: |
+| Registrar consumos de energia, combustible, agua, transporte y residuos | Alta / Alta | Alta / Alta | Baja / Media |
+| Consolidar informacion ambiental proveniente de diferentes areas o archivos | Alta / Alta | Alta / Alta | Baja / Media |
+| Calcular la huella de carbono por periodo, alcance o fuente de emision | Media / Alta | Alta / Alta | Baja / Alta |
+| Revisar dashboards con indicadores de consumo, emisiones y tendencias | Media / Alta | Alta / Alta | Media / Alta |
+| Comparar resultados entre periodos, sedes, plantas, areas o procesos | Media / Media | Alta / Alta | Media / Alta |
+| Generar reportes ambientales para clientes, certificaciones, auditorias o gerencia | Alta / Alta | Media / Alta | Alta / Alta |
+| Definir metas de reduccion y revisar el avance de las acciones ambientales | Media / Alta | Alta / Alta | Media / Alta |
+| Verificar evidencias, historial y trazabilidad de los registros ambientales | Alta / Alta | Media / Alta | Alta / Alta |
 
-#### Hallazgos clave de la matriz:
+- **Hallazgos clave de la matriz:**
 
-- **Empresas exportadoras:** Priorizan la organizacion de evidencias ambientales, la generacion de reportes y la trazabilidad de informacion solicitada por clientes, socios comerciales, auditorias o certificaciones.
-- **Corporaciones y medianas empresas industriales:** Se concentran en centralizar informacion proveniente de plantas, areas y unidades operativas, comparar indicadores por periodo y tomar decisiones basadas en consumos, emisiones y metas ambientales.
+- **Responsables de sostenibilidad de empresas exportadoras:** Priorizan el registro frecuente de datos, la organizacion de evidencias, la generacion de reportes y la trazabilidad solicitada por clientes, certificaciones o auditorias.
 
+- **Responsables de operaciones industriales:** Se concentran en centralizar datos provenientes de areas y procesos, comparar resultados, revisar indicadores y realizar seguimiento de consumos, emisiones y metas de reduccion.
+
+- **Gerencia y auditoria:** Su participacion es menos frecuente en el registro operativo, pero tiene alta importancia en la revision de dashboards, reportes, evidencias historicas y resultados que respaldan decisiones o verificaciones.
 ### 2.3.3. User Journey Mapping.
 
 A continuacion, se presenta el User Journey Mapping (Mapa de Experiencia del Usuario) que describe las etapas clave del recorrido de cada segmento objetivo frente a la solucion, incluyendo los puntos de contacto, emociones y oportunidades de mejora.
