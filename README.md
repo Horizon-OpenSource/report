@@ -913,20 +913,19 @@ A continuacion, se presentan los User Journey Maps de ambos segmentos. Cada mapa
 
 ### 2.3.4. Empathy Mapping.
 
-El Mapa de Empatia sintetiza las observaciones de las entrevistas mediante siete preguntas: con quien se empatiza, que necesita hacer, que ve, que dice, que hace, que oye y que piensa o siente. Cada mapa tambien presenta los pains y gains del segmento correspondiente.
+The Empathy Maps synthesize the interview findings through seven questions: who the team is empathizing with, what the persona needs to do, sees, says, does, hears, and thinks or feels. Each map also presents the main pains and gains of its target segment.
 
-#### Empathy Map 1: Responsable de Calidad y Sostenibilidad (Empresa exportadora)
+#### Empathy Map 1: Quality and Sustainability Lead (Exporting company)
 
-El siguiente Mapa de Empatia profundiza en la experiencia de una responsable de Calidad y Sostenibilidad de una empresa exportadora. Se identifican sus principales pensamientos y sentimientos (preocupacion por cumplir auditorias, necesidad de informacion confiable), lo que ve en su entorno (registros en Excel, documentos fisicos, fotos y evidencias dispersas), lo que oye de clientes y certificadoras (solicitudes de informacion ambiental y trazabilidad), lo que dice y hace (consolidar datos manualmente, preparar reportes por mes o lote), asi como sus principales pains (perdida de informacion, duplicidad de archivos, observaciones de auditoria) y gains (reducir tiempo, generar reportes ordenados y demostrar cumplimiento ambiental).
+This map represents a composite persona based on interviews E01, E02, and E03. It focuses on environmental evidence, reporting, client requests, certifications, and audit traceability.
 
-![Empathy Map Empresa Exportadora](assets/chapter-02/empathy-map-empresa-exportadora.png)
+![Empathy Map - Exporting Company](assets/chapter-02/empathy-map-empresa-exportadora.png)
 
-#### Empathy Map 2: Responsable Operativo Industrial (Corporacion o mediana empresa industrial)
+#### Empathy Map 2: Industrial Operations Lead (Corporation or medium-sized industrial company)
 
-El siguiente Mapa de Empatia analiza la experiencia de un responsable operativo industrial. Se exploran sus pensamientos y sentimientos (presion por controlar consumos, necesidad de reportes claros para gerencia), lo que ve (datos separados por areas, sedes o plantas), lo que oye (solicitudes de administracion, mantenimiento, operaciones y sostenibilidad), lo que dice y hace (revisar consumos, consolidar informacion, comparar periodos), y sus pains (formatos inconsistentes, informacion incompleta, mucho tiempo de consolidacion) y gains (centralizar informacion, visualizar indicadores, comparar resultados y hacer seguimiento de metas de reduccion).
+This map represents a composite persona based on interviews E04, E05, and E06. It focuses on operational data consolidation, consumption monitoring, management reporting, and reduction goals.
 
-![Empathy Map Empresa Industrial](assets/chapter-02/empathy-map-empresa-industrial.png)
-
+![Empathy Map - Industrial Company](assets/chapter-02/empathy-map-empresa-industrial.png)
 ## 2.4. Big Picture Event Storming
 
 El Big Picture Event Storming representa el flujo de negocio completo de EcoTrack desde el registro de la organizacion hasta la revision de resultados y la generacion de reportes. El diagrama utiliza actores, comandos, eventos de dominio, politicas y read models para mostrar relaciones y no solo una lista de eventos.
