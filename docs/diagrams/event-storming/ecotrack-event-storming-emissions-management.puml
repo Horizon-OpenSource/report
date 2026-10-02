@@ -1,0 +1,67 @@
+@startuml
+title EcoTrack - Emissions Management Event Storming
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam rectangle {
+  BorderColor #4A4A4A
+  FontColor #FFFFFF
+  FontStyle bold
+  FontSize 12
+}
+skinparam ArrowColor #4A4A4A
+
+legend top left
+  |<#2D9CDB> Command |
+  |<#F2C94C> Aggregate |
+  |<#F2994A> Domain Event |
+  |<#27AE60> Read Model |
+  |<#9B51E0> Actor |
+  |<#828282> External Context |
+endlegend
+
+actor "Environmental\nAnalyst" as Analyst #9B51E0
+rectangle "Data Integration\n<i>External Context</i>" as DataIntegration #828282
+
+rectangle "RegisterEmissionSource\n<i>Command</i>" as CmdSource #2D9CDB
+rectangle "EmissionSource\n<i>Aggregate</i>" as AggSource #F2C94C
+rectangle "EmissionSourceRegistered\n<i>Event</i>" as EvtSource #F2994A
+
+rectangle "EditEmissionRecord\n<i>Command</i>" as CmdEdit #2D9CDB
+rectangle "EmissionRecordEdited\n<i>Event</i>" as EvtEdit #F2994A
+
+rectangle "DeleteEmissionRecord\n<i>Command</i>" as CmdDelete #2D9CDB
+rectangle "EmissionRecordDeleted\n<i>Event</i>" as EvtDelete #F2994A
+
+rectangle "RecordActivityData\n<i>Command</i>" as CmdActivity #2D9CDB
+rectangle "ActivityData\n<i>Aggregate</i>" as AggActivity #F2C94C
+rectangle "ActivityDataRecorded\n<i>Event</i>" as EvtActivity #F2994A
+
+rectangle "Emissions List\n<i>Read Model</i>\n(search / filter by scope)" as RmList #27AE60
+
+Analyst --> CmdSource
+CmdSource --> AggSource
+AggSource --> EvtSource
+
+Analyst --> CmdEdit
+CmdEdit --> AggSource
+AggSource --> EvtEdit
+
+Analyst --> CmdDelete
+CmdDelete --> AggSource
+AggSource --> EvtDelete
+
+Analyst --> CmdActivity
+DataIntegration --> CmdActivity : imported data
+CmdActivity --> AggActivity
+AggSource "1" *-- "0..*" AggActivity : has
+
+AggActivity --> EvtActivity
+
+EvtSource --> RmList
+EvtEdit --> RmList
+EvtDelete --> RmList
+EvtActivity --> RmList
+
+@enduml

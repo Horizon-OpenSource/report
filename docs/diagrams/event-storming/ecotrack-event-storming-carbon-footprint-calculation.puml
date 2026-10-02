@@ -1,0 +1,53 @@
+@startuml
+title EcoTrack - Carbon Footprint Calculation Event Storming
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam rectangle {
+  BorderColor #4A4A4A
+  FontColor #FFFFFF
+  FontStyle bold
+  FontSize 12
+}
+skinparam ArrowColor #4A4A4A
+
+legend top left
+  |<#2D9CDB> Command |
+  |<#F2C94C> Aggregate |
+  |<#F2994A> Domain Event |
+  |<#27AE60> Read Model |
+  |<#9B51E0> Actor |
+  |<#828282> External Context |
+endlegend
+
+actor "Environmental\nAnalyst" as Analyst #9B51E0
+rectangle "Emissions Management\n<i>External Context</i>" as Emissions #828282
+
+rectangle "SelectEmissionFactor\n<i>Command</i>" as CmdFactor #2D9CDB
+rectangle "EmissionFactor\n<i>Aggregate</i>" as AggFactor #F2C94C
+rectangle "EmissionFactorSelected\n<i>Event</i>" as EvtFactor #F2994A
+
+rectangle "CalculateCarbonFootprint\n<i>Command</i>" as CmdCalc #2D9CDB
+rectangle "FootprintCalculation\n<i>Aggregate</i>" as AggCalc #F2C94C
+rectangle "CarbonFootprintCalculated\n<i>Event</i>" as EvtCalc #F2994A
+
+rectangle "Results by Scope\n<i>Read Model</i>" as RmScope #27AE60
+rectangle "Results by Period\n<i>Read Model</i>" as RmPeriod #27AE60
+rectangle "Calculation History\n<i>Read Model</i>" as RmHistory #27AE60
+
+Analyst --> CmdFactor
+CmdFactor --> AggFactor
+AggFactor --> EvtFactor
+
+Analyst --> CmdCalc
+Emissions --> CmdCalc : activity data
+EvtFactor --> CmdCalc : applicable factor
+CmdCalc --> AggCalc
+AggCalc --> EvtCalc
+
+EvtCalc --> RmScope
+EvtCalc --> RmPeriod
+EvtCalc --> RmHistory
+
+@enduml

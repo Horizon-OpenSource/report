@@ -1,0 +1,65 @@
+@startuml
+title EcoTrack - Organization Management Event Storming
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam rectangle {
+  BorderColor #4A4A4A
+  FontColor #FFFFFF
+  FontStyle bold
+  FontSize 12
+}
+skinparam ArrowColor #4A4A4A
+
+legend top left
+  |<#2D9CDB> Command |
+  |<#F2C94C> Aggregate |
+  |<#F2994A> Domain Event |
+  |<#27AE60> Read Model |
+  |<#9B51E0> Actor |
+endlegend
+
+actor "Business\nRepresentative" as Rep #9B51E0
+actor "Administrator" as Admin #9B51E0
+
+rectangle "RegisterOrganization\n<i>Command</i>" as CmdRegOrg #2D9CDB
+rectangle "Organization\n<i>Aggregate</i>" as AggOrg #F2C94C
+rectangle "OrganizationRegistered\n<i>Event</i>" as EvtRegOrg #F2994A
+
+rectangle "UpdateOrganization\n<i>Command</i>" as CmdUpdOrg #2D9CDB
+rectangle "OrganizationUpdated\n<i>Event</i>" as EvtUpdOrg #F2994A
+
+rectangle "RegisterFacility\n<i>Command</i>" as CmdFacility #2D9CDB
+rectangle "Facility\n<i>Aggregate</i>" as AggFacility #F2C94C
+rectangle "FacilityRegistered\n<i>Event</i>" as EvtFacility #F2994A
+
+rectangle "RegisterBusinessUnit\n<i>Command</i>" as CmdUnit #2D9CDB
+rectangle "BusinessUnit\n<i>Aggregate</i>" as AggUnit #F2C94C
+rectangle "BusinessUnitRegistered\n<i>Event</i>" as EvtUnit #F2994A
+
+rectangle "Organization Profile\n<i>Read Model</i>" as RmProfile #27AE60
+
+Rep --> CmdRegOrg
+CmdRegOrg --> AggOrg
+AggOrg --> EvtRegOrg
+
+Admin --> CmdUpdOrg
+CmdUpdOrg --> AggOrg
+AggOrg --> EvtUpdOrg
+
+Admin --> CmdFacility
+CmdFacility --> AggFacility
+AggFacility --> EvtFacility
+AggOrg "1" *-- "0..*" AggFacility : has
+
+Admin --> CmdUnit
+CmdUnit --> AggUnit
+AggUnit --> EvtUnit
+AggOrg "1" *-- "0..*" AggUnit : has
+
+EvtRegOrg --> RmProfile
+EvtUpdOrg --> RmProfile
+EvtFacility ..> RmProfile
+
+@enduml

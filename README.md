@@ -1683,7 +1683,72 @@ La propuesta busca mantener una experiencia consistente entre Desktop y Mobile, 
 
 ### 4.6.1. Design-Level Event Storming
 
-<!-- Completar -->
+Esta sección presenta el Event Storming a nivel de diseño para cada bounded context de EcoTrack, mostrando los comandos, agregados, eventos de dominio, políticas y read models.
+
+#### 4.6.1.1. Bounded Contexts Overview
+
+**EcoTrack - Design-Level Event Storming - Bounded Contexts Overview**
+
+![EcoTrack - Design-Level Event Storming - Bounded Contexts Overview](docs/diagrams/event-storming/ecotrack-event-storming-bounded-contexts-overview.png)
+
+Este diagrama muestra los 7 bounded contexts de EcoTrack y cómo se relacionan entre sí, desde el registro de una organización hasta la generación de reportes.
+
+#### 4.6.1.2. IAM Event Storming
+
+**EcoTrack - IAM Event Storming**
+
+![EcoTrack - IAM Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-iam.png)
+
+Aquí se modela la creación de cuentas, el inicio de sesión, la recuperación de contraseña y la invitación de nuevos usuarios a una organización.
+
+#### 4.6.1.3. Organization Management Event Storming
+
+**EcoTrack - Organization Management Event Storming**
+
+![EcoTrack - Organization Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-organization-management.png)
+
+Este contexto gestiona el registro de la organización, así como las sedes y unidades de negocio que pueden asociarse a ella.
+
+#### 4.6.1.4. Emissions Management Event Storming
+
+**EcoTrack - Emissions Management Event Storming**
+
+![EcoTrack - Emissions Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-emissions-management.png)
+
+Se registran las fuentes de emisión y los datos de actividad de la organización, ya sea de forma manual o mediante los datos que llegan desde Data Integration.
+
+#### 4.6.1.5. Carbon Footprint Calculation Event Storming
+
+**EcoTrack - Carbon Footprint Calculation Event Storming**
+
+![EcoTrack - Carbon Footprint Calculation Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-carbon-footprint-calculation.png)
+
+A partir de los datos de actividad y un factor de emisión seleccionado, este contexto calcula la huella de carbono de la organización.
+
+#### 4.6.1.6. Goals and Reduction Plans Event Storming
+
+**EcoTrack - Goals and Reduction Plans Event Storming**
+
+![EcoTrack - Goals and Reduction Plans Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-goals-and-reduction-plans.png)
+
+Este contexto permite registrar metas de reducción de emisiones, crear planes asociados a cada meta y definir iniciativas ambientales dentro de esos planes.
+
+#### 4.6.1.7. Analytics and Reports Event Storming
+
+**EcoTrack - Analytics and Reports Event Storming**
+
+![EcoTrack - Analytics and Reports Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-analytics-and-reports.png)
+
+Los indicadores ambientales se actualizan automáticamente a partir de los eventos generados por los demás contextos, mientras que los reportes se generan bajo solicitud del usuario.
+
+#### 4.6.1.8. Data Integration Event Storming
+
+**EcoTrack - Data Integration Event Storming**
+
+![EcoTrack - Data Integration Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-data-integration.png)
+
+Este contexto permite importar información mediante archivos CSV y recibir o consultar datos a través de la EcoTrack API, utilizada por sistemas externos.
+
 
 ### 4.6.2. Software Architecture Context Diagram
 

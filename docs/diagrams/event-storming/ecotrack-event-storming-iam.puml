@@ -1,0 +1,82 @@
+@startuml
+title EcoTrack - IAM Event Storming
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam rectangle {
+  BorderColor #4A4A4A
+  FontColor #FFFFFF
+  FontStyle bold
+  FontSize 12
+}
+skinparam ArrowColor #4A4A4A
+
+legend top left
+  |<#2D9CDB> Command |
+  |<#F2C94C> Aggregate |
+  |<#F2994A> Domain Event |
+  |<#EB5757> Policy |
+  |<#9B51E0> Actor |
+  |<#828282> External System |
+endlegend
+
+actor "Invited\nUser" as InvitedUser #9B51E0
+actor "Administrator" as Admin #9B51E0
+actor "Business\nRepresentative" as Rep #9B51E0
+
+rectangle "CreateUserAccount\n<i>Command</i>" as CmdCreate #2D9CDB
+rectangle "User\n<i>Aggregate</i>" as AggUser #F2C94C
+rectangle "UserAccountCreated\n<i>Event</i>" as EvtCreate #F2994A
+
+rectangle "SignIn\n<i>Command</i>" as CmdSignIn #2D9CDB
+rectangle "UserSignedIn\n<i>Event</i>" as EvtSignIn #F2994A
+
+rectangle "RequestPasswordReset\n<i>Command</i>" as CmdReqReset #2D9CDB
+rectangle "PasswordResetToken\n<i>Aggregate</i>" as AggToken #F2C94C
+rectangle "PasswordResetRequested\n<i>Event</i>" as EvtReqReset #F2994A
+
+rectangle "ResetPassword\n<i>Command</i>" as CmdReset #2D9CDB
+rectangle "PasswordResetCompleted\n<i>Event</i>" as EvtResetDone #F2994A
+
+rectangle "InviteUser\n<i>Command</i>" as CmdInvite #2D9CDB
+rectangle "Invitation\n<i>Aggregate</i>" as AggInvite #F2C94C
+rectangle "UserInvited\n<i>Event</i>" as EvtInvited #F2994A
+
+rectangle "AcceptInvitation\n<i>Command</i>" as CmdAccept #2D9CDB
+rectangle "InvitationAccepted\n<i>Event</i>" as EvtAccepted #F2994A
+
+rectangle "AssignRole\n<i>Command</i>" as CmdRole #2D9CDB
+rectangle "RoleAssigned\n<i>Event</i>" as EvtRole #F2994A
+
+rectangle "Send invitation /\nrecovery email\n<i>Policy</i>" as PolicyEmail #EB5757
+rectangle "Email Provider\n<i>External System</i>" as EmailProvider #828282
+
+Rep --> CmdCreate
+CmdCreate --> AggUser
+AggUser --> EvtCreate
+
+Rep --> CmdSignIn
+CmdSignIn --> EvtSignIn
+
+Rep --> CmdReqReset
+CmdReqReset --> AggToken
+AggToken --> EvtReqReset
+EvtReqReset --> PolicyEmail
+Rep --> CmdReset
+CmdReset --> EvtResetDone
+
+Admin --> CmdInvite
+CmdInvite --> AggInvite
+AggInvite --> EvtInvited
+EvtInvited --> PolicyEmail
+PolicyEmail --> EmailProvider : TS-04
+InvitedUser --> CmdAccept
+CmdAccept --> EvtAccepted
+EvtAccepted --> AggUser
+
+Admin --> CmdRole
+CmdRole --> AggUser
+AggUser --> EvtRole
+
+@enduml
