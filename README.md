@@ -875,25 +875,6 @@ Las fichas conservan el formato visual de User Persona (Goals, Quote, Demographi
 
   ![User Persona trazable del Segmento 2](assets/chapter-02/user-persona-empresa-industrial-trazable.png)
 
-#### Trazabilidad del User Persona del Segmento 1
-
-| Atributo del perfil | Evidencia de entrevistas | Entrevistas fuente |
-|---|---|---|
-| Necesita preparar evidencias y reportes ambientales | Se elaboran registros semanales, mensuales, por lote y para auditorias o clientes. | E01, E02, E03 |
-| Utiliza herramientas manuales y dispersas | Se mencionaron Excel, cuadernos, fotografias, recibos y registros fisicos. | E01, E02, E03 |
-| Sufre perdida, duplicidad o dificultad de consolidacion | Se reportaron dependencia de terceros, falta de respaldo, versiones distintas y demora al ordenar datos. | E01, E02, E03 |
-| Busca trazabilidad y reportes por periodo | Los tres entrevistados valoraron calculos, indicadores y reportes periodicos para clientes o certificaciones. | E01, E02, E03 |
-| Requiere una experiencia simple | E01 presenta dificultad con Excel; E02 pidio carga movil; E03 solicito una plataforma sencilla. | E01, E02, E03 |
-
-#### Trazabilidad del User Persona del Segmento 2
-
-| Atributo del perfil | Evidencia de entrevistas | Entrevistas fuente |
-|---|---|---|
-| Consolida datos de distintas areas | La informacion proviene de produccion, mantenimiento, administracion, operaciones y compras. | E04, E05, E06 |
-| Controla energia, combustible, agua, materiales y residuos | Los entrevistados identificaron estos consumos como indicadores relevantes. | E04, E05, E06 |
-| Tiene dificultad para comparar periodos o areas | Se reportaron formatos distintos, archivos incompletos y falta de detalle por trabajo. | E04, E05, E06 |
-| Necesita dashboards y reportes gerenciales | Los tres entrevistados valoraron visualizaciones, comparaciones e historial. | E04, E05, E06 |
-| Busca metas medibles y seguimiento | E04 y E05 solicitaron metas por fuente, planta o area; E06 busca reducir desperdicio y consumo mensual. | E04, E05, E06 |
 ### 2.3.2. User Task Matrix.
 
 La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada segmento de usuario objetivo frente a la solucion. Se analizan segun su frecuencia de ejecucion y la importancia estrategica que representan para cumplir las metas descritas en los User Personas.
