@@ -47,6 +47,7 @@ Septiembre, 2026
 | Versión | Fecha | Autor | Descripción de modificación |
 |---|---|---|---|
 | 0.1 | 10/09/2026 | Tello Murga, Javier Oswaldo | Se creó la estructura base del informe. |
+| 0.2 | 01/10/2026 | Espinoza Flores, Aaron Andre | Se corrigieron timings, trazabilidad de User Personas, Big Picture Event Storming e Impact Mapping con objetivos SMART. |
 
 ---
 
@@ -702,197 +703,295 @@ EcoTrack utilizará una estrategia de diferenciación basada en accesibilidad, a
 
 ## 2.2. Entrevistas
 
-Las entrevistas permitirán validar la problemática identificada, conocer los procesos actuales de los segmentos objetivo y obtener información para elaborar los artefactos de Needfinding. Para cada segmento se deberán realizar entre 3 y 5 entrevistas registradas en video.
+Para validar los problemas, necesidades y supuestos del proceso Lean UX planteado en el Capitulo I, se disenaron y ejecutaron entrevistas cualitativas a profundidad dirigidas a los dos segmentos objetivo identificados para EcoTrack. Se realizaron seis entrevistas: tres a personas vinculadas con empresas exportadoras y tres a responsables de corporaciones o medianas empresas industriales.
 
-### 2.2.1. Diseño de entrevistas
+### 2.2.1. Diseno de entrevistas
 
-#### Objetivo general
+- **Segmento Objetivo 1: Empresas exportadoras**
 
-Identificar cómo las empresas exportadoras, corporaciones y medianas empresas industriales registran, calculan, analizan y reportan actualmente su información ambiental, con el fin de validar las necesidades que EcoTrack busca atender.
+  1. Podria describir el giro de negocio de la empresa y su rol dentro de la organizacion?
+  2. Que importancia tiene actualmente la sostenibilidad ambiental en las decisiones comerciales de la empresa?
+  3. Que informacion ambiental solicitan los clientes, certificadoras o socios comerciales?
+  4. Con que frecuencia preparan reportes sobre energia, agua, combustible, transporte, residuos o emisiones?
+  5. Que herramientas utilizan para registrar y consolidar la informacion ambiental?
+  6. Que dificultades aparecen cuando la informacion se encuentra en hojas de calculo, cuadernos o archivos separados?
+  7. Que datos ambientales son los mas importantes para responder a clientes, auditorias o certificaciones?
+  8. Que personas o areas participan en la recopilacion y validacion de esos datos?
+  9. Podria describir alguna observacion, retraso o problema ocasionado por un registro incompleto?
+  10. Que consecuencias comerciales podria tener no contar con informacion ambiental actualizada y confiable?
+  11. Como les ayudaria calcular la huella de carbono por periodo, sede, lote o fuente de emision?
+  12. Que indicadores deberia mostrar un dashboard ambiental para facilitar su trabajo?
+  13. Que tan util seria cargar evidencias desde un celular o importar datos desde Excel o CSV?
+  14. Que preocupaciones tendria antes de adoptar una plataforma de gestion ambiental?
+  15. Que funciones deberia incluir EcoTrack para aportar valor real a una empresa exportadora?
 
-#### Segmento 1: Empresas exportadoras
+- **Segmento Objetivo 2: Corporaciones y medianas empresas industriales**
 
-| #   | Pregunta                                                                                                                                                |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Podria describir brevemente el giro de negocio de la empresa y su rol dentro de la organizacion?                                                        |
-| 2   | Que tan importante es actualmente la sostenibilidad ambiental dentro de las decisiones comerciales de la empresa?                                       |
-| 3   | Que tipo de informacion ambiental les solicitan actualmente clientes, certificadoras o socios comerciales?                                              |
-| 4   | Con que frecuencia preparan reportes o evidencias relacionadas con emisiones, consumo energetico, transporte, residuos u otros indicadores ambientales? |
-| 5   | Que herramientas utilizan actualmente para registrar y consolidar la informacion ambiental de la empresa?                                               |
-| 6   | Que dificultades aparecen cuando la informacion ambiental se encuentra en hojas de calculo, documentos o sistemas separados?                            |
-| 7   | Que datos relacionados con consumo de energia, combustible, transporte o procesos productivos son mas importantes para sus reportes?                    |
-| 8   | Que consecuencias comerciales podria tener no contar con informacion ambiental actualizada o confiable?                                                 |
-| 9   | Que tan util seria contar con una plataforma que calcule la huella de carbono y genere reportes ambientales por periodo?                                |
-| 10  | Que informacion deberia mostrar un dashboard ambiental para ayudarles a responder mejor a clientes, auditorias o certificaciones?                       |
-
-#### Segmento 2: Corporaciones y medianas empresas industriales
-
-| #   | Pregunta                                                                                                                            |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Podria describir brevemente el tipo de operaciones que realiza la empresa y su rol dentro de ellas?                                 |
-| 2   | Que importancia tiene actualmente la gestion ambiental para la eficiencia operativa y la toma de decisiones de la empresa?          |
-| 3   | Cuales son las principales fuentes de consumo energetico o emisiones dentro de las operaciones de la empresa?                       |
-| 4   | La empresa registra informacion ambiental por sede, planta, area o unidad de negocio? Como se organiza actualmente esa informacion? |
-| 5   | Quienes participan en la recoleccion, revision y aprobacion de los datos ambientales?                                               |
-| 6   | Que procesos actuales dependen de hojas de calculo, correos, documentos o registros manuales?                                       |
-| 7   | Que dificultades aparecen al comparar consumos o emisiones entre diferentes periodos, sedes o areas?                                |
-| 8   | Que indicadores ambientales necesita revisar la gerencia para tomar decisiones operativas o de sostenibilidad?                      |
-| 9   | Que valor tendria asignar metas de reduccion por sede, area o fuente de emision y hacer seguimiento a su avance?                    |
-| 10  | Que tan importante seria contar con dashboards, reportes e historial de calculos dentro de una sola plataforma?                     |
+  1. Podria describir las operaciones de la empresa y su rol dentro de ellas?
+  2. Que importancia tiene la gestion ambiental para la eficiencia operativa y la toma de decisiones?
+  3. Cuales son las principales fuentes de consumo o emisiones dentro de las operaciones?
+  4. La empresa registra informacion por sede, planta, area, proceso o unidad de negocio?
+  5. Quienes participan en la recoleccion, revision y aprobacion de los datos ambientales?
+  6. Que procesos dependen actualmente de hojas de calculo, correos, facturas, mensajes o registros manuales?
+  7. Que problemas aparecen cuando las areas utilizan formatos o niveles de detalle diferentes?
+  8. Como comparan consumos o emisiones entre periodos, sedes, plantas o procesos?
+  9. Que indicadores necesita revisar la gerencia para tomar decisiones operativas o ambientales?
+  10. Que consecuencias genera recibir informacion incompleta, desactualizada o fuera de plazo?
+  11. Como ayudaria un dashboard centralizado con historial de calculos y comparaciones?
+  12. Que valor tendria asignar metas de reduccion por sede, area o fuente y revisar su avance?
+  13. Que datos deberian poder importarse desde archivos CSV o sistemas empresariales?
+  14. Que condiciones deberia cumplir EcoTrack para integrarse al trabajo diario sin aumentar la carga operativa?
+  15. Como evaluaria si EcoTrack mejora realmente el control de costos, consumos, emisiones y reportes?
 
 ### 2.2.2. Registro de entrevistas
 
-Las entrevistas fueron registradas en video y publicadas mediante enlaces de SharePoint. Para esta etapa se cuenta con una entrevista por cada segmento objetivo. Cada registro incluye informacion del entrevistado, segmento objetivo, enlace del video y un resumen descriptivo de las respuestas obtenidas.
+Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stream y SharePoint. Cada registro contiene los datos de la persona entrevistada, una captura de pantalla, el enlace del video, el rango de tiempo de la entrevista, su duracion y un resumen de los hallazgos principales.
 
-| Campo                     | Detalle                                                                                                                                          |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Plataforma                | SharePoint / Microsoft Stream                                                                                                                    |
-| Entrevistadores           | Espinoza Flores, Aaron Andre; Lacuta Lima, Alex Rodrigo; Tello Murga, Javier Oswaldo; Torres Diaz, Rolando Andre; Payesa Torres, Harrison Hubert |
-| Evidencias de entrevistas | Cada registro de entrevista incluye su URL de video, screenshot, timing y duracion en las tablas por segmento.                                   |
+- **Segmento 1: Empresas exportadoras**
 
-#### Registro de entrevistas del Segmento 1: Empresas exportadoras
+  - **Entrevista E01**
+    - **Nombres:** Manuel Alejandro
+    - **Apellidos:** Marina Vazquez
+    - **Edad:** 28 anos
+    - **Distrito:** San Martin de Porres
+    - **Ocupacion / cargo:** Personal relacionado con transporte
+    - **Empresa / sector:** Transporte y operaciones de movilidad empresarial
+    - **Screenshot:**
 
-| Entrevista | Nombres y apellidos             | Edad | Distrito             | Ocupacion / cargo                     | Empresa / sector                                           | Screenshot                                                                  | URL del video                                                                                                                                                                                                                                                                                                                                                     | Timing   | Duracion |
-| ---------- | ------------------------------- | ---: | -------------------- | ------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------- |
-| E01        | Manuel Alejandro Marina Vazquez |   28 | San Martin de Porres | Personal relacionado con transporte   | Transporte / operaciones de movilidad empresarial          | ![Entrevista Segmento 1](assets/chapter-02/interviews/entrevista-seg-1.jpg) | [Video Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg)                                                                                                                                                                                                                       | 00:00:00 | 4:34     |
-| E02        | Shadina Lurdes Lopez Hugarte    |   28 | Ate                  | Encargada de Calidad y Sostenibilidad | Agroindustria pequena / procesamiento de frutas y verduras | ![Entrevista E02](assets/chapter-02/interviews/entrevista-e02.jpg)          | [Video Segmento 1 - Shadina Lopez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQD_2azhBwEOQ6Atj3XxRSFmATIBispPszUQmCmKSsdnDUo?e=yKkGmJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)       | 00:00:00 | 5:23     |
-| E03        | Azul Delgado Sanchez            |   23 | La Victoria          | Trabajadora en empresa textil         | Empresa textil                                             | ![Entrevista E03](assets/chapter-02/interviews/entrevista-e03.jpg)          | [Video Segmento 1 - Empresa textil](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU) | 00:00:00 | 7:43     |
+      ![Entrevista E01](assets/chapter-02/interviews/entrevista-seg-1.jpg)
 
-**Resumen de la entrevista E01:**  
-Manuel Alejandro Marina Vazquez indico que su rol esta relacionado principalmente con actividades de transporte. Desde su experiencia, la sostenibilidad ambiental si es considerada por la empresa, especialmente porque se ha empezado a usar combustible a gas en lugar de combustible convencional. Esta decision se relaciona tanto con la reduccion de costos como con un menor impacto ambiental.
+    - **Video URL:** [Entrevista E01 - Manuel Marina](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg)
+    - **Timing:** 00:00:18 - 00:04:34
+    - **Duracion:** 4 minutos con 34 segundos
+    - **Resumen:** Manuel explico que su trabajo se relaciona con actividades de transporte y que la empresa ha comenzado a utilizar GNV para reducir costos e impacto ambiental. Elaboran reportes semanales sobre consumo, funcionamiento y mantenimiento de los vehiculos. La informacion se consolida principalmente en Excel, pero no todas las personas dominan la herramienta, lo que genera dependencia y demoras. Considera valioso que EcoTrack calcule la huella de carbono, organice los reportes por periodo y ayude a comunicar el compromiso ambiental de la empresa.
 
-El entrevistado senalo que los clientes o socios comerciales solicitan poca informacion ambiental; sin embargo, dentro de las operaciones de transporte se elaboran reportes semanales porque los vehiculos se movilizan diariamente y requieren mantenimiento constante. Estos reportes permiten revisar si la quema de gas es adecuada, si existen fallas o si algun vehiculo supera ciertos parametros operativos.
+  - **Entrevista E02**
+    - **Nombres:** Shadina Lurdes
+    - **Apellidos:** Lopez Hugarte
+    - **Edad:** 28 anos
+    - **Distrito:** Ate
+    - **Ocupacion / cargo:** Encargada de Calidad y Sostenibilidad
+    - **Empresa / sector:** Agroindustria pequena dedicada al procesamiento de frutas y verduras
+    - **Screenshot:**
 
-Tambien menciono que la herramienta utilizada actualmente para registrar y consolidar informacion es Excel. Esta situacion genera dificultades porque no todos los trabajadores dominan la herramienta, lo que ocasiona dependencia de otras personas para obtener informacion. Los datos mas importantes para sus reportes son el consumo de GNV y las refacciones o mantenimientos necesarios para los vehiculos. Finalmente, considero que una plataforma como EcoTrack seria util porque permitiria calcular la huella de carbono, generar reportes por periodo y comunicar a clientes o interesados que la empresa se preocupa por la gestion ambiental.
+      ![Entrevista E02](assets/chapter-02/interviews/entrevista-e02.jpg)
 
-**Resumen de la entrevista E02:**  
-Shadina Lurdes Lopez Hugarte explico que trabaja como encargada de Calidad y Sostenibilidad en una agroindustria pequena dedicada al procesamiento de frutas y verduras. La empresa cuenta con una planta, aproximadamente 25 trabajadores, ventas principalmente en el mercado local y exportaciones ocasionales mediante un socio comercial. Su rol incluye la gestion de certificaciones y registros ambientales.
+    - **Video URL:** [Entrevista E02 - Shadina Lopez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQD_2azhBwEOQ6Atj3XxRSFmATIBispPszUQmCmKSsdnDUo?e=yKkGmJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+    - **Timing:** 00:00:14 - 00:05:23
+    - **Duracion:** 5 minutos con 23 segundos
+    - **Resumen:** Shadina trabaja en una agroindustria pequena y gestiona certificaciones y registros ambientales. Los clientes vinculados con exportacion solicitan informacion sobre agua, energia, residuos y manejo de insumos, mientras que la certificacion de Buenas Practicas Agricolas exige evidencias ordenadas. Actualmente utilizan Excel, cuadernos y fotografias, lo que provoca perdida de datos, falta de respaldo y conflictos entre versiones. EcoTrack le resultaria util si permite cargar informacion desde el celular, generar reportes por mes o lote y mostrar indicadores comprensibles.
 
-La entrevistada indico que la sostenibilidad ambiental todavia no es el centro del negocio, pero cada vez tiene mayor peso en las decisiones comerciales. Los clientes vinculados a exportacion solicitan informacion sobre consumo de agua, energia y manejo de residuos. Asimismo, para mantener la certificacion de Buenas Practicas Agricolas, la empresa necesita conservar registros ordenados de insumos, residuos y capacitaciones.
+  - **Entrevista E03**
+    - **Nombres:** Azul
+    - **Apellidos:** Delgado Sanchez
+    - **Edad:** 23 anos
+    - **Distrito:** La Victoria
+    - **Ocupacion / cargo:** Trabajadora de una empresa textil
+    - **Empresa / sector:** Empresa textil
+    - **Screenshot:**
 
-Respecto a la frecuencia de reportes, menciono que internamente llevan registros mensuales, mientras que para certificaciones se preparan evidencias anuales y tambien pueden recibir solicitudes por lote. Los datos mas importantes para sus reportes son los kWh consumidos en planta, el diesel usado por la bomba de agua, residuos de fruta, empaques y transporte local.
+      ![Entrevista E03](assets/chapter-02/interviews/entrevista-e03.jpg)
 
-Actualmente utilizan Excel, cuadernos y fotografias, sin contar con un software especializado. Esto genera perdida de datos, falta de respaldo, dificultad para consolidar informacion y problemas de versiones. La entrevistada senalo que ya recibieron una observacion en una auditoria de BPA por un registro incompleto, lo que podria afectar la certificacion y la relacion con clientes. Finalmente, considero que EcoTrack seria util si mantiene una experiencia simple, permite cargar datos desde el celular, genera reportes por mes y por lote, y muestra indicadores de agua, energia, residuos y emisiones.
+    - **Video URL:** [Entrevista E03 - Azul Delgado](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU)
+    - **Timing:** 00:00:12 - 00:07:43
+    - **Duracion:** 7 minutos con 43 segundos
+    - **Resumen:** Azul describio un entorno textil donde se necesita ordenar informacion sobre energia, agua, residuos textiles, materiales y productos quimicos para responder a solicitudes internas, clientes o auditorias. Los registros se manejan mediante archivos y hojas de calculo, lo que ocasiona duplicidad, versiones diferentes y demora al consolidar la informacion. Valora una solucion sencilla que permita centralizar evidencias, calcular indicadores y generar reportes ambientales por periodo.
 
-#### Registro de entrevistas del Segmento 2: Corporaciones y medianas empresas industriales
+- **Segmento 2: Corporaciones y medianas empresas industriales**
 
-| Entrevista | Nombres y apellidos | Edad | Distrito     | Ocupacion / cargo                                                                     | Empresa / sector                                   | Screenshot                                                                  | URL del video                                                                                                                                                                                                                                                                                                                                                   | Timing   | Duracion |
-| ---------- | ------------------- | ---: | ------------ | ------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------- |
-| E04        | Renzo Santos        |   26 | Pueblo Libre | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | ![Entrevista Segmento 2](assets/chapter-02/interviews/entrevista-seg-2.jpg) | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse)                                                                                                                                                                                                            | 00:00:00 | 6:42     |
-| E05        | Norvil Perez        |   30 | Los Olivos   | Supervisor de operaciones                                                             | Procesamiento y envasado de alimentos              | ![Entrevista E05](assets/chapter-02/interviews/entrevista-e05.jpg)          | [Video Segmento 2 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4) | 00:00:00 | 8:11     |
-| E06        | Rosa Torres         |   49 | Comas        | Gerente de taller automotriz                                                          | Taller de pintura automotriz                       | ![Entrevista E06](assets/chapter-02/interviews/entrevista-e06.jpg)          | [Video Segmento 2 - Rosa Torres](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQA4osdYU2cVTppdGXpQ4q-KAU9E4b1CVAsdStJ2Ntr-FHI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZqWiQC)  | 00:00:00 | 8:52     |
+  - **Entrevista E04**
+    - **Nombres:** Renzo
+    - **Apellidos:** Santos
+    - **Edad:** 26 anos
+    - **Distrito:** Pueblo Libre
+    - **Ocupacion / cargo:** Responsable del seguimiento de operaciones y registros internos
+    - **Empresa / sector:** Produccion y transformacion de bienes industriales
+    - **Screenshot:**
 
-**Resumen de la entrevista E04:**  
-Renzo Santos explico que la empresa donde trabaja se dedica a la producción y transformación de bienes industriales. Sus operaciones incluyen abastecimiento de materias primas, procesos de fabricacion y mantenimiento. Su rol se relaciona con el seguimiento de operaciones y registros internos de revision.
+      ![Entrevista E04](assets/chapter-02/interviews/entrevista-seg-2.jpg)
 
-El entrevistado consideró que la gestion ambiental es muy importante porque permite conocer cuanto consume la empresa y que impacto generan sus operaciones. Ademas, esta informacion ayuda a identificar oportunidades para reducir consumo de energia y otros recursos, controlar costos, atender requisitos ambientales y facilitar decisiones gerenciales basadas en informacion y no solo en estimaciones.
+    - **Video URL:** [Entrevista E04 - Renzo Santos](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse)
+    - **Timing:** 00:00:20 - 00:06:42
+    - **Duracion:** 6 minutos con 42 segundos
+    - **Resumen:** Renzo explico que la informacion ambiental proviene de produccion, mantenimiento, administracion y otras unidades. Los principales consumos se relacionan con electricidad de planta y oficinas, maquinaria y combustible de transporte. Cada area utiliza hojas de calculo, documentos o registros con formatos diferentes, lo que dificulta consolidar y comparar resultados. Considera muy importante disponer de dashboards, reportes e historial de calculos en una sola plataforma para reducir tiempo y mejorar la trazabilidad.
 
-Respecto a las principales fuentes de consumo y emisiones, menciono el consumo eléctrico de planta, oficinas, maquinaria y transporte asociado al uso de gasolina en vehiculos. Tambien indico que la informacion ambiental se genera desde distintas areas o unidades de negocio y actualmente se organiza mediante hojas de calculo, documentos y registros separados. Esto dificulta la consolidacion, especialmente cuando cada area trabaja con formatos o niveles de detalle diferentes.
+  - **Entrevista E05**
+    - **Nombres:** Norvil
+    - **Apellidos:** Perez
+    - **Edad:** 30 anos
+    - **Distrito:** Los Olivos
+    - **Ocupacion / cargo:** Supervisor de operaciones
+    - **Empresa / sector:** Procesamiento y envasado de alimentos
+    - **Screenshot:**
 
-Finalmente, destaco que contar con dashboards, reportes e historial de cálculos en una sola plataforma seria muy importante porque reduciria el tiempo dedicado a consolidar informacion, facilitaria revisiones y aprobaciones, permitiria a la gerencia visualizar rapidamente el estado ambiental de la empresa y mantendria trazabilidad para comparar resultados entre periodos.
+      ![Entrevista E05](assets/chapter-02/interviews/entrevista-e05.jpg)
 
-**Resumen de la entrevista E05:**  
-Norvil Perez explico que trabaja como supervisor de operaciones en una empresa dedicada al procesamiento y envasado de alimentos. Las operaciones incluyen recepcion de materia prima, seleccion, limpieza, procesamiento, envasado, almacenamiento y distribucion. Dentro de su rol coordina parte de la produccion, revisa el cumplimiento de procesos y controla consumos como energia, combustible y materiales usados durante la operacion.
+    - **Video URL:** [Entrevista E05 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4)
+    - **Timing:** 00:00:17 - 00:08:11
+    - **Duracion:** 8 minutos con 11 segundos
+    - **Resumen:** Norvil supervisa operaciones de procesamiento y envasado de alimentos y controla energia, combustible, gas, materiales y residuos. La informacion se distribuye entre Excel, correo, WhatsApp y anotaciones, por lo que algunos archivos llegan incompletos o desactualizados. Destaca que la gestion ambiental tambien permite controlar costos operativos. Espera que EcoTrack facilite comparaciones entre periodos, identifique consumos criticos, genere reportes gerenciales y permita asignar metas de reduccion.
 
-El entrevistado señaló que la gestion ambiental ha adquirido mayor importancia porque ya no se percibe solo como cumplimiento, sino tambien como una herramienta para controlar costos. Si una maquina consume mas energia de lo normal o un proceso genera demasiados residuos, esto impacta tanto en el ambiente como en los gastos operativos de la empresa.
+  - **Entrevista E06**
+    - **Nombres:** Rosa
+    - **Apellidos:** Torres
+    - **Edad:** 49 anos
+    - **Distrito:** Comas
+    - **Ocupacion / cargo:** Gerente de taller automotriz
+    - **Empresa / sector:** Taller de pintura automotriz
+    - **Screenshot:**
 
-Las principales fuentes de consumo y emisiones identificadas son la electricidad usada por máquinas de produccion, equipos de refrigeracion, iluminacion y almacenamiento, ademas del gas utilizado en procesos que requieren calor y el combustible de vehiculos para transporte de productos o recojo de materia prima. La informacion se registra por areas dentro de la planta, pero no existe un sistema centralizado. Produccion, mantenimiento y administracion manejan registros separados en Excel, documentos, recibos, correos o WhatsApp.
+      ![Entrevista E06](assets/chapter-02/interviews/entrevista-e06.jpg)
 
-Entre las dificultades mencionadas están la búsqueda de información en varios archivos, diferencias de formato entre meses, datos incompletos y archivos no actualizados. Para gerencia, los indicadores mas importantes son consumo de electricidad, combustible, agua, residuos, emisiones, consumo por area y comparaciones por periodo. Finalmente, considero valioso contar con EcoTrack para visualizar dashboards, reportes, historial de calculos, metas por area y comparaciones mensuales o anuales sin preparar todo manualmente.
-
-**Resumen de la entrevista E03:**  
-La entrevistada explico que trabaja en una empresa pequeña del rubro textil dedicada a la confección de prendas de vestir para clientes locales y pedidos de empresas que comercializan productos en el extranjero. La empresa cuenta con aproximadamente 30 trabajadores, y su rol se relaciona con el area de Calidad, sostenibilidad y cumplimiento de requisitos solicitados por clientes.
-
-La sostenibilidad ambiental ha tomado mayor importancia dentro de las decisiones comerciales, debido a que algunos clientes solicitan informacion sobre consumo de energia, agua, residuos textiles, materiales utilizados, productos quimicos y condiciones de produccion. Esto demuestra que la informacion ambiental empieza a influir en la capacidad de responder a clientes y mantener oportunidades comerciales.
-
-Respecto a los reportes, la empresa lleva registros mensuales de electricidad, agua y residuos. Cuando existe una auditoria o un cliente importante solicita informacion, los responsables deben reunir los datos y preparar reportes varias veces durante el anio. Los datos mas importantes son el consumo electrico de maquinas de confeccion, el agua usada en procesos, residuos de tela, empaques, combustible para transporte y emisiones aproximadas.
-
-Actualmente usan Excel, registros físicos, recibos de electricidad y agua, y documentos relacionados con residuos. La informacion esta distribuida en varios archivos y se consolida manualmente. Esto genera demora para encontrar y ordenar informacion, duplicidad de archivos, registros incorrectos y confusion por versiones diferentes. Finalmente, la entrevistada considero util una plataforma simple que registre consumos y residuos, calcule indicadores automaticamente, genere reportes para clientes y permita comparar datos por mes.
-
-**Resumen de la entrevista E06:**  
-Rosa Torres explico que trabaja como gerente de un taller de pintura automotriz dedicado a la reparacion y pintado de vehiculos. Las operaciones principales incluyen lijado, preparacion de superficies, pintado y acabado. Su rol consiste en supervisar al personal, las compras y los trabajos realizados dentro del taller.
-
-La entrevistada señaló que la gestion ambiental es importante porque el taller utiliza pinturas, thinner, solventes y otros productos que generan residuos, vapores y olores durante los trabajos de pintura. Ademas, el desperdicio de materiales representa un costo operativo, por lo que controlar estos consumos tambien beneficia la eficiencia del negocio. Sin embargo, actualmente no cuentan con un sistema especifico para gestionar informacion ambiental.
-
-Las principales fuentes de consumo e impacto son la electricidad usada por compresores, máquinas de lijado y el area de pintura, asi como el uso de pintura, thinner y solventes. La informacion se encuentra distribuida entre facturas, registros de compras, hojas de Excel y anotaciones manuales. La revision la realiza principalmente la gerente del taller, con apoyo de trabajadores y de la persona encargada de compras.
-
-Entre las dificultades identificadas está la imposibilidad de comparar con precision los consumos entre meses, debido a que no siempre se conoce cuanto material se uso realmente por trabajo o cuanto se desperdicio. Los indicadores mas relevantes para el taller son consumo de electricidad, agua, pintura, solventes, residuos y material utilizado por vehiculo o trabajo. Finalmente, considero util contar con EcoTrack para visualizar consumos, residuos, avances y metas de reduccion en una plataforma sencilla, adecuada para un taller pequeno.
+    - **Video URL:** [Entrevista E06 - Rosa Torres](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQA4osdYU2cVTppdGXpQ4q-KAU9E4b1CVAsdStJ2Ntr-FHI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZqWiQC)
+    - **Timing:** 00:00:15 - 00:08:52
+    - **Duracion:** 8 minutos con 52 segundos
+    - **Resumen:** Rosa gestiona un taller que utiliza electricidad, agua, pintura, thinner y solventes, y que genera residuos y vapores durante los trabajos. La informacion esta distribuida entre facturas, compras, Excel y anotaciones manuales. La principal dificultad es comparar consumos y desperdicios entre meses o por vehiculo atendido. Considera util una plataforma sencilla que muestre consumos, residuos, avances y metas de reduccion sin aumentar la complejidad operativa del taller.
 
 ### 2.2.3. Analisis de entrevistas
 
-A partir de las entrevistas realizadas, se identificaron hallazgos preliminares sobre la forma en que los segmentos objetivo gestionan actualmente su informacion ambiental. Debido a que en esta etapa se cuenta con tres entrevistas para el Segmento 1 y tres entrevistas para el Segmento 2, los porcentajes representan la totalidad de respuestas disponibles dentro de cada segmento entrevistado.
+El analisis de las seis entrevistas realizadas a los dos segmentos objetivo permite identificar patrones demograficos, comportamentales y tecnologicos que sustentan los User Personas y las decisiones de diseno de EcoTrack. Los porcentajes se calculan sobre tres entrevistas por segmento; por ello, una respuesta equivale al 33.3%, dos respuestas al 66.7% y tres respuestas al 100%.
 
-| Segmento                                       | Variable de analisis                                                         | Resultado | Sustento                                                                                                                                                                                                                  |
-| ---------------------------------------------- | ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Empresas exportadoras                          | Uso de hojas de calculo para registrar informacion ambiental                 | 100%      | Los entrevistados E01, E02 y E03 indicaron que utilizan Excel o registros fisicos para registrar o consolidar informacion ambiental.                                                                                      |
-| Empresas exportadoras                          | Necesidad de reportes ambientales o de transporte por periodo                | 100%      | E01 menciono reportes semanales de transporte, E02 indico registros mensuales, auditorias anuales y reportes por lote, y E03 senalo reportes mensuales y solicitudes de clientes o auditorias varias veces al anio.       |
-| Empresas exportadoras                          | Dificultad para consolidar datos o usar herramientas actuales                | 100%      | E01 senalo dificultad para usar Excel, E02 menciono perdida de datos, falta de respaldo y versiones distintas, y E03 indico demora para ordenar informacion, duplicidad de archivos y confusion por versiones diferentes. |
-| Empresas exportadoras                          | Interes en una plataforma para calcular huella de carbono y generar reportes | 100%      | E01 considero util calcular huella de carbono, E02 valoro una plataforma simple con carga desde celular y reportes por periodo, y E03 considero util calcular indicadores y generar reportes para clientes.               |
-| Corporaciones y medianas empresas industriales | Registro de informacion por area o unidad de negocio                         | 100%      | El entrevistado del Segmento 2 indico que la informacion se genera desde distintas areas o unidades de negocio.                                                                                                           |
-| Corporaciones y medianas empresas industriales | Dependencia de hojas de calculo, correos o registros manuales                | 100%      | El entrevistado senalo que se usan hojas de calculo, documentos, registros separados y archivos recibidos por correo.                                                                                                     |
-| Corporaciones y medianas empresas industriales | Dificultad para comparar emisiones o consumos entre periodos, sedes o areas  | 100%      | El entrevistado menciono problemas por formatos distintos, niveles de detalle diferentes e inconsistencias entre sedes.                                                                                                   |
-| Corporaciones y medianas empresas industriales | Interes en dashboards, reportes e historial de calculos                      | 100%      | El entrevistado afirmo que seria muy importante centralizar dashboards, reportes e historial para reducir tiempo y mantener trazabilidad.                                                                                 |
+- **Segmento 1: Empresas exportadoras**
 
-#### Analisis del Segmento 1: Empresas exportadoras
+  El analisis de las tres entrevistas del segmento exportador revela los siguientes patrones:
 
-Las entrevistas del Segmento 1 evidencian tres escenarios complementarios. Por un lado, una operacion de transporte donde se controlan datos de GNV, mantenimiento de vehiculos y parametros operativos. Por otro lado, una agroindustria pequena donde se registran datos de agua, energia, residuos, insumos, empaques y transporte local para clientes exportadores y certificaciones de Buenas Practicas Agricolas. Finalmente, una empresa textil pequena que necesita responder a clientes sobre energia, agua, residuos textiles, materiales, productos quimicos y condiciones de produccion.
+  **Caracteristicas demograficas (objetivas):**
 
-El principal problema identificado es la dependencia de Excel, cuadernos, fotografias y registros manuales para registrar y consultar informacion. Estas herramientas pueden generar perdida de datos, falta de respaldo, versiones diferentes y dependencia de otras personas para obtener informacion. Por ello, EcoTrack representa una oportunidad para centralizar datos de combustible, transporte, mantenimiento, agua, energia, residuos, empaques, materiales y productos quimicos, generando reportes por periodo o lote y comunicando de forma mas clara el compromiso ambiental de la empresa.
+  - El 100% de las personas entrevistadas tiene entre 23 y 28 anos.
+  - El 100% reside en Lima Metropolitana: San Martin de Porres, Ate y La Victoria.
+  - El 33.3% pertenece al sector transporte, el 33.3% a agroindustria y el 33.3% al sector textil.
+  - El 66.7% desempena funciones directamente relacionadas con calidad, sostenibilidad o preparacion de evidencias ambientales; el 33.3% aporta informacion desde operaciones de transporte.
 
-#### Analisis del Segmento 2: Corporaciones y medianas empresas industriales
+  **Caracteristicas de personalidad y necesidades (subjetivas):**
 
-El entrevistado del Segmento 2 confirma que las empresas industriales manejan informacion ambiental distribuida entre distintas areas, como produccion, mantenimiento, administracion y sostenibilidad. Las principales fuentes de consumo o emisiones identificadas son electricidad en planta, oficinas, maquinaria y transporte.
+  - El 100% reconoce que organizar la informacion ambiental aporta valor para la empresa.
+  - El 100% muestra interes en centralizar registros y reducir el trabajo manual.
+  - El 66.7% enfrenta solicitudes directas de clientes, certificadoras o auditorias; el 33.3% se concentra principalmente en reportes operativos internos.
+  - El 100% valora una solucion sencilla que genere calculos, indicadores o reportes por periodo.
 
-El problema mas relevante es la falta de estandarizacion y centralizacion. La informacion se registra en hojas de calculo, documentos, correos y registros separados, lo que dificulta comparar periodos, sedes o areas. Por ello, EcoTrack puede aportar valor mediante dashboards, reportes, historial de calculos, indicadores por alcance y seguimiento de metas ambientales.
+  **Habilidades y tecnologia:**
 
-#### Principales hallazgos generales
+  - El 100% utiliza Excel o archivos digitales para registrar o consolidar informacion.
+  - El 66.7% complementa los registros digitales con cuadernos, fotografias, recibos u otras evidencias fisicas.
+  - El 100% reporta dificultades relacionadas con versiones distintas, perdida de datos, dependencia de otras personas o demora en la consolidacion.
+  - El 33.3% solicito expresamente carga de informacion desde el celular, mientras que el resto priorizo simplicidad y reportes centralizados.
 
-- Ambos segmentos utilizan o dependen de hojas de calculo para gestionar informacion ambiental.
-- Ambos segmentos reconocen valor en centralizar informacion en una sola plataforma.
-- El Segmento 1 prioriza informacion relacionada con transporte, GNV, mantenimiento de vehiculos, consumo de agua, energia, residuos, empaques, materiales, productos quimicos y evidencias para clientes o certificaciones.
-- El Segmento 2 prioriza informacion por area, planta, unidad de negocio, consumo electrico, maquinaria y transporte.
-- Los dashboards y reportes son considerados utiles para comunicar resultados y apoyar la toma de decisiones.
-- La trazabilidad historica es necesaria para comparar resultados entre periodos y sustentar decisiones futuras.
+  **Canales de interaccion:**
 
+  - El 100% depende de intercambio de informacion entre personas o areas para completar los registros.
+  - El 66.7% utiliza reportes o evidencias para comunicarse con actores externos, como clientes, socios comerciales o certificadoras.
+  - El 100% considera los reportes digitales un canal importante para comunicar resultados ambientales.
+
+  **Dispositivos de preferencia:**
+
+  - El 33.3% menciono de forma explicita la necesidad de utilizar el celular para cargar datos y evidencias.
+  - No se obtuvo evidencia suficiente para asignar porcentajes confiables sobre marcas, sistemas operativos o preferencia entre computadora y smartphone en las otras entrevistas.
+
+  **Marcas e influencias:**
+
+  - Microsoft Excel es la herramienta mencionada por el 100% del segmento.
+  - El 33.3% esta influido directamente por los requisitos de la certificacion de Buenas Practicas Agricolas.
+  - El 66.7% esta condicionado por solicitudes de clientes, auditorias o mercados vinculados con exportacion.
+
+  **Conclusiones del analisis:**
+
+  Las empresas exportadoras necesitan centralizar datos de energia, agua, combustible, transporte, residuos, materiales y evidencias. EcoTrack debe priorizar una experiencia sencilla, carga flexible de informacion, respaldo historico, calculos comprensibles y reportes por periodo o lote. La solucion tambien debe reducir los errores derivados de archivos duplicados y facilitar la respuesta ante clientes, certificaciones y auditorias.
+
+- **Segmento 2: Corporaciones y medianas empresas industriales**
+
+  El analisis de las tres entrevistas del segmento industrial revela los siguientes patrones:
+
+  **Caracteristicas demograficas (objetivas):**
+
+  - El 100% de las personas entrevistadas tiene entre 26 y 49 anos.
+  - El 100% reside en Lima Metropolitana: Pueblo Libre, Los Olivos y Comas.
+  - El 33.3% trabaja en produccion industrial, el 33.3% en procesamiento de alimentos y el 33.3% en un taller automotriz.
+  - El 100% desempena funciones relacionadas con operaciones, supervision, control de registros o gerencia.
+
+  **Caracteristicas de personalidad y necesidades (subjetivas):**
+
+  - El 100% relaciona la gestion ambiental con eficiencia operativa, control de costos o mejores decisiones.
+  - El 100% considera valioso centralizar dashboards, reportes e historial de resultados.
+  - El 100% manifiesta frustracion por datos dispersos, incompletos o dificiles de comparar.
+  - El 100% muestra interes en realizar seguimiento de consumos, residuos, emisiones o metas de reduccion.
+
+  **Habilidades y tecnologia:**
+
+  - El 100% utiliza Excel, documentos, facturas, correos, mensajes o anotaciones manuales para administrar informacion.
+  - El 66.7% recibe informacion digital desde diferentes areas mediante archivos o canales de comunicacion; el 33.3% concentra la revision en gerencia, compras y personal operativo.
+  - El 100% tiene dificultades para comparar periodos, areas, plantas, procesos o trabajos con un criterio uniforme.
+  - El 100% valora dashboards, reportes e historial como herramientas para disminuir el tiempo de consolidacion.
+
+  **Canales de interaccion:**
+
+  - El 100% depende de informacion generada por mas de un actor o area operativa.
+  - El 66.7% utiliza correo, archivos compartidos o mensajeria para recibir datos; el 33.3% depende principalmente de facturas, compras y coordinacion directa.
+  - El 100% necesita presentar resultados a gerencia o utilizarlos para decisiones internas.
+
+  **Dispositivos de preferencia:**
+
+  - Las entrevistas confirman el uso de herramientas digitales y archivos, pero no proporcionan evidencia suficiente para determinar porcentajes confiables sobre dispositivos, marcas o sistemas operativos preferidos.
+  - Por esta razon, EcoTrack debe mantener un diseno web responsivo y validar posteriormente el uso real desde computadora, tablet y smartphone.
+
+  **Marcas e influencias:**
+
+  - Microsoft Excel es la herramienta comun en el 100% de los casos, aunque se combina con documentos, facturas, correo o WhatsApp.
+  - El 100% esta influido por requerimientos de gerencia, eficiencia operativa y control de costos.
+  - No se identificaron marcas de software ambiental especializadas utilizadas actualmente por este segmento.
+
+  **Conclusiones del analisis:**
+
+  Las empresas industriales requieren una fuente unica de informacion para comparar sedes, areas, procesos y periodos. EcoTrack debe estandarizar los registros, validar datos, automatizar calculos, presentar indicadores gerenciales y mantener historial. Tambien debe permitir metas con responsables y seguimiento, evitando que la adopcion de la plataforma incremente la carga operativa de los equipos.
+
+- **Conclusiones generales de las entrevistas**
+
+  - El 100% de las seis personas entrevistadas depende de hojas de calculo, archivos o registros manuales para gestionar informacion ambiental u operativa.
+  - El 100% identifica dificultades de consolidacion, comparacion, respaldo o trazabilidad.
+  - El 100% considera valioso contar con dashboards, reportes, calculos o historial dentro de una sola plataforma.
+  - Los resultados sustentan las funcionalidades centrales de EcoTrack: registro de fuentes y datos de actividad, calculo de huella de carbono, dashboard, reportes, evidencias, historial, metas de reduccion e importacion de informacion.
 ## 2.3. Needfinding.
 
 A continuacion se presentan los User Personas representativos de los segmentos objetivo definidos a partir de la sintesis de hallazgos de las entrevistas y el analisis cualitativo-estadistico realizado para EcoTrack.
 
 ### 2.3.1. User Personas.
 
-A continuacion, se presentan las fichas de User Persona elaboradas para cada uno de los dos segmentos objetivo. Cada ficha integra los hallazgos de las entrevistas, incluyendo caracteristicas demograficas, personalidad, habilidades, marcas e influencias, dispositivos de preferencia y canales de interaccion.
+Los User Personas se construyeron como **perfiles compuestos**, no como personas reales adicionales. Cada atributo fue derivado de patrones observados en las seis entrevistas. Para evitar datos inventados, no se asignan edad, distrito, marcas o nivel de habilidad que no hayan sido sustentados por los registros.
 
-- **Segmento 1: Empresas exportadoras**
+Las fichas conservan el formato visual de User Persona (Goals, Quote, Demographic, Background, Motivations, Frustrations, Skills, Technology, Tools y Channels), pero sus rangos, comportamientos y necesidades se sustentan exclusivamente en las entrevistas citadas.
 
-  ![User Persona Empresa Exportadora](assets/chapter-02/user-persona-empresa-exportadora.png)
+- **Segmento 1: Responsable de Calidad y Sostenibilidad de una empresa exportadora**
 
-- **Segmento 2: Corporaciones y medianas empresas industriales**
+  ![User Persona trazable del Segmento 1](assets/chapter-02/user-persona-empresa-exportadora-trazable.png)
 
-  ![User Persona Empresa Industrial](assets/chapter-02/user-persona-empresa-industrial.png)
+- **Segmento 2: Responsable de Operaciones de una empresa industrial**
+
+  ![User Persona trazable del Segmento 2](assets/chapter-02/user-persona-empresa-industrial-trazable.png)
 
 ### 2.3.2. User Task Matrix.
 
-La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada segmento de usuario objetivo frente a la solucion. Se analizan segun su frecuencia de ejecucion y la importancia estrategica que representan para cumplir las metas descritas en los User Personas.
+La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada tipo de usuario frente a la solucion. Se analizan segun su frecuencia de ejecucion y la importancia estrategica que representan para cumplir las metas descritas en los User Personas.
 
-| Tarea                                                                         | Empresas exportadoras (Frecuencia / Importancia) | Corporaciones y medianas empresas industriales (Frecuencia / Importancia) |
-| :---------------------------------------------------------------------------- | :----------------------------------------------: | :-----------------------------------------------------------------------: |
-| **Registrar consumos de energia, combustible, transporte, agua y residuos**   |                   Alta / Alta                    |                                Alta / Alta                                |
-| **Consolidar informacion ambiental proveniente de diferentes areas**          |                   Alta / Alta                    |                                Alta / Alta                                |
-| **Calcular la huella de carbono por periodo, alcance o fuente de emision**    |                   Media / Alta                   |                                Alta / Alta                                |
-| **Generar reportes ambientales para clientes, certificaciones o auditorias**  |                   Alta / Alta                    |                               Media / Alta                                |
-| **Revisar dashboards con indicadores de consumo, emisiones y tendencias**     |                   Media / Alta                   |                                Alta / Alta                                |
-| **Comparar resultados entre meses, sedes, plantas, areas o procesos**         |                  Media / Media                   |                                Alta / Alta                                |
-| **Definir metas de reduccion y realizar seguimiento de acciones ambientales** |                   Media / Alta                   |                                Alta / Alta                                |
-| **Mantener evidencias y trazabilidad de los registros ambientales**           |                   Alta / Alta                    |                               Media / Alta                                |
+| Tarea | Responsable de sostenibilidad de empresa exportadora (Frecuencia / Importancia) | Responsable de operaciones industriales (Frecuencia / Importancia) | Gerencia o auditoria (Frecuencia / Importancia) |
+| :--- | :---: | :---: | :---: |
+| Registrar consumos de energia, combustible, agua, transporte y residuos | Alta / Alta | Alta / Alta | Baja / Media |
+| Consolidar informacion ambiental proveniente de diferentes areas o archivos | Alta / Alta | Alta / Alta | Baja / Media |
+| Calcular la huella de carbono por periodo, alcance o fuente de emision | Media / Alta | Alta / Alta | Baja / Alta |
+| Revisar dashboards con indicadores de consumo, emisiones y tendencias | Media / Alta | Alta / Alta | Media / Alta |
+| Comparar resultados entre periodos, sedes, plantas, areas o procesos | Media / Media | Alta / Alta | Media / Alta |
+| Generar reportes ambientales para clientes, certificaciones, auditorias o gerencia | Alta / Alta | Media / Alta | Alta / Alta |
+| Definir metas de reduccion y revisar el avance de las acciones ambientales | Media / Alta | Alta / Alta | Media / Alta |
+| Verificar evidencias, historial y trazabilidad de los registros ambientales | Alta / Alta | Media / Alta | Alta / Alta |
 
-#### Hallazgos clave de la matriz:
+- **Hallazgos clave de la matriz:**
 
-- **Empresas exportadoras:** Priorizan la organizacion de evidencias ambientales, la generacion de reportes y la trazabilidad de informacion solicitada por clientes, socios comerciales, auditorias o certificaciones.
-- **Corporaciones y medianas empresas industriales:** Se concentran en centralizar informacion proveniente de plantas, areas y unidades operativas, comparar indicadores por periodo y tomar decisiones basadas en consumos, emisiones y metas ambientales.
+- **Responsables de sostenibilidad de empresas exportadoras:** Priorizan el registro frecuente de datos, la organizacion de evidencias, la generacion de reportes y la trazabilidad solicitada por clientes, certificaciones o auditorias.
 
+- **Responsables de operaciones industriales:** Se concentran en centralizar datos provenientes de areas y procesos, comparar resultados, revisar indicadores y realizar seguimiento de consumos, emisiones y metas de reduccion.
+
+- **Gerencia y auditoria:** Su participacion es menos frecuente en el registro operativo, pero tiene alta importancia en la revision de dashboards, reportes, evidencias historicas y resultados que respaldan decisiones o verificaciones.
 ### 2.3.3. User Journey Mapping.
 
-A continuacion, se presenta el User Journey Mapping (Mapa de Experiencia del Usuario) que describe las etapas clave del recorrido de cada segmento objetivo frente a la solucion, incluyendo los puntos de contacto, emociones y oportunidades de mejora.
+A continuacion, se presentan los User Journey Maps de ambos segmentos. Cada mapa mantiene cinco etapas y muestra metas del usuario, proceso y canales, actividades, problemas, evolucion de la experiencia e ideas u oportunidades para EcoTrack.
 
 - **Segmento 1: Empresas exportadoras**
   El siguiente Journey Map ilustra el proceso que sigue una responsable de Calidad y Sostenibilidad de una empresa exportadora para recopilar datos ambientales, preparar evidencias para clientes o certificadoras y responder a observaciones de auditoria. El recorrido muestra como actualmente depende de hojas de calculo, cuadernos, recibos y documentos dispersos, lo que genera riesgo de perdida de informacion, retrasos y dificultad para demostrar cumplimiento ambiental.
@@ -906,82 +1005,184 @@ A continuacion, se presenta el User Journey Mapping (Mapa de Experiencia del Usu
 
 ### 2.3.4. Empathy Mapping.
 
-El Mapa de Empatia sintetiza las observaciones e impresiones recopiladas durante las entrevistas, permitiendo profundizar en los aspectos emocionales y actitudinales de los dos segmentos de usuario objetivo de EcoTrack.
+The Empathy Maps synthesize the interview findings through seven questions: who the team is empathizing with, what the persona needs to do, sees, says, does, hears, and thinks or feels. Each map also presents the main pains and gains of its target segment.
 
-#### Empathy Map 1: Responsable de Calidad y Sostenibilidad (Empresa exportadora)
+#### Empathy Map 1: Quality and Sustainability Lead (Exporting company)
 
-El siguiente Mapa de Empatia profundiza en la experiencia de una responsable de Calidad y Sostenibilidad de una empresa exportadora. Se identifican sus principales pensamientos y sentimientos (preocupacion por cumplir auditorias, necesidad de informacion confiable), lo que ve en su entorno (registros en Excel, documentos fisicos, fotos y evidencias dispersas), lo que oye de clientes y certificadoras (solicitudes de informacion ambiental y trazabilidad), lo que dice y hace (consolidar datos manualmente, preparar reportes por mes o lote), asi como sus principales pains (perdida de informacion, duplicidad de archivos, observaciones de auditoria) y gains (reducir tiempo, generar reportes ordenados y demostrar cumplimiento ambiental).
+This map represents a composite persona based on interviews E01, E02, and E03. It focuses on environmental evidence, reporting, client requests, certifications, and audit traceability.
 
-![Empathy Map Empresa Exportadora](assets/chapter-02/empathy-map-empresa-exportadora.png)
+![Empathy Map - Exporting Company](assets/chapter-02/empathy-map-empresa-exportadora.png)
 
-#### Empathy Map 2: Responsable Operativo Industrial (Corporacion o mediana empresa industrial)
+#### Empathy Map 2: Industrial Operations Lead (Corporation or medium-sized industrial company)
 
-El siguiente Mapa de Empatia analiza la experiencia de un responsable operativo industrial. Se exploran sus pensamientos y sentimientos (presion por controlar consumos, necesidad de reportes claros para gerencia), lo que ve (datos separados por areas, sedes o plantas), lo que oye (solicitudes de administracion, mantenimiento, operaciones y sostenibilidad), lo que dice y hace (revisar consumos, consolidar informacion, comparar periodos), y sus pains (formatos inconsistentes, informacion incompleta, mucho tiempo de consolidacion) y gains (centralizar informacion, visualizar indicadores, comparar resultados y hacer seguimiento de metas de reduccion).
+This map represents a composite persona based on interviews E04, E05, and E06. It focuses on operational data consolidation, consumption monitoring, management reporting, and reduction goals.
 
-![Empathy Map Empresa Industrial](assets/chapter-02/empathy-map-empresa-industrial.png)
-
+![Empathy Map - Industrial Company](assets/chapter-02/empathy-map-empresa-industrial.png)
 ## 2.4. Big Picture Event Storming
 
-El Big Picture Event Storming permite representar visualmente los principales eventos del dominio de EcoTrack. Esta técnica ayuda a comprender el flujo general del negocio, identificar procesos relevantes y reconocer oportunidades para estructurar la solución.
+El equipo llevo a cabo una sesion colaborativa de **Big Picture Event Storming** utilizando la herramienta Miro, con el objetivo de explorar a alto nivel el dominio de gestion ambiental empresarial de EcoTrack. A diferencia de un flujo tecnico o de una secuencia limitada al registro de usuarios, el Big Picture Event Storming se enfoca en capturar el flujo de negocio completo que ocurre en una organizacion: desde la configuracion de la empresa y sus sedes hasta el registro de datos de actividad, el calculo de la huella de carbono, la definicion de metas de reduccion y la generacion de reportes ambientales.
 
-| Evento de dominio               | Descripción                                                                                        |
-| ------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Organization Registered         | Una empresa se registra en EcoTrack para gestionar su información ambiental.                       |
-| User Invited                    | Un administrador invita usuarios de la organización y asigna roles.                                |
-| Facility Registered             | Se registra una sede, planta o unidad de negocio.                                                  |
-| Emission Source Registered      | Se registra una fuente de emisión asociada a una sede, alcance y categoría.                        |
-| Activity Data Recorded          | Se registra información de actividad, como consumo de energía, combustible, transporte o residuos. |
-| Emission Factor Selected        | Se selecciona un factor de emisión para realizar el cálculo correspondiente.                       |
-| Carbon Footprint Calculated     | Se calcula la huella de carbono para un periodo determinado.                                       |
-| Emissions History Reviewed      | El usuario consulta el historial de emisiones registradas.                                         |
-| Environmental Dashboard Updated | El dashboard ambiental muestra indicadores actualizados.                                           |
-| Reduction Goal Created          | Se crea una meta ambiental para reducir emisiones o consumos.                                      |
-| Reduction Plan Created          | Se crea un plan de reducción asociado a una meta ambiental.                                        |
-| Initiative Registered           | Se registra una iniciativa ambiental vinculada a un plan de reducción.                             |
-| Progress Reviewed               | Se revisa el avance de una meta o plan ambiental.                                                  |
-| Environmental Report Generated  | Se genera un reporte ambiental en PDF o formato exportable.                                        |
-| CSV Data Imported               | Una empresa del Plan Empresa importa datos mediante un archivo CSV estándar.                       |
-| External System Data Received   | EcoTrack recibe información desde un sistema externo mediante la EcoTrack API.                     |
+Durante la sesion se identificaron los eventos significativos que ocurren en el ciclo de gestion de emisiones y la interaccion entre los actores del ecosistema. El proceso permitio visualizar el flujo completo del negocio, exponiendo las relaciones entre eventos clave, actores involucrados, sistemas externos y politicas que rigen el comportamiento de EcoTrack.
 
-### Bounded Contexts preliminares
+A continuacion, se presentan los principales elementos identificados en el Big Picture Event Storming.
 
-- **Identity and Access Management:** gestión de usuarios, autenticación, roles y permisos.
-- **Organization Management:** gestión de organizaciones, sedes y unidades de negocio.
-- **Emissions Management:** registro de fuentes de emisión y datos de actividad.
-- **Carbon Footprint Calculation:** selección de factores de emisión y cálculo de resultados por alcance y periodo.
-- **Goals and Reduction Plans:** creación de metas ambientales, planes de reducción e iniciativas.
-- **Analytics and Reports:** dashboards, indicadores, comparación entre periodos y generación de reportes.
-- **Data Integration:** importación mediante CSV y recepción de datos mediante EcoTrack API.
+### Domain Events (Eventos de Dominio)
+
+Eventos expresados en tiempo pasado que representan hechos relevantes ocurridos dentro del proceso de negocio:
+
+- **Organization Registered** (Organizacion registrada)
+- **Facility Registered** (Sede o planta registrada)
+- **User Invited** (Usuario invitado)
+- **Emission Source Registered** (Fuente de emision registrada)
+- **Activity Data Recorded** (Dato de actividad registrado)
+- **Environmental Evidence Uploaded** (Evidencia ambiental cargada)
+- **CSV Data Imported** (Datos CSV importados)
+- **External System Data Received** (Datos de sistema externo recibidos)
+- **Emission Factor Selected** (Factor de emision seleccionado)
+- **Carbon Footprint Calculated** (Huella de carbono calculada)
+- **Emissions History Updated** (Historial de emisiones actualizado)
+- **Environmental Dashboard Updated** (Dashboard ambiental actualizado)
+- **Reduction Goal Created** (Meta de reduccion creada)
+- **Reduction Plan Created** (Plan de reduccion creado)
+- **Environmental Initiative Registered** (Iniciativa ambiental registrada)
+- **Reduction Progress Reviewed** (Avance de reduccion revisado)
+- **Environmental Report Generated** (Reporte ambiental generado)
+- **Audit Evidence Reviewed** (Evidencia de auditoria revisada)
+
+### Actors (Actores)
+
+Personas o sistemas que ejecutan comandos, toman decisiones o generan eventos dentro del dominio:
+
+- **Organization Administrator (Administrador de la organizacion):** Registra la empresa, configura sedes, invita usuarios y asigna roles y permisos.
+- **Sustainability Lead (Responsable de sostenibilidad):** Coordina la recopilacion de datos ambientales, revisa indicadores, crea metas y prepara reportes para clientes, certificaciones o auditorias.
+- **Environmental Analyst (Analista ambiental):** Registra fuentes de emision, datos de actividad, factores de emision y evidencias necesarias para los calculos.
+- **Operations Supervisor (Supervisor de operaciones):** Proporciona y valida consumos de energia, combustible, agua, materiales, transporte y residuos provenientes de las operaciones.
+- **Management (Gerencia):** Consulta dashboards y reportes, compara resultados y aprueba metas, planes o decisiones de reduccion.
+- **External Auditor / Certification Body (Auditor externo / Certificadora):** Revisa reportes, evidencias e historial para verificar la consistencia y trazabilidad de la informacion ambiental.
+
+### External Systems (Sistemas Externos)
+
+- **CSV File / Spreadsheet Source:** Fuente externa utilizada para importar registros ambientales que anteriormente eran gestionados en hojas de calculo.
+- **EcoTrack API / Enterprise System:** Integracion que permite recibir datos desde sistemas empresariales, ERP u otras aplicaciones internas.
+- **Emission Factor Repository:** Fuente de factores de emision utilizados para convertir los datos de actividad en emisiones de CO2e.
+- **Identity and Email Service:** Servicios externos utilizados para autenticacion, invitaciones de usuarios, recuperacion de acceso y notificaciones.
+- **PDF Export Service:** Servicio utilizado para generar y descargar reportes ambientales en un formato compartible.
+
+### Policies (Politicas)
+
+Reglas de negocio que reaccionan ante eventos especificos y activan nuevas acciones dentro del flujo:
+
+- **When Activity Data is Recorded, validate required fields and classify its emission scope:** Cuando se registra un dato de actividad, EcoTrack valida los campos obligatorios y lo relaciona con una fuente, sede, periodo y alcance de emision.
+- **When Valid Activity Data and an Emission Factor are Available, calculate the Carbon Footprint:** Cuando existen datos validos y un factor de emision aplicable, EcoTrack ejecuta el calculo de la huella de carbono.
+- **When the Carbon Footprint is Calculated, update the Dashboard and Emissions History:** Cuando se calcula la huella, se actualizan automaticamente el dashboard y el historial por alcance, fuente, sede y periodo.
+- **When Imported Data contains errors, reject inconsistent rows and request correction:** Cuando una importacion CSV contiene errores, se rechazan las filas inconsistentes y se solicita su correccion antes de incorporarlas al calculo.
+- **When an Emission Threshold is exceeded, notify the Sustainability Lead and Operations Supervisor:** Cuando un consumo o emision supera el umbral definido, se notifica a los responsables para que revisen la causa y definan una accion.
+- **When a Reduction Goal is Created, request a Reduction Plan and responsible owners:** Cuando se crea una meta de reduccion, se solicita asociar un plan, responsables, fechas e iniciativas de seguimiento.
+- **When a Reporting Period is Closed, preserve its calculations and evidence:** Cuando se cierra un periodo de reporte, se conserva el calculo, las evidencias y el historial para mantener la trazabilidad.
+- **When an Environmental Report is Requested, consolidate approved results and audit evidence:** Cuando se solicita un reporte ambiental, EcoTrack consolida resultados aprobados, indicadores y evidencias para generar el documento final.
 
 ## 2.5. Ubiquitous Language
 
-El Ubiquitous Language define términos del dominio ambiental que serán utilizados por el equipo Horizon y los stakeholders durante el desarrollo de EcoTrack. Los términos se presentan en inglés, mientras que las definiciones se redactan en español para mantener claridad en el informe.
+El Ubiquitous Language establece un vocabulario comun para que el equipo Horizon, los usuarios y los stakeholders utilicen los mismos conceptos durante el analisis, diseno y desarrollo de EcoTrack. Los terminos se presentan en ingles, su equivalente en espanol y una definicion contextualizada al dominio de gestion ambiental empresarial.
 
-| Term                     | Definition                                                                                                                                                  |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Carbon Footprint         | Total de emisiones de gases de efecto invernadero generadas directa o indirectamente por una organización durante un periodo determinado.                   |
-| Greenhouse Gas Emissions | Emisiones de gases que contribuyen al calentamiento global y que pueden generarse por actividades productivas, transporte, energía o procesos industriales. |
-| Emission Source          | Actividad, proceso, equipo o recurso que genera emisiones dentro de una organización.                                                                       |
-| Scope 1                  | Emisiones directas generadas por fuentes propias o controladas por la empresa.                                                                              |
-| Scope 2                  | Emisiones indirectas asociadas al consumo de electricidad, energía o calefacción adquirida por la empresa.                                                  |
-| Scope 3                  | Otras emisiones indirectas generadas en la cadena de valor de la organización.                                                                              |
-| Activity Data            | Dato operativo usado para calcular emisiones, como litros de combustible, kWh consumidos, toneladas transportadas o kilómetros recorridos.                  |
-| Emission Factor          | Valor que permite convertir un dato de actividad en una cantidad estimada de emisiones.                                                                     |
-| Facility                 | Sede, planta, almacén u operación física donde se registran consumos y emisiones.                                                                           |
-| Business Unit            | Unidad organizacional que agrupa operaciones, áreas o procesos dentro de una empresa.                                                                       |
-| Environmental Indicator  | Métrica utilizada para evaluar el desempeño ambiental de una organización.                                                                                  |
-| Sustainability Report    | Documento que comunica resultados, indicadores y acciones ambientales de una organización.                                                                  |
-| Reduction Goal           | Meta definida para disminuir emisiones, consumo energético u otro impacto ambiental.                                                                        |
-| Reduction Plan           | Conjunto de acciones organizadas para alcanzar una meta ambiental.                                                                                          |
-| Environmental Initiative | Acción específica ejecutada para reducir emisiones o mejorar el desempeño ambiental.                                                                        |
-| Audit Evidence           | Documento, registro o archivo que sustenta un dato ambiental, cálculo o resultado ante una revisión.                                                        |
-| CSV Import               | Carga de información ambiental mediante un archivo con formato estándar.                                                                                    |
-| EcoTrack API             | Interfaz estándar que permite recibir información ambiental desde sistemas externos de una empresa.                                                         |
-| Dashboard                | Vista que presenta indicadores ambientales mediante gráficos, tarjetas y comparaciones.                                                                     |
-| Reporting Period         | Periodo de tiempo utilizado para registrar, calcular y analizar emisiones.                                                                                  |
+- **Identity & Access Management**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| User | Usuario | Persona que interactua con EcoTrack de acuerdo con los permisos asignados dentro de una organizacion. |
+| Organization Administrator | Administrador de organizacion | Usuario responsable de configurar la empresa, invitar integrantes y administrar roles y permisos. |
+| Register User | Registrar usuario | Accion de crear una cuenta nueva para acceder a EcoTrack. |
+| Login | Iniciar sesion | Proceso de autenticacion mediante credenciales validas para acceder a la plataforma. |
+| Credentials | Credenciales | Conjunto de datos, como correo y contrasena, utilizados para verificar la identidad de un usuario. |
+| User Invited | Usuario invitado | Evento que indica que una persona fue invitada a formar parte de una organizacion. |
+| User Authenticated | Usuario autenticado | Evento que confirma que las credenciales fueron verificadas y se inicio una sesion valida. |
+
+- **Organization Management**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Organization | Organizacion | Empresa registrada en EcoTrack que centraliza su informacion ambiental, usuarios, sedes y reportes. |
+| Facility | Sede o planta | Ubicacion fisica donde se realizan operaciones y se registran consumos, fuentes y emisiones. |
+| Business Unit | Unidad de negocio | Division organizacional utilizada para agrupar areas, procesos u operaciones dentro de una empresa. |
+| Register Organization | Registrar organizacion | Accion mediante la cual un administrador incorpora los datos generales de una empresa. |
+| Register Facility | Registrar sede | Accion de agregar una sede, planta, almacen o centro operativo a una organizacion. |
+| Organization Registered | Organizacion registrada | Evento que confirma la creacion de una organizacion dentro de EcoTrack. |
+| Facility Registered | Sede registrada | Evento que confirma que una sede o planta fue asociada correctamente con una organizacion. |
+
+- **Emissions Management**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Emission Source | Fuente de emision | Actividad, equipo, proceso o recurso que genera emisiones de gases de efecto invernadero. |
+| Activity Data | Dato de actividad | Medida operativa utilizada en un calculo, como kWh, litros de combustible, kilometros o toneladas. |
+| Scope 1 | Alcance 1 | Emisiones directas provenientes de fuentes propiedad de la empresa o controladas por ella. |
+| Scope 2 | Alcance 2 | Emisiones indirectas asociadas con la electricidad o energia adquirida por la empresa. |
+| Scope 3 | Alcance 3 | Otras emisiones indirectas generadas a lo largo de la cadena de valor de la organizacion. |
+| Reporting Period | Periodo de reporte | Intervalo de tiempo utilizado para registrar, calcular, comparar y reportar emisiones. |
+| Environmental Evidence | Evidencia ambiental | Archivo, recibo, fotografia o documento que respalda un dato de actividad registrado. |
+| Activity Data Recorded | Dato de actividad registrado | Evento que indica que un consumo o actividad fue almacenado para un periodo y una fuente determinados. |
+
+- **Carbon Footprint Calculation**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Emission Factor | Factor de emision | Coeficiente que convierte un dato de actividad en una cantidad estimada de emisiones. |
+| Carbon Footprint | Huella de carbono | Total de emisiones de gases de efecto invernadero generadas por una organizacion durante un periodo. |
+| Carbon Dioxide Equivalent (CO2e) | Dioxido de carbono equivalente (CO2e) | Unidad comun que expresa el efecto climatico de diferentes gases de efecto invernadero. |
+| Calculate Carbon Footprint | Calcular huella de carbono | Accion que aplica factores de emision a los datos de actividad validados. |
+| Carbon Footprint Calculated | Huella de carbono calculada | Evento que confirma la obtencion de resultados de emisiones por alcance, fuente, sede y periodo. |
+| Emissions History | Historial de emisiones | Registro cronologico de los calculos realizados y sus resultados anteriores. |
+| Emission Factor Selected | Factor de emision seleccionado | Evento que indica que se eligio el factor aplicable para procesar un dato de actividad. |
+
+- **Goals & Reduction Plans**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Reduction Goal | Meta de reduccion | Resultado medible definido para disminuir emisiones, consumos o impactos dentro de un plazo. |
+| Reduction Plan | Plan de reduccion | Conjunto organizado de acciones, responsables y fechas para alcanzar una meta ambiental. |
+| Environmental Initiative | Iniciativa ambiental | Accion especifica ejecutada para mejorar el desempeno ambiental de la organizacion. |
+| Progress | Avance | Medida que representa el nivel de cumplimiento alcanzado respecto de una meta. |
+| Create Reduction Goal | Crear meta de reduccion | Accion de establecer un valor objetivo, una linea base y una fecha limite. |
+| Reduction Goal Created | Meta de reduccion creada | Evento que confirma que una meta ambiental fue registrada correctamente. |
+| Progress Reviewed | Avance revisado | Evento que indica que un usuario evaluo resultados e iniciativas asociados con una meta. |
+
+- **Analytics & Reports**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Dashboard | Panel de indicadores | Vista que resume consumos, emisiones, tendencias, comparaciones y avance de metas. |
+| Environmental Indicator | Indicador ambiental | Metrica empleada para evaluar el desempeno ambiental de una organizacion. |
+| Environmental Report | Reporte ambiental | Documento que consolida resultados, indicadores, periodos y evidencias ambientales. |
+| Audit Evidence | Evidencia de auditoria | Registro verificable que sustenta un dato, calculo o resultado ante una revision externa. |
+| Generate Environmental Report | Generar reporte ambiental | Accion de consolidar resultados aprobados en un documento descargable. |
+| Environmental Dashboard Updated | Dashboard ambiental actualizado | Evento que confirma que los indicadores reflejan los calculos y datos mas recientes. |
+| Environmental Report Generated | Reporte ambiental generado | Evento que confirma que el reporte fue creado y se encuentra disponible para consulta o descarga. |
+
+- **Data Integration**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| CSV Import | Importacion CSV | Proceso de carga masiva de datos ambientales mediante un archivo con estructura definida. |
+| EcoTrack API | API de EcoTrack | Interfaz que permite recibir o consultar informacion desde sistemas empresariales externos. |
+| External System | Sistema externo | Aplicacion, ERP u otra fuente que intercambia informacion con EcoTrack. |
+| Import Activity Data | Importar datos de actividad | Accion de cargar multiples registros ambientales desde un archivo o una integracion. |
+| CSV Data Imported | Datos CSV importados | Evento que confirma que las filas validas de un archivo fueron incorporadas a la plataforma. |
+| External System Data Received | Datos de sistema externo recibidos | Evento que indica que EcoTrack recibio informacion mediante una integracion autorizada. |
+| Validation Error | Error de validacion | Resultado que identifica un dato incompleto, inconsistente o incompatible con las reglas del dominio. |
+
+- **Plans & Subscriptions**
+
+| Term (English) | Term (Spanish) | Definition (in Spanish) |
+|---|---|---|
+| Subscription | Suscripcion | Relacion activa entre una organizacion y el plan de servicio contratado en EcoTrack. |
+| Basic Plan | Plan Basico | Plan inicial con funcionalidades esenciales para registrar emisiones y consultar resultados. |
+| Pro Plan | Plan Pro | Plan con capacidades ampliadas de analitica, reportes, metas e importacion de datos. |
+| Enterprise Plan | Plan Empresa | Plan orientado a organizaciones con multiples sedes, integraciones y necesidades avanzadas. |
+| Subscription Started | Suscripcion iniciada | Evento que indica que una organizacion comenzo a utilizar un plan determinado. |
+| Plan Changed | Plan modificado | Evento que confirma la actualizacion del plan contratado por una organizacion. |
+| Billing Period | Periodo de facturacion | Intervalo utilizado para calcular y gestionar el cobro recurrente de una suscripcion. |
 
 ---
-
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
@@ -1057,10 +1258,43 @@ Las User Stories y Technical Stories identificadas para EcoTrack se organizan en
 
 ## 3.2. Impact Mapping
 
-![Impact Mapping - EcoTrack](assets/chapter-03/impact-mapping.png)
+El Impact Mapping conecta objetivos de negocio medibles con los actores que pueden influir en ellos, los cambios de comportamiento esperados y los entregables de EcoTrack. Los objetivos se formularon con criterio SMART: son especificos, medibles, alcanzables, relevantes y limitados en el tiempo. Los valores funcionaran como metas de validacion para organizaciones piloto y se contrastaran con metricas reales durante la implementacion.
 
----
+![Impact Mapping con objetivos SMART de EcoTrack](assets/chapter-03/impact-mapping-smart.svg)
 
+### Business Goal 1: adopcion y centralizacion de datos
+
+**Objetivo SMART:** Lograr que, hasta el **31 de diciembre de 2026**, al menos el **80% de las organizaciones piloto** registre una organizacion, una sede, un periodo mensual y por lo menos **tres fuentes de emision** durante sus primeros **14 dias** de uso.
+
+| Actors | Impacts esperados | Deliverables relacionados |
+|---|---|---|
+| Administrador de organizacion; responsable de sostenibilidad; analista ambiental | Completar la configuracion inicial; reemplazar archivos dispersos por registros centralizados; mantener datos clasificados por alcance y sede. | Registro de organizacion y sedes; gestion de usuarios y roles; registro y clasificacion de fuentes; carga de datos de actividad; importacion CSV. |
+
+**Medicion:** porcentaje de organizaciones piloto que completan los cuatro hitos dentro de 14 dias, medido mediante eventos de uso de la plataforma.
+
+### Business Goal 2: eficiencia en reportes ambientales
+
+**Objetivo SMART:** Reducir, hasta el **31 de marzo de 2027**, en al menos **40%** el tiempo promedio que las organizaciones piloto emplean para consolidar datos y generar un reporte ambiental mensual, comparado con la linea base obtenida antes de usar EcoTrack.
+
+| Actors | Impacts esperados | Deliverables relacionados |
+|---|---|---|
+| Responsable de sostenibilidad; supervisor de operaciones; gerencia | Registrar datos con formatos consistentes; revisar resultados sin consolidacion manual; generar reportes con trazabilidad por periodo. | Calculo automatico de huella; dashboard por alcance y periodo; historial de calculos; validacion de datos; generacion y descarga de reportes. |
+
+**Medicion:** minutos promedio desde el inicio de la consolidacion hasta la obtencion del reporte, comparando la linea base declarada con los registros de uso de EcoTrack.
+
+### Business Goal 3: seguimiento de reduccion de emisiones
+
+**Objetivo SMART:** Conseguir que, hasta el **30 de junio de 2027**, al menos el **70% de las organizaciones piloto activas** cree una meta de reduccion medible y revise su avance en el dashboard al menos **una vez al mes durante tres meses consecutivos**.
+
+| Actors | Impacts esperados | Deliverables relacionados |
+|---|---|---|
+| Gerente de operaciones; responsable de sostenibilidad; lider de sede | Convertir resultados en metas concretas; asignar acciones e iniciativas; revisar tendencias y tomar decisiones correctivas. | Creacion de metas; planes de reduccion; iniciativas; indicadores de avance; comparacion entre periodos; notificaciones de seguimiento. |
+
+**Medicion:** porcentaje de organizaciones piloto activas con una meta vigente y tres revisiones mensuales consecutivas registradas.
+
+### Relacion entre los goals
+
+Los tres objetivos forman una secuencia: primero se centralizan datos confiables, luego se reduce el esfuerzo de reporte y finalmente se usan los resultados para gestionar metas de reduccion. Esta relacion asegura que los entregables respondan a los problemas observados en las entrevistas y no se limiten a funcionalidades aisladas.
 ## 3.3. Product Backlog
 
 El Product Backlog de EcoTrack reúne y prioriza las User Stories y Technical Stories identificadas para el desarrollo del producto. La priorización considera principalmente el valor que cada historia aporta a los segmentos objetivo, así como las funcionalidades necesarias para construir progresivamente la propuesta de valor de EcoTrack.
