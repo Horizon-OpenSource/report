@@ -899,7 +899,7 @@ La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que re
 - **Gerencia y auditoria:** Su participacion es menos frecuente en el registro operativo, pero tiene alta importancia en la revision de dashboards, reportes, evidencias historicas y resultados que respaldan decisiones o verificaciones.
 ### 2.3.3. User Journey Mapping.
 
-A continuacion, se presenta el User Journey Mapping (Mapa de Experiencia del Usuario) que describe las etapas clave del recorrido de cada segmento objetivo frente a la solucion, incluyendo los puntos de contacto, emociones y oportunidades de mejora.
+A continuacion, se presentan los User Journey Maps de ambos segmentos. Cada mapa mantiene cinco etapas y muestra metas del usuario, proceso y canales, actividades, problemas, evolucion de la experiencia e ideas u oportunidades para EcoTrack.
 
 - **Segmento 1: Empresas exportadoras**
   El siguiente Journey Map ilustra el proceso que sigue una responsable de Calidad y Sostenibilidad de una empresa exportadora para recopilar datos ambientales, preparar evidencias para clientes o certificadoras y responder a observaciones de auditoria. El recorrido muestra como actualmente depende de hojas de calculo, cuadernos, recibos y documentos dispersos, lo que genera riesgo de perdida de informacion, retrasos y dificultad para demostrar cumplimiento ambiental.
