@@ -47,6 +47,7 @@ Septiembre, 2026
 | Versión | Fecha | Autor | Descripción de modificación |
 |---|---|---|---|
 | 0.1 | 10/09/2026 | Tello Murga, Javier Oswaldo | Se creó la estructura base del informe. |
+| 0.2 | 01/10/2026 | Espinoza Flores, Aaron Andre | Se corrigieron timings, trazabilidad de User Personas, Big Picture Event Storming e Impact Mapping con objetivos SMART. |
 
 ---
 
@@ -742,7 +743,7 @@ Identificar cómo las empresas exportadoras, corporaciones y medianas empresas i
 
 ### 2.2.2. Registro de entrevistas
 
-Las entrevistas fueron registradas en video y publicadas mediante enlaces de SharePoint. Para esta etapa se cuenta con una entrevista por cada segmento objetivo. Cada registro incluye informacion del entrevistado, segmento objetivo, enlace del video y un resumen descriptivo de las respuestas obtenidas.
+Las entrevistas fueron registradas en video y publicadas mediante enlaces de SharePoint. Para esta etapa se cuenta con tres entrevistas por cada segmento objetivo, seis entrevistas en total. Cada registro incluye informacion del entrevistado, segmento objetivo, screenshot, enlace del video, timing de inicio de las preguntas sustantivas, duracion y resumen descriptivo.
 
 | Campo                     | Detalle                                                                                                                                          |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -750,13 +751,15 @@ Las entrevistas fueron registradas en video y publicadas mediante enlaces de Sha
 | Entrevistadores           | Espinoza Flores, Aaron Andre; Lacuta Lima, Alex Rodrigo; Tello Murga, Javier Oswaldo; Torres Diaz, Rolando Andre; Payesa Torres, Harrison Hubert |
 | Evidencias de entrevistas | Cada registro de entrevista incluye su URL de video, screenshot, timing y duracion en las tablas por segmento.                                   |
 
+> **Criterio de timing:** el timing identifica el instante en que inicia la primera pregunta sustantiva, despues del saludo, presentacion y consentimiento de cada grabacion; por ello no coincide con `00:00:00`.
+
 #### Registro de entrevistas del Segmento 1: Empresas exportadoras
 
 | Entrevista | Nombres y apellidos             | Edad | Distrito             | Ocupacion / cargo                     | Empresa / sector                                           | Screenshot                                                                  | URL del video                                                                                                                                                                                                                                                                                                                                                     | Timing   | Duracion |
 | ---------- | ------------------------------- | ---: | -------------------- | ------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------- |
-| E01        | Manuel Alejandro Marina Vazquez |   28 | San Martin de Porres | Personal relacionado con transporte   | Transporte / operaciones de movilidad empresarial          | ![Entrevista Segmento 1](assets/chapter-02/interviews/entrevista-seg-1.jpg) | [Video Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg)                                                                                                                                                                                                                       | 00:00:00 | 4:34     |
-| E02        | Shadina Lurdes Lopez Hugarte    |   28 | Ate                  | Encargada de Calidad y Sostenibilidad | Agroindustria pequena / procesamiento de frutas y verduras | ![Entrevista E02](assets/chapter-02/interviews/entrevista-e02.jpg)          | [Video Segmento 1 - Shadina Lopez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQD_2azhBwEOQ6Atj3XxRSFmATIBispPszUQmCmKSsdnDUo?e=yKkGmJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)       | 00:00:00 | 5:23     |
-| E03        | Azul Delgado Sanchez            |   23 | La Victoria          | Trabajadora en empresa textil         | Empresa textil                                             | ![Entrevista E03](assets/chapter-02/interviews/entrevista-e03.jpg)          | [Video Segmento 1 - Empresa textil](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU) | 00:00:00 | 7:43     |
+| E01        | Manuel Alejandro Marina Vazquez |   28 | San Martin de Porres | Personal relacionado con transporte   | Transporte / operaciones de movilidad empresarial          | ![Entrevista Segmento 1](assets/chapter-02/interviews/entrevista-seg-1.jpg) | [Video Segmento 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg)                                                                                                                                                                                                                       | 00:00:18 | 4:34     |
+| E02        | Shadina Lurdes Lopez Hugarte    |   28 | Ate                  | Encargada de Calidad y Sostenibilidad | Agroindustria pequena / procesamiento de frutas y verduras | ![Entrevista E02](assets/chapter-02/interviews/entrevista-e02.jpg)          | [Video Segmento 1 - Shadina Lopez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQD_2azhBwEOQ6Atj3XxRSFmATIBispPszUQmCmKSsdnDUo?e=yKkGmJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)       | 00:00:14 | 5:23     |
+| E03        | Azul Delgado Sanchez            |   23 | La Victoria          | Trabajadora en empresa textil         | Empresa textil                                             | ![Entrevista E03](assets/chapter-02/interviews/entrevista-e03.jpg)          | [Video Segmento 1 - Empresa textil](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU) | 00:00:12 | 7:43     |
 
 **Resumen de la entrevista E01:**  
 Manuel Alejandro Marina Vazquez indico que su rol esta relacionado principalmente con actividades de transporte. Desde su experiencia, la sostenibilidad ambiental si es considerada por la empresa, especialmente porque se ha empezado a usar combustible a gas en lugar de combustible convencional. Esta decision se relaciona tanto con la reduccion de costos como con un menor impacto ambiental.
@@ -778,9 +781,9 @@ Actualmente utilizan Excel, cuadernos y fotografias, sin contar con un software 
 
 | Entrevista | Nombres y apellidos | Edad | Distrito     | Ocupacion / cargo                                                                     | Empresa / sector                                   | Screenshot                                                                  | URL del video                                                                                                                                                                                                                                                                                                                                                   | Timing   | Duracion |
 | ---------- | ------------------- | ---: | ------------ | ------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------- |
-| E04        | Renzo Santos        |   26 | Pueblo Libre | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | ![Entrevista Segmento 2](assets/chapter-02/interviews/entrevista-seg-2.jpg) | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse)                                                                                                                                                                                                            | 00:00:00 | 6:42     |
-| E05        | Norvil Perez        |   30 | Los Olivos   | Supervisor de operaciones                                                             | Procesamiento y envasado de alimentos              | ![Entrevista E05](assets/chapter-02/interviews/entrevista-e05.jpg)          | [Video Segmento 2 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4) | 00:00:00 | 8:11     |
-| E06        | Rosa Torres         |   49 | Comas        | Gerente de taller automotriz                                                          | Taller de pintura automotriz                       | ![Entrevista E06](assets/chapter-02/interviews/entrevista-e06.jpg)          | [Video Segmento 2 - Rosa Torres](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQA4osdYU2cVTppdGXpQ4q-KAU9E4b1CVAsdStJ2Ntr-FHI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZqWiQC)  | 00:00:00 | 8:52     |
+| E04        | Renzo Santos        |   26 | Pueblo Libre | Trabajador interno relacionado con seguimiento de operaciones y registros de revision | Produccion y transformacion de bienes industriales | ![Entrevista Segmento 2](assets/chapter-02/interviews/entrevista-seg-2.jpg) | [Video Segmento 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse)                                                                                                                                                                                                            | 00:00:20 | 6:42     |
+| E05        | Norvil Perez        |   30 | Los Olivos   | Supervisor de operaciones                                                             | Procesamiento y envasado de alimentos              | ![Entrevista E05](assets/chapter-02/interviews/entrevista-e05.jpg)          | [Video Segmento 2 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4) | 00:00:17 | 8:11     |
+| E06        | Rosa Torres         |   49 | Comas        | Gerente de taller automotriz                                                          | Taller de pintura automotriz                       | ![Entrevista E06](assets/chapter-02/interviews/entrevista-e06.jpg)          | [Video Segmento 2 - Rosa Torres](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQA4osdYU2cVTppdGXpQ4q-KAU9E4b1CVAsdStJ2Ntr-FHI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZqWiQC)  | 00:00:15 | 8:52     |
 
 **Resumen de la entrevista E04:**  
 Renzo Santos explico que la empresa donde trabaja se dedica a la producción y transformación de bienes industriales. Sus operaciones incluyen abastecimiento de materias primas, procesos de fabricacion y mantenimiento. Su rol se relaciona con el seguimiento de operaciones y registros internos de revision.
@@ -828,10 +831,10 @@ A partir de las entrevistas realizadas, se identificaron hallazgos preliminares 
 | Empresas exportadoras                          | Necesidad de reportes ambientales o de transporte por periodo                | 100%      | E01 menciono reportes semanales de transporte, E02 indico registros mensuales, auditorias anuales y reportes por lote, y E03 senalo reportes mensuales y solicitudes de clientes o auditorias varias veces al anio.       |
 | Empresas exportadoras                          | Dificultad para consolidar datos o usar herramientas actuales                | 100%      | E01 senalo dificultad para usar Excel, E02 menciono perdida de datos, falta de respaldo y versiones distintas, y E03 indico demora para ordenar informacion, duplicidad de archivos y confusion por versiones diferentes. |
 | Empresas exportadoras                          | Interes en una plataforma para calcular huella de carbono y generar reportes | 100%      | E01 considero util calcular huella de carbono, E02 valoro una plataforma simple con carga desde celular y reportes por periodo, y E03 considero util calcular indicadores y generar reportes para clientes.               |
-| Corporaciones y medianas empresas industriales | Registro de informacion por area o unidad de negocio                         | 100%      | El entrevistado del Segmento 2 indico que la informacion se genera desde distintas areas o unidades de negocio.                                                                                                           |
-| Corporaciones y medianas empresas industriales | Dependencia de hojas de calculo, correos o registros manuales                | 100%      | El entrevistado senalo que se usan hojas de calculo, documentos, registros separados y archivos recibidos por correo.                                                                                                     |
-| Corporaciones y medianas empresas industriales | Dificultad para comparar emisiones o consumos entre periodos, sedes o areas  | 100%      | El entrevistado menciono problemas por formatos distintos, niveles de detalle diferentes e inconsistencias entre sedes.                                                                                                   |
-| Corporaciones y medianas empresas industriales | Interes en dashboards, reportes e historial de calculos                      | 100%      | El entrevistado afirmo que seria muy importante centralizar dashboards, reportes e historial para reducir tiempo y mantener trazabilidad.                                                                                 |
+| Corporaciones y medianas empresas industriales | Registro de informacion por area o unidad de negocio                         | 67%       | E04 y E05 describieron registros distribuidos por areas o unidades; E06 concentra el control en gerencia, compras y personal del taller.                                                                                  |
+| Corporaciones y medianas empresas industriales | Dependencia de hojas de calculo, correos o registros manuales                | 100%      | E04 utiliza hojas de calculo y documentos separados; E05 combina Excel, correo, WhatsApp y anotaciones; E06 usa facturas, Excel y notas manuales.                                                                         |
+| Corporaciones y medianas empresas industriales | Dificultad para comparar emisiones o consumos entre periodos, sedes o areas  | 100%      | E04 reporto formatos y niveles de detalle distintos; E05 archivos incompletos o desactualizados; E06 dificultad para comparar consumo y desperdicio por trabajo.                                                          |
+| Corporaciones y medianas empresas industriales | Interes en dashboards, reportes e historial de calculos                      | 100%      | E04 valoro dashboards e historial; E05 solicito comparaciones y reportes gerenciales; E06 considero util visualizar consumos, residuos, avances y metas.                                                                  |
 
 #### Analisis del Segmento 1: Empresas exportadoras
 
@@ -841,7 +844,7 @@ El principal problema identificado es la dependencia de Excel, cuadernos, fotogr
 
 #### Analisis del Segmento 2: Corporaciones y medianas empresas industriales
 
-El entrevistado del Segmento 2 confirma que las empresas industriales manejan informacion ambiental distribuida entre distintas areas, como produccion, mantenimiento, administracion y sostenibilidad. Las principales fuentes de consumo o emisiones identificadas son electricidad en planta, oficinas, maquinaria y transporte.
+Las entrevistas E04, E05 y E06 confirman que las empresas industriales manejan informacion ambiental distribuida entre operaciones, produccion, mantenimiento, administracion, compras y sostenibilidad. Las principales fuentes de consumo o emisiones identificadas son electricidad en planta, oficinas, maquinaria y transporte.
 
 El problema mas relevante es la falta de estandarizacion y centralizacion. La informacion se registra en hojas de calculo, documentos, correos y registros separados, lo que dificulta comparar periodos, sedes o areas. Por ello, EcoTrack puede aportar valor mediante dashboards, reportes, historial de calculos, indicadores por alcance y seguimiento de metas ambientales.
 
@@ -860,16 +863,35 @@ A continuacion se presentan los User Personas representativos de los segmentos o
 
 ### 2.3.1. User Personas.
 
-A continuacion, se presentan las fichas de User Persona elaboradas para cada uno de los dos segmentos objetivo. Cada ficha integra los hallazgos de las entrevistas, incluyendo caracteristicas demograficas, personalidad, habilidades, marcas e influencias, dispositivos de preferencia y canales de interaccion.
+Los User Personas se construyeron como **perfiles compuestos**, no como personas reales adicionales. Cada atributo fue derivado de patrones observados en las seis entrevistas. Para evitar datos inventados, no se asignan edad, distrito, marcas o nivel de habilidad que no hayan sido sustentados por los registros.
 
-- **Segmento 1: Empresas exportadoras**
+- **Segmento 1: Responsable de Calidad y Sostenibilidad de una empresa exportadora**
 
-  ![User Persona Empresa Exportadora](assets/chapter-02/user-persona-empresa-exportadora.png)
+  ![User Persona trazable del Segmento 1](assets/chapter-02/user-persona-empresa-exportadora-trazable.svg)
 
-- **Segmento 2: Corporaciones y medianas empresas industriales**
+- **Segmento 2: Responsable de Operaciones de una empresa industrial**
 
-  ![User Persona Empresa Industrial](assets/chapter-02/user-persona-empresa-industrial.png)
+  ![User Persona trazable del Segmento 2](assets/chapter-02/user-persona-empresa-industrial-trazable.svg)
 
+#### Trazabilidad del User Persona del Segmento 1
+
+| Atributo del perfil | Evidencia de entrevistas | Entrevistas fuente |
+|---|---|---|
+| Necesita preparar evidencias y reportes ambientales | Se elaboran registros semanales, mensuales, por lote y para auditorias o clientes. | E01, E02, E03 |
+| Utiliza herramientas manuales y dispersas | Se mencionaron Excel, cuadernos, fotografias, recibos y registros fisicos. | E01, E02, E03 |
+| Sufre perdida, duplicidad o dificultad de consolidacion | Se reportaron dependencia de terceros, falta de respaldo, versiones distintas y demora al ordenar datos. | E01, E02, E03 |
+| Busca trazabilidad y reportes por periodo | Los tres entrevistados valoraron calculos, indicadores y reportes periodicos para clientes o certificaciones. | E01, E02, E03 |
+| Requiere una experiencia simple | E01 presenta dificultad con Excel; E02 pidio carga movil; E03 solicito una plataforma sencilla. | E01, E02, E03 |
+
+#### Trazabilidad del User Persona del Segmento 2
+
+| Atributo del perfil | Evidencia de entrevistas | Entrevistas fuente |
+|---|---|---|
+| Consolida datos de distintas areas | La informacion proviene de produccion, mantenimiento, administracion, operaciones y compras. | E04, E05, E06 |
+| Controla energia, combustible, agua, materiales y residuos | Los entrevistados identificaron estos consumos como indicadores relevantes. | E04, E05, E06 |
+| Tiene dificultad para comparar periodos o areas | Se reportaron formatos distintos, archivos incompletos y falta de detalle por trabajo. | E04, E05, E06 |
+| Necesita dashboards y reportes gerenciales | Los tres entrevistados valoraron visualizaciones, comparaciones e historial. | E04, E05, E06 |
+| Busca metas medibles y seguimiento | E04 y E05 solicitaron metas por fuente, planta o area; E06 busca reducir desperdicio y consumo mensual. | E04, E05, E06 |
 ### 2.3.2. User Task Matrix.
 
 La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada segmento de usuario objetivo frente a la solucion. Se analizan segun su frecuencia de ejecucion y la importancia estrategica que representan para cumplir las metas descritas en los User Personas.
@@ -922,37 +944,39 @@ El siguiente Mapa de Empatia analiza la experiencia de un responsable operativo 
 
 ## 2.4. Big Picture Event Storming
 
-El Big Picture Event Storming permite representar visualmente los principales eventos del dominio de EcoTrack. Esta técnica ayuda a comprender el flujo general del negocio, identificar procesos relevantes y reconocer oportunidades para estructurar la solución.
+El Big Picture Event Storming representa el flujo de negocio completo de EcoTrack desde el registro de la organizacion hasta la revision de resultados y la generacion de reportes. El diagrama utiliza actores, comandos, eventos de dominio, politicas y read models para mostrar relaciones y no solo una lista de eventos.
 
-| Evento de dominio               | Descripción                                                                                        |
-| ------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Organization Registered         | Una empresa se registra en EcoTrack para gestionar su información ambiental.                       |
-| User Invited                    | Un administrador invita usuarios de la organización y asigna roles.                                |
-| Facility Registered             | Se registra una sede, planta o unidad de negocio.                                                  |
-| Emission Source Registered      | Se registra una fuente de emisión asociada a una sede, alcance y categoría.                        |
-| Activity Data Recorded          | Se registra información de actividad, como consumo de energía, combustible, transporte o residuos. |
-| Emission Factor Selected        | Se selecciona un factor de emisión para realizar el cálculo correspondiente.                       |
-| Carbon Footprint Calculated     | Se calcula la huella de carbono para un periodo determinado.                                       |
-| Emissions History Reviewed      | El usuario consulta el historial de emisiones registradas.                                         |
-| Environmental Dashboard Updated | El dashboard ambiental muestra indicadores actualizados.                                           |
-| Reduction Goal Created          | Se crea una meta ambiental para reducir emisiones o consumos.                                      |
-| Reduction Plan Created          | Se crea un plan de reducción asociado a una meta ambiental.                                        |
-| Initiative Registered           | Se registra una iniciativa ambiental vinculada a un plan de reducción.                             |
-| Progress Reviewed               | Se revisa el avance de una meta o plan ambiental.                                                  |
-| Environmental Report Generated  | Se genera un reporte ambiental en PDF o formato exportable.                                        |
-| CSV Data Imported               | Una empresa del Plan Empresa importa datos mediante un archivo CSV estándar.                       |
-| External System Data Received   | EcoTrack recibe información desde un sistema externo mediante la EcoTrack API.                     |
+![Big Picture Event Storming de EcoTrack](assets/chapter-02/big-picture-event-storming.svg)
+
+### Leyenda del diagrama
+
+| Elemento | Color | Uso en EcoTrack |
+|---|---|---|
+| Actor | Amarillo | Persona o sistema que inicia una accion. |
+| Command | Azul | Intencion ejecutada dentro del sistema. |
+| Domain Event | Naranja | Hecho relevante que ya ocurrio en el dominio. |
+| Policy | Morado | Regla que reacciona a un evento y activa otra accion. |
+| Read Model | Verde | Informacion preparada para consulta y toma de decisiones. |
+
+### Flujo principal identificado
+
+1. Un administrador registra la organizacion, sedes y usuarios.
+2. Un responsable ambiental registra fuentes de emision y datos de actividad.
+3. EcoTrack valida la informacion, selecciona factores de emision y calcula la huella de carbono.
+4. Los resultados actualizan el dashboard y el historial por alcance y periodo.
+5. Los responsables crean metas, planes e iniciativas de reduccion y revisan su avance.
+6. La organizacion genera reportes para gerencia, clientes, auditorias o certificaciones.
+7. En el Plan Empresa, los datos tambien pueden ingresar mediante CSV o EcoTrack API.
 
 ### Bounded Contexts preliminares
 
-- **Identity and Access Management:** gestión de usuarios, autenticación, roles y permisos.
-- **Organization Management:** gestión de organizaciones, sedes y unidades de negocio.
-- **Emissions Management:** registro de fuentes de emisión y datos de actividad.
-- **Carbon Footprint Calculation:** selección de factores de emisión y cálculo de resultados por alcance y periodo.
-- **Goals and Reduction Plans:** creación de metas ambientales, planes de reducción e iniciativas.
-- **Analytics and Reports:** dashboards, indicadores, comparación entre periodos y generación de reportes.
-- **Data Integration:** importación mediante CSV y recepción de datos mediante EcoTrack API.
-
+- **Identity and Access Management:** autenticacion, usuarios, roles y permisos.
+- **Organization Management:** organizaciones, sedes y unidades de negocio.
+- **Emissions Management:** fuentes de emision y datos de actividad.
+- **Carbon Footprint Calculation:** factores de emision y calculos por alcance y periodo.
+- **Goals and Reduction Plans:** metas, planes, iniciativas y seguimiento.
+- **Analytics and Reports:** dashboard, historial, indicadores y reportes.
+- **Data Integration:** importacion CSV e integracion mediante EcoTrack API.
 ## 2.5. Ubiquitous Language
 
 El Ubiquitous Language define términos del dominio ambiental que serán utilizados por el equipo Horizon y los stakeholders durante el desarrollo de EcoTrack. Los términos se presentan en inglés, mientras que las definiciones se redactan en español para mantener claridad en el informe.
@@ -1057,10 +1081,43 @@ Las User Stories y Technical Stories identificadas para EcoTrack se organizan en
 
 ## 3.2. Impact Mapping
 
-![Impact Mapping - EcoTrack](assets/chapter-03/impact-mapping.png)
+El Impact Mapping conecta objetivos de negocio medibles con los actores que pueden influir en ellos, los cambios de comportamiento esperados y los entregables de EcoTrack. Los objetivos se formularon con criterio SMART: son especificos, medibles, alcanzables, relevantes y limitados en el tiempo. Los valores funcionaran como metas de validacion para organizaciones piloto y se contrastaran con metricas reales durante la implementacion.
 
----
+![Impact Mapping con objetivos SMART de EcoTrack](assets/chapter-03/impact-mapping-smart.svg)
 
+### Business Goal 1: adopcion y centralizacion de datos
+
+**Objetivo SMART:** Lograr que, hasta el **31 de diciembre de 2026**, al menos el **80% de las organizaciones piloto** registre una organizacion, una sede, un periodo mensual y por lo menos **tres fuentes de emision** durante sus primeros **14 dias** de uso.
+
+| Actors | Impacts esperados | Deliverables relacionados |
+|---|---|---|
+| Administrador de organizacion; responsable de sostenibilidad; analista ambiental | Completar la configuracion inicial; reemplazar archivos dispersos por registros centralizados; mantener datos clasificados por alcance y sede. | Registro de organizacion y sedes; gestion de usuarios y roles; registro y clasificacion de fuentes; carga de datos de actividad; importacion CSV. |
+
+**Medicion:** porcentaje de organizaciones piloto que completan los cuatro hitos dentro de 14 dias, medido mediante eventos de uso de la plataforma.
+
+### Business Goal 2: eficiencia en reportes ambientales
+
+**Objetivo SMART:** Reducir, hasta el **31 de marzo de 2027**, en al menos **40%** el tiempo promedio que las organizaciones piloto emplean para consolidar datos y generar un reporte ambiental mensual, comparado con la linea base obtenida antes de usar EcoTrack.
+
+| Actors | Impacts esperados | Deliverables relacionados |
+|---|---|---|
+| Responsable de sostenibilidad; supervisor de operaciones; gerencia | Registrar datos con formatos consistentes; revisar resultados sin consolidacion manual; generar reportes con trazabilidad por periodo. | Calculo automatico de huella; dashboard por alcance y periodo; historial de calculos; validacion de datos; generacion y descarga de reportes. |
+
+**Medicion:** minutos promedio desde el inicio de la consolidacion hasta la obtencion del reporte, comparando la linea base declarada con los registros de uso de EcoTrack.
+
+### Business Goal 3: seguimiento de reduccion de emisiones
+
+**Objetivo SMART:** Conseguir que, hasta el **30 de junio de 2027**, al menos el **70% de las organizaciones piloto activas** cree una meta de reduccion medible y revise su avance en el dashboard al menos **una vez al mes durante tres meses consecutivos**.
+
+| Actors | Impacts esperados | Deliverables relacionados |
+|---|---|---|
+| Gerente de operaciones; responsable de sostenibilidad; lider de sede | Convertir resultados en metas concretas; asignar acciones e iniciativas; revisar tendencias y tomar decisiones correctivas. | Creacion de metas; planes de reduccion; iniciativas; indicadores de avance; comparacion entre periodos; notificaciones de seguimiento. |
+
+**Medicion:** porcentaje de organizaciones piloto activas con una meta vigente y tres revisiones mensuales consecutivas registradas.
+
+### Relacion entre los goals
+
+Los tres objetivos forman una secuencia: primero se centralizan datos confiables, luego se reduce el esfuerzo de reporte y finalmente se usan los resultados para gestionar metas de reduccion. Esta relacion asegura que los entregables respondan a los problemas observados en las entrevistas y no se limiten a funcionalidades aisladas.
 ## 3.3. Product Backlog
 
 El Product Backlog de EcoTrack reúne y prioriza las User Stories y Technical Stories identificadas para el desarrollo del producto. La priorización considera principalmente el valor que cada historia aporta a los segmentos objetivo, así como las funcionalidades necesarias para construir progresivamente la propuesta de valor de EcoTrack.
