@@ -28,6 +28,14 @@ package "Domain" {
       +status: UserStatus
     }
 
+    class InvitationViewModel {
+      +id: number
+      +email: String
+      +role: RoleType
+      +status: InvitationStatus
+      +expiresAt: Date
+    }
+
     class SessionViewModel {
       +accessToken: String
       +expiresAt: Date
@@ -46,6 +54,11 @@ package "Domain" {
       ACTIVE
       DISABLED
     }
+    enum InvitationStatus {
+      PENDING
+      ACCEPTED
+      EXPIRED
+    }
   }
 
   package "Rules" {
@@ -57,10 +70,12 @@ package "Domain" {
     }
   }
 
-  UserViewModel "1" *-- "1" RoleType
-  UserViewModel "1" *-- "1" UserStatus
-  SessionViewModel "1" *-- "1" UserViewModel
-  RolePermissionRules ..> RoleType
+  UserViewModel "1" *-- "1" RoleType : classified by
+  UserViewModel "1" *-- "1" UserStatus : currently in
+  InvitationViewModel "1" *-- "1" RoleType : offers
+  InvitationViewModel "1" *-- "1" InvitationStatus : currently in
+  SessionViewModel "1" *-- "1" UserViewModel : authenticated as
+  RolePermissionRules ..> RoleType : evaluates
 }
 
 package "Presentation" as Frontend_iam_Presentation <<layer>> {
@@ -71,8 +86,11 @@ package "Infrastructure" as Frontend_iam_Infrastructure <<layer>> {
 }
 
 Frontend_iam_Presentation ..> UserViewModel : renders
+Frontend_iam_Presentation ..> InvitationViewModel : renders
 Frontend_iam_Application ..> SessionViewModel : updates
 Frontend_iam_Application ..> UserViewModel : updates
+Frontend_iam_Application ..> InvitationViewModel : updates
 Frontend_iam_Infrastructure ..> UserViewModel : maps responses to
+Frontend_iam_Infrastructure ..> InvitationViewModel : maps responses to
 
 @enduml

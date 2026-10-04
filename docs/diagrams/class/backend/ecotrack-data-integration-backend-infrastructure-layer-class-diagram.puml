@@ -1,0 +1,88 @@
+@startuml
+title EcoTrack Platform - Data Integration Backend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class ImportBatchJpaRepository {
+    +findByOrganizationId(organizationId: Long): List<ImportBatch>
+    +save(batch: ImportBatch): ImportBatch
+  }
+  class ApiKeyJpaRepository {
+    +findByKeyHash(keyHash: String): ApiKey
+    +save(apiKey: ApiKey): ApiKey
+  }
+
+  class ImportBatchEntity {
+    +id: Long
+    +organizationId: Long
+    +fileName: String
+    +status: String
+    +importedAt: LocalDateTime
+  }
+  class ApiKeyEntity {
+    +id: Long
+    +organizationId: Long
+    +keyHash: String
+    +createdAt: LocalDateTime
+    +revokedAt: LocalDateTime
+  }
+
+  class CsvFileParser {
+    +parse(file: MultipartFile): List<ActivityDataDto>
+  }
+  class ApiKeyHasher {
+    +hash(rawKey: String): String
+    +matches(rawKey: String, hash: String): boolean
+  }
+
+  class IamApiAdapter {
+    +validateUserRole(userId: Long): boolean
+    +validateApiKey(key: String): boolean
+  }
+  class EmissionsApiAdapter {
+    +deliverActivityData(data: ActivityDataDto): void
+    +queryEmissions(organizationId: Long): List<EmissionDataDto>
+  }
+  class FootprintApiAdapter {
+    +queryFootprintResults(organizationId: Long): List<FootprintResultDto>
+  }
+
+  ImportBatchJpaRepository ..> ImportBatchEntity : maps
+  ApiKeyJpaRepository ..> ApiKeyEntity : maps
+}
+
+package "Interfaces REST" as Backend_dataint_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_dataint_Application <<layer>> {
+}
+package "Domain" as Backend_dataint_Domain <<layer>> {
+}
+package "IAM API" as IamApi <<external>> {
+}
+package "Emissions Management API" as EmissionsApi <<external>> {
+}
+package "Carbon Footprint Calculation API" as FootprintApi <<external>> {
+}
+
+ImportBatchJpaRepository ..> Backend_dataint_Domain : implements ImportBatchRepository
+ApiKeyJpaRepository ..> Backend_dataint_Domain : implements ApiKeyRepository
+CsvFileParser ..> Backend_dataint_Application : used by ImportCommandService
+ApiKeyHasher ..> Backend_dataint_Domain : used by ApiKey
+IamApiAdapter ..> Backend_dataint_Application : implements IamApiPort
+EmissionsApiAdapter ..> Backend_dataint_Application : implements EmissionsApiPort
+FootprintApiAdapter ..> Backend_dataint_Application : implements FootprintApiPort
+IamApiAdapter ..> IamApi : calls
+EmissionsApiAdapter ..> EmissionsApi : calls
+FootprintApiAdapter ..> FootprintApi : calls
+
+@enduml

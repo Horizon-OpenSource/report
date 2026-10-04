@@ -1,0 +1,67 @@
+@startuml
+title EcoTrack Platform - Goals and Reduction Plans Backend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class ReductionGoalJpaRepository {
+    +findById(id: Long): ReductionGoal
+    +findByOrganizationId(organizationId: Long): List<ReductionGoal>
+    +save(goal: ReductionGoal): ReductionGoal
+  }
+
+  class ReductionGoalEntity {
+    +id: Long
+    +organizationId: Long
+    +name: String
+    +targetValue: Double
+    +targetDate: LocalDate
+    +status: String
+  }
+
+  class ReductionPlanEntity {
+    +id: Long
+    +reductionGoalId: Long
+    +name: String
+    +description: String
+  }
+
+  class EnvironmentalInitiativeEntity {
+    +id: Long
+    +reductionPlanId: Long
+    +name: String
+    +description: String
+  }
+
+  class FootprintApiAdapter {
+    +getFootprintResult(organizationId: Long): FootprintResultDto
+  }
+
+  ReductionGoalJpaRepository ..> ReductionGoalEntity : maps
+  ReductionGoalEntity "1" *-- "0..*" ReductionPlanEntity : has
+  ReductionPlanEntity "1" *-- "0..*" EnvironmentalInitiativeEntity : has
+}
+
+package "Interfaces REST" as Backend_goals_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_goals_Application <<layer>> {
+}
+package "Domain" as Backend_goals_Domain <<layer>> {
+}
+package "Carbon Footprint Calculation API" as FootprintApi <<external>> {
+}
+
+ReductionGoalJpaRepository ..> Backend_goals_Domain : implements ReductionGoalRepository
+FootprintApiAdapter ..> Backend_goals_Application : implements FootprintApiPort
+FootprintApiAdapter ..> FootprintApi : calls
+
+@enduml

@@ -1,0 +1,56 @@
+@startuml
+title EcoTrack Platform - Goals and Reduction Plans Frontend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class ReductionGoalStore {
+    +goals: ReductionGoalViewModel[]
+    +loading: boolean
+    +registerGoal(request: RegisterReductionGoalRequest): void
+    +editGoal(id: number, request: EditReductionGoalRequest): void
+    +updateStatus(id: number, status: String): void
+    +deleteGoal(id: number): void
+  }
+
+  class ReductionPlanFacade {
+    +createPlan(request: CreateReductionPlanRequest): void
+    +registerInitiative(request: RegisterInitiativeRequest): void
+  }
+
+  class ProgressFacade {
+    +progress: ProgressViewModel[]
+    +loadProgress(): void
+  }
+
+  ReductionPlanFacade ..> ReductionGoalStore : coordinates with
+  ProgressFacade ..> ReductionGoalStore : coordinates with
+}
+
+package "Presentation" as Frontend_goals_Presentation <<layer>> {
+}
+package "Domain" as Frontend_goals_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_goals_Infrastructure <<layer>> {
+}
+
+Frontend_goals_Presentation ..> ReductionGoalStore : dispatches
+Frontend_goals_Presentation ..> ReductionPlanFacade : dispatches
+Frontend_goals_Presentation ..> ProgressFacade : dispatches
+ReductionGoalStore ..> Frontend_goals_Domain : updates
+ReductionPlanFacade ..> Frontend_goals_Domain : updates
+ProgressFacade ..> Frontend_goals_Domain : updates
+ReductionGoalStore ..> Frontend_goals_Infrastructure : requests
+ReductionPlanFacade ..> Frontend_goals_Infrastructure : requests
+ProgressFacade ..> Frontend_goals_Infrastructure : requests
+
+@enduml

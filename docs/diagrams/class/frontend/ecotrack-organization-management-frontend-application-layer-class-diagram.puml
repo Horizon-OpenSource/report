@@ -1,0 +1,56 @@
+@startuml
+title EcoTrack Platform - Organization Management Frontend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class OrganizationFacade {
+    +organization: OrganizationViewModel
+    +registerOrganization(request: RegisterOrganizationRequest): void
+    +updateOrganization(request: UpdateOrganizationRequest): void
+    +loadProfile(): void
+  }
+
+  class FacilityStore {
+    +facilities: FacilityViewModel[]
+    +loading: boolean
+    +registerFacility(request: RegisterFacilityRequest): void
+  }
+
+  class BusinessUnitStore {
+    +businessUnits: BusinessUnitViewModel[]
+    +loading: boolean
+    +registerBusinessUnit(request: RegisterBusinessUnitRequest): void
+  }
+
+  OrganizationFacade ..> FacilityStore : coordinates with
+  OrganizationFacade ..> BusinessUnitStore : coordinates with
+}
+
+package "Presentation" as Frontend_orgmgmt_Presentation <<layer>> {
+}
+package "Domain" as Frontend_orgmgmt_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_orgmgmt_Infrastructure <<layer>> {
+}
+
+Frontend_orgmgmt_Presentation ..> OrganizationFacade : dispatches
+Frontend_orgmgmt_Presentation ..> FacilityStore : dispatches
+Frontend_orgmgmt_Presentation ..> BusinessUnitStore : dispatches
+OrganizationFacade ..> Frontend_orgmgmt_Domain : updates
+FacilityStore ..> Frontend_orgmgmt_Domain : updates
+BusinessUnitStore ..> Frontend_orgmgmt_Domain : updates
+OrganizationFacade ..> Frontend_orgmgmt_Infrastructure : requests
+FacilityStore ..> Frontend_orgmgmt_Infrastructure : requests
+BusinessUnitStore ..> Frontend_orgmgmt_Infrastructure : requests
+
+@enduml

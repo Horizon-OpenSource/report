@@ -17,7 +17,7 @@ package "Application" {
     +currentUser: UserViewModel
     +signIn(email: String, password: String): void
     +signOut(): void
-    +registerOrganizationAdmin(request: RegisterOrganizationAdminRequest): void
+    +createAccount(request: CreateUserAccountRequest): void
     +requestPasswordReset(email: String): void
     +resetPassword(token: String, newPassword: String): void
   }
@@ -26,11 +26,17 @@ package "Application" {
     +users: UserViewModel[]
     +loading: boolean
     +loadUsersByOrganization(organizationId: number): void
-    +registerUser(request: RegisterUserRequest): void
     +assignRole(userId: number, role: RoleType): void
   }
 
-  AuthFacade ..> UserStore
+  class InvitationStore {
+    +invitations: InvitationViewModel[]
+    +inviteUser(request: InviteUserRequest): void
+    +acceptInvitation(request: AcceptInvitationRequest): void
+  }
+
+  AuthFacade ..> UserStore : coordinates with
+  AuthFacade ..> InvitationStore : coordinates with
 }
 
 package "Presentation" as Frontend_iam_Presentation <<layer>> {
@@ -42,9 +48,12 @@ package "Infrastructure" as Frontend_iam_Infrastructure <<layer>> {
 
 Frontend_iam_Presentation ..> AuthFacade : dispatches
 Frontend_iam_Presentation ..> UserStore : dispatches
+Frontend_iam_Presentation ..> InvitationStore : dispatches
 AuthFacade ..> Frontend_iam_Domain : updates
 UserStore ..> Frontend_iam_Domain : updates
+InvitationStore ..> Frontend_iam_Domain : updates
 AuthFacade ..> Frontend_iam_Infrastructure : requests
 UserStore ..> Frontend_iam_Infrastructure : requests
+InvitationStore ..> Frontend_iam_Infrastructure : requests
 
 @enduml

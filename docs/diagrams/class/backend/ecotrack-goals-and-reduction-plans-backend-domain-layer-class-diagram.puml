@@ -1,0 +1,147 @@
+@startuml
+title EcoTrack Platform - Goals and Reduction Plans Backend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Aggregates" {
+    class ReductionGoal <<Aggregate Root>> {
+      +id: Long
+      +organizationId: Long
+      +name: String
+      +targetValue: Double
+      +targetDate: LocalDate
+      -status: GoalStatus
+      +edit(name: String, targetValue: Double, targetDate: LocalDate): void
+      +updateStatus(status: GoalStatus): void
+      +createReductionPlan(name: String, description: String): ReductionPlan
+    }
+  }
+
+  package "Entities" {
+    class ReductionPlan {
+      +id: Long
+      +reductionGoalId: Long
+      +name: String
+      +description: String
+      +registerInitiative(name: String, description: String): EnvironmentalInitiative
+    }
+    class EnvironmentalInitiative {
+      +id: Long
+      +reductionPlanId: Long
+      +name: String
+      +description: String
+    }
+  }
+
+  package "Value Objects" {
+    enum GoalStatus {
+      ACTIVE
+      ACHIEVED
+      AT_RISK
+    }
+  }
+
+  package "Commands" {
+    class RegisterReductionGoalCommand {
+      +organizationId: Long
+      +name: String
+      +targetValue: Double
+      +targetDate: LocalDate
+    }
+    class EditReductionGoalCommand {
+      +goalId: Long
+      +name: String
+      +targetValue: Double
+      +targetDate: LocalDate
+    }
+    class UpdateGoalStatusCommand {
+      +goalId: Long
+      +status: GoalStatus
+    }
+    class DeleteReductionGoalCommand {
+      +goalId: Long
+    }
+    class CreateReductionPlanCommand {
+      +reductionGoalId: Long
+      +name: String
+      +description: String
+    }
+    class RegisterInitiativeCommand {
+      +reductionPlanId: Long
+      +name: String
+      +description: String
+    }
+  }
+
+  package "Queries" {
+    class GetProgressQuery {
+      +organizationId: Long
+    }
+  }
+
+  package "Events" {
+    class ReductionGoalRegisteredEvent {
+      +goalId: Long
+      +occurredOn: LocalDateTime
+    }
+    class GoalStatusUpdatedEvent {
+      +goalId: Long
+      +status: GoalStatus
+      +occurredOn: LocalDateTime
+    }
+    class ReductionPlanCreatedEvent {
+      +planId: Long
+      +occurredOn: LocalDateTime
+    }
+    class EnvironmentalInitiativeRegisteredEvent {
+      +initiativeId: Long
+      +occurredOn: LocalDateTime
+    }
+  }
+
+  package "Repositories" {
+    interface ReductionGoalRepository {
+      +findById(id: Long): ReductionGoal
+      +findByOrganizationId(organizationId: Long): List<ReductionGoal>
+      +save(goal: ReductionGoal): ReductionGoal
+    }
+  }
+
+  ReductionGoal "1" *-- "1" GoalStatus : currently in
+  ReductionGoal "1" *-- "0..*" ReductionPlan : has
+  ReductionPlan "1" *-- "0..*" EnvironmentalInitiative : has
+  ReductionGoalRepository ..> ReductionGoal : persists
+}
+
+package "Interfaces REST" as Backend_goals_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_goals_Application <<layer>> {
+}
+package "Infrastructure" as Backend_goals_Infrastructure <<layer>> {
+}
+
+Backend_goals_Interfaces_REST ..> ReductionGoal : resources from
+Backend_goals_Application ..> RegisterReductionGoalCommand : handles
+Backend_goals_Application ..> EditReductionGoalCommand : handles
+Backend_goals_Application ..> UpdateGoalStatusCommand : handles
+Backend_goals_Application ..> DeleteReductionGoalCommand : handles
+Backend_goals_Application ..> CreateReductionPlanCommand : handles
+Backend_goals_Application ..> RegisterInitiativeCommand : handles
+Backend_goals_Infrastructure ..> ReductionGoalRepository : implements
+
+@enduml

@@ -1,0 +1,63 @@
+@startuml
+title EcoTrack Platform - Data Integration Frontend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class DataIntegrationApiService {
+    +importCsv(file: File): Observable<ImportBatchResponse>
+    +getImportHistory(): Observable<ImportBatchResponse[]>
+    +generateApiKey(): Observable<ApiKeyResponse>
+    +revokeApiKey(keyId: number): Observable<void>
+  }
+
+  interface ImportBatchResponse {
+    +id: number
+    +fileName: String
+    +status: String
+    +importedAt: String
+  }
+  interface ApiKeyResponse {
+    +id: number
+    +maskedKey: String
+    +createdAt: String
+    +revokedAt: String
+  }
+
+  class ImportBatchAssembler {
+    +{static} toViewModel(response: ImportBatchResponse): ImportBatchViewModel
+  }
+  class ApiKeyAssembler {
+    +{static} toViewModel(response: ApiKeyResponse): ApiKeyViewModel
+  }
+
+  DataIntegrationApiService ..> ImportBatchResponse : receives
+  DataIntegrationApiService ..> ApiKeyResponse : receives
+  ImportBatchAssembler ..> ImportBatchResponse : converts
+  ApiKeyAssembler ..> ApiKeyResponse : converts
+}
+
+package "Presentation" as Frontend_dataint_Presentation <<layer>> {
+}
+package "Application" as Frontend_dataint_Application <<layer>> {
+}
+package "Domain" as Frontend_dataint_Domain <<layer>> {
+}
+package "EcoTrack Backend API" as Backend <<external>> {
+}
+
+Frontend_dataint_Application ..> DataIntegrationApiService : requests
+DataIntegrationApiService ..> Backend : HTTPS / JSON
+ImportBatchAssembler ..> Frontend_dataint_Domain : produces
+ApiKeyAssembler ..> Frontend_dataint_Domain : produces
+
+@enduml

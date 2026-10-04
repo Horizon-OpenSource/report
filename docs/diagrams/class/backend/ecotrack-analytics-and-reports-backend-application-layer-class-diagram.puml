@@ -1,0 +1,75 @@
+@startuml
+title EcoTrack Platform - Analytics and Reports Backend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class UpdateIndicatorsPolicy {
+    +on(event: OrganizationRegisteredEvent): void
+    +on(event: EmissionSourceRegisteredEvent): void
+    +on(event: CarbonFootprintCalculatedEvent): void
+    +on(event: ReductionGoalRegisteredEvent): void
+  }
+
+  class AnalyticsQueryService {
+    +handle(query: GetDashboardQuery): List<EnvironmentalIndicator>
+    +handle(query: ComparePeriodsQuery): List<EnvironmentalIndicator>
+    +handle(query: GetSummaryQuery): List<EnvironmentalIndicator>
+    +handle(query: GetReportsHistoryQuery): List<SustainabilityReport>
+  }
+
+  class ReportCommandService {
+    +handle(command: GenerateConsolidatedReportCommand): SustainabilityReport
+    +handle(command: GenerateReportByPeriodCommand): SustainabilityReport
+    +handle(command: DownloadReportCommand): byte[]
+  }
+
+  interface OrganizationApiPort {
+    +getOrganizationMetrics(organizationId: Long): OrganizationMetricsDto
+  }
+  interface EmissionsApiPort {
+    +getEmissionsMetrics(organizationId: Long): EmissionsMetricsDto
+  }
+  interface FootprintApiPort {
+    +getFootprintMetrics(organizationId: Long): FootprintMetricsDto
+  }
+  interface GoalsApiPort {
+    +getGoalsMetrics(organizationId: Long): GoalsMetricsDto
+  }
+
+  AnalyticsQueryService ..> OrganizationApiPort : uses
+  AnalyticsQueryService ..> EmissionsApiPort : uses
+  AnalyticsQueryService ..> FootprintApiPort : uses
+  AnalyticsQueryService ..> GoalsApiPort : uses
+}
+
+package "Interfaces REST" as Backend_analytics_Interfaces_REST <<layer>> {
+}
+package "Domain" as Backend_analytics_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_analytics_Infrastructure <<layer>> {
+}
+package "Integration Event Bus" as EventBus <<external>> {
+}
+
+EventBus ..> UpdateIndicatorsPolicy : publishes to
+Backend_analytics_Interfaces_REST ..> AnalyticsQueryService : delegates
+Backend_analytics_Interfaces_REST ..> ReportCommandService : delegates
+UpdateIndicatorsPolicy ..> Backend_analytics_Domain : updates
+AnalyticsQueryService ..> Backend_analytics_Domain : reads aggregates
+ReportCommandService ..> Backend_analytics_Domain : applies rules
+OrganizationApiPort ..> Backend_analytics_Infrastructure : implemented by
+EmissionsApiPort ..> Backend_analytics_Infrastructure : implemented by
+FootprintApiPort ..> Backend_analytics_Infrastructure : implemented by
+GoalsApiPort ..> Backend_analytics_Infrastructure : implemented by
+
+@enduml

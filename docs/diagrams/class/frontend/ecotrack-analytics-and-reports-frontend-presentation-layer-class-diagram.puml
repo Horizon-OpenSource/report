@@ -1,0 +1,66 @@
+@startuml
+title EcoTrack Platform - Analytics and Reports Frontend Presentation Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Presentation" {
+  class DashboardComponent {
+    +indicators: EnvironmentalIndicatorViewModel[]
+  }
+
+  class PeriodComparisonComponent {
+    +indicators: EnvironmentalIndicatorViewModel[]
+    +onComparePeriods(from: String, to: String): void
+  }
+
+  class EnvironmentalSummaryComponent {
+    +summary: EnvironmentalIndicatorViewModel[]
+  }
+
+  class GenerateReportComponent {
+    +period: String
+    +onGenerateConsolidated(): void
+    +onGenerateByPeriod(): void
+  }
+
+  class ReportsHistoryComponent {
+    +reports: SustainabilityReportViewModel[]
+    +onDownload(reportId: number): void
+  }
+
+  class AnalyticsRoutes {
+    +routes: Routes
+  }
+
+  AnalyticsRoutes ..> DashboardComponent : routes to
+  AnalyticsRoutes ..> PeriodComparisonComponent : routes to
+  AnalyticsRoutes ..> EnvironmentalSummaryComponent : routes to
+  AnalyticsRoutes ..> GenerateReportComponent : routes to
+  AnalyticsRoutes ..> ReportsHistoryComponent : routes to
+}
+
+package "Application" as Frontend_analytics_Application <<layer>> {
+}
+package "Domain" as Frontend_analytics_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_analytics_Infrastructure <<layer>> {
+}
+
+DashboardComponent ..> Frontend_analytics_Application : dispatches
+PeriodComparisonComponent ..> Frontend_analytics_Application : dispatches
+EnvironmentalSummaryComponent ..> Frontend_analytics_Application : dispatches
+GenerateReportComponent ..> Frontend_analytics_Application : dispatches
+ReportsHistoryComponent ..> Frontend_analytics_Application : dispatches
+DashboardComponent ..> Frontend_analytics_Domain : reads
+ReportsHistoryComponent ..> Frontend_analytics_Domain : reads
+
+@enduml

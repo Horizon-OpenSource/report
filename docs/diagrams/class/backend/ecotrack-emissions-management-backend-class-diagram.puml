@@ -1,0 +1,22 @@
+@startuml
+title EcoTrack Platform - Emissions Management Backend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "Emissions Management Backend Bounded Context" {
+  class "Interfaces REST" as Backend_emissions_Interfaces_REST <<layer>>
+  class "Application" as Backend_emissions_Application <<layer>>
+  class "Domain" as Backend_emissions_Domain <<layer>>
+  class "Infrastructure" as Backend_emissions_Infrastructure <<layer>>
+}
+
+Backend_emissions_Interfaces_REST ..> Backend_emissions_Application : commands / queries
+Backend_emissions_Application ..> Backend_emissions_Domain : model and policies
+Backend_emissions_Application ..> Backend_emissions_Infrastructure : repository ports / adapters
+Backend_emissions_Infrastructure ..> Backend_emissions_Domain : persistence mapping
+Backend_emissions_Interfaces_REST ..> Backend_emissions_Domain : resources from aggregates
+
+@enduml

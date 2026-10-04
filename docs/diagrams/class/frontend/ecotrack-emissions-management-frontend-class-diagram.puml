@@ -1,0 +1,21 @@
+@startuml
+title EcoTrack Platform - Emissions Management Frontend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "Emissions Management Frontend Bounded Context" {
+  class "Presentation" as Frontend_emissions_Presentation <<layer>>
+  class "Application" as Frontend_emissions_Application <<layer>>
+  class "Domain" as Frontend_emissions_Domain <<layer>>
+  class "Infrastructure" as Frontend_emissions_Infrastructure <<layer>>
+}
+
+Frontend_emissions_Presentation ..> Frontend_emissions_Application : dispatches actions
+Frontend_emissions_Application ..> Frontend_emissions_Domain : reads / updates view models
+Frontend_emissions_Application ..> Frontend_emissions_Infrastructure : requests data
+Frontend_emissions_Infrastructure ..> Frontend_emissions_Domain : maps responses to
+
+@enduml

@@ -1,0 +1,112 @@
+@startuml
+title EcoTrack Platform - Organization Management Backend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Domain" {
+  package "Aggregates" {
+    class Organization <<Aggregate Root>> {
+      +id: Long
+      +name: String
+      +sector: String
+      +createdAt: LocalDateTime
+      +registerFacility(name: String, address: String): Facility
+      +registerBusinessUnit(name: String): BusinessUnit
+      +update(name: String, sector: String): void
+    }
+  }
+
+  package "Entities" {
+    class Facility {
+      +id: Long
+      +organizationId: Long
+      +name: String
+      +address: String
+    }
+    class BusinessUnit {
+      +id: Long
+      +organizationId: Long
+      +name: String
+    }
+  }
+
+  package "Commands" {
+    class RegisterOrganizationCommand {
+      +name: String
+      +sector: String
+    }
+    class UpdateOrganizationCommand {
+      +organizationId: Long
+      +name: String
+      +sector: String
+    }
+    class RegisterFacilityCommand {
+      +organizationId: Long
+      +name: String
+      +address: String
+    }
+    class RegisterBusinessUnitCommand {
+      +organizationId: Long
+      +name: String
+    }
+  }
+
+  package "Queries" {
+    class GetOrganizationProfileQuery {
+      +organizationId: Long
+    }
+  }
+
+  package "Events" {
+    class OrganizationRegisteredEvent {
+      +organizationId: Long
+      +occurredOn: LocalDateTime
+    }
+    class FacilityRegisteredEvent {
+      +organizationId: Long
+      +facilityId: Long
+      +occurredOn: LocalDateTime
+    }
+    class BusinessUnitRegisteredEvent {
+      +organizationId: Long
+      +businessUnitId: Long
+      +occurredOn: LocalDateTime
+    }
+  }
+
+  package "Repositories" {
+    interface OrganizationRepository {
+      +findById(id: Long): Organization
+      +save(organization: Organization): Organization
+    }
+  }
+
+  Organization "1" *-- "0..*" Facility : has
+  Organization "1" *-- "0..*" BusinessUnit : has
+  OrganizationRepository ..> Organization : persists
+}
+
+package "Interfaces REST" as Backend_orgmgmt_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_orgmgmt_Application <<layer>> {
+}
+package "Infrastructure" as Backend_orgmgmt_Infrastructure <<layer>> {
+}
+
+Backend_orgmgmt_Interfaces_REST ..> Organization : resources from
+Backend_orgmgmt_Application ..> RegisterOrganizationCommand : handles
+Backend_orgmgmt_Application ..> UpdateOrganizationCommand : handles
+Backend_orgmgmt_Application ..> RegisterFacilityCommand : handles
+Backend_orgmgmt_Application ..> RegisterBusinessUnitCommand : handles
+Backend_orgmgmt_Infrastructure ..> OrganizationRepository : implements
+
+@enduml

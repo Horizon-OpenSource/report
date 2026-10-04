@@ -1,0 +1,68 @@
+@startuml
+title EcoTrack Platform - Emissions Management Frontend Presentation Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Presentation" {
+  class RegisterEmissionSourceComponent {
+    +name: String
+    +type: String
+    +scope: String
+    +onSubmit(): void
+  }
+
+  class EmissionSourceListComponent {
+    +sources: EmissionSourceViewModel[]
+    +onSearch(term: String): void
+    +onFilterByScope(scope: String): void
+  }
+
+  class EditEmissionSourceComponent {
+    +sourceId: number
+    +name: String
+    +scope: String
+    +onSubmit(): void
+    +onDelete(): void
+  }
+
+  class RecordActivityDataComponent {
+    +emissionSourceId: number
+    +quantity: number
+    +unit: String
+    +period: String
+    +onSubmit(): void
+  }
+
+  class EmissionsRoutes {
+    +routes: Routes
+  }
+
+  EmissionsRoutes ..> RegisterEmissionSourceComponent : routes to
+  EmissionsRoutes ..> EmissionSourceListComponent : routes to
+  EmissionsRoutes ..> EditEmissionSourceComponent : routes to
+  EmissionsRoutes ..> RecordActivityDataComponent : routes to
+}
+
+package "Application" as Frontend_emissions_Application <<layer>> {
+}
+package "Domain" as Frontend_emissions_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_emissions_Infrastructure <<layer>> {
+}
+
+RegisterEmissionSourceComponent ..> Frontend_emissions_Application : dispatches
+EmissionSourceListComponent ..> Frontend_emissions_Application : dispatches
+EditEmissionSourceComponent ..> Frontend_emissions_Application : dispatches
+RecordActivityDataComponent ..> Frontend_emissions_Application : dispatches
+EmissionSourceListComponent ..> Frontend_emissions_Domain : reads
+
+@enduml

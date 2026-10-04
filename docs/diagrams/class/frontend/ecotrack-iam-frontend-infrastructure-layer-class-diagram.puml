@@ -15,29 +15,26 @@ hide circle
 package "Infrastructure" {
   class AuthApiService {
     +signIn(request: SignInRequest): Observable<TokenResponse>
-    +registerOrganizationAdmin(request: RegisterOrganizationAdminRequest): Observable<UserResponse>
-    +registerUser(request: RegisterUserRequest): Observable<UserResponse>
+    +createAccount(request: CreateUserAccountRequest): Observable<UserResponse>
     +assignRole(userId: number, request: AssignRoleRequest): Observable<UserResponse>
     +requestPasswordReset(request: RequestPasswordResetRequest): Observable<void>
     +resetPassword(request: ResetPasswordRequest): Observable<void>
     +getUsersByOrganization(organizationId: number): Observable<UserResponse[]>
   }
 
+  class InvitationApiService {
+    +inviteUser(request: InviteUserRequest): Observable<InvitationResponse>
+    +acceptInvitation(request: AcceptInvitationRequest): Observable<UserResponse>
+  }
+
   interface SignInRequest {
     +email: String
     +password: String
   }
-  interface RegisterOrganizationAdminRequest {
-    +organizationName: String
+  interface CreateUserAccountRequest {
     +fullName: String
     +email: String
     +password: String
-  }
-  interface RegisterUserRequest {
-    +fullName: String
-    +email: String
-    +password: String
-    +role: String
   }
   interface AssignRoleRequest {
     +role: String
@@ -49,10 +46,25 @@ package "Infrastructure" {
     +token: String
     +newPassword: String
   }
+  interface InviteUserRequest {
+    +email: String
+    +role: String
+  }
+  interface AcceptInvitationRequest {
+    +token: String
+    +fullName: String
+    +password: String
+  }
   interface UserResponse {
     +id: number
     +organizationId: number
     +fullName: String
+    +email: String
+    +role: String
+    +status: String
+  }
+  interface InvitationResponse {
+    +id: number
     +email: String
     +role: String
     +status: String
@@ -66,15 +78,22 @@ package "Infrastructure" {
     +{static} toViewModel(response: UserResponse): UserViewModel
   }
 
-  AuthApiService ..> SignInRequest
-  AuthApiService ..> RegisterOrganizationAdminRequest
-  AuthApiService ..> RegisterUserRequest
-  AuthApiService ..> AssignRoleRequest
-  AuthApiService ..> RequestPasswordResetRequest
-  AuthApiService ..> ResetPasswordRequest
-  AuthApiService ..> UserResponse
-  AuthApiService ..> TokenResponse
-  UserAssembler ..> UserResponse
+  class InvitationAssembler {
+    +{static} toViewModel(response: InvitationResponse): InvitationViewModel
+  }
+
+  AuthApiService ..> SignInRequest : sends
+  AuthApiService ..> CreateUserAccountRequest : sends
+  AuthApiService ..> AssignRoleRequest : sends
+  AuthApiService ..> RequestPasswordResetRequest : sends
+  AuthApiService ..> ResetPasswordRequest : sends
+  AuthApiService ..> UserResponse : receives
+  AuthApiService ..> TokenResponse : receives
+  InvitationApiService ..> InviteUserRequest : sends
+  InvitationApiService ..> AcceptInvitationRequest : sends
+  InvitationApiService ..> InvitationResponse : receives
+  UserAssembler ..> UserResponse : converts
+  InvitationAssembler ..> InvitationResponse : converts
 }
 
 package "Presentation" as Frontend_iam_Presentation <<layer>> {
@@ -87,7 +106,10 @@ package "EcoTrack Backend API" as Backend <<external>> {
 }
 
 Frontend_iam_Application ..> AuthApiService : requests
+Frontend_iam_Application ..> InvitationApiService : requests
 AuthApiService ..> Backend : HTTPS / JSON
+InvitationApiService ..> Backend : HTTPS / JSON
 UserAssembler ..> Frontend_iam_Domain : produces
+InvitationAssembler ..> Frontend_iam_Domain : produces
 
 @enduml

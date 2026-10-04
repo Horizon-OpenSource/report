@@ -55,20 +55,8 @@ package "Domain / User Aggregate" {
   }
 
   package "Commands" {
-    class RegisterOrganizationAdminCommand {
-      +organizationName: String
+    class CreateUserAccountCommand {
       +fullName: String
-      +email: String
-      +password: String
-    }
-    class RegisterUserCommand {
-      +organizationId: Long
-      +fullName: String
-      +email: String
-      +password: String
-      +role: RoleType
-    }
-    class SignInCommand {
       +email: String
       +password: String
     }
@@ -88,9 +76,8 @@ package "Domain / User Aggregate" {
   }
 
   package "Events" {
-    class UserRegisteredEvent {
+    class UserAccountCreatedEvent {
       +userId: Long
-      +organizationId: Long
       +occurredOn: LocalDateTime
     }
     class RoleAssignedEvent {
@@ -119,12 +106,12 @@ package "Domain / User Aggregate" {
     }
   }
 
-  User "1" *-- "1" Email
-  User "1" *-- "1" PasswordHash
-  User "1" *-- "1" RoleType
-  User "1" *-- "1" UserStatus
-  User ..> PasswordHasher
-  UserRepository ..> User
+  User "1" *-- "1" Email : identified by
+  User "1" *-- "1" PasswordHash : secured by
+  User "1" *-- "1" RoleType : classified by
+  User "1" *-- "1" UserStatus : currently in
+  User ..> PasswordHasher : verifies with
+  UserRepository ..> User : persists
 }
 
 package "Interfaces REST" as Backend_iam_Interfaces_REST <<layer>> {
@@ -133,14 +120,15 @@ package "Application" as Backend_iam_Application <<layer>> {
 }
 package "Infrastructure" as Backend_iam_Infrastructure <<layer>> {
 }
+package "Domain / Invitation Aggregate" as Backend_iam_Invitation <<layer>> {
+}
 
 Backend_iam_Interfaces_REST ..> User : resources from
-Backend_iam_Application ..> RegisterOrganizationAdminCommand : handles
-Backend_iam_Application ..> RegisterUserCommand : handles
-Backend_iam_Application ..> SignInCommand : handles
+Backend_iam_Application ..> CreateUserAccountCommand : handles
 Backend_iam_Application ..> AssignRoleCommand : handles
 Backend_iam_Infrastructure ..> UserRepository : implements
 Backend_iam_Infrastructure ..> PasswordHasher : implements
 Backend_iam_Infrastructure ..> AuthenticationService : implements
+Backend_iam_Invitation ..> User : creates on acceptance
 
 @enduml

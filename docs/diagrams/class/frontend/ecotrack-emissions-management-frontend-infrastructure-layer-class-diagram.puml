@@ -1,0 +1,86 @@
+@startuml
+title EcoTrack Platform - Emissions Management Frontend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class EmissionApiService {
+    +registerEmissionSource(request: RegisterEmissionSourceRequest): Observable<EmissionSourceResponse>
+    +editEmissionSource(id: number, request: EditEmissionSourceRequest): Observable<EmissionSourceResponse>
+    +deleteEmissionSource(id: number): Observable<void>
+    +searchEmissionSources(term: String): Observable<EmissionSourceResponse[]>
+    +filterByScope(scope: String): Observable<EmissionSourceResponse[]>
+    +recordActivityData(request: RecordActivityDataRequest): Observable<ActivityDataResponse>
+  }
+
+  interface RegisterEmissionSourceRequest {
+    +name: String
+    +type: String
+    +scope: String
+  }
+  interface EditEmissionSourceRequest {
+    +name: String
+    +scope: String
+  }
+  interface RecordActivityDataRequest {
+    +emissionSourceId: number
+    +quantity: number
+    +unit: String
+    +period: String
+  }
+  interface EmissionSourceResponse {
+    +id: number
+    +facilityId: number
+    +name: String
+    +type: String
+    +scope: String
+  }
+  interface ActivityDataResponse {
+    +id: number
+    +emissionSourceId: number
+    +period: String
+    +quantity: number
+    +unit: String
+    +origin: String
+  }
+
+  class EmissionSourceAssembler {
+    +{static} toViewModel(response: EmissionSourceResponse): EmissionSourceViewModel
+  }
+  class ActivityDataAssembler {
+    +{static} toViewModel(response: ActivityDataResponse): ActivityDataViewModel
+  }
+
+  EmissionApiService ..> RegisterEmissionSourceRequest : sends
+  EmissionApiService ..> EditEmissionSourceRequest : sends
+  EmissionApiService ..> RecordActivityDataRequest : sends
+  EmissionApiService ..> EmissionSourceResponse : receives
+  EmissionApiService ..> ActivityDataResponse : receives
+  EmissionSourceAssembler ..> EmissionSourceResponse : converts
+  ActivityDataAssembler ..> ActivityDataResponse : converts
+}
+
+package "Presentation" as Frontend_emissions_Presentation <<layer>> {
+}
+package "Application" as Frontend_emissions_Application <<layer>> {
+}
+package "Domain" as Frontend_emissions_Domain <<layer>> {
+}
+package "EcoTrack Backend API" as Backend <<external>> {
+}
+
+Frontend_emissions_Application ..> EmissionApiService : requests
+EmissionApiService ..> Backend : HTTPS / JSON
+EmissionSourceAssembler ..> Frontend_emissions_Domain : produces
+ActivityDataAssembler ..> Frontend_emissions_Domain : produces
+
+@enduml

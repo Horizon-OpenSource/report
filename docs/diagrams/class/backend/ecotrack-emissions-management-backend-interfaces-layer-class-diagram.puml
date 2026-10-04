@@ -1,0 +1,77 @@
+@startuml
+title EcoTrack Platform - Emissions Management Backend Interfaces REST Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Interfaces REST" {
+  class EmissionController {
+    +registerEmissionSource(resource: RegisterEmissionSourceResource): EmissionSourceResource
+    +editEmissionSource(id: Long, resource: EditEmissionSourceResource): EmissionSourceResource
+    +deleteEmissionSource(id: Long): void
+    +searchEmissionSources(term: String): List<EmissionSourceResource>
+    +filterByScope(scope: String): List<EmissionSourceResource>
+    +recordActivityData(sourceId: Long, resource: RecordActivityDataResource): ActivityDataResource
+  }
+
+  class RegisterEmissionSourceResource {
+    +name: String
+    +type: String
+    +scope: String
+  }
+  class EditEmissionSourceResource {
+    +name: String
+    +scope: String
+  }
+  class RecordActivityDataResource {
+    +quantity: Double
+    +unit: String
+    +period: String
+  }
+  class EmissionSourceResource {
+    +id: Long
+    +facilityId: Long
+    +name: String
+    +type: String
+    +scope: String
+  }
+  class ActivityDataResource {
+    +id: Long
+    +emissionSourceId: Long
+    +quantity: Double
+    +unit: String
+    +period: String
+    +origin: String
+  }
+
+  class EmissionSourceResourceAssembler {
+    +{static} toResourceFrom(source: EmissionSource): EmissionSourceResource
+  }
+
+  EmissionController ..> RegisterEmissionSourceResource : receives
+  EmissionController ..> EditEmissionSourceResource : receives
+  EmissionController ..> RecordActivityDataResource : receives
+  EmissionController ..> EmissionSourceResource : returns
+  EmissionController ..> ActivityDataResource : returns
+  EmissionSourceResourceAssembler ..> EmissionSourceResource : builds
+}
+
+package "Application" as Backend_emissions_Application <<layer>> {
+}
+package "Domain" as Backend_emissions_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_emissions_Infrastructure <<layer>> {
+}
+
+EmissionController ..> Backend_emissions_Application : delegates use cases
+EmissionSourceResourceAssembler ..> Backend_emissions_Domain : reads aggregates
+
+@enduml

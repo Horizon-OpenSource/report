@@ -1,0 +1,57 @@
+@startuml
+title EcoTrack Platform - Organization Management Frontend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Domain" {
+  package "Models" {
+    class OrganizationViewModel {
+      +id: number
+      +name: String
+      +sector: String
+      +createdAt: Date
+    }
+
+    class FacilityViewModel {
+      +id: number
+      +organizationId: number
+      +name: String
+      +address: String
+    }
+
+    class BusinessUnitViewModel {
+      +id: number
+      +organizationId: number
+      +name: String
+    }
+  }
+
+  OrganizationViewModel "1" o-- "0..*" FacilityViewModel : has
+  OrganizationViewModel "1" o-- "0..*" BusinessUnitViewModel : has
+}
+
+package "Presentation" as Frontend_orgmgmt_Presentation <<layer>> {
+}
+package "Application" as Frontend_orgmgmt_Application <<layer>> {
+}
+package "Infrastructure" as Frontend_orgmgmt_Infrastructure <<layer>> {
+}
+
+Frontend_orgmgmt_Presentation ..> OrganizationViewModel : renders
+Frontend_orgmgmt_Presentation ..> FacilityViewModel : renders
+Frontend_orgmgmt_Presentation ..> BusinessUnitViewModel : renders
+Frontend_orgmgmt_Application ..> OrganizationViewModel : updates
+Frontend_orgmgmt_Application ..> FacilityViewModel : updates
+Frontend_orgmgmt_Application ..> BusinessUnitViewModel : updates
+Frontend_orgmgmt_Infrastructure ..> OrganizationViewModel : maps responses to
+
+@enduml

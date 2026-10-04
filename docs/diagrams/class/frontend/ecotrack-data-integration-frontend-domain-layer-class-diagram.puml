@@ -1,0 +1,61 @@
+@startuml
+title EcoTrack Platform - Data Integration Frontend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Models" {
+    class ImportBatchViewModel {
+      +id: number
+      +fileName: String
+      +status: ImportStatus
+      +importedAt: Date
+    }
+
+    class ApiKeyViewModel {
+      +id: number
+      +maskedKey: String
+      +createdAt: Date
+      +revokedAt: Date
+    }
+  }
+
+  package "Value Objects" {
+    enum ImportStatus {
+      PENDING
+      PROCESSED
+      FAILED
+    }
+  }
+
+  ImportBatchViewModel "1" *-- "1" ImportStatus : currently in
+}
+
+package "Presentation" as Frontend_dataint_Presentation <<layer>> {
+}
+package "Application" as Frontend_dataint_Application <<layer>> {
+}
+package "Infrastructure" as Frontend_dataint_Infrastructure <<layer>> {
+}
+
+Frontend_dataint_Presentation ..> ImportBatchViewModel : renders
+Frontend_dataint_Presentation ..> ApiKeyViewModel : renders
+Frontend_dataint_Application ..> ImportBatchViewModel : updates
+Frontend_dataint_Application ..> ApiKeyViewModel : updates
+Frontend_dataint_Infrastructure ..> ImportBatchViewModel : maps responses to
+
+@enduml

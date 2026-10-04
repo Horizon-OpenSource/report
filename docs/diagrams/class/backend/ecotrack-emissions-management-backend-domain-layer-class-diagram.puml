@@ -1,0 +1,132 @@
+@startuml
+title EcoTrack Platform - Emissions Management Backend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Aggregates" {
+    class EmissionSource <<Aggregate Root>> {
+      +id: Long
+      +facilityId: Long
+      +name: String
+      +type: String
+      -scope: ScopeType
+      +createdAt: LocalDateTime
+      +edit(name: String, scope: ScopeType): void
+      +recordActivityData(quantity: Double, unit: String, period: String, origin: ActivityOrigin): ActivityData
+    }
+  }
+
+  package "Entities" {
+    class ActivityData {
+      +id: Long
+      +emissionSourceId: Long
+      +quantity: Double
+      +unit: String
+      +period: String
+      -origin: ActivityOrigin
+      +recordedAt: LocalDateTime
+    }
+  }
+
+  package "Value Objects" {
+    enum ScopeType {
+      SCOPE_1
+      SCOPE_2
+      SCOPE_3
+    }
+    enum ActivityOrigin {
+      MANUAL
+      IMPORTED
+    }
+  }
+
+  package "Commands" {
+    class RegisterEmissionSourceCommand {
+      +facilityId: Long
+      +name: String
+      +type: String
+      +scope: ScopeType
+    }
+    class EditEmissionSourceCommand {
+      +sourceId: Long
+      +name: String
+      +scope: ScopeType
+    }
+    class DeleteEmissionSourceCommand {
+      +sourceId: Long
+    }
+    class RecordActivityDataCommand {
+      +emissionSourceId: Long
+      +quantity: Double
+      +unit: String
+      +period: String
+      +origin: ActivityOrigin
+    }
+  }
+
+  package "Queries" {
+    class SearchEmissionSourcesQuery {
+      +term: String
+    }
+    class FilterByScopeQuery {
+      +scope: ScopeType
+    }
+  }
+
+  package "Events" {
+    class EmissionSourceRegisteredEvent {
+      +sourceId: Long
+      +occurredOn: LocalDateTime
+    }
+    class ActivityDataRecordedEvent {
+      +sourceId: Long
+      +activityDataId: Long
+      +occurredOn: LocalDateTime
+    }
+  }
+
+  package "Repositories" {
+    interface EmissionSourceRepository {
+      +findById(id: Long): EmissionSource
+      +search(term: String): List<EmissionSource>
+      +findByScope(scope: ScopeType): List<EmissionSource>
+      +save(source: EmissionSource): EmissionSource
+    }
+  }
+
+  EmissionSource "1" *-- "1" ScopeType : classified by
+  EmissionSource "1" *-- "0..*" ActivityData : has
+  ActivityData "1" *-- "1" ActivityOrigin : recorded as
+  EmissionSourceRepository ..> EmissionSource : persists
+}
+
+package "Interfaces REST" as Backend_emissions_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_emissions_Application <<layer>> {
+}
+package "Infrastructure" as Backend_emissions_Infrastructure <<layer>> {
+}
+
+Backend_emissions_Interfaces_REST ..> EmissionSource : resources from
+Backend_emissions_Application ..> RegisterEmissionSourceCommand : handles
+Backend_emissions_Application ..> EditEmissionSourceCommand : handles
+Backend_emissions_Application ..> DeleteEmissionSourceCommand : handles
+Backend_emissions_Application ..> RecordActivityDataCommand : handles
+Backend_emissions_Infrastructure ..> EmissionSourceRepository : implements
+
+@enduml

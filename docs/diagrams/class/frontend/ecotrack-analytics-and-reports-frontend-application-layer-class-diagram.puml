@@ -1,0 +1,48 @@
+@startuml
+title EcoTrack Platform - Analytics and Reports Frontend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class IndicatorStore {
+    +indicators: EnvironmentalIndicatorViewModel[]
+    +loading: boolean
+    +loadDashboard(): void
+    +comparePeriods(from: String, to: String): void
+    +loadSummary(): void
+  }
+
+  class ReportFacade {
+    +reports: SustainabilityReportViewModel[]
+    +generateConsolidated(): void
+    +generateByPeriod(period: String): void
+    +download(reportId: number): void
+  }
+
+  ReportFacade ..> IndicatorStore : coordinates with
+}
+
+package "Presentation" as Frontend_analytics_Presentation <<layer>> {
+}
+package "Domain" as Frontend_analytics_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_analytics_Infrastructure <<layer>> {
+}
+
+Frontend_analytics_Presentation ..> IndicatorStore : dispatches
+Frontend_analytics_Presentation ..> ReportFacade : dispatches
+IndicatorStore ..> Frontend_analytics_Domain : updates
+ReportFacade ..> Frontend_analytics_Domain : updates
+IndicatorStore ..> Frontend_analytics_Infrastructure : requests
+ReportFacade ..> Frontend_analytics_Infrastructure : requests
+
+@enduml

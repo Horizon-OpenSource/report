@@ -1,0 +1,109 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Backend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Aggregates" {
+    class EmissionFactor <<Aggregate Root>> {
+      +id: Long
+      +name: String
+      -scope: ScopeType
+      +value: Double
+      +unit: String
+      +source: String
+    }
+    class FootprintCalculation <<Aggregate Root>> {
+      +id: Long
+      +organizationId: Long
+      +activityDataId: Long
+      +emissionFactorId: Long
+      -scope: ScopeType
+      +resultValue: Double
+      +period: String
+      +calculatedAt: LocalDateTime
+    }
+  }
+
+  package "Value Objects" {
+    enum ScopeType {
+      SCOPE_1
+      SCOPE_2
+      SCOPE_3
+    }
+  }
+
+  package "Commands" {
+    class CalculateFootprintCommand {
+      +emissionSourceId: Long
+      +emissionFactorId: Long
+    }
+  }
+
+  package "Queries" {
+    class GetEmissionFactorsQuery {
+    }
+    class GetResultsByScopeQuery {
+      +scope: ScopeType
+    }
+    class GetResultsByPeriodQuery {
+      +period: String
+    }
+    class GetHistoryQuery {
+      +organizationId: Long
+    }
+  }
+
+  package "Events" {
+    class CarbonFootprintCalculatedEvent {
+      +footprintCalculationId: Long
+      +occurredOn: LocalDateTime
+    }
+  }
+
+  package "Repositories" {
+    interface EmissionFactorRepository {
+      +findAll(): List<EmissionFactor>
+      +findById(id: Long): EmissionFactor
+    }
+    interface FootprintCalculationRepository {
+      +findByScope(scope: ScopeType): List<FootprintCalculation>
+      +findByPeriod(period: String): List<FootprintCalculation>
+      +save(calculation: FootprintCalculation): FootprintCalculation
+    }
+  }
+
+  EmissionFactor "1" *-- "1" ScopeType : applies to
+  FootprintCalculation "1" *-- "1" ScopeType : classified by
+  FootprintCalculation "0..*" --> "1" EmissionFactor : calculated with
+  EmissionFactorRepository ..> EmissionFactor : persists
+  FootprintCalculationRepository ..> FootprintCalculation : persists
+}
+
+package "Interfaces REST" as Backend_footprint_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_footprint_Application <<layer>> {
+}
+package "Infrastructure" as Backend_footprint_Infrastructure <<layer>> {
+}
+
+Backend_footprint_Interfaces_REST ..> FootprintCalculation : resources from
+Backend_footprint_Application ..> CalculateFootprintCommand : handles
+Backend_footprint_Infrastructure ..> EmissionFactorRepository : implements
+Backend_footprint_Infrastructure ..> FootprintCalculationRepository : implements
+
+@enduml

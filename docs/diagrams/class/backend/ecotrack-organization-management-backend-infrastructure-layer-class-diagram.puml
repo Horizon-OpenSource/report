@@ -1,0 +1,63 @@
+@startuml
+title EcoTrack Platform - Organization Management Backend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class OrganizationJpaRepository {
+    +findById(id: Long): Organization
+    +save(organization: Organization): Organization
+  }
+
+  class OrganizationEntity {
+    +id: Long
+    +name: String
+    +sector: String
+    +createdAt: LocalDateTime
+  }
+
+  class FacilityEntity {
+    +id: Long
+    +organizationId: Long
+    +name: String
+    +address: String
+  }
+
+  class BusinessUnitEntity {
+    +id: Long
+    +organizationId: Long
+    +name: String
+  }
+
+  class IamApiAdapter {
+    +validateUserScope(userId: Long, organizationId: Long): boolean
+  }
+
+  OrganizationJpaRepository ..> OrganizationEntity : maps
+  OrganizationEntity "1" *-- "0..*" FacilityEntity : has
+  OrganizationEntity "1" *-- "0..*" BusinessUnitEntity : has
+}
+
+package "Interfaces REST" as Backend_orgmgmt_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_orgmgmt_Application <<layer>> {
+}
+package "Domain" as Backend_orgmgmt_Domain <<layer>> {
+}
+package "IAM API" as IamApi <<external>> {
+}
+
+OrganizationJpaRepository ..> Backend_orgmgmt_Domain : implements OrganizationRepository
+IamApiAdapter ..> Backend_orgmgmt_Application : implements IamApiPort
+IamApiAdapter ..> IamApi : calls
+
+@enduml

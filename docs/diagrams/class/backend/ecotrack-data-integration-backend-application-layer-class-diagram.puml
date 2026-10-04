@@ -1,0 +1,72 @@
+@startuml
+title EcoTrack Platform - Data Integration Backend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class ImportCommandService {
+    +handle(command: ImportCsvFileCommand): ImportBatch
+  }
+
+  class ApiKeyCommandService {
+    +handle(command: GenerateApiKeyCommand): ApiKey
+    +handle(command: RevokeApiKeyCommand): void
+  }
+
+  class ExternalDataCommandService {
+    +handle(command: RegisterEmissionViaApiCommand): void
+  }
+
+  class DataIntegrationQueryService {
+    +handle(query: GetImportHistoryQuery): List<ImportBatch>
+    +handle(query: QueryEmissionsViaApiQuery): List<EmissionDataDto>
+    +handle(query: QueryFootprintResultsViaApiQuery): List<FootprintResultDto>
+  }
+
+  interface IamApiPort {
+    +validateUserRole(userId: Long): boolean
+    +validateApiKey(key: String): boolean
+  }
+  interface EmissionsApiPort {
+    +deliverActivityData(data: ActivityDataDto): void
+    +queryEmissions(organizationId: Long): List<EmissionDataDto>
+  }
+  interface FootprintApiPort {
+    +queryFootprintResults(organizationId: Long): List<FootprintResultDto>
+  }
+
+  ExternalDataCommandService ..> IamApiPort : uses
+  ExternalDataCommandService ..> EmissionsApiPort : uses
+  ImportCommandService ..> EmissionsApiPort : uses
+  DataIntegrationQueryService ..> EmissionsApiPort : uses
+  DataIntegrationQueryService ..> FootprintApiPort : uses
+}
+
+package "Interfaces REST" as Backend_dataint_Interfaces_REST <<layer>> {
+}
+package "Domain" as Backend_dataint_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_dataint_Infrastructure <<layer>> {
+}
+
+Backend_dataint_Interfaces_REST ..> ImportCommandService : delegates
+Backend_dataint_Interfaces_REST ..> ApiKeyCommandService : delegates
+Backend_dataint_Interfaces_REST ..> ExternalDataCommandService : delegates
+Backend_dataint_Interfaces_REST ..> DataIntegrationQueryService : delegates
+ImportCommandService ..> Backend_dataint_Domain : applies rules
+ApiKeyCommandService ..> Backend_dataint_Domain : applies rules
+ExternalDataCommandService ..> Backend_dataint_Domain : applies rules
+IamApiPort ..> Backend_dataint_Infrastructure : implemented by
+EmissionsApiPort ..> Backend_dataint_Infrastructure : implemented by
+FootprintApiPort ..> Backend_dataint_Infrastructure : implemented by
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+title EcoTrack Platform - Organization Management Backend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "Organization Management Backend Bounded Context" {
+  class "Interfaces REST" as Backend_orgmgmt_Interfaces_REST <<layer>>
+  class "Application" as Backend_orgmgmt_Application <<layer>>
+  class "Domain" as Backend_orgmgmt_Domain <<layer>>
+  class "Infrastructure" as Backend_orgmgmt_Infrastructure <<layer>>
+}
+
+Backend_orgmgmt_Interfaces_REST ..> Backend_orgmgmt_Application : commands / queries
+Backend_orgmgmt_Application ..> Backend_orgmgmt_Domain : model and policies
+Backend_orgmgmt_Application ..> Backend_orgmgmt_Infrastructure : repository ports / adapters
+Backend_orgmgmt_Infrastructure ..> Backend_orgmgmt_Domain : persistence mapping
+Backend_orgmgmt_Interfaces_REST ..> Backend_orgmgmt_Domain : resources from aggregates
+
+@enduml

@@ -1,0 +1,123 @@
+@startuml
+title EcoTrack Platform - Data Integration Backend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Aggregates" {
+    class ImportBatch <<Aggregate Root>> {
+      +id: Long
+      +organizationId: Long
+      +fileName: String
+      -status: ImportStatus
+      +importedAt: LocalDateTime
+      +markAsProcessed(): void
+      +markAsFailed(): void
+    }
+    class ApiKey <<Aggregate Root>> {
+      +id: Long
+      +organizationId: Long
+      -keyHash: String
+      +createdAt: LocalDateTime
+      +revokedAt: LocalDateTime
+      +isValid(): boolean
+      +revoke(): void
+    }
+  }
+
+  package "Value Objects" {
+    enum ImportStatus {
+      PENDING
+      PROCESSED
+      FAILED
+    }
+  }
+
+  package "Commands" {
+    class ImportCsvFileCommand {
+      +organizationId: Long
+      +fileName: String
+    }
+    class GenerateApiKeyCommand {
+      +organizationId: Long
+    }
+    class RevokeApiKeyCommand {
+      +keyId: Long
+    }
+    class RegisterEmissionViaApiCommand {
+      +facilityId: Long
+      +name: String
+      +scope: String
+      +quantity: Double
+    }
+  }
+
+  package "Queries" {
+    class GetImportHistoryQuery {
+      +organizationId: Long
+    }
+    class QueryEmissionsViaApiQuery {
+      +organizationId: Long
+    }
+    class QueryFootprintResultsViaApiQuery {
+      +organizationId: Long
+    }
+  }
+
+  package "Events" {
+    class CsvDataImportedEvent {
+      +importBatchId: Long
+      +occurredOn: LocalDateTime
+    }
+    class ExternalEmissionRegisteredEvent {
+      +organizationId: Long
+      +occurredOn: LocalDateTime
+    }
+  }
+
+  package "Repositories" {
+    interface ImportBatchRepository {
+      +findByOrganizationId(organizationId: Long): List<ImportBatch>
+      +save(batch: ImportBatch): ImportBatch
+    }
+    interface ApiKeyRepository {
+      +findByKeyHash(keyHash: String): ApiKey
+      +save(apiKey: ApiKey): ApiKey
+    }
+  }
+
+  ImportBatch "1" *-- "1" ImportStatus : currently in
+  ImportBatchRepository ..> ImportBatch : persists
+  ApiKeyRepository ..> ApiKey : persists
+}
+
+package "Interfaces REST" as Backend_dataint_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_dataint_Application <<layer>> {
+}
+package "Infrastructure" as Backend_dataint_Infrastructure <<layer>> {
+}
+
+Backend_dataint_Interfaces_REST ..> ImportBatch : resources from
+Backend_dataint_Application ..> ImportCsvFileCommand : handles
+Backend_dataint_Application ..> GenerateApiKeyCommand : handles
+Backend_dataint_Application ..> RevokeApiKeyCommand : handles
+Backend_dataint_Application ..> RegisterEmissionViaApiCommand : handles
+Backend_dataint_Infrastructure ..> ImportBatchRepository : implements
+Backend_dataint_Infrastructure ..> ApiKeyRepository : implements
+
+@enduml

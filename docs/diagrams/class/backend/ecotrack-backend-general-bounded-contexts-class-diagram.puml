@@ -26,11 +26,11 @@ BackendAnalytics ..> BackendEmissions : emissions metrics
 BackendAnalytics ..> BackendFootprint : footprint metrics
 BackendAnalytics ..> BackendGoals : goals metrics
 
-BackendIAM ..> BackendIntegrationEvents : UserRegistered
+BackendIAM ..> BackendIntegrationEvents : UserAccountCreated / UserInvited / InvitationAccepted
 BackendOrgMgmt ..> BackendIntegrationEvents : OrganizationRegistered / FacilityRegistered
 BackendEmissions ..> BackendIntegrationEvents : EmissionSourceRegistered / ActivityDataRecorded
 BackendFootprint ..> BackendIntegrationEvents : FootprintCalculated
-BackendGoals ..> BackendIntegrationEvents : GoalCreated / PlanCreated / InitiativeCreated
+BackendGoals ..> BackendIntegrationEvents : ReductionGoalRegistered / ReductionPlanCreated / EnvironmentalInitiativeRegistered
 BackendDataIntegration ..> BackendIntegrationEvents : CsvImported / ExternalDataReceived
 BackendIntegrationEvents ..> BackendAnalytics : RecordAnalyticsEventCommand
 

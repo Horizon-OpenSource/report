@@ -25,6 +25,12 @@ package "Infrastructure" {
     +save(token: PasswordResetToken): PasswordResetToken
   }
 
+  class InvitationJpaRepository {
+    +findByToken(token: String): Invitation
+    +findByOrganizationId(organizationId: Long): List<Invitation>
+    +save(invitation: Invitation): Invitation
+  }
+
   class UserEntity {
     +id: Long
     +organizationId: Long
@@ -43,6 +49,17 @@ package "Infrastructure" {
     +used: boolean
   }
 
+  class InvitationEntity {
+    +id: Long
+    +organizationId: Long
+    +email: String
+    +role: String
+    +token: String
+    +status: String
+    +invitedBy: Long
+    +expiresAt: LocalDateTime
+  }
+
   class BCryptPasswordHasher {
     +hash(rawPassword: String): PasswordHash
     +matches(rawPassword: String, hash: PasswordHash): boolean
@@ -55,10 +72,12 @@ package "Infrastructure" {
 
   class SmtpEmailSender {
     +sendPasswordResetEmail(to: String, token: String): void
+    +sendInvitationEmail(to: String, token: String): void
   }
 
-  UserJpaRepository ..> UserEntity
-  PasswordResetTokenJpaRepository ..> PasswordResetTokenEntity
+  UserJpaRepository ..> UserEntity : maps
+  PasswordResetTokenJpaRepository ..> PasswordResetTokenEntity : maps
+  InvitationJpaRepository ..> InvitationEntity : maps
 }
 
 package "Interfaces REST" as Backend_iam_Interfaces_REST <<layer>> {
@@ -70,10 +89,12 @@ package "Domain" as Backend_iam_Domain <<layer>> {
 
 UserJpaRepository ..> Backend_iam_Domain : implements UserRepository
 PasswordResetTokenJpaRepository ..> Backend_iam_Domain : implements PasswordResetTokenRepository
+InvitationJpaRepository ..> Backend_iam_Domain : implements InvitationRepository
 BCryptPasswordHasher ..> Backend_iam_Domain : implements PasswordHasher
 JwtAuthenticationService ..> Backend_iam_Domain : implements AuthenticationService
 SmtpEmailSender ..> Backend_iam_Application : implements EmailSenderPort
 Backend_iam_Application ..> UserJpaRepository : uses
+Backend_iam_Application ..> InvitationJpaRepository : uses
 Backend_iam_Application ..> BCryptPasswordHasher : uses
 Backend_iam_Application ..> JwtAuthenticationService : uses
 Backend_iam_Application ..> SmtpEmailSender : uses

@@ -1,0 +1,22 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Backend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "Carbon Footprint Calculation Backend Bounded Context" {
+  class "Interfaces REST" as Backend_footprint_Interfaces_REST <<layer>>
+  class "Application" as Backend_footprint_Application <<layer>>
+  class "Domain" as Backend_footprint_Domain <<layer>>
+  class "Infrastructure" as Backend_footprint_Infrastructure <<layer>>
+}
+
+Backend_footprint_Interfaces_REST ..> Backend_footprint_Application : commands / queries
+Backend_footprint_Application ..> Backend_footprint_Domain : model and policies
+Backend_footprint_Application ..> Backend_footprint_Infrastructure : repository ports / adapters
+Backend_footprint_Infrastructure ..> Backend_footprint_Domain : persistence mapping
+Backend_footprint_Interfaces_REST ..> Backend_footprint_Domain : resources from aggregates
+
+@enduml

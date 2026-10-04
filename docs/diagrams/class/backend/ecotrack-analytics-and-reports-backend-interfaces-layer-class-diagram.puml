@@ -1,0 +1,58 @@
+@startuml
+title EcoTrack Platform - Analytics and Reports Backend Interfaces REST Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Interfaces REST" {
+  class AnalyticsController {
+    +getDashboard(organizationId: Long): List<EnvironmentalIndicatorResource>
+    +comparePeriods(from: String, to: String): List<EnvironmentalIndicatorResource>
+    +getSummary(organizationId: Long): List<EnvironmentalIndicatorResource>
+    +generateConsolidatedReport(organizationId: Long): SustainabilityReportResource
+    +generateReportByPeriod(organizationId: Long, period: String): SustainabilityReportResource
+    +downloadReport(reportId: Long): byte[]
+    +getReportsHistory(organizationId: Long): List<SustainabilityReportResource>
+  }
+
+  class EnvironmentalIndicatorResource {
+    +id: Long
+    +type: String
+    +value: Double
+    +period: String
+  }
+  class SustainabilityReportResource {
+    +id: Long
+    +period: String
+    +generatedAt: LocalDateTime
+    +status: String
+  }
+
+  class SustainabilityReportResourceAssembler {
+    +{static} toResourceFrom(report: SustainabilityReport): SustainabilityReportResource
+  }
+
+  AnalyticsController ..> EnvironmentalIndicatorResource : returns
+  AnalyticsController ..> SustainabilityReportResource : returns
+  SustainabilityReportResourceAssembler ..> SustainabilityReportResource : builds
+}
+
+package "Application" as Backend_analytics_Application <<layer>> {
+}
+package "Domain" as Backend_analytics_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_analytics_Infrastructure <<layer>> {
+}
+
+AnalyticsController ..> Backend_analytics_Application : delegates use cases
+SustainabilityReportResourceAssembler ..> Backend_analytics_Domain : reads aggregates
+
+@enduml

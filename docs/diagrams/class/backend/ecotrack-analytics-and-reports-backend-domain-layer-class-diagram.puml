@@ -1,0 +1,114 @@
+@startuml
+title EcoTrack Platform - Analytics and Reports Backend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Aggregates" {
+    class EnvironmentalIndicator <<Aggregate Root>> {
+      +id: Long
+      +organizationId: Long
+      +type: String
+      +value: Double
+      +period: String
+    }
+    class SustainabilityReport <<Aggregate Root>> {
+      +id: Long
+      +organizationId: Long
+      +period: String
+      -status: ReportStatus
+      +generatedAt: LocalDateTime
+      +markAsDownloaded(): void
+    }
+  }
+
+  package "Value Objects" {
+    enum ReportStatus {
+      GENERATED
+      DOWNLOADED
+    }
+  }
+
+  package "Commands" {
+    class GenerateConsolidatedReportCommand {
+      +organizationId: Long
+    }
+    class GenerateReportByPeriodCommand {
+      +organizationId: Long
+      +period: String
+    }
+    class DownloadReportCommand {
+      +reportId: Long
+    }
+  }
+
+  package "Queries" {
+    class GetDashboardQuery {
+      +organizationId: Long
+    }
+    class ComparePeriodsQuery {
+      +from: String
+      +to: String
+    }
+    class GetSummaryQuery {
+      +organizationId: Long
+    }
+    class GetReportsHistoryQuery {
+      +organizationId: Long
+    }
+  }
+
+  package "Events" {
+    class SustainabilityReportGeneratedEvent {
+      +reportId: Long
+      +occurredOn: LocalDateTime
+    }
+  }
+
+  package "Repositories" {
+    interface EnvironmentalIndicatorRepository {
+      +save(indicator: EnvironmentalIndicator): EnvironmentalIndicator
+      +findByOrganizationId(organizationId: Long): List<EnvironmentalIndicator>
+    }
+    interface SustainabilityReportRepository {
+      +findById(id: Long): SustainabilityReport
+      +findByOrganizationId(organizationId: Long): List<SustainabilityReport>
+      +save(report: SustainabilityReport): SustainabilityReport
+    }
+  }
+
+  SustainabilityReport "1" *-- "1" ReportStatus : currently in
+  SustainabilityReport "0..*" --> "0..*" EnvironmentalIndicator : summarizes
+  EnvironmentalIndicatorRepository ..> EnvironmentalIndicator : persists
+  SustainabilityReportRepository ..> SustainabilityReport : persists
+}
+
+package "Interfaces REST" as Backend_analytics_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_analytics_Application <<layer>> {
+}
+package "Infrastructure" as Backend_analytics_Infrastructure <<layer>> {
+}
+
+Backend_analytics_Interfaces_REST ..> SustainabilityReport : resources from
+Backend_analytics_Application ..> GenerateConsolidatedReportCommand : handles
+Backend_analytics_Application ..> GenerateReportByPeriodCommand : handles
+Backend_analytics_Application ..> DownloadReportCommand : handles
+Backend_analytics_Infrastructure ..> EnvironmentalIndicatorRepository : implements
+Backend_analytics_Infrastructure ..> SustainabilityReportRepository : implements
+
+@enduml

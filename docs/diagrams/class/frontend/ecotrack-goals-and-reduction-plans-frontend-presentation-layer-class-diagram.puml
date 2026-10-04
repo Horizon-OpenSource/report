@@ -1,0 +1,83 @@
+@startuml
+title EcoTrack Platform - Goals and Reduction Plans Frontend Presentation Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Presentation" {
+  class RegisterReductionGoalComponent {
+    +name: String
+    +targetValue: number
+    +targetDate: Date
+    +onSubmit(): void
+  }
+
+  class ReductionGoalListComponent {
+    +goals: ReductionGoalViewModel[]
+  }
+
+  class EditReductionGoalComponent {
+    +goalId: number
+    +name: String
+    +targetValue: number
+    +targetDate: Date
+    +onSubmit(): void
+    +onUpdateStatus(status: String): void
+    +onDelete(): void
+  }
+
+  class CreateReductionPlanComponent {
+    +goalId: number
+    +name: String
+    +description: String
+    +onSubmit(): void
+  }
+
+  class RegisterEnvironmentalInitiativeComponent {
+    +reductionPlanId: number
+    +name: String
+    +description: String
+    +onSubmit(): void
+  }
+
+  class ProgressViewComponent {
+    +progress: ProgressViewModel[]
+  }
+
+  class GoalsRoutes {
+    +routes: Routes
+  }
+
+  GoalsRoutes ..> RegisterReductionGoalComponent : routes to
+  GoalsRoutes ..> ReductionGoalListComponent : routes to
+  GoalsRoutes ..> EditReductionGoalComponent : routes to
+  GoalsRoutes ..> CreateReductionPlanComponent : routes to
+  GoalsRoutes ..> RegisterEnvironmentalInitiativeComponent : routes to
+  GoalsRoutes ..> ProgressViewComponent : routes to
+}
+
+package "Application" as Frontend_goals_Application <<layer>> {
+}
+package "Domain" as Frontend_goals_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_goals_Infrastructure <<layer>> {
+}
+
+RegisterReductionGoalComponent ..> Frontend_goals_Application : dispatches
+ReductionGoalListComponent ..> Frontend_goals_Application : dispatches
+EditReductionGoalComponent ..> Frontend_goals_Application : dispatches
+CreateReductionPlanComponent ..> Frontend_goals_Application : dispatches
+RegisterEnvironmentalInitiativeComponent ..> Frontend_goals_Application : dispatches
+ProgressViewComponent ..> Frontend_goals_Application : dispatches
+ReductionGoalListComponent ..> Frontend_goals_Domain : reads
+ProgressViewComponent ..> Frontend_goals_Domain : reads
+
+@enduml

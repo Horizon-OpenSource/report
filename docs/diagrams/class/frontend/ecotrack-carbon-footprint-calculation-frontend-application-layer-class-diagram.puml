@@ -1,0 +1,47 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Frontend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class EmissionFactorStore {
+    +factors: EmissionFactorViewModel[]
+    +loading: boolean
+    +loadFactors(): void
+  }
+
+  class FootprintFacade {
+    +results: FootprintResultViewModel[]
+    +calculateFootprint(emissionSourceId: number, emissionFactorId: number): void
+    +loadResultsByScope(): void
+    +loadResultsByPeriod(period: String): void
+    +loadHistory(): void
+  }
+
+  FootprintFacade ..> EmissionFactorStore : coordinates with
+}
+
+package "Presentation" as Frontend_footprint_Presentation <<layer>> {
+}
+package "Domain" as Frontend_footprint_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_footprint_Infrastructure <<layer>> {
+}
+
+Frontend_footprint_Presentation ..> EmissionFactorStore : dispatches
+Frontend_footprint_Presentation ..> FootprintFacade : dispatches
+EmissionFactorStore ..> Frontend_footprint_Domain : updates
+FootprintFacade ..> Frontend_footprint_Domain : updates
+EmissionFactorStore ..> Frontend_footprint_Infrastructure : requests
+FootprintFacade ..> Frontend_footprint_Infrastructure : requests
+
+@enduml
