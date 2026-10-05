@@ -4325,6 +4325,12 @@ International Organization for Standardization. (2018). *ISO 14064-1:2018 Greenh
 
 IBM. (2023). *What is carbon accounting?* IBM. https://www.ibm.com/think/topics/carbon-accounting
 
+Ministerio de Comercio Exterior y Turismo. (2026, 28 de enero). *Mincetur: Mipymes exportadoras impulsan exportaciones y crecen 3,2% entre enero y noviembre de 2025*. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/institucion/mincetur/noticias/1341967-mincetur-mipymes-exportadoras-impulsan-exportaciones-y-crecen-3-2-entre-enero-y-noviembre-de-2025
+
+Ministerio de Comercio Exterior y Turismo. (2026, 3 de febrero). *Mincetur: Exportaciones del Perú alcanzaron los US$ 90 082 millones y consolidan al país como potencia comercial de Sudamérica*. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/institucion/mincetur/noticias/1346927-mincetur-exportaciones-del-peru-alcanzaron-los-us-90-082-millones-y-consolidan-al-pais-como-potencia-comercial-de-sudamerica
+
+Instituto Nacional de Estadística e Informática. (2025). *Perú: Estructura Empresarial, 2024*. INEI. https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib2045/libro.pdf
+
 ---
 
 # Anexos
