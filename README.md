@@ -1655,613 +1655,1155 @@ La propuesta busca mantener una experiencia consistente entre Desktop y Mobile, 
 
 ## 4.4. Web Applications UX/UI Design
 
-Esta sección presenta la propuesta de UX/UI de la Web Application de EcoTrack. El diseño se construye a partir de las User Stories, User Personas, Information Architecture y Style Guidelines previamente definidas, buscando mantener una experiencia consistente para la gestión de información ambiental de las organizaciones.
+Esta sección presenta la propuesta de UX/UI de la Web Application de EcoTrack. El diseño parte de las User Stories, User Personas, Information Architecture y Style Guidelines definidas previamente, y busca una experiencia consistente para gestionar la información ambiental de las organizaciones.
 
-La Web Application está orientada principalmente a usuarios responsables de sostenibilidad, analistas ambientales y administradores de organizaciones. La propuesta contempla los principales módulos funcionales de EcoTrack: Dashboard, Emissions, Carbon Footprint, Goals, Reports y Organization.
+La Web Application está orientada a responsables de sostenibilidad, responsables de operaciones y administradores de organizaciones, representados por las User Personas Claudia Ramírez y Carlos Mendoza. La propuesta cubre los módulos funcionales de EcoTrack: Dashboard, Emissions, Carbon Footprint, Goals, Reports y Organization.
 
-Los diseños consideran una estructura de navegación jerárquica y consistente, componentes reutilizables y estados de interacción que permiten representar escenarios normales, validaciones y resultados de las operaciones. Asimismo, se mantienen los criterios de legibilidad, jerarquía visual, consistencia y diseño inclusivo establecidos en las Web Style Guidelines.
+Los diseños se presentan para **Desktop Web Browser** (1280 × 800) y **Mobile Web Browser** (390 × 844). Ambas versiones mantienen la misma arquitectura de información, componentes reutilizables y estados de interacción para escenarios normales, validaciones, errores y confirmaciones.
+
+Los archivos de diseño están disponibles en Figma:
+
+- [EcoTrack v1 — Web Application UX/UI (Wireframes, Mock-ups y Prototipos)](https://www.figma.com/design/TB5iPC598xAyU2i39VBbMg/EcoTrack-v2---Web-Application-UX-UI?node-id=0-1&t=gxxPBJyA6Zy6hxfJ-1)
+- [EcoTrack — Wireflow (FigJam)](https://www.figma.com/board/KnRCrM82jbjkj5sbbRN4aK/EcoTrack---Wireflow?node-id=0-1&t=jpMJm9i2Tcmx1Ras-1)
+- [EcoTrack — UserFlow (FigJam)](https://www.figma.com/board/h6dODVz2Fj3s3FKHD5LVW8/EcoTrack---UserFlow?node-id=0-1&t=OgY0GwQk7oLjbyap-1)
 
 ### 4.4.1. Web Applications Wireframes
 
-Los Wireframes de la Web Application de EcoTrack representan la estructura y organización de las principales interfaces que permiten a los usuarios registrar, consultar y gestionar información relacionada con las emisiones y la huella de carbono de una organización.
+Los Wireframes representan la estructura y organización de las interfaces de EcoTrack, sin elementos de identidad visual. Se elaboraron en escala de grises, con íconos representados como cuadros y datos genéricos (por ejemplo, "00,000 t CO₂e", "Month YYYY" o "name@company.com"), para centrar la evaluación en la disposición del contenido, la jerarquía y la navegación.
 
-La propuesta se desarrolló considerando las funcionalidades definidas para EcoTrack y las decisiones establecidas previamente en la arquitectura de información. La aplicación mantiene una estructura de navegación consistente entre sus diferentes módulos, permitiendo acceder a funcionalidades como Dashboard, Emissions, Carbon Footprint, Goals, Reports y Organization.
+Las pantallas se agrupan según los procesos funcionales de la aplicación. Cada grupo reúne los estados de una misma interfaz: formularios vacíos y completos, validaciones, errores y confirmaciones. Así se representa tanto la estructura de las pantallas como el comportamiento esperado ante las acciones del usuario.
 
-Los Wireframes fueron elaborados en Figma y se presentan agrupados según los principales procesos funcionales de la aplicación. Cada grupo reúne las pantallas correspondientes a un mismo proceso, incluyendo tanto estados iniciales como estados resultantes de las interacciones del usuario.
+#### Desktop Web Browser
 
-Asimismo, se consideraron diferentes estados de interacción de las interfaces, tales como formularios vacíos, formularios con información ingresada, estados de validación, errores y confirmaciones de operaciones.
-Esto permite representar no solamente la estructura de las pantallas, sino también el comportamiento esperado de la interfaz ante las acciones del usuario.
+##### Authentication
 
-#### Authentication
+El grupo representa el inicio de sesión y la recuperación de contraseña. La interfaz se centra en una sola tarea: campos de correo y contraseña con labels visibles, una acción principal (**Sign In**) y accesos secundarios para recuperar la contraseña o crear una organización. Se incluyen el estado de validación, el error por credenciales incorrectas, el acceso al Dashboard y los cuatro pasos de recuperación de contraseña.
 
-El primer grupo corresponde al proceso de autenticación de usuarios. Los Wireframes representan la pantalla inicial de inicio de sesión, el ingreso de credenciales y el estado mostrado cuando las credenciales proporcionadas no son válidas.
-
-La interfaz mantiene una estructura simple y centrada en la tarea principal, presentando los campos de correo electrónico y contraseña junto con las acciones necesarias para iniciar sesión o recuperar las credenciales.
-
-![Login](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login.png)
+![Login](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/login.png)
 
 *Figura 4.1. Wireframe de la pantalla de inicio de sesión.*
 
-![Login Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login-validation.png)
+![Login Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/login-validation.png)
 
-*Figura 4.2. Wireframe del estado de validación de inicio de sesión.*
+*Figura 4.2. Wireframe del estado de validación del formulario de inicio de sesión.*
 
-![Login Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login-validation-error.png)
+![Login Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/login-validation-error.png)
 
-*Figura 4.3. Wireframe del estado de error de validación de inicio de sesión.*
+*Figura 4.3. Wireframe del error por credenciales incorrectas.*
 
-![Login Success Dashboard](./assets/chapter-04/web-applications-ui-ux/wireframes/authentication/login-success-dashboard.png)
+![Login Success Dashboard](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/login-success-dashboard.png)
 
 *Figura 4.4. Wireframe del acceso exitoso al Dashboard.*
 
-#### Organization Registration
+![Forgot Password](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/forgot-password.png)
 
-El segundo grupo representa el proceso de registro de una nueva organización en EcoTrack. Se incluyen el formulario inicial, el formulario con información ingresada, el estado de validación y la confirmación de registro exitoso.
+*Figura 4.5. Wireframe de la solicitud de recuperación de contraseña.*
 
-La información se organiza en grupos relacionados con los datos de la organización y los datos de la cuenta del usuario. Los campos requeridos se identifican mediante labels explícitos y los estados de error permiten comunicar al usuario qué información necesita ser corregida.
+![Reset Link Sent](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/reset-link-sent.png)
 
-![Register Organization](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org.png)
+*Figura 4.6. Wireframe de la confirmación de envío del enlace de recuperación.*
 
-*Figura 4.5. Wireframe del formulario inicial de registro de una organización.*
+![Reset Password](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/reset-password.png)
 
-![Register Organization Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org-validation.png)
+*Figura 4.7. Wireframe de la definición de una nueva contraseña.*
 
-*Figura 4.6. Wireframe del estado de validación del registro de una organización.*
+![Password Reset Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/password-reset-success.png)
 
-![Register Organization Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org-validation-error.png)
+*Figura 4.8. Wireframe de la confirmación de contraseña restablecida.*
 
-*Figura 4.7. Wireframe del estado de error de validación del registro de una organización.*
+##### Organization Registration
 
-![Register Organization Success](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-registration/register-org-success.png)
+El grupo representa el registro de una nueva organización. Los campos se agrupan en datos de la organización y datos de la cuenta del administrador; los obligatorios se identifican con labels explícitos y los errores se comunican junto al campo que debe corregirse.
 
-*Figura 4.8. Wireframe del registro exitoso de una organización.*
+![Register Org](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-registration/register-org.png)
 
-#### Emission Registration
+*Figura 4.9. Wireframe del formulario inicial de registro de una organización.*
 
-El tercer grupo corresponde al registro de emisiones. La propuesta contempla el listado de emisiones y el formulario para agregar nuevos registros, junto con diferentes estados del formulario durante la interacción.
+![Register Org Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-registration/register-org-validation.png)
 
-Los campos se organizan de acuerdo con la información necesaria para registrar una emisión, incluyendo la fuente de emisión, categoría, alcance, unidad, periodo y demás datos relacionados. Se incluyen estados de formulario vacío, información ingresada, validación y confirmación de registro exitoso.
+*Figura 4.10. Wireframe del formulario de registro con la información ingresada.*
 
-![Emissions](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/emissions.png)
+![Register Org Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-registration/register-org-validation-error.png)
 
-*Figura 4.9. Wireframe del listado de emisiones registradas.*
+*Figura 4.11. Wireframe de los errores de validación del registro.*
 
-![Add Emission Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/add-emission-empty.png)
+![Register Org Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-registration/register-org-success.png)
 
-*Figura 4.10. Wireframe del formulario vacío para registrar una nueva emisión.*
+*Figura 4.12. Wireframe de la confirmación del registro de la organización.*
 
-![Add Emission Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/add-emission-completed.png)
+##### Organization Management
 
-*Figura 4.11. Wireframe del formulario de registro de emisión con información ingresada.*
+El grupo representa la consulta y actualización de los datos de la organización. La vista de información se separa del formulario de edición, y las pestañas Overview, Users, Sites & Permissions y Business Units organizan la administración en un solo módulo.
 
-![Emission Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/emission-validation-error.png)
+![Org Overview](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-management/org-overview.png)
 
-*Figura 4.12. Wireframe del estado de error de validación del registro de emisión.*
+*Figura 4.13. Wireframe de la información general de la organización.*
 
-![Emissions Success](./assets/chapter-04/web-applications-ui-ux/wireframes/emission-registration/emissions-success.png)
+![Org Edit](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-management/org-edit.png)
 
-*Figura 4.13. Wireframe de confirmación del registro exitoso de una emisión.*
+*Figura 4.14. Wireframe de la edición de los datos de la organización.*
 
-#### Carbon Footprint Calculation
+![Org Edit Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-management/org-edit-validation-error.png)
 
-El cuarto grupo representa el proceso de cálculo y consulta de la huella de carbono. Se incluyen las interfaces utilizadas para configurar el cálculo, revisar los datos considerados, consultar los resultados por alcance y analizar los resultados por periodo.
+*Figura 4.15. Wireframe de los errores de validación durante la edición.*
 
-La información se presenta de manera progresiva para facilitar la comprensión del proceso: primero se seleccionan los parámetros del cálculo, luego se revisan los datos utilizados y finalmente se presentan los resultados obtenidos. También se incluye el historial de cálculos para permitir la consulta de operaciones realizadas anteriormente.
+![Org Update Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-management/org-update-success.png)
 
-![Carbon Footprint Initial](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-initial.png)
+*Figura 4.16. Wireframe de la confirmación de actualización de la organización.*
 
-*Figura 4.14. Wireframe del estado inicial del cálculo de la huella de carbono.*
+##### Users, Sites and Business Units
 
-![Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-calculate.png)
+El grupo representa la estructura interna de la organización: usuarios con su rol, sedes con sus permisos y unidades de negocio. Permite que cada área registre y consulte únicamente la información que le corresponde.
 
-*Figura 4.15. Wireframe correspondiente a la configuración y cálculo de la huella de carbono.*
+![Users List](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/users-list.png)
 
-![Carbon Footprint History](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-history.png)
+*Figura 4.17. Wireframe del listado de usuarios de la organización.*
 
-*Figura 4.16. Wireframe correspondiente al historial de cálculos de huella de carbono.*
+![Add User Assign Role](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/add-user-assign-role.png)
 
-![Carbon Footprint Results Per Period](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-results-period.png)
+*Figura 4.18. Wireframe de la invitación de un usuario con asignación de rol y sede.*
 
-*Figura 4.17. Wireframe de los resultados de la huella de carbono por periodo.*
+![Sites Permissions](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/sites-permissions.png)
 
-![Carbon Footprint Results By Scope](./assets/chapter-04/web-applications-ui-ux/wireframes/carbon-footprint-calculation/carbon-footprint-results-scope.png)
+*Figura 4.19. Wireframe de las sedes y sus permisos.*
 
-*Figura 4.18. Wireframe de los resultados de la huella de carbono por alcance.*
+![Business Units](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/business-units.png)
 
-#### Goal Creation
+*Figura 4.20. Wireframe del listado de unidades de negocio.*
 
-El quinto grupo corresponde a la gestión de metas y planes de reducción. Los Wireframes representan el listado de metas, la creación de una nueva meta, los diferentes estados del formulario y la edición de una meta existente.
+![Add Business Unit](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/add-business-unit.png)
 
-La interfaz organiza la información de la meta mediante campos claramente identificados y proporciona acciones diferenciadas para crear, guardar o cancelar una operación. Los estados de validación permiten representar las condiciones en las que el usuario debe corregir información antes de guardar los cambios.
+*Figura 4.21. Wireframe del registro de una unidad de negocio.*
 
-![Goals List](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/goals-list.png)
+##### Emission Registration
 
-*Figura 4.19. Wireframe correspondiente al listado de metas ambientales.*
+El grupo representa el registro y mantenimiento de las emisiones, el proceso central de EcoTrack. Incluye el listado, el formulario en sus distintos estados, la selección del factor de emisión con la estimación del resultado, y las acciones de edición y eliminación desde el menú de cada registro.
 
-![Create Goal Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/create-goal-empty.png)
+![Emissions](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emissions.png)
 
-*Figura 4.20. Wireframe del formulario vacío para la creación de una meta.*
+*Figura 4.22. Wireframe del listado de emisiones registradas.*
 
-![Create Goal Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/create-goal-validation-error.png)
+![Add Emission Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/add-emission-empty.png)
 
-*Figura 4.21. Wireframe del formulario de creación de una meta con errores de validación.*
+*Figura 4.23. Wireframe del formulario vacío para registrar una emisión.*
 
-![Create Goal Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/create-goal-completed.png)
+![Add Emission Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/add-emission-completed.png)
 
-*Figura 4.22. Wireframe del formulario de creación de una meta con los datos completados.*
+*Figura 4.24. Wireframe del formulario de emisión con los datos de actividad ingresados.*
 
-![Goals Creation Success](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/goals-creation-success.png)
+![Add Emission Factor Selector](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/add-emission-factor-selector.png)
 
-*Figura 4.23. Wireframe de confirmación del registro exitoso de una meta.*
+*Figura 4.25. Wireframe del selector de factores de emisión.*
 
-![Edit Goal](./assets/chapter-04/web-applications-ui-ux/wireframes/goal-creation/edit-goal.png)
+![Add Emission Factor Selected](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/add-emission-factor-selected.png)
 
-*Figura 4.24. Wireframe correspondiente a la edición de una meta existente.*
+*Figura 4.26. Wireframe del formulario con el factor de emisión seleccionado y la estimación calculada.*
 
-#### Report Generation
+![Emission Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emission-validation-error.png)
 
-El sexto grupo representa el proceso de generación y consulta de reportes ambientales. Se incluyen los estados iniciales del módulo Reports, la configuración del reporte, la selección del periodo, la generación del reporte y la visualización de los reportes disponibles.
+*Figura 4.27. Wireframe de los errores de validación del registro de emisión.*
 
-La interfaz permite al usuario configurar los parámetros necesarios antes de generar un reporte. También se contemplan escenarios en los que no existen datos suficientes para realizar la operación, comunicando esta condición mediante un estado informativo.
+![Emissions Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emissions-success.png)
 
-![Reports Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/reports-empty.png)
+*Figura 4.28. Wireframe de la confirmación del registro de una emisión.*
 
-*Figura 4.25. Wireframe del estado inicial del módulo de reportes.*
+![Emissions Row Actions](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emissions-row-actions.png)
 
-![Generate Report Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-empty.png)
+*Figura 4.29. Wireframe del menú de acciones de un registro de emisión.*
 
-*Figura 4.26. Wireframe del formulario inicial para generar un reporte.*
+![Edit Emission](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/edit-emission.png)
 
-![Generate Report Period Selected](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-period-selected.png)
+*Figura 4.30. Wireframe de la edición de un registro de emisión.*
 
-*Figura 4.27. Wireframe de configuración del reporte con el periodo seleccionado.*
+![Emission Update Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emission-update-success.png)
 
-![Generate Report No Data Error](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-no-data-error.png)
+*Figura 4.31. Wireframe de la confirmación de actualización de un registro.*
 
-*Figura 4.28. Wireframe del estado informativo cuando no existen datos suficientes para generar el reporte.*
+![Delete Emission Confirm](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/delete-emission-confirm.png)
 
-![Generate Report Success](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/generate-report-success.png)
+*Figura 4.32. Wireframe de la confirmación de eliminación de un registro.*
 
-*Figura 4.29. Wireframe de confirmación de generación exitosa del reporte.*
+##### Data Integration
 
-![Report Download Available](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/report-download-available.png)
+El grupo representa la importación masiva de registros desde un archivo CSV. Antes de importar, la vista previa marca las filas con errores para que el usuario decida si importa solo las válidas o corrige el archivo.
 
-*Figura 4.30. Wireframe del reporte generado con opción de descarga disponible.*
+![Import Csv Upload](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/data-integration/import-csv-upload.png)
 
-![Reports Previous Reports](./assets/chapter-04/web-applications-ui-ux/wireframes/report-generation/reports-previous-reports.png)
+*Figura 4.33. Wireframe de la carga de un archivo CSV.*
 
-*Figura 4.31. Wireframe correspondiente a la consulta de reportes generados anteriormente.*
+![Import Csv Preview](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/data-integration/import-csv-preview.png)
 
-#### Organization Management
+*Figura 4.34. Wireframe de la vista previa con la validación de filas.*
 
-El último grupo corresponde a la administración de la información de la organización. Los Wireframes representan la consulta de los datos actuales, la edición de la información, los estados de validación y la confirmación de una actualización exitosa.
+![Import Csv Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/data-integration/import-csv-success.png)
 
-La interfaz diferencia claramente entre la visualización de la información y las acciones de modificación. Los campos del formulario se mantienen organizados de acuerdo con el tipo de información que debe ser gestionada, mientras que los mensajes de validación permiten identificar los datos que requieren corrección.
+*Figura 4.35. Wireframe de la confirmación de la importación.*
 
-![Organization Overview](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-overview.png)
+##### Carbon Footprint Calculation
 
-*Figura 4.32. Wireframe correspondiente a la visualización de la información de la organización.*
+El grupo representa el cálculo de la huella de carbono. La información se presenta de forma progresiva: primero los parámetros, luego los datos considerados y finalmente los resultados por alcance y por periodo, junto con el historial. También se contempla el estado en que faltan datos de actividad para completar el cálculo.
 
-![Edit Organization](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-edit.png)
+![Carbon Footprint Initial](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-initial.png)
 
-*Figura 4.33. Wireframe correspondiente a la edición de la información de la organización.*
+*Figura 4.36. Wireframe del estado inicial del cálculo de la huella de carbono.*
 
-![Organization Edit Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-edit-validation-error.png)
+![Carbon Footprint Calculate](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-calculate.png)
 
-*Figura 4.34. Wireframe del estado de error de validación durante la edición de la organización.*
+*Figura 4.37. Wireframe de la revisión de datos y ejecución del cálculo.*
 
-![Organization Update Success](./assets/chapter-04/web-applications-ui-ux/wireframes/organization-management/org-update-success.png)
+![Carbon Footprint Results Scope](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-results-scope.png)
 
-*Figura 4.35. Wireframe de confirmación de actualización exitosa de la organización.*
+*Figura 4.38. Wireframe de los resultados de la huella de carbono por alcance.*
+
+![Carbon Footprint Results Period](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-results-period.png)
+
+*Figura 4.39. Wireframe de los resultados de la huella de carbono por periodo.*
+
+![Carbon Footprint History](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-history.png)
+
+*Figura 4.40. Wireframe del historial de cálculos.*
+
+![Carbon Footprint Insufficient Data](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-insufficient-data.png)
+
+*Figura 4.41. Wireframe del estado de datos de actividad insuficientes.*
+
+##### Analytics
+
+El grupo representa el análisis de indicadores: el resumen ambiental, las emisiones por alcance, la comparación entre periodos y la actualización de resultados cuando se registran datos nuevos. Las variaciones se acompañan de flechas y signos (▲/▼), por lo que no dependen solo del color.
+
+![Dashboard Environmental Summary](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/dashboard-environmental-summary.png)
+
+*Figura 4.42. Wireframe del resumen ambiental del Dashboard.*
+
+![Dashboard Emissions By Scope](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/dashboard-emissions-by-scope.png)
+
+*Figura 4.43. Wireframe de las emisiones por alcance.*
+
+![Dashboard Period Comparison](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/dashboard-period-comparison.png)
+
+*Figura 4.44. Wireframe de la comparación de emisiones entre periodos.*
+
+![Dashboard Updated Results](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/dashboard-updated-results.png)
+
+*Figura 4.45. Wireframe de los resultados actualizados tras registrar datos nuevos.*
+
+![Reporting Period Comparison](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/reporting-period-comparison.png)
+
+*Figura 4.46. Wireframe de la comparación de periodos en el módulo de reportes.*
+
+##### Report Generation
+
+El grupo representa la generación y descarga de reportes ambientales. Se contemplan la configuración del periodo, la generación exitosa, la consulta de reportes anteriores, la descarga, y el estado informativo cuando el periodo no tiene datos suficientes.
+
+![Reports Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/reports-empty.png)
+
+*Figura 4.47. Wireframe del estado inicial del módulo de reportes.*
+
+![Generate Report Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/generate-report-empty.png)
+
+*Figura 4.48. Wireframe del formulario inicial para generar un reporte.*
+
+![Generate Report Period Selected](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/generate-report-period-selected.png)
+
+*Figura 4.49. Wireframe de la configuración del reporte con el periodo seleccionado.*
+
+![Generate Report No Data Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/generate-report-no-data-error.png)
+
+*Figura 4.50. Wireframe del estado informativo de periodo sin datos.*
+
+![Generate Report Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/generate-report-success.png)
+
+*Figura 4.51. Wireframe de la confirmación de generación del reporte.*
+
+![Reports Previous Reports](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/reports-previous-reports.png)
+
+*Figura 4.52. Wireframe de la consulta de reportes generados anteriormente.*
+
+![Report Download Available](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/report-download-available.png)
+
+*Figura 4.53. Wireframe del reporte con la descarga disponible.*
+
+##### Goal Creation
+
+El grupo representa la creación y gestión de metas de reducción. Incluye el listado, el formulario en sus distintos estados y el menú de acciones de cada meta (View Plan, Edit, Update Status y Delete), con la eliminación diferenciada mediante un botón de acción destructiva.
+
+![Goals List](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/goals-list.png)
+
+*Figura 4.54. Wireframe del listado de metas de reducción.*
+
+![Create Goal Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/create-goal-empty.png)
+
+*Figura 4.55. Wireframe del formulario vacío para crear una meta.*
+
+![Create Goal Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/create-goal-completed.png)
+
+*Figura 4.56. Wireframe del formulario de meta con los datos completados.*
+
+![Create Goal Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/create-goal-validation-error.png)
+
+*Figura 4.57. Wireframe de los errores de validación al crear una meta.*
+
+![Goals Creation Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/goals-creation-success.png)
+
+*Figura 4.58. Wireframe de la confirmación de creación de una meta.*
+
+![Goals Row Actions](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/goals-row-actions.png)
+
+*Figura 4.59. Wireframe del menú de acciones de una meta.*
+
+![Edit Goal](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/edit-goal.png)
+
+*Figura 4.60. Wireframe de la edición de una meta.*
+
+![Delete Goal Confirm](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/delete-goal-confirm.png)
+
+*Figura 4.61. Wireframe de la confirmación de eliminación de una meta.*
+
+##### Goal Tracking and Reduction Plans
+
+El grupo representa el seguimiento de las metas: la actualización de su estado, el plan de reducción con sus iniciativas y el avance registrado de cada una.
+
+![Goal Status Updated](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-tracking-and-reduction-plans/goal-status-updated.png)
+
+*Figura 4.62. Wireframe de la actualización del estado de una meta.*
+
+![Reduction Plan Details](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-tracking-and-reduction-plans/reduction-plan-details.png)
+
+*Figura 4.63. Wireframe del detalle del plan de reducción.*
+
+![Reduction Plan Progress](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-tracking-and-reduction-plans/reduction-plan-progress.png)
+
+*Figura 4.64. Wireframe del avance de las iniciativas del plan.*
+
+#### Mobile Web Browser
+
+La versión mobile prioriza los procesos del core business: autenticación, registro de emisiones, generación de reportes y consulta de indicadores. El menú lateral se reemplaza por una barra de navegación inferior con los cinco módulos principales, las tablas se convierten en tarjetas apiladas y los formularios ocupan la pantalla completa, con una flecha de regreso.
+
+##### Authentication (Mobile)
+
+![Mobile login](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/authentication/m-login.png)
+
+*Figura 4.65. Wireframe del inicio de sesión en mobile.*
+
+![Mobile login Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/authentication/m-login-validation-error.png)
+
+*Figura 4.66. Wireframe del error por credenciales incorrectas en mobile.*
+
+##### Analytics (Mobile)
+
+![Mobile dashboard](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/analytics/m-dashboard.png)
+
+*Figura 4.67. Wireframe del Dashboard en mobile.*
+
+##### Emission Registration (Mobile)
+
+![Mobile emissions](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-emissions.png)
+
+*Figura 4.68. Wireframe del listado de emisiones en tarjetas (mobile).*
+
+![Mobile add Emission Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-add-emission-empty.png)
+
+*Figura 4.69. Wireframe del formulario vacío de emisión en mobile.*
+
+![Mobile emission Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-emission-validation-error.png)
+
+*Figura 4.70. Wireframe de los errores de validación de emisión en mobile.*
+
+![Mobile add Emission Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-add-emission-completed.png)
+
+*Figura 4.71. Wireframe del formulario de emisión completado con factor y estimación en mobile.*
+
+![Mobile emissions Success](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-emissions-success.png)
+
+*Figura 4.72. Wireframe de la confirmación del registro de emisión en mobile.*
+
+##### Report Generation (Mobile)
+
+![Mobile reports Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-reports-empty.png)
+
+*Figura 4.73. Wireframe del estado inicial de reportes en mobile.*
+
+![Mobile generate Report Period Selected](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-generate-report-period-selected.png)
+
+*Figura 4.74. Wireframe de la configuración del reporte en mobile.*
+
+![Mobile generate Report No Data Error](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-generate-report-no-data-error.png)
+
+*Figura 4.75. Wireframe del estado de periodo sin datos en mobile.*
+
+![Mobile reports Success](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-reports-success.png)
+
+*Figura 4.76. Wireframe del reporte generado en mobile.*
+
+![Mobile report Download Available](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-report-download-available.png)
+
+*Figura 4.77. Wireframe del resumen y descarga del reporte en mobile.*
+
+##### Carbon Footprint Calculation (Mobile)
+
+![Mobile carbon Footprint Initial](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/carbon-footprint-calculation/m-carbon-footprint-initial.png)
+
+*Figura 4.78. Wireframe de los parámetros del cálculo de huella en mobile.*
+
+![Mobile carbon Footprint Results Scope](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/carbon-footprint-calculation/m-carbon-footprint-results-scope.png)
+
+*Figura 4.79. Wireframe de los resultados por alcance en mobile.*
+
+##### Goal Creation (Mobile)
+
+![Mobile goals List](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/goal-creation/m-goals-list.png)
+
+*Figura 4.80. Wireframe del listado de metas en mobile.*
 
 #### Consideraciones de UX/UI
 
-En conjunto, los Wireframes mantienen una estructura visual y de navegación consistente entre los diferentes módulos de EcoTrack. La navegación lateral permite acceder de manera persistente a las principales áreas funcionales de la aplicación, mientras que el contenido principal se adapta a la tarea que el usuario está realizando.
+Los Wireframes mantienen una estructura de navegación consistente: en desktop, el menú lateral persistente da acceso a los módulos y el contenido principal se adapta a la tarea; en mobile, la barra inferior cumple la misma función al alcance del pulgar. Los módulos y etiquetas corresponden a la arquitectura de información definida para EcoTrack.
 
-La organización de los contenidos utiliza una jerarquía visual que diferencia títulos, secciones, información principal y acciones. Los formularios mantienen labels visibles y agrupan los campos relacionados para facilitar su comprensión y completar las tareas de manera secuencial.
-
-Los estados de validación y confirmación forman parte de la propuesta de interacción. Los mensajes de error permiten identificar la información que debe corregirse y los estados de éxito comunican que una operación fue completada correctamente.
-
-Desde el punto de vista del diseño inclusivo, la propuesta prioriza textos explícitos, labels visibles y una jerarquía de información clara para que las acciones y los contenidos puedan ser comprendidos sin depender únicamente de elementos visuales como el color. Estas decisiones son consistentes con el enfoque de accesibilidad e internacionalización establecido para los productos digitales del proyecto.
-
-Finalmente, la organización de las interfaces mantiene correspondencia con la arquitectura de información definida para EcoTrack. Los módulos y etiquetas utilizados en la navegación permiten relacionar las diferentes funcionalidades con las tareas que el usuario debe realizar dentro de la aplicación.
+La jerarquía visual diferencia títulos, secciones, información principal y acciones. Los formularios usan labels visibles, agrupan los campos relacionados y comunican los errores junto al campo afectado. Desde el diseño inclusivo, se priorizan textos explícitos para que las acciones y los estados se comprendan sin depender únicamente del color.
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-Los Wireflow Diagrams representan los recorridos de interacción de los principales User Goals de la Web Application de EcoTrack. A partir de los Wireframes definidos en la sección anterior, estos diagramas permiten visualizar la secuencia de pantallas, acciones y decisiones que intervienen en cada proceso.
+Los Wireflow Diagrams representan los recorridos de interacción de cada User Goal de la Web Application. A partir de los Wireframes, muestran la secuencia de pantallas, acciones y decisiones de cada proceso, considerando a la User Persona que lo realiza.
 
-Los Wireflows fueron construidos considerando los User Stories definidos para la aplicación y sus respectivos User Goals. Cada flujo incluye los estados principales de las interfaces y, cuando corresponde, rutas alternativas producidas por errores de validación o condiciones que impiden completar una operación.
-
-Asimismo, los cambios de estado de una misma pantalla se representan como nuevos pasos dentro del flujo. De esta manera, el usuario puede visualizar cómo una acción modifica la interfaz y cuáles son las condiciones necesarias para continuar con el proceso.
-
-Los siguientes Wireflows corresponden a los principales procesos de interacción definidos para la Web Application de EcoTrack.
+Cada cambio de estado de una pantalla se representa como un nuevo paso del flujo. El happy path se ubica en la fila superior con flechas negras; las rutas alternativas y de error se ubican debajo con flechas rojas. Los rombos representan decisiones del sistema y las tarjetas azules enlazan con otro paso u otro flujo.
 
 #### WF01 — Authentication
 
-**User Story:** US-07 — Iniciar sesión
+**User Goal:** Como usuario registrado, quiero iniciar sesión de forma segura y recuperar mi contraseña si la olvido, para acceder a la información ambiental de mi empresa.
 
-**User Goal:**  
-Como usuario registrado, quiero iniciar sesión en EcoTrack, para acceder a la información de mi empresa.
+**User Persona:** Claudia Ramírez y Carlos Mendoza · **User Stories:** US-07, US-08
 
-El flujo comienza en la pantalla de inicio de sesión, donde el usuario ingresa su correo electrónico y contraseña. Al seleccionar **Sign In**, el sistema valida las credenciales proporcionadas. Si las credenciales son válidas, el usuario accede al Dashboard. En caso contrario, se muestra un estado de error y el usuario puede intentar nuevamente el proceso.
+El usuario ingresa su correo y contraseña y selecciona **Sign In**. El sistema verifica primero que los campos estén completos y con formato válido, y luego que las credenciales sean correctas; si ambas condiciones se cumplen, accede al Dashboard. Si faltan datos, el formulario muestra el estado de validación y el usuario vuelve a completarlo; si las credenciales son incorrectas, se muestra el error y puede reintentar. Como ruta alternativa, desde **Forgot password?** solicita el enlace de recuperación, define una nueva contraseña y regresa al inicio de sesión.
 
-![WF01 - Authentication](./assets/chapter-04/web-applications-ui-ux/wireflows/wf01-Authentication.png)
+![WF01 - Authentication](./assets/chapter-04/web-applications-ui-ux/wireflows/wf01-authentication.png)
 
-*Figura 4.8. Wireflow del proceso de autenticación.*
+*Figura 4.81. Wireflow WF01 — Authentication.*
 
 #### WF02 — Organization Registration
 
-**User Story:** US-06 — Registrar una empresa
+**User Goal:** Como responsable de sostenibilidad, quiero registrar mi empresa y crear mi cuenta en EcoTrack, para empezar a gestionar la huella de carbono de mi organización.
 
-**User Goal:**  
-Como representante de una empresa, quiero registrar mi organización en EcoTrack, para comenzar a gestionar su información ambiental.
+**User Persona:** Claudia Ramírez · **User Stories:** US-06, US-47
 
-El flujo inicia desde la pantalla de autenticación, donde el usuario selecciona la opción para crear una organización. Posteriormente completa el formulario con los datos de la organización y de la cuenta de usuario. Al seleccionar **Save Changes**, el sistema valida la información ingresada.
+Desde el inicio de sesión, el usuario selecciona **Create an organization**, completa los datos de la empresa y del administrador y selecciona **Register**. Si todos los campos son válidos, la organización y la cuenta quedan creadas; si no, se muestran los campos con error y el usuario los corrige antes de volver a enviar.
 
-Si los datos son válidos, se muestra la confirmación de creación de la organización y el usuario puede continuar hacia el Dashboard. Si existen datos obligatorios incompletos o inválidos, se muestra el estado de validación y el usuario puede corregir la información para volver a intentar el registro.
+![WF02 - Organization Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf02-organization-registration.png)
 
-![WF02 - Organization Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf02-Organization-Registration.png)
-
-*Figura 4.9. Wireflow del proceso de registro de una organización.*
+*Figura 4.82. Wireflow WF02 — Organization Registration.*
 
 #### WF03 — Organization Management
 
-**User Story:** US-10 — Actualizar datos de la empresa
+**User Goal:** Como responsable de operaciones, quiero consultar y actualizar los datos de mi organización, para mantener la información de la empresa correcta y vigente.
 
-**User Goal:**  
-Como usuario autorizado, quiero actualizar los datos de mi empresa, para mantener su información al día.
+**User Persona:** Carlos Mendoza · **User Stories:** US-09, US-10
 
-El flujo comienza en la vista de información de la organización. El usuario selecciona **Edit Organization** y accede al formulario de edición. Después de modificar los datos correspondientes, selecciona **Save Changes**.
+El usuario consulta la información de la organización, selecciona **Edit Organization**, modifica los datos y selecciona **Save Changes**. Si los datos son válidos, se guardan y se confirma la actualización; si no, se muestran los errores y vuelve al formulario. También puede cancelar la edición sin guardar cambios.
 
-El sistema valida la información ingresada. Si los datos son válidos, los cambios se guardan y se muestra la información actualizada de la organización.
-Si existen datos inválidos o incompletos, se presenta el estado de validación y el usuario retorna al formulario para corregir la información.
+![WF03 - Organization Management](./assets/chapter-04/web-applications-ui-ux/wireflows/wf03-organization-management.png)
 
-![WF03 - Organization Management](./assets/chapter-04/web-applications-ui-ux/wireflows/wf03-Organization-Management.png)
-
-*Figura 4.10. Wireflow del proceso de actualización de información de la organización.*
+*Figura 4.83. Wireflow WF03 — Organization Management.*
 
 #### WF04 — Emission Registration
 
-**User Story:** US-11 — Registrar una fuente de emisión
+**User Goal:** Como responsable de sostenibilidad, quiero registrar, editar y eliminar los registros de emisión de cada fuente, para mantener actualizado el inventario de emisiones de mi empresa.
 
-**User Goal:**  
-Como analista ambiental, quiero registrar una fuente de emisión, para llevar un control de las actividades que generan emisiones en la empresa.
+**User Persona:** Claudia Ramírez · **User Stories:** US-11 a US-15, US-45, US-46
 
-El flujo inicia en el módulo **Emissions**, donde el usuario selecciona **Add Emission**. Luego completa los datos requeridos para registrar la emisión y selecciona **Save Entry**.
+Desde **Emissions**, el usuario selecciona **Add Emission**, ingresa la fuente, la categoría, la cantidad, la unidad y el periodo, y elige el factor de emisión; el formulario muestra la estimación antes de guardar (por ejemplo, 2,200 kWh × 0.2490 kg CO₂e/kWh = 547.8 kg CO₂e). Al seleccionar **Save Entry**, si los datos son válidos el registro se agrega al listado; si no, se muestran los errores. Desde el menú ⋯ de cada registro puede editarlo o eliminarlo; la eliminación pide confirmación y **Cancel** regresa al menú.
 
-El sistema valida la información proporcionada. Si los datos son válidos, el nuevo registro se incorpora al listado de emisiones y se muestra la confirmación correspondiente. Si la información no es válida, se muestra el estado de validación y el usuario puede corregir los campos antes de volver a guardar el registro.
+![WF04 - Emission Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf04-emission-registration.png)
 
-![WF04 - Emission Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf04-Emission-Registration.png)
-
-*Figura 4.11. Wireflow del proceso de registro de una emisión.*
+*Figura 4.84. Wireflow WF04 — Emission Registration.*
 
 #### WF05 — Report Generation
 
-**User Story:** US-27 — Generar reporte ambiental
+**User Goal:** Como responsable de sostenibilidad, quiero generar y descargar reportes de emisiones por periodo, para presentar evidencias a clientes, auditores y gerencia.
 
-**User Goal:**  
-Como responsable de sostenibilidad, quiero generar un reporte ambiental, para reunir los principales resultados de la empresa.
+**User Persona:** Claudia Ramírez · **User Stories:** US-27 a US-30
 
-El flujo comienza en el módulo **Reports**, donde el usuario selecciona **Generate Report**. Posteriormente configura los parámetros requeridos y completa la información correspondiente al reporte.
+Desde **Reports**, el usuario selecciona **Generate Report**, elige el periodo y las secciones, y confirma. Si el periodo tiene datos, el reporte se genera, aparece entre los reportes anteriores y puede descargarse. Si no los tiene, se muestra un estado informativo y el usuario elige otro periodo o registra los datos faltantes en Emissions.
 
-Al seleccionar nuevamente **Generate Report**, el sistema valida la información y verifica la disponibilidad de datos. Si la información es válida y existen datos disponibles, el reporte es generado y queda disponible en el módulo Reports. Si no existen datos suficientes, se muestra un estado informativo y el usuario puede regresar al formulario para ajustar los parámetros del reporte.
+![WF05 - Report Generation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf05-report-generation.png)
 
-![WF05 - Report Generation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf05-Report-Generation.png)
+*Figura 4.85. Wireflow WF05 — Report Generation.*
 
-*Figura 4.12. Wireflow del proceso de generación de un reporte ambiental.*
+#### WF06 — Goal Creation and Reduction Plan
 
-#### WF06 — Goal Creation
+**User Goal:** Como responsable de operaciones, quiero crear metas de reducción con su plan de acción y hacer seguimiento a su avance, para cumplir los objetivos ambientales de la empresa.
 
-**User Story:** US-21 — Registrar una meta ambiental
+**User Persona:** Carlos Mendoza · **User Stories:** US-21 a US-25, US-38 a US-40
 
-**User Goal:**  
-Como responsable de sostenibilidad, quiero registrar una meta de reducción de emisiones, para establecer un objetivo ambiental para la empresa.
+Desde **Goals**, el usuario selecciona **Create Goal**, completa la meta y la guarda. Si los datos son válidos, la meta se crea y puede abrir su plan de reducción para revisar las iniciativas y su avance. Desde el menú ⋯ de cada meta puede editarla, actualizar su estado o eliminarla con confirmación.
 
-El flujo inicia en el módulo **Goals**, donde el usuario selecciona **Create Goal**. A continuación, completa la información correspondiente a la meta y selecciona **Save Goal**.
+![WF06 - Goal Creation and Reduction Plan](./assets/chapter-04/web-applications-ui-ux/wireflows/wf06-goal-creation-and-reduction-plan.png)
 
-El sistema valida los datos ingresados. Si la información es válida, la meta queda registrada y el usuario retorna al listado de **Reduction Goals**. Si los datos no son válidos, se muestra el estado de validación y el usuario puede corregir la información para volver a intentar guardar la meta.
-
-![WF06 - Goal Creation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf06-Goal-Creation.png)
-
-*Figura 4.13. Wireflow del proceso de creación de una meta ambiental.*
+*Figura 4.86. Wireflow WF06 — Goal Creation and Reduction Plan.*
 
 #### WF07 — Carbon Footprint Calculation
 
-**User Story:** US-34 — Calcular huella de carbono
+**User Goal:** Como responsable de operaciones, quiero calcular la huella de carbono por alcance y periodo, para conocer el impacto ambiental de la empresa y su evolución.
 
-**User Goal:**  
-Como analista ambiental, quiero calcular automáticamente la huella de carbono utilizando los datos registrados, para obtener los resultados de emisiones de la organización.
+**User Persona:** Carlos Mendoza · **User Stories:** US-34 a US-37
 
-El flujo comienza en la sección **Carbon Footprint**, donde el usuario selecciona los parámetros correspondientes al periodo y alcance que desea analizar. Después selecciona **Calculate Footprint** para iniciar el cálculo.
+El usuario define el periodo y el alcance y selecciona **Calculate Footprint**. Si los datos de actividad están completos, obtiene el total (25,470 t CO₂e en Q2 2026), el detalle por alcance, la evolución por periodo y el historial. Si faltan datos, el sistema lo indica y ofrece ir a Emissions para completarlos.
 
-El sistema presenta la información considerada para el cálculo y permite consultar los resultados obtenidos. Finalmente, el usuario puede visualizar los resultados de huella de carbono por periodo y analizar el desempeño ambiental correspondiente.
+![WF07 - Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf07-carbon-footprint-calculation.png)
 
-![WF07 - Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf07-Carbon-Footprint-Calculation.png)
+*Figura 4.87. Wireflow WF07 — Carbon Footprint Calculation.*
 
-*Figura 4.14. Wireflow del proceso de cálculo de la huella de carbono.*
+#### WF08 — CSV Data Import
 
-#### Relación entre Wireflows y User Goals
+**User Goal:** Como responsable de sostenibilidad, quiero importar registros de emisión desde un archivo CSV, para no ingresar manualmente grandes volúmenes de datos.
 
-Los Wireflows presentados representan los principales recorridos funcionales de la Web Application y mantienen correspondencia con los User Stories definidos en la especificación de requisitos. Los flujos abarcan procesos de autenticación, registro y administración de la organización, registro de emisiones, generación de reportes, creación de metas y cálculo de huella de carbono.
+**User Persona:** Claudia Ramírez · **User Stories:** US-41
 
-La representación de estados alternativos permite incorporar dentro de cada recorrido las condiciones de validación que pueden impedir completar una operación. Esto permite que los Wireflows sirvan posteriormente como base para la elaboración de los User Flow Diagrams, donde estos mismos recorridos serán representados mediante los Mock-ups de alta fidelidad.
+Desde **Emissions**, el usuario selecciona **Import CSV**, carga el archivo y revisa la vista previa. Si todas las filas son válidas, importa el archivo completo. Si hay filas con error (por ejemplo, 4 válidas y 1 sin unidad), decide entre importar solo las válidas o corregir el archivo y cargarlo de nuevo.
+
+![WF08 - CSV Data Import](./assets/chapter-04/web-applications-ui-ux/wireflows/wf08-csv-data-import.png)
+
+*Figura 4.88. Wireflow WF08 — CSV Data Import.*
+
+#### WF09 — Period Comparison and Indicators
+
+**User Goal:** Como responsable de operaciones, quiero comparar las emisiones entre periodos y revisar los indicadores por alcance, para presentar a gerencia la evolución del desempeño ambiental.
+
+**User Persona:** Carlos Mendoza · **User Stories:** US-16, US-17, US-20, US-26
+
+Desde el Dashboard, el usuario abre la comparación de periodos (por ejemplo, Q1 2026 vs Q2 2026), revisa el resumen ambiental (+5.5 %) y las emisiones por alcance. Desde ahí puede pasar a Reports para generar un reporte comparativo. Cuando se registran datos nuevos, los indicadores se recalculan y el usuario puede volver a comparar.
+
+![WF09 - Period Comparison and Indicators](./assets/chapter-04/web-applications-ui-ux/wireflows/wf09-period-comparison-and-indicators.png)
+
+*Figura 4.89. Wireflow WF09 — Period Comparison and Indicators.*
+
+#### WF10 — Organization Structure and Users
+
+**User Goal:** Como administradora, quiero gestionar las unidades de negocio, los usuarios y sus permisos por sede, para que cada área registre y consulte solo la información que le corresponde.
+
+**User Persona:** Claudia Ramírez (administradora) · **User Stories:** US-31 a US-33, US-44
+
+Desde Organization, la administradora abre **Business Units**, registra una nueva unidad y, si el nombre es válido, la unidad aparece en el listado. En **Users** invita a un usuario indicando su correo, rol y sede; en **Sites & Permissions** revisa los permisos de cada sede.
+
+![WF10 - Organization Structure and Users](./assets/chapter-04/web-applications-ui-ux/wireflows/wf10-organization-structure-and-users.png)
+
+*Figura 4.90. Wireflow WF10 — Organization Structure and Users.*
 
 ### 4.4.3. Web Applications Mock-ups
 
-#### Authentication
+Los Mock-ups aplican sobre los Wireframes la identidad visual de EcoTrack definida en las Style Guidelines y Web Style Guidelines. Todas las pantallas usan un mismo set de datos de ejemplo de la empresa ficticia Andina Export S.A.C. (periodo Q2 2026, 25,470 t CO₂e en total), lo que mantiene la coherencia entre pantallas y flujos.
 
-El primer grupo corresponde al proceso de autenticación de usuarios de EcoTrack. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines sobre las interfaces de inicio de sesión.
+#### Design System
 
-A diferencia de los Wireframes, estas pantallas incorporan la identidad visual de EcoTrack, incluyendo la paleta de colores definida, la tipografía Roboto, componentes de interfaz, iconografía, espaciado y estados visuales. La propuesta mantiene una composición centrada y simple, priorizando la identificación de la acción principal y la legibilidad de los campos de autenticación. Estas decisiones son consistentes con los lineamientos establecidos para botones, campos de formulario y estados de interacción.
+- **Color:** verde primario (#2E7D32 y #388E3C en botones) para acciones principales y estados activos; verde claro (#E8F5E9 / #C8E6C9) para mensajes informativos y de éxito; teal (#009688) para enlaces; rojo (#F44336) para errores y acciones destructivas; naranja (#FF9800) para advertencias; y textos en #263238, #455A64 y #90A4AE según su jerarquía.
+- **Tipografía:** Roboto, con títulos en Bold, labels y botones en Medium, y contenido en Regular.
+- **Componentes:** menú lateral y barra de navegación inferior, botones primarios y secundarios, campos de formulario con label, tarjetas, tablas, chips de alcance y de estado, banners de éxito y error, diálogos de confirmación y menús de acciones (⋯).
+- **Forma y espaciado:** esquinas redondeadas de 8 px en controles y de 12 px en tarjetas, bordes #E2E8EA y fondo #F8FAFB.
 
-Los Mock-ups contemplan diferentes estados del proceso: pantalla inicial de inicio de sesión, formulario con credenciales ingresadas, estado de error de validación y acceso exitoso al Dashboard. De esta manera, se representa visualmente tanto el flujo principal como las respuestas de la interfaz ante diferentes acciones del usuario.
+#### Principios de diseño aplicados
 
-![Login Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login.png)
+- **Consistencia:** el menú, los botones, los formularios y los mensajes se comportan igual en todos los módulos.
+- **Jerarquía visual:** cada pantalla tiene un título, una acción principal destacada y acciones secundarias de menor peso.
+- **Retroalimentación:** toda operación termina en un estado visible: error junto al campo, banner de éxito o estado informativo.
+- **Prevención de errores:** las acciones destructivas usan un botón rojo y piden confirmación; el formulario de emisión muestra la estimación antes de guardar.
+- **Significado del color:** las reducciones de emisiones se muestran en verde y los aumentos en rojo, siempre acompañados de flechas y signos (▲/▼).
 
-*Figura 4.15. Mock-up de la pantalla de inicio de sesión.*
+#### Diseño inclusivo y arquitectura de información
 
-![Login Filled Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login-validation.png)
+Los campos tienen labels visibles e indicadores de obligatoriedad, los errores se expresan con texto además del color, y los controles en mobile tienen una altura mínima de 48 px para facilitar la interacción táctil. La navegación refleja los seis módulos de la arquitectura de información (Dashboard, Emissions, Carbon Footprint, Goals, Reports y Organization), con el ítem activo resaltado para que el usuario sepa en qué sección se encuentra.
 
-*Figura 4.16. Mock-up del formulario de inicio de sesión con credenciales ingresadas.*
+#### Desktop Web Browser
 
-![Login Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login-validation-error.png)
+##### Authentication
 
-*Figura 4.17. Mock-up del estado de error de validación de inicio de sesión.*
+![Login Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/login.png)
 
-![Login Success Dashboard Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/authentication/login-success-dashboard.png)
+*Figura 4.91. Mock-up de la pantalla de inicio de sesión.*
 
-*Figura 4.18. Mock-up del acceso exitoso al Dashboard.*
+![Login Validation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/login-validation.png)
 
-#### Organization Registration
+*Figura 4.92. Mock-up del estado de validación del formulario de inicio de sesión.*
 
-El segundo grupo corresponde al proceso de registro de una nueva organización en EcoTrack. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines, incorporando la identidad visual de EcoTrack, la paleta de colores, tipografía, componentes de formulario y estados de interacción.
+![Login Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/login-validation-error.png)
 
-La información se organiza en grupos relacionados con los datos de la organización y los datos de la cuenta del usuario. Los campos requeridos se identifican mediante labels explícitos, mientras que los estados de validación y error proporcionan retroalimentación visual sobre la información ingresada. De esta manera, los Mock-ups representan tanto el formulario inicial como las diferentes respuestas de la interfaz durante el proceso de registro.
+*Figura 4.93. Mock-up del error por credenciales incorrectas.*
 
-![Register Organization Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org.png)
+![Login Success Dashboard Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/login-success-dashboard.png)
 
-*Figura 4.19. Mock-up del formulario inicial de registro de una organización.*
+*Figura 4.94. Mock-up del acceso exitoso al Dashboard.*
 
-![Register Organization Validation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org-validation.png)
+![Forgot Password Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/forgot-password.png)
 
-*Figura 4.20. Mock-up del estado de validación del registro de una organización.*
+*Figura 4.95. Mock-up de la solicitud de recuperación de contraseña.*
 
-![Register Organization Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org-validation-error.png)
+![Reset Link Sent Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/reset-link-sent.png)
 
-*Figura 4.21. Mock-up del estado de error de validación del registro de una organización.*
+*Figura 4.96. Mock-up de la confirmación de envío del enlace de recuperación.*
 
-![Register Organization Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-registration/register-org-success.png)
+![Reset Password Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/reset-password.png)
 
-*Figura 4.22. Mock-up del registro exitoso de una organización.*
+*Figura 4.97. Mock-up de la definición de una nueva contraseña.*
 
-#### Emission Registration
+![Password Reset Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/password-reset-success.png)
 
-El tercer grupo corresponde al registro de emisiones. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines para el listado y registro de emisiones dentro de EcoTrack.
+*Figura 4.98. Mock-up de la confirmación de contraseña restablecida.*
 
-La propuesta incorpora la identidad visual de la aplicación mediante la paleta de colores, tipografía Roboto, componentes de interfaz, espaciado, iconografía y estados de interacción. Los campos se organizan de acuerdo con la información necesaria para registrar una emisión, manteniendo una estructura clara para facilitar el ingreso y consulta de los datos.
+##### Organization Registration
 
-Los Mock-ups contemplan el listado de emisiones, el formulario vacío, el formulario con información ingresada, el estado de error de validación y la confirmación de un registro exitoso. Esto permite representar visualmente las diferentes respuestas de la interfaz durante el proceso de registro.
+![Register Org Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-registration/register-org.png)
 
-![Emissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/emissions.png)
+*Figura 4.99. Mock-up del formulario inicial de registro de una organización.*
 
-*Figura 4.23. Mock-up del listado de emisiones registradas.*
+![Register Org Validation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-registration/register-org-validation.png)
 
-![Add Emission Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/add-emission-empty.png)
+*Figura 4.100. Mock-up del formulario de registro con la información ingresada.*
 
-*Figura 4.24. Mock-up del formulario vacío para registrar una nueva emisión.*
+![Register Org Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-registration/register-org-validation-error.png)
 
-![Add Emission Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/add-emission-completed.png)
+*Figura 4.101. Mock-up de los errores de validación del registro.*
 
-*Figura 4.25. Mock-up del formulario de registro de emisión con información ingresada.*
+![Register Org Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-registration/register-org-success.png)
 
-![Emission Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/emission-validation-error.png)
+*Figura 4.102. Mock-up de la confirmación del registro de la organización.*
 
-*Figura 4.26. Mock-up del estado de error de validación del registro de emisión.*
+##### Organization Management
 
-![Emissions Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/emission-registration/emissions-success.png)
+![Org Overview Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-management/org-overview.png)
 
-*Figura 4.27. Mock-up de confirmación del registro exitoso de una emisión.*
+*Figura 4.103. Mock-up de la información general de la organización.*
 
-#### Carbon Footprint Calculation
+![Org Edit Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-management/org-edit.png)
 
-El cuarto grupo representa el proceso de cálculo y consulta de la huella de carbono. Los Mock-ups representan la aplicación visual de las decisiones establecidas en las Style Guidelines y Web Style Guidelines para las interfaces relacionadas con la configuración, ejecución y consulta de los cálculos.
+*Figura 4.104. Mock-up de la edición de los datos de la organización.*
 
-La propuesta incorpora la identidad visual de EcoTrack mediante la aplicación de la paleta de colores, tipografía Roboto, componentes de interfaz, espaciado, iconografía y estados visuales. La información se presenta de manera progresiva, permitiendo configurar los parámetros del cálculo, revisar los datos considerados y consultar los resultados obtenidos.
+![Org Edit Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-management/org-edit-validation-error.png)
 
-Los Mock-ups contemplan el estado inicial del cálculo, la configuración y ejecución del cálculo, el historial de operaciones realizadas y la visualización de resultados tanto por periodo como por alcance. De esta manera, se representa visualmente la interacción del usuario con las diferentes etapas del proceso de cálculo y consulta de la huella de carbono.
+*Figura 4.105. Mock-up de los errores de validación durante la edición.*
 
-![Carbon Footprint Initial Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-initial.png)
+![Org Update Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-management/org-update-success.png)
 
-*Figura 4.28. Mock-up del estado inicial del cálculo de la huella de carbono.*
+*Figura 4.106. Mock-up de la confirmación de actualización de la organización.*
 
-![Carbon Footprint Calculation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-calculate.png)
+##### Users, Sites and Business Units
 
-*Figura 4.29. Mock-up correspondiente a la configuración y cálculo de la huella de carbono.*
+![Users List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/users-list.png)
 
-![Carbon Footprint History Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-history.png)
+*Figura 4.107. Mock-up del listado de usuarios de la organización.*
 
-*Figura 4.30. Mock-up correspondiente al historial de cálculos de huella de carbono.*
+![Add User Assign Role Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/add-user-assign-role.png)
 
-![Carbon Footprint Results Per Period Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-results-period.png)
+*Figura 4.108. Mock-up de la invitación de un usuario con asignación de rol y sede.*
 
-*Figura 4.31. Mock-up de los resultados de la huella de carbono por periodo.*
+![Sites Permissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/sites-permissions.png)
 
-![Carbon Footprint Results By Scope Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/carbon-footprint-calculation/carbon-footprint-results-scope.png)
+*Figura 4.109. Mock-up de las sedes y sus permisos.*
 
-*Figura 4.32. Mock-up de los resultados de la huella de carbono por alcance.*
+![Business Units Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/business-units.png)
 
-#### Goal Creation
+*Figura 4.110. Mock-up del listado de unidades de negocio.*
 
-El quinto grupo representa la gestión de metas y planes de reducción. Los Mock-ups aplican las decisiones visuales definidas para EcoTrack a las interfaces de consulta, creación y edición de metas ambientales.
+![Add Business Unit Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/add-business-unit.png)
 
-La propuesta incorpora la identidad visual de la aplicación mediante la aplicación de la paleta de colores, tipografía, componentes, espaciado, iconografía y estados de interacción. La información de cada meta se organiza mediante campos claramente identificados y acciones diferenciadas para crear, guardar, cancelar o editar una operación.
+*Figura 4.111. Mock-up del registro de una unidad de negocio.*
 
-Los Mock-ups contemplan el listado de metas, el formulario de creación en estado vacío, el ingreso de información, los errores de validación, la confirmación de creación exitosa y la edición de una meta existente. De esta manera, se representan visualmente los principales estados y acciones asociados con la gestión de metas dentro de EcoTrack.
+##### Emission Registration
 
-![Goals List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/goals-list.png)
+![Emissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emissions.png)
 
-*Figura 4.33. Mock-up correspondiente al listado de metas ambientales.*
+*Figura 4.112. Mock-up del listado de emisiones registradas.*
 
-![Create Goal Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/create-goal-empty.png)
+![Add Emission Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/add-emission-empty.png)
 
-*Figura 4.34. Mock-up del formulario vacío para la creación de una meta.*
+*Figura 4.113. Mock-up del formulario vacío para registrar una emisión.*
 
-![Create Goal Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/create-goal-validation-error.png)
+![Add Emission Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/add-emission-completed.png)
 
-*Figura 4.35. Mock-up del formulario de creación de una meta con errores de validación.*
+*Figura 4.114. Mock-up del formulario de emisión con los datos de actividad ingresados.*
 
-![Create Goal Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/create-goal-completed.png)
+![Add Emission Factor Selector Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/add-emission-factor-selector.png)
 
-*Figura 4.36. Mock-up del formulario de creación de una meta con los datos completados.*
+*Figura 4.115. Mock-up del selector de factores de emisión.*
 
-![Goals Creation Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/goals-creation-success.png)
+![Add Emission Factor Selected Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/add-emission-factor-selected.png)
 
-*Figura 4.37. Mock-up de confirmación del registro exitoso de una meta.*
+*Figura 4.116. Mock-up del formulario con el factor de emisión seleccionado y la estimación calculada.*
 
-![Edit Goal Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/goal-creation/edit-goal.png)
+![Emission Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emission-validation-error.png)
 
-*Figura 4.38. Mock-up correspondiente a la edición de una meta existente.*
+*Figura 4.117. Mock-up de los errores de validación del registro de emisión.*
 
-#### Report Generation
+![Emissions Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emissions-success.png)
 
-El sexto grupo representa el proceso de generación y consulta de reportes ambientales. Los Mock-ups aplican la identidad visual de EcoTrack a las interfaces relacionadas con la configuración, generación, descarga y consulta de reportes.
+*Figura 4.118. Mock-up de la confirmación del registro de una emisión.*
 
-La propuesta incorpora la paleta de colores, tipografía, componentes, espaciado e iconografía definidos para la aplicación, manteniendo una estructura visual consistente entre los diferentes estados. Se contemplan escenarios de configuración, selección de periodo, generación exitosa y ausencia de datos suficientes para completar la operación.
+![Emissions Row Actions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emissions-row-actions.png)
 
-También se representa la disponibilidad del reporte generado para su descarga y la consulta de reportes creados anteriormente. De esta manera, los Mock-ups muestran los principales estados y acciones que forman parte del proceso de gestión de reportes ambientales.
+*Figura 4.119. Mock-up del menú de acciones de un registro de emisión.*
 
-![Reports Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/reports-empty-hifi.png)
+![Edit Emission Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/edit-emission.png)
 
-*Figura 4.39. Mock-up del estado inicial del módulo de reportes.*
+*Figura 4.120. Mock-up de la edición de un registro de emisión.*
 
-![Generate Report Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-empty-hifi.png)
+![Emission Update Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emission-update-success.png)
 
-*Figura 4.40. Mock-up del formulario inicial para generar un reporte.*
+*Figura 4.121. Mock-up de la confirmación de actualización de un registro.*
 
-![Generate Report Period Selected Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-period-selected-hifi.png)
+![Delete Emission Confirm Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/delete-emission-confirm.png)
 
-*Figura 4.41. Mock-up de configuración del reporte con el periodo seleccionado.*
+*Figura 4.122. Mock-up de la confirmación de eliminación de un registro.*
 
-![Generate Report No Data Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-no-data-error-hifi.png)
+##### Data Integration
 
-*Figura 4.42. Mock-up del estado informativo cuando no existen datos suficientes para generar el reporte.*
+![Import Csv Upload Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/data-integration/import-csv-upload.png)
 
-![Generate Report Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/generate-report-success-hifi.png)
+*Figura 4.123. Mock-up de la carga de un archivo CSV.*
 
-*Figura 4.43. Mock-up de confirmación de generación exitosa del reporte.*
+![Import Csv Preview Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/data-integration/import-csv-preview.png)
 
-![Report Download Available Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/report-download-available-hifi.png)
+*Figura 4.124. Mock-up de la vista previa con la validación de filas.*
 
-*Figura 4.44. Mock-up del reporte generado con opción de descarga disponible.*
+![Import Csv Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/data-integration/import-csv-success.png)
 
-![Reports Previous Reports Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/report-generation/reports-previous-reports-hifi.png)
+*Figura 4.125. Mock-up de la confirmación de la importación.*
 
-*Figura 4.45. Mock-up correspondiente a la consulta de reportes generados anteriormente.*
+##### Carbon Footprint Calculation
 
-#### Organization Management
+![Carbon Footprint Initial Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-initial.png)
 
-El último grupo corresponde a la administración de la información de la organización. Los Mock-ups representan la consulta de los datos actuales, la edición de la información, los estados de validación y la confirmación de una actualización exitosa.
+*Figura 4.126. Mock-up del estado inicial del cálculo de la huella de carbono.*
 
-La interfaz aplica la identidad visual definida para EcoTrack, manteniendo consistencia en colores, tipografía, espaciado, componentes e iconografía. Se diferencia claramente entre la visualización de información y las acciones de modificación, mientras que los formularios organizan los datos de acuerdo con su propósito.
+![Carbon Footprint Calculate Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-calculate.png)
 
-También se incorporan estados de validación y confirmación para proporcionar retroalimentación visual sobre las acciones realizadas durante la gestión de la organización.
+*Figura 4.127. Mock-up de la revisión de datos y ejecución del cálculo.*
 
-![Organization Overview Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-overview.png)
+![Carbon Footprint Results Scope Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-results-scope.png)
 
-*Figura 4.46. Mock-up correspondiente a la visualización de la información de la organización.*
+*Figura 4.128. Mock-up de los resultados de la huella de carbono por alcance.*
 
-![Edit Organization Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-edit.png)
+![Carbon Footprint Results Period Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-results-period.png)
 
-*Figura 4.47. Mock-up correspondiente a la edición de la información de la organización.*
+*Figura 4.129. Mock-up de los resultados de la huella de carbono por periodo.*
 
-![Organization Edit Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-edit-validation-error.png)
+![Carbon Footprint History Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-history.png)
 
-*Figura 4.48. Mock-up del estado de error de validación durante la edición de la organización.*
+*Figura 4.130. Mock-up del historial de cálculos.*
 
-![Organization Update Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/organization-management/org-update-success.png)
+![Carbon Footprint Insufficient Data Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-insufficient-data.png)
 
-*Figura 4.49. Mock-up de confirmación de actualización exitosa de la organización.*
+*Figura 4.131. Mock-up del estado de datos de actividad insuficientes.*
+
+##### Analytics
+
+![Dashboard Environmental Summary Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/dashboard-environmental-summary.png)
+
+*Figura 4.132. Mock-up del resumen ambiental del Dashboard.*
+
+![Dashboard Emissions By Scope Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/dashboard-emissions-by-scope.png)
+
+*Figura 4.133. Mock-up de las emisiones por alcance.*
+
+![Dashboard Period Comparison Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/dashboard-period-comparison.png)
+
+*Figura 4.134. Mock-up de la comparación de emisiones entre periodos.*
+
+![Dashboard Updated Results Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/dashboard-updated-results.png)
+
+*Figura 4.135. Mock-up de los resultados actualizados tras registrar datos nuevos.*
+
+![Reporting Period Comparison Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/reporting-period-comparison.png)
+
+*Figura 4.136. Mock-up de la comparación de periodos en el módulo de reportes.*
+
+##### Report Generation
+
+![Reports Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/reports-empty.png)
+
+*Figura 4.137. Mock-up del estado inicial del módulo de reportes.*
+
+![Generate Report Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/generate-report-empty.png)
+
+*Figura 4.138. Mock-up del formulario inicial para generar un reporte.*
+
+![Generate Report Period Selected Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/generate-report-period-selected.png)
+
+*Figura 4.139. Mock-up de la configuración del reporte con el periodo seleccionado.*
+
+![Generate Report No Data Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/generate-report-no-data-error.png)
+
+*Figura 4.140. Mock-up del estado informativo de periodo sin datos.*
+
+![Generate Report Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/generate-report-success.png)
+
+*Figura 4.141. Mock-up de la confirmación de generación del reporte.*
+
+![Reports Previous Reports Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/reports-previous-reports.png)
+
+*Figura 4.142. Mock-up de la consulta de reportes generados anteriormente.*
+
+![Report Download Available Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/report-download-available.png)
+
+*Figura 4.143. Mock-up del reporte con la descarga disponible.*
+
+##### Goal Creation
+
+![Goals List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/goals-list.png)
+
+*Figura 4.144. Mock-up del listado de metas de reducción.*
+
+![Create Goal Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/create-goal-empty.png)
+
+*Figura 4.145. Mock-up del formulario vacío para crear una meta.*
+
+![Create Goal Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/create-goal-completed.png)
+
+*Figura 4.146. Mock-up del formulario de meta con los datos completados.*
+
+![Create Goal Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/create-goal-validation-error.png)
+
+*Figura 4.147. Mock-up de los errores de validación al crear una meta.*
+
+![Goals Creation Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/goals-creation-success.png)
+
+*Figura 4.148. Mock-up de la confirmación de creación de una meta.*
+
+![Goals Row Actions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/goals-row-actions.png)
+
+*Figura 4.149. Mock-up del menú de acciones de una meta.*
+
+![Edit Goal Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/edit-goal.png)
+
+*Figura 4.150. Mock-up de la edición de una meta.*
+
+![Delete Goal Confirm Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/delete-goal-confirm.png)
+
+*Figura 4.151. Mock-up de la confirmación de eliminación de una meta.*
+
+##### Goal Tracking and Reduction Plans
+
+![Goal Status Updated Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-tracking-and-reduction-plans/goal-status-updated.png)
+
+*Figura 4.152. Mock-up de la actualización del estado de una meta.*
+
+![Reduction Plan Details Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-tracking-and-reduction-plans/reduction-plan-details.png)
+
+*Figura 4.153. Mock-up del detalle del plan de reducción.*
+
+![Reduction Plan Progress Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-tracking-and-reduction-plans/reduction-plan-progress.png)
+
+*Figura 4.154. Mock-up del avance de las iniciativas del plan.*
+
+#### Mobile Web Browser
+
+La versión mobile aplica el mismo Design System mediante componentes reutilizables: barra superior, barra de página con regreso, navegación inferior, botones y tarjeta de emisión.
+
+![Mobile Components](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/mobile-components.png)
+
+*Figura 4.155. Componentes reutilizables de la versión mobile.*
+
+##### Authentication (Mobile)
+
+![Mobile login Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/authentication/m-login.png)
+
+*Figura 4.156. Mock-up del inicio de sesión en mobile.*
+
+![Mobile login Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/authentication/m-login-validation-error.png)
+
+*Figura 4.157. Mock-up del error por credenciales incorrectas en mobile.*
+
+##### Analytics (Mobile)
+
+![Mobile dashboard Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/analytics/m-dashboard.png)
+
+*Figura 4.158. Mock-up del Dashboard en mobile.*
+
+##### Emission Registration (Mobile)
+
+![Mobile emissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-emissions.png)
+
+*Figura 4.159. Mock-up del listado de emisiones en tarjetas (mobile).*
+
+![Mobile add Emission Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-add-emission-empty.png)
+
+*Figura 4.160. Mock-up del formulario vacío de emisión en mobile.*
+
+![Mobile emission Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-emission-validation-error.png)
+
+*Figura 4.161. Mock-up de los errores de validación de emisión en mobile.*
+
+![Mobile add Emission Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-add-emission-completed.png)
+
+*Figura 4.162. Mock-up del formulario de emisión completado con factor y estimación en mobile.*
+
+![Mobile emissions Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-emissions-success.png)
+
+*Figura 4.163. Mock-up de la confirmación del registro de emisión en mobile.*
+
+##### Report Generation (Mobile)
+
+![Mobile reports Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-reports-empty.png)
+
+*Figura 4.164. Mock-up del estado inicial de reportes en mobile.*
+
+![Mobile generate Report Period Selected Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-generate-report-period-selected.png)
+
+*Figura 4.165. Mock-up de la configuración del reporte en mobile.*
+
+![Mobile generate Report No Data Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-generate-report-no-data-error.png)
+
+*Figura 4.166. Mock-up del estado de periodo sin datos en mobile.*
+
+![Mobile reports Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-reports-success.png)
+
+*Figura 4.167. Mock-up del reporte generado en mobile.*
+
+![Mobile report Download Available Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-report-download-available.png)
+
+*Figura 4.168. Mock-up del resumen y descarga del reporte en mobile.*
+
+##### Carbon Footprint Calculation (Mobile)
+
+![Mobile carbon Footprint Initial Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/carbon-footprint-calculation/m-carbon-footprint-initial.png)
+
+*Figura 4.169. Mock-up de los parámetros del cálculo de huella en mobile.*
+
+![Mobile carbon Footprint Results Scope Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/carbon-footprint-calculation/m-carbon-footprint-results-scope.png)
+
+*Figura 4.170. Mock-up de los resultados por alcance en mobile.*
+
+##### Goal Creation (Mobile)
+
+![Mobile goals List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/goal-creation/m-goals-list.png)
+
+*Figura 4.171. Mock-up del listado de metas en mobile.*
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-Los User Flow Diagrams representan las secuencias de interacción que los usuarios siguen para completar las principales tareas dentro de la Web Application de EcoTrack. Estos diagramas permiten visualizar la relación entre las acciones del usuario, las decisiones del sistema y las diferentes pantallas involucradas en cada proceso.
+Los User Flow Diagrams representan, con los Mock-ups de alta fidelidad, los recorridos que siguen los usuarios para cumplir cada User Goal. Son consistentes con los Wireflows de la sección 4.4.2: mantienen las mismas pantallas y ramas, y agregan la descripción de las condiciones que el sistema evalúa en cada decisión.
 
-Los flujos se definieron a partir de las funcionalidades representadas previamente mediante los Wireframes y Mock-ups, manteniendo la correspondencia entre las interfaces y las acciones necesarias para completar cada tarea.
+Cada diagrama identifica el **happy path** (fila superior, flechas negras), los **unhappy paths** y las **rutas alternativas** (filas inferiores, flechas rojas). Las notas naranjas describen la condición evaluada en cada rombo, y las etiquetas de las flechas rojas indican qué condición no se cumplió.
 
-#### Authentication
+#### UF01 — Authentication
 
-El primer flujo representa el proceso de autenticación, desde el ingreso de las credenciales hasta el acceso al Dashboard o la corrección de los datos cuando ocurre un error de validación.
+**User Goal:** Como usuario registrado, quiero iniciar sesión de forma segura y recuperar mi contraseña si la olvido, para acceder a la información ambiental de mi empresa.
 
-![Authentication User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf01-Authentication.png)
+**User Persona:** Claudia Ramírez y Carlos Mendoza · **User Stories:** US-07, US-08
 
-*Figura 4.50. User Flow Diagram correspondiente al proceso de autenticación.*
+El usuario ingresa su correo y contraseña y selecciona **Sign In**. El sistema verifica primero que los campos estén completos y con formato válido, y luego que las credenciales sean correctas; si ambas condiciones se cumplen, accede al Dashboard. Si faltan datos, el formulario muestra el estado de validación y el usuario vuelve a completarlo; si las credenciales son incorrectas, se muestra el error y puede reintentar. Como ruta alternativa, desde **Forgot password?** solicita el enlace de recuperación, define una nueva contraseña y regresa al inicio de sesión.
 
-#### Organization Registration
+**Condiciones evaluadas:**
 
-El segundo flujo representa el registro de una nueva organización, incluyendo el ingreso de información, la validación de los datos y la confirmación del registro.
+- **Fields complete and valid?** Se cumple cuando el correo tiene un formato válido (nombre@dominio.com) y la contraseña no está vacía.
+- **Credentials correct?** Se cumple cuando el correo está registrado y la contraseña coincide con la de la cuenta.
 
-![Organization Registration User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf02-Organization-Registration.png)
+**Unhappy paths:** campos vacíos o con formato inválido (regresa al formulario) y credenciales incorrectas (reintenta desde el login).
 
-*Figura 4.51. User Flow Diagram correspondiente al registro de una organización.*
+**Rutas alternativas:** recuperación de contraseña en cuatro pasos.
 
-#### Organization Management
+![UF01 - Authentication](./assets/chapter-04/web-applications-ui-ux/user-flows/uf01-authentication.png)
 
-El tercer flujo representa la consulta y actualización de la información de la organización, considerando la edición de datos, la validación y la confirmación de los cambios.
+*Figura 4.172. User Flow Diagram UF01 — Authentication.*
 
-![Organization Management User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf03-Organization-Management.png)
+#### UF02 — Organization Registration
 
-*Figura 4.52. User Flow Diagram correspondiente a la administración de la organización.*
+**User Goal:** Como responsable de sostenibilidad, quiero registrar mi empresa y crear mi cuenta en EcoTrack, para empezar a gestionar la huella de carbono de mi organización.
 
-#### Emission Registration
+**User Persona:** Claudia Ramírez · **User Stories:** US-06, US-47
 
-El cuarto flujo representa el registro de emisiones, desde el acceso al listado hasta el ingreso, validación y confirmación de una nueva emisión.
+Desde el inicio de sesión, el usuario selecciona **Create an organization**, completa los datos de la empresa y del administrador y selecciona **Register**. Si todos los campos son válidos, la organización y la cuenta quedan creadas; si no, se muestran los campos con error y el usuario los corrige antes de volver a enviar.
 
-![Emission Registration User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf04-Emission-Registration.png)
+**Condiciones evaluadas:**
 
-*Figura 4.53. User Flow Diagram correspondiente al registro de emisiones.*
+- **All fields valid?** Se cumple cuando todos los campos obligatorios están completos, el correo corporativo tiene formato válido y las contraseñas coinciden.
 
-#### Report Generation
+**Unhappy paths:** datos faltantes o inválidos (regresa al formulario con los campos marcados).
 
-El quinto flujo representa la generación de reportes ambientales, incluyendo la configuración de parámetros, selección del periodo, validación de disponibilidad de datos y consulta del reporte generado.
+![UF02 - Organization Registration](./assets/chapter-04/web-applications-ui-ux/user-flows/uf02-organization-registration.png)
 
-![Report Generation User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf05-Report-Generation.png)
+*Figura 4.173. User Flow Diagram UF02 — Organization Registration.*
 
-*Figura 4.54. User Flow Diagram correspondiente a la generación de reportes.*
+#### UF03 — Organization Management
 
-#### Goal Creation
+**User Goal:** Como responsable de operaciones, quiero consultar y actualizar los datos de mi organización, para mantener la información de la empresa correcta y vigente.
 
-El sexto flujo representa la creación y gestión de metas ambientales, considerando el ingreso de información, validación, registro y edición de una meta existente.
+**User Persona:** Carlos Mendoza · **User Stories:** US-09, US-10
 
-![Goal Creation User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf06-Goal-Creation.png)
+El usuario consulta la información de la organización, selecciona **Edit Organization**, modifica los datos y selecciona **Save Changes**. Si los datos son válidos, se guardan y se confirma la actualización; si no, se muestran los errores y vuelve al formulario. También puede cancelar la edición sin guardar cambios.
 
-*Figura 4.55. User Flow Diagram correspondiente a la creación de metas ambientales.*
+**Condiciones evaluadas:**
 
-#### Carbon Footprint Calculation
+- **Valid data?** Se cumple cuando los campos obligatorios están completos y con formato válido (correo, teléfono, dirección).
 
-El séptimo flujo representa el proceso de cálculo y consulta de la huella de carbono, desde la configuración inicial hasta la visualización de resultados e historial de cálculos.
+**Unhappy paths:** datos vacíos o inválidos (regresa al formulario).
 
-![Carbon Footprint Calculation User Flow](./assets/chapter-04/web-applications-ui-ux/user-flows/uf07-Carbon-Footprint-Calculation.png)
+**Rutas alternativas:** cancelar la edición sin guardar.
 
-*Figura 4.56. User Flow Diagram correspondiente al cálculo y consulta de la huella de carbono.*
+![UF03 - Organization Management](./assets/chapter-04/web-applications-ui-ux/user-flows/uf03-organization-management.png)
 
+*Figura 4.174. User Flow Diagram UF03 — Organization Management.*
+
+#### UF04 — Emission Registration
+
+**User Goal:** Como responsable de sostenibilidad, quiero registrar, editar y eliminar los registros de emisión de cada fuente, para mantener actualizado el inventario de emisiones de mi empresa.
+
+**User Persona:** Claudia Ramírez · **User Stories:** US-11 a US-15, US-45, US-46
+
+Desde **Emissions**, el usuario selecciona **Add Emission**, ingresa la fuente, la categoría, la cantidad, la unidad y el periodo, y elige el factor de emisión; el formulario muestra la estimación antes de guardar (por ejemplo, 2,200 kWh × 0.2490 kg CO₂e/kWh = 547.8 kg CO₂e). Al seleccionar **Save Entry**, si los datos son válidos el registro se agrega al listado; si no, se muestran los errores. Desde el menú ⋯ de cada registro puede editarlo o eliminarlo; la eliminación pide confirmación y **Cancel** regresa al menú.
+
+**Condiciones evaluadas:**
+
+- **Valid data?** Se cumple cuando la fuente, el periodo, la cantidad (mayor que 0) y la unidad están completos y hay un factor de emisión seleccionado.
+
+**Unhappy paths:** campo obligatorio vacío o cantidad no válida (regresa al formulario).
+
+**Rutas alternativas:** editar un registro; eliminar un registro con confirmación.
+
+![UF04 - Emission Registration](./assets/chapter-04/web-applications-ui-ux/user-flows/uf04-emission-registration.png)
+
+*Figura 4.175. User Flow Diagram UF04 — Emission Registration.*
+
+#### UF05 — Report Generation
+
+**User Goal:** Como responsable de sostenibilidad, quiero generar y descargar reportes de emisiones por periodo, para presentar evidencias a clientes, auditores y gerencia.
+
+**User Persona:** Claudia Ramírez · **User Stories:** US-27 a US-30
+
+Desde **Reports**, el usuario selecciona **Generate Report**, elige el periodo y las secciones, y confirma. Si el periodo tiene datos, el reporte se genera, aparece entre los reportes anteriores y puede descargarse. Si no los tiene, se muestra un estado informativo y el usuario elige otro periodo o registra los datos faltantes en Emissions.
+
+**Condiciones evaluadas:**
+
+- **Data available for the period?** Se cumple cuando el periodo seleccionado (por ejemplo, Q2 2026) tiene registros de actividad para todas las fuentes.
+
+**Unhappy paths:** periodo sin datos (elige otro periodo o va a registrar los datos faltantes).
+
+![UF05 - Report Generation](./assets/chapter-04/web-applications-ui-ux/user-flows/uf05-report-generation.png)
+
+*Figura 4.176. User Flow Diagram UF05 — Report Generation.*
+
+#### UF06 — Goal Creation and Reduction Plan
+
+**User Goal:** Como responsable de operaciones, quiero crear metas de reducción con su plan de acción y hacer seguimiento a su avance, para cumplir los objetivos ambientales de la empresa.
+
+**User Persona:** Carlos Mendoza · **User Stories:** US-21 a US-25, US-38 a US-40
+
+Desde **Goals**, el usuario selecciona **Create Goal**, completa la meta y la guarda. Si los datos son válidos, la meta se crea y puede abrir su plan de reducción para revisar las iniciativas y su avance. Desde el menú ⋯ de cada meta puede editarla, actualizar su estado o eliminarla con confirmación.
+
+**Condiciones evaluadas:**
+
+- **Valid data?** Se cumple cuando el nombre, el alcance, el año base, el año meta y el porcentaje de reducción están completos, y el año meta es posterior al año base.
+
+**Unhappy paths:** datos faltantes o año meta no válido (regresa al formulario).
+
+**Rutas alternativas:** editar meta, actualizar estado y eliminar meta.
+
+![UF06 - Goal Creation and Reduction Plan](./assets/chapter-04/web-applications-ui-ux/user-flows/uf06-goal-creation-and-reduction-plan.png)
+
+*Figura 4.177. User Flow Diagram UF06 — Goal Creation and Reduction Plan.*
+
+#### UF07 — Carbon Footprint Calculation
+
+**User Goal:** Como responsable de operaciones, quiero calcular la huella de carbono por alcance y periodo, para conocer el impacto ambiental de la empresa y su evolución.
+
+**User Persona:** Carlos Mendoza · **User Stories:** US-34 a US-37
+
+El usuario define el periodo y el alcance y selecciona **Calculate Footprint**. Si los datos de actividad están completos, obtiene el total (25,470 t CO₂e en Q2 2026), el detalle por alcance, la evolución por periodo y el historial. Si faltan datos, el sistema lo indica y ofrece ir a Emissions para completarlos.
+
+**Condiciones evaluadas:**
+
+- **Activity data complete?** Se cumple cuando todas las fuentes del periodo tienen datos de actividad y un factor de emisión asignado.
+
+**Unhappy paths:** datos de actividad insuficientes (redirige al registro de emisiones).
+
+![UF07 - Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/user-flows/uf07-carbon-footprint-calculation.png)
+
+*Figura 4.178. User Flow Diagram UF07 — Carbon Footprint Calculation.*
+
+#### UF08 — CSV Data Import
+
+**User Goal:** Como responsable de sostenibilidad, quiero importar registros de emisión desde un archivo CSV, para no ingresar manualmente grandes volúmenes de datos.
+
+**User Persona:** Claudia Ramírez · **User Stories:** US-41
+
+Desde **Emissions**, el usuario selecciona **Import CSV**, carga el archivo y revisa la vista previa. Si todas las filas son válidas, importa el archivo completo. Si hay filas con error (por ejemplo, 4 válidas y 1 sin unidad), decide entre importar solo las válidas o corregir el archivo y cargarlo de nuevo.
+
+**Condiciones evaluadas:**
+
+- **Rows with errors?** Se cumple cuando cada fila tiene fuente, periodo, cantidad y unidad válidos.
+- **Import valid rows only?** Se cumple cuando el usuario decide omitir las filas con error.
+
+**Unhappy paths:** archivo con filas inválidas (importa solo las válidas o corrige y vuelve a cargar).
+
+![UF08 - CSV Data Import](./assets/chapter-04/web-applications-ui-ux/user-flows/uf08-csv-data-import.png)
+
+*Figura 4.179. User Flow Diagram UF08 — CSV Data Import.*
+
+#### UF09 — Period Comparison and Indicators
+
+**User Goal:** Como responsable de operaciones, quiero comparar las emisiones entre periodos y revisar los indicadores por alcance, para presentar a gerencia la evolución del desempeño ambiental.
+
+**User Persona:** Carlos Mendoza · **User Stories:** US-16, US-17, US-20, US-26
+
+Desde el Dashboard, el usuario abre la comparación de periodos (por ejemplo, Q1 2026 vs Q2 2026), revisa el resumen ambiental (+5.5 %) y las emisiones por alcance. Desde ahí puede pasar a Reports para generar un reporte comparativo. Cuando se registran datos nuevos, los indicadores se recalculan y el usuario puede volver a comparar.
+
+**Condiciones evaluadas:**
+
+- **Both periods have data?** Se cumple cuando los dos periodos comparados tienen emisiones registradas.
+
+**Unhappy paths:** periodo sin datos (redirige al registro de emisiones).
+
+**Rutas alternativas:** indicadores recalculados con datos nuevos; reporte comparativo en Reports.
+
+![UF09 - Period Comparison and Indicators](./assets/chapter-04/web-applications-ui-ux/user-flows/uf09-period-comparison-and-indicators.png)
+
+*Figura 4.180. User Flow Diagram UF09 — Period Comparison and Indicators.*
+
+#### UF10 — Organization Structure and Users
+
+**User Goal:** Como administradora, quiero gestionar las unidades de negocio, los usuarios y sus permisos por sede, para que cada área registre y consulte solo la información que le corresponde.
+
+**User Persona:** Claudia Ramírez (administradora) · **User Stories:** US-31 a US-33, US-44
+
+Desde Organization, la administradora abre **Business Units**, registra una nueva unidad y, si el nombre es válido, la unidad aparece en el listado. En **Users** invita a un usuario indicando su correo, rol y sede; en **Sites & Permissions** revisa los permisos de cada sede.
+
+**Condiciones evaluadas:**
+
+- **Valid data?** Se cumple cuando el nombre de la unidad no está vacío ni repetido (por ejemplo, Operations, Logistics, Production, Administration).
+- **Valid email and role?** Se cumple cuando el correo tiene formato válido, no está registrado y tiene un rol asignado.
+
+**Unhappy paths:** nombre de unidad vacío o repetido; correo inválido o sin rol (regresan al formulario).
+
+**Rutas alternativas:** invitar usuario con rol; consultar sedes y permisos.
+
+![UF10 - Organization Structure and Users](./assets/chapter-04/web-applications-ui-ux/user-flows/uf10-organization-structure-and-users.png)
+
+*Figura 4.181. User Flow Diagram UF10 — Organization Structure and Users.*
 
 ## 4.5. Web Applications Prototyping
 
-El prototipo interactivo de la Web Application de EcoTrack fue desarrollado en Figma a partir de los Mock-ups definidos en la sección anterior. Se establecieron conexiones entre las diferentes interfaces para representar la navegación y las principales interacciones de los usuarios.
+Los prototipos interactivos de EcoTrack se construyeron en Figma sobre los Mock-ups, para **Desktop Web Browser** y **Mobile Web Browser**. Las interacciones siguen los paths de los User Flow Diagrams, de modo que cada happy path y unhappy path puede recorrerse en el prototipo.
 
-Las interacciones implementadas siguen los flujos funcionales definidos previamente, permitiendo navegar entre los módulos de autenticación, registro y administración de la organización, registro de emisiones, generación de reportes, creación de metas y cálculo de la huella de carbono.
+**Criterios de interacción**
 
-Asimismo, se incorporaron diferentes estados de interacción, incluyendo validaciones, mensajes de error y confirmaciones de operaciones, con el objetivo de representar el comportamiento esperado de la aplicación durante la navegación.
+- **Navegación global persistente:** en desktop, el menú lateral conecta los seis módulos desde cualquier pantalla; en mobile, la barra inferior conecta los cinco módulos principales. Esto reproduce el sistema de navegación definido en la arquitectura de información.
+- **Una acción principal por estado:** el botón principal de cada pantalla (Sign In, Save Entry, Generate Report, Save Goal, Calculate Footprint) lleva al siguiente estado del flujo.
+- **Unhappy paths integrados:** al guardar un formulario vacío se muestra su estado de error, y al seleccionar el campo se avanza al formulario completo. Los errores sin un disparador natural (por ejemplo, credenciales incorrectas o datos de actividad insuficientes) tienen su propio punto de inicio.
+- **Acciones contextuales:** los menús ⋯ abren las acciones de cada registro (editar, eliminar, actualizar estado); los diálogos de confirmación permiten confirmar o cancelar, y **Cancel** regresa al estado anterior.
+- **Transiciones:** *Dissolve* de 200 ms en desktop y *Smart Animate* de 250 ms en mobile, para que el cambio de estado se perciba sin distraer.
+- **Puntos de inicio por flujo:** el prototipo desktop tiene 13 flow starting points (uno por User Flow y los unhappy paths que los requieren) y el prototipo mobile tiene 6.
 
-![Prototype Flow](./assets/chapter-04/web-applications-ui-ux/prototype/prototype-flow.png)
+![Desktop Prototype](./assets/chapter-04/web-applications-ui-ux/prototype/desktop-prototype.png)
 
-*Figura 4.57. Vista general de las conexiones del prototipo interactivo de la Web Application.*
+*Figura 4.182. Conexiones del prototipo interactivo para Desktop Web Browser.*
 
-El prototipo completo puede ser revisado mediante el siguiente enlace:
+![Mobile Prototype](./assets/chapter-04/web-applications-ui-ux/prototype/mobile-prototype.png)
 
-**[Prototipo interactivo de EcoTrack en Figma](https://www.figma.com/design/TB5iPC598xAyU2i39VBbMg/EcoTrack-v1---Web-Application-UX-UI?node-id=2136-2&t=gfEigo8KPkeadZWo-1)**
+*Figura 4.183. Conexiones del prototipo interactivo para Mobile Web Browser.*
 
-El enlace permite revisar la navegación entre las principales interfaces y las interacciones definidas para los diferentes procesos funcionales de la aplicación.
+**Prototipos en Figma:**
+
+- [Prototipo Desktop Web Browser](https://www.figma.com/proto/TB5iPC598xAyU2i39VBbMg/EcoTrack-v1---Web-Application-UX-UI?node-id=2166-5323&p=f&viewport=251%2C75%2C0.05&t=lM3GWZHdfF9Utsh3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2166%3A5323&page-id=2136%3A2)
+- [Prototipo Mobile Web Browser](https://www.figma.com/proto/TB5iPC598xAyU2i39VBbMg/EcoTrack-v1---Web-Application-UX-UI?node-id=2302-73&p=f&viewport=405%2C1074%2C1.12&t=Dc9X9iLgHCwIB7SP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2302%3A16&show-proto-sidebar=1&page-id=2300%3A2)
+
+**Video de navegación del prototipo:** [upc-pre-202620-1asi0729-7753-horizon-prototypenavigation-sprint-1](PEGAR_AQUI_ENLACE_MICROSOFT_STREAM)
+
+El video recorre los flujos del core business: autenticación, registro de emisiones (incluido el error de validación), generación de reportes (incluido el periodo sin datos), cálculo de huella de carbono y comparación de indicadores en desktop, y luego inicio de sesión, registro de emisiones y reportes en mobile.
 
 ## 4.6. Domain-Driven Software Architecture
 
