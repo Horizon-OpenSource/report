@@ -3043,7 +3043,13 @@ Los prototipos interactivos de EcoTrack se construyeron en Figma sobre los Mock-
 - [Prototipo Desktop Web Browser](https://www.figma.com/proto/TB5iPC598xAyU2i39VBbMg/EcoTrack-v1---Web-Application-UX-UI?node-id=2166-5323&p=f&viewport=251%2C75%2C0.05&t=lM3GWZHdfF9Utsh3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2166%3A5323&page-id=2136%3A2)
 - [Prototipo Mobile Web Browser](https://www.figma.com/proto/TB5iPC598xAyU2i39VBbMg/EcoTrack-v1---Web-Application-UX-UI?node-id=2302-73&p=f&viewport=405%2C1074%2C1.12&t=Dc9X9iLgHCwIB7SP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2302%3A16&show-proto-sidebar=1&page-id=2300%3A2)
 
-**Video de navegación del prototipo:** [upc-pre-202620-1asi0729-7753-horizon-prototypenavigation-sprint-1](PEGAR_AQUI_ENLACE_MICROSOFT_STREAM)
+**Video de navegación del prototipo:**
+
+![Prototype Navigation Video](./assets/chapter-04/web-applications-ui-ux/prototype/prototype-video.png)
+
+*Figura 4.184. Captura del video de navegación del prototipo de la Web Application.*
+
+[upc-pre-202620-1asi0729-7753-horizon-prototypenavigation-sprint-2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQB6SMU-w3OHTrLAFR1U8tFHAWK1YURcbl3oQtnIVgughPE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=HSNyaC)
 
 El video recorre los flujos del core business: autenticación, registro de emisiones (incluido el error de validación), generación de reportes (incluido el periodo sin datos), cálculo de huella de carbono y comparación de indicadores en desktop, y luego inicio de sesión, registro de emisiones y reportes en mobile.
 
