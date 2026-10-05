@@ -298,29 +298,16 @@ A continuación, se presentan los perfiles de los integrantes del equipo Horizon
 
 ---
 
-#### Rolando Andre Torres Diaz
-
-<p align="center">
-  <img src="assets/chapter-01/team/rolando-torres.jpg" alt="Rolando Andre Torres Diaz" width="180"/>
-</p>
-
-**Código UPC:** [Código del estudiante]  
-**Carrera:** Ingeniería de Software
-
-Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
-
----
-
 #### Lacuta Lima, Alex Rodrigo
 
 <p align="center">
   <img src="assets/chapter-01/team/alex-lacuta.jpg" alt="Alex Rodrigo Lacuta Lima" width="180"/>
 </p>
 
-**Código UPC:** [Código del estudiante]  
+**Código UPC:** U20241G396  
 **Carrera:** Ingeniería de Software
 
-Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
+Soy estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC), en proceso de formación en el análisis, diseño y desarrollo de soluciones de software. Busco fortalecer mis conocimientos mediante la participación en proyectos académicos, aplicando buenas prácticas de desarrollo, trabajo colaborativo y metodologías orientadas a la construcción de productos digitales.
 
 ---
 
