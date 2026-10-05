@@ -4073,7 +4073,7 @@ La ausencia de endpoints documentados en esta iteración responde al alcance pla
 
 Durante Sprint 1, Horizon realizó el despliegue de la primera versión estable del Landing Page de EcoTrack. El objetivo del proceso fue disponer de una versión pública y accesible del producto que permitiera validar el resultado de la implementación realizada durante la iteración.
 
-El Landing Page se encuentra alojado en el repositorio oficial de Horizon:
+La Landing Page se encuentra alojado en el repositorio oficial de Horizon:
 
 **Repository:**  
 https://github.com/Horizon-OpenSource/landing-page
@@ -4341,4 +4341,31 @@ Instituto Nacional de Estadística e Informática. (2025). *Perú: Estructura Em
 
 # Anexos
 
-<!-- Completar -->
+## Anexo A. Videos de Exposiciones
+
+En el presente anexo se registran de manera progresiva los videos de exposición correspondientes a las diferentes entregas del proyecto EcoTrack. Cada video presenta los principales artefactos desarrollados, las mejoras realizadas y los productos de software implementados por el equipo Horizon.
+
+| Entrega | Título del video | Enlace |
+|---------|------------------|--------|
+| AV1 | EcoTrack - Exposición AV1 | [Video de Exposición AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDkJugSWGACS7no1S8vH57WAX2XN8u_QVTTxHqsGHMz4I8?e=gDwAez&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| TB1 | EcoTrack - Exposición TB1 | [Video de Exposición TB1](COLOCAR_URL_REAL_TB1) |
+
+### AV1
+
+**Nombre del archivo:**  
+`upc-pre-202620-1asi0729-7753-horizon-expo-av1.mp4`
+
+La exposición correspondiente al AV1 presenta la problemática abordada por EcoTrack, la propuesta de solución, los principales artefactos de análisis y diseño desarrollados durante la primera etapa del proyecto y la primera versión implementada y desplegada del Landing Page.
+
+**Microsoft Stream / Clipchamp:**  
+[Video de Exposición AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDkJugSWGACS7no1S8vH57WAX2XN8u_QVTTxHqsGHMz4I8?e=gDwAez&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+### TB1
+
+**Nombre del archivo:**  
+`upc-pre-202620-1asi0729-7753-horizon-expo-tb1.mp4`
+
+La exposición correspondiente al TB1 presenta las correcciones realizadas a partir del feedback recibido en el AV1, la evolución de los artefactos del Project Report y el avance de implementación correspondiente al Sprint 2, incluyendo la primera versión de la Frontend Web Application de EcoTrack.
+
+**Microsoft Stream / Clipchamp:**  
+[Video de Exposición TB1](COLOCAR_URL_REAL_TB1)
