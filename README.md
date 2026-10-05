@@ -61,7 +61,7 @@ Septiembre, 2026
 
 | URL del repositorio del Landing Page | URL del repositorio del Frontend |
 |---|---|
-| [https://github.com/Horizon-OpenSource/landing-page](https://github.com/Horizon-OpenSource/landing-page) | Pendiente de creación |
+| [https://github.com/Horizon-OpenSource/landing-page](https://github.com/Horizon-OpenSource/landing-page) | [https://github.com/Horizon-OpenSource/frontend-web-application](https://github.com/Horizon-OpenSource/frontend-web-application) |
 
 | URL del repositorio del Backend |
 |---|
@@ -3665,7 +3665,7 @@ El código fuente correspondiente se encuentra alojado en el repositorio oficial
 **Landing Page Repository:**  
 https://github.com/Horizon-OpenSource/landing-page
 
-Las tecnologías Angular, TypeScript, Angular Material, Java, Spring Boot, Spring Data JPA y OpenAPI/Swagger forman parte del stack definido para EcoTrack y serán incorporadas progresivamente cuando el alcance de los siguientes Sprints incluya la Frontend Web Application y los RESTful Web Services.
+Las tecnologías Angular, TypeScript y Angular Material forman parte de la implementación de la Frontend Web Application de EcoTrack durante el Sprint 2. Por su parte, Java, Spring Boot, Spring Data JPA y OpenAPI/Swagger forman parte del stack definido para los RESTful Web Services, cuya implementación será incorporada progresivamente en los siguientes Sprints.
 
 ### 5.1.2. Source Code Management
 
@@ -3679,9 +3679,7 @@ Actualmente, Horizon mantiene los siguientes repositorios:
 |---|---|
 | Project Report | https://github.com/Horizon-OpenSource/report |
 | Landing Page | https://github.com/Horizon-OpenSource/landing-page |
-| Frontend Web Application | Pendiente de implementación en los siguientes Sprints |
-| Web Services | Pendiente de implementación en los siguientes Sprints |
-
+| Frontend Web Application | https://github.com/Horizon-OpenSource/frontend-web-application |
 La organización de GitHub utilizada por el equipo se encuentra disponible en:
 
 https://github.com/orgs/Horizon-OpenSource/repositories
