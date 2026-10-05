@@ -4179,37 +4179,383 @@ feature/i18n-accessibility
 
 # 5.2.2. Sprint 2
 
+Durante Sprint 2, Horizon orientó el trabajo hacia la evolución de EcoTrack desde la primera versión pública del Landing Page hacia una primera versión funcional de la Frontend Web Application.
+
+El alcance de esta iteración se concentra en cuatro áreas funcionales principales del producto: Organization Management, Emissions Management, Carbon Footprint Calculation y Analytics & Reports. Estas áreas permiten avanzar progresivamente sobre los principales procesos relacionados con la organización de información empresarial, registro de emisiones, cálculo de huella de carbono y análisis de resultados ambientales.
+
+Además del desarrollo de la Frontend Web Application, Sprint 2 considera la evolución del Landing Page presentada durante Sprint 1, así como actividades transversales de integración, responsividad, internacionalización, accesibilidad y deployment.
+
+La implementación de la Frontend Web Application se realiza utilizando Angular, TypeScript y Angular Material, manteniendo consistencia con los artefactos de UX/UI, User Stories, Product Backlog y arquitectura definidos previamente.
+
+---
+
 ## 5.2.2.1. Sprint Planning 2
 
-<!-- Completar -->
+El Sprint Planning 2 se realizó luego de la finalización de la primera iteración del proyecto. Durante la reunión, los integrantes participantes revisaron los resultados obtenidos en Sprint 1 y definieron el alcance de desarrollo correspondiente a Sprint 2.
+
+Sprint 1 permitió implementar y desplegar la primera versión estable del Landing Page de EcoTrack, proporcionando un primer punto de contacto público para presentar la propuesta de valor, beneficios, principales funcionalidades, planes y mecanismos de contacto del producto.
+
+Para Sprint 2, el equipo decidió concentrar el esfuerzo principalmente en el desarrollo de la primera versión de la Frontend Web Application de EcoTrack y en la evolución del Landing Page. La implementación de la aplicación fue distribuida considerando cuatro áreas funcionales: Organization Management, Emissions Management, Carbon Footprint Calculation y Analytics & Reports.
+
+La planificación también considera actividades de integración entre los componentes desarrollados, validación de navegación, responsividad y preparación de los productos para su despliegue.
+
+| Sprint Planning Background | Details |
+|---|---|
+| **Sprint #** | Sprint 2 |
+| **Date** | 2026-09-27 |
+| **Time** | 08:30 PM |
+| **Location** | Discord |
+| **Prepared By** | Tello Murga, Javier Oswaldo |
+| **Attendees to Planning Meeting** | Lacuta Lima, Alex Rodrigo; Espinoza Flores, Aaron André; Payesa Torres, Harrison Hubert; Tello Murga, Javier Oswaldo |
+| **Sprint 1 Review Summary** | Durante Sprint 1 se implementó y desplegó la primera versión estable del Landing Page de EcoTrack. Esta versión permitió presentar públicamente la propuesta de valor del producto, sus segmentos objetivo, principales capacidades, planes y mecanismos de contacto. También se establecieron los repositorios, GitFlow Workflow y prácticas iniciales de colaboración utilizadas por Horizon. |
+| **Sprint 1 Retrospective Summary** | Luego de Sprint 1 se identificó la necesidad de mantener una mayor trazabilidad entre Product Backlog, Sprint Backlog, UX/UI e implementación. Asimismo, se decidió distribuir Sprint 2 por áreas funcionales para facilitar el desarrollo paralelo de la Frontend Web Application y posteriormente realizar una integración conjunta de los avances. |
+
+### Sprint Goal & User Stories
+
+El objetivo de Sprint 2 se orienta a implementar y desplegar la primera versión funcional de la Frontend Web Application de EcoTrack, complementada con una nueva versión del Landing Page.
+
+**Sprint 2 Goal**
+
+> Our focus is on delivering the first functional version of the EcoTrack Frontend Web Application and evolving the Landing Page so that users can move from discovering the product to interacting with its main environmental management capabilities.
+>
+> We believe this iteration delivers an initial integrated experience for organizations that need to manage organizational information, register emissions data, calculate carbon footprint results and analyze environmental information.
+>
+> This will be confirmed when users can access the deployed Landing Page and Frontend Web Application and navigate through the main functional flows selected for Sprint 2 using responsive and consistent web interfaces.
+
+Las User Stories seleccionadas para Sprint 2 corresponden a los cuatro aspectos funcionales priorizados para esta iteración:
+
+| User Story Id | User Story Title | Story Points | Main Aspect |
+|---|---|---:|---|
+| US-06 | Registrar una empresa | 5 | Organization Management |
+| US-09 | Consultar perfil de la empresa | 2 | Organization Management |
+| US-10 | Actualizar datos de la empresa | 3 | Organization Management |
+| US-32 | Gestionar sedes | 5 | Organization Management |
+| US-44 | Gestionar unidades de negocio | 5 | Organization Management |
+| US-11 | Registrar una fuente de emisión | 5 | Emissions Management |
+| US-12 | Clasificar una fuente de emisión por alcance | 3 | Emissions Management |
+| US-13 | Consultar registros de emisiones | 3 | Emissions Management |
+| US-14 | Editar un registro de emisión | 3 | Emissions Management |
+| US-15 | Eliminar un registro de emisión | 2 | Emissions Management |
+| US-18 | Buscar registros de emisión | 2 | Emissions Management |
+| US-19 | Filtrar registros de emisiones por alcance | 3 | Emissions Management |
+| US-45 | Registrar datos de actividad | 5 | Emissions Management |
+| US-34 | Calcular huella de carbono | 8 | Carbon Footprint Calculation |
+| US-35 | Consultar resultados por alcance | 3 | Carbon Footprint Calculation |
+| US-36 | Consultar resultados por periodo | 3 | Carbon Footprint Calculation |
+| US-37 | Consultar historial de cálculos | 3 | Carbon Footprint Calculation |
+| US-46 | Seleccionar factor de emisión | 3 | Carbon Footprint Calculation |
+| US-16 | Visualizar el total de emisiones calculadas | 3 | Analytics & Reports |
+| US-17 | Visualizar emisiones calculadas por alcance | 5 | Analytics & Reports |
+| US-20 | Comparar emisiones entre periodos | 5 | Analytics & Reports |
+| US-26 | Consultar resumen ambiental | 3 | Analytics & Reports |
+| US-27 | Generar reporte ambiental consolidado | 5 | Analytics & Reports |
+| US-28 | Descargar reporte ambiental | 3 | Analytics & Reports |
+| US-29 | Generar reporte por periodo | 5 | Analytics & Reports |
+| US-30 | Consultar reportes anteriores | 3 | Analytics & Reports |
+| **Total** |  | **98** | |
+
+| Sprint Metric | Value |
+|---|---:|
+| **Sprint 2 Velocity** | 98 Story Points |
+| **Sum of Story Points** | 98 Story Points |
+
+El alcance seleccionado permite avanzar sobre los principales procesos operativos de EcoTrack sin intentar implementar la totalidad del Product Backlog dentro de una sola iteración. Las funcionalidades que no forman parte de Sprint 2 permanecerán disponibles para su planificación en los siguientes Sprints.
+
+---
 
 ## 5.2.2.2. Aspect Leaders and Collaborators
 
-<!-- Completar -->
+Durante Sprint 2, Horizon organizó el trabajo mediante una Leadership-and-Collaboration Matrix (LACX). Esta matriz permite establecer el liderazgo principal de cada aspecto funcional considerado dentro del alcance de la iteración y la participación de los demás integrantes como colaboradores.
+
+Los principales aspectos considerados durante Sprint 2 son:
+
+- Organization Management.
+- Emissions Management.
+- Carbon Footprint Calculation.
+- Analytics & Reports.
+- Landing Page and Frontend Integration.
+
+La siguiente matriz resume la distribución utilizada durante Sprint 2:
+
+| Team Member | GitHub Username | Organization Management | Emissions Management | Carbon Footprint Calculation | Analytics & Reports | Landing Page and Frontend Integration |
+|---|---|---|---|---|---|---|
+| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | C | C | L | C | C |
+| Espinoza Flores, Aaron André | `pisure` | C | L | C | C | C |
+| Payesa Torres, Harrison Hubert | `Harrison1024` | C | C | C | L | C |
+| Tello Murga, Javier Oswaldo | `JavierTello20` | L | C | C | C | L |
+
+**Legend:**
+
+- `L`: Leader.
+- `C`: Collaborator.
+
+Javier Tello lidera Organization Management y las actividades generales de integración entre el Landing Page y la Frontend Web Application. Aaron Espinoza lidera Emissions Management, Alex Lacuta lidera Carbon Footprint Calculation y Harrison Payesa lidera Analytics & Reports.
+
+Aunque cada integrante posee un aspecto principal de responsabilidad, los miembros participan también como colaboradores en actividades de integración, revisión y validación necesarias para mantener consistencia entre los diferentes módulos de EcoTrack.
+
+La coordinación del Sprint se realiza principalmente mediante Discord, WhatsApp y las herramientas de seguimiento y colaboración utilizadas por el equipo.
+
+---
 
 ## 5.2.2.3. Sprint Backlog 2
 
-<!-- Completar -->
+El Sprint Backlog 2 reúne las User Stories y Work Items seleccionados para alcanzar el objetivo de la segunda iteración de EcoTrack.
+
+El trabajo se concentra en desarrollar la primera versión funcional de la Frontend Web Application, cubriendo Organization Management, Emissions Management, Carbon Footprint Calculation y Analytics & Reports. También se consideran tareas transversales relacionadas con la evolución del Landing Page, integración de la aplicación y deployment.
+
+Las 26 User Stories seleccionadas representan un total de **98 Story Points**.
+
+Para organizar y realizar seguimiento a las actividades del Sprint, Horizon utiliza el Board público de Trello:
+
+**Sprint Board:**  
+https://trello.com/b/Hp12BlSW/horizon-ecotrack
+
+La siguiente captura presenta el estado del Board utilizado para Sprint 2:
+
+![Sprint 2 Backlog Board](assets/chapter-05/sprint-02-backlog-board.png)
+
+Las User Stories fueron descompuestas en Work Items de acuerdo con las principales actividades necesarias para desarrollar cada flujo funcional.
+
+| Sprint # | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---:|---|---|
+| Sprint 2 | US-06 | Registrar una empresa | T-13 | Implement organization registration | Implementar la vista y formulario requerido para registrar la información principal de una organización en EcoTrack. | 6 | JavierTello20 | To-do |
+| Sprint 2 | US-09 | Consultar perfil de la empresa | T-14 | Implement organization profile | Implementar la vista que permita consultar la información registrada de la organización. | 3 | JavierTello20 | To-do |
+| Sprint 2 | US-10 | Actualizar datos de la empresa | T-15 | Implement organization update | Implementar el flujo de edición y actualización de los datos principales de la organización. | 4 | JavierTello20 | To-do |
+| Sprint 2 | US-32 | Gestionar sedes | T-16 | Implement site management | Implementar las vistas necesarias para registrar y consultar las sedes asociadas a la organización. | 6 | JavierTello20 | To-do |
+| Sprint 2 | US-44 | Gestionar unidades de negocio | T-17 | Implement business unit management | Implementar las vistas para registrar y consultar unidades de negocio asociadas a una organización. | 6 | JavierTello20 | To-do |
+| Sprint 2 | US-11 | Registrar una fuente de emisión | T-18 | Implement emission source registration | Implementar el formulario y flujo necesario para registrar una nueva fuente de emisión. | 6 | pisure | To-do |
+| Sprint 2 | US-12 | Clasificar una fuente de emisión por alcance | T-19 | Implement emission scope classification | Incorporar la clasificación de las fuentes registradas según Scope 1, Scope 2 o Scope 3. | 4 | pisure | To-do |
+| Sprint 2 | US-13 | Consultar registros de emisiones | T-20 | Implement emission records view | Implementar la vista de consulta de los registros de emisiones asociados a la organización. | 4 | pisure | To-do |
+| Sprint 2 | US-14 | Editar un registro de emisión | T-21 | Implement emission editing | Incorporar el flujo para editar información existente de los registros de emisiones. | 4 | pisure | To-do |
+| Sprint 2 | US-15 | Eliminar un registro de emisión | T-22 | Implement emission deletion | Incorporar la interacción de eliminación y confirmación de un registro de emisión. | 3 | pisure | To-do |
+| Sprint 2 | US-18 | Buscar registros de emisión | T-23 | Implement emissions search | Incorporar búsqueda de registros de emisión dentro del listado correspondiente. | 3 | pisure | To-do |
+| Sprint 2 | US-19 | Filtrar registros de emisiones por alcance | T-24 | Implement scope filters | Implementar filtros que permitan consultar registros de acuerdo con Scope 1, Scope 2 o Scope 3. | 4 | pisure | To-do |
+| Sprint 2 | US-45 | Registrar datos de actividad | T-25 | Implement activity data registration | Implementar el formulario de registro de datos de actividad requeridos para los procesos de cálculo. | 6 | pisure | To-do |
+| Sprint 2 | US-34 | Calcular huella de carbono | T-26 | Implement carbon footprint calculation flow | Implementar la experiencia frontend correspondiente al proceso de cálculo de huella de carbono. | 10 | alexrodrigoll | To-do |
+| Sprint 2 | US-35 | Consultar resultados por alcance | T-27 | Implement results by scope | Implementar la visualización de resultados de huella de carbono clasificados por alcance. | 4 | alexrodrigoll | To-do |
+| Sprint 2 | US-36 | Consultar resultados por periodo | T-28 | Implement results by period | Implementar la visualización de resultados correspondientes a un periodo seleccionado. | 4 | alexrodrigoll | To-do |
+| Sprint 2 | US-37 | Consultar historial de cálculos | T-29 | Implement calculation history | Implementar una vista para consultar cálculos realizados en periodos anteriores. | 4 | alexrodrigoll | To-do |
+| Sprint 2 | US-46 | Seleccionar factor de emisión | T-30 | Implement emission factor selection | Implementar la interacción para seleccionar factores de emisión dentro del flujo de cálculo. | 4 | alexrodrigoll | To-do |
+| Sprint 2 | US-16 | Visualizar el total de emisiones calculadas | T-31 | Implement total emissions indicator | Implementar el indicador principal con el total de emisiones calculadas para un periodo. | 4 | Harrison1024 | To-do |
+| Sprint 2 | US-17 | Visualizar emisiones calculadas por alcance | T-32 | Implement emissions by scope visualization | Implementar componentes visuales para representar emisiones correspondientes a cada alcance. | 6 | Harrison1024 | To-do |
+| Sprint 2 | US-20 | Comparar emisiones entre periodos | T-33 | Implement period comparison | Implementar una visualización que permita comparar resultados ambientales de diferentes periodos. | 6 | Harrison1024 | To-do |
+| Sprint 2 | US-26 | Consultar resumen ambiental | T-34 | Implement environmental dashboard | Implementar el resumen de indicadores ambientales principales de la organización. | 4 | Harrison1024 | To-do |
+| Sprint 2 | US-27 | Generar reporte ambiental consolidado | T-35 | Implement consolidated report flow | Implementar la experiencia asociada con la generación de un reporte ambiental consolidado. | 6 | Harrison1024 | To-do |
+| Sprint 2 | US-28 | Descargar reporte ambiental | T-36 | Implement report download | Implementar la interacción necesaria para descargar reportes generados desde EcoTrack. | 4 | Harrison1024 | To-do |
+| Sprint 2 | US-29 | Generar reporte por periodo | T-37 | Implement period report flow | Implementar la generación de reportes de acuerdo con un periodo seleccionado. | 6 | Harrison1024 | To-do |
+| Sprint 2 | US-30 | Consultar reportes anteriores | T-38 | Implement report history | Implementar una vista para consultar reportes ambientales generados anteriormente. | 4 | Harrison1024 | To-do |
+| Sprint 2 | — | Additional Sprint Task | T-39 | Refine Landing Page V2 | Realizar mejoras de contenido, navegación, responsividad y consistencia visual sobre la nueva versión del Landing Page. | 5 | JavierTello20 | To-do |
+| Sprint 2 | — | Additional Sprint Task | T-40 | Integrate and deploy Frontend Web Application | Integrar los módulos desarrollados, revisar navegación general y preparar la primera versión desplegada de la Frontend Web Application. | 6 | JavierTello20 | To-do |
+
+Los estados presentados corresponden a la planificación inicial del Sprint y deberán actualizarse conforme los Work Items avancen a través de las etapas `Sprint 2 Backlog`, `In Progress`, `Review / Testing` y `Done` del Board de Trello.
+
+Las funcionalidades que no forman parte del alcance de Sprint 2 permanecen en el Product Backlog y podrán ser consideradas durante las siguientes iteraciones del proyecto.
+
+---
 
 ## 5.2.2.4. Development Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 2, Horizon trabaja en la implementación de una nueva versión del Landing Page y la primera versión de la Frontend Web Application de EcoTrack.
+
+El desarrollo de la Frontend Web Application se realiza utilizando Angular, TypeScript y Angular Material, manteniendo coherencia con los Wireframes, Mock-ups, Wireflows y User Flow Diagrams definidos durante Product Design.
+
+La implementación se organiza mediante GitFlow Workflow. Cada grupo de cambios funcionales se desarrolla utilizando ramas `feature/*`, posteriormente integradas en `develop` y finalmente consolidadas en una versión estable para su publicación.
+
+Asimismo, los mensajes de commit siguen Conventional Commits con la finalidad de mantener trazabilidad y facilitar la identificación de los cambios realizados.
+
+Los repositorios utilizados durante Sprint 2 son:
+
+**Landing Page Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+**Frontend Web Application Repository:**  
+https://github.com/Horizon-OpenSource/frontend-web-application
+
+Los principales commits relacionados con la implementación de Sprint 2 se registrarán en la siguiente tabla:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|
+| `Horizon-OpenSource/landing-page` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
+| `Horizon-OpenSource/landing-page` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
+| `Horizon-OpenSource/frontend-web-application` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
+| `Horizon-OpenSource/frontend-web-application` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
+| `Horizon-OpenSource/frontend-web-application` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
+
+Al cierre de Sprint 2, las filas anteriores deberán reemplazarse o ampliarse utilizando exclusivamente commits reales generados durante la implementación.
+
+La evidencia permitirá mantener trazabilidad entre los User Stories y Work Items registrados en el Sprint Backlog y las modificaciones realizadas dentro de los repositorios de código fuente.
+
+---
 
 ## 5.2.2.5. Execution Evidence for Sprint Review
 
-<!-- Completar -->
+La evidencia de ejecución de Sprint 2 se organiza considerando los dos productos que forman parte del alcance de TB1: la nueva versión del Landing Page y la primera versión de la Frontend Web Application de EcoTrack.
+
+Las principales vistas implementadas deberán evidenciar los cuatro aspectos funcionales desarrollados durante la iteración y los principales flujos de navegación disponibles.
+
+### Landing Page V2
+
+La nueva versión del Landing Page continúa funcionando como el principal punto de entrada público de EcoTrack. Durante Sprint 2 se realizan mejoras de contenido, consistencia visual, navegación y experiencia responsive.
+
+**Public URL:**  
+https://horizon-opensource.github.io/landing-page/
+
+![Sprint 2 Landing Page V2](assets/chapter-05/sprint-02-landing-page.png)
+
+### Organization Management
+
+Organization Management comprende las vistas relacionadas con el registro de la organización, consulta y actualización de su información, gestión de sedes y unidades de negocio.
+
+![Sprint 2 Organization Management](assets/chapter-05/sprint-02-organization-management.png)
+
+### Emissions Management
+
+Emissions Management comprende los flujos relacionados con el registro, clasificación, consulta, modificación, búsqueda y filtrado de información de emisiones y datos de actividad.
+
+![Sprint 2 Emissions Management](assets/chapter-05/sprint-02-emissions-management.png)
+
+### Carbon Footprint Calculation
+
+Carbon Footprint Calculation comprende los flujos relacionados con la selección de factores de emisión, cálculo de huella de carbono y consulta de los resultados obtenidos por alcance y periodo.
+
+![Sprint 2 Carbon Footprint Calculation](assets/chapter-05/sprint-02-carbon-footprint.png)
+
+### Analytics & Reports
+
+Analytics & Reports comprende la visualización de indicadores ambientales, emisiones por alcance, comparaciones entre periodos, resumen ambiental y generación y consulta de reportes.
+
+![Sprint 2 Analytics and Reports](assets/chapter-05/sprint-02-analytics-reports.png)
+
+### Sprint 2 Product Navigation Video
+
+Como evidencia complementaria de ejecución, Horizon registra un Product Navigation Video correspondiente a Sprint 2. Este video presenta la navegación lograda en los productos implementados y prioriza los principales User Flows relacionados con el core business de EcoTrack.
+
+El video muestra la nueva versión del Landing Page y los principales flujos disponibles en la Frontend Web Application.
+
+**Video URL:**  
+[COMPLETAR URL DEL PRODUCT NAVIGATION VIDEO]
+
+La evidencia de ejecución permitirá contrastar el Sprint Goal con las funcionalidades efectivamente implementadas durante Sprint 2.
+
+---
 
 ## 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 2, el alcance de implementación de Horizon se concentra en la evolución del Landing Page y en el desarrollo de la primera versión de la Frontend Web Application.
+
+La primera versión implementada y desplegada de los RESTful Web Services no forma parte del alcance de TB1. Por esta razón, durante Sprint 2 no se reportan endpoints implementados o desplegados ni documentación OpenAPI / Swagger correspondiente al backend.
+
+Los Web Services de EcoTrack forman parte del alcance técnico general de la solución y serán implementados progresivamente utilizando Java, Spring Boot y Spring Data JPA.
+
+Una vez iniciada su implementación, OpenAPI Specification y Swagger serán utilizados para documentar los endpoints y operaciones disponibles.
+
+Para Sprint 2, el estado de documentación de servicios es el siguiente:
+
+| Service Documentation Item | Sprint 2 Status |
+|---|---|
+| RESTful Web Services implementation | Planned for subsequent Sprint |
+| Spring Boot implementation | Planned for subsequent Sprint |
+| OpenAPI Specification | Not applicable during Sprint 2 |
+| Swagger Documentation | Not applicable during Sprint 2 |
+| Documented Endpoints | 0 |
+| Web Services Deployment | Not included during Sprint 2 |
+
+Las definiciones del dominio, User Stories, arquitectura y flujos funcionales establecidos durante las etapas anteriores servirán como base para la implementación de los RESTful Web Services durante la siguiente iteración.
+
+---
 
 ## 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 2, Horizon considera el despliegue de una nueva versión del EcoTrack Landing Page y de la primera versión de la Frontend Web Application.
+
+### Landing Page V2 Deployment
+
+La nueva versión del Landing Page continúa siendo publicada desde el repositorio oficial de Horizon mediante GitHub Pages.
+
+**Repository:**  
+https://github.com/Horizon-OpenSource/landing-page
+
+**Public URL:**  
+https://horizon-opensource.github.io/landing-page/
+
+La información correspondiente al deployment es la siguiente:
+
+| Deployment Item | Sprint 2 Configuration |
+|---|---|
+| Product | EcoTrack Landing Page |
+| Repository | https://github.com/Horizon-OpenSource/landing-page |
+| Deployment Platform | GitHub Pages |
+| Source Branch | `main` |
+| Stable Release | `v1.1.0` |
+| Public URL | https://horizon-opensource.github.io/landing-page/ |
+| Status | Deployed |
+
+La siguiente evidencia muestra la nueva versión publicada del Landing Page:
+
+![Sprint 2 Landing Page Deployment](assets/chapter-05/sprint-02-landing-deployment.png)
+
+### Frontend Web Application Deployment
+
+La primera versión estable de la Frontend Web Application será publicada desde el repositorio oficial de Horizon.
+
+**Repository:**  
+https://github.com/Horizon-OpenSource/frontend-web-application
+
+La información correspondiente al deployment será completada una vez concluida la publicación de la primera versión estable:
+
+| Deployment Item | Sprint 2 Configuration |
+|---|---|
+| Product | EcoTrack Frontend Web Application |
+| Repository | https://github.com/Horizon-OpenSource/frontend-web-application |
+| Framework | Angular |
+| Source Branch | `main` |
+| Stable Release | `v1.0.0` |
+| Deployment Platform | [COMPLETAR] |
+| Public URL | [COMPLETAR] |
+| Status | [COMPLETAR] |
+
+La siguiente evidencia mostrará la aplicación publicada en su entorno de operación:
+
+![Sprint 2 Frontend Web Application Deployment](assets/chapter-05/sprint-02-frontend-deployment.png)
+
+Antes del cierre de TB1 se verificará que ambas URLs públicas se encuentren accesibles y que los principales flujos desarrollados durante Sprint 2 puedan ser demostrados desde sus respectivas versiones desplegadas.
+
+---
 
 ## 5.2.2.8. Team Collaboration Insights during Sprint
 
-<!-- Completar -->
+Durante Sprint 2, los integrantes participantes organizaron el trabajo de implementación utilizando Trello, GitHub y GitFlow.
+
+La distribución del desarrollo se realizó de acuerdo con los cuatro aspectos funcionales definidos durante Sprint Planning. Cada integrante asumió el liderazgo de un aspecto principal y colaboró en actividades de integración y revisión de la Frontend Web Application.
+
+Las principales responsabilidades consideradas durante Sprint 2 son las siguientes:
+
+| Team Member | GitHub Username | Main Contribution during Sprint 2 |
+|---|---|---|
+| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | Liderazgo e implementación del aspecto Carbon Footprint Calculation, incluyendo selección de factores de emisión, flujo de cálculo y consulta de resultados por alcance y periodo. |
+| Espinoza Flores, Aaron André | `pisure` | Liderazgo e implementación del aspecto Emissions Management, incluyendo registro, clasificación, consulta, edición, eliminación, búsqueda y filtrado de emisiones y datos de actividad. |
+| Payesa Torres, Harrison Hubert | `Harrison1024` | Liderazgo e implementación del aspecto Analytics & Reports, incluyendo indicadores ambientales, visualización por alcance, comparación de periodos y funcionalidades relacionadas con reportes. |
+| Tello Murga, Javier Oswaldo | `JavierTello20` | Liderazgo e implementación de Organization Management, evolución del Landing Page, integración general de la Frontend Web Application, documentación del Sprint y preparación de deployment. |
+
+### Landing Page Collaboration Evidence
+
+La siguiente evidencia permitirá visualizar las contribuciones realizadas en el repositorio del Landing Page durante Sprint 2:
+
+![Sprint 2 Landing Page Contributors](assets/chapter-05/sprint-02-landing-contributors.png)
+
+![Sprint 2 Landing Page Commits](assets/chapter-05/sprint-02-landing-commits.png)
+
+### Frontend Web Application Collaboration Evidence
+
+La siguiente evidencia permitirá visualizar las contribuciones realizadas en el repositorio de la Frontend Web Application durante Sprint 2:
+
+![Sprint 2 Frontend Contributors](assets/chapter-05/sprint-02-frontend-contributors.png)
+
+![Sprint 2 Frontend Commits](assets/chapter-05/sprint-02-frontend-commits.png)
+
+Al cierre del Sprint, las evidencias de GitHub deberán guardar coherencia con las responsabilidades descritas, los Work Items registrados en Trello y los commits realizados por cada integrante.
+
+De manera paralela al desarrollo de los productos, Javier Tello realizó la actualización y corrección del Project Report correspondiente al avance de TB1, manteniendo la documentación alineada con los cambios realizados sobre Product Backlog, alcance funcional y Sprint 2.
 
 ---
 
