@@ -44,11 +44,19 @@ Septiembre, 2026
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción de modificación |
-|---|---|---|---|
-| 0.1 | 10/09/2026 | Tello Murga, Javier Oswaldo | Se creó la estructura base del informe. |
-| 0.2 | 01/10/2026 | Espinoza Flores, Aaron Andre | Se corrigieron timings, trazabilidad de User Personas, Big Picture Event Storming e Impact Mapping con objetivos SMART. |
-
+| Versión | Fecha      | Autor                          | Descripción de modificación                                                                                                                                                                                                                                                        |
+|---------|------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0.1     | 10/09/2026 | Tello Murga, Javier Oswaldo    | Se creó la estructura base del Project Report y se inició la integración de la documentación del proyecto EcoTrack.                                                                                                                                                |
+| 0.2     | 14/09/2026 | Espinoza Flores, Aaron André   | Se desarrolló el Capítulo II: Requirements Elicitation & Analysis, incluyendo Competitive Analysis, entrevistas, análisis de resultados, User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language. |
+| 0.3     | 16/09/2026 | Torres Diaz, Rolando Andre     | Se desarrollaron artefactos del Capítulo III: Requirements Specification, incluyendo User Stories, Epics, Product Backlog e Impact Mapping, además de apoyar en la organización de referencias bibliográficas.                                                     |
+| 0.4     | 18/09/2026 | Payesa Torres, Harrison Hubert | Se desarrollaron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incluyendo Wireframes, Mock-ups, User Flow Diagrams y prototipos de la Web Application.                                                                       |
+| 0.5     | 19/09/2026 | Lacuta Lima, Alex Rodrigo      | Se desarrollaron las secciones desde 4.6 Domain-Driven Software Architecture hasta el cierre del Capítulo IV, incluyendo Design-Level Event Storming, Software Architecture Context, Container and Components Diagrams, Class Diagrams y Database Design.          |
+| 0.6     | 20/09/2026 | Tello Murga, Javier Oswaldo    | Se integraron y revisaron los artefactos del AV1, incluyendo el Capítulo I, Style Guidelines, Information Architecture, Student Outcome y la documentación correspondiente al Sprint 1.                                                                            |
+| 0.7     | 01/10/2026 | Espinoza Flores, Aaron André   | Se corrigieron timings de entrevistas, trazabilidad de User Personas, Big Picture Event Storming e Impact Mapping con objetivos SMART de acuerdo con el feedback del AV1.                                                                                          |
+| 0.8     | 02/10/2026 | Payesa Torres, Harrison Hubert | Se corrigieron y ampliaron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incorporando wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1.                                                      |
+| 0.9     | 03/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completó y corrigió el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack.                                                                                                                                                             |
+| 0.10    | 04/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completaron y actualizaron los Class Diagrams de Frontend y Backend y el Database Design correspondientes al Capítulo IV.                                                                                                                                       |
+| 0.11    | 05/10/2026 | Tello Murga, Javier Oswaldo    | Se corrigió el Capítulo I, se actualizaron User Stories y Epics, se reconstruyó y priorizó el Product Backlog, se actualizó el enlace público de Trello y se corrigieron referencias del repositorio Frontend y perfiles del equipo.                               |
 ---
 
 # Project Report Collaboration Insights
@@ -61,7 +69,7 @@ Septiembre, 2026
 
 | URL del repositorio del Landing Page | URL del repositorio del Frontend |
 |---|---|
-| [https://github.com/Horizon-OpenSource/landing-page](https://github.com/Horizon-OpenSource/landing-page) | Pendiente de creación |
+| [https://github.com/Horizon-OpenSource/landing-page](https://github.com/Horizon-OpenSource/landing-page) | [https://github.com/Horizon-OpenSource/frontend-web-application](https://github.com/Horizon-OpenSource/frontend-web-application) |
 
 | URL del repositorio del Backend |
 |---|
@@ -71,41 +79,47 @@ Septiembre, 2026
 
 ## AV1
 
-Durante el desarrollo del AV1, los integrantes del equipo realizaron sus aportes al Project Report mediante GitHub, utilizando ramas `feature/*`, GitFlow y Conventional Commits para mantener un flujo de trabajo organizado y colaborativo.
+Durante el desarrollo del AV1, el equipo Horizon utilizó GitHub como plataforma de colaboración y control de versiones. Las funcionalidades y artefactos del Project Report fueron desarrollados mediante ramas `feature/*` e integrados mediante Pull Requests, siguiendo el flujo de trabajo definido por el equipo.
 
-### Collaboration Insights
+### Project Report Collaboration Insights
 
-![Project Report Collaboration Insights - AV1](img/av1-report-collaboration-insights.png)
+#### Commit History
+
+La siguiente evidencia muestra los commits realizados por los integrantes del equipo durante la elaboración del Project Report correspondiente al AV1.
+
+![Project Report Commits - AV1](assets/collaboration-insights/av1-report-commits.png)
+
+#### Pull Requests
+
+La siguiente evidencia muestra los Pull Requests utilizados para integrar las contribuciones realizadas en las diferentes secciones del Project Report.
+
+![Project Report Pull Requests - AV1](assets/collaboration-insights/av1-report-pull-requests.png)
 
 ---
 
 ## TB1
 
-Durante el desarrollo del TB1, el equipo continuará trabajando colaborativamente sobre el Project Report, incorporando las mejoras y nuevos artefactos correspondientes a la entrega.
+Durante el desarrollo del TB1, el equipo Horizon realizó correcciones y mejoras al Project Report a partir del feedback recibido en el AV1. Para organizar la colaboración se continuó utilizando GitHub mediante ramas `feature/*`, commits individuales y Pull Requests hacia la rama `develop`.
 
-### Collaboration Insights
+### Project Report Collaboration Insights
 
-![Project Report Collaboration Insights - TB1](img/tb1-report-collaboration-insights.png)
+#### GitHub Collaboration Network
 
----
+La siguiente evidencia muestra el flujo de trabajo colaborativo utilizado durante la actualización del Project Report para el TB1.
 
-## AV2
+![Project Report Collaboration Network - TB1](assets/collaboration-insights/tb1-report-network.png)
 
-Durante el desarrollo del AV2, los integrantes continuarán registrando sus contribuciones al informe y los avances correspondientes al proyecto mediante el repositorio de GitHub.
+#### Commit History
 
-### Collaboration Insights
+La siguiente evidencia muestra los commits realizados por los integrantes del equipo durante las correcciones y mejoras del Project Report correspondientes al TB1.
 
-![Project Report Collaboration Insights - AV2](img/av2-report-collaboration-insights.png)
+![Project Report Commits - TB1](assets/collaboration-insights/tb1-report-commits.png)
 
----
+#### Pull Requests
 
-## TB2
+La siguiente evidencia muestra los Pull Requests utilizados para integrar las contribuciones de los integrantes del equipo durante la preparación del TB1.
 
-Durante el desarrollo del TB2, se registrará la participación final de los integrantes en la elaboración y actualización del Project Report, evidenciando la colaboración realizada durante la etapa final del proyecto.
-
-### Collaboration Insights
-
-![Project Report Collaboration Insights - TB2](img/tb2-report-collaboration-insights.png)
+![Project Report Pull Requests - TB1](assets/collaboration-insights/tb1-report-pull-requests.png)
 
 ---
 
@@ -298,29 +312,16 @@ A continuación, se presentan los perfiles de los integrantes del equipo Horizon
 
 ---
 
-#### Rolando Andre Torres Diaz
-
-<p align="center">
-  <img src="assets/chapter-01/team/rolando-torres.jpg" alt="Rolando Andre Torres Diaz" width="180"/>
-</p>
-
-**Código UPC:** [Código del estudiante]  
-**Carrera:** Ingeniería de Software
-
-Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
-
----
-
 #### Lacuta Lima, Alex Rodrigo
 
 <p align="center">
   <img src="assets/chapter-01/team/alex-lacuta.jpg" alt="Alex Rodrigo Lacuta Lima" width="180"/>
 </p>
 
-**Código UPC:** [Código del estudiante]  
+**Código UPC:** U20241G396  
 **Carrera:** Ingeniería de Software
 
-Estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Cuenta con conocimientos en [tecnologías, herramientas o áreas principales]. Durante el desarrollo del proyecto contribuirá en actividades relacionadas con [responsabilidades o áreas principales].
+Soy estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC), en proceso de formación en el análisis, diseño y desarrollo de soluciones de software. Busco fortalecer mis conocimientos mediante la participación en proyectos académicos, aplicando buenas prácticas de desarrollo, trabajo colaborativo y metodologías orientadas a la construcción de productos digitales.
 
 ---
 
@@ -1307,54 +1308,61 @@ Las estimaciones se expresan mediante Story Points utilizando los valores 1, 2, 
 
 ![Product Backlog - EcoTrack](assets/chapter-03/product-backlog.png)
 
-**URL pública del Product Backlog:** https://trello.com/b/EEnlW0f1
+**URL pública del Product Backlog:** https://trello.com/b/Hp12BlSW
 
-| Orden | User Story Id | Título                                                 | Descripción                                                                                                                                                                         | Story Points |
-| ----: | ------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------: |
-|     1 | US-01         | Conocer EcoTrack                                       | Como visitante, quiero conocer qué es EcoTrack y cuál es su propósito, para entender cómo puede ayudar a mi empresa con la gestión ambiental.                                       |            2 |
-|     2 | US-03         | Conocer las funcionalidades principales                | Como visitante, quiero conocer las principales funcionalidades de EcoTrack, para saber qué herramientas ofrece la plataforma.                                                       |            2 |
-|     3 | US-04         | Conocer los planes disponibles                         | Como visitante, quiero conocer los planes ofrecidos por EcoTrack, para identificar cuál se adapta mejor a las necesidades de mi empresa.                                            |            2 |
-|     4 | US-02         | Conocer los beneficios de EcoTrack                     | Como visitante, quiero conocer los principales beneficios de EcoTrack, para evaluar si la solución puede ser útil para mi empresa.                                                  |            2 |
-|     5 | US-05         | Contactar al equipo de EcoTrack                        | Como visitante, quiero enviar una consulta al equipo de EcoTrack, para solicitar más información sobre el producto.                                                                 |            3 |
-|     6 | US-11         | Registrar una fuente de emisión                        | Como analista ambiental, quiero registrar una fuente de emisión, para llevar un control de las actividades que generan emisiones en la empresa.                                     |            5 |
-|     7 | US-12         | Clasificar una emisión por alcance                     | Como analista ambiental, quiero clasificar una emisión como Alcance 1, 2 o 3, para organizar correctamente la información ambiental.                                                |            3 |
-|     8 | US-34         | Calcular huella de carbono                             | Como analista ambiental, quiero calcular automáticamente la huella de carbono utilizando los datos registrados, para obtener los resultados de emisiones de la organización.        |            8 |
-|     9 | US-35         | Consultar resultados por alcance                       | Como analista ambiental, quiero consultar los resultados del cálculo por alcance, para conocer la contribución de los Alcances 1, 2 y 3 a la huella de carbono.                     |            3 |
-|    10 | US-36         | Consultar resultados por periodo                       | Como responsable de sostenibilidad, quiero consultar los resultados de huella de carbono correspondientes a un periodo, para analizar el desempeño ambiental de la organización.    |            3 |
-|    11 | US-16         | Visualizar total de emisiones                          | Como responsable de sostenibilidad, quiero conocer el total de emisiones registradas, para tener una visión general del impacto ambiental de la empresa.                            |            3 |
-|    12 | US-17         | Visualizar emisiones por alcance                       | Como responsable de sostenibilidad, quiero conocer las emisiones correspondientes a cada alcance, para identificar qué categoría tiene mayor impacto.                               |            5 |
-|    13 | US-26         | Consultar resumen ambiental                            | Como responsable de sostenibilidad, quiero consultar un resumen de la información ambiental, para conocer los principales resultados de la empresa en un solo lugar.                |            3 |
-|    14 | US-20         | Comparar emisiones por periodo                         | Como responsable de sostenibilidad, quiero comparar las emisiones entre diferentes periodos, para conocer cómo ha cambiado el desempeño ambiental de la empresa.                    |            5 |
-|    15 | US-27         | Generar reporte ambiental                              | Como responsable de sostenibilidad, quiero generar un reporte ambiental, para reunir los principales resultados de la empresa.                                                      |            5 |
-|    16 | US-29         | Generar reporte por periodo                            | Como responsable de sostenibilidad, quiero generar un reporte correspondiente a un periodo específico, para analizar los resultados ambientales de ese intervalo.                   |            5 |
-|    17 | US-28         | Descargar reporte ambiental                            | Como responsable de sostenibilidad, quiero descargar un reporte generado, para conservarlo o compartirlo con otras personas de la organización.                                     |            3 |
-|    18 | US-21         | Registrar una meta ambiental                           | Como responsable de sostenibilidad, quiero registrar una meta de reducción de emisiones, para establecer un objetivo ambiental para la empresa.                                     |            3 |
-|    19 | US-38         | Crear un plan de reducción                             | Como responsable de sostenibilidad, quiero crear un plan de reducción de emisiones, para definir las acciones que permitan alcanzar los objetivos ambientales de la organización.   |            5 |
-|    20 | US-39         | Registrar una iniciativa ambiental                     | Como responsable de sostenibilidad, quiero registrar iniciativas ambientales dentro de un plan de reducción, para llevar un control de las acciones realizadas por la organización. |            3 |
-|    21 | US-40         | Consultar progreso de objetivos                        | Como responsable de sostenibilidad, quiero consultar el progreso de las metas y planes de reducción, para evaluar el cumplimiento de los objetivos ambientales.                     |            5 |
-|    22 | US-22         | Consultar metas ambientales                            | Como responsable de sostenibilidad, quiero consultar las metas ambientales de la empresa, para conocer los objetivos establecidos.                                                  |            3 |
-|    23 | US-23         | Editar una meta ambiental                              | Como responsable de sostenibilidad, quiero modificar una meta ambiental, para mantener sus objetivos actualizados.                                                                  |            3 |
-|    24 | US-24         | Actualizar estado de una meta                          | Como responsable de sostenibilidad, quiero actualizar el estado de una meta, para indicar si continúa pendiente o ya fue completada.                                                |            2 |
-|    25 | US-13         | Consultar historial de emisiones                       | Como responsable de sostenibilidad, quiero consultar el historial de emisiones registradas, para revisar la información ambiental de la empresa a lo largo del tiempo.              |            3 |
-|    26 | US-14         | Editar una emisión                                     | Como analista ambiental, quiero modificar una emisión registrada, para corregir información incorrecta o desactualizada.                                                            |            3 |
-|    27 | US-18         | Buscar una emisión                                     | Como usuario de EcoTrack, quiero buscar una emisión registrada, para encontrar información específica rápidamente.                                                                  |            2 |
-|    28 | US-19         | Filtrar emisiones por alcance                          | Como responsable de sostenibilidad, quiero filtrar las emisiones según su alcance, para analizar cada categoría por separado.                                                       |            3 |
-|    29 | US-37         | Consultar historial de cálculos                        | Como analista ambiental, quiero consultar el historial de cálculos de huella de carbono, para revisar los resultados obtenidos anteriormente.                                       |            3 |
-|    30 | US-30         | Consultar reportes anteriores                          | Como responsable de sostenibilidad, quiero consultar los reportes generados anteriormente, para revisar información ambiental de periodos anteriores.                               |            3 |
-|    31 | US-06         | Registrar una empresa                                  | Como representante de una empresa, quiero registrar mi organización en EcoTrack, para comenzar a gestionar su información ambiental.                                                |            5 |
-|    32 | US-07         | Iniciar sesión                                         | Como usuario registrado, quiero iniciar sesión en EcoTrack, para acceder a la información de mi empresa.                                                                            |            5 |
-|    33 | US-09         | Consultar perfil de la empresa                         | Como usuario de EcoTrack, quiero consultar los datos de mi empresa, para verificar que la información registrada sea correcta.                                                      |            2 |
-|    34 | US-10         | Actualizar datos de la empresa                         | Como usuario autorizado, quiero actualizar los datos de mi empresa, para mantener su información al día.                                                                            |            3 |
-|    35 | US-31         | Gestionar usuarios de la organización                  | Como administrador, quiero gestionar los usuarios de mi organización, para controlar quiénes pueden acceder a EcoTrack.                                                             |            5 |
-|    36 | US-32         | Gestionar sedes                                        | Como administrador, quiero registrar y consultar las sedes de mi organización, para organizar la información ambiental según su ubicación.                                          |            5 |
-|    37 | US-33         | Gestionar roles y permisos                             | Como administrador, quiero asignar roles y permisos a los usuarios, para controlar las acciones que pueden realizar dentro de EcoTrack.                                             |            5 |
-|    38 | US-08         | Recuperar contraseña                                   | Como usuario registrado, quiero recuperar el acceso a mi cuenta si olvido mi contraseña, para poder continuar utilizando EcoTrack.                                                  |            3 |
-|    39 | US-41         | Importar emisiones mediante CSV                        | Como analista ambiental, quiero importar registros de emisiones mediante un archivo CSV, para registrar grandes cantidades de información sin ingresarlas manualmente.              |            5 |
-|    40 | TS-01         | Registrar emisión mediante EcoTrack API                | Como Developer, quiero enviar registros de emisiones mediante la EcoTrack API, para integrar sistemas empresariales externos con EcoTrack.                                          |            8 |
-|    41 | TS-02         | Consultar emisiones mediante EcoTrack API              | Como Developer, quiero consultar registros de emisiones mediante la EcoTrack API, para utilizar la información ambiental de EcoTrack desde otros sistemas.                          |            5 |
-|    42 | TS-03         | Consultar resultados de huella de carbono mediante API | Como Developer, quiero consultar resultados de huella de carbono mediante la EcoTrack API, para utilizar los resultados ambientales desde sistemas externos.                        |            5 |
-|    43 | US-15         | Eliminar una emisión                                   | Como analista ambiental, quiero eliminar una emisión incorrecta, para evitar que información no válida afecte los resultados ambientales.                                           |            2 |
-|    44 | US-25         | Eliminar una meta                                      | Como responsable de sostenibilidad, quiero eliminar una meta que ya no sea necesaria, para mantener actualizados los objetivos ambientales.                                         |            2 |
+| Orden | User Story Id | Título                                                 | Descripción                                                                                                                                                                                                                            | Story Points |
+|------:|---------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------:|
+|     1 | US-01         | Conocer EcoTrack                                       | Como visitante, quiero conocer qué es EcoTrack y cuál es su propósito, para entender cómo puede ayudar a mi empresa con la gestión ambiental.                                                                                          |            2 |
+|     2 | US-03         | Conocer las funcionalidades principales                | Como visitante, quiero conocer las principales funcionalidades de EcoTrack, para saber qué herramientas ofrece la plataforma.                                                                                                          |            2 |
+|     3 | US-04         | Conocer los planes disponibles                         | Como visitante, quiero conocer los planes ofrecidos por EcoTrack, para identificar cuál se adapta mejor a las necesidades de mi empresa.                                                                                               |            2 |
+|     4 | US-42         | Seleccionar un plan de EcoTrack                        | Como visitante, quiero seleccionar uno de los planes disponibles de EcoTrack, para iniciar el proceso de registro con la alternativa que se adapte a las necesidades de mi empresa.                                                    |            3 |
+|     5 | US-02         | Conocer los beneficios de EcoTrack                     | Como visitante, quiero conocer los principales beneficios de EcoTrack, para evaluar si la solución puede ser útil para mi empresa.                                                                                                     |            2 |
+|     6 | US-43         | Acceder a la Web Application desde el Landing Page     | Como visitante, quiero acceder a la Web Application de EcoTrack desde el Landing Page, para registrarme o ingresar a mi cuenta y comenzar a utilizar la plataforma.                                                                    |            2 |
+|     7 | US-05         | Contactar al equipo de EcoTrack                        | Como visitante, quiero enviar una consulta al equipo de EcoTrack, para solicitar más información sobre el producto.                                                                                                                    |            3 |
+|     8 | US-11         | Registrar una fuente de emisión                        | Como analista ambiental, quiero registrar una fuente de emisión, para identificar las actividades, procesos o recursos que generan emisiones dentro de la organización.                                                                |            5 |
+|     9 | US-12         | Clasificar una fuente de emisión por alcance           | Como analista ambiental, quiero clasificar una fuente de emisión como Alcance 1, 2 o 3, para organizar correctamente la información ambiental de la organización.                                                                      |            3 |
+|    10 | US-45         | Registrar datos de actividad                           | Como analista ambiental, quiero registrar datos de actividad asociados a una fuente de emisión, para disponer de la información necesaria para calcular las emisiones de la organización.                                              |            5 |
+|    11 | US-46         | Seleccionar factor de emisión                          | Como analista ambiental, quiero asociar un factor de emisión adecuado a los datos de actividad, para calcular la cantidad de emisiones correspondiente.                                                                                |            3 |
+|    12 | US-34         | Calcular huella de carbono                             | Como analista ambiental, quiero calcular automáticamente la huella de carbono utilizando los datos registrados, para obtener los resultados de emisiones de la organización.                                                           |            8 |
+|    13 | US-35         | Consultar resultados por alcance                       | Como analista ambiental, quiero consultar los resultados de huella de carbono por Alcance 1, 2 y 3, para conocer la contribución de cada alcance al resultado total de la organización.                                                |            3 |
+|    14 | US-36         | Consultar resultados por periodo                       | Como responsable de sostenibilidad, quiero consultar los resultados de huella de carbono correspondientes a un periodo, para analizar el desempeño ambiental de la organización en dicho intervalo.                                    |            3 |
+|    15 | US-16         | Visualizar el total de emisiones calculadas            | Como responsable de sostenibilidad, quiero visualizar el total de emisiones calculadas de mi organización, para conocer su huella de carbono dentro de un periodo determinado.                                                         |            3 |
+|    16 | US-17         | Visualizar emisiones calculadas por alcance            | Como responsable de sostenibilidad, quiero visualizar las emisiones calculadas por Alcance 1, 2 y 3, para conocer la contribución de cada alcance a la huella de carbono de la organización.                                           |            5 |
+|    17 | US-26         | Consultar resumen ambiental                            | Como responsable de sostenibilidad, quiero consultar un resumen de la información ambiental de la organización, para revisar los principales indicadores en un solo lugar.                                                             |            3 |
+|    18 | US-20         | Comparar emisiones entre periodos                      | Como responsable de sostenibilidad, quiero comparar los resultados de emisiones entre diferentes periodos, para analizar la variación del desempeño ambiental de la organización.                                                      |            5 |
+|    19 | US-27         | Generar reporte ambiental consolidado                  | Como responsable de sostenibilidad, quiero generar un reporte ambiental consolidado, para reunir los principales resultados de emisiones y objetivos ambientales de la organización.                                                   |            5 |
+|    20 | US-29         | Generar reporte por periodo                            | Como responsable de sostenibilidad, quiero generar un reporte ambiental para un periodo específico, para analizar los resultados correspondientes únicamente a dicho intervalo.                                                        |            5 |
+|    21 | US-28         | Descargar reporte ambiental                            | Como responsable de sostenibilidad, quiero descargar un reporte ambiental generado, para conservarlo o compartirlo fuera de EcoTrack.                                                                                                  |            3 |
+|    22 | US-21         | Registrar una meta ambiental                           | Como responsable de sostenibilidad, quiero registrar una meta de reducción de emisiones, para establecer un objetivo ambiental medible para la organización.                                                                           |            3 |
+|    23 | US-38         | Crear un plan de reducción                             | Como responsable de sostenibilidad, quiero crear un plan de reducción asociado a una meta ambiental, para organizar las acciones destinadas a alcanzar el objetivo de reducción de emisiones.                                          |            5 |
+|    24 | US-39         | Registrar una iniciativa ambiental                     | Como responsable de sostenibilidad, quiero registrar una iniciativa ambiental dentro de un plan de reducción, para documentar las acciones que la organización realizará para contribuir al cumplimiento de sus objetivos ambientales. |            3 |
+|    25 | US-40         | Consultar progreso de objetivos                        | Como responsable de sostenibilidad, quiero consultar el progreso de las metas y planes de reducción, para realizar seguimiento de los objetivos ambientales de la organización.                                                        |            5 |
+|    26 | US-22         | Consultar metas ambientales                            | Como responsable de sostenibilidad, quiero consultar las metas ambientales de la organización, para revisar los objetivos de reducción establecidos y su estado.                                                                       |            3 |
+|    27 | US-23         | Editar una meta ambiental                              | Como responsable de sostenibilidad, quiero actualizar una meta ambiental, para mantener sus objetivos de reducción de acuerdo con las necesidades de la organización.                                                                  |            3 |
+|    28 | US-24         | Actualizar estado de una meta                          | Como responsable de sostenibilidad, quiero actualizar el estado de una meta ambiental, para reflejar su situación dentro del proceso de reducción de emisiones.                                                                        |            2 |
+|    29 | US-13         | Consultar registros de emisiones                       | Como responsable de sostenibilidad, quiero consultar los registros ambientales de emisiones de mi organización, para revisar la información utilizada en la gestión y cálculo de la huella de carbono.                                 |            3 |
+|    30 | US-14         | Editar un registro de emisión                          | Como analista ambiental, quiero modificar un registro de emisión, para corregir información ambiental incorrecta o desactualizada.                                                                                                     |            3 |
+|    31 | US-18         | Buscar registros de emisión                            | Como usuario de EcoTrack, quiero buscar registros de emisión, para localizar información ambiental específica dentro de mi organización.                                                                                               |            2 |
+|    32 | US-19         | Filtrar registros de emisiones por alcance             | Como responsable de sostenibilidad, quiero filtrar los registros de emisiones según su alcance, para consultar por separado la información correspondiente a Alcance 1, 2 o 3.                                                         |            3 |
+|    33 | US-37         | Consultar historial de cálculos                        | Como analista ambiental, quiero consultar el historial de cálculos de huella de carbono, para revisar los resultados obtenidos anteriormente por la organización.                                                                      |            3 |
+|    34 | US-30         | Consultar reportes anteriores                          | Como responsable de sostenibilidad, quiero consultar los reportes ambientales generados anteriormente, para revisar documentos correspondientes a diferentes periodos.                                                                 |            3 |
+|    35 | US-47         | Crear cuenta de usuario                                | Como representante de una empresa, quiero crear una cuenta en EcoTrack, para acceder a la plataforma e iniciar el registro de mi organización.                                                                                         |            5 |
+|    36 | US-07         | Iniciar sesión                                         | Como usuario registrado, quiero iniciar sesión en EcoTrack, para acceder a la información y funcionalidades correspondientes a mi organización.                                                                                        |            5 |
+|    37 | US-06         | Registrar una empresa                                  | Como representante de una empresa, quiero registrar mi organización en EcoTrack, para comenzar a gestionar su información ambiental.                                                                                                   |            5 |
+|    38 | US-09         | Consultar perfil de la empresa                         | Como usuario de EcoTrack, quiero consultar los datos de mi organización, para verificar la información empresarial registrada.                                                                                                         |            2 |
+|    39 | US-10         | Actualizar datos de la empresa                         | Como usuario autorizado, quiero actualizar los datos de mi organización, para mantener su información empresarial vigente.                                                                                                             |            3 |
+|    40 | US-31         | Invitar usuario a la organización                      | Como administrador, quiero invitar a un usuario a mi organización, para permitirle acceder a EcoTrack y colaborar en la gestión ambiental.                                                                                             |            5 |
+|    41 | US-32         | Gestionar sedes                                        | Como administrador, quiero registrar y consultar las sedes de mi organización, para organizar la información ambiental según las ubicaciones donde se desarrollan sus operaciones.                                                     |            5 |
+|    42 | US-44         | Gestionar unidades de negocio                          | Como administrador, quiero registrar y consultar las unidades de negocio de mi organización, para organizar la información ambiental según la estructura interna de la empresa.                                                        |            5 |
+|    43 | US-33         | Gestionar roles y permisos                             | Como administrador, quiero asignar roles a los usuarios de mi organización, para controlar las acciones que pueden realizar dentro de EcoTrack.                                                                                        |            5 |
+|    44 | US-08         | Recuperar contraseña                                   | Como usuario registrado, quiero recuperar el acceso a mi cuenta si olvido mi contraseña, para poder continuar utilizando EcoTrack.                                                                                                     |            3 |
+|    45 | US-41         | Importar emisiones mediante CSV                        | Como analista ambiental, quiero importar información de emisiones mediante un archivo CSV, para registrar múltiples datos ambientales sin ingresarlos individualmente.                                                                 |            5 |
+|    46 | TS-01         | Registrar emisión mediante EcoTrack API                | Como Developer, quiero enviar registros de emisiones mediante la EcoTrack API, para integrar sistemas empresariales externos con EcoTrack.                                                                                             |            8 |
+|    47 | TS-02         | Consultar emisiones mediante EcoTrack API              | Como Developer, quiero consultar registros de emisiones mediante la EcoTrack API, para utilizar la información ambiental de EcoTrack desde otros sistemas.                                                                             |            5 |
+|    48 | TS-03         | Consultar resultados de huella de carbono mediante API | Como Developer, quiero consultar resultados de huella de carbono mediante la EcoTrack API, para utilizar los resultados ambientales desde sistemas externos.                                                                           |            5 |
+|    49 | TS-04         | Integrar servicio externo de correo electrónico        | Como Developer, quiero integrar EcoTrack con un Email Provider externo, para permitir el envío de correos relacionados con procesos como recuperación de contraseña e invitación de usuarios.                                          |            5 |
+|    50 | US-15         | Eliminar un registro de emisión                        | Como analista ambiental, quiero eliminar un registro de emisión incorrecto, para evitar que información no válida sea considerada en los procesos ambientales de la organización.                                                      |            2 |
+|    51 | US-25         | Eliminar una meta                                      | Como responsable de sostenibilidad, quiero eliminar una meta ambiental que ya no deba mantenerse activa, para conservar actualizada la planificación ambiental de la organización.                                                     |            2 |
 
 ---
 
@@ -3138,91 +3146,91 @@ Muestra los cuatro containers que conforman la solución: `Web Application` (sir
 
 En este diagrama se puede ver la SPA de Angular dividida en sus ocho bounded contexts (Shared Kernel, IAM, Organization Management, Emissions Management, Carbon Footprint Calculation, Goals and Reduction Plans, Analytics and Reports y Data Integration). Todos pasan por un `App Router` común y consumen el backend mediante una capa compartida de `API Clients`. Las conexiones entre contextos (por ejemplo, `Emissions Management` hacia `Organization Management`, o `Analytics and Reports` leyendo de los otros cuatro) siguen el orden de dependencia del negocio, lo que permite trazar la arquitectura hasta el modelo de dominio.
 
-#### 4.6.4.1. Backend General Components Diagram
+#### 4.6.4.2. Backend General Components Diagram
 
 ![EcoTrack - Backend General Components Diagram](docs/diagrams/components/backend/ecotrack-backend-general-components.png)
 
 Este es el lado backend del diagrama anterior. Se ve el mismo mapa de ocho bounded contexts, pero ahora como módulos de Spring Boot detrás de un `REST API Surface`. Aparecen dos componentes transversales: el `Integration Event Bus`, que permite que `Analytics and Reports` se entere de lo que pasa en los demás contextos sin acoplarse directamente, y `Persistence Access`, que agrupa los repositorios JPA hacia PostgreSQL. En conjunto, esto confirma que EcoTrack está pensado como un monolito modular.
 
-#### 4.6.4.2. IAM Frontend Components Diagram
+#### 4.6.4.3. IAM Frontend Components Diagram
 
 ![EcoTrack - IAM Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-iam-frontend-components.png)
 
 Aquí se descompone el módulo Angular de IAM en sus cuatro capas (Presentation, Application, Domain e Infrastructure). IAM es el contexto del que todos dependen para la sesión, pero además coordina con Organization Management, Analytics and Reports y Data Integration para resolver la organización activa y habilitar funciones según el rol. Es decir, IAM no solo expone la sesión: también participa en decidir qué vistas o funciones se muestran.
 
-#### 4.6.4.2. IAM Backend Components Diagram
+#### 4.6.4.4. IAM Backend Components Diagram
 
 ![EcoTrack - IAM Backend Components Diagram](docs/diagrams/components/backend/ecotrack-iam-backend-components.png)
 
 Este diagrama muestra cómo el módulo Spring Boot de IAM procesa las peticiones REST de autenticación, registro, recuperación de contraseña e invitación de usuarios mediante comandos que maneja la Application Layer. La Domain Layer se encarga de las reglas sobre usuarios, roles y tokens, mientras que la Infrastructure Layer resuelve lo técnico: hashing BCrypt, emisión de JWT y envío de correos. Al ser el primer bounded context del backend, marca el patrón de cuatro capas que se repite en los demás.
 
-#### 4.6.4.3. Organization Management Frontend Components Diagram
+#### 4.6.4.5. Organization Management Frontend Components Diagram
 
 ![EcoTrack - Organization Management Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-organization-management-frontend-components.png)
 
 Este módulo Angular gestiona organizaciones, sedes y unidades de negocio. Su relación con el resto es bidireccional: por un lado consume la sesión de IAM, y por otro es consumido por Emissions Management (que necesita el catálogo de sedes) y por Analytics and Reports (que agrupa métricas por organización). Esto deja a Organization Management como una especie de catálogo maestro dentro del sistema.
 
-#### 4.6.4.3. Organization Management Backend Components Diagram
+#### 4.6.4.6. Organization Management Backend Components Diagram
 
 ![EcoTrack - Organization Management Backend Components Diagram](docs/diagrams/components/backend/ecotrack-organization-management-backend-components.png)
 
 El backend de Organization Management valida contra la IAM API el acceso del usuario antes de consultar o modificar organizaciones, sedes y unidades de negocio. A diferencia de IAM, este contexto no maneja tokens ni seguridad propia, así que su Infrastructure Layer solo incluye adaptadores JPA. Es una estructura más simple.
 
-#### 4.6.4.4. Emissions Management Frontend Components Diagram
+#### 4.6.4.7. Emissions Management Frontend Components Diagram
 
 ![EcoTrack - Emissions Management Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-emissions-management-frontend-components.png)
 
 Este es el módulo Angular donde se registran fuentes de emisión y se cargan datos de actividad. Tiene dos formas de ingreso: la manual, desde su propia Presentation Layer, y la automatizada, que llega desde Data Integration. Por eso, Emissions Management termina siendo el punto medio entre la carga manual y la importación de datos ambientales.
 
-#### 4.6.4.4. Emissions Management Backend Components Diagram
+#### 4.6.4.8. Emissions Management Backend Components Diagram
 
 ![EcoTrack - Emissions Management Backend Components Diagram](docs/diagrams/components/backend/ecotrack-emissions-management-backend-components.png)
 
 Este diagrama muestra cómo el backend de Emissions Management valida el acceso a la sede contra la Organization Management API antes de registrar cualquier fuente de emisión, y cómo recibe en paralelo los datos que procesa la Data Integration API. Es el bounded context con más entradas externas, ya que es la fuente principal de datos de actividad para el cálculo de la huella de carbono.
 
-#### 4.6.4.5. Carbon Footprint Calculation Frontend Components Diagram
+#### 4.6.4.9. Carbon Footprint Calculation Frontend Components Diagram
 
 ![EcoTrack - Carbon Footprint Calculation Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-carbon-footprint-calculation-frontend-components.png)
 
 En este módulo Angular se seleccionan factores de emisión y se solicitan cálculos de huella por alcance y periodo. Se alimenta de los datos de actividad que vienen de Emissions Management, y entrega resultados a Goals and Reduction Plans y a Analytics and Reports. En el diagrama, este contexto queda como una capa de cálculo intermedia que transforma datos de actividad en resultados de huella.
 
-#### 4.6.4.5. Carbon Footprint Calculation Backend Components Diagram
+#### 4.6.4.10. Carbon Footprint Calculation Backend Components Diagram
 
 ![EcoTrack - Carbon Footprint Calculation Backend Components Diagram](docs/diagrams/components/backend/ecotrack-carbon-footprint-calculation-backend-components.png)
 
 Aquí se ve cómo la Application Layer de este contexto pide datos de actividad a la Emissions Management API antes de hacer los cálculos. La Domain Layer agrupa las fórmulas y reglas necesarias por alcance (Scope 1/2/3) y periodo. Es un contexto cuya responsabilidad principal es el procesamiento y cálculo de datos.
 
-#### 4.6.4.6. Goals and Reduction Plans Frontend Components Diagram
+#### 4.6.4.11. Goals and Reduction Plans Frontend Components Diagram
 
 ![EcoTrack - Goals and Reduction Plans Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-goals-and-reduction-plans-frontend-components.png)
 
 Este módulo Angular cubre metas, planes de reducción e iniciativas. Su Application Layer coordina con Carbon Footprint Calculation para obtener los resultados de huella y calcular el avance de cada meta, y también se conecta con Analytics and Reports para reflejar ese progreso en los paneles. En general, este módulo trabaja sobre resultados ya agregados.
 
-#### 4.6.4.6. Goals and Reduction Plans Backend Components Diagram
+#### 4.6.4.12. Goals and Reduction Plans Backend Components Diagram
 
 ![EcoTrack - Goals and Reduction Plans Backend Components Diagram](docs/diagrams/components/backend/ecotrack-goals-and-reduction-plans-backend-components.png)
 
 En este diagrama se ve cómo la Application Layer del backend consulta la Carbon Footprint Calculation API para comparar el resultado de huella más reciente con la meta definida, y así actualizar el estado de avance de los planes e iniciativas. La Domain Layer contiene las reglas que determinan el progreso hacia un objetivo.
 
-#### 4.6.4.7. Analytics and Reports Frontend Components Diagram
+#### 4.6.4.13. Analytics and Reports Frontend Components Diagram
 
 ![EcoTrack - Analytics and Reports Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-analytics-and-reports-frontend-components.png)
 
 Este es el módulo Angular que más dependencias recibe en el frontend. Su Application Layer coordina con Organization Management, Emissions Management, Carbon Footprint Calculation y Goals and Reduction Plans para armar los dashboards e indicadores. El diagrama deja claro que Analytics and Reports no genera datos propios: su rol es leer y agregar la información de los demás módulos.
 
-#### 4.6.4.7. Analytics and Reports Backend Components Diagram
+#### 4.6.4.14. Analytics and Reports Backend Components Diagram
 
 ![EcoTrack - Analytics and Reports Backend Components Diagram](docs/diagrams/components/backend/ecotrack-analytics-and-reports-backend-components.png)
 
 El backend de Analytics and Reports obtiene datos de dos formas: pide métricas directamente a las cuatro APIs de negocio (Organization Management, Emissions Management, Carbon Footprint Calculation y Goals and Reduction Plans) para consultas directas, y además escucha el `Integration Event Bus` mediante `RecordAnalyticsEventCommand` para actualizar los dashboards cuando hay actividad nueva. Por eso su Infrastructure Layer incluye la lógica de eventos y la generación de reportes en PDF o formato exportable.
 
-#### 4.6.4.8. Data Integration Frontend Components Diagram
+#### 4.6.4.15. Data Integration Frontend Components Diagram
 
 ![EcoTrack - Data Integration Frontend Components Diagram](docs/diagrams/components/frontend/ecotrack-data-integration-frontend-components.png)
 
 Este módulo Angular se encarga de la carga de archivos CSV y de la configuración de API Keys para integraciones externas, según el rol del usuario que valida IAM. Su Application Layer envía los datos de actividad importados a Emissions Management, cerrando así el flujo de carga manual e importada en el frontend.
 
-#### 4.6.4.8. Data Integration Backend Components Diagram
+#### 4.6.4.16. Data Integration Backend Components Diagram
 
 ![EcoTrack - Data Integration Backend Components Diagram](docs/diagrams/components/backend/ecotrack-data-integration-backend-components.png)
 
@@ -3658,7 +3666,7 @@ El código fuente correspondiente se encuentra alojado en el repositorio oficial
 **Landing Page Repository:**  
 https://github.com/Horizon-OpenSource/landing-page
 
-Las tecnologías Angular, TypeScript, Angular Material, Java, Spring Boot, Spring Data JPA y OpenAPI/Swagger forman parte del stack definido para EcoTrack y serán incorporadas progresivamente cuando el alcance de los siguientes Sprints incluya la Frontend Web Application y los RESTful Web Services.
+Las tecnologías Angular, TypeScript y Angular Material forman parte de la implementación de la Frontend Web Application de EcoTrack durante el Sprint 2. Por su parte, Java, Spring Boot, Spring Data JPA y OpenAPI/Swagger forman parte del stack definido para los RESTful Web Services, cuya implementación será incorporada progresivamente en los siguientes Sprints.
 
 ### 5.1.2. Source Code Management
 
@@ -3672,9 +3680,7 @@ Actualmente, Horizon mantiene los siguientes repositorios:
 |---|---|
 | Project Report | https://github.com/Horizon-OpenSource/report |
 | Landing Page | https://github.com/Horizon-OpenSource/landing-page |
-| Frontend Web Application | Pendiente de implementación en los siguientes Sprints |
-| Web Services | Pendiente de implementación en los siguientes Sprints |
-
+| Frontend Web Application | https://github.com/Horizon-OpenSource/frontend-web-application |
 La organización de GitHub utilizada por el equipo se encuentra disponible en:
 
 https://github.com/orgs/Horizon-OpenSource/repositories
@@ -4067,7 +4073,7 @@ La ausencia de endpoints documentados en esta iteración responde al alcance pla
 
 Durante Sprint 1, Horizon realizó el despliegue de la primera versión estable del Landing Page de EcoTrack. El objetivo del proceso fue disponer de una versión pública y accesible del producto que permitiera validar el resultado de la implementación realizada durante la iteración.
 
-El Landing Page se encuentra alojado en el repositorio oficial de Horizon:
+La Landing Page se encuentra alojado en el repositorio oficial de Horizon:
 
 **Repository:**  
 https://github.com/Horizon-OpenSource/landing-page
@@ -4305,7 +4311,51 @@ feature/i18n-accessibility
 
 ## Conclusiones y recomendaciones
 
-<!-- Completar -->
+### AV1
+
+Durante el AV1, el equipo Horizon logró establecer una base sólida para el desarrollo de EcoTrack a partir del análisis de la problemática, la identificación de los segmentos objetivo y la definición de una propuesta de solución orientada a mejorar la gestión de información ambiental de las organizaciones.
+
+El proceso de Lean UX permitió identificar como principales dificultades la dispersión de información ambiental, la ejecución manual de actividades relacionadas con el registro y procesamiento de datos, la baja trazabilidad de la información y el tiempo requerido para obtener resultados y elaborar reportes ambientales. A partir de estos problemas se formularon Business Outcome Assumptions, User Outcome Assumptions e Hypothesis Statements con criterios de éxito medibles que permitirán evaluar posteriormente el impacto de la solución.
+
+Las entrevistas realizadas a representantes de los segmentos objetivo permitieron complementar la definición inicial del problema e identificar necesidades relacionadas con la organización de información, el seguimiento de emisiones, la generación de resultados y la disponibilidad de información ambiental para la toma de decisiones. Los resultados obtenidos sirvieron como base para la elaboración de los User Personas, User Task Matrix, User Journey Maps, Empathy Maps, Big Picture Event Storming y Ubiquitous Language.
+
+Asimismo, se definieron las principales funcionalidades de EcoTrack mediante User Stories, Epics y un Product Backlog priorizado. Estos artefactos permitieron transformar las necesidades identificadas durante el proceso de investigación en requerimientos funcionales que orientan el desarrollo progresivo de la solución.
+
+En relación con Product Design, se establecieron los principales lineamientos de Information Architecture, UX/UI Design y arquitectura de software, permitiendo definir una visión inicial de la experiencia de usuario y de la organización técnica de EcoTrack.
+
+A nivel de implementación, el Sprint 1 permitió desarrollar y desplegar la primera versión del Landing Page de EcoTrack. Este producto permitió presentar la propuesta de valor, los segmentos objetivo, los beneficios, las principales funcionalidades y el funcionamiento general de la solución, constituyendo el primer producto digital disponible públicamente del proyecto.
+
+Como conclusión del AV1, se determinó que existe coherencia entre la problemática identificada, las necesidades de los segmentos objetivo, los requerimientos especificados y la propuesta de solución de EcoTrack. No obstante, los criterios de éxito definidos mediante Lean UX deben considerarse todavía como hipótesis que requieren validación con usuarios reales mediante versiones funcionales del producto.
+
+Como recomendación, se planteó continuar desarrollando los principales flujos de negocio de EcoTrack, mantener la trazabilidad entre los artefactos de análisis, diseño e implementación y utilizar las siguientes iteraciones para comprobar progresivamente las hipótesis y criterios de éxito establecidos.
+
+### TB1
+
+Durante el TB1, el equipo Horizon logró evolucionar EcoTrack desde una etapa principalmente orientada al análisis y diseño hacia una etapa de implementación funcional de la solución. Para ello, se realizaron correcciones sobre los artefactos previamente presentados, se mejoró la consistencia del Project Report y se desarrolló la primera versión de la Frontend Web Application.
+
+A partir de la retroalimentación obtenida en el AV1, se mejoraron los artefactos correspondientes a Requirements Elicitation & Analysis. Se corrigieron los registros y timings de las entrevistas, se fortaleció la trazabilidad entre los resultados obtenidos y los User Personas, y se actualizaron los artefactos de Needfinding. Asimismo, se completaron y mejoraron el Big Picture Event Storming y el Ubiquitous Language, permitiendo representar con mayor claridad los procesos y conceptos principales del dominio de EcoTrack.
+
+En Requirements Specification se revisaron y actualizaron las User Stories y Epics, incorporando requerimientos necesarios para completar los principales flujos de negocio del producto. El Product Backlog fue reconstruido y priorizado hasta contar con 51 historias relacionadas con las seis Epics definidas para EcoTrack. Esta priorización permitió dar mayor importancia a funcionalidades vinculadas directamente con la generación de valor para los usuarios, tales como el registro de información ambiental, la gestión de emisiones, el cálculo de huella de carbono, el análisis de resultados, la generación de reportes y el seguimiento de metas ambientales.
+
+También se mejoró el Impact Mapping, definiendo objetivos, actores, impactos y entregables relacionados con los resultados esperados del producto. Estos elementos permitieron establecer una relación más clara entre las funcionalidades desarrolladas y los objetivos de negocio planteados durante el proceso de Lean UX.
+
+En Product Design se completaron los artefactos correspondientes a Web Applications UX/UI Design y Web Applications Prototyping, incluyendo Wireframes, Mock-ups, Wireflows y User Flow Diagrams para los principales escenarios de uso de EcoTrack. Estos artefactos permitieron definir con mayor precisión la experiencia propuesta antes de avanzar con la implementación.
+
+Asimismo, se fortaleció el diseño técnico mediante la incorporación y actualización de Design-Level Event Storming, Software Architecture Context Diagram, Container Diagrams, Components Diagrams, Class Diagrams y Database Design. La utilización de Bounded Contexts permitió organizar la solución en dominios claramente diferenciados y establecer una base arquitectónica coherente para la evolución posterior del producto.
+
+Durante el Sprint 2 se completó la primera versión de la Frontend Web Application de EcoTrack utilizando Angular, TypeScript y Angular Material. La implementación se organizó mediante los principales Bounded Contexts del producto, permitiendo desarrollar de forma modular funcionalidades relacionadas con Organization Management, Emissions Management, Carbon Footprint Calculation y Analytics & Reports.
+
+El trabajo colaborativo se realizó utilizando Git y GitHub mediante ramas `feature/*`, Conventional Commits y Pull Requests hacia la rama de integración `develop`. Esta estrategia permitió que los integrantes trabajaran de forma paralela sobre diferentes partes del producto y que posteriormente las funcionalidades fueran revisadas e integradas dentro de una única aplicación.
+
+Además, se mantuvo una nueva versión del Landing Page y se desplegó la primera versión de la Frontend Web Application, permitiendo disponer de productos digitales accesibles para demostrar los principales escenarios implementados durante el Sprint 2.
+
+La implementación desarrollada durante el TB1 permitió comprobar la viabilidad técnica de la arquitectura planteada y establecer una base funcional sobre la cual continuar incorporando funcionalidades en los siguientes Sprints. Sin embargo, las métricas planteadas en los Business Outcome Assumptions e Hypothesis Statements aún requieren sesiones de validación con usuarios reales antes de poder determinar su grado de cumplimiento.
+
+Como recomendación para las siguientes iteraciones, el equipo debe continuar integrando los Bounded Contexts pendientes, incorporar progresivamente los RESTful Web Services, reemplazar los datos simulados por información obtenida desde los servicios de backend y mantener la trazabilidad entre User Stories, Product Backlog, arquitectura e implementación.
+
+También se recomienda realizar sesiones de validación con representantes de los segmentos objetivo una vez que los principales flujos se encuentren completamente operativos. Estas sesiones permitirán evaluar la facilidad de uso de la plataforma, identificar oportunidades de mejora y contrastar los resultados obtenidos con los criterios de éxito definidos mediante Lean UX.
+
+Finalmente, se concluye que el TB1 permitió consolidar la transición de EcoTrack desde una propuesta documentada hacia un producto de software funcional. Las correcciones realizadas sobre los artefactos del AV1, la actualización de los requerimientos, el fortalecimiento del diseño técnico y la implementación de la primera versión de la Frontend Web Application contribuyen a mantener una relación coherente entre la problemática identificada, las necesidades de los usuarios, el diseño de la solución y su implementación.
 
 ---
 
@@ -4325,8 +4375,41 @@ International Organization for Standardization. (2018). *ISO 14064-1:2018 Greenh
 
 IBM. (2023). *What is carbon accounting?* IBM. https://www.ibm.com/think/topics/carbon-accounting
 
+Ministerio de Comercio Exterior y Turismo. (2026, 28 de enero). *Mincetur: Mipymes exportadoras impulsan exportaciones y crecen 3,2% entre enero y noviembre de 2025*. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/institucion/mincetur/noticias/1341967-mincetur-mipymes-exportadoras-impulsan-exportaciones-y-crecen-3-2-entre-enero-y-noviembre-de-2025
+
+Ministerio de Comercio Exterior y Turismo. (2026, 3 de febrero). *Mincetur: Exportaciones del Perú alcanzaron los US$ 90 082 millones y consolidan al país como potencia comercial de Sudamérica*. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/institucion/mincetur/noticias/1346927-mincetur-exportaciones-del-peru-alcanzaron-los-us-90-082-millones-y-consolidan-al-pais-como-potencia-comercial-de-sudamerica
+
+Instituto Nacional de Estadística e Informática. (2025). *Perú: Estructura Empresarial, 2024*. INEI. https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib2045/libro.pdf
+
 ---
 
 # Anexos
 
-<!-- Completar -->
+## Anexo A. Videos de Exposiciones
+
+En el presente anexo se registran de manera progresiva los videos de exposición correspondientes a las diferentes entregas del proyecto EcoTrack. Cada video presenta los principales artefactos desarrollados, las mejoras realizadas y los productos de software implementados por el equipo Horizon.
+
+| Entrega | Título del video | Enlace |
+|---------|------------------|--------|
+| AV1 | EcoTrack - Exposición AV1 | [Video de Exposición AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDkJugSWGACS7no1S8vH57WAX2XN8u_QVTTxHqsGHMz4I8?e=gDwAez&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| TB1 | EcoTrack - Exposición TB1 | [Video de Exposición TB1](COLOCAR_URL_REAL_TB1) |
+
+### AV1
+
+**Nombre del archivo:**  
+`upc-pre-202620-1asi0729-7753-horizon-expo-av1.mp4`
+
+La exposición correspondiente al AV1 presenta la problemática abordada por EcoTrack, la propuesta de solución, los principales artefactos de análisis y diseño desarrollados durante la primera etapa del proyecto y la primera versión implementada y desplegada del Landing Page.
+
+**Microsoft Stream / Clipchamp:**  
+[Video de Exposición AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDkJugSWGACS7no1S8vH57WAX2XN8u_QVTTxHqsGHMz4I8?e=gDwAez&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+### TB1
+
+**Nombre del archivo:**  
+`upc-pre-202620-1asi0729-7753-horizon-expo-tb1.mp4`
+
+La exposición correspondiente al TB1 presenta las correcciones realizadas a partir del feedback recibido en el AV1, la evolución de los artefactos del Project Report y el avance de implementación correspondiente al Sprint 2, incluyendo la primera versión de la Frontend Web Application de EcoTrack.
+
+**Microsoft Stream / Clipchamp:**  
+[Video de Exposición TB1](COLOCAR_URL_REAL_TB1)
