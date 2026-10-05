@@ -1,0 +1,168 @@
+@startuml
+title EcoTrack - Design-Level Event Storming - Bounded Contexts Overview
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam rectangle {
+  BorderColor #4A4A4A
+  FontColor #FFFFFF
+  FontStyle bold
+  FontSize 11
+}
+skinparam ArrowColor #4A4A4A
+skinparam ArrowFontSize 10
+skinparam package {
+  BackgroundColor #FFF9C4
+  BorderColor #BCA136
+  FontStyle bold
+}
+
+legend top left
+  |<#2D9CDB> Command |
+  |<#F2C94C> Aggregate |
+  |<#F2994A> Domain Event |
+  |<#EB5757> Policy |
+  |<#9B51E0> Actor |
+  |<#828282> External System / Infrastructure |
+  | Yellow box | Bounded Context |
+endlegend
+
+actor "Business\nRepresentative" as Rep #9B51E0
+actor "Administrator" as Admin #9B51E0
+actor "Invited User" as InvitedUser #9B51E0
+actor "Environmental\nAnalyst" as Analyst #9B51E0
+actor "Sustainability\nManager" as Manager #9B51E0
+actor "External\nBusiness System" as External #9B51E0
+
+package "IAM" {
+  rectangle "CreateUserAccount" as CmdCreate #2D9CDB
+  rectangle "InviteUser" as CmdInvite #2D9CDB
+  rectangle "AcceptInvitation" as CmdAccept #2D9CDB
+  rectangle "AssignRole" as CmdRole #2D9CDB
+  rectangle "User" as AggUser #F2C94C
+  rectangle "Invitation" as AggInvite #F2C94C
+  rectangle "UserAccountCreated" as EvtCreate #F2994A
+  rectangle "UserInvited" as EvtInvited #F2994A
+  rectangle "RoleAssigned" as EvtRole #F2994A
+}
+
+package "Organization\nManagement" {
+  rectangle "RegisterOrganization" as CmdOrg #2D9CDB
+  rectangle "RegisterFacility" as CmdFacility #2D9CDB
+  rectangle "Organization" as AggOrg #F2C94C
+  rectangle "Facility" as AggFacility #F2C94C
+  rectangle "OrganizationRegistered" as EvtOrg #F2994A
+  rectangle "FacilityRegistered" as EvtFacility #F2994A
+}
+
+package "Emissions\nManagement" {
+  rectangle "RegisterEmissionSource" as CmdSource #2D9CDB
+  rectangle "RecordActivityData" as CmdActivity #2D9CDB
+  rectangle "EmissionSource" as AggSource #F2C94C
+  rectangle "ActivityData" as AggActivity #F2C94C
+  rectangle "EmissionSourceRegistered" as EvtSource #F2994A
+  rectangle "ActivityDataRecorded" as EvtActivity #F2994A
+}
+
+package "Carbon Footprint\nCalculation" {
+  rectangle "CalculateCarbonFootprint" as CmdCalc #2D9CDB
+  rectangle "FootprintCalculation" as AggCalc #F2C94C
+  rectangle "CarbonFootprintCalculated" as EvtCalc #F2994A
+}
+
+package "Goals and\nReduction Plans" {
+  rectangle "RegisterReductionGoal" as CmdGoal #2D9CDB
+  rectangle "CreateReductionPlan" as CmdPlan #2D9CDB
+  rectangle "ReductionGoal" as AggGoal #F2C94C
+  rectangle "ReductionPlan" as AggPlan #F2C94C
+  rectangle "ReductionGoalRegistered" as EvtGoal #F2994A
+  rectangle "ReductionPlanCreated" as EvtPlan #F2994A
+}
+
+package "Analytics and\nReports" {
+  rectangle "Update Indicators\n(Policy)" as PolicyUpdate #EB5757
+  rectangle "GenerateConsolidatedReport" as CmdReport #2D9CDB
+  rectangle "EnvironmentalIndicator" as AggIndicator #F2C94C
+  rectangle "SustainabilityReport" as AggReport #F2C94C
+  rectangle "SustainabilityReportGenerated" as EvtReport #F2994A
+}
+
+package "Data\nIntegration" {
+  rectangle "ImportCsvFile" as CmdCsv #2D9CDB
+  rectangle "RegisterEmissionViaApi" as CmdApiReg #2D9CDB
+  rectangle "ImportBatch" as AggBatch #F2C94C
+  rectangle "CsvDataImported" as EvtCsv #F2994A
+  rectangle "Deliver imported data\n(Policy)" as PolicyDeliver #EB5757
+}
+
+rectangle "Email Provider\n<i>External System</i>" as EmailProvider #828282
+rectangle "Integration\nEvent Bus" as EventBus #828282
+
+' IAM flow
+Rep --> CmdCreate
+CmdCreate --> AggUser
+AggUser --> EvtCreate
+Admin --> CmdInvite
+CmdInvite --> AggInvite
+AggInvite --> EvtInvited
+EvtInvited --> EmailProvider
+InvitedUser --> CmdAccept
+CmdAccept --> AggUser
+Admin --> CmdRole
+CmdRole --> AggUser
+AggUser --> EvtRole
+
+' Organization Management
+Rep --> CmdOrg
+CmdOrg --> AggOrg
+AggOrg --> EvtOrg
+Admin --> CmdFacility
+CmdFacility --> AggFacility
+AggFacility --> EvtFacility
+AggOrg ..> AggFacility : has
+
+' Emissions Management
+Analyst --> CmdSource
+CmdSource --> AggSource
+AggSource --> EvtSource
+Analyst --> CmdActivity
+CmdActivity --> AggActivity
+AggActivity --> EvtActivity
+
+' Carbon Footprint Calculation
+Analyst --> CmdCalc
+EvtActivity ..> CmdCalc : activity data
+CmdCalc --> AggCalc
+AggCalc --> EvtCalc
+
+' Goals and Reduction Plans
+Manager --> CmdGoal
+CmdGoal --> AggGoal
+AggGoal --> EvtGoal
+Manager --> CmdPlan
+CmdPlan --> AggPlan
+AggGoal ..> AggPlan : has
+EvtCalc ..> AggGoal : measures progress
+
+' Analytics and Reports
+EvtOrg --> EventBus
+EvtSource --> EventBus
+EvtCalc --> EventBus
+EvtGoal --> EventBus
+EventBus --> PolicyUpdate
+PolicyUpdate --> AggIndicator
+Manager --> CmdReport
+CmdReport --> AggReport
+AggReport --> EvtReport
+
+' Data Integration
+Analyst --> CmdCsv
+CmdCsv --> AggBatch
+AggBatch --> EvtCsv
+EvtCsv --> PolicyDeliver
+PolicyDeliver ..> AggActivity : delivers
+External --> CmdApiReg
+CmdApiReg --> PolicyDeliver
+
+@enduml

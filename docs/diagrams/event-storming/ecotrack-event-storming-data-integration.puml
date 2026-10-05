@@ -1,0 +1,60 @@
+@startuml
+title EcoTrack - Data Integration Event Storming
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam rectangle {
+  BorderColor #4A4A4A
+  FontColor #FFFFFF
+  FontStyle bold
+  FontSize 12
+}
+skinparam ArrowColor #4A4A4A
+
+legend top left
+  |<#2D9CDB> Command |
+  |<#F2C94C> Aggregate |
+  |<#F2994A> Domain Event |
+  |<#EB5757> Policy |
+  |<#9B51E0> Actor |
+  |<#828282> External Context / System |
+endlegend
+
+actor "Environmental\nAnalyst" as Analyst #9B51E0
+actor "External\nBusiness System" as External #9B51E0
+rectangle "Emissions Management\n<i>External Context</i>" as Emissions #828282
+rectangle "Carbon Footprint\nCalculation\n<i>External Context</i>" as Footprint #828282
+
+rectangle "ImportCsvFile\n<i>Command</i>" as CmdCsv #2D9CDB
+rectangle "ImportBatch\n<i>Aggregate</i>" as AggBatch #F2C94C
+rectangle "CsvDataImported\n<i>Event</i>" as EvtCsv #F2994A
+
+rectangle "RegisterEmissionViaApi\n<i>Command</i>" as CmdApiReg #2D9CDB
+rectangle "ApiKey\n<i>Aggregate</i>" as AggKey #F2C94C
+rectangle "ExternalEmissionRegistered\n<i>Event</i>" as EvtApiReg #F2994A
+
+rectangle "QueryEmissionsViaApi\n<i>Command</i>" as CmdApiQueryEm #2D9CDB
+rectangle "QueryFootprintResultsViaApi\n<i>Command</i>" as CmdApiQueryFp #2D9CDB
+
+rectangle "Deliver imported\nactivity data\n<i>Policy</i>" as PolicyDeliver #EB5757
+
+Analyst --> CmdCsv
+CmdCsv --> AggBatch
+AggBatch --> EvtCsv
+EvtCsv --> PolicyDeliver
+PolicyDeliver --> Emissions : delivers
+
+External --> CmdApiReg : uses API Key
+CmdApiReg --> AggKey
+AggKey ..> CmdApiReg : validates
+CmdApiReg --> EvtApiReg
+EvtApiReg --> PolicyDeliver
+
+External --> CmdApiQueryEm : uses API Key
+CmdApiQueryEm --> Emissions : reads
+
+External --> CmdApiQueryFp : uses API Key
+CmdApiQueryFp --> Footprint : reads
+
+@enduml

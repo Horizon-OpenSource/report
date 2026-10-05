@@ -1,0 +1,62 @@
+@startuml
+title EcoTrack - Analytics and Reports Event Storming
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam rectangle {
+  BorderColor #4A4A4A
+  FontColor #FFFFFF
+  FontStyle bold
+  FontSize 12
+}
+skinparam ArrowColor #4A4A4A
+
+legend top left
+  |<#2D9CDB> Command |
+  |<#F2C94C> Aggregate |
+  |<#F2994A> Domain Event |
+  |<#EB5757> Policy |
+  |<#27AE60> Read Model |
+  |<#9B51E0> Actor |
+  |<#828282> External Infrastructure |
+endlegend
+
+actor "Sustainability\nManager" as Manager #9B51E0
+rectangle "Integration Event Bus\n<i>External Infrastructure</i>" as EventBus #828282
+
+rectangle "Update Indicators\n<i>Policy</i>" as PolicyUpdate #EB5757
+rectangle "EnvironmentalIndicator\n<i>Aggregate</i>" as AggIndicator #F2C94C
+
+rectangle "GenerateConsolidatedReport\n<i>Command</i>" as CmdConsolidated #2D9CDB
+rectangle "SustainabilityReport\n<i>Aggregate</i>" as AggReport #F2C94C
+rectangle "SustainabilityReportGenerated\n<i>Event</i>" as EvtReport #F2994A
+
+rectangle "GenerateReportByPeriod\n<i>Command</i>" as CmdPeriod #2D9CDB
+
+rectangle "DownloadReport\n<i>Command</i>" as CmdDownload #2D9CDB
+rectangle "SustainabilityReportDownloaded\n<i>Event</i>" as EvtDownload #F2994A
+
+rectangle "Total Emissions /\nBy Scope View\n<i>Read Model</i>" as RmTotals #27AE60
+rectangle "Period Comparison\n<i>Read Model</i>" as RmCompare #27AE60
+rectangle "Environmental Summary\n<i>Read Model</i>" as RmSummary #27AE60
+rectangle "Reports History\n<i>Read Model</i>" as RmHistory #27AE60
+
+EventBus --> PolicyUpdate : OrganizationRegistered,\nEmissionSourceRegistered,\nCarbonFootprintCalculated,\nReductionGoalRegistered, etc.
+PolicyUpdate --> AggIndicator
+AggIndicator --> RmTotals
+AggIndicator --> RmCompare
+AggIndicator --> RmSummary
+
+Manager --> CmdConsolidated
+Manager --> CmdPeriod
+CmdConsolidated --> AggReport
+CmdPeriod --> AggReport
+AggReport --> EvtReport
+EvtReport --> RmHistory
+
+Manager --> CmdDownload
+CmdDownload --> AggReport
+AggReport --> EvtDownload
+
+@enduml
