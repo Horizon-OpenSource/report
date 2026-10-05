@@ -44,11 +44,19 @@ Septiembre, 2026
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción de modificación |
-|---|---|---|---|
-| 0.1 | 10/09/2026 | Tello Murga, Javier Oswaldo | Se creó la estructura base del informe. |
-| 0.2 | 01/10/2026 | Espinoza Flores, Aaron Andre | Se corrigieron timings, trazabilidad de User Personas, Big Picture Event Storming e Impact Mapping con objetivos SMART. |
-
+| Versión | Fecha      | Autor                          | Descripción de modificación                                                                                                                                                                                                                                                        |
+|---------|------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0.1     | 10/09/2026 | Tello Murga, Javier Oswaldo    | Se creó la estructura base del Project Report y se inició la integración de la documentación del proyecto EcoTrack.                                                                                                                                                |
+| 0.2     | 14/09/2026 | Espinoza Flores, Aaron André   | Se desarrolló el Capítulo II: Requirements Elicitation & Analysis, incluyendo Competitive Analysis, entrevistas, análisis de resultados, User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language. |
+| 0.3     | 16/09/2026 | Torres Diaz, Rolando Andre     | Se desarrollaron artefactos del Capítulo III: Requirements Specification, incluyendo User Stories, Epics, Product Backlog e Impact Mapping, además de apoyar en la organización de referencias bibliográficas.                                                     |
+| 0.4     | 18/09/2026 | Payesa Torres, Harrison Hubert | Se desarrollaron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incluyendo Wireframes, Mock-ups, User Flow Diagrams y prototipos de la Web Application.                                                                       |
+| 0.5     | 19/09/2026 | Lacuta Lima, Alex Rodrigo      | Se desarrollaron las secciones desde 4.6 Domain-Driven Software Architecture hasta el cierre del Capítulo IV, incluyendo Design-Level Event Storming, Software Architecture Context, Container and Components Diagrams, Class Diagrams y Database Design.          |
+| 0.6     | 20/09/2026 | Tello Murga, Javier Oswaldo    | Se integraron y revisaron los artefactos del AV1, incluyendo el Capítulo I, Style Guidelines, Information Architecture, Student Outcome y la documentación correspondiente al Sprint 1.                                                                            |
+| 0.7     | 01/10/2026 | Espinoza Flores, Aaron André   | Se corrigieron timings de entrevistas, trazabilidad de User Personas, Big Picture Event Storming e Impact Mapping con objetivos SMART de acuerdo con el feedback del AV1.                                                                                          |
+| 0.8     | 02/10/2026 | Payesa Torres, Harrison Hubert | Se corrigieron y ampliaron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incorporando wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1.                                                      |
+| 0.9     | 03/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completó y corrigió el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack.                                                                                                                                                             |
+| 0.10    | 04/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completaron y actualizaron los Class Diagrams de Frontend y Backend y el Database Design correspondientes al Capítulo IV.                                                                                                                                       |
+| 0.11    | 05/10/2026 | Tello Murga, Javier Oswaldo    | Se corrigió el Capítulo I, se actualizaron User Stories y Epics, se reconstruyó y priorizó el Product Backlog, se actualizó el enlace público de Trello y se corrigieron referencias del repositorio Frontend y perfiles del equipo.                               |
 ---
 
 # Project Report Collaboration Insights
