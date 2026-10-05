@@ -79,41 +79,47 @@ Septiembre, 2026
 
 ## AV1
 
-Durante el desarrollo del AV1, los integrantes del equipo realizaron sus aportes al Project Report mediante GitHub, utilizando ramas `feature/*`, GitFlow y Conventional Commits para mantener un flujo de trabajo organizado y colaborativo.
+Durante el desarrollo del AV1, el equipo Horizon utilizó GitHub como plataforma de colaboración y control de versiones. Las funcionalidades y artefactos del Project Report fueron desarrollados mediante ramas `feature/*` e integrados mediante Pull Requests, siguiendo el flujo de trabajo definido por el equipo.
 
-### Collaboration Insights
+### Project Report Collaboration Insights
 
-![Project Report Collaboration Insights - AV1](img/av1-report-collaboration-insights.png)
+#### Commit History
+
+La siguiente evidencia muestra los commits realizados por los integrantes del equipo durante la elaboración del Project Report correspondiente al AV1.
+
+![Project Report Commits - AV1](assets/collaboration-insights/av1-report-commits.png)
+
+#### Pull Requests
+
+La siguiente evidencia muestra los Pull Requests utilizados para integrar las contribuciones realizadas en las diferentes secciones del Project Report.
+
+![Project Report Pull Requests - AV1](assets/collaboration-insights/av1-report-pull-requests.png)
 
 ---
 
 ## TB1
 
-Durante el desarrollo del TB1, el equipo continuará trabajando colaborativamente sobre el Project Report, incorporando las mejoras y nuevos artefactos correspondientes a la entrega.
+Durante el desarrollo del TB1, el equipo Horizon realizó correcciones y mejoras al Project Report a partir del feedback recibido en el AV1. Para organizar la colaboración se continuó utilizando GitHub mediante ramas `feature/*`, commits individuales y Pull Requests hacia la rama `develop`.
 
-### Collaboration Insights
+### Project Report Collaboration Insights
 
-![Project Report Collaboration Insights - TB1](img/tb1-report-collaboration-insights.png)
+#### GitHub Collaboration Network
 
----
+La siguiente evidencia muestra el flujo de trabajo colaborativo utilizado durante la actualización del Project Report para el TB1.
 
-## AV2
+![Project Report Collaboration Network - TB1](assets/collaboration-insights/tb1-report-network.png)
 
-Durante el desarrollo del AV2, los integrantes continuarán registrando sus contribuciones al informe y los avances correspondientes al proyecto mediante el repositorio de GitHub.
+#### Commit History
 
-### Collaboration Insights
+La siguiente evidencia muestra los commits realizados por los integrantes del equipo durante las correcciones y mejoras del Project Report correspondientes al TB1.
 
-![Project Report Collaboration Insights - AV2](img/av2-report-collaboration-insights.png)
+![Project Report Commits - TB1](assets/collaboration-insights/tb1-report-commits.png)
 
----
+#### Pull Requests
 
-## TB2
+La siguiente evidencia muestra los Pull Requests utilizados para integrar las contribuciones de los integrantes del equipo durante la preparación del TB1.
 
-Durante el desarrollo del TB2, se registrará la participación final de los integrantes en la elaboración y actualización del Project Report, evidenciando la colaboración realizada durante la etapa final del proyecto.
-
-### Collaboration Insights
-
-![Project Report Collaboration Insights - TB2](img/tb2-report-collaboration-insights.png)
+![Project Report Pull Requests - TB1](assets/collaboration-insights/tb1-report-pull-requests.png)
 
 ---
 
