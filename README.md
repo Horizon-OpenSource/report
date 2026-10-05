@@ -4311,7 +4311,51 @@ feature/i18n-accessibility
 
 ## Conclusiones y recomendaciones
 
-<!-- Completar -->
+### AV1
+
+Durante el AV1, el equipo Horizon logró establecer una base sólida para el desarrollo de EcoTrack a partir del análisis de la problemática, la identificación de los segmentos objetivo y la definición de una propuesta de solución orientada a mejorar la gestión de información ambiental de las organizaciones.
+
+El proceso de Lean UX permitió identificar como principales dificultades la dispersión de información ambiental, la ejecución manual de actividades relacionadas con el registro y procesamiento de datos, la baja trazabilidad de la información y el tiempo requerido para obtener resultados y elaborar reportes ambientales. A partir de estos problemas se formularon Business Outcome Assumptions, User Outcome Assumptions e Hypothesis Statements con criterios de éxito medibles que permitirán evaluar posteriormente el impacto de la solución.
+
+Las entrevistas realizadas a representantes de los segmentos objetivo permitieron complementar la definición inicial del problema e identificar necesidades relacionadas con la organización de información, el seguimiento de emisiones, la generación de resultados y la disponibilidad de información ambiental para la toma de decisiones. Los resultados obtenidos sirvieron como base para la elaboración de los User Personas, User Task Matrix, User Journey Maps, Empathy Maps, Big Picture Event Storming y Ubiquitous Language.
+
+Asimismo, se definieron las principales funcionalidades de EcoTrack mediante User Stories, Epics y un Product Backlog priorizado. Estos artefactos permitieron transformar las necesidades identificadas durante el proceso de investigación en requerimientos funcionales que orientan el desarrollo progresivo de la solución.
+
+En relación con Product Design, se establecieron los principales lineamientos de Information Architecture, UX/UI Design y arquitectura de software, permitiendo definir una visión inicial de la experiencia de usuario y de la organización técnica de EcoTrack.
+
+A nivel de implementación, el Sprint 1 permitió desarrollar y desplegar la primera versión del Landing Page de EcoTrack. Este producto permitió presentar la propuesta de valor, los segmentos objetivo, los beneficios, las principales funcionalidades y el funcionamiento general de la solución, constituyendo el primer producto digital disponible públicamente del proyecto.
+
+Como conclusión del AV1, se determinó que existe coherencia entre la problemática identificada, las necesidades de los segmentos objetivo, los requerimientos especificados y la propuesta de solución de EcoTrack. No obstante, los criterios de éxito definidos mediante Lean UX deben considerarse todavía como hipótesis que requieren validación con usuarios reales mediante versiones funcionales del producto.
+
+Como recomendación, se planteó continuar desarrollando los principales flujos de negocio de EcoTrack, mantener la trazabilidad entre los artefactos de análisis, diseño e implementación y utilizar las siguientes iteraciones para comprobar progresivamente las hipótesis y criterios de éxito establecidos.
+
+### TB1
+
+Durante el TB1, el equipo Horizon logró evolucionar EcoTrack desde una etapa principalmente orientada al análisis y diseño hacia una etapa de implementación funcional de la solución. Para ello, se realizaron correcciones sobre los artefactos previamente presentados, se mejoró la consistencia del Project Report y se desarrolló la primera versión de la Frontend Web Application.
+
+A partir de la retroalimentación obtenida en el AV1, se mejoraron los artefactos correspondientes a Requirements Elicitation & Analysis. Se corrigieron los registros y timings de las entrevistas, se fortaleció la trazabilidad entre los resultados obtenidos y los User Personas, y se actualizaron los artefactos de Needfinding. Asimismo, se completaron y mejoraron el Big Picture Event Storming y el Ubiquitous Language, permitiendo representar con mayor claridad los procesos y conceptos principales del dominio de EcoTrack.
+
+En Requirements Specification se revisaron y actualizaron las User Stories y Epics, incorporando requerimientos necesarios para completar los principales flujos de negocio del producto. El Product Backlog fue reconstruido y priorizado hasta contar con 51 historias relacionadas con las seis Epics definidas para EcoTrack. Esta priorización permitió dar mayor importancia a funcionalidades vinculadas directamente con la generación de valor para los usuarios, tales como el registro de información ambiental, la gestión de emisiones, el cálculo de huella de carbono, el análisis de resultados, la generación de reportes y el seguimiento de metas ambientales.
+
+También se mejoró el Impact Mapping, definiendo objetivos, actores, impactos y entregables relacionados con los resultados esperados del producto. Estos elementos permitieron establecer una relación más clara entre las funcionalidades desarrolladas y los objetivos de negocio planteados durante el proceso de Lean UX.
+
+En Product Design se completaron los artefactos correspondientes a Web Applications UX/UI Design y Web Applications Prototyping, incluyendo Wireframes, Mock-ups, Wireflows y User Flow Diagrams para los principales escenarios de uso de EcoTrack. Estos artefactos permitieron definir con mayor precisión la experiencia propuesta antes de avanzar con la implementación.
+
+Asimismo, se fortaleció el diseño técnico mediante la incorporación y actualización de Design-Level Event Storming, Software Architecture Context Diagram, Container Diagrams, Components Diagrams, Class Diagrams y Database Design. La utilización de Bounded Contexts permitió organizar la solución en dominios claramente diferenciados y establecer una base arquitectónica coherente para la evolución posterior del producto.
+
+Durante el Sprint 2 se completó la primera versión de la Frontend Web Application de EcoTrack utilizando Angular, TypeScript y Angular Material. La implementación se organizó mediante los principales Bounded Contexts del producto, permitiendo desarrollar de forma modular funcionalidades relacionadas con Organization Management, Emissions Management, Carbon Footprint Calculation y Analytics & Reports.
+
+El trabajo colaborativo se realizó utilizando Git y GitHub mediante ramas `feature/*`, Conventional Commits y Pull Requests hacia la rama de integración `develop`. Esta estrategia permitió que los integrantes trabajaran de forma paralela sobre diferentes partes del producto y que posteriormente las funcionalidades fueran revisadas e integradas dentro de una única aplicación.
+
+Además, se mantuvo una nueva versión del Landing Page y se desplegó la primera versión de la Frontend Web Application, permitiendo disponer de productos digitales accesibles para demostrar los principales escenarios implementados durante el Sprint 2.
+
+La implementación desarrollada durante el TB1 permitió comprobar la viabilidad técnica de la arquitectura planteada y establecer una base funcional sobre la cual continuar incorporando funcionalidades en los siguientes Sprints. Sin embargo, las métricas planteadas en los Business Outcome Assumptions e Hypothesis Statements aún requieren sesiones de validación con usuarios reales antes de poder determinar su grado de cumplimiento.
+
+Como recomendación para las siguientes iteraciones, el equipo debe continuar integrando los Bounded Contexts pendientes, incorporar progresivamente los RESTful Web Services, reemplazar los datos simulados por información obtenida desde los servicios de backend y mantener la trazabilidad entre User Stories, Product Backlog, arquitectura e implementación.
+
+También se recomienda realizar sesiones de validación con representantes de los segmentos objetivo una vez que los principales flujos se encuentren completamente operativos. Estas sesiones permitirán evaluar la facilidad de uso de la plataforma, identificar oportunidades de mejora y contrastar los resultados obtenidos con los criterios de éxito definidos mediante Lean UX.
+
+Finalmente, se concluye que el TB1 permitió consolidar la transición de EcoTrack desde una propuesta documentada hacia un producto de software funcional. Las correcciones realizadas sobre los artefactos del AV1, la actualización de los requerimientos, el fortalecimiento del diseño técnico y la implementación de la primera versión de la Frontend Web Application contribuyen a mantener una relación coherente entre la problemática identificada, las necesidades de los usuarios, el diseño de la solución y su implementación.
 
 ---
 
