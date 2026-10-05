@@ -1,0 +1,47 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Backend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class FootprintCommandService {
+    +handle(command: CalculateFootprintCommand): FootprintCalculation
+  }
+
+  class FootprintQueryService {
+    +handle(query: GetEmissionFactorsQuery): List<EmissionFactor>
+    +handle(query: GetResultsByScopeQuery): List<FootprintCalculation>
+    +handle(query: GetResultsByPeriodQuery): List<FootprintCalculation>
+    +handle(query: GetHistoryQuery): List<FootprintCalculation>
+  }
+
+  interface EmissionsApiPort {
+    +getActivityData(emissionSourceId: Long): ActivityDataDto
+  }
+
+  FootprintCommandService ..> EmissionsApiPort : uses
+}
+
+package "Interfaces REST" as Backend_footprint_Interfaces_REST <<layer>> {
+}
+package "Domain" as Backend_footprint_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_footprint_Infrastructure <<layer>> {
+}
+
+Backend_footprint_Interfaces_REST ..> FootprintCommandService : delegates
+Backend_footprint_Interfaces_REST ..> FootprintQueryService : delegates
+FootprintCommandService ..> Backend_footprint_Domain : applies rules
+FootprintQueryService ..> Backend_footprint_Domain : reads aggregates
+EmissionsApiPort ..> Backend_footprint_Infrastructure : implemented by
+
+@enduml

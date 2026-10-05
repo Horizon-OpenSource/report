@@ -1,0 +1,61 @@
+@startuml
+title EcoTrack Platform - Emissions Management Backend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class EmissionSourceJpaRepository {
+    +findById(id: Long): EmissionSource
+    +search(term: String): List<EmissionSource>
+    +findByScope(scope: String): List<EmissionSource>
+    +save(source: EmissionSource): EmissionSource
+  }
+
+  class EmissionSourceEntity {
+    +id: Long
+    +facilityId: Long
+    +name: String
+    +type: String
+    +scope: String
+  }
+
+  class ActivityDataEntity {
+    +id: Long
+    +emissionSourceId: Long
+    +quantity: Double
+    +unit: String
+    +period: String
+    +origin: String
+  }
+
+  class OrganizationApiAdapter {
+    +validateFacilityScope(facilityId: Long): boolean
+  }
+
+  EmissionSourceJpaRepository ..> EmissionSourceEntity : maps
+  EmissionSourceEntity "1" *-- "0..*" ActivityDataEntity : has
+}
+
+package "Interfaces REST" as Backend_emissions_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_emissions_Application <<layer>> {
+}
+package "Domain" as Backend_emissions_Domain <<layer>> {
+}
+package "Organization Management API" as OrgMgmtApi <<external>> {
+}
+
+EmissionSourceJpaRepository ..> Backend_emissions_Domain : implements EmissionSourceRepository
+OrganizationApiAdapter ..> Backend_emissions_Application : implements OrganizationApiPort
+OrganizationApiAdapter ..> OrgMgmtApi : calls
+
+@enduml

@@ -1,0 +1,47 @@
+@startuml
+title EcoTrack Platform - Emissions Management Frontend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class EmissionSourceStore {
+    +sources: EmissionSourceViewModel[]
+    +loading: boolean
+    +registerEmissionSource(request: RegisterEmissionSourceRequest): void
+    +editEmissionSource(id: number, request: EditEmissionSourceRequest): void
+    +deleteEmissionSource(id: number): void
+    +searchByTerm(term: String): void
+    +filterByScope(scope: String): void
+  }
+
+  class ActivityDataFacade {
+    +recordActivityData(request: RecordActivityDataRequest): void
+  }
+
+  ActivityDataFacade ..> EmissionSourceStore : coordinates with
+}
+
+package "Presentation" as Frontend_emissions_Presentation <<layer>> {
+}
+package "Domain" as Frontend_emissions_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_emissions_Infrastructure <<layer>> {
+}
+
+Frontend_emissions_Presentation ..> EmissionSourceStore : dispatches
+Frontend_emissions_Presentation ..> ActivityDataFacade : dispatches
+EmissionSourceStore ..> Frontend_emissions_Domain : updates
+ActivityDataFacade ..> Frontend_emissions_Domain : updates
+EmissionSourceStore ..> Frontend_emissions_Infrastructure : requests
+ActivityDataFacade ..> Frontend_emissions_Infrastructure : requests
+
+@enduml

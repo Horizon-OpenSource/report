@@ -1,0 +1,66 @@
+@startuml
+title EcoTrack Platform - Analytics and Reports Frontend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class AnalyticsApiService {
+    +getDashboard(): Observable<EnvironmentalIndicatorResponse[]>
+    +comparePeriods(from: String, to: String): Observable<EnvironmentalIndicatorResponse[]>
+    +getSummary(): Observable<EnvironmentalIndicatorResponse[]>
+    +generateConsolidatedReport(): Observable<SustainabilityReportResponse>
+    +generateReportByPeriod(period: String): Observable<SustainabilityReportResponse>
+    +downloadReport(reportId: number): Observable<Blob>
+    +getReportsHistory(): Observable<SustainabilityReportResponse[]>
+  }
+
+  interface EnvironmentalIndicatorResponse {
+    +id: number
+    +type: String
+    +value: number
+    +period: String
+  }
+  interface SustainabilityReportResponse {
+    +id: number
+    +period: String
+    +generatedAt: String
+    +status: String
+  }
+
+  class EnvironmentalIndicatorAssembler {
+    +{static} toViewModel(response: EnvironmentalIndicatorResponse): EnvironmentalIndicatorViewModel
+  }
+  class SustainabilityReportAssembler {
+    +{static} toViewModel(response: SustainabilityReportResponse): SustainabilityReportViewModel
+  }
+
+  AnalyticsApiService ..> EnvironmentalIndicatorResponse : receives
+  AnalyticsApiService ..> SustainabilityReportResponse : receives
+  EnvironmentalIndicatorAssembler ..> EnvironmentalIndicatorResponse : converts
+  SustainabilityReportAssembler ..> SustainabilityReportResponse : converts
+}
+
+package "Presentation" as Frontend_analytics_Presentation <<layer>> {
+}
+package "Application" as Frontend_analytics_Application <<layer>> {
+}
+package "Domain" as Frontend_analytics_Domain <<layer>> {
+}
+package "EcoTrack Backend API" as Backend <<external>> {
+}
+
+Frontend_analytics_Application ..> AnalyticsApiService : requests
+AnalyticsApiService ..> Backend : HTTPS / JSON
+EnvironmentalIndicatorAssembler ..> Frontend_analytics_Domain : produces
+SustainabilityReportAssembler ..> Frontend_analytics_Domain : produces
+
+@enduml

@@ -1,0 +1,81 @@
+@startuml
+title EcoTrack Platform - Organization Management Backend Interfaces REST Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Interfaces REST" {
+  class OrganizationController {
+    +registerOrganization(resource: RegisterOrganizationResource): OrganizationResource
+    +updateOrganization(id: Long, resource: UpdateOrganizationResource): OrganizationResource
+    +getProfile(id: Long): OrganizationResource
+    +registerFacility(organizationId: Long, resource: RegisterFacilityResource): FacilityResource
+    +registerBusinessUnit(organizationId: Long, resource: RegisterBusinessUnitResource): BusinessUnitResource
+  }
+
+  class RegisterOrganizationResource {
+    +name: String
+    +sector: String
+  }
+  class UpdateOrganizationResource {
+    +name: String
+    +sector: String
+  }
+  class RegisterFacilityResource {
+    +name: String
+    +address: String
+  }
+  class RegisterBusinessUnitResource {
+    +name: String
+  }
+  class OrganizationResource {
+    +id: Long
+    +name: String
+    +sector: String
+    +createdAt: LocalDateTime
+  }
+  class FacilityResource {
+    +id: Long
+    +organizationId: Long
+    +name: String
+    +address: String
+  }
+  class BusinessUnitResource {
+    +id: Long
+    +organizationId: Long
+    +name: String
+  }
+
+  class OrganizationResourceAssembler {
+    +{static} toResourceFrom(organization: Organization): OrganizationResource
+  }
+
+  OrganizationController ..> RegisterOrganizationResource : receives
+  OrganizationController ..> UpdateOrganizationResource : receives
+  OrganizationController ..> RegisterFacilityResource : receives
+  OrganizationController ..> RegisterBusinessUnitResource : receives
+  OrganizationController ..> OrganizationResource : returns
+  OrganizationController ..> FacilityResource : returns
+  OrganizationController ..> BusinessUnitResource : returns
+  OrganizationResourceAssembler ..> OrganizationResource : builds
+}
+
+package "Application" as Backend_orgmgmt_Application <<layer>> {
+}
+package "Domain" as Backend_orgmgmt_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_orgmgmt_Infrastructure <<layer>> {
+}
+
+OrganizationController ..> Backend_orgmgmt_Application : delegates use cases
+OrganizationResourceAssembler ..> Backend_orgmgmt_Domain : reads aggregates
+
+@enduml

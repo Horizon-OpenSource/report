@@ -1,0 +1,67 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Backend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class EmissionFactorJpaRepository {
+    +findAll(): List<EmissionFactor>
+    +findById(id: Long): EmissionFactor
+  }
+
+  class FootprintCalculationJpaRepository {
+    +findByScope(scope: String): List<FootprintCalculation>
+    +findByPeriod(period: String): List<FootprintCalculation>
+    +save(calculation: FootprintCalculation): FootprintCalculation
+  }
+
+  class EmissionFactorEntity {
+    +id: Long
+    +name: String
+    +scope: String
+    +value: Double
+    +unit: String
+  }
+
+  class FootprintCalculationEntity {
+    +id: Long
+    +organizationId: Long
+    +activityDataId: Long
+    +emissionFactorId: Long
+    +scope: String
+    +resultValue: Double
+    +period: String
+  }
+
+  class EmissionsApiAdapter {
+    +getActivityData(emissionSourceId: Long): ActivityDataDto
+  }
+
+  EmissionFactorJpaRepository ..> EmissionFactorEntity : maps
+  FootprintCalculationJpaRepository ..> FootprintCalculationEntity : maps
+}
+
+package "Interfaces REST" as Backend_footprint_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_footprint_Application <<layer>> {
+}
+package "Domain" as Backend_footprint_Domain <<layer>> {
+}
+package "Emissions Management API" as EmissionsApi <<external>> {
+}
+
+EmissionFactorJpaRepository ..> Backend_footprint_Domain : implements EmissionFactorRepository
+FootprintCalculationJpaRepository ..> Backend_footprint_Domain : implements FootprintCalculationRepository
+EmissionsApiAdapter ..> Backend_footprint_Application : implements EmissionsApiPort
+EmissionsApiAdapter ..> EmissionsApi : calls
+
+@enduml

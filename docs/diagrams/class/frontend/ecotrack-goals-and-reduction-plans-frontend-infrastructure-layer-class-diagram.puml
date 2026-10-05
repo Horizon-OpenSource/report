@@ -1,0 +1,102 @@
+@startuml
+title EcoTrack Platform - Goals and Reduction Plans Frontend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class GoalsApiService {
+    +registerGoal(request: RegisterReductionGoalRequest): Observable<ReductionGoalResponse>
+    +editGoal(id: number, request: EditReductionGoalRequest): Observable<ReductionGoalResponse>
+    +updateStatus(id: number, status: String): Observable<ReductionGoalResponse>
+    +deleteGoal(id: number): Observable<void>
+    +createPlan(request: CreateReductionPlanRequest): Observable<ReductionPlanResponse>
+    +registerInitiative(request: RegisterInitiativeRequest): Observable<EnvironmentalInitiativeResponse>
+    +getProgress(): Observable<ProgressResponse[]>
+  }
+
+  interface RegisterReductionGoalRequest {
+    +name: String
+    +targetValue: number
+    +targetDate: String
+  }
+  interface EditReductionGoalRequest {
+    +name: String
+    +targetValue: number
+    +targetDate: String
+  }
+  interface CreateReductionPlanRequest {
+    +reductionGoalId: number
+    +name: String
+    +description: String
+  }
+  interface RegisterInitiativeRequest {
+    +reductionPlanId: number
+    +name: String
+    +description: String
+  }
+  interface ReductionGoalResponse {
+    +id: number
+    +name: String
+    +targetValue: number
+    +targetDate: String
+    +status: String
+  }
+  interface ReductionPlanResponse {
+    +id: number
+    +reductionGoalId: number
+    +name: String
+    +description: String
+  }
+  interface EnvironmentalInitiativeResponse {
+    +id: number
+    +reductionPlanId: number
+    +name: String
+    +description: String
+  }
+  interface ProgressResponse {
+    +reductionGoalId: number
+    +currentValue: number
+    +targetValue: number
+    +percentage: number
+  }
+
+  class ReductionGoalAssembler {
+    +{static} toViewModel(response: ReductionGoalResponse): ReductionGoalViewModel
+  }
+  class ProgressAssembler {
+    +{static} toViewModel(response: ProgressResponse): ProgressViewModel
+  }
+
+  GoalsApiService ..> RegisterReductionGoalRequest : sends
+  GoalsApiService ..> CreateReductionPlanRequest : sends
+  GoalsApiService ..> RegisterInitiativeRequest : sends
+  GoalsApiService ..> ReductionGoalResponse : receives
+  GoalsApiService ..> ProgressResponse : receives
+  ReductionGoalAssembler ..> ReductionGoalResponse : converts
+  ProgressAssembler ..> ProgressResponse : converts
+}
+
+package "Presentation" as Frontend_goals_Presentation <<layer>> {
+}
+package "Application" as Frontend_goals_Application <<layer>> {
+}
+package "Domain" as Frontend_goals_Domain <<layer>> {
+}
+package "EcoTrack Backend API" as Backend <<external>> {
+}
+
+Frontend_goals_Application ..> GoalsApiService : requests
+GoalsApiService ..> Backend : HTTPS / JSON
+ReductionGoalAssembler ..> Frontend_goals_Domain : produces
+ProgressAssembler ..> Frontend_goals_Domain : produces
+
+@enduml

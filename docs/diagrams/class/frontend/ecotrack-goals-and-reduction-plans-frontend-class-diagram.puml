@@ -1,0 +1,21 @@
+@startuml
+title EcoTrack Platform - Goals and Reduction Plans Frontend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "Goals and Reduction Plans Frontend Bounded Context" {
+  class "Presentation" as Frontend_goals_Presentation <<layer>>
+  class "Application" as Frontend_goals_Application <<layer>>
+  class "Domain" as Frontend_goals_Domain <<layer>>
+  class "Infrastructure" as Frontend_goals_Infrastructure <<layer>>
+}
+
+Frontend_goals_Presentation ..> Frontend_goals_Application : dispatches actions
+Frontend_goals_Application ..> Frontend_goals_Domain : reads / updates view models
+Frontend_goals_Application ..> Frontend_goals_Infrastructure : requests data
+Frontend_goals_Infrastructure ..> Frontend_goals_Domain : maps responses to
+
+@enduml

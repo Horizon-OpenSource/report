@@ -1,0 +1,89 @@
+@startuml
+title EcoTrack Platform - Analytics and Reports Backend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class EnvironmentalIndicatorJpaRepository {
+    +save(indicator: EnvironmentalIndicator): EnvironmentalIndicator
+    +findByOrganizationId(organizationId: Long): List<EnvironmentalIndicator>
+  }
+  class SustainabilityReportJpaRepository {
+    +findById(id: Long): SustainabilityReport
+    +findByOrganizationId(organizationId: Long): List<SustainabilityReport>
+    +save(report: SustainabilityReport): SustainabilityReport
+  }
+
+  class EnvironmentalIndicatorEntity {
+    +id: Long
+    +organizationId: Long
+    +type: String
+    +value: Double
+    +period: String
+  }
+  class SustainabilityReportEntity {
+    +id: Long
+    +organizationId: Long
+    +period: String
+    +status: String
+    +generatedAt: LocalDateTime
+  }
+
+  class PdfReportGenerator {
+    +generate(report: SustainabilityReport): byte[]
+  }
+
+  class OrganizationApiAdapter {
+    +getOrganizationMetrics(organizationId: Long): OrganizationMetricsDto
+  }
+  class EmissionsApiAdapter {
+    +getEmissionsMetrics(organizationId: Long): EmissionsMetricsDto
+  }
+  class FootprintApiAdapter {
+    +getFootprintMetrics(organizationId: Long): FootprintMetricsDto
+  }
+  class GoalsApiAdapter {
+    +getGoalsMetrics(organizationId: Long): GoalsMetricsDto
+  }
+
+  EnvironmentalIndicatorJpaRepository ..> EnvironmentalIndicatorEntity : maps
+  SustainabilityReportJpaRepository ..> SustainabilityReportEntity : maps
+}
+
+package "Interfaces REST" as Backend_analytics_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_analytics_Application <<layer>> {
+}
+package "Domain" as Backend_analytics_Domain <<layer>> {
+}
+package "Organization Management API" as OrgMgmtApi <<external>> {
+}
+package "Emissions Management API" as EmissionsApi <<external>> {
+}
+package "Carbon Footprint Calculation API" as FootprintApi <<external>> {
+}
+package "Goals and Reduction Plans API" as GoalsApi <<external>> {
+}
+
+EnvironmentalIndicatorJpaRepository ..> Backend_analytics_Domain : implements EnvironmentalIndicatorRepository
+SustainabilityReportJpaRepository ..> Backend_analytics_Domain : implements SustainabilityReportRepository
+PdfReportGenerator ..> Backend_analytics_Application : used by ReportCommandService
+OrganizationApiAdapter ..> Backend_analytics_Application : implements OrganizationApiPort
+EmissionsApiAdapter ..> Backend_analytics_Application : implements EmissionsApiPort
+FootprintApiAdapter ..> Backend_analytics_Application : implements FootprintApiPort
+GoalsApiAdapter ..> Backend_analytics_Application : implements GoalsApiPort
+OrganizationApiAdapter ..> OrgMgmtApi : calls
+EmissionsApiAdapter ..> EmissionsApi : calls
+FootprintApiAdapter ..> FootprintApi : calls
+GoalsApiAdapter ..> GoalsApi : calls
+
+@enduml

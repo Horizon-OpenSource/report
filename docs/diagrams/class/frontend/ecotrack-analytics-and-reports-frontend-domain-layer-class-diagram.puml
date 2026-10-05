@@ -1,0 +1,61 @@
+@startuml
+title EcoTrack Platform - Analytics and Reports Frontend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Models" {
+    class EnvironmentalIndicatorViewModel {
+      +id: number
+      +type: String
+      +value: number
+      +period: String
+    }
+
+    class SustainabilityReportViewModel {
+      +id: number
+      +period: String
+      +generatedAt: Date
+      +status: ReportStatus
+    }
+  }
+
+  package "Value Objects" {
+    enum ReportStatus {
+      GENERATED
+      DOWNLOADED
+    }
+  }
+
+  SustainabilityReportViewModel "1" *-- "1" ReportStatus : currently in
+  SustainabilityReportViewModel "0..*" --> "0..*" EnvironmentalIndicatorViewModel : summarizes
+}
+
+package "Presentation" as Frontend_analytics_Presentation <<layer>> {
+}
+package "Application" as Frontend_analytics_Application <<layer>> {
+}
+package "Infrastructure" as Frontend_analytics_Infrastructure <<layer>> {
+}
+
+Frontend_analytics_Presentation ..> EnvironmentalIndicatorViewModel : renders
+Frontend_analytics_Presentation ..> SustainabilityReportViewModel : renders
+Frontend_analytics_Application ..> EnvironmentalIndicatorViewModel : updates
+Frontend_analytics_Application ..> SustainabilityReportViewModel : updates
+Frontend_analytics_Infrastructure ..> EnvironmentalIndicatorViewModel : maps responses to
+
+@enduml

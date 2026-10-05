@@ -1,0 +1,21 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Frontend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "Carbon Footprint Calculation Frontend Bounded Context" {
+  class "Presentation" as Frontend_footprint_Presentation <<layer>>
+  class "Application" as Frontend_footprint_Application <<layer>>
+  class "Domain" as Frontend_footprint_Domain <<layer>>
+  class "Infrastructure" as Frontend_footprint_Infrastructure <<layer>>
+}
+
+Frontend_footprint_Presentation ..> Frontend_footprint_Application : dispatches actions
+Frontend_footprint_Application ..> Frontend_footprint_Domain : reads / updates view models
+Frontend_footprint_Application ..> Frontend_footprint_Infrastructure : requests data
+Frontend_footprint_Infrastructure ..> Frontend_footprint_Domain : maps responses to
+
+@enduml

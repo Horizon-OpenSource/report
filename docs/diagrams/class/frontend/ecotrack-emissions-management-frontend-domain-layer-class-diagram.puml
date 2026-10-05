@@ -1,0 +1,70 @@
+@startuml
+title EcoTrack Platform - Emissions Management Frontend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Models" {
+    class EmissionSourceViewModel {
+      +id: number
+      +facilityId: number
+      +name: String
+      +type: String
+      +scope: ScopeType
+    }
+
+    class ActivityDataViewModel {
+      +id: number
+      +emissionSourceId: number
+      +period: String
+      +quantity: number
+      +unit: String
+      +origin: ActivityOrigin
+    }
+  }
+
+  package "Value Objects" {
+    enum ScopeType {
+      SCOPE_1
+      SCOPE_2
+      SCOPE_3
+    }
+    enum ActivityOrigin {
+      MANUAL
+      IMPORTED
+    }
+  }
+
+  EmissionSourceViewModel "1" *-- "1" ScopeType : classified by
+  EmissionSourceViewModel "1" o-- "0..*" ActivityDataViewModel : has
+  ActivityDataViewModel "1" *-- "1" ActivityOrigin : recorded as
+}
+
+package "Presentation" as Frontend_emissions_Presentation <<layer>> {
+}
+package "Application" as Frontend_emissions_Application <<layer>> {
+}
+package "Infrastructure" as Frontend_emissions_Infrastructure <<layer>> {
+}
+
+Frontend_emissions_Presentation ..> EmissionSourceViewModel : renders
+Frontend_emissions_Presentation ..> ActivityDataViewModel : renders
+Frontend_emissions_Application ..> EmissionSourceViewModel : updates
+Frontend_emissions_Application ..> ActivityDataViewModel : updates
+Frontend_emissions_Infrastructure ..> EmissionSourceViewModel : maps responses to
+
+@enduml

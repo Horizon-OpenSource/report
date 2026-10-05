@@ -19,8 +19,7 @@ package "Presentation" {
     +onSubmit(): void
   }
 
-  class RegisterOrganizationComponent {
-    +organizationName: String
+  class CreateAccountComponent {
     +fullName: String
     +email: String
     +password: String
@@ -31,6 +30,19 @@ package "Presentation" {
     +users: UserViewModel[]
     +onInviteUser(): void
     +onAssignRole(userId: number): void
+  }
+
+  class InviteUserComponent {
+    +email: String
+    +role: RoleType
+    +onSubmit(): void
+  }
+
+  class AcceptInvitationComponent {
+    +token: String
+    +fullName: String
+    +password: String
+    +onSubmit(): void
   }
 
   class RoleAssignmentComponent {
@@ -54,12 +66,14 @@ package "Presentation" {
     +routes: Routes
   }
 
-  IamRoutes ..> LoginComponent
-  IamRoutes ..> RegisterOrganizationComponent
-  IamRoutes ..> UserManagementComponent
-  IamRoutes ..> RoleAssignmentComponent
-  IamRoutes ..> RequestPasswordResetComponent
-  IamRoutes ..> ResetPasswordComponent
+  IamRoutes ..> LoginComponent : routes to
+  IamRoutes ..> CreateAccountComponent : routes to
+  IamRoutes ..> UserManagementComponent : routes to
+  IamRoutes ..> InviteUserComponent : routes to
+  IamRoutes ..> AcceptInvitationComponent : routes to
+  IamRoutes ..> RoleAssignmentComponent : routes to
+  IamRoutes ..> RequestPasswordResetComponent : routes to
+  IamRoutes ..> ResetPasswordComponent : routes to
 }
 
 package "Application" as Frontend_iam_Application <<layer>> {
@@ -70,8 +84,10 @@ package "Infrastructure" as Frontend_iam_Infrastructure <<layer>> {
 }
 
 LoginComponent ..> Frontend_iam_Application : dispatches
-RegisterOrganizationComponent ..> Frontend_iam_Application : dispatches
+CreateAccountComponent ..> Frontend_iam_Application : dispatches
 UserManagementComponent ..> Frontend_iam_Application : dispatches
+InviteUserComponent ..> Frontend_iam_Application : dispatches
+AcceptInvitationComponent ..> Frontend_iam_Application : dispatches
 RoleAssignmentComponent ..> Frontend_iam_Application : dispatches
 RequestPasswordResetComponent ..> Frontend_iam_Application : dispatches
 ResetPasswordComponent ..> Frontend_iam_Application : dispatches

@@ -1,0 +1,80 @@
+@startuml
+title EcoTrack Platform - Goals and Reduction Plans Frontend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Models" {
+    class ReductionGoalViewModel {
+      +id: number
+      +name: String
+      +targetValue: number
+      +targetDate: Date
+      +status: GoalStatus
+    }
+
+    class ReductionPlanViewModel {
+      +id: number
+      +reductionGoalId: number
+      +name: String
+      +description: String
+    }
+
+    class EnvironmentalInitiativeViewModel {
+      +id: number
+      +reductionPlanId: number
+      +name: String
+      +description: String
+    }
+
+    class ProgressViewModel {
+      +reductionGoalId: number
+      +currentValue: number
+      +targetValue: number
+      +percentage: number
+    }
+  }
+
+  package "Value Objects" {
+    enum GoalStatus {
+      ACTIVE
+      ACHIEVED
+      AT_RISK
+    }
+  }
+
+  ReductionGoalViewModel "1" *-- "1" GoalStatus : currently in
+  ReductionGoalViewModel "1" o-- "0..*" ReductionPlanViewModel : has
+  ReductionPlanViewModel "1" o-- "0..*" EnvironmentalInitiativeViewModel : has
+  ReductionGoalViewModel "1" --> "1" ProgressViewModel : tracked by
+}
+
+package "Presentation" as Frontend_goals_Presentation <<layer>> {
+}
+package "Application" as Frontend_goals_Application <<layer>> {
+}
+package "Infrastructure" as Frontend_goals_Infrastructure <<layer>> {
+}
+
+Frontend_goals_Presentation ..> ReductionGoalViewModel : renders
+Frontend_goals_Presentation ..> ProgressViewModel : renders
+Frontend_goals_Application ..> ReductionGoalViewModel : updates
+Frontend_goals_Application ..> ReductionPlanViewModel : updates
+Frontend_goals_Application ..> EnvironmentalInitiativeViewModel : updates
+Frontend_goals_Infrastructure ..> ReductionGoalViewModel : maps responses to
+
+@enduml

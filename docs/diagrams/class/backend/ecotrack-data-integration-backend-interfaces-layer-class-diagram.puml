@@ -1,0 +1,80 @@
+@startuml
+title EcoTrack Platform - Data Integration Backend Interfaces REST Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Interfaces REST" {
+  class DataIntegrationController {
+    +importCsv(file: MultipartFile): ImportBatchResource
+    +getImportHistory(organizationId: Long): List<ImportBatchResource>
+    +generateApiKey(organizationId: Long): ApiKeyResource
+    +revokeApiKey(keyId: Long): void
+    +registerEmissionViaApi(resource: RegisterEmissionViaApiResource): void
+    +queryEmissionsViaApi(organizationId: Long): List<EmissionDataResource>
+    +queryFootprintResultsViaApi(organizationId: Long): List<FootprintResultResource>
+  }
+
+  class RegisterEmissionViaApiResource {
+    +facilityId: Long
+    +name: String
+    +type: String
+    +scope: String
+    +quantity: Double
+    +unit: String
+    +period: String
+  }
+  class ImportBatchResource {
+    +id: Long
+    +fileName: String
+    +status: String
+    +importedAt: LocalDateTime
+  }
+  class ApiKeyResource {
+    +id: Long
+    +maskedKey: String
+    +createdAt: LocalDateTime
+  }
+  class EmissionDataResource {
+    +id: Long
+    +name: String
+    +scope: String
+  }
+  class FootprintResultResource {
+    +id: Long
+    +scope: String
+    +period: String
+    +resultValue: Double
+  }
+
+  class ImportBatchResourceAssembler {
+    +{static} toResourceFrom(batch: ImportBatch): ImportBatchResource
+  }
+
+  DataIntegrationController ..> RegisterEmissionViaApiResource : receives
+  DataIntegrationController ..> ImportBatchResource : returns
+  DataIntegrationController ..> ApiKeyResource : returns
+  DataIntegrationController ..> EmissionDataResource : returns
+  DataIntegrationController ..> FootprintResultResource : returns
+  ImportBatchResourceAssembler ..> ImportBatchResource : builds
+}
+
+package "Application" as Backend_dataint_Application <<layer>> {
+}
+package "Domain" as Backend_dataint_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_dataint_Infrastructure <<layer>> {
+}
+
+DataIntegrationController ..> Backend_dataint_Application : delegates use cases
+ImportBatchResourceAssembler ..> Backend_dataint_Domain : reads aggregates
+
+@enduml

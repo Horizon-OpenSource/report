@@ -1,0 +1,53 @@
+@startuml
+title EcoTrack Platform - Data Integration Frontend Presentation Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Presentation" {
+  class ImportCsvComponent {
+    +file: File
+    +onUpload(): void
+  }
+
+  class ImportHistoryComponent {
+    +batches: ImportBatchViewModel[]
+  }
+
+  class ApiKeyManagementComponent {
+    +apiKeys: ApiKeyViewModel[]
+    +onGenerateKey(): void
+    +onRevokeKey(keyId: number): void
+  }
+
+  class DataIntegrationRoutes {
+    +routes: Routes
+  }
+
+  DataIntegrationRoutes ..> ImportCsvComponent : routes to
+  DataIntegrationRoutes ..> ImportHistoryComponent : routes to
+  DataIntegrationRoutes ..> ApiKeyManagementComponent : routes to
+}
+
+package "Application" as Frontend_dataint_Application <<layer>> {
+}
+package "Domain" as Frontend_dataint_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_dataint_Infrastructure <<layer>> {
+}
+
+ImportCsvComponent ..> Frontend_dataint_Application : dispatches
+ImportHistoryComponent ..> Frontend_dataint_Application : dispatches
+ApiKeyManagementComponent ..> Frontend_dataint_Application : dispatches
+ImportHistoryComponent ..> Frontend_dataint_Domain : reads
+ApiKeyManagementComponent ..> Frontend_dataint_Domain : reads
+
+@enduml

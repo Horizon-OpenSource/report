@@ -1,0 +1,22 @@
+@startuml
+title EcoTrack Platform - Analytics and Reports Backend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "Analytics and Reports Backend Bounded Context" {
+  class "Interfaces REST" as Backend_analytics_Interfaces_REST <<layer>>
+  class "Application" as Backend_analytics_Application <<layer>>
+  class "Domain" as Backend_analytics_Domain <<layer>>
+  class "Infrastructure" as Backend_analytics_Infrastructure <<layer>>
+}
+
+Backend_analytics_Interfaces_REST ..> Backend_analytics_Application : commands / queries
+Backend_analytics_Application ..> Backend_analytics_Domain : model and policies
+Backend_analytics_Application ..> Backend_analytics_Infrastructure : repository ports / adapters
+Backend_analytics_Infrastructure ..> Backend_analytics_Domain : persistence mapping
+Backend_analytics_Interfaces_REST ..> Backend_analytics_Domain : resources from aggregates
+
+@enduml

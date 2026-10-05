@@ -1,0 +1,21 @@
+@startuml
+title EcoTrack Platform - Data Integration Frontend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "Data Integration Frontend Bounded Context" {
+  class "Presentation" as Frontend_dataint_Presentation <<layer>>
+  class "Application" as Frontend_dataint_Application <<layer>>
+  class "Domain" as Frontend_dataint_Domain <<layer>>
+  class "Infrastructure" as Frontend_dataint_Infrastructure <<layer>>
+}
+
+Frontend_dataint_Presentation ..> Frontend_dataint_Application : dispatches actions
+Frontend_dataint_Application ..> Frontend_dataint_Domain : reads / updates view models
+Frontend_dataint_Application ..> Frontend_dataint_Infrastructure : requests data
+Frontend_dataint_Infrastructure ..> Frontend_dataint_Domain : maps responses to
+
+@enduml

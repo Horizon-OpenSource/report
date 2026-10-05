@@ -1,0 +1,21 @@
+@startuml
+title EcoTrack Platform - Organization Management Frontend Bounded Context Layers
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide circle
+
+package "Organization Management Frontend Bounded Context" {
+  class "Presentation" as Frontend_orgmgmt_Presentation <<layer>>
+  class "Application" as Frontend_orgmgmt_Application <<layer>>
+  class "Domain" as Frontend_orgmgmt_Domain <<layer>>
+  class "Infrastructure" as Frontend_orgmgmt_Infrastructure <<layer>>
+}
+
+Frontend_orgmgmt_Presentation ..> Frontend_orgmgmt_Application : dispatches actions
+Frontend_orgmgmt_Application ..> Frontend_orgmgmt_Domain : reads / updates view models
+Frontend_orgmgmt_Application ..> Frontend_orgmgmt_Infrastructure : requests data
+Frontend_orgmgmt_Infrastructure ..> Frontend_orgmgmt_Domain : maps responses to
+
+@enduml

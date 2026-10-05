@@ -1,0 +1,54 @@
+@startuml
+title EcoTrack Platform - Goals and Reduction Plans Backend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class GoalCommandService {
+    +handle(command: RegisterReductionGoalCommand): ReductionGoal
+    +handle(command: EditReductionGoalCommand): ReductionGoal
+    +handle(command: UpdateGoalStatusCommand): ReductionGoal
+    +handle(command: DeleteReductionGoalCommand): void
+  }
+
+  class PlanCommandService {
+    +handle(command: CreateReductionPlanCommand): ReductionPlan
+    +handle(command: RegisterInitiativeCommand): EnvironmentalInitiative
+  }
+
+  class ProgressQueryService {
+    +handle(query: GetProgressQuery): List<ProgressDto>
+  }
+
+  interface FootprintApiPort {
+    +getFootprintResult(organizationId: Long): FootprintResultDto
+  }
+
+  ProgressQueryService ..> FootprintApiPort : uses
+}
+
+package "Interfaces REST" as Backend_goals_Interfaces_REST <<layer>> {
+}
+package "Domain" as Backend_goals_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_goals_Infrastructure <<layer>> {
+}
+
+Backend_goals_Interfaces_REST ..> GoalCommandService : delegates
+Backend_goals_Interfaces_REST ..> PlanCommandService : delegates
+Backend_goals_Interfaces_REST ..> ProgressQueryService : delegates
+GoalCommandService ..> Backend_goals_Domain : applies rules
+PlanCommandService ..> Backend_goals_Domain : applies rules
+ProgressQueryService ..> Backend_goals_Domain : reads aggregates
+FootprintApiPort ..> Backend_goals_Infrastructure : implemented by
+
+@enduml

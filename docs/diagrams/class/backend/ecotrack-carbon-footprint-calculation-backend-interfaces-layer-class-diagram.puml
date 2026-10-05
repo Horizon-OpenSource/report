@@ -1,0 +1,63 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Backend Interfaces REST Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Interfaces REST" {
+  class FootprintController {
+    +getEmissionFactors(): List<EmissionFactorResource>
+    +calculateFootprint(resource: CalculateFootprintResource): FootprintResultResource
+    +getResultsByScope(): List<FootprintResultResource>
+    +getResultsByPeriod(period: String): List<FootprintResultResource>
+    +getHistory(): List<FootprintResultResource>
+  }
+
+  class CalculateFootprintResource {
+    +emissionSourceId: Long
+    +emissionFactorId: Long
+  }
+  class EmissionFactorResource {
+    +id: Long
+    +name: String
+    +scope: String
+    +value: Double
+    +unit: String
+  }
+  class FootprintResultResource {
+    +id: Long
+    +scope: String
+    +period: String
+    +resultValue: Double
+    +calculatedAt: LocalDateTime
+  }
+
+  class FootprintResultResourceAssembler {
+    +{static} toResourceFrom(result: FootprintCalculation): FootprintResultResource
+  }
+
+  FootprintController ..> CalculateFootprintResource : receives
+  FootprintController ..> EmissionFactorResource : returns
+  FootprintController ..> FootprintResultResource : returns
+  FootprintResultResourceAssembler ..> FootprintResultResource : builds
+}
+
+package "Application" as Backend_footprint_Application <<layer>> {
+}
+package "Domain" as Backend_footprint_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_footprint_Infrastructure <<layer>> {
+}
+
+FootprintController ..> Backend_footprint_Application : delegates use cases
+FootprintResultResourceAssembler ..> Backend_footprint_Domain : reads aggregates
+
+@enduml

@@ -1,0 +1,67 @@
+@startuml
+title EcoTrack Platform - Organization Management Frontend Presentation Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Presentation" {
+  class RegisterOrganizationComponent {
+    +name: String
+    +sector: String
+    +onSubmit(): void
+  }
+
+  class OrganizationProfileComponent {
+    +organization: OrganizationViewModel
+  }
+
+  class UpdateOrganizationComponent {
+    +name: String
+    +sector: String
+    +onSubmit(): void
+  }
+
+  class FacilityManagementComponent {
+    +facilities: FacilityViewModel[]
+    +onRegisterFacility(): void
+  }
+
+  class BusinessUnitManagementComponent {
+    +businessUnits: BusinessUnitViewModel[]
+    +onRegisterBusinessUnit(): void
+  }
+
+  class OrgMgmtRoutes {
+    +routes: Routes
+  }
+
+  OrgMgmtRoutes ..> RegisterOrganizationComponent : routes to
+  OrgMgmtRoutes ..> OrganizationProfileComponent : routes to
+  OrgMgmtRoutes ..> UpdateOrganizationComponent : routes to
+  OrgMgmtRoutes ..> FacilityManagementComponent : routes to
+  OrgMgmtRoutes ..> BusinessUnitManagementComponent : routes to
+}
+
+package "Application" as Frontend_orgmgmt_Application <<layer>> {
+}
+package "Domain" as Frontend_orgmgmt_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_orgmgmt_Infrastructure <<layer>> {
+}
+
+RegisterOrganizationComponent ..> Frontend_orgmgmt_Application : dispatches
+OrganizationProfileComponent ..> Frontend_orgmgmt_Application : dispatches
+UpdateOrganizationComponent ..> Frontend_orgmgmt_Application : dispatches
+FacilityManagementComponent ..> Frontend_orgmgmt_Application : dispatches
+BusinessUnitManagementComponent ..> Frontend_orgmgmt_Application : dispatches
+OrganizationProfileComponent ..> Frontend_orgmgmt_Domain : reads
+
+@enduml

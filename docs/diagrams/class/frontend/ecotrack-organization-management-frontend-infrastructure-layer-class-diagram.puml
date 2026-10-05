@@ -1,0 +1,94 @@
+@startuml
+title EcoTrack Platform - Organization Management Frontend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class OrganizationApiService {
+    +registerOrganization(request: RegisterOrganizationRequest): Observable<OrganizationResponse>
+    +updateOrganization(request: UpdateOrganizationRequest): Observable<OrganizationResponse>
+    +getProfile(): Observable<OrganizationResponse>
+    +registerFacility(request: RegisterFacilityRequest): Observable<FacilityResponse>
+    +registerBusinessUnit(request: RegisterBusinessUnitRequest): Observable<BusinessUnitResponse>
+  }
+
+  interface RegisterOrganizationRequest {
+    +name: String
+    +sector: String
+  }
+  interface UpdateOrganizationRequest {
+    +name: String
+    +sector: String
+  }
+  interface RegisterFacilityRequest {
+    +name: String
+    +address: String
+  }
+  interface RegisterBusinessUnitRequest {
+    +name: String
+  }
+  interface OrganizationResponse {
+    +id: number
+    +name: String
+    +sector: String
+    +createdAt: String
+  }
+  interface FacilityResponse {
+    +id: number
+    +organizationId: number
+    +name: String
+    +address: String
+  }
+  interface BusinessUnitResponse {
+    +id: number
+    +organizationId: number
+    +name: String
+  }
+
+  class OrganizationAssembler {
+    +{static} toViewModel(response: OrganizationResponse): OrganizationViewModel
+  }
+  class FacilityAssembler {
+    +{static} toViewModel(response: FacilityResponse): FacilityViewModel
+  }
+  class BusinessUnitAssembler {
+    +{static} toViewModel(response: BusinessUnitResponse): BusinessUnitViewModel
+  }
+
+  OrganizationApiService ..> RegisterOrganizationRequest : sends
+  OrganizationApiService ..> UpdateOrganizationRequest : sends
+  OrganizationApiService ..> RegisterFacilityRequest : sends
+  OrganizationApiService ..> RegisterBusinessUnitRequest : sends
+  OrganizationApiService ..> OrganizationResponse : receives
+  OrganizationApiService ..> FacilityResponse : receives
+  OrganizationApiService ..> BusinessUnitResponse : receives
+  OrganizationAssembler ..> OrganizationResponse : converts
+  FacilityAssembler ..> FacilityResponse : converts
+  BusinessUnitAssembler ..> BusinessUnitResponse : converts
+}
+
+package "Presentation" as Frontend_orgmgmt_Presentation <<layer>> {
+}
+package "Application" as Frontend_orgmgmt_Application <<layer>> {
+}
+package "Domain" as Frontend_orgmgmt_Domain <<layer>> {
+}
+package "EcoTrack Backend API" as Backend <<external>> {
+}
+
+Frontend_orgmgmt_Application ..> OrganizationApiService : requests
+OrganizationApiService ..> Backend : HTTPS / JSON
+OrganizationAssembler ..> Frontend_orgmgmt_Domain : produces
+FacilityAssembler ..> Frontend_orgmgmt_Domain : produces
+BusinessUnitAssembler ..> Frontend_orgmgmt_Domain : produces
+
+@enduml

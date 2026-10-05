@@ -1,0 +1,72 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Frontend Infrastructure Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Infrastructure" {
+  class FootprintApiService {
+    +getEmissionFactors(): Observable<EmissionFactorResponse[]>
+    +calculateFootprint(request: CalculateFootprintRequest): Observable<FootprintResultResponse>
+    +getResultsByScope(): Observable<FootprintResultResponse[]>
+    +getResultsByPeriod(period: String): Observable<FootprintResultResponse[]>
+    +getHistory(): Observable<FootprintResultResponse[]>
+  }
+
+  interface CalculateFootprintRequest {
+    +emissionSourceId: number
+    +emissionFactorId: number
+  }
+  interface EmissionFactorResponse {
+    +id: number
+    +name: String
+    +scope: String
+    +value: number
+    +unit: String
+    +source: String
+  }
+  interface FootprintResultResponse {
+    +id: number
+    +scope: String
+    +period: String
+    +resultValue: number
+    +calculatedAt: String
+  }
+
+  class EmissionFactorAssembler {
+    +{static} toViewModel(response: EmissionFactorResponse): EmissionFactorViewModel
+  }
+  class FootprintResultAssembler {
+    +{static} toViewModel(response: FootprintResultResponse): FootprintResultViewModel
+  }
+
+  FootprintApiService ..> CalculateFootprintRequest : sends
+  FootprintApiService ..> EmissionFactorResponse : receives
+  FootprintApiService ..> FootprintResultResponse : receives
+  EmissionFactorAssembler ..> EmissionFactorResponse : converts
+  FootprintResultAssembler ..> FootprintResultResponse : converts
+}
+
+package "Presentation" as Frontend_footprint_Presentation <<layer>> {
+}
+package "Application" as Frontend_footprint_Application <<layer>> {
+}
+package "Domain" as Frontend_footprint_Domain <<layer>> {
+}
+package "EcoTrack Backend API" as Backend <<external>> {
+}
+
+Frontend_footprint_Application ..> FootprintApiService : requests
+FootprintApiService ..> Backend : HTTPS / JSON
+EmissionFactorAssembler ..> Frontend_footprint_Domain : produces
+FootprintResultAssembler ..> Frontend_footprint_Domain : produces
+
+@enduml

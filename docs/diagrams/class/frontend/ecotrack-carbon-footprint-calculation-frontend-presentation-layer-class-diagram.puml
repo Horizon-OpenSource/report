@@ -1,0 +1,65 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Frontend Presentation Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Presentation" {
+  class SelectEmissionFactorComponent {
+    +factors: EmissionFactorViewModel[]
+    +onSelect(factorId: number): void
+  }
+
+  class CalculateFootprintComponent {
+    +emissionSourceId: number
+    +emissionFactorId: number
+    +onCalculate(): void
+  }
+
+  class ResultsByScopeComponent {
+    +results: FootprintResultViewModel[]
+  }
+
+  class ResultsByPeriodComponent {
+    +results: FootprintResultViewModel[]
+    +period: String
+  }
+
+  class CalculationHistoryComponent {
+    +history: FootprintResultViewModel[]
+  }
+
+  class FootprintRoutes {
+    +routes: Routes
+  }
+
+  FootprintRoutes ..> SelectEmissionFactorComponent : routes to
+  FootprintRoutes ..> CalculateFootprintComponent : routes to
+  FootprintRoutes ..> ResultsByScopeComponent : routes to
+  FootprintRoutes ..> ResultsByPeriodComponent : routes to
+  FootprintRoutes ..> CalculationHistoryComponent : routes to
+}
+
+package "Application" as Frontend_footprint_Application <<layer>> {
+}
+package "Domain" as Frontend_footprint_Domain <<layer>> {
+}
+package "Infrastructure" as Frontend_footprint_Infrastructure <<layer>> {
+}
+
+SelectEmissionFactorComponent ..> Frontend_footprint_Application : dispatches
+CalculateFootprintComponent ..> Frontend_footprint_Application : dispatches
+ResultsByScopeComponent ..> Frontend_footprint_Application : dispatches
+ResultsByPeriodComponent ..> Frontend_footprint_Application : dispatches
+CalculationHistoryComponent ..> Frontend_footprint_Application : dispatches
+ResultsByScopeComponent ..> Frontend_footprint_Domain : reads
+
+@enduml

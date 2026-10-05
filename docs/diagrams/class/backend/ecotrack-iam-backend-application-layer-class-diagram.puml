@@ -14,8 +14,7 @@ hide circle
 
 package "Application" {
   class UserCommandService {
-    +handle(command: RegisterOrganizationAdminCommand): User
-    +handle(command: RegisterUserCommand): User
+    +handle(command: CreateUserAccountCommand): User
     +handle(command: AssignRoleCommand): User
   }
 
@@ -28,6 +27,11 @@ package "Application" {
     +handle(command: ResetPasswordCommand): void
   }
 
+  class InvitationCommandService {
+    +handle(command: InviteUserCommand): Invitation
+    +handle(command: AcceptInvitationCommand): User
+  }
+
   class UserQueryService {
     +handle(query: GetUserByIdQuery): User
     +handle(query: GetUsersByOrganizationQuery): List<User>
@@ -35,10 +39,11 @@ package "Application" {
 
   interface EmailSenderPort {
     +sendPasswordResetEmail(to: String, token: String): void
+    +sendInvitationEmail(to: String, token: String): void
   }
 
-  UserCommandService ..> EmailSenderPort
-  PasswordRecoveryCommandService ..> EmailSenderPort
+  PasswordRecoveryCommandService ..> EmailSenderPort : uses
+  InvitationCommandService ..> EmailSenderPort : uses
 }
 
 package "Interfaces REST" as Backend_iam_Interfaces_REST <<layer>> {
@@ -51,10 +56,12 @@ package "Infrastructure" as Backend_iam_Infrastructure <<layer>> {
 Backend_iam_Interfaces_REST ..> UserCommandService : delegates
 Backend_iam_Interfaces_REST ..> AuthCommandService : delegates
 Backend_iam_Interfaces_REST ..> PasswordRecoveryCommandService : delegates
+Backend_iam_Interfaces_REST ..> InvitationCommandService : delegates
 Backend_iam_Interfaces_REST ..> UserQueryService : delegates
 UserCommandService ..> Backend_iam_Domain : applies rules
 AuthCommandService ..> Backend_iam_Domain : applies rules
 PasswordRecoveryCommandService ..> Backend_iam_Domain : applies rules
+InvitationCommandService ..> Backend_iam_Domain : applies rules
 UserQueryService ..> Backend_iam_Domain : reads aggregates
 EmailSenderPort ..> Backend_iam_Infrastructure : implemented by
 

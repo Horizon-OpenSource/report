@@ -1,0 +1,47 @@
+@startuml
+title EcoTrack Platform - Organization Management Backend Application Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Application" {
+  class OrganizationCommandService {
+    +handle(command: RegisterOrganizationCommand): Organization
+    +handle(command: UpdateOrganizationCommand): Organization
+    +handle(command: RegisterFacilityCommand): Facility
+    +handle(command: RegisterBusinessUnitCommand): BusinessUnit
+  }
+
+  class OrganizationQueryService {
+    +handle(query: GetOrganizationProfileQuery): Organization
+  }
+
+  interface IamApiPort {
+    +validateUserScope(userId: Long, organizationId: Long): boolean
+  }
+
+  OrganizationCommandService ..> IamApiPort : uses
+}
+
+package "Interfaces REST" as Backend_orgmgmt_Interfaces_REST <<layer>> {
+}
+package "Domain" as Backend_orgmgmt_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_orgmgmt_Infrastructure <<layer>> {
+}
+
+Backend_orgmgmt_Interfaces_REST ..> OrganizationCommandService : delegates
+Backend_orgmgmt_Interfaces_REST ..> OrganizationQueryService : delegates
+OrganizationCommandService ..> Backend_orgmgmt_Domain : applies rules
+OrganizationQueryService ..> Backend_orgmgmt_Domain : reads aggregates
+IamApiPort ..> Backend_orgmgmt_Infrastructure : implemented by
+
+@enduml

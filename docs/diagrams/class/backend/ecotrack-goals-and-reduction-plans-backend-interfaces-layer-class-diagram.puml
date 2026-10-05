@@ -1,0 +1,101 @@
+@startuml
+title EcoTrack Platform - Goals and Reduction Plans Backend Interfaces REST Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+hide circle
+
+package "Interfaces REST" {
+  class GoalController {
+    +registerGoal(resource: RegisterReductionGoalResource): ReductionGoalResource
+    +editGoal(id: Long, resource: EditReductionGoalResource): ReductionGoalResource
+    +updateStatus(id: Long, resource: UpdateGoalStatusResource): ReductionGoalResource
+    +deleteGoal(id: Long): void
+    +createReductionPlan(resource: CreateReductionPlanResource): ReductionPlanResource
+    +registerInitiative(resource: RegisterInitiativeResource): EnvironmentalInitiativeResource
+    +getProgress(organizationId: Long): List<ProgressResource>
+  }
+
+  class RegisterReductionGoalResource {
+    +name: String
+    +targetValue: Double
+    +targetDate: LocalDate
+  }
+  class EditReductionGoalResource {
+    +name: String
+    +targetValue: Double
+    +targetDate: LocalDate
+  }
+  class UpdateGoalStatusResource {
+    +status: String
+  }
+  class CreateReductionPlanResource {
+    +reductionGoalId: Long
+    +name: String
+    +description: String
+  }
+  class RegisterInitiativeResource {
+    +reductionPlanId: Long
+    +name: String
+    +description: String
+  }
+  class ReductionGoalResource {
+    +id: Long
+    +name: String
+    +targetValue: Double
+    +targetDate: LocalDate
+    +status: String
+  }
+  class ReductionPlanResource {
+    +id: Long
+    +reductionGoalId: Long
+    +name: String
+    +description: String
+  }
+  class EnvironmentalInitiativeResource {
+    +id: Long
+    +reductionPlanId: Long
+    +name: String
+    +description: String
+  }
+  class ProgressResource {
+    +reductionGoalId: Long
+    +currentValue: Double
+    +targetValue: Double
+    +percentage: Double
+  }
+
+  class ReductionGoalResourceAssembler {
+    +{static} toResourceFrom(goal: ReductionGoal): ReductionGoalResource
+  }
+
+  GoalController ..> RegisterReductionGoalResource : receives
+  GoalController ..> EditReductionGoalResource : receives
+  GoalController ..> UpdateGoalStatusResource : receives
+  GoalController ..> CreateReductionPlanResource : receives
+  GoalController ..> RegisterInitiativeResource : receives
+  GoalController ..> ReductionGoalResource : returns
+  GoalController ..> ReductionPlanResource : returns
+  GoalController ..> EnvironmentalInitiativeResource : returns
+  GoalController ..> ProgressResource : returns
+  ReductionGoalResourceAssembler ..> ReductionGoalResource : builds
+}
+
+package "Application" as Backend_goals_Application <<layer>> {
+}
+package "Domain" as Backend_goals_Domain <<layer>> {
+}
+package "Infrastructure" as Backend_goals_Infrastructure <<layer>> {
+}
+
+GoalController ..> Backend_goals_Application : delegates use cases
+ReductionGoalResourceAssembler ..> Backend_goals_Domain : reads aggregates
+
+@enduml

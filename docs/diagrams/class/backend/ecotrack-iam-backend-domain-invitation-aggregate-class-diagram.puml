@@ -1,0 +1,99 @@
+@startuml
+title EcoTrack Platform - IAM Backend Domain Layer - Invitation Aggregate
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain / Invitation Aggregate" {
+
+  package "Aggregates" {
+    class Invitation <<Aggregate Root>> {
+      +id: Long
+      +organizationId: Long
+      -email: Email
+      -role: RoleType
+      -token: String
+      -status: InvitationStatus
+      +invitedBy: Long
+      +expiresAt: LocalDateTime
+      +accept(): void
+      +isExpired(): boolean
+    }
+  }
+
+  package "Value Objects" {
+    enum InvitationStatus {
+      PENDING
+      ACCEPTED
+      EXPIRED
+    }
+  }
+
+  package "Commands" {
+    class InviteUserCommand {
+      +organizationId: Long
+      +email: String
+      +role: RoleType
+    }
+    class AcceptInvitationCommand {
+      +token: String
+      +fullName: String
+      +password: String
+    }
+  }
+
+  package "Events" {
+    class UserInvitedEvent {
+      +invitationId: Long
+      +organizationId: Long
+      +email: String
+      +occurredOn: LocalDateTime
+    }
+    class InvitationAcceptedEvent {
+      +invitationId: Long
+      +userId: Long
+      +occurredOn: LocalDateTime
+    }
+  }
+
+  package "Repositories" {
+    interface InvitationRepository {
+      +findByToken(token: String): Invitation
+      +findByOrganizationId(organizationId: Long): List<Invitation>
+      +save(invitation: Invitation): Invitation
+    }
+  }
+
+  Invitation "1" *-- "1" InvitationStatus : currently in
+  InvitationRepository ..> Invitation : persists
+}
+
+package "Interfaces REST" as Backend_iam_Interfaces_REST <<layer>> {
+}
+package "Application" as Backend_iam_Application <<layer>> {
+}
+package "Infrastructure" as Backend_iam_Infrastructure <<layer>> {
+}
+package "Domain / User Aggregate" as Backend_iam_UserAgg <<layer>> {
+}
+
+Backend_iam_Interfaces_REST ..> Invitation : resources from
+Backend_iam_Application ..> InviteUserCommand : handles
+Backend_iam_Application ..> AcceptInvitationCommand : handles
+Backend_iam_Infrastructure ..> InvitationRepository : implements
+Invitation ..> Backend_iam_UserAgg : accepted into
+
+@enduml

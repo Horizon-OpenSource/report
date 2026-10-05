@@ -1,0 +1,66 @@
+@startuml
+title EcoTrack Platform - Carbon Footprint Calculation Frontend Domain Layer
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam class {
+  BackgroundColor #EAF3FC
+  BorderColor #0B6FB3
+  ArrowColor #4A4A4A
+  FontColor #17324D
+}
+skinparam enum {
+  BackgroundColor #FDF3E3
+  BorderColor #C9832B
+  FontColor #5A3E12
+}
+hide circle
+
+package "Domain" {
+  package "Models" {
+    class EmissionFactorViewModel {
+      +id: number
+      +name: String
+      +scope: ScopeType
+      +value: number
+      +unit: String
+      +source: String
+    }
+
+    class FootprintResultViewModel {
+      +id: number
+      +scope: ScopeType
+      +period: String
+      +resultValue: number
+      +calculatedAt: Date
+    }
+  }
+
+  package "Value Objects" {
+    enum ScopeType {
+      SCOPE_1
+      SCOPE_2
+      SCOPE_3
+    }
+  }
+
+  EmissionFactorViewModel "1" *-- "1" ScopeType : applies to
+  FootprintResultViewModel "1" *-- "1" ScopeType : classified by
+  FootprintResultViewModel "0..*" --> "1" EmissionFactorViewModel : calculated with
+}
+
+package "Presentation" as Frontend_footprint_Presentation <<layer>> {
+}
+package "Application" as Frontend_footprint_Application <<layer>> {
+}
+package "Infrastructure" as Frontend_footprint_Infrastructure <<layer>> {
+}
+
+Frontend_footprint_Presentation ..> EmissionFactorViewModel : renders
+Frontend_footprint_Presentation ..> FootprintResultViewModel : renders
+Frontend_footprint_Application ..> EmissionFactorViewModel : updates
+Frontend_footprint_Application ..> FootprintResultViewModel : updates
+Frontend_footprint_Infrastructure ..> FootprintResultViewModel : maps responses to
+
+@enduml
