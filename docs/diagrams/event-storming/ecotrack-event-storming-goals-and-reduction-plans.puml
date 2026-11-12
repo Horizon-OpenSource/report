@@ -1,85 +1,123 @@
 @startuml
-title EcoTrack - Goals and Reduction Plans Event Storming
 left to right direction
-skinparam packageStyle rectangle
 skinparam shadowing false
-skinparam defaultFontName Arial
-skinparam rectangle {
-  BorderColor #4A4A4A
-  FontColor #FFFFFF
-  FontStyle bold
-  FontSize 12
-}
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 13
+skinparam backgroundColor white
+skinparam nodesep 25
+skinparam ranksep 70
 skinparam ArrowColor #4A4A4A
+skinparam RectangleBorderColor #555555
+skinparam RectangleFontStyle bold
+skinparam roundCorner 12
+skinparam rectangle<<ext>> {
+  BackgroundColor #828282
+  FontColor white
+}
+skinparam rectangle<<rm>> {
+  BackgroundColor #27AE60
+  FontColor white
+}
+skinparam rectangle<<pol>> {
+  BackgroundColor #EB5757
+  FontColor white
+}
+skinparam rectangle<<evt>> {
+  BackgroundColor #F2994A
+  FontColor white
+}
+skinparam rectangle<<agg>> {
+  BackgroundColor #F2C94C
+  FontColor #17324D
+}
+skinparam rectangle<<cmd>> {
+  BackgroundColor #2D9CDB
+  FontColor white
+}
+skinparam rectangle<<actor>> {
+  BackgroundColor #9B51E0
+  FontColor white
+}
+skinparam titleFontSize 20
+hide stereotype
+title EcoTrack - Goals and Reduction Plans Event Storming (Core)
 
-legend top left
-  |<#2D9CDB> Command |
-  |<#F2C94C> Aggregate |
-  |<#F2994A> Domain Event |
-  |<#27AE60> Read Model |
-  |<#9B51E0> Actor |
-  |<#828282> External Context |
+rectangle "Sustainability\nManager" as a <<actor>>
+rectangle "Carbon Footprint Calculation\n(external context)" as x <<ext>>
+rectangle "RegisterReductionGoal" as c1 <<cmd>>
+rectangle "EditReductionGoal" as c2 <<cmd>>
+rectangle "UpdateGoalStatus" as c3 <<cmd>>
+rectangle "DeleteReductionGoal" as c4 <<cmd>>
+rectangle "CreateReductionPlan" as c5 <<cmd>>
+rectangle "RegisterInitiative" as c6 <<cmd>>
+rectangle "ReductionGoal" as g1 <<agg>>
+rectangle "ReductionGoal" as g2 <<agg>>
+rectangle "ReductionGoal" as g3 <<agg>>
+rectangle "ReductionGoal" as g4 <<agg>>
+rectangle "ReductionPlan" as g5 <<agg>>
+rectangle "EnvironmentalInitiative" as g6 <<agg>>
+rectangle "ReductionGoalRegistered" as e1 <<evt>>
+rectangle "ReductionGoalEdited" as e2 <<evt>>
+rectangle "GoalStatusUpdated" as e3 <<evt>>
+rectangle "ReductionGoalDeleted" as e4 <<evt>>
+rectangle "ReductionPlanCreated" as e5 <<evt>>
+rectangle "EnvironmentalInitiativeRegistered" as e6 <<evt>>
+rectangle "Reduction Goals List\nGetReductionGoalsQuery" as r1 <<rm>>
+rectangle "Progress View\nGetProgressQuery" as r2 <<rm>>
+
+a --> c1
+a --> c2
+a --> c3
+a --> c4
+a --> c5
+a --> c6
+c1 --> g1
+c2 --> g2
+c3 --> g3
+c4 --> g4
+c5 --> g5
+c6 --> g6
+g1 --> e1
+g2 --> e2
+g3 --> e3
+g4 --> e4
+g5 --> e5
+g6 --> e6
+e1 --> r1
+e2 --> r1
+e3 --> r1
+e4 --> r1
+e3 --> r2
+e6 --> r2
+x --> r2 : footprint results
+a -[hidden]down-> x
+c1 -[hidden]down-> c2
+c2 -[hidden]down-> c3
+c3 -[hidden]down-> c4
+c4 -[hidden]down-> c5
+c5 -[hidden]down-> c6
+g1 -[hidden]down-> g2
+g2 -[hidden]down-> g3
+g3 -[hidden]down-> g4
+g4 -[hidden]down-> g5
+g5 -[hidden]down-> g6
+e1 -[hidden]down-> e2
+e2 -[hidden]down-> e3
+e3 -[hidden]down-> e4
+e4 -[hidden]down-> e5
+e5 -[hidden]down-> e6
+r1 -[hidden]down-> r2
+a -[hidden]right-> c1
+c1 -[hidden]right-> g1
+g1 -[hidden]right-> e1
+e1 -[hidden]right-> r1
+legend right
+  |<#9B51E0><color:white> Actor </color>|
+  |<#2D9CDB><color:white> Command </color>|
+  |<#F2C94C><color:#17324D> Aggregate </color>|
+  |<#F2994A><color:white> Domain Event </color>|
+  |<#EB5757><color:white> Policy </color>|
+  |<#27AE60><color:white> Read Model / Query </color>|
+  |<#828282><color:white> External </color>|
 endlegend
-
-actor "Sustainability\nManager" as Manager #9B51E0
-rectangle "Carbon Footprint\nCalculation\n<i>External Context</i>" as Footprint #828282
-
-rectangle "RegisterReductionGoal\n<i>Command</i>" as CmdGoal #2D9CDB
-rectangle "ReductionGoal\n<i>Aggregate</i>" as AggGoal #F2C94C
-rectangle "ReductionGoalRegistered\n<i>Event</i>" as EvtGoal #F2994A
-
-rectangle "EditReductionGoal\n<i>Command</i>" as CmdEdit #2D9CDB
-rectangle "ReductionGoalEdited\n<i>Event</i>" as EvtEdit #F2994A
-
-rectangle "UpdateGoalStatus\n<i>Command</i>" as CmdStatus #2D9CDB
-rectangle "GoalStatusUpdated\n<i>Event</i>" as EvtStatus #F2994A
-
-rectangle "DeleteReductionGoal\n<i>Command</i>" as CmdDelGoal #2D9CDB
-rectangle "ReductionGoalDeleted\n<i>Event</i>" as EvtDelGoal #F2994A
-
-rectangle "CreateReductionPlan\n<i>Command</i>" as CmdPlan #2D9CDB
-rectangle "ReductionPlan\n<i>Aggregate</i>" as AggPlan #F2C94C
-rectangle "ReductionPlanCreated\n<i>Event</i>" as EvtPlan #F2994A
-
-rectangle "RegisterEnvironmentalInitiative\n<i>Command</i>" as CmdInit #2D9CDB
-rectangle "EnvironmentalInitiative\n<i>Aggregate</i>" as AggInit #F2C94C
-rectangle "EnvironmentalInitiativeRegistered\n<i>Event</i>" as EvtInit #F2994A
-
-rectangle "Reduction Goals List\n<i>Read Model</i>" as RmGoals #27AE60
-rectangle "Progress View\n<i>Read Model</i>" as RmProgress #27AE60
-
-Manager --> CmdGoal
-CmdGoal --> AggGoal
-AggGoal --> EvtGoal
-
-Manager --> CmdEdit
-CmdEdit --> AggGoal
-AggGoal --> EvtEdit
-
-Manager --> CmdStatus
-CmdStatus --> AggGoal
-AggGoal --> EvtStatus
-
-Manager --> CmdDelGoal
-CmdDelGoal --> AggGoal
-AggGoal --> EvtDelGoal
-
-Manager --> CmdPlan
-CmdPlan --> AggPlan
-AggGoal "1" *-- "0..*" AggPlan : has
-AggPlan --> EvtPlan
-
-Manager --> CmdInit
-CmdInit --> AggInit
-AggPlan "1" *-- "0..*" AggInit : has
-AggInit --> EvtInit
-
-EvtGoal --> RmGoals
-EvtEdit --> RmGoals
-EvtStatus --> RmGoals
-
-Footprint --> RmProgress : footprint results
-EvtStatus --> RmProgress
-EvtInit --> RmProgress
-
 @enduml

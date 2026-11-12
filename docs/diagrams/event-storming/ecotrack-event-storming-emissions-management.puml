@@ -1,67 +1,101 @@
 @startuml
-title EcoTrack - Emissions Management Event Storming
 left to right direction
-skinparam packageStyle rectangle
 skinparam shadowing false
-skinparam defaultFontName Arial
-skinparam rectangle {
-  BorderColor #4A4A4A
-  FontColor #FFFFFF
-  FontStyle bold
-  FontSize 12
-}
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 13
+skinparam backgroundColor white
+skinparam nodesep 25
+skinparam ranksep 70
 skinparam ArrowColor #4A4A4A
+skinparam RectangleBorderColor #555555
+skinparam RectangleFontStyle bold
+skinparam roundCorner 12
+skinparam rectangle<<ext>> {
+  BackgroundColor #828282
+  FontColor white
+}
+skinparam rectangle<<rm>> {
+  BackgroundColor #27AE60
+  FontColor white
+}
+skinparam rectangle<<pol>> {
+  BackgroundColor #EB5757
+  FontColor white
+}
+skinparam rectangle<<evt>> {
+  BackgroundColor #F2994A
+  FontColor white
+}
+skinparam rectangle<<agg>> {
+  BackgroundColor #F2C94C
+  FontColor #17324D
+}
+skinparam rectangle<<cmd>> {
+  BackgroundColor #2D9CDB
+  FontColor white
+}
+skinparam rectangle<<actor>> {
+  BackgroundColor #9B51E0
+  FontColor white
+}
+skinparam titleFontSize 20
+hide stereotype
+title EcoTrack - Emissions Management Event Storming (Core)
 
-legend top left
-  |<#2D9CDB> Command |
-  |<#F2C94C> Aggregate |
-  |<#F2994A> Domain Event |
-  |<#27AE60> Read Model |
-  |<#9B51E0> Actor |
-  |<#828282> External Context |
+rectangle "Environmental\nAnalyst" as a <<actor>>
+rectangle "Data Integration\n(external context)" as x <<ext>>
+rectangle "RegisterEmissionSource" as c1 <<cmd>>
+rectangle "EditEmissionSource" as c2 <<cmd>>
+rectangle "DeleteEmissionSource" as c3 <<cmd>>
+rectangle "RecordActivityData" as c4 <<cmd>>
+rectangle "EmissionSource" as g1 <<agg>>
+rectangle "EmissionSource" as g2 <<agg>>
+rectangle "EmissionSource" as g3 <<agg>>
+rectangle "ActivityData" as g4 <<agg>>
+rectangle "EmissionSourceRegistered" as e1 <<evt>>
+rectangle "EmissionSourceEdited" as e2 <<evt>>
+rectangle "EmissionSourceDeleted" as e3 <<evt>>
+rectangle "ActivityDataRecorded" as e4 <<evt>>
+rectangle "Emission Sources List\nSearchEmissionSourcesQuery\nFilterByScopeQuery" as r <<rm>>
+
+a --> c1
+a --> c2
+a --> c3
+a --> c4
+x --> c4 : imported data
+c1 --> g1
+c2 --> g2
+c3 --> g3
+c4 --> g4
+g1 --> e1
+g2 --> e2
+g3 --> e3
+g4 --> e4
+e1 --> r
+e2 --> r
+e3 --> r
+e4 --> r
+a -[hidden]down-> x
+c1 -[hidden]down-> c2
+c2 -[hidden]down-> c3
+c3 -[hidden]down-> c4
+g1 -[hidden]down-> g2
+g2 -[hidden]down-> g3
+g3 -[hidden]down-> g4
+e1 -[hidden]down-> e2
+e2 -[hidden]down-> e3
+e3 -[hidden]down-> e4
+a -[hidden]right-> c1
+c1 -[hidden]right-> g1
+g1 -[hidden]right-> e1
+e1 -[hidden]right-> r
+legend right
+  |<#9B51E0><color:white> Actor </color>|
+  |<#2D9CDB><color:white> Command </color>|
+  |<#F2C94C><color:#17324D> Aggregate </color>|
+  |<#F2994A><color:white> Domain Event </color>|
+  |<#EB5757><color:white> Policy </color>|
+  |<#27AE60><color:white> Read Model / Query </color>|
+  |<#828282><color:white> External </color>|
 endlegend
-
-actor "Environmental\nAnalyst" as Analyst #9B51E0
-rectangle "Data Integration\n<i>External Context</i>" as DataIntegration #828282
-
-rectangle "RegisterEmissionSource\n<i>Command</i>" as CmdSource #2D9CDB
-rectangle "EmissionSource\n<i>Aggregate</i>" as AggSource #F2C94C
-rectangle "EmissionSourceRegistered\n<i>Event</i>" as EvtSource #F2994A
-
-rectangle "EditEmissionRecord\n<i>Command</i>" as CmdEdit #2D9CDB
-rectangle "EmissionRecordEdited\n<i>Event</i>" as EvtEdit #F2994A
-
-rectangle "DeleteEmissionRecord\n<i>Command</i>" as CmdDelete #2D9CDB
-rectangle "EmissionRecordDeleted\n<i>Event</i>" as EvtDelete #F2994A
-
-rectangle "RecordActivityData\n<i>Command</i>" as CmdActivity #2D9CDB
-rectangle "ActivityData\n<i>Aggregate</i>" as AggActivity #F2C94C
-rectangle "ActivityDataRecorded\n<i>Event</i>" as EvtActivity #F2994A
-
-rectangle "Emissions List\n<i>Read Model</i>\n(search / filter by scope)" as RmList #27AE60
-
-Analyst --> CmdSource
-CmdSource --> AggSource
-AggSource --> EvtSource
-
-Analyst --> CmdEdit
-CmdEdit --> AggSource
-AggSource --> EvtEdit
-
-Analyst --> CmdDelete
-CmdDelete --> AggSource
-AggSource --> EvtDelete
-
-Analyst --> CmdActivity
-DataIntegration --> CmdActivity : imported data
-CmdActivity --> AggActivity
-AggSource "1" *-- "0..*" AggActivity : has
-
-AggActivity --> EvtActivity
-
-EvtSource --> RmList
-EvtEdit --> RmList
-EvtDelete --> RmList
-EvtActivity --> RmList
-
 @enduml

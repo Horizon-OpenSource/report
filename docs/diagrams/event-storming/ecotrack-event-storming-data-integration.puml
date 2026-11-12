@@ -1,60 +1,100 @@
 @startuml
-title EcoTrack - Data Integration Event Storming
 left to right direction
-skinparam packageStyle rectangle
 skinparam shadowing false
-skinparam defaultFontName Arial
-skinparam rectangle {
-  BorderColor #4A4A4A
-  FontColor #FFFFFF
-  FontStyle bold
-  FontSize 12
-}
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 13
+skinparam backgroundColor white
+skinparam nodesep 25
+skinparam ranksep 70
 skinparam ArrowColor #4A4A4A
+skinparam RectangleBorderColor #555555
+skinparam RectangleFontStyle bold
+skinparam roundCorner 12
+skinparam rectangle<<ext>> {
+  BackgroundColor #828282
+  FontColor white
+}
+skinparam rectangle<<rm>> {
+  BackgroundColor #27AE60
+  FontColor white
+}
+skinparam rectangle<<pol>> {
+  BackgroundColor #EB5757
+  FontColor white
+}
+skinparam rectangle<<evt>> {
+  BackgroundColor #F2994A
+  FontColor white
+}
+skinparam rectangle<<agg>> {
+  BackgroundColor #F2C94C
+  FontColor #17324D
+}
+skinparam rectangle<<cmd>> {
+  BackgroundColor #2D9CDB
+  FontColor white
+}
+skinparam rectangle<<actor>> {
+  BackgroundColor #9B51E0
+  FontColor white
+}
+skinparam titleFontSize 20
+hide stereotype
+title EcoTrack - Data Integration Event Storming (Supporting)
 
-legend top left
-  |<#2D9CDB> Command |
-  |<#F2C94C> Aggregate |
-  |<#F2994A> Domain Event |
-  |<#EB5757> Policy |
-  |<#9B51E0> Actor |
-  |<#828282> External Context / System |
+rectangle "Environmental\nAnalyst" as a <<actor>>
+rectangle "External\nBusiness System" as b <<actor>>
+rectangle "ImportCsvFile" as c1 <<cmd>>
+rectangle "GenerateApiKey" as c2 <<cmd>>
+rectangle "RevokeApiKey" as c3 <<cmd>>
+rectangle "RegisterEmissionViaApi" as c4 <<cmd>>
+rectangle "ImportBatch" as g1 <<agg>>
+rectangle "ApiKey" as g2 <<agg>>
+rectangle "CsvDataImported" as e1 <<evt>>
+rectangle "ExternalEmissionRegistered" as e4 <<evt>>
+rectangle "Deliver imported\nactivity data" as p <<pol>>
+rectangle "Emissions Management\n(external context)" as x <<ext>>
+rectangle "Import History\nGetImportHistoryQuery" as r1 <<rm>>
+rectangle "QueryEmissionsViaApi\nreads Emissions Management" as r2 <<rm>>
+rectangle "QueryFootprintResultsViaApi\nreads Carbon Footprint" as r3 <<rm>>
+
+a --> c1
+a --> c2
+a --> c3
+b --> c4 : API Key
+b --> r2 : API Key
+b --> r3 : API Key
+c1 --> g1
+c2 --> g2
+c3 --> g2
+g2 ..> c4 : validates
+c4 --> e4
+g1 --> e1
+e1 --> p
+e4 --> p
+p --> x : delivers
+g1 --> r1
+a -[hidden]down-> b
+c1 -[hidden]down-> c2
+c2 -[hidden]down-> c3
+c3 -[hidden]down-> c4
+g1 -[hidden]down-> g2
+e1 -[hidden]down-> e4
+r1 -[hidden]down-> x
+x -[hidden]down-> r2
+r2 -[hidden]down-> r3
+a -[hidden]right-> c1
+c1 -[hidden]right-> g1
+g1 -[hidden]right-> e1
+e1 -[hidden]right-> p
+p -[hidden]right-> r1
+legend right
+  |<#9B51E0><color:white> Actor </color>|
+  |<#2D9CDB><color:white> Command </color>|
+  |<#F2C94C><color:#17324D> Aggregate </color>|
+  |<#F2994A><color:white> Domain Event </color>|
+  |<#EB5757><color:white> Policy </color>|
+  |<#27AE60><color:white> Read Model / Query </color>|
+  |<#828282><color:white> External </color>|
 endlegend
-
-actor "Environmental\nAnalyst" as Analyst #9B51E0
-actor "External\nBusiness System" as External #9B51E0
-rectangle "Emissions Management\n<i>External Context</i>" as Emissions #828282
-rectangle "Carbon Footprint\nCalculation\n<i>External Context</i>" as Footprint #828282
-
-rectangle "ImportCsvFile\n<i>Command</i>" as CmdCsv #2D9CDB
-rectangle "ImportBatch\n<i>Aggregate</i>" as AggBatch #F2C94C
-rectangle "CsvDataImported\n<i>Event</i>" as EvtCsv #F2994A
-
-rectangle "RegisterEmissionViaApi\n<i>Command</i>" as CmdApiReg #2D9CDB
-rectangle "ApiKey\n<i>Aggregate</i>" as AggKey #F2C94C
-rectangle "ExternalEmissionRegistered\n<i>Event</i>" as EvtApiReg #F2994A
-
-rectangle "QueryEmissionsViaApi\n<i>Command</i>" as CmdApiQueryEm #2D9CDB
-rectangle "QueryFootprintResultsViaApi\n<i>Command</i>" as CmdApiQueryFp #2D9CDB
-
-rectangle "Deliver imported\nactivity data\n<i>Policy</i>" as PolicyDeliver #EB5757
-
-Analyst --> CmdCsv
-CmdCsv --> AggBatch
-AggBatch --> EvtCsv
-EvtCsv --> PolicyDeliver
-PolicyDeliver --> Emissions : delivers
-
-External --> CmdApiReg : uses API Key
-CmdApiReg --> AggKey
-AggKey ..> CmdApiReg : validates
-CmdApiReg --> EvtApiReg
-EvtApiReg --> PolicyDeliver
-
-External --> CmdApiQueryEm : uses API Key
-CmdApiQueryEm --> Emissions : reads
-
-External --> CmdApiQueryFp : uses API Key
-CmdApiQueryFp --> Footprint : reads
-
 @enduml

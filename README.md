@@ -3068,69 +3068,69 @@ El video recorre los flujos del core business: autenticación, registro de emisi
 Esta sección presenta el Event Storming a nivel de diseño para cada bounded context de EcoTrack, mostrando los comandos, agregados, eventos de dominio, políticas y read models.
 
 #### 4.6.1.1. Bounded Contexts Overview
+#### 4.6.1.1. Bounded Contexts Overview
 
 **EcoTrack - Design-Level Event Storming - Bounded Contexts Overview**
 
 ![EcoTrack - Design-Level Event Storming - Bounded Contexts Overview](docs/diagrams/event-storming/ecotrack-event-storming-bounded-contexts-overview.png)
 
-Este diagrama muestra los 7 bounded contexts de EcoTrack y cómo se relacionan entre sí, desde el registro de una organización hasta la generación de reportes.
+Este diagrama junta los siete bounded contexts en un solo flujo y muestra a qué tipo pertenece cada uno. Empieza con el registro de la organización y de sus usuarios, sigue con el registro de emisiones, el cálculo de la huella y las metas de reducción, y termina en los indicadores y reportes. Los contextos se comunican por medio de eventos de dominio: por ejemplo, `ActivityDataRecorded` alimenta el cálculo, y `CarbonFootprintCalculated` permite medir el avance de las metas y actualizar los indicadores a través del Integration Event Bus.
 
-#### 4.6.1.2. IAM Event Storming
-
-**EcoTrack - IAM Event Storming**
-
-![EcoTrack - IAM Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-iam.png)
-
-Aquí se modela la creación de cuentas, el inicio de sesión, la recuperación de contraseña y la invitación de nuevos usuarios a una organización.
-
-#### 4.6.1.3. Organization Management Event Storming
-
-**EcoTrack - Organization Management Event Storming**
-
-![EcoTrack - Organization Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-organization-management.png)
-
-Este contexto gestiona el registro de la organización, así como las sedes y unidades de negocio que pueden asociarse a ella.
-
-#### 4.6.1.4. Emissions Management Event Storming
-
-**EcoTrack - Emissions Management Event Storming**
-
-![EcoTrack - Emissions Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-emissions-management.png)
-
-Se registran las fuentes de emisión y los datos de actividad de la organización, ya sea de forma manual o mediante los datos que llegan desde Data Integration.
-
-#### 4.6.1.5. Carbon Footprint Calculation Event Storming
+#### 4.6.1.2. Carbon Footprint Calculation Event Storming (Core)
 
 **EcoTrack - Carbon Footprint Calculation Event Storming**
 
 ![EcoTrack - Carbon Footprint Calculation Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-carbon-footprint-calculation.png)
 
-A partir de los datos de actividad y un factor de emisión seleccionado, este contexto calcula la huella de carbono de la organización.
+Es el contexto central del producto. El analista ambiental elige un factor de emisión del catálogo y solicita el cálculo para un periodo; con los datos de actividad que llegan desde Emissions Management, el sistema multiplica cada dato por su factor y obtiene las emisiones en kgCO₂e. Un factor solo se puede aplicar si coincide con el Scope y la unidad del dato de actividad, y el cálculo se hace completo o no se hace.
 
-#### 4.6.1.6. Goals and Reduction Plans Event Storming
+#### 4.6.1.3. Emissions Management Event Storming (Core)
+
+**EcoTrack - Emissions Management Event Storming**
+
+![EcoTrack - Emissions Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-emissions-management.png)
+
+Aquí se registran las fuentes de emisión de la empresa (por ejemplo una caldera o una flota de vehículos), clasificadas por Scope, y los datos de actividad de cada una por periodo. Los datos pueden ingresarse manualmente o llegar desde Data Integration, y el agregado `ActivityData` guarda de dónde proviene cada uno.
+
+#### 4.6.1.4. Goals and Reduction Plans Event Storming (Core)
 
 **EcoTrack - Goals and Reduction Plans Event Storming**
 
 ![EcoTrack - Goals and Reduction Plans Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-goals-and-reduction-plans.png)
 
-Este contexto permite registrar metas de reducción de emisiones, crear planes asociados a cada meta y definir iniciativas ambientales dentro de esos planes.
+El responsable de sostenibilidad define metas de reducción de emisiones, y a cada meta se le asocian planes de reducción con sus iniciativas ambientales. El avance de cada meta se mide con los resultados que publica Carbon Footprint Calculation al emitir `CarbonFootprintCalculated`.
 
-#### 4.6.1.7. Analytics and Reports Event Storming
+#### 4.6.1.5. Organization Management Event Storming (Supporting)
+
+**EcoTrack - Organization Management Event Storming**
+
+![EcoTrack - Organization Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-organization-management.png)
+
+Gestiona la organización cliente y su estructura: sedes y unidades de negocio. Es la base sobre la que el resto de los contextos identifica a quién pertenece cada dato.
+
+#### 4.6.1.6. Analytics and Reports Event Storming (Supporting)
 
 **EcoTrack - Analytics and Reports Event Storming**
 
 ![EcoTrack - Analytics and Reports Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-analytics-and-reports.png)
 
-Los indicadores ambientales se actualizan automáticamente a partir de los eventos generados por los demás contextos, mientras que los reportes se generan bajo solicitud del usuario.
+Este contexto no registra datos propios: escucha los eventos de los demás contextos mediante el Integration Event Bus y una política (`Update Indicators`) mantiene actualizados los indicadores ambientales. Los reportes sí se generan cuando el usuario los pide.
 
-#### 4.6.1.8. Data Integration Event Storming
+#### 4.6.1.7. Data Integration Event Storming (Supporting)
 
 **EcoTrack - Data Integration Event Storming**
 
 ![EcoTrack - Data Integration Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-data-integration.png)
 
-Este contexto permite importar información mediante archivos CSV y recibir o consultar datos a través de la EcoTrack API, utilizada por sistemas externos.
+Permite cargar datos de forma masiva con archivos CSV y que un sistema externo envíe o consulte información con la EcoTrack API usando una API Key. Una política entrega los datos importados a Emissions Management, donde se registran como datos de actividad.
 
+#### 4.6.1.8. IAM Event Storming (Generic)
+
+**EcoTrack - IAM Event Storming**
+
+![EcoTrack - IAM Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-iam.png)
+
+Cubre la creación de cuentas, el inicio de sesión, la recuperación de contraseña y la invitación de usuarios a una organización, con los roles de administrador, analista ambiental y responsable de sostenibilidad. Una política envía los correos de invitación y de recuperación a través del proveedor de correo externo.
 
 ### 4.6.2. Software Architecture Context Diagram
 
