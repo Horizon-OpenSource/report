@@ -1,41 +1,76 @@
 <div align="center">
 
-<img src="assets/chapter-01/logo-upc.png" alt="Logo UPC" width="120"/>
+<img src="assets/chapter-01/logo-upc.png" alt="Logo UPC" width="95"/>
 
-#### UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
+Universidad Peruana de Ciencias Aplicadas
 
-## FACULTAD DE INGENIERÍA
+**Carrera de Ingeniería de Software**
+<br>
 
-### Carrera de Ingeniería de Software
+### 1ASI0729
 
-### Desarrollo de Aplicaciones Open Source
+## Desarrollo de Aplicaciones Open Source
 
-**Ciclo:** 2026-20
+NRC
 
-**Código del curso:** 1ASI0729
+**7753**
 
-**NRC:** 7753
+## Informe del Trabajo Final
 
-**Docente del curso:** Bautista Ubillús, Efraín Ricardo
+Docente
 
----
+**Bautista Ubillús, Efraín Ricardo**
 
-## INFORME DE TRABAJO FINAL
+<br>
 
-**Nombre de la Startup:** Horizon
+Equipo
 
-**Nombre del producto:** EcoTrack
+**Horizon**
+
+Proyecto
+
+**EcoTrack**
+
+<br>
 
 ### Integrantes
 
-- Lacuta Lima, Alex Rodrigo - U20241G396
-- Espinoza Flores, Aaron André - U202222859
-- Payesa Torres, Harrison Hubert - U202221024
-- Tello Murga, Javier Oswaldo - U202218387
+</div>
 
-### Fecha
+<table align="center">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Apellidos y Nombres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>U20241G396</td>
+      <td>Lacuta Lima, Alex Rodrigo</td>
+    </tr>
+    <tr>
+      <td>U202222859</td>
+      <td>Espinoza Flores, Aaron André</td>
+    </tr>
+    <tr>
+      <td>U202221024</td>
+      <td>Payesa Torres, Harrison Hubert</td>
+    </tr>
+    <tr>
+      <td>U202218387</td>
+      <td>Tello Murga, Javier Oswaldo</td>
+    </tr>
+  </tbody>
+</table>
 
-Noviembre, 2026
+<div align="center">
+
+<br>
+
+**Período 202620**
+
+Noviembre 2026
 
 </div>
 
