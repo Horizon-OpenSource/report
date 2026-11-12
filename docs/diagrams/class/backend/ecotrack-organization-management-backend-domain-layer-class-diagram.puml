@@ -15,11 +15,11 @@ hide circle
 package "Domain" {
   package "Aggregates" {
     class Organization <<Aggregate Root>> {
-      +id: Long
-      +name: String
-      +sector: String
-      +createdAt: LocalDateTime
-      +registerFacility(name: String, address: String): Facility
+      -id: OrganizationId
+      -name: String
+      -sector: String
+      -createdAt: LocalDateTime
+      +registerFacility(name: String, address: Address): Facility
       +registerBusinessUnit(name: String): BusinessUnit
       +update(name: String, sector: String): void
     }
@@ -27,15 +27,31 @@ package "Domain" {
 
   package "Entities" {
     class Facility {
-      +id: Long
-      +organizationId: Long
-      +name: String
-      +address: String
+      -id: FacilityId
+      -organizationId: OrganizationId
+      -name: String
+      -address: Address
     }
     class BusinessUnit {
-      +id: Long
-      +organizationId: Long
-      +name: String
+      -id: BusinessUnitId
+      -organizationId: OrganizationId
+      -name: String
+    }
+  }
+
+  package "Value Objects" {
+    class BusinessUnitId <<Value Object>> {
+      -value: UUID
+    }
+    class FacilityId <<Value Object>> {
+      -value: UUID
+    }
+    class OrganizationId <<Value Object>> {
+      -value: UUID
+    }
+    class Address <<Value Object>> {
+      -value: String
+      +isBlank(): boolean
     }
   }
 
@@ -45,54 +61,58 @@ package "Domain" {
       +sector: String
     }
     class UpdateOrganizationCommand {
-      +organizationId: Long
+      +organizationId: OrganizationId
       +name: String
       +sector: String
     }
     class RegisterFacilityCommand {
-      +organizationId: Long
+      +organizationId: OrganizationId
       +name: String
-      +address: String
+      +address: Address
     }
     class RegisterBusinessUnitCommand {
-      +organizationId: Long
+      +organizationId: OrganizationId
       +name: String
     }
   }
 
   package "Queries" {
     class GetOrganizationProfileQuery {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
   }
 
   package "Events" {
     class OrganizationRegisteredEvent {
-      +organizationId: Long
+      +organizationId: OrganizationId
       +occurredOn: LocalDateTime
     }
     class FacilityRegisteredEvent {
-      +organizationId: Long
-      +facilityId: Long
+      +organizationId: OrganizationId
+      +facilityId: FacilityId
       +occurredOn: LocalDateTime
     }
     class BusinessUnitRegisteredEvent {
-      +organizationId: Long
-      +businessUnitId: Long
+      +organizationId: OrganizationId
+      +businessUnitId: BusinessUnitId
       +occurredOn: LocalDateTime
     }
   }
 
   package "Repositories" {
     interface OrganizationRepository {
-      +findById(id: Long): Organization
+      +findById(id: OrganizationId): Organization
       +save(organization: Organization): Organization
     }
   }
 
+  Organization "1" *-- "1" OrganizationId : identified by
   Organization "1" *-- "0..*" Facility : has
+  Facility "1" *-- "1" Address : located at
   Organization "1" *-- "0..*" BusinessUnit : has
   OrganizationRepository ..> Organization : persists
+  Facility "1" *-- "1" FacilityId : identified by
+  BusinessUnit "1" *-- "1" BusinessUnitId : identified by
 }
 
 package "Interfaces REST" as Backend_orgmgmt_Interfaces_REST <<layer>> {

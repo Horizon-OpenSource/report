@@ -20,27 +20,56 @@ hide circle
 package "Domain" {
   package "Aggregates" {
     class ImportBatch <<Aggregate Root>> {
-      +id: Long
-      +organizationId: Long
-      +fileName: String
+      -id: ImportBatchId
+      -organizationId: OrganizationId
+      -fileName: FileName
       -status: ImportStatus
-      +importedAt: LocalDateTime
+      -importedAt: LocalDateTime
       +markAsProcessed(): void
       +markAsFailed(): void
     }
     class ApiKey <<Aggregate Root>> {
-      +id: Long
-      +organizationId: Long
-      -keyHash: String
-      +createdAt: LocalDateTime
-      +revokedAt: LocalDateTime
+      -id: ApiKeyId
+      -organizationId: OrganizationId
+      -keyHash: ApiKeyHash
+      -createdAt: LocalDateTime
+      -revokedAt: LocalDateTime
       +isValid(): boolean
       +revoke(): void
     }
   }
 
   package "Value Objects" {
-    enum ImportStatus {
+    class ApiKeyId <<Value Object>> {
+      -value: UUID
+    }
+    class FacilityId <<Value Object>> {
+      -value: UUID
+    }
+    class ImportBatchId <<Value Object>> {
+      -value: UUID
+    }
+    class OrganizationId <<Value Object>> {
+      -value: UUID
+    }
+    enum ScopeType <<Value Object>> {
+      SCOPE_1
+      SCOPE_2
+      SCOPE_3
+    }
+    class ActivityQuantity <<Value Object>> {
+      -amount: BigDecimal
+      -unit: String
+      +isPositive(): boolean
+    }
+    class FileName <<Value Object>> {
+      -value: String
+      +hasCsvExtension(): boolean
+    }
+    class ApiKeyHash <<Value Object>> {
+      -value: String
+    }
+    enum ImportStatus <<Value Object>> {
       PENDING
       PROCESSED
       FAILED
@@ -49,60 +78,64 @@ package "Domain" {
 
   package "Commands" {
     class ImportCsvFileCommand {
-      +organizationId: Long
-      +fileName: String
+      +organizationId: OrganizationId
+      +fileName: FileName
     }
     class GenerateApiKeyCommand {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
     class RevokeApiKeyCommand {
-      +keyId: Long
+      +keyId: ApiKeyId
     }
     class RegisterEmissionViaApiCommand {
-      +facilityId: Long
+      +facilityId: FacilityId
       +name: String
-      +scope: String
-      +quantity: Double
+      +scope: ScopeType
+      +quantity: ActivityQuantity
     }
   }
 
   package "Queries" {
     class GetImportHistoryQuery {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
     class QueryEmissionsViaApiQuery {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
     class QueryFootprintResultsViaApiQuery {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
   }
 
   package "Events" {
     class CsvDataImportedEvent {
-      +importBatchId: Long
+      +importBatchId: ImportBatchId
       +occurredOn: LocalDateTime
     }
     class ExternalEmissionRegisteredEvent {
-      +organizationId: Long
+      +organizationId: OrganizationId
       +occurredOn: LocalDateTime
     }
   }
 
   package "Repositories" {
     interface ImportBatchRepository {
-      +findByOrganizationId(organizationId: Long): List<ImportBatch>
+      +findByOrganizationId(organizationId: OrganizationId): List<ImportBatch>
       +save(batch: ImportBatch): ImportBatch
     }
     interface ApiKeyRepository {
-      +findByKeyHash(keyHash: String): ApiKey
+      +findByKeyHash(keyHash: ApiKeyHash): ApiKey
       +save(apiKey: ApiKey): ApiKey
     }
   }
 
   ImportBatch "1" *-- "1" ImportStatus : currently in
+  ImportBatch "1" *-- "1" FileName : named
+  ApiKey "1" *-- "1" ApiKeyHash : secured by
   ImportBatchRepository ..> ImportBatch : persists
   ApiKeyRepository ..> ApiKey : persists
+  ImportBatch "1" *-- "1" ImportBatchId : identified by
+  ApiKey "1" *-- "1" ApiKeyId : identified by
 }
 
 package "Interfaces REST" as Backend_dataint_Interfaces_REST <<layer>> {
