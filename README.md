@@ -3068,7 +3068,7 @@ El video recorre los flujos del core business: autenticación, registro de emisi
 Esta sección presenta el Event Storming a nivel de diseño para cada bounded context de EcoTrack, mostrando los comandos, agregados, eventos de dominio, políticas y read models.
 
 #### 4.6.1.1. Bounded Contexts Overview
-#### 4.6.1.1. Bounded Contexts Overview
+
 
 **EcoTrack - Design-Level Event Storming - Bounded Contexts Overview**
 

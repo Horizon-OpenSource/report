@@ -35,6 +35,11 @@ package "Domain / Invitation Aggregate" {
   }
 
   package "Value Objects" {
+    enum RoleType {
+      ADMINISTRATOR
+      ENVIRONMENTAL_ANALYST
+      SUSTAINABILITY_MANAGER
+    }
     class InvitationId <<Value Object>> {
       -value: UUID
     }
@@ -93,6 +98,7 @@ package "Domain / Invitation Aggregate" {
     }
   }
 
+  Invitation "1" *-- "1" RoleType : assigned
   Invitation "1" *-- "1" InvitationToken : secured by
   Invitation "1" *-- "1" InvitationStatus : currently in
   InvitationRepository ..> Invitation : persists

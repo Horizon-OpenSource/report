@@ -20,7 +20,7 @@ hide circle
 package "Domain" {
   package "Aggregates" {
     class ReductionGoal <<Aggregate Root>> {
-      -id: UUID
+      -id: ReductionGoalId
       -organizationId: OrganizationId
       -name: String
       -target: GoalTarget
@@ -34,19 +34,28 @@ package "Domain" {
 
   package "Entities" {
     class ReductionPlan <<Entity>> {
-      -id: UUID
+      -id: ReductionPlanId
       -name: String
       -description: String
       +registerInitiative(name: String, description: String): EnvironmentalInitiative
     }
     class EnvironmentalInitiative <<Entity>> {
-      -id: UUID
+      -id: EnvironmentalInitiativeId
       -name: String
       -description: String
     }
   }
 
   package "Value Objects" {
+    class EnvironmentalInitiativeId <<Value Object>> {
+      -value: UUID
+    }
+    class ReductionGoalId <<Value Object>> {
+      -value: UUID
+    }
+    class ReductionPlanId <<Value Object>> {
+      -value: UUID
+    }
     enum GoalStatus <<Value Object>> {
       ACTIVE
       ACHIEVED
@@ -69,29 +78,29 @@ package "Domain" {
 
   package "Commands" {
     class RegisterReductionGoalCommand {
-      +organizationId: UUID
+      +organizationId: OrganizationId
       +name: String
       +target: GoalTarget
     }
     class EditReductionGoalCommand {
-      +goalId: UUID
+      +goalId: ReductionGoalId
       +name: String
       +target: GoalTarget
     }
     class UpdateGoalStatusCommand {
-      +goalId: UUID
+      +goalId: ReductionGoalId
       +status: GoalStatus
     }
     class DeleteReductionGoalCommand {
-      +goalId: UUID
+      +goalId: ReductionGoalId
     }
     class CreateReductionPlanCommand {
-      +reductionGoalId: UUID
+      +reductionGoalId: ReductionGoalId
       +name: String
       +description: String
     }
     class RegisterInitiativeCommand {
-      +reductionPlanId: UUID
+      +reductionPlanId: ReductionPlanId
       +name: String
       +description: String
     }
@@ -108,27 +117,27 @@ package "Domain" {
 
   package "Events" {
     class ReductionGoalRegisteredEvent {
-      +goalId: UUID
+      +goalId: ReductionGoalId
       +occurredOn: LocalDateTime
     }
     class GoalStatusUpdatedEvent {
-      +goalId: UUID
+      +goalId: ReductionGoalId
       +status: GoalStatus
       +occurredOn: LocalDateTime
     }
     class ReductionPlanCreatedEvent {
-      +planId: UUID
+      +planId: ReductionPlanId
       +occurredOn: LocalDateTime
     }
     class EnvironmentalInitiativeRegisteredEvent {
-      +initiativeId: UUID
+      +initiativeId: EnvironmentalInitiativeId
       +occurredOn: LocalDateTime
     }
   }
 
   package "Repositories" {
     interface ReductionGoalRepository {
-      +findById(id: UUID): Optional<ReductionGoal>
+      +findById(id: ReductionGoalId): Optional<ReductionGoal>
       +findByOrganizationId(organizationId: OrganizationId): List<ReductionGoal>
       +save(goal: ReductionGoal): ReductionGoal
     }
@@ -141,6 +150,9 @@ package "Domain" {
   ReductionGoal "1" *-- "1" OrganizationId : belongs to >
   GoalTarget ..> CarbonEmissions : compared with
   ReductionGoalRepository ..> ReductionGoal : persists
+  ReductionGoal "1" *-- "1" ReductionGoalId : identified by
+  ReductionPlan "1" *-- "1" ReductionPlanId : identified by
+  EnvironmentalInitiative "1" *-- "1" EnvironmentalInitiativeId : identified by
 }
 
 package "Interfaces REST" as Backend_goals_Interfaces_REST <<layer>> {

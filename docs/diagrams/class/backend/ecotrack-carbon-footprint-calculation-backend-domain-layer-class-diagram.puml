@@ -20,16 +20,16 @@ hide circle
 package "Domain" {
   package "Aggregates" {
     class EmissionFactor <<Aggregate Root>> {
-      -id: UUID
+      -id: EmissionFactorId
       -name: String
       -scope: ScopeType
       -factorValue: EmissionFactorValue
-      -source: String
+      -source: FactorSource
       +isCompatibleWith(scope: ScopeType, unit: String): boolean
-      +convert(quantity: double): CarbonEmissions
+      +convert(quantity: ActivityQuantity): CarbonEmissions
     }
     class FootprintCalculation <<Aggregate Root>> {
-      -id: UUID
+      -id: FootprintCalculationId
       -organizationId: OrganizationId
       -period: ReportingPeriod
       -items: List<CalculationItem>
@@ -39,15 +39,41 @@ package "Domain" {
       +totalByScope(scope: ScopeType): CarbonEmissions
     }
     class CalculationItem <<Entity>> {
-      -id: UUID
-      -activityDataId: UUID
-      -emissionFactorId: UUID
+      -id: CalculationItemId
+      -activityDataId: ActivityDataId
+      -emissionFactorId: EmissionFactorId
       -scope: ScopeType
       -emissions: CarbonEmissions
     }
   }
 
   package "Value Objects" {
+    class ActivityDataId <<Value Object>> {
+      -value: UUID
+    }
+    class EmissionFactorId <<Value Object>> {
+      -value: UUID
+    }
+    class FootprintCalculationId <<Value Object>> {
+      -value: UUID
+    }
+    class CalculationItemId <<Value Object>> {
+      -value: UUID
+    }
+    class ActivityQuantity <<Value Object>> {
+      -amount: BigDecimal
+      -unit: String
+      +isPositive(): boolean
+    }
+    class FactorSource <<Value Object>> {
+      -name: String
+      -year: int
+    }
+    class ActivityFactorSelection <<Value Object>> {
+      -factorId: EmissionFactorId
+      -quantity: ActivityQuantity
+      -scope: ScopeType
+    }
     enum ScopeType <<Value Object>> {
       SCOPE_1
       SCOPE_2
@@ -65,7 +91,7 @@ package "Domain" {
     class EmissionFactorValue <<Value Object>> {
       -factor: BigDecimal
       -unit: String
-      +multiply(quantity: double): CarbonEmissions
+      +multiply(quantity: ActivityQuantity): CarbonEmissions
     }
     class CarbonEmissions <<Value Object>> {
       -amount: BigDecimal
@@ -77,7 +103,7 @@ package "Domain" {
 
   package "Commands" {
     class CalculateFootprintCommand {
-      +organizationId: UUID
+      +organizationId: OrganizationId
       +period: ReportingPeriod
       +items: List<ActivityFactorSelection>
     }
@@ -99,7 +125,7 @@ package "Domain" {
 
   package "Events" {
     class CarbonFootprintCalculatedEvent {
-      +footprintCalculationId: UUID
+      +footprintCalculationId: FootprintCalculationId
       +occurredOn: LocalDateTime
     }
   }
@@ -107,7 +133,7 @@ package "Domain" {
   package "Repositories" {
     interface EmissionFactorRepository {
       +findAll(): List<EmissionFactor>
-      +findById(id: UUID): Optional<EmissionFactor>
+      +findById(id: EmissionFactorId): Optional<EmissionFactor>
     }
     interface FootprintCalculationRepository {
       +findByScope(scope: ScopeType): List<FootprintCalculation>
@@ -116,6 +142,7 @@ package "Domain" {
     }
   }
 
+  EmissionFactor "1" *-- "1" FactorSource : sourced from
   FootprintCalculation "1" *-- "1..*" CalculationItem : contains >
   FootprintCalculation "1" *-- "1" ReportingPeriod : covers >
   FootprintCalculation "1" *-- "1" OrganizationId : belongs to >
@@ -127,6 +154,9 @@ package "Domain" {
   EmissionFactorValue ..> CarbonEmissions : produces
   EmissionFactorRepository ..> EmissionFactor : persists
   FootprintCalculationRepository ..> FootprintCalculation : persists
+  EmissionFactor "1" *-- "1" EmissionFactorId : identified by
+  FootprintCalculation "1" *-- "1" FootprintCalculationId : identified by
+  CalculationItem "1" *-- "1" CalculationItemId : identified by
 }
 
 package "Interfaces REST" as Backend_footprint_Interfaces_REST <<layer>> {

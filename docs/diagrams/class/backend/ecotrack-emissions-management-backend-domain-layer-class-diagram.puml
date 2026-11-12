@@ -20,7 +20,7 @@ hide circle
 package "Domain" {
   package "Aggregates" {
     class EmissionSource <<Aggregate Root>> {
-      -id: UUID
+      -id: EmissionSourceId
       -facilityId: FacilityId
       -name: String
       -type: String
@@ -33,7 +33,7 @@ package "Domain" {
 
   package "Entities" {
     class ActivityData <<Entity>> {
-      -id: UUID
+      -id: ActivityDataId
       -quantity: ActivityQuantity
       -period: ReportingPeriod
       -origin: ActivityOrigin
@@ -42,6 +42,12 @@ package "Domain" {
   }
 
   package "Value Objects" {
+    class EmissionSourceId <<Value Object>> {
+      -value: UUID
+    }
+    class ActivityDataId <<Value Object>> {
+      -value: UUID
+    }
     enum ScopeType <<Value Object>> {
       SCOPE_1
       SCOPE_2
@@ -68,21 +74,21 @@ package "Domain" {
 
   package "Commands" {
     class RegisterEmissionSourceCommand {
-      +facilityId: UUID
+      +facilityId: FacilityId
       +name: String
       +type: String
       +scope: ScopeType
     }
     class EditEmissionSourceCommand {
-      +sourceId: UUID
+      +sourceId: EmissionSourceId
       +name: String
       +scope: ScopeType
     }
     class DeleteEmissionSourceCommand {
-      +sourceId: UUID
+      +sourceId: EmissionSourceId
     }
     class RecordActivityDataCommand {
-      +emissionSourceId: UUID
+      +emissionSourceId: EmissionSourceId
       +quantity: ActivityQuantity
       +period: ReportingPeriod
       +origin: ActivityOrigin
@@ -100,19 +106,19 @@ package "Domain" {
 
   package "Events" {
     class EmissionSourceRegisteredEvent {
-      +sourceId: UUID
+      +sourceId: EmissionSourceId
       +occurredOn: LocalDateTime
     }
     class ActivityDataRecordedEvent {
-      +sourceId: UUID
-      +activityDataId: UUID
+      +sourceId: EmissionSourceId
+      +activityDataId: ActivityDataId
       +occurredOn: LocalDateTime
     }
   }
 
   package "Repositories" {
     interface EmissionSourceRepository {
-      +findById(id: UUID): Optional<EmissionSource>
+      +findById(id: EmissionSourceId): Optional<EmissionSource>
       +search(term: String): List<EmissionSource>
       +findByScope(scope: ScopeType): List<EmissionSource>
       +save(source: EmissionSource): EmissionSource
@@ -126,6 +132,8 @@ package "Domain" {
   ActivityData "1" *-- "1" ReportingPeriod : covers >
   ActivityData "1" *-- "1" ActivityOrigin : recorded as >
   EmissionSourceRepository ..> EmissionSource : persists
+  EmissionSource "1" *-- "1" EmissionSourceId : identified by
+  ActivityData "1" *-- "1" ActivityDataId : identified by
 }
 
 package "Interfaces REST" as Backend_emissions_Interfaces_REST <<layer>> {
