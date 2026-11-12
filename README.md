@@ -754,7 +754,7 @@ Para validar los problemas, necesidades y supuestos del proceso Lean UX plantead
 
 ### 2.2.2. Registro de entrevistas
 
-Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stream y SharePoint. Cada registro contiene los datos de la persona entrevistada, una captura de pantalla, el enlace del video, el rango de tiempo de la entrevista, su duracion y un resumen de los hallazgos principales.
+Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stream y SharePoint. Cada registro incluye datos de la persona entrevistada, captura, enlace, rango de tiempo y resumen. La duración indicada se calcula como fin menos inicio del rango consignado; no representa necesariamente la duración total del video. Los enlaces, las capturas y los tiempos deben cotejarse con las grabaciones accesibles al equipo.
 
 - **Segmento 1: Empresas exportadoras**
 
@@ -771,7 +771,7 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
     - **Video URL:** [Entrevista E01 - Manuel Marina](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg)
     - **Timing:** 00:00:18 - 00:04:34
-    - **Duracion:** 4 minutos con 34 segundos
+    - **Duración del intervalo indicado:** 4 minutos con 16 segundos
     - **Resumen:** Manuel explico que su trabajo se relaciona con actividades de transporte y que la empresa ha comenzado a utilizar GNV para reducir costos e impacto ambiental. Elaboran reportes semanales sobre consumo, funcionamiento y mantenimiento de los vehiculos. La informacion se consolida principalmente en Excel, pero no todas las personas dominan la herramienta, lo que genera dependencia y demoras. Considera valioso que EcoTrack calcule la huella de carbono, organice los reportes por periodo y ayude a comunicar el compromiso ambiental de la empresa.
 
   - **Entrevista E02**
@@ -787,7 +787,7 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
     - **Video URL:** [Entrevista E02 - Shadina Lopez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQD_2azhBwEOQ6Atj3XxRSFmATIBispPszUQmCmKSsdnDUo?e=yKkGmJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
     - **Timing:** 00:00:14 - 00:05:23
-    - **Duracion:** 5 minutos con 23 segundos
+    - **Duración del intervalo indicado:** 5 minutos con 9 segundos
     - **Resumen:** Shadina trabaja en una agroindustria pequena y gestiona certificaciones y registros ambientales. Los clientes vinculados con exportacion solicitan informacion sobre agua, energia, residuos y manejo de insumos, mientras que la certificacion de Buenas Practicas Agricolas exige evidencias ordenadas. Actualmente utilizan Excel, cuadernos y fotografias, lo que provoca perdida de datos, falta de respaldo y conflictos entre versiones. EcoTrack le resultaria util si permite cargar informacion desde el celular, generar reportes por mes o lote y mostrar indicadores comprensibles.
 
   - **Entrevista E03**
@@ -803,7 +803,7 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
     - **Video URL:** [Entrevista E03 - Azul Delgado](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU)
     - **Timing:** 00:00:12 - 00:07:43
-    - **Duracion:** 7 minutos con 43 segundos
+    - **Duración del intervalo indicado:** 7 minutos con 31 segundos
     - **Resumen:** Azul describio un entorno textil donde se necesita ordenar informacion sobre energia, agua, residuos textiles, materiales y productos quimicos para responder a solicitudes internas, clientes o auditorias. Los registros se manejan mediante archivos y hojas de calculo, lo que ocasiona duplicidad, versiones diferentes y demora al consolidar la informacion. Valora una solucion sencilla que permita centralizar evidencias, calcular indicadores y generar reportes ambientales por periodo.
 
 - **Segmento 2: Corporaciones y medianas empresas industriales**
@@ -821,7 +821,7 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
     - **Video URL:** [Entrevista E04 - Renzo Santos](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse)
     - **Timing:** 00:00:20 - 00:06:42
-    - **Duracion:** 6 minutos con 42 segundos
+    - **Duración del intervalo indicado:** 6 minutos con 22 segundos
     - **Resumen:** Renzo explico que la informacion ambiental proviene de produccion, mantenimiento, administracion y otras unidades. Los principales consumos se relacionan con electricidad de planta y oficinas, maquinaria y combustible de transporte. Cada area utiliza hojas de calculo, documentos o registros con formatos diferentes, lo que dificulta consolidar y comparar resultados. Considera muy importante disponer de dashboards, reportes e historial de calculos en una sola plataforma para reducir tiempo y mejorar la trazabilidad.
 
   - **Entrevista E05**
@@ -837,7 +837,7 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
     - **Video URL:** [Entrevista E05 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4)
     - **Timing:** 00:00:17 - 00:08:11
-    - **Duracion:** 8 minutos con 11 segundos
+    - **Duración del intervalo indicado:** 7 minutos con 54 segundos
     - **Resumen:** Norvil supervisa operaciones de procesamiento y envasado de alimentos y controla energia, combustible, gas, materiales y residuos. La informacion se distribuye entre Excel, correo, WhatsApp y anotaciones, por lo que algunos archivos llegan incompletos o desactualizados. Destaca que la gestion ambiental tambien permite controlar costos operativos. Espera que EcoTrack facilite comparaciones entre periodos, identifique consumos criticos, genere reportes gerenciales y permita asignar metas de reduccion.
 
   - **Entrevista E06**
@@ -853,120 +853,44 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
     - **Video URL:** [Entrevista E06 - Rosa Torres](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQA4osdYU2cVTppdGXpQ4q-KAU9E4b1CVAsdStJ2Ntr-FHI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZqWiQC)
     - **Timing:** 00:00:15 - 00:08:52
-    - **Duracion:** 8 minutos con 52 segundos
+    - **Duración del intervalo indicado:** 8 minutos con 37 segundos
     - **Resumen:** Rosa gestiona un taller que utiliza electricidad, agua, pintura, thinner y solventes, y que genera residuos y vapores durante los trabajos. La informacion esta distribuida entre facturas, compras, Excel y anotaciones manuales. La principal dificultad es comparar consumos y desperdicios entre meses o por vehiculo atendido. Considera util una plataforma sencilla que muestre consumos, residuos, avances y metas de reduccion sin aumentar la complejidad operativa del taller.
 
-### 2.2.3. Analisis de entrevistas
+### 2.2.3. Análisis de entrevistas
 
-El analisis de las seis entrevistas realizadas a los dos segmentos objetivo permite identificar patrones demograficos, comportamentales y tecnologicos que sustentan los User Personas y las decisiones de diseno de EcoTrack. Los porcentajes se calculan sobre tres entrevistas por segmento; por ello, una respuesta equivale al 33.3%, dos respuestas al 66.7% y tres respuestas al 100%.
+La siguiente síntesis se basa en los resúmenes registrados en 2.2.2. Las seis entrevistas constituyen una muestra exploratoria, no representativa. Los enlaces y los intervalos deben contrastarse con las grabaciones; no se han verificado aquí citas textuales ni porcentajes de opinión. La pertenencia de E01 al segmento exportador y de E06 al segmento de corporaciones o medianas industrias requiere confirmación con el equipo, pues los registros no documentan por sí solos esas características.
 
-- **Segmento 1: Empresas exportadoras**
+| Hallazgo en los resúmenes | Entrevistas | Implicación para EcoTrack |
+|---|---|---|
+| Registros y evidencias distribuidos entre hojas de cálculo, cuadernos, fotografías u otros archivos. | E01, E02, E03 | Centralizar registros y evidencias, y facilitar la elaboración de reportes. |
+| Información de operaciones distribuida entre áreas, archivos, mensajes, facturas o anotaciones, con dificultades de consolidación y comparación. | E04, E05, E06 | Estandarizar datos y facilitar la comparación entre periodos; validar qué desgloses necesita cada organización. |
+| Solicitudes de información o evidencias para clientes, certificaciones o auditorías. | E02, E03 | Mantener evidencias asociadas a los registros y generar reportes trazables. |
+| Interés en revisar consumos o establecer metas para apoyar decisiones operativas. | E05, E06 | Explorar indicadores y seguimiento de metas sin aumentar la carga operativa. |
 
-  El analisis de las tres entrevistas del segmento exportador revela los siguientes patrones:
+Los resúmenes describen necesidades y oportunidades, no validan que una funcionalidad esté implementada ni demuestran una reducción cuantificada de tiempo o emisiones. La asignación de cada necesidad a un perfil compuesto se presenta en 2.3; las historias y objetivos se especifican en 3.1 y 3.2.
 
-  **Caracteristicas demograficas (objetivas):**
+---
 
-  - El 100% de las personas entrevistadas tiene entre 23 y 28 anos.
-  - El 100% reside en Lima Metropolitana: San Martin de Porres, Ate y La Victoria.
-  - El 33.3% pertenece al sector transporte, el 33.3% a agroindustria y el 33.3% al sector textil.
-  - El 66.7% desempena funciones directamente relacionadas con calidad, sostenibilidad o preparacion de evidencias ambientales; el 33.3% aporta informacion desde operaciones de transporte.
-
-  **Caracteristicas de personalidad y necesidades (subjetivas):**
-
-  - El 100% reconoce que organizar la informacion ambiental aporta valor para la empresa.
-  - El 100% muestra interes en centralizar registros y reducir el trabajo manual.
-  - El 66.7% enfrenta solicitudes directas de clientes, certificadoras o auditorias; el 33.3% se concentra principalmente en reportes operativos internos.
-  - El 100% valora una solucion sencilla que genere calculos, indicadores o reportes por periodo.
-
-  **Habilidades y tecnologia:**
-
-  - El 100% utiliza Excel o archivos digitales para registrar o consolidar informacion.
-  - El 66.7% complementa los registros digitales con cuadernos, fotografias, recibos u otras evidencias fisicas.
-  - El 100% reporta dificultades relacionadas con versiones distintas, perdida de datos, dependencia de otras personas o demora en la consolidacion.
-  - El 33.3% solicito expresamente carga de informacion desde el celular, mientras que el resto priorizo simplicidad y reportes centralizados.
-
-  **Canales de interaccion:**
-
-  - El 100% depende de intercambio de informacion entre personas o areas para completar los registros.
-  - El 66.7% utiliza reportes o evidencias para comunicarse con actores externos, como clientes, socios comerciales o certificadoras.
-  - El 100% considera los reportes digitales un canal importante para comunicar resultados ambientales.
-
-  **Dispositivos de preferencia:**
-
-  - El 33.3% menciono de forma explicita la necesidad de utilizar el celular para cargar datos y evidencias.
-  - No se obtuvo evidencia suficiente para asignar porcentajes confiables sobre marcas, sistemas operativos o preferencia entre computadora y smartphone en las otras entrevistas.
-
-  **Marcas e influencias:**
-
-  - Microsoft Excel es la herramienta mencionada por el 100% del segmento.
-  - El 33.3% esta influido directamente por los requisitos de la certificacion de Buenas Practicas Agricolas.
-  - El 66.7% esta condicionado por solicitudes de clientes, auditorias o mercados vinculados con exportacion.
-
-  **Conclusiones del analisis:**
-
-  Las empresas exportadoras necesitan centralizar datos de energia, agua, combustible, transporte, residuos, materiales y evidencias. EcoTrack debe priorizar una experiencia sencilla, carga flexible de informacion, respaldo historico, calculos comprensibles y reportes por periodo o lote. La solucion tambien debe reducir los errores derivados de archivos duplicados y facilitar la respuesta ante clientes, certificaciones y auditorias.
-
-- **Segmento 2: Corporaciones y medianas empresas industriales**
-
-  El analisis de las tres entrevistas del segmento industrial revela los siguientes patrones:
-
-  **Caracteristicas demograficas (objetivas):**
-
-  - El 100% de las personas entrevistadas tiene entre 26 y 49 anos.
-  - El 100% reside en Lima Metropolitana: Pueblo Libre, Los Olivos y Comas.
-  - El 33.3% trabaja en produccion industrial, el 33.3% en procesamiento de alimentos y el 33.3% en un taller automotriz.
-  - El 100% desempena funciones relacionadas con operaciones, supervision, control de registros o gerencia.
-
-  **Caracteristicas de personalidad y necesidades (subjetivas):**
-
-  - El 100% relaciona la gestion ambiental con eficiencia operativa, control de costos o mejores decisiones.
-  - El 100% considera valioso centralizar dashboards, reportes e historial de resultados.
-  - El 100% manifiesta frustracion por datos dispersos, incompletos o dificiles de comparar.
-  - El 100% muestra interes en realizar seguimiento de consumos, residuos, emisiones o metas de reduccion.
-
-  **Habilidades y tecnologia:**
-
-  - El 100% utiliza Excel, documentos, facturas, correos, mensajes o anotaciones manuales para administrar informacion.
-  - El 66.7% recibe informacion digital desde diferentes areas mediante archivos o canales de comunicacion; el 33.3% concentra la revision en gerencia, compras y personal operativo.
-  - El 100% tiene dificultades para comparar periodos, areas, plantas, procesos o trabajos con un criterio uniforme.
-  - El 100% valora dashboards, reportes e historial como herramientas para disminuir el tiempo de consolidacion.
-
-  **Canales de interaccion:**
-
-  - El 100% depende de informacion generada por mas de un actor o area operativa.
-  - El 66.7% utiliza correo, archivos compartidos o mensajeria para recibir datos; el 33.3% depende principalmente de facturas, compras y coordinacion directa.
-  - El 100% necesita presentar resultados a gerencia o utilizarlos para decisiones internas.
-
-  **Dispositivos de preferencia:**
-
-  - Las entrevistas confirman el uso de herramientas digitales y archivos, pero no proporcionan evidencia suficiente para determinar porcentajes confiables sobre dispositivos, marcas o sistemas operativos preferidos.
-  - Por esta razon, EcoTrack debe mantener un diseno web responsivo y validar posteriormente el uso real desde computadora, tablet y smartphone.
-
-  **Marcas e influencias:**
-
-  - Microsoft Excel es la herramienta comun en el 100% de los casos, aunque se combina con documentos, facturas, correo o WhatsApp.
-  - El 100% esta influido por requerimientos de gerencia, eficiencia operativa y control de costos.
-  - No se identificaron marcas de software ambiental especializadas utilizadas actualmente por este segmento.
-
-  **Conclusiones del analisis:**
-
-  Las empresas industriales requieren una fuente unica de informacion para comparar sedes, areas, procesos y periodos. EcoTrack debe estandarizar los registros, validar datos, automatizar calculos, presentar indicadores gerenciales y mantener historial. Tambien debe permitir metas con responsables y seguimiento, evitando que la adopcion de la plataforma incremente la carga operativa de los equipos.
-
-- **Conclusiones generales de las entrevistas**
-
-  - El 100% de las seis personas entrevistadas depende de hojas de calculo, archivos o registros manuales para gestionar informacion ambiental u operativa.
-  - El 100% identifica dificultades de consolidacion, comparacion, respaldo o trazabilidad.
-  - El 100% considera valioso contar con dashboards, reportes, calculos o historial dentro de una sola plataforma.
-  - Los resultados sustentan las funcionalidades centrales de EcoTrack: registro de fuentes y datos de actividad, calculo de huella de carbono, dashboard, reportes, evidencias, historial, metas de reduccion e importacion de informacion.
 ## 2.3. Needfinding.
 
-A continuacion se presentan los User Personas representativos de los segmentos objetivo definidos a partir de la sintesis de hallazgos de las entrevistas y el analisis cualitativo-estadistico realizado para EcoTrack.
+A continuación se presentan perfiles compuestos y mapas que sintetizan necesidades de los segmentos objetivo a partir de los resúmenes de entrevistas. La correspondencia de cada detalle visual y la pertenencia de E01 y E06 a los segmentos requieren validación.
+
+### Trazabilidad de los artefactos de Needfinding
+
+La relación siguiente vincula los resúmenes documentados en 2.2.2 con los perfiles y mapas del mismo segmento. Las referencias indican la base de la síntesis, no que cada atributo o frase de las imágenes corresponda a todas las entrevistas. Las citas literales y los detalles visuales deben cotejarse con las grabaciones y los archivos originales.
+
+| Perfil compuesto y artefactos | Base documental | Necesidades vinculadas con historias |
+|---|---|---|
+| Responsable de Calidad y Sostenibilidad de empresa exportadora: User Persona, Journey Map y Empathy Map del segmento 1. | E01: reportes de transporte y dependencia de Excel; E02: evidencias y certificaciones; E03: archivos duplicados y consolidación. La pertenencia de E01 al segmento debe confirmarse. | Centralizar registros y evidencias (US-11, US-45); generar y descargar reportes (US-27, US-28, US-29). La carga de evidencias aún necesita una historia específica. |
+| Responsable de Operaciones de empresa industrial: User Persona, Journey Map y Empathy Map del segmento 2. | E04: datos y formatos de distintas áreas; E05: registros dispersos, comparación y metas; E06: facturas y comparación de consumos. La pertenencia de E06 al segmento debe confirmarse. | Registrar y consultar datos (US-13, US-45); comparar periodos (US-20); gestionar metas y revisar progreso (US-21, US-40). |
+
+La User Task Matrix propone prioridades relativas para estos perfiles; sus frecuencias e importancias son valoraciones de diseño, no mediciones obtenidas directamente de la muestra.
 
 ### 2.3.1. User Personas.
 
-Los User Personas se construyeron como **perfiles compuestos**, no como personas reales adicionales. Cada atributo fue derivado de patrones observados en las seis entrevistas. Para evitar datos inventados, no se asignan edad, distrito, marcas o nivel de habilidad que no hayan sido sustentados por los registros.
+Los User Personas se presentan como **perfiles compuestos**, no como personas reales adicionales. Los resúmenes de las seis entrevistas son su base documental; cada atributo y cita de las fichas debe contrastarse con los registros y grabaciones antes de considerarlo validado.
 
-Las fichas conservan el formato visual de User Persona (Goals, Quote, Demographic, Background, Motivations, Frustrations, Skills, Technology, Tools y Channels), pero sus rangos, comportamientos y necesidades se sustentan exclusivamente en las entrevistas citadas.
+Las fichas conservan el formato visual de User Persona (Goals, Quote, Demographic, Background, Motivations, Frustrations, Skills, Technology, Tools y Channels). Los rangos, comportamientos y necesidades no comprobados deben tratarse como hipótesis de diseño.
 
 - **Segmento 1: Responsable de Calidad y Sostenibilidad de una empresa exportadora**
 
@@ -1035,6 +959,23 @@ Durante la sesion se identificaron los eventos significativos que ocurren en el 
 
 A continuacion, se presentan los principales elementos identificados en el Big Picture Event Storming.
 
+### Flujo de negocio y relaciones causa–efecto
+
+La siguiente lectura textual conecta actores, comandos, eventos y resultados. Los eventos están en pasado; los comandos expresan una intención y pueden rechazarse. Las relaciones son una propuesta de análisis del dominio y no afirman que todas las automatizaciones o integraciones estén implementadas.
+
+| Etapa | Actor y comando | Evento si se cumplen las condiciones | Consecuencia o siguiente decisión |
+|---|---|---|---|
+| Organización | Administrador: registrar organización y sede; invitar usuario. | Organization Registered; Facility Registered; User Invited. | La organización puede asociar usuarios y fuentes a sus sedes; la invitación no implica aceptación o acceso efectivo. |
+| Datos | Analista o supervisor: registrar fuente y dato de actividad; importar CSV. | Emission Source Registered; Activity Data Recorded; CSV Data Imported para las filas aceptadas. | Validar campos, unidad, periodo, organización y fuente antes de guardar; informar filas rechazadas. La evidencia, si existe, se vincula al dato correspondiente. |
+| Cálculo | Analista: seleccionar factor y solicitar cálculo. | Emission Factor Selected; Carbon Footprint Calculated. | Solo calcular cuando existan datos válidos y factor aplicable; conservar el periodo, unidades y factores usados. |
+| Análisis | Responsable de sostenibilidad: consultar indicadores e historial. | Environmental Dashboard Updated; Emissions History Updated, si esas actualizaciones están disponibles. | Revisar emisiones por periodo y alcance; la falta de datos no equivale a cero emisiones. |
+| Reducción | Responsable: crear meta, plan e iniciativa; revisar avance. | Reduction Goal Created; Reduction Plan Created; Environmental Initiative Registered; Reduction Progress Reviewed. | Comparar el avance con la línea base y la fecha objetivo; investigar desviaciones y decidir acciones. |
+| Reporte | Responsable: solicitar reporte del periodo. | Environmental Report Generated. | Consolidar resultados y evidencias disponibles para consulta o descarga; la auditoría es una revisión posterior, no una aprobación automática. |
+
+**Excepciones y puntos abiertos:** definir el tratamiento de filas CSV inválidas o duplicadas, factores ausentes, datos incompletos, permisos, versiones de cálculo y cierre de periodos. La disponibilidad de proveedores externos, notificaciones, aprobaciones y exportación PDF debe confirmarse con el equipo; no se presupone que un servicio externo concreto ya exista. Las historias US-11, US-12, US-45, US-46, US-34, US-21, US-38, US-40, US-41 y US-27 cubren partes de este flujo; la gestión de evidencias y el cierre de periodos requieren definición adicional.
+
+El repositorio contiene `assets/chapter-02/big-picture-event-storming.svg`; su relación con el tablero de Miro y su sincronización con este flujo deben verificarse antes de usarlo como evidencia definitiva. El enlace al tablero no está documentado en esta sección.
+
 ### Domain Events (Eventos de Dominio)
 
 Eventos expresados en tiempo pasado que representan hechos relevantes ocurridos dentro del proceso de negocio:
@@ -1071,6 +1012,8 @@ Personas o sistemas que ejecutan comandos, toman decisiones o generan eventos de
 
 ### External Systems (Sistemas Externos)
 
+Las siguientes fuentes y servicios son candidatos identificados en el análisis; su disponibilidad e implementación deben confirmarse.
+
 - **CSV File / Spreadsheet Source:** Fuente externa utilizada para importar registros ambientales que anteriormente eran gestionados en hojas de calculo.
 - **EcoTrack API / Enterprise System:** Integracion que permite recibir datos desde sistemas empresariales, ERP u otras aplicaciones internas.
 - **Emission Factor Repository:** Fuente de factores de emision utilizados para convertir los datos de actividad en emisiones de CO2e.
@@ -1081,8 +1024,8 @@ Personas o sistemas que ejecutan comandos, toman decisiones o generan eventos de
 
 Reglas de negocio que reaccionan ante eventos especificos y activan nuevas acciones dentro del flujo:
 
-- **When Activity Data is Recorded, validate required fields and classify its emission scope:** Cuando se registra un dato de actividad, EcoTrack valida los campos obligatorios y lo relaciona con una fuente, sede, periodo y alcance de emision.
-- **When Valid Activity Data and an Emission Factor are Available, calculate the Carbon Footprint:** Cuando existen datos validos y un factor de emision aplicable, EcoTrack ejecuta el calculo de la huella de carbono.
+- **Before Activity Data is Recorded, validate required fields and classify its emission scope:** Antes de guardar un dato de actividad, EcoTrack valida los campos obligatorios y lo relaciona con una fuente, sede, periodo y alcance de emision.
+- **When a Carbon Footprint Calculation is Requested, require valid Activity Data and an applicable Emission Factor:** Cuando se solicita el calculo, EcoTrack requiere datos validos y un factor compatible; si faltan, informa el problema y no completa el calculo.
 - **When the Carbon Footprint is Calculated, update the Dashboard and Emissions History:** Cuando se calcula la huella, se actualizan automaticamente el dashboard y el historial por alcance, fuente, sede y periodo.
 - **When Imported Data contains errors, reject inconsistent rows and request correction:** Cuando una importacion CSV contiene errores, se rechazan las filas inconsistentes y se solicita su correccion antes de incorporarlas al calculo.
 - **When an Emission Threshold is exceeded, notify the Sustainability Lead and Operations Supervisor:** Cuando un consumo o emision supera el umbral definido, se notifica a los responsables para que revisen la causa y definan una accion.
@@ -1190,6 +1133,15 @@ El Ubiquitous Language establece un vocabulario comun para que el equipo Horizon
 | Subscription Started | Suscripcion iniciada | Evento que indica que una organizacion comenzo a utilizar un plan determinado. |
 | Plan Changed | Plan modificado | Evento que confirma la actualizacion del plan contratado por una organizacion. |
 | Billing Period | Periodo de facturacion | Intervalo utilizado para calcular y gestionar el cobro recurrente de una suscripcion. |
+
+### Precisiones y consistencia entre términos
+
+- **Dato de actividad vs. emisión:** el dato de actividad es una cantidad y unidad de una actividad (por ejemplo, kWh o litros); la emisión es el resultado estimado al aplicar un factor compatible. Agua y residuos pueden ser indicadores ambientales sin que su registro, por sí solo, constituya una emisión calculada.
+- **Factor de emisión:** debe identificarse junto con su fuente, vigencia, unidad y ámbito aplicable; su compatibilidad con el dato es una condición de cálculo propuesta (US-46 y US-34).
+- **Huella de carbono:** en este informe designa el resultado de emisiones GEI estimadas para una organización, periodo y límites de inventario definidos, expresado en CO₂e. La cobertura depende de los datos y alcances incluidos; no debe interpretarse un alcance sin datos como cero.
+- **Meta de reducción:** distinguir la línea base, el indicador y la unidad del valor objetivo y la fecha límite. Un plan o iniciativa describe cómo se intentará alcanzar la meta, no constituye por sí solo una reducción demostrada.
+- **Eventos y comandos:** `Register Facility` es una acción solicitada; `Facility Registered` es el hecho confirmado. De igual forma, `Create Reduction Goal` precede a `Reduction Goal Created`. Para el seguimiento se utiliza el nombre `Reduction Progress Reviewed` de 2.4; el alias anterior `Progress Reviewed` se refiere al mismo evento.
+- **Políticas y sistemas externos:** las reglas de 2.4 y los servicios de integración son propuestas de dominio; su implementación y alcance deben confirmarse en el backlog y la arquitectura.
 
 ---
 # Capítulo III: Requirements Specification
