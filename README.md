@@ -63,17 +63,16 @@ Noviembre, 2026
 
 ## Repositories
 
-| URL de la organización del proyecto                                            | URL del repositorio del report                                                               |
-| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| [https://github.com/Horizon-OpenSource](https://github.com/Horizon-OpenSource) | [https://github.com/Horizon-OpenSource/report](https://github.com/Horizon-OpenSource/report) |
+Los repositorios de EcoTrack se encuentran alojados en la organización pública de GitHub **Horizon-OpenSource**. Cada repositorio corresponde a un producto de software o artefacto del proyecto.
 
-| URL del repositorio del Landing Page                                                                     | URL del repositorio del Frontend                                                                                                 |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| [https://github.com/Horizon-OpenSource/landing-page](https://github.com/Horizon-OpenSource/landing-page) | [https://github.com/Horizon-OpenSource/frontend-web-application](https://github.com/Horizon-OpenSource/frontend-web-application) |
-
-| URL del repositorio del Backend |
-| ------------------------------- |
-| Pendiente de creación           |
+| Repositorio                    | URL                                                                                                           |
+| :----------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| **GitHub Organization**        | [Horizon-OpenSource](https://github.com/Horizon-OpenSource)                                                   |
+| **Project Report**             | [Horizon-OpenSource/report](https://github.com/Horizon-OpenSource/report)                                     |
+| **Landing Page**               | [Horizon-OpenSource/landing-page](https://github.com/Horizon-OpenSource/landing-page)                         |
+| **Frontend Web Application**   | [Horizon-OpenSource/frontend-web-application](https://github.com/Horizon-OpenSource/frontend-web-application) |
+| **Backend Web Services**       | [Horizon-OpenSource/backend-web-services](https://github.com/Horizon-OpenSource/backend-web-services)         |
+| **EcoTrack Platform Mock API** | [Horizon-OpenSource/ecotrack-platform-mock](https://github.com/Horizon-OpenSource/ecotrack-platform-mock)     |
 
 ---
 
@@ -3680,11 +3679,13 @@ El uso de GitHub permite mantener un historial verificable de modificaciones, tr
 
 Actualmente, Horizon mantiene los siguientes repositorios:
 
-| Product / Artifact       | Repository                                                     |
-| ------------------------ | -------------------------------------------------------------- |
-| Project Report           | https://github.com/Horizon-OpenSource/report                   |
-| Landing Page             | https://github.com/Horizon-OpenSource/landing-page             |
-| Frontend Web Application | https://github.com/Horizon-OpenSource/frontend-web-application |
+| Product / Artifact         | Repository                                                     |
+| -------------------------- | -------------------------------------------------------------- |
+| Project Report             | https://github.com/Horizon-OpenSource/report                   |
+| Landing Page               | https://github.com/Horizon-OpenSource/landing-page             |
+| Frontend Web Application   | https://github.com/Horizon-OpenSource/frontend-web-application |
+| EcoTrack Platform Mock API | https://github.com/Horizon-OpenSource/ecotrack-platform-mock   |
+| Backend Web Services       | https://github.com/Horizon-OpenSource/backend-web-services     |
 
 La organización de GitHub utilizada por el equipo se encuentra disponible en:
 
