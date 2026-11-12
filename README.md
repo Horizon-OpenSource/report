@@ -4223,11 +4223,11 @@ El objetivo de Sprint 2 se orienta a implementar y desplegar la primera versión
 
 **Sprint 2 Goal**
 
-> Our focus is on delivering the first functional version of the EcoTrack Frontend Web Application and evolving the Landing Page so that users can move from discovering the product to interacting with its main environmental management capabilities.
+> **Nuestro enfoque** es desarrollar y desplegar la primera versión funcional de la Frontend Web Application de EcoTrack, junto con una versión actualizada del Landing Page, permitiendo que los usuarios pasen de conocer la propuesta de valor del producto a interactuar con sus principales funcionalidades de gestión ambiental.
 >
-> We believe this iteration delivers an initial integrated experience for organizations that need to manage organizational information, register emissions data, calculate carbon footprint results and analyze environmental information.
+> **Consideramos que** esta iteración permitirá ofrecer una primera experiencia integrada para las organizaciones, incorporando funcionalidades de gestión organizacional, registro de emisiones, cálculo de huella de carbono y visualización de indicadores y reportes ambientales.
 >
-> This will be confirmed when users can access the deployed Landing Page and Frontend Web Application and navigate through the main functional flows selected for Sprint 2 using responsive and consistent web interfaces.
+> **Confirmaremos el cumplimiento del objetivo cuando** los usuarios puedan acceder a las versiones desplegadas del Landing Page y de la Frontend Web Application, navegar por los principales flujos funcionales seleccionados para Sprint 2 y utilizar interfaces web responsivas y consistentes.
 
 Las User Stories seleccionadas para Sprint 2 corresponden a los cuatro aspectos funcionales priorizados para esta iteración:
 
