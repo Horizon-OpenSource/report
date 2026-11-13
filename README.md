@@ -91,6 +91,7 @@ Noviembre 2026
 | 0.9     | 03/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completó y corrigió el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack.                                                                                                                                                             |
 | 0.10    | 04/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completaron y actualizaron los Class Diagrams de Frontend y Backend y el Database Design correspondientes al Capítulo IV.                                                                                                                                       |
 | 0.11    | 05/10/2026 | Tello Murga, Javier Oswaldo    | Se corrigió el Capítulo I, se actualizaron User Stories y Epics, se reconstruyó y priorizó el Product Backlog, se actualizó el enlace público de Trello y se corrigieron referencias del repositorio Frontend y perfiles del equipo.                               |
+| 0.12    | 13/11/2026 | Payesa Torres, Harrison Hubert | Se corrigieron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, relacionando los wireframes y mock-ups con las User Stories, se actualizó la sección Student Outcome con las acciones del AV2 y se unieron las entrevistas de la sección 2.2.2 en un único video de Stream. |
 
 ---
 
@@ -298,6 +299,7 @@ La siguiente evidencia muestra los Pull Requests utilizados para integrar las co
 | Espinoza Flores, Aaron André   | TB1     | Participé en las reuniones del equipo explicando las correcciones realizadas a partir del feedback del AV1, relacionadas con los timings de las entrevistas, la trazabilidad de los User Personas, el Big Picture Event Storming y el Impact Mapping con objetivos SMART. Durante el Sprint 2 lideré el aspecto Emissions Management, comunicando al equipo los avances en el registro, clasificación, consulta, edición, eliminación, búsqueda y filtrado de emisiones.                                    | Durante el TB1 mejoré mi capacidad para comunicar correcciones y avances de manera ordenada, explicando cómo los ajustes realizados en los artefactos de investigación se relacionan con las funcionalidades implementadas en EcoTrack.                                                                                                                                        |
 | Payesa Torres, Harrison Hubert | AV1     | Participé en las reuniones y discusiones del equipo relacionadas con el funcionamiento y objetivo de EcoTrack, aportando ideas sobre la estructura y comportamiento de la Web Application. También expliqué las decisiones tomadas para el diseño de las interfaces y los diferentes flujos de interacción desarrollados en Figma.                                                                                                                                                                          | Durante el AV1 fortalecí mi capacidad para comunicar ideas de diseño y explicar de manera clara las decisiones relacionadas con el funcionamiento de la aplicación, adaptando la explicación según los integrantes y el contexto de la discusión.                                                                                                                              |
 | Payesa Torres, Harrison Hubert | TB1     | Participé en las reuniones del equipo explicando las correcciones y ampliaciones realizadas en el diseño UX/UI de la Web Application, incluyendo wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1. Durante el Sprint 2 lideré el aspecto Analytics & Reports, comunicando al equipo los avances en indicadores ambientales, visualización por alcance, comparación de periodos y reportes.                                                                                  | Durante el TB1 fortalecí mi capacidad para comunicar decisiones de diseño y su implementación, explicando de forma clara cómo las interfaces diseñadas en Figma se trasladan a la Frontend Web Application y adaptando la explicación según el contexto de la discusión.                                                                                                       |
+| Payesa Torres, Harrison Hubert | AV2     | Participé en las reuniones del equipo explicando cómo la Frontend Web Application se conecta con el backend de Analytics & Reports desarrollado con Spring Boot, los endpoints de indicadores, comparación de periodos y reportes documentados con Swagger, y las correcciones realizadas a los wireframes y mock-ups para relacionarlos con las User Stories. | Durante el AV2 fortalecí mi capacidad para explicar decisiones técnicas a distintos interlocutores, adaptando el nivel de detalle entre la conexión del frontend con el backend y las decisiones de diseño de las interfaces. |
 | Tello Murga, Javier Oswaldo    | AV1     | Lideré gran parte de las reuniones de coordinación de la primera entrega, organizando los avances del equipo y explicando las decisiones relacionadas con la propuesta de EcoTrack, el alcance del producto, la estructura del reporte y la implementación del Landing Page. También comuniqué los avances del Sprint 1, el proceso de integración mediante GitHub y el despliegue de la primera versión del Landing Page.                                                                                  | Durante el AV1 fortalecí mi capacidad de liderazgo y comunicación oral al coordinar el trabajo de los integrantes, explicar decisiones funcionales y técnicas y comunicar los avances del proyecto de forma clara. Esto me permitió adaptar la información según se tratara de coordinación interna, revisión del producto o preparación para la exposición frente al docente. |
 | Tello Murga, Javier Oswaldo    | TB1     | Lideré las reuniones de coordinación del TB1, incluyendo el Sprint Planning 2, en el que se revisaron los resultados del Sprint 1 y se definió el alcance de la segunda iteración. Comuniqué la distribución del trabajo por aspectos funcionales, lideré Organization Management y coordiné la integración entre el Landing Page y la Frontend Web Application. También expliqué al equipo las correcciones realizadas al Capítulo I, las User Stories, Epics y la nueva priorización del Product Backlog. | Durante el TB1 fortalecí mi capacidad de liderazgo y comunicación oral al coordinar el desarrollo paralelo de los integrantes, comunicar decisiones de alcance y prioridad, y mantener alineado al equipo durante la integración de los avances del Sprint 2.                                                                                                                  |
 
@@ -316,6 +318,7 @@ La siguiente evidencia muestra los Pull Requests utilizados para integrar las co
 | Espinoza Flores, Aaron André   | TB1     | Corregí y actualicé artefactos del Capítulo II y del Capítulo III a partir del feedback del AV1, incluyendo los timings de las entrevistas, la trazabilidad de los User Personas, el Big Picture Event Storming y el Impact Mapping con objetivos SMART. Durante el Sprint 2 implementé el aspecto Emissions Management y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                            | Durante el TB1 mejoré mi capacidad para corregir y precisar documentación escrita, asegurando que los artefactos de investigación mantengan trazabilidad con los requisitos y funcionalidades desarrolladas en EcoTrack.                                                                                                                                                                                                        |
 | Payesa Torres, Harrison Hubert | AV1     | Participé en la documentación del diseño de la Web Application de EcoTrack, desarrollando en Figma los Mock-ups, Wireframes, User Flow Diagrams y el prototipo de las principales funcionalidades. También contribuí a documentar estos avances en el Project Report y a mantener una organización consistente de las interfaces y sus respectivos flujos.                                                                                                                                                                                            | Durante el AV1 mejoré mi capacidad para comunicar por escrito las decisiones de diseño y funcionamiento de la aplicación, organizando la información de manera clara y coherente con los diferentes artefactos desarrollados para EcoTrack.                                                                                                                                                                                     |
 | Payesa Torres, Harrison Hubert | TB1     | Corregí y amplié las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incorporando los wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1. Durante el Sprint 2 implementé el aspecto Analytics & Reports y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                                                                              | Durante el TB1 mejoré mi capacidad para documentar decisiones de diseño de manera completa y organizada, manteniendo la coherencia entre los artefactos UX/UI, las User Stories y la implementación de la Frontend Web Application.                                                                                                                                                                                             |
+| Payesa Torres, Harrison Hubert | AV2     | Corregí las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, relacionando los wireframes y mock-ups con las User Stories. Durante el Sprint 3 implementé el primer avance del backend de Analytics & Reports con Spring Boot, documenté sus endpoints con OpenAPI, actualicé el README del contexto en el frontend y registré los avances mediante commits y Pull Requests en GitHub. | Durante el AV2 mejoré mi capacidad para documentar por escrito decisiones técnicas, manteniendo la trazabilidad entre las User Stories, los diseños UX/UI, la documentación de los endpoints y su implementación. |
 | Tello Murga, Javier Oswaldo    | AV1     | Participé en la redacción, revisión e integración de diferentes secciones del Project Report, incluyendo Student Outcome, Capítulo I, Style Guidelines, Information Architecture y el Capítulo V. Asimismo, documenté el proceso de implementación del Sprint 1, las herramientas y convenciones de desarrollo, los commits realizados, las evidencias de ejecución, colaboración y despliegue del Landing Page. También realicé revisiones para mantener consistencia entre el alcance de EcoTrack, las User Stories, el diseño y la implementación. | Durante el AV1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión de manera estructurada. La elaboración e integración de diferentes capítulos me permitió mejorar la coherencia entre los artefactos del proyecto y presentar evidencias claras sobre el proceso seguido por el equipo desde la definición del producto hasta la implementación y despliegue de su primera versión. |
 | Tello Murga, Javier Oswaldo    | TB1     | Corregí el Capítulo I, actualicé las User Stories y Epics, reconstruí y prioricé el Product Backlog, actualicé el enlace público de Trello y corregí las referencias del repositorio Frontend y los perfiles del equipo. También documenté el Sprint 2, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog y evidencias de deployment, y mantuve actualizado el Project Report correspondiente al TB1.                                                                                                                      | Durante el TB1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión, manteniendo la documentación del proyecto alineada con los cambios realizados en el Product Backlog, el alcance funcional y la implementación del Sprint 2.                                                                                                                                                       |
 
@@ -789,7 +792,7 @@ Para validar los problemas, necesidades y supuestos del proceso Lean UX plantead
 
 ### 2.2.2. Registro de entrevistas
 
-Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stream y SharePoint. Cada registro incluye datos de la persona entrevistada, captura, enlace, rango de tiempo y resumen. La duración indicada se calcula como fin menos inicio del rango consignado; no representa necesariamente la duración total del video. Los enlaces, las capturas y los tiempos deben cotejarse con las grabaciones accesibles al equipo.
+Las seis entrevistas fueron registradas en video y unidas, en el orden E01 a E06, en un único video publicado mediante Microsoft Stream y SharePoint: [upc-pre-202620-1asi0729-7753-horizon-needfinding-sprint-1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c), con una duración total de 41 minutos con 30 segundos. Cada registro incluye datos de la persona entrevistada, captura, enlace, rango de tiempo y resumen. El rango de tiempo indica en qué parte del video unido se encuentra cada entrevista (hh:mm:ss) y la duración indicada se calcula como fin menos inicio de ese rango. Los enlaces, las capturas y los tiempos deben cotejarse con la grabación accesible al equipo.
 
 - **Segmento 1: Empresas exportadoras**
   - **Entrevista E01**
@@ -803,7 +806,7 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E01](assets/chapter-02/interviews/entrevista-seg-1.jpg)
 
-    - **Video URL:** [Entrevista E01 - Manuel Marina](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg)
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
     - **Timing:** 00:00:18 - 00:04:34
     - **Duración del intervalo indicado:** 4 minutos con 16 segundos
     - **Resumen:** Manuel explico que su trabajo se relaciona con actividades de transporte y que la empresa ha comenzado a utilizar GNV para reducir costos e impacto ambiental. Elaboran reportes semanales sobre consumo, funcionamiento y mantenimiento de los vehiculos. La informacion se consolida principalmente en Excel, pero no todas las personas dominan la herramienta, lo que genera dependencia y demoras. Considera valioso que EcoTrack calcule la huella de carbono, organice los reportes por periodo y ayude a comunicar el compromiso ambiental de la empresa.
@@ -819,8 +822,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E02](assets/chapter-02/interviews/entrevista-e02.jpg)
 
-    - **Video URL:** [Entrevista E02 - Shadina Lopez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQD_2azhBwEOQ6Atj3XxRSFmATIBispPszUQmCmKSsdnDUo?e=yKkGmJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-    - **Timing:** 00:00:14 - 00:05:23
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:04:49 - 00:09:58
     - **Duración del intervalo indicado:** 5 minutos con 9 segundos
     - **Resumen:** Shadina trabaja en una agroindustria pequena y gestiona certificaciones y registros ambientales. Los clientes vinculados con exportacion solicitan informacion sobre agua, energia, residuos y manejo de insumos, mientras que la certificacion de Buenas Practicas Agricolas exige evidencias ordenadas. Actualmente utilizan Excel, cuadernos y fotografias, lo que provoca perdida de datos, falta de respaldo y conflictos entre versiones. EcoTrack le resultaria util si permite cargar informacion desde el celular, generar reportes por mes o lote y mostrar indicadores comprensibles.
 
@@ -835,8 +838,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E03](assets/chapter-02/interviews/entrevista-e03.jpg)
 
-    - **Video URL:** [Entrevista E03 - Azul Delgado](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU)
-    - **Timing:** 00:00:12 - 00:07:43
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:10:10 - 00:17:41
     - **Duración del intervalo indicado:** 7 minutos con 31 segundos
     - **Resumen:** Azul describio un entorno textil donde se necesita ordenar informacion sobre energia, agua, residuos textiles, materiales y productos quimicos para responder a solicitudes internas, clientes o auditorias. Los registros se manejan mediante archivos y hojas de calculo, lo que ocasiona duplicidad, versiones diferentes y demora al consolidar la informacion. Valora una solucion sencilla que permita centralizar evidencias, calcular indicadores y generar reportes ambientales por periodo.
 
@@ -852,8 +855,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E04](assets/chapter-02/interviews/entrevista-seg-2.jpg)
 
-    - **Video URL:** [Entrevista E04 - Renzo Santos](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse)
-    - **Timing:** 00:00:20 - 00:06:42
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:18:02 - 00:24:24
     - **Duración del intervalo indicado:** 6 minutos con 22 segundos
     - **Resumen:** Renzo explico que la informacion ambiental proviene de produccion, mantenimiento, administracion y otras unidades. Los principales consumos se relacionan con electricidad de planta y oficinas, maquinaria y combustible de transporte. Cada area utiliza hojas de calculo, documentos o registros con formatos diferentes, lo que dificulta consolidar y comparar resultados. Considera muy importante disponer de dashboards, reportes e historial de calculos en una sola plataforma para reducir tiempo y mejorar la trazabilidad.
 
@@ -868,8 +871,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E05](assets/chapter-02/interviews/entrevista-e05.jpg)
 
-    - **Video URL:** [Entrevista E05 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4)
-    - **Timing:** 00:00:17 - 00:08:11
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:24:44 - 00:32:38
     - **Duración del intervalo indicado:** 7 minutos con 54 segundos
     - **Resumen:** Norvil supervisa operaciones de procesamiento y envasado de alimentos y controla energia, combustible, gas, materiales y residuos. La informacion se distribuye entre Excel, correo, WhatsApp y anotaciones, por lo que algunos archivos llegan incompletos o desactualizados. Destaca que la gestion ambiental tambien permite controlar costos operativos. Espera que EcoTrack facilite comparaciones entre periodos, identifique consumos criticos, genere reportes gerenciales y permita asignar metas de reduccion.
 
@@ -884,8 +887,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E06](assets/chapter-02/interviews/entrevista-e06.jpg)
 
-    - **Video URL:** [Entrevista E06 - Rosa Torres](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQA4osdYU2cVTppdGXpQ4q-KAU9E4b1CVAsdStJ2Ntr-FHI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZqWiQC)
-    - **Timing:** 00:00:15 - 00:08:52
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:32:53 - 00:41:30
     - **Duración del intervalo indicado:** 8 minutos con 37 segundos
     - **Resumen:** Rosa gestiona un taller que utiliza electricidad, agua, pintura, thinner y solventes, y que genera residuos y vapores durante los trabajos. La informacion esta distribuida entre facturas, compras, Excel y anotaciones manuales. La principal dificultad es comparar consumos y desperdicios entre meses o por vehiculo atendido. Considera util una plataforma sencilla que muestre consumos, residuos, avances y metas de reduccion sin aumentar la complejidad operativa del taller.
 
@@ -1990,7 +1993,7 @@ Los diseños se presentan para **Desktop Web Browser** (1280 × 800) y **Mobile 
 
 Los archivos de diseño están disponibles en Figma:
 
-- [EcoTrack v1 — Web Application UX/UI (Wireframes, Mock-ups y Prototipos)](https://www.figma.com/design/TB5iPC598xAyU2i39VBbMg/EcoTrack-v2---Web-Application-UX-UI?node-id=0-1&t=gxxPBJyA6Zy6hxfJ-1)
+- [EcoTrack — Web Application UX/UI (Wireframes, Mock-ups y Prototipos)](https://www.figma.com/design/TB5iPC598xAyU2i39VBbMg/EcoTrack-v2---Web-Application-UX-UI?node-id=0-1&t=gxxPBJyA6Zy6hxfJ-1)
 - [EcoTrack — Wireflow (FigJam)](https://www.figma.com/board/KnRCrM82jbjkj5sbbRN4aK/EcoTrack---Wireflow?node-id=0-1&t=jpMJm9i2Tcmx1Ras-1)
 - [EcoTrack — UserFlow (FigJam)](https://www.figma.com/board/h6dODVz2Fj3s3FKHD5LVW8/EcoTrack---UserFlow?node-id=0-1&t=OgY0GwQk7oLjbyap-1)
 
@@ -2005,6 +2008,8 @@ Las pantallas se agrupan según los procesos funcionales de la aplicación. Cada
 ##### Authentication
 
 El grupo representa el inicio de sesión y la recuperación de contraseña. La interfaz se centra en una sola tarea: campos de correo y contraseña con labels visibles, una acción principal (**Sign In**) y accesos secundarios para recuperar la contraseña o crear una organización. Se incluyen el estado de validación, el error por credenciales incorrectas, el acceso al Dashboard y los cuatro pasos de recuperación de contraseña.
+
+**User Stories:** US-07, US-08
 
 ![Login](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/login.png)
 
@@ -2042,6 +2047,8 @@ _Figura 4.8. Wireframe de la confirmación de contraseña restablecida._
 
 El grupo representa el registro de una nueva organización. Los campos se agrupan en datos de la organización y datos de la cuenta del administrador; los obligatorios se identifican con labels explícitos y los errores se comunican junto al campo que debe corregirse.
 
+**User Stories:** US-06, US-47
+
 ![Register Org](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-registration/register-org.png)
 
 _Figura 4.9. Wireframe del formulario inicial de registro de una organización._
@@ -2062,6 +2069,8 @@ _Figura 4.12. Wireframe de la confirmación del registro de la organización._
 
 El grupo representa la consulta y actualización de los datos de la organización. La vista de información se separa del formulario de edición, y las pestañas Overview, Users, Sites & Permissions y Business Units organizan la administración en un solo módulo.
 
+**User Stories:** US-09, US-10
+
 ![Org Overview](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-management/org-overview.png)
 
 _Figura 4.13. Wireframe de la información general de la organización._
@@ -2081,6 +2090,8 @@ _Figura 4.16. Wireframe de la confirmación de actualización de la organizació
 ##### Users, Sites and Business Units
 
 El grupo representa la estructura interna de la organización: usuarios con su rol, sedes con sus permisos y unidades de negocio. Permite que cada área registre y consulte únicamente la información que le corresponde.
+
+**User Stories:** US-31 a US-33, US-44
 
 ![Users List](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/users-list.png)
 
@@ -2105,6 +2116,8 @@ _Figura 4.21. Wireframe del registro de una unidad de negocio._
 ##### Emission Registration
 
 El grupo representa el registro y mantenimiento de las emisiones, el proceso central de EcoTrack. Incluye el listado, el formulario en sus distintos estados, la selección del factor de emisión con la estimación del resultado, y las acciones de edición y eliminación desde el menú de cada registro.
+
+**User Stories:** US-11 a US-15, US-45, US-46
 
 ![Emissions](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emissions.png)
 
@@ -2154,6 +2167,8 @@ _Figura 4.32. Wireframe de la confirmación de eliminación de un registro._
 
 El grupo representa la importación masiva de registros desde un archivo CSV. Antes de importar, la vista previa marca las filas con errores para que el usuario decida si importa solo las válidas o corrige el archivo.
 
+**User Stories:** US-41
+
 ![Import Csv Upload](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/data-integration/import-csv-upload.png)
 
 _Figura 4.33. Wireframe de la carga de un archivo CSV._
@@ -2169,6 +2184,8 @@ _Figura 4.35. Wireframe de la confirmación de la importación._
 ##### Carbon Footprint Calculation
 
 El grupo representa el cálculo de la huella de carbono. La información se presenta de forma progresiva: primero los parámetros, luego los datos considerados y finalmente los resultados por alcance y por periodo, junto con el historial. También se contempla el estado en que faltan datos de actividad para completar el cálculo.
+
+**User Stories:** US-34 a US-37
 
 ![Carbon Footprint Initial](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-initial.png)
 
@@ -2198,6 +2215,8 @@ _Figura 4.41. Wireframe del estado de datos de actividad insuficientes._
 
 El grupo representa el análisis de indicadores: el resumen ambiental, las emisiones por alcance, la comparación entre periodos y la actualización de resultados cuando se registran datos nuevos. Las variaciones se acompañan de flechas y signos (▲/▼), por lo que no dependen solo del color.
 
+**User Stories:** US-16, US-17, US-20, US-26
+
 ![Dashboard Environmental Summary](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/dashboard-environmental-summary.png)
 
 _Figura 4.42. Wireframe del resumen ambiental del Dashboard._
@@ -2221,6 +2240,8 @@ _Figura 4.46. Wireframe de la comparación de periodos en el módulo de reportes
 ##### Report Generation
 
 El grupo representa la generación y descarga de reportes ambientales. Se contemplan la configuración del periodo, la generación exitosa, la consulta de reportes anteriores, la descarga, y el estado informativo cuando el periodo no tiene datos suficientes.
+
+**User Stories:** US-27 a US-30
 
 ![Reports Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/reports-empty.png)
 
@@ -2253,6 +2274,8 @@ _Figura 4.53. Wireframe del reporte con la descarga disponible._
 ##### Goal Creation
 
 El grupo representa la creación y gestión de metas de reducción. Incluye el listado, el formulario en sus distintos estados y el menú de acciones de cada meta (View Plan, Edit, Update Status y Delete), con la eliminación diferenciada mediante un botón de acción destructiva.
+
+**User Stories:** US-21 a US-25
 
 ![Goals List](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/goals-list.png)
 
@@ -2290,6 +2313,8 @@ _Figura 4.61. Wireframe de la confirmación de eliminación de una meta._
 
 El grupo representa el seguimiento de las metas: la actualización de su estado, el plan de reducción con sus iniciativas y el avance registrado de cada una.
 
+**User Stories:** US-38 a US-40
+
 ![Goal Status Updated](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-tracking-and-reduction-plans/goal-status-updated.png)
 
 _Figura 4.62. Wireframe de la actualización del estado de una meta._
@@ -2308,6 +2333,8 @@ La versión mobile prioriza los procesos del core business: autenticación, regi
 
 ##### Authentication (Mobile)
 
+**User Stories:** US-07
+
 ![Mobile login](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/authentication/m-login.png)
 
 _Figura 4.65. Wireframe del inicio de sesión en mobile._
@@ -2318,11 +2345,15 @@ _Figura 4.66. Wireframe del error por credenciales incorrectas en mobile._
 
 ##### Analytics (Mobile)
 
+**User Stories:** US-16, US-17, US-26
+
 ![Mobile dashboard](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/analytics/m-dashboard.png)
 
 _Figura 4.67. Wireframe del Dashboard en mobile._
 
 ##### Emission Registration (Mobile)
+
+**User Stories:** US-11 a US-13
 
 ![Mobile emissions](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-emissions.png)
 
@@ -2346,6 +2377,8 @@ _Figura 4.72. Wireframe de la confirmación del registro de emisión en mobile._
 
 ##### Report Generation (Mobile)
 
+**User Stories:** US-27 a US-30
+
 ![Mobile reports Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-reports-empty.png)
 
 _Figura 4.73. Wireframe del estado inicial de reportes en mobile._
@@ -2368,6 +2401,8 @@ _Figura 4.77. Wireframe del resumen y descarga del reporte en mobile._
 
 ##### Carbon Footprint Calculation (Mobile)
 
+**User Stories:** US-34, US-35
+
 ![Mobile carbon Footprint Initial](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/carbon-footprint-calculation/m-carbon-footprint-initial.png)
 
 _Figura 4.78. Wireframe de los parámetros del cálculo de huella en mobile._
@@ -2377,6 +2412,8 @@ _Figura 4.78. Wireframe de los parámetros del cálculo de huella en mobile._
 _Figura 4.79. Wireframe de los resultados por alcance en mobile._
 
 ##### Goal Creation (Mobile)
+
+**User Stories:** US-22
 
 ![Mobile goals List](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/goal-creation/m-goals-list.png)
 
@@ -2541,6 +2578,8 @@ Los campos tienen labels visibles e indicadores de obligatoriedad, los errores s
 
 ##### Authentication
 
+**User Stories:** US-07, US-08
+
 ![Login Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/login.png)
 
 _Figura 4.91. Mock-up de la pantalla de inicio de sesión._
@@ -2575,6 +2614,8 @@ _Figura 4.98. Mock-up de la confirmación de contraseña restablecida._
 
 ##### Organization Registration
 
+**User Stories:** US-06, US-47
+
 ![Register Org Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-registration/register-org.png)
 
 _Figura 4.99. Mock-up del formulario inicial de registro de una organización._
@@ -2593,6 +2634,8 @@ _Figura 4.102. Mock-up de la confirmación del registro de la organización._
 
 ##### Organization Management
 
+**User Stories:** US-09, US-10
+
 ![Org Overview Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-management/org-overview.png)
 
 _Figura 4.103. Mock-up de la información general de la organización._
@@ -2610,6 +2653,8 @@ _Figura 4.105. Mock-up de los errores de validación durante la edición._
 _Figura 4.106. Mock-up de la confirmación de actualización de la organización._
 
 ##### Users, Sites and Business Units
+
+**User Stories:** US-31 a US-33, US-44
 
 ![Users List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/users-list.png)
 
@@ -2632,6 +2677,8 @@ _Figura 4.110. Mock-up del listado de unidades de negocio._
 _Figura 4.111. Mock-up del registro de una unidad de negocio._
 
 ##### Emission Registration
+
+**User Stories:** US-11 a US-15, US-45, US-46
 
 ![Emissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emissions.png)
 
@@ -2679,6 +2726,8 @@ _Figura 4.122. Mock-up de la confirmación de eliminación de un registro._
 
 ##### Data Integration
 
+**User Stories:** US-41
+
 ![Import Csv Upload Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/data-integration/import-csv-upload.png)
 
 _Figura 4.123. Mock-up de la carga de un archivo CSV._
@@ -2692,6 +2741,8 @@ _Figura 4.124. Mock-up de la vista previa con la validación de filas._
 _Figura 4.125. Mock-up de la confirmación de la importación._
 
 ##### Carbon Footprint Calculation
+
+**User Stories:** US-34 a US-37
 
 ![Carbon Footprint Initial Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-initial.png)
 
@@ -2719,6 +2770,8 @@ _Figura 4.131. Mock-up del estado de datos de actividad insuficientes._
 
 ##### Analytics
 
+**User Stories:** US-16, US-17, US-20, US-26
+
 ![Dashboard Environmental Summary Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/dashboard-environmental-summary.png)
 
 _Figura 4.132. Mock-up del resumen ambiental del Dashboard._
@@ -2740,6 +2793,8 @@ _Figura 4.135. Mock-up de los resultados actualizados tras registrar datos nuevo
 _Figura 4.136. Mock-up de la comparación de periodos en el módulo de reportes._
 
 ##### Report Generation
+
+**User Stories:** US-27 a US-30
 
 ![Reports Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/reports-empty.png)
 
@@ -2770,6 +2825,8 @@ _Figura 4.142. Mock-up de la consulta de reportes generados anteriormente._
 _Figura 4.143. Mock-up del reporte con la descarga disponible._
 
 ##### Goal Creation
+
+**User Stories:** US-21 a US-25
 
 ![Goals List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/goals-list.png)
 
@@ -2805,6 +2862,8 @@ _Figura 4.151. Mock-up de la confirmación de eliminación de una meta._
 
 ##### Goal Tracking and Reduction Plans
 
+**User Stories:** US-38 a US-40
+
 ![Goal Status Updated Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-tracking-and-reduction-plans/goal-status-updated.png)
 
 _Figura 4.152. Mock-up de la actualización del estado de una meta._
@@ -2827,6 +2886,8 @@ _Figura 4.155. Componentes reutilizables de la versión mobile._
 
 ##### Authentication (Mobile)
 
+**User Stories:** US-07
+
 ![Mobile login Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/authentication/m-login.png)
 
 _Figura 4.156. Mock-up del inicio de sesión en mobile._
@@ -2837,11 +2898,15 @@ _Figura 4.157. Mock-up del error por credenciales incorrectas en mobile._
 
 ##### Analytics (Mobile)
 
+**User Stories:** US-16, US-17, US-26
+
 ![Mobile dashboard Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/analytics/m-dashboard.png)
 
 _Figura 4.158. Mock-up del Dashboard en mobile._
 
 ##### Emission Registration (Mobile)
+
+**User Stories:** US-11 a US-13
 
 ![Mobile emissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-emissions.png)
 
@@ -2865,6 +2930,8 @@ _Figura 4.163. Mock-up de la confirmación del registro de emisión en mobile._
 
 ##### Report Generation (Mobile)
 
+**User Stories:** US-27 a US-30
+
 ![Mobile reports Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-reports-empty.png)
 
 _Figura 4.164. Mock-up del estado inicial de reportes en mobile._
@@ -2887,6 +2954,8 @@ _Figura 4.168. Mock-up del resumen y descarga del reporte en mobile._
 
 ##### Carbon Footprint Calculation (Mobile)
 
+**User Stories:** US-34, US-35
+
 ![Mobile carbon Footprint Initial Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/carbon-footprint-calculation/m-carbon-footprint-initial.png)
 
 _Figura 4.169. Mock-up de los parámetros del cálculo de huella en mobile._
@@ -2896,6 +2965,8 @@ _Figura 4.169. Mock-up de los parámetros del cálculo de huella en mobile._
 _Figura 4.170. Mock-up de los resultados por alcance en mobile._
 
 ##### Goal Creation (Mobile)
+
+**User Stories:** US-22
 
 ![Mobile goals List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/goal-creation/m-goals-list.png)
 
