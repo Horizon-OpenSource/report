@@ -4427,6 +4427,32 @@ Al cierre de Sprint 2, las filas anteriores deberán reemplazarse o ampliarse ut
 
 La evidencia permitirá mantener trazabilidad entre los User Stories y Work Items registrados en el Sprint Backlog y las modificaciones realizadas dentro de los repositorios de código fuente.
 
+#### Actualización correctiva del Landing Page — v1.1.0
+
+Como parte de la atención a las observaciones recibidas en TB1, se desarrollaron posteriormente mejoras correctivas sobre el Landing Page de EcoTrack, correspondientes a la versión v1.1.0.
+
+Los cambios se implementaron en la rama `feature/landing-sprint2-v1.1.0` y se integraron a `develop` mediante la Pull Request #8.
+
+Las mejoras comprendieron la corrección de los selectores utilizados para las animaciones de aparición en las secciones Final CTA, Contact y About Horizon, así como la actualización de las etiquetas accesibles del menú móvil según el idioma seleccionado.
+
+La Pull Request incluyó dos commits y modificaciones en los archivos `js/main.js` y `js/i18n.js`.
+
+![Pull Request #8 del Landing Page v1.1.0](assets/chapter-05/sprint-02-landing-pr-08.png)
+
+_Figura: Pull Request #8 integrada a la rama develop, correspondiente a las mejoras correctivas del Landing Page v1.1.0._
+
+**Pull Request:** [PR #8 — Landing Page v1.1.0](https://github.com/Horizon-OpenSource/landing-page/pull/8)
+
+**Evidencia de commits e integración**
+
+La actualización correctiva del Landing Page v1.1.0 incluyó dos commits realizados por Javier Tello: `77a40b4`, correspondiente a la corrección de animaciones, y `7d7177b`, correspondiente a las mejoras de accesibilidad del menú móvil.
+
+Ambos cambios fueron integrados a la rama `develop` mediante la Pull Request #8, con el commit de merge `9517ba3`.
+
+![Commits e integración del Landing Page v1.1.0](assets/chapter-05/sprint-02-landing-commits.png)
+
+_Figura: Commits y confirmación de integración de la Pull Request #8 en la rama develop._
+
 ---
 
 ## 5.2.2.5. Execution Evidence for Sprint Review
@@ -4435,14 +4461,32 @@ La evidencia de ejecución de Sprint 2 se organiza considerando los dos producto
 
 Las principales vistas implementadas deberán evidenciar los cuatro aspectos funcionales desarrollados durante la iteración y los principales flujos de navegación disponibles.
 
-### Landing Page V2
+### Landing Page V2 — v1.1.0
 
-La nueva versión del Landing Page continúa funcionando como el principal punto de entrada público de EcoTrack. Durante Sprint 2 se realizan mejoras de contenido, consistencia visual, navegación y experiencia responsive.
+Como parte de la atención a las observaciones de TB1, se realizó posteriormente una actualización correctiva del Landing Page de EcoTrack, correspondiente a la versión v1.1.0.
 
-**Public URL:**  
+Esta actualización incluyó la corrección de las animaciones de aparición de las secciones Final CTA, Contact y About Horizon, así como mejoras en las etiquetas accesibles del menú móvil para los idiomas español e inglés.
+
+Las funcionalidades fueron verificadas manualmente mediante Live Server, comprobando las animaciones, la navegación responsive, el cambio de idioma EN/ES y el enlace hacia Emission Scopes.
+
+Posteriormente, se verificó el funcionamiento del Landing Page publicado mediante GitHub Pages.
+
+**URL pública:**  
 https://horizon-opensource.github.io/landing-page/
 
-![Sprint 2 Landing Page V2](assets/chapter-05/sprint-02-landing-page.png)
+![Landing Page EcoTrack v1.1.0](assets/chapter-05/sprint-02-landing-page.png)
+
+_Figura: Vista principal del Landing Page de EcoTrack tras la actualización correctiva v1.1.0._
+
+**Verificación de navegación responsive**
+
+Se verificó manualmente el funcionamiento del menú de navegación en una resolución móvil, comprobando su apertura, cierre y adaptación al tamaño de pantalla.
+
+Asimismo, se revisó la internacionalización de las etiquetas accesibles del menú para los idiomas español e inglés, como parte de las mejoras correctivas implementadas en la versión v1.1.0.
+
+![Navegación móvil del Landing Page](assets/chapter-05/sprint-02-landing-mobile-navigation.png)
+
+_Figura: Verificación del menú de navegación responsive de EcoTrack en vista móvil._
 
 ### Organization Management
 
@@ -4562,6 +4606,46 @@ La siguiente evidencia mostrará la aplicación publicada en su entorno de opera
 
 Antes del cierre de TB1 se verificará que ambas URLs públicas se encuentren accesibles y que los principales flujos desarrollados durante Sprint 2 puedan ser demostrados desde sus respectivas versiones desplegadas.
 
+#### Despliegue correctivo del Landing Page — v1.1.0
+
+Como parte de la atención a las observaciones recibidas en TB1, se realizó posteriormente el despliegue de una actualización correctiva del Landing Page de EcoTrack.
+
+Los cambios desarrollados para la versión v1.1.0 fueron integrados mediante Pull Request y publicados utilizando GitHub Pages, con la rama `main` como origen del despliegue.
+
+El proceso se verificó mediante GitHub Actions, donde la ejecución `pages build and deployment #2` finalizó correctamente, incluyendo las etapas de construcción y despliegue.
+
+![Despliegue del Landing Page mediante GitHub Actions](assets/chapter-05/sprint-02-landing-github-actions.png)
+
+_Figura: Ejecución exitosa del workflow de GitHub Pages para la actualización correctiva del Landing Page._
+
+**URL pública:** https://horizon-opensource.github.io/landing-page/
+
+**Configuración de GitHub Pages**
+
+El Landing Page de EcoTrack se encuentra alojado en GitHub Pages, utilizando la rama `main` como origen de publicación y la carpeta raíz del repositorio, identificada en GitHub Pages como / (root)
+
+La actualización correctiva correspondiente a la versión v1.1.0 se incorporó al entorno publicado después de su integración. Para verificar el despliegue, se revisó la configuración de GitHub Pages y la ejecución `pages build and deployment #2` de GitHub Actions, que finalizó con estado `Success`.
+
+La ejecución incluyó las etapas `build`, `report-build-status` y `deploy`, todas completadas correctamente. Esta evidencia corresponde al despliegue correctivo realizado después de la entrega original de TB1.
+
+![Configuración de GitHub Pages](assets/chapter-05/sprint-02-landing-pages-config.png)
+
+_Figura: Configuración de GitHub Pages para la publicación del Landing Page desde la rama main._
+
+**Información del despliegue:**
+
+| Elemento              | Descripción                                        |
+| --------------------- | -------------------------------------------------- |
+| Producto              | EcoTrack Landing Page                              |
+| Versión objetivo      | v1.1.0                                             |
+| Plataforma            | GitHub Pages                                       |
+| Origen de publicación | Rama `main`, carpeta `/ (root)`                    |
+| Workflow              | `pages build and deployment #2`                    |
+| Commit desplegado     | `d00d8e1`                                          |
+| Resultado             | Despliegue exitoso                                 |
+| URL pública           | https://horizon-opensource.github.io/landing-page/ |
+| Fecha                 | Actualización correctiva posterior a TB1           |
+
 ---
 
 ## 5.2.2.8. Team Collaboration Insights during Sprint
@@ -4598,6 +4682,34 @@ La siguiente evidencia permitirá visualizar las contribuciones realizadas en el
 Al cierre del Sprint, las evidencias de GitHub deberán guardar coherencia con las responsabilidades descritas, los Work Items registrados en Trello y los commits realizados por cada integrante.
 
 De manera paralela al desarrollo de los productos, Javier Tello realizó la actualización y corrección del Project Report correspondiente al avance de TB1, manteniendo la documentación alineada con los cambios realizados sobre Product Backlog, alcance funcional y Sprint 2.
+
+#### Colaboración en la actualización correctiva del Landing Page — v1.1.0
+
+Durante la revisión posterior a TB1, se identificó que la primera versión del Landing Page de EcoTrack ya contaba con una estructura funcional y las principales secciones necesarias para comunicar la propuesta de valor del producto.
+
+Por este motivo, la actualización correctiva v1.1.0 se concentró en mejoras puntuales de comportamiento y accesibilidad, sin requerir una reorganización completa del Landing Page ni modificaciones extensas en sus componentes.
+
+Estas actividades fueron asumidas por Javier Tello, en su función de Team Leader, quien realizó las correcciones de animaciones e internacionalización de las etiquetas accesibles del menú móvil.
+
+El trabajo se desarrolló mediante la rama `feature/landing-sprint2-v1.1.0`, registrando dos commits con Conventional Commits y utilizando la Pull Request #8 para integrar los cambios a `develop`.
+
+En esta actualización específica, los demás integrantes no registraron commits adicionales en el repositorio del Landing Page, debido al alcance limitado de las correcciones realizadas. Esto no representa la totalidad de las contribuciones del equipo Horizon, cuyo trabajo también se desarrolla en los demás productos y artefactos del proyecto.
+
+La integración quedó registrada en GitHub mediante el merge de la Pull Request #8, efectuado por Javier Tello.
+
+**Evidencias de colaboración:**
+
+| Elemento                        | Evidencia                                                          |
+| ------------------------------- | ------------------------------------------------------------------ |
+| Responsable de la actualización | Javier Tello                                                       |
+| Rama de trabajo                 | `feature/landing-sprint2-v1.1.0`                                   |
+| Commits registrados             | 2                                                                  |
+| Pull Request                    | [PR #8](https://github.com/Horizon-OpenSource/landing-page/pull/8) |
+| Rama de integración             | `develop`                                                          |
+| Merge commit                    | `9517ba3`                                                          |
+| Estado de integración           | Completado                                                         |
+
+Las evidencias visuales de los commits y de la Pull Request se encuentran documentadas en la sección `5.2.2.4 Development Evidence for Sprint Review`.
 
 ---
 
