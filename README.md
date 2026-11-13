@@ -91,7 +91,7 @@ Noviembre 2026
 | 0.9     | 03/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completó y corrigió el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack.                                                                                                                                                             |
 | 0.10    | 04/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completaron y actualizaron los Class Diagrams de Frontend y Backend y el Database Design correspondientes al Capítulo IV.                                                                                                                                       |
 | 0.11    | 05/10/2026 | Tello Murga, Javier Oswaldo    | Se corrigió el Capítulo I, se actualizaron User Stories y Epics, se reconstruyó y priorizó el Product Backlog, se actualizó el enlace público de Trello y se corrigieron referencias del repositorio Frontend y perfiles del equipo.                               |
-| 0.12    | 13/11/2026 | Payesa Torres, Harrison Hubert | Se corrigieron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, relacionando los wireframes y mock-ups con las User Stories, y se actualizó la sección Student Outcome con las acciones del AV2. |
+| 0.12    | 13/11/2026 | Payesa Torres, Harrison Hubert | Se corrigieron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, relacionando los wireframes y mock-ups con las User Stories, se actualizó la sección Student Outcome con las acciones del AV2 y se unieron las entrevistas de la sección 2.2.2 en un único video de Stream. |
 
 ---
 
@@ -792,7 +792,7 @@ Para validar los problemas, necesidades y supuestos del proceso Lean UX plantead
 
 ### 2.2.2. Registro de entrevistas
 
-Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stream y SharePoint. Cada registro incluye datos de la persona entrevistada, captura, enlace, rango de tiempo y resumen. La duración indicada se calcula como fin menos inicio del rango consignado; no representa necesariamente la duración total del video. Los enlaces, las capturas y los tiempos deben cotejarse con las grabaciones accesibles al equipo.
+Las seis entrevistas fueron registradas en video y unidas, en el orden E01 a E06, en un único video publicado mediante Microsoft Stream y SharePoint: [upc-pre-202620-1asi0729-7753-horizon-needfinding-sprint-1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c), con una duración total de 41 minutos con 30 segundos. Cada registro incluye datos de la persona entrevistada, captura, enlace, rango de tiempo y resumen. El rango de tiempo indica en qué parte del video unido se encuentra cada entrevista (hh:mm:ss) y la duración indicada se calcula como fin menos inicio de ese rango. Los enlaces, las capturas y los tiempos deben cotejarse con la grabación accesible al equipo.
 
 - **Segmento 1: Empresas exportadoras**
   - **Entrevista E01**
@@ -806,7 +806,7 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E01](assets/chapter-02/interviews/entrevista-seg-1.jpg)
 
-    - **Video URL:** [Entrevista E01 - Manuel Marina](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQB9BqLTWOx6Q4U0R2Ju1GgJAT1cUSUvrOiJc3w6ESrAnCg)
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
     - **Timing:** 00:00:18 - 00:04:34
     - **Duración del intervalo indicado:** 4 minutos con 16 segundos
     - **Resumen:** Manuel explico que su trabajo se relaciona con actividades de transporte y que la empresa ha comenzado a utilizar GNV para reducir costos e impacto ambiental. Elaboran reportes semanales sobre consumo, funcionamiento y mantenimiento de los vehiculos. La informacion se consolida principalmente en Excel, pero no todas las personas dominan la herramienta, lo que genera dependencia y demoras. Considera valioso que EcoTrack calcule la huella de carbono, organice los reportes por periodo y ayude a comunicar el compromiso ambiental de la empresa.
@@ -822,8 +822,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E02](assets/chapter-02/interviews/entrevista-e02.jpg)
 
-    - **Video URL:** [Entrevista E02 - Shadina Lopez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQD_2azhBwEOQ6Atj3XxRSFmATIBispPszUQmCmKSsdnDUo?e=yKkGmJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-    - **Timing:** 00:00:14 - 00:05:23
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:04:49 - 00:09:58
     - **Duración del intervalo indicado:** 5 minutos con 9 segundos
     - **Resumen:** Shadina trabaja en una agroindustria pequena y gestiona certificaciones y registros ambientales. Los clientes vinculados con exportacion solicitan informacion sobre agua, energia, residuos y manejo de insumos, mientras que la certificacion de Buenas Practicas Agricolas exige evidencias ordenadas. Actualmente utilizan Excel, cuadernos y fotografias, lo que provoca perdida de datos, falta de respaldo y conflictos entre versiones. EcoTrack le resultaria util si permite cargar informacion desde el celular, generar reportes por mes o lote y mostrar indicadores comprensibles.
 
@@ -838,8 +838,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E03](assets/chapter-02/interviews/entrevista-e03.jpg)
 
-    - **Video URL:** [Entrevista E03 - Azul Delgado](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQAANmaREuwiRKlGYE3XYQR8AemYAxODojARbknk2MmyBow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K1VIZU)
-    - **Timing:** 00:00:12 - 00:07:43
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:10:10 - 00:17:41
     - **Duración del intervalo indicado:** 7 minutos con 31 segundos
     - **Resumen:** Azul describio un entorno textil donde se necesita ordenar informacion sobre energia, agua, residuos textiles, materiales y productos quimicos para responder a solicitudes internas, clientes o auditorias. Los registros se manejan mediante archivos y hojas de calculo, lo que ocasiona duplicidad, versiones diferentes y demora al consolidar la informacion. Valora una solucion sencilla que permita centralizar evidencias, calcular indicadores y generar reportes ambientales por periodo.
 
@@ -855,8 +855,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E04](assets/chapter-02/interviews/entrevista-seg-2.jpg)
 
-    - **Video URL:** [Entrevista E04 - Renzo Santos](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202222859_upc_edu_pe/IQDW0kcogSBGQr70m9BQGg6bAdvg3-QG31U-XSD21SRcuKU?e=etYVse)
-    - **Timing:** 00:00:20 - 00:06:42
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:18:02 - 00:24:24
     - **Duración del intervalo indicado:** 6 minutos con 22 segundos
     - **Resumen:** Renzo explico que la informacion ambiental proviene de produccion, mantenimiento, administracion y otras unidades. Los principales consumos se relacionan con electricidad de planta y oficinas, maquinaria y combustible de transporte. Cada area utiliza hojas de calculo, documentos o registros con formatos diferentes, lo que dificulta consolidar y comparar resultados. Considera muy importante disponer de dashboards, reportes e historial de calculos en una sola plataforma para reducir tiempo y mejorar la trazabilidad.
 
@@ -871,8 +871,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E05](assets/chapter-02/interviews/entrevista-e05.jpg)
 
-    - **Video URL:** [Entrevista E05 - Norvil Perez](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8BguyZKR6S7x8cNpZDQKiAQP8GoxetcWy-dM-oerNLGI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qqaNt4)
-    - **Timing:** 00:00:17 - 00:08:11
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:24:44 - 00:32:38
     - **Duración del intervalo indicado:** 7 minutos con 54 segundos
     - **Resumen:** Norvil supervisa operaciones de procesamiento y envasado de alimentos y controla energia, combustible, gas, materiales y residuos. La informacion se distribuye entre Excel, correo, WhatsApp y anotaciones, por lo que algunos archivos llegan incompletos o desactualizados. Destaca que la gestion ambiental tambien permite controlar costos operativos. Espera que EcoTrack facilite comparaciones entre periodos, identifique consumos criticos, genere reportes gerenciales y permita asignar metas de reduccion.
 
@@ -887,8 +887,8 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
 
       ![Entrevista E06](assets/chapter-02/interviews/entrevista-e06.jpg)
 
-    - **Video URL:** [Entrevista E06 - Rosa Torres](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQA4osdYU2cVTppdGXpQ4q-KAU9E4b1CVAsdStJ2Ntr-FHI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZqWiQC)
-    - **Timing:** 00:00:15 - 00:08:52
+    - **Video URL:** [Video unido de entrevistas (E01 a E06)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQD1zPzASvqwR4ZZW2CdHGh4AYh8xV6jI-TpcJxBCPg2JQw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vMIw3c)
+    - **Timing:** 00:32:53 - 00:41:30
     - **Duración del intervalo indicado:** 8 minutos con 37 segundos
     - **Resumen:** Rosa gestiona un taller que utiliza electricidad, agua, pintura, thinner y solventes, y que genera residuos y vapores durante los trabajos. La informacion esta distribuida entre facturas, compras, Excel y anotaciones manuales. La principal dificultad es comparar consumos y desperdicios entre meses o por vehiculo atendido. Considera util una plataforma sencilla que muestre consumos, residuos, avances y metas de reduccion sin aumentar la complejidad operativa del taller.
 
