@@ -1,42 +1,76 @@
 <div align="center">
 
-<img src="https://seeklogo.com/images/U/universidad-peruana-de-ciencias-aplicadas-upc-logo-B98C3A365C-seeklogo.com.png" alt="Logo UPC" width="120"/>
+<img src="assets/chapter-01/logo-upc.png" alt="Logo UPC" width="95"/>
 
-#### UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
+Universidad Peruana de Ciencias Aplicadas
 
-## FACULTAD DE INGENIERÍA
+**Carrera de Ingeniería de Software**
+<br>
 
-### Carrera de Ingeniería de Software
+### 1ASI0729
 
-### Desarrollo de Aplicaciones Open Source
+## Desarrollo de Aplicaciones Open Source
 
-**Ciclo:** 2026-20
+NRC
 
-**Código del curso:** 1ASI0729
+**7753**
 
-**NRC:** 7753
+## Informe del Trabajo Final
 
-**Docente del curso:** Bautista Ubillús, Efraín Ricardo
+Docente
 
----
+**Bautista Ubillús, Efraín Ricardo**
 
-## INFORME DE TRABAJO FINAL
+<br>
 
-**Nombre de la Startup:** Horizon
+Equipo
 
-**Nombre del producto:** EcoTrack
+**Horizon**
+
+Proyecto
+
+**EcoTrack**
+
+<br>
 
 ### Integrantes
 
-- Lacuta Lima, Alex Rodrigo - U20241G396
-- Espinoza Flores, Aaron André - U202222859
-- Payesa Torres, Harrison Hubert - U202221024
-- Tello Murga, Javier Oswaldo - U202218387
-- Torres Diaz, Rolando Andre - U202323369
+</div>
 
-### Fecha
+<table align="center">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Apellidos y Nombres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>U20241G396</td>
+      <td>Lacuta Lima, Alex Rodrigo</td>
+    </tr>
+    <tr>
+      <td>U202222859</td>
+      <td>Espinoza Flores, Aaron André</td>
+    </tr>
+    <tr>
+      <td>U202221024</td>
+      <td>Payesa Torres, Harrison Hubert</td>
+    </tr>
+    <tr>
+      <td>U202218387</td>
+      <td>Tello Murga, Javier Oswaldo</td>
+    </tr>
+  </tbody>
+</table>
 
-Septiembre, 2026
+<div align="center">
+
+<br>
+
+**Período 202620**
+
+Noviembre 2026
 
 </div>
 
@@ -44,8 +78,8 @@ Septiembre, 2026
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                          | Descripción de modificación                                                                                                                                                                                                                                                        |
-|---------|------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Versión | Fecha      | Autor                          | Descripción de modificación                                                                                                                                                                                                                                        |
+| ------- | ---------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 0.1     | 10/09/2026 | Tello Murga, Javier Oswaldo    | Se creó la estructura base del Project Report y se inició la integración de la documentación del proyecto EcoTrack.                                                                                                                                                |
 | 0.2     | 14/09/2026 | Espinoza Flores, Aaron André   | Se desarrolló el Capítulo II: Requirements Elicitation & Analysis, incluyendo Competitive Analysis, entrevistas, análisis de resultados, User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language. |
 | 0.3     | 16/09/2026 | Torres Diaz, Rolando Andre     | Se desarrollaron artefactos del Capítulo III: Requirements Specification, incluyendo User Stories, Epics, Product Backlog e Impact Mapping, además de apoyar en la organización de referencias bibliográficas.                                                     |
@@ -57,23 +91,23 @@ Septiembre, 2026
 | 0.9     | 03/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completó y corrigió el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack.                                                                                                                                                             |
 | 0.10    | 04/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completaron y actualizaron los Class Diagrams de Frontend y Backend y el Database Design correspondientes al Capítulo IV.                                                                                                                                       |
 | 0.11    | 05/10/2026 | Tello Murga, Javier Oswaldo    | Se corrigió el Capítulo I, se actualizaron User Stories y Epics, se reconstruyó y priorizó el Product Backlog, se actualizó el enlace público de Trello y se corrigieron referencias del repositorio Frontend y perfiles del equipo.                               |
+
 ---
 
 # Project Report Collaboration Insights
 
 ## Repositories
 
-| URL de la organización del proyecto | URL del repositorio del report |
-|---|---|
-| [https://github.com/Horizon-OpenSource](https://github.com/Horizon-OpenSource) | [https://github.com/Horizon-OpenSource/report](https://github.com/Horizon-OpenSource/report) |
+Los repositorios de EcoTrack se encuentran alojados en la organización pública de GitHub **Horizon-OpenSource**. Cada repositorio corresponde a un producto de software o artefacto del proyecto.
 
-| URL del repositorio del Landing Page | URL del repositorio del Frontend |
-|---|---|
-| [https://github.com/Horizon-OpenSource/landing-page](https://github.com/Horizon-OpenSource/landing-page) | [https://github.com/Horizon-OpenSource/frontend-web-application](https://github.com/Horizon-OpenSource/frontend-web-application) |
-
-| URL del repositorio del Backend |
-|---|
-| Pendiente de creación |
+| Repositorio                    | URL                                                                                                           |
+| :----------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| **GitHub Organization**        | [Horizon-OpenSource](https://github.com/Horizon-OpenSource)                                                   |
+| **Project Report**             | [Horizon-OpenSource/report](https://github.com/Horizon-OpenSource/report)                                     |
+| **Landing Page**               | [Horizon-OpenSource/landing-page](https://github.com/Horizon-OpenSource/landing-page)                         |
+| **Frontend Web Application**   | [Horizon-OpenSource/frontend-web-application](https://github.com/Horizon-OpenSource/frontend-web-application) |
+| **Backend Web Services**       | [Horizon-OpenSource/backend-web-services](https://github.com/Horizon-OpenSource/backend-web-services)         |
+| **EcoTrack Platform Mock API** | [Horizon-OpenSource/ecotrack-platform-mock](https://github.com/Horizon-OpenSource/ecotrack-platform-mock)     |
 
 ---
 
@@ -128,116 +162,116 @@ La siguiente evidencia muestra los Pull Requests utilizados para integrar las co
 1. [Student Outcome](#student-outcome)
 
 2. [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [1.1. Startup Profile](#11-startup-profile)
-        - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-        - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-    - [1.2. Solution Profile](#12-solution-profile)
-        - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-        - [1.2.2. Lean UX Process](#122-lean-ux-process)
-            - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-            - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-            - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-            - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-    - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+   - [1.1. Startup Profile](#11-startup-profile)
+     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+   - [1.2. Solution Profile](#12-solution-profile)
+     - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+     - [1.2.2. Lean UX Process](#122-lean-ux-process)
+       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
 3. [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [2.1. Competidores](#21-competidores)
-        - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-        - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-    - [2.2. Entrevistas](#22-entrevistas)
-        - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
-        - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
-        - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-    - [2.3. Needfinding](#23-needfinding)
-        - [2.3.1. User Personas](#231-user-personas)
-        - [2.3.2. User Task Matrix](#232-user-task-matrix)
-        - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
-        - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-    - [2.4. Big Picture Event Storming](#24-big-picture-event-storming)
-    - [2.5. Ubiquitous Language](#25-ubiquitous-language)
+   - [2.1. Competidores](#21-competidores)
+     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+   - [2.2. Entrevistas](#22-entrevistas)
+     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+   - [2.3. Needfinding](#23-needfinding)
+     - [2.3.1. User Personas](#231-user-personas)
+     - [2.3.2. User Task Matrix](#232-user-task-matrix)
+     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+   - [2.4. Big Picture Event Storming](#24-big-picture-event-storming)
+   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 
 4. [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [3.1. User Stories](#31-user-stories)
-    - [3.2. Impact Mapping](#32-impact-mapping)
-    - [3.3. Product Backlog](#33-product-backlog)
+   - [3.1. User Stories](#31-user-stories)
+   - [3.2. Impact Mapping](#32-impact-mapping)
+   - [3.3. Product Backlog](#33-product-backlog)
 
 5. [Capítulo IV: Product Design](#capítulo-iv-product-design)
-    - [4.1. Style Guidelines](#41-style-guidelines)
-        - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
-        - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
-    - [4.2. Information Architecture](#42-information-architecture)
-        - [4.2.1. Organization Systems](#421-organization-systems)
-        - [4.2.2. Labeling Systems](#422-labeling-systems)
-        - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
-        - [4.2.4. Searching Systems](#424-searching-systems)
-        - [4.2.5. Navigation Systems](#425-navigation-systems)
-    - [4.3. Landing Page UI Design](#43-landing-page-ui-design)
-        - [4.3.1. Landing Page Wireframe](#431-landing-page-wireframe)
-        - [4.3.2. Landing Page Mock-up](#432-landing-page-mock-up)
-    - [4.4. Web Applications UX/UI Design](#44-web-applications-uxui-design)
-        - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
-        - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
-        - [4.4.3. Web Applications Mock-ups](#443-web-applications-mock-ups)
-        - [4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams)
-    - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
-    - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
-        - [4.6.1. Design-Level Event Storming](#461-design-level-event-storming)
-        - [4.6.2. Software Architecture Context Diagram](#462-software-architecture-context-diagram)
-        - [4.6.3. Software Architecture Container Diagrams](#463-software-architecture-container-diagrams)
-        - [4.6.4. Software Architecture Components Diagrams](#464-software-architecture-components-diagrams)
-    - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
-        - [4.7.1. Class Diagrams](#471-class-diagrams)
-    - [4.8. Database Design](#48-database-design)
-        - [4.8.1. Database Diagrams](#481-database-diagrams)
+   - [4.1. Style Guidelines](#41-style-guidelines)
+     - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
+     - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
+   - [4.2. Information Architecture](#42-information-architecture)
+     - [4.2.1. Organization Systems](#421-organization-systems)
+     - [4.2.2. Labeling Systems](#422-labeling-systems)
+     - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
+     - [4.2.4. Searching Systems](#424-searching-systems)
+     - [4.2.5. Navigation Systems](#425-navigation-systems)
+   - [4.3. Landing Page UI Design](#43-landing-page-ui-design)
+     - [4.3.1. Landing Page Wireframe](#431-landing-page-wireframe)
+     - [4.3.2. Landing Page Mock-up](#432-landing-page-mock-up)
+   - [4.4. Web Applications UX/UI Design](#44-web-applications-uxui-design)
+     - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
+     - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
+     - [4.4.3. Web Applications Mock-ups](#443-web-applications-mock-ups)
+     - [4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams)
+   - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
+   - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
+     - [4.6.1. Design-Level Event Storming](#461-design-level-event-storming)
+     - [4.6.2. Software Architecture Context Diagram](#462-software-architecture-context-diagram)
+     - [4.6.3. Software Architecture Container Diagrams](#463-software-architecture-container-diagrams)
+     - [4.6.4. Software Architecture Components Diagrams](#464-software-architecture-components-diagrams)
+   - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
+     - [4.7.1. Class Diagrams](#471-class-diagrams)
+   - [4.8. Database Design](#48-database-design)
+     - [4.8.1. Database Diagrams](#481-database-diagrams)
 
 6. [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
-    - [5.1. Software Configuration Management](#51-software-configuration-management)
-        - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
-        - [5.1.2. Source Code Management](#512-source-code-management)
-        - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
-        - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-    - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
-        - [5.2.1. Sprint 1](#521-sprint-1)
-            - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
-            - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
-            - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
-            - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
-            - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
-            - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
-            - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
-            - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
-        - [5.2.2. Sprint 2](#522-sprint-2)
-            - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
-            - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
-            - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
-            - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
-            - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
-            - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
-            - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
-            - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
-        - [5.2.3. Sprint 3](#523-sprint-3)
-            - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
-            - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
-            - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
-            - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
-            - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
-            - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
-            - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
-            - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
-        - [5.2.4. Sprint 4](#524-sprint-4)
-            - [5.2.4.1. Sprint Planning 4](#5241-sprint-planning-4)
-            - [5.2.4.2. Aspect Leaders and Collaborators](#5242-aspect-leaders-and-collaborators)
-            - [5.2.4.3. Sprint Backlog 4](#5243-sprint-backlog-4)
-            - [5.2.4.4. Development Evidence for Sprint Review](#5244-development-evidence-for-sprint-review)
-            - [5.2.4.5. Execution Evidence for Sprint Review](#5245-execution-evidence-for-sprint-review)
-            - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5246-services-documentation-evidence-for-sprint-review)
-            - [5.2.4.7. Software Deployment Evidence for Sprint Review](#5247-software-deployment-evidence-for-sprint-review)
-            - [5.2.4.8. Team Collaboration Insights during Sprint](#5248-team-collaboration-insights-during-sprint)
-    - [5.3. Validation Interviews](#53-validation-interviews)
-        - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
-        - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
-        - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
-    - [5.4. Video About-the-Product](#54-video-about-the-product)
+   - [5.1. Software Configuration Management](#51-software-configuration-management)
+     - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+     - [5.1.2. Source Code Management](#512-source-code-management)
+     - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
+     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
+   - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
+     - [5.2.1. Sprint 1](#521-sprint-1)
+       - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
+       - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+       - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
+       - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
+       - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
+       - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
+       - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
+       - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+     - [5.2.2. Sprint 2](#522-sprint-2)
+       - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+       - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+       - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+       - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+       - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+       - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+       - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+       - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+     - [5.2.3. Sprint 3](#523-sprint-3)
+       - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+       - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+       - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+       - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+       - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+       - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+       - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+       - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+     - [5.2.4. Sprint 4](#524-sprint-4)
+       - [5.2.4.1. Sprint Planning 4](#5241-sprint-planning-4)
+       - [5.2.4.2. Aspect Leaders and Collaborators](#5242-aspect-leaders-and-collaborators)
+       - [5.2.4.3. Sprint Backlog 4](#5243-sprint-backlog-4)
+       - [5.2.4.4. Development Evidence for Sprint Review](#5244-development-evidence-for-sprint-review)
+       - [5.2.4.5. Execution Evidence for Sprint Review](#5245-execution-evidence-for-sprint-review)
+       - [5.2.4.6. Services Documentation Evidence for Sprint Review](#5246-services-documentation-evidence-for-sprint-review)
+       - [5.2.4.7. Software Deployment Evidence for Sprint Review](#5247-software-deployment-evidence-for-sprint-review)
+       - [5.2.4.8. Team Collaboration Insights during Sprint](#5248-team-collaboration-insights-during-sprint)
+   - [5.3. Validation Interviews](#53-validation-interviews)
+     - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+     - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+     - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+   - [5.4. Video About-the-Product](#54-video-about-the-product)
 
 7. [Conclusiones](#conclusiones)
 
@@ -255,17 +289,17 @@ La siguiente evidencia muestra los Pull Requests utilizados para integrar las co
 
 ### Comunica oralmente con efectividad a diferentes rangos de audiencia
 
-| Integrante | Entrega | Acciones realizadas | Conclusiones |
-|---|---|---|---|
-| Rolando Andre Torres Diaz | AV1 | Participé en las reuniones del equipo aportando ideas y explicando los avances de las partes que desarrollé en EcoTrack, principalmente relacionadas con las User Stories, Product Backlog e Impact Mapping. También preparé estos temas para poder explicarlos de manera clara durante la exposición del proyecto. | Durante el AV1 pude mejorar la forma en que explico mis ideas y los avances realizados, utilizando un lenguaje más claro y ordenado para que mis compañeros y el docente puedan comprender el trabajo desarrollado. |
-| Lacuta Lima, Alex Rodrigo | AV1 | Participé en las reuniones del equipo explicando las decisiones relacionadas con la arquitectura de EcoTrack, incluyendo el Event Storming, los diagramas de Context, Containers y Components, así como los Class Diagrams y Database Diagrams. También coordiné con los demás integrantes para que la arquitectura propuesta mantuviera relación con los requisitos y funcionalidades del producto. | Durante el AV1 fortalecí mi capacidad para explicar conceptos técnicos de arquitectura y diseño de software de manera comprensible, relacionando los diferentes diagramas con el funcionamiento general de EcoTrack y adaptando mis explicaciones al contexto de las reuniones del equipo. |
-| Lacuta Lima, Alex Rodrigo | TB1 | Participé en las reuniones del equipo explicando las correcciones realizadas al Design-Level Event Storming para los Bounded Contexts de EcoTrack, así como la actualización de los Class Diagrams de Frontend y Backend y del Database Design. Durante el Sprint 2 lideré el aspecto Carbon Footprint Calculation, comunicando al equipo el flujo de cálculo, la selección de factores de emisión y la consulta de resultados por alcance y periodo para coordinar su integración con los demás módulos. | Durante el TB1 fortalecí mi capacidad para explicar cómo las decisiones de arquitectura se trasladan a la implementación, comunicando de forma clara la relación entre los diagramas, los Bounded Contexts y las funcionalidades desarrolladas en la Frontend Web Application. |
-| Espinoza Flores, Aaron André | AV1 | Participé en las reuniones y coordinaciones del equipo explicando los resultados obtenidos durante el análisis de competidores, las entrevistas realizadas a los segmentos objetivo y los principales hallazgos obtenidos mediante las técnicas de Needfinding. También comuniqué las necesidades y problemas identificados para que pudieran ser considerados en la definición de EcoTrack. | Durante el AV1 mejoré mi capacidad para comunicar resultados de investigación y análisis de usuarios, explicando de forma más ordenada los hallazgos obtenidos y su relación con las necesidades de los segmentos objetivo y la propuesta de valor de EcoTrack. |
-| Espinoza Flores, Aaron André | TB1 | Participé en las reuniones del equipo explicando las correcciones realizadas a partir del feedback del AV1, relacionadas con los timings de las entrevistas, la trazabilidad de los User Personas, el Big Picture Event Storming y el Impact Mapping con objetivos SMART. Durante el Sprint 2 lideré el aspecto Emissions Management, comunicando al equipo los avances en el registro, clasificación, consulta, edición, eliminación, búsqueda y filtrado de emisiones. | Durante el TB1 mejoré mi capacidad para comunicar correcciones y avances de manera ordenada, explicando cómo los ajustes realizados en los artefactos de investigación se relacionan con las funcionalidades implementadas en EcoTrack. |
-| Payesa Torres, Harrison Hubert | AV1 | Participé en las reuniones y discusiones del equipo relacionadas con el funcionamiento y objetivo de EcoTrack, aportando ideas sobre la estructura y comportamiento de la Web Application. También expliqué las decisiones tomadas para el diseño de las interfaces y los diferentes flujos de interacción desarrollados en Figma. | Durante el AV1 fortalecí mi capacidad para comunicar ideas de diseño y explicar de manera clara las decisiones relacionadas con el funcionamiento de la aplicación, adaptando la explicación según los integrantes y el contexto de la discusión. |
-| Payesa Torres, Harrison Hubert | TB1 | Participé en las reuniones del equipo explicando las correcciones y ampliaciones realizadas en el diseño UX/UI de la Web Application, incluyendo wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1. Durante el Sprint 2 lideré el aspecto Analytics & Reports, comunicando al equipo los avances en indicadores ambientales, visualización por alcance, comparación de periodos y reportes. | Durante el TB1 fortalecí mi capacidad para comunicar decisiones de diseño y su implementación, explicando de forma clara cómo las interfaces diseñadas en Figma se trasladan a la Frontend Web Application y adaptando la explicación según el contexto de la discusión. |
-| Tello Murga, Javier Oswaldo | AV1 | Lideré gran parte de las reuniones de coordinación de la primera entrega, organizando los avances del equipo y explicando las decisiones relacionadas con la propuesta de EcoTrack, el alcance del producto, la estructura del reporte y la implementación del Landing Page. También comuniqué los avances del Sprint 1, el proceso de integración mediante GitHub y el despliegue de la primera versión del Landing Page. | Durante el AV1 fortalecí mi capacidad de liderazgo y comunicación oral al coordinar el trabajo de los integrantes, explicar decisiones funcionales y técnicas y comunicar los avances del proyecto de forma clara. Esto me permitió adaptar la información según se tratara de coordinación interna, revisión del producto o preparación para la exposición frente al docente. |
-| Tello Murga, Javier Oswaldo | TB1 | Lideré las reuniones de coordinación del TB1, incluyendo el Sprint Planning 2, en el que se revisaron los resultados del Sprint 1 y se definió el alcance de la segunda iteración. Comuniqué la distribución del trabajo por aspectos funcionales, lideré Organization Management y coordiné la integración entre el Landing Page y la Frontend Web Application. También expliqué al equipo las correcciones realizadas al Capítulo I, las User Stories, Epics y la nueva priorización del Product Backlog. | Durante el TB1 fortalecí mi capacidad de liderazgo y comunicación oral al coordinar el desarrollo paralelo de los integrantes, comunicar decisiones de alcance y prioridad, y mantener alineado al equipo durante la integración de los avances del Sprint 2. |
+| Integrante                     | Entrega | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Conclusiones                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Rolando Andre Torres Diaz      | AV1     | Participé en las reuniones del equipo aportando ideas y explicando los avances de las partes que desarrollé en EcoTrack, principalmente relacionadas con las User Stories, Product Backlog e Impact Mapping. También preparé estos temas para poder explicarlos de manera clara durante la exposición del proyecto.                                                                                                                                                                                         | Durante el AV1 pude mejorar la forma en que explico mis ideas y los avances realizados, utilizando un lenguaje más claro y ordenado para que mis compañeros y el docente puedan comprender el trabajo desarrollado.                                                                                                                                                            |
+| Lacuta Lima, Alex Rodrigo      | AV1     | Participé en las reuniones del equipo explicando las decisiones relacionadas con la arquitectura de EcoTrack, incluyendo el Event Storming, los diagramas de Context, Containers y Components, así como los Class Diagrams y Database Diagrams. También coordiné con los demás integrantes para que la arquitectura propuesta mantuviera relación con los requisitos y funcionalidades del producto.                                                                                                        | Durante el AV1 fortalecí mi capacidad para explicar conceptos técnicos de arquitectura y diseño de software de manera comprensible, relacionando los diferentes diagramas con el funcionamiento general de EcoTrack y adaptando mis explicaciones al contexto de las reuniones del equipo.                                                                                     |
+| Lacuta Lima, Alex Rodrigo      | TB1     | Participé en las reuniones del equipo explicando las correcciones realizadas al Design-Level Event Storming para los Bounded Contexts de EcoTrack, así como la actualización de los Class Diagrams de Frontend y Backend y del Database Design. Durante el Sprint 2 lideré el aspecto Carbon Footprint Calculation, comunicando al equipo el flujo de cálculo, la selección de factores de emisión y la consulta de resultados por alcance y periodo para coordinar su integración con los demás módulos.   | Durante el TB1 fortalecí mi capacidad para explicar cómo las decisiones de arquitectura se trasladan a la implementación, comunicando de forma clara la relación entre los diagramas, los Bounded Contexts y las funcionalidades desarrolladas en la Frontend Web Application.                                                                                                 |
+| Espinoza Flores, Aaron André   | AV1     | Participé en las reuniones y coordinaciones del equipo explicando los resultados obtenidos durante el análisis de competidores, las entrevistas realizadas a los segmentos objetivo y los principales hallazgos obtenidos mediante las técnicas de Needfinding. También comuniqué las necesidades y problemas identificados para que pudieran ser considerados en la definición de EcoTrack.                                                                                                                | Durante el AV1 mejoré mi capacidad para comunicar resultados de investigación y análisis de usuarios, explicando de forma más ordenada los hallazgos obtenidos y su relación con las necesidades de los segmentos objetivo y la propuesta de valor de EcoTrack.                                                                                                                |
+| Espinoza Flores, Aaron André   | TB1     | Participé en las reuniones del equipo explicando las correcciones realizadas a partir del feedback del AV1, relacionadas con los timings de las entrevistas, la trazabilidad de los User Personas, el Big Picture Event Storming y el Impact Mapping con objetivos SMART. Durante el Sprint 2 lideré el aspecto Emissions Management, comunicando al equipo los avances en el registro, clasificación, consulta, edición, eliminación, búsqueda y filtrado de emisiones.                                    | Durante el TB1 mejoré mi capacidad para comunicar correcciones y avances de manera ordenada, explicando cómo los ajustes realizados en los artefactos de investigación se relacionan con las funcionalidades implementadas en EcoTrack.                                                                                                                                        |
+| Payesa Torres, Harrison Hubert | AV1     | Participé en las reuniones y discusiones del equipo relacionadas con el funcionamiento y objetivo de EcoTrack, aportando ideas sobre la estructura y comportamiento de la Web Application. También expliqué las decisiones tomadas para el diseño de las interfaces y los diferentes flujos de interacción desarrollados en Figma.                                                                                                                                                                          | Durante el AV1 fortalecí mi capacidad para comunicar ideas de diseño y explicar de manera clara las decisiones relacionadas con el funcionamiento de la aplicación, adaptando la explicación según los integrantes y el contexto de la discusión.                                                                                                                              |
+| Payesa Torres, Harrison Hubert | TB1     | Participé en las reuniones del equipo explicando las correcciones y ampliaciones realizadas en el diseño UX/UI de la Web Application, incluyendo wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1. Durante el Sprint 2 lideré el aspecto Analytics & Reports, comunicando al equipo los avances en indicadores ambientales, visualización por alcance, comparación de periodos y reportes.                                                                                  | Durante el TB1 fortalecí mi capacidad para comunicar decisiones de diseño y su implementación, explicando de forma clara cómo las interfaces diseñadas en Figma se trasladan a la Frontend Web Application y adaptando la explicación según el contexto de la discusión.                                                                                                       |
+| Tello Murga, Javier Oswaldo    | AV1     | Lideré gran parte de las reuniones de coordinación de la primera entrega, organizando los avances del equipo y explicando las decisiones relacionadas con la propuesta de EcoTrack, el alcance del producto, la estructura del reporte y la implementación del Landing Page. También comuniqué los avances del Sprint 1, el proceso de integración mediante GitHub y el despliegue de la primera versión del Landing Page.                                                                                  | Durante el AV1 fortalecí mi capacidad de liderazgo y comunicación oral al coordinar el trabajo de los integrantes, explicar decisiones funcionales y técnicas y comunicar los avances del proyecto de forma clara. Esto me permitió adaptar la información según se tratara de coordinación interna, revisión del producto o preparación para la exposición frente al docente. |
+| Tello Murga, Javier Oswaldo    | TB1     | Lideré las reuniones de coordinación del TB1, incluyendo el Sprint Planning 2, en el que se revisaron los resultados del Sprint 1 y se definió el alcance de la segunda iteración. Comuniqué la distribución del trabajo por aspectos funcionales, lideré Organization Management y coordiné la integración entre el Landing Page y la Frontend Web Application. También expliqué al equipo las correcciones realizadas al Capítulo I, las User Stories, Epics y la nueva priorización del Product Backlog. | Durante el TB1 fortalecí mi capacidad de liderazgo y comunicación oral al coordinar el desarrollo paralelo de los integrantes, comunicar decisiones de alcance y prioridad, y mantener alineado al equipo durante la integración de los avances del Sprint 2.                                                                                                                  |
 
 ---
 
@@ -273,19 +307,20 @@ La siguiente evidencia muestra los Pull Requests utilizados para integrar las co
 
 ### Comunica por escrito con efectividad a diferentes rangos de audiencia
 
-| Integrante | Entrega | Acciones realizadas | Conclusiones |
-|---|---|---|---|
-| Rolando Andre Torres Diaz | AV1 | Participé en la redacción y actualización de diferentes partes del Project Report de EcoTrack, principalmente en las User Stories, Epics, Product Backlog, Requirements Specification, bibliografía e Impact Mapping. También organicé la información en Markdown y registré los avances realizados mediante commits en GitHub. | Durante el AV1 pude mejorar mi forma de redactar y organizar la información del proyecto, procurando que las ideas sean claras, mantengan un orden adecuado y tengan relación con los demás artefactos desarrollados en EcoTrack. |
-| Lacuta Lima, Alex Rodrigo | AV1 | Participé en la documentación del diseño técnico y arquitectura de EcoTrack, desarrollando las secciones correspondientes al Design-Level Event Storming, Software Architecture Context Diagram, Container Diagrams, Components Diagrams, Class Diagrams y Database Diagrams. También redacté las explicaciones necesarias para relacionar estos artefactos con los componentes y responsabilidades de la solución. | Durante el AV1 fortalecí mi capacidad para comunicar por escrito decisiones técnicas y arquitectónicas, procurando que los diagramas y sus explicaciones mantengan consistencia entre sí y permitan comprender de manera progresiva la estructura propuesta para EcoTrack. |
-| Lacuta Lima, Alex Rodrigo | TB1 | Completé y corregí el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack, y actualicé los Class Diagrams de Frontend y Backend junto con el Database Design del Capítulo IV. Durante el Sprint 2 implementé el aspecto Carbon Footprint Calculation y registré los avances mediante commits y Pull Requests en GitHub. | Durante el TB1 fortalecí mi capacidad para documentar por escrito decisiones técnicas de manera consistente, manteniendo la coherencia entre los artefactos de arquitectura y la implementación realizada en la Frontend Web Application. |
-| Espinoza Flores, Aaron André | AV1 | Participé en la elaboración del Capítulo II del Project Report, documentando el análisis competitivo, las estrategias frente a competidores, el diseño y registro de entrevistas, el análisis de los resultados y los artefactos de Needfinding. Asimismo, desarrollé User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language. | Durante el AV1 mejoré mi capacidad para organizar y comunicar por escrito información obtenida de investigación y entrevistas, transformando los hallazgos de los usuarios en artefactos claros que permiten comprender mejor sus necesidades y relacionarlas con el desarrollo de EcoTrack. |
-| Espinoza Flores, Aaron André | TB1 | Corregí y actualicé artefactos del Capítulo II y del Capítulo III a partir del feedback del AV1, incluyendo los timings de las entrevistas, la trazabilidad de los User Personas, el Big Picture Event Storming y el Impact Mapping con objetivos SMART. Durante el Sprint 2 implementé el aspecto Emissions Management y registré los avances mediante commits y Pull Requests en GitHub. | Durante el TB1 mejoré mi capacidad para corregir y precisar documentación escrita, asegurando que los artefactos de investigación mantengan trazabilidad con los requerimientos y funcionalidades desarrolladas en EcoTrack. |
-| Payesa Torres, Harrison Hubert | AV1 | Participé en la documentación del diseño de la Web Application de EcoTrack, desarrollando en Figma los Mock-ups, Wireframes, User Flow Diagrams y el prototipo de las principales funcionalidades. También contribuí a documentar estos avances en el Project Report y a mantener una organización consistente de las interfaces y sus respectivos flujos. | Durante el AV1 mejoré mi capacidad para comunicar por escrito las decisiones de diseño y funcionamiento de la aplicación, organizando la información de manera clara y coherente con los diferentes artefactos desarrollados para EcoTrack. |
-| Payesa Torres, Harrison Hubert | TB1 | Corregí y amplié las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incorporando los wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1. Durante el Sprint 2 implementé el aspecto Analytics & Reports y registré los avances mediante commits y Pull Requests en GitHub. | Durante el TB1 mejoré mi capacidad para documentar decisiones de diseño de manera completa y organizada, manteniendo la coherencia entre los artefactos UX/UI, las User Stories y la implementación de la Frontend Web Application. |
-| Tello Murga, Javier Oswaldo | AV1 | Participé en la redacción, revisión e integración de diferentes secciones del Project Report, incluyendo Student Outcome, Capítulo I, Style Guidelines, Information Architecture y el Capítulo V. Asimismo, documenté el proceso de implementación del Sprint 1, las herramientas y convenciones de desarrollo, los commits realizados, las evidencias de ejecución, colaboración y despliegue del Landing Page. También realicé revisiones para mantener consistencia entre el alcance de EcoTrack, las User Stories, el diseño y la implementación. | Durante el AV1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión de manera estructurada. La elaboración e integración de diferentes capítulos me permitió mejorar la coherencia entre los artefactos del proyecto y presentar evidencias claras sobre el proceso seguido por el equipo desde la definición del producto hasta la implementación y despliegue de su primera versión. |
-| Tello Murga, Javier Oswaldo | TB1 | Corregí el Capítulo I, actualicé las User Stories y Epics, reconstruí y prioricé el Product Backlog, actualicé el enlace público de Trello y corregí las referencias del repositorio Frontend y los perfiles del equipo. También documenté el Sprint 2, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog y evidencias de deployment, y mantuve actualizado el Project Report correspondiente al TB1. | Durante el TB1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión, manteniendo la documentación del proyecto alineada con los cambios realizados en el Product Backlog, el alcance funcional y la implementación del Sprint 2. |
+| Integrante                     | Entrega | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rolando Andre Torres Diaz      | AV1     | Participé en la redacción y actualización de diferentes partes del Project Report de EcoTrack, principalmente en las User Stories, Epics, Product Backlog, Requirements Specification, bibliografía e Impact Mapping. También organicé la información en Markdown y registré los avances realizados mediante commits en GitHub.                                                                                                                                                                                                                       | Durante el AV1 pude mejorar mi forma de redactar y organizar la información del proyecto, procurando que las ideas sean claras, mantengan un orden adecuado y tengan relación con los demás artefactos desarrollados en EcoTrack.                                                                                                                                                                                               |
+| Lacuta Lima, Alex Rodrigo      | AV1     | Participé en la documentación del diseño técnico y arquitectura de EcoTrack, desarrollando las secciones correspondientes al Design-Level Event Storming, Software Architecture Context Diagram, Container Diagrams, Components Diagrams, Class Diagrams y Database Diagrams. También redacté las explicaciones necesarias para relacionar estos artefactos con los componentes y responsabilidades de la solución.                                                                                                                                   | Durante el AV1 fortalecí mi capacidad para comunicar por escrito decisiones técnicas y arquitectónicas, procurando que los diagramas y sus explicaciones mantengan consistencia entre sí y permitan comprender de manera progresiva la estructura propuesta para EcoTrack.                                                                                                                                                      |
+| Lacuta Lima, Alex Rodrigo      | TB1     | Completé y corregí el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack, y actualicé los Class Diagrams de Frontend y Backend junto con el Database Design del Capítulo IV. Durante el Sprint 2 implementé el aspecto Carbon Footprint Calculation y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                                                                       | Durante el TB1 fortalecí mi capacidad para documentar por escrito decisiones técnicas de manera consistente, manteniendo la coherencia entre los artefactos de arquitectura y la implementación realizada en la Frontend Web Application.                                                                                                                                                                                       |
+| Espinoza Flores, Aaron André   | AV1     | Participé en la elaboración del Capítulo II del Project Report, documentando el análisis competitivo, las estrategias frente a competidores, el diseño y registro de entrevistas, el análisis de los resultados y los artefactos de Needfinding. Asimismo, desarrollé User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language.                                                                                                                                                       | Durante el AV1 mejoré mi capacidad para organizar y comunicar por escrito información obtenida de investigación y entrevistas, transformando los hallazgos de los usuarios en artefactos claros que permiten comprender mejor sus necesidades y relacionarlas con el desarrollo de EcoTrack.                                                                                                                                    |
+| Espinoza Flores, Aaron André   | TB1     | Corregí y actualicé artefactos del Capítulo II y del Capítulo III a partir del feedback del AV1, incluyendo los timings de las entrevistas, la trazabilidad de los User Personas, el Big Picture Event Storming y el Impact Mapping con objetivos SMART. Durante el Sprint 2 implementé el aspecto Emissions Management y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                            | Durante el TB1 mejoré mi capacidad para corregir y precisar documentación escrita, asegurando que los artefactos de investigación mantengan trazabilidad con los requisitos y funcionalidades desarrolladas en EcoTrack.                                                                                                                                                                                                        |
+| Payesa Torres, Harrison Hubert | AV1     | Participé en la documentación del diseño de la Web Application de EcoTrack, desarrollando en Figma los Mock-ups, Wireframes, User Flow Diagrams y el prototipo de las principales funcionalidades. También contribuí a documentar estos avances en el Project Report y a mantener una organización consistente de las interfaces y sus respectivos flujos.                                                                                                                                                                                            | Durante el AV1 mejoré mi capacidad para comunicar por escrito las decisiones de diseño y funcionamiento de la aplicación, organizando la información de manera clara y coherente con los diferentes artefactos desarrollados para EcoTrack.                                                                                                                                                                                     |
+| Payesa Torres, Harrison Hubert | TB1     | Corregí y amplié las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incorporando los wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1. Durante el Sprint 2 implementé el aspecto Analytics & Reports y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                                                                              | Durante el TB1 mejoré mi capacidad para documentar decisiones de diseño de manera completa y organizada, manteniendo la coherencia entre los artefactos UX/UI, las User Stories y la implementación de la Frontend Web Application.                                                                                                                                                                                             |
+| Tello Murga, Javier Oswaldo    | AV1     | Participé en la redacción, revisión e integración de diferentes secciones del Project Report, incluyendo Student Outcome, Capítulo I, Style Guidelines, Information Architecture y el Capítulo V. Asimismo, documenté el proceso de implementación del Sprint 1, las herramientas y convenciones de desarrollo, los commits realizados, las evidencias de ejecución, colaboración y despliegue del Landing Page. También realicé revisiones para mantener consistencia entre el alcance de EcoTrack, las User Stories, el diseño y la implementación. | Durante el AV1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión de manera estructurada. La elaboración e integración de diferentes capítulos me permitió mejorar la coherencia entre los artefactos del proyecto y presentar evidencias claras sobre el proceso seguido por el equipo desde la definición del producto hasta la implementación y despliegue de su primera versión. |
+| Tello Murga, Javier Oswaldo    | TB1     | Corregí el Capítulo I, actualicé las User Stories y Epics, reconstruí y prioricé el Product Backlog, actualicé el enlace público de Trello y corregí las referencias del repositorio Frontend y los perfiles del equipo. También documenté el Sprint 2, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog y evidencias de deployment, y mantuve actualizado el Project Report correspondiente al TB1.                                                                                                                      | Durante el TB1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión, manteniendo la documentación del proyecto alineada con los cambios realizados en el Product Backlog, el alcance funcional y la implementación del Sprint 2.                                                                                                                                                       |
 
 ---
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -304,13 +339,13 @@ EcoTrack permitirá registrar diferentes fuentes de emisiones, calcular la huell
 
 Además, la plataforma busca facilitar el trabajo relacionado con estándares como el **GHG Protocol**, **ISO 14064** y otras metodologías vinculadas con la medición de emisiones de gases de efecto invernadero.
 
-| Característica | Descripción |
-|---|---|
-| **Nombre de la Startup** | Horizon |
-| **Nombre del producto** | EcoTrack |
-| **Tipo de solución** | Plataforma web B2B de gestión ambiental |
-| **Sector** | Tecnología y sostenibilidad |
-| **Modelo de negocio** | Software as a Service (SaaS) |
+| Característica           | Descripción                             |
+| ------------------------ | --------------------------------------- |
+| **Nombre de la Startup** | Horizon                                 |
+| **Nombre del producto**  | EcoTrack                                |
+| **Tipo de solución**     | Plataforma web B2B de gestión ambiental |
+| **Sector**               | Tecnología y sostenibilidad             |
+| **Modelo de negocio**    | Software as a Service (SaaS)            |
 
 ---
 
@@ -499,6 +534,7 @@ EcoTrack busca cubrir esta necesidad mediante una plataforma web B2B que permita
 Nuestro enfoque inicial estará dirigido a empresas exportadoras y a corporaciones y medianas empresas industriales que necesiten mejorar la forma en que registran, consolidan, analizan y comunican su información ambiental.
 
 Sabremos que la propuesta está generando resultados cuando, durante las validaciones con representantes de los segmentos objetivo, al menos el 80 % de los participantes pueda completar sin asistencia crítica el flujo principal de registrar información de emisiones, obtener un resultado de huella de carbono y consultar sus principales indicadores; y cuando al menos el 70 % pueda generar o localizar un reporte ambiental correspondiente a un periodo específico en un máximo de cinco minutos.
+
 #### 1.2.2.2. Lean UX Assumptions
 
 ##### Business Assumptions
@@ -516,6 +552,7 @@ Sabremos que la propuesta está generando resultados cuando, durante las validac
 - Creemos que la automatización del cálculo de huella de carbono puede reducir en al menos un 30 % el tiempo requerido para obtener resultados de emisiones a partir de los datos de actividad registrados.
 - Creemos que los dashboards, indicadores y herramientas de seguimiento pueden lograr que al menos el 60 % de las organizaciones activas consulten nuevamente su información ambiental dentro de un periodo de 30 días.
 - Creemos que la generación de reportes desde EcoTrack puede reducir en al menos un 40 % el tiempo requerido para preparar un reporte ambiental correspondiente a un periodo determinado, en comparación con la preparación manual mediante información distribuida.
+
 ##### User Assumptions
 
 - Creemos que los principales usuarios serán responsables de sostenibilidad, analistas ambientales, gerentes de operaciones y personal administrativo.
@@ -686,7 +723,7 @@ El objetivo del análisis competitivo es responder: **¿Cómo puede EcoTrack ofr
 | Ventaja competitiva               | Enfoque en empresas exportadoras e industriales de Latinoamérica, precios en soles, planes escalables y gestión centralizada por sedes.               | Reconocimiento internacional y enfoque en reducción de carbono.          | Enfoque estratégico en sostenibilidad corporativa y cumplimiento ESG.       | Solución robusta para organizaciones con alta exigencia de reporte climático.     |
 | ¿Qué valor ofrece a los clientes? | Centraliza información ambiental, reduce dependencia de hojas de cálculo, calcula emisiones y facilita reportes ambientales.                          | Ayuda a medir emisiones y definir acciones de reducción.                 | Permite planificar estrategias de descarbonización y monitorear resultados. | Permite gestionar inventarios de carbono y reportes con trazabilidad.             |
 | Mercado objetivo                  | Empresas exportadoras, corporaciones y medianas empresas industriales que requieren gestionar emisiones y reportes ambientales.                       | Empresas que desean medir y reducir su huella de carbono.                | Empresas medianas y grandes con objetivos ESG.                              | Corporaciones con necesidades complejas de contabilidad de carbono.               |
-| Estrategias de marketing          | Mensaje centrado en simplicidad, accesibilidad, centralización y soporte para auditorías o requerimientos ambientales.                                | Posicionamiento como solución climática integral.                        | Comunicación enfocada en cumplimiento ESG y descarbonización.               | Comunicación orientada a precisión, cumplimiento y gestión climática empresarial. |
+| Estrategias de marketing          | Mensaje centrado en simplicidad, accesibilidad, centralización y soporte para auditorías o requisitos ambientales.                                    | Posicionamiento como solución climática integral.                        | Comunicación enfocada en cumplimiento ESG y descarbonización.               | Comunicación orientada a precisión, cumplimiento y gestión climática empresarial. |
 | Productos & Servicios             | Registro de emisiones, cálculo de huella de carbono, dashboards, reportes, metas ambientales, planes de reducción, importación CSV y API empresarial. | Medición de carbono, análisis de datos y recomendaciones de reducción.   | Gestión de emisiones, objetivos de reducción y reportes ESG.                | Contabilidad de carbono, reportes climáticos y análisis de emisiones.             |
 | Precios & Costos                  | Plan Básico S/ 199, Plan Pro S/ 499 y Plan Empresa desde S/ 1,200 mensuales.                                                                          | Costos variables según empresa y alcance del servicio.                   | Costos variables según tamaño y necesidades de la organización.             | Costos orientados a empresas con necesidades avanzadas.                           |
 | Canales de distribución           | Landing Page, Web Application, ventas B2B, contacto comercial y suscripción SaaS.                                                                     | Sitio web, demostraciones comerciales y ventas B2B.                      | Sitio web, ventas consultivas y contacto empresarial.                       | Sitio web, ventas empresariales y demostraciones comerciales.                     |
@@ -717,7 +754,6 @@ Para validar los problemas, necesidades y supuestos del proceso Lean UX plantead
 ### 2.2.1. Diseno de entrevistas
 
 - **Segmento Objetivo 1: Empresas exportadoras**
-
   1. Podria describir el giro de negocio de la empresa y su rol dentro de la organizacion?
   2. Que importancia tiene actualmente la sostenibilidad ambiental en las decisiones comerciales de la empresa?
   3. Que informacion ambiental solicitan los clientes, certificadoras o socios comerciales?
@@ -735,7 +771,6 @@ Para validar los problemas, necesidades y supuestos del proceso Lean UX plantead
   15. Que funciones deberia incluir EcoTrack para aportar valor real a una empresa exportadora?
 
 - **Segmento Objetivo 2: Corporaciones y medianas empresas industriales**
-
   1. Podria describir las operaciones de la empresa y su rol dentro de ellas?
   2. Que importancia tiene la gestion ambiental para la eficiencia operativa y la toma de decisiones?
   3. Cuales son las principales fuentes de consumo o emisiones dentro de las operaciones?
@@ -757,7 +792,6 @@ Para validar los problemas, necesidades y supuestos del proceso Lean UX plantead
 Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stream y SharePoint. Cada registro contiene los datos de la persona entrevistada, una captura de pantalla, el enlace del video, el rango de tiempo de la entrevista, su duracion y un resumen de los hallazgos principales.
 
 - **Segmento 1: Empresas exportadoras**
-
   - **Entrevista E01**
     - **Nombres:** Manuel Alejandro
     - **Apellidos:** Marina Vazquez
@@ -807,7 +841,6 @@ Las entrevistas fueron registradas en video y publicadas mediante Microsoft Stre
     - **Resumen:** Azul describio un entorno textil donde se necesita ordenar informacion sobre energia, agua, residuos textiles, materiales y productos quimicos para responder a solicitudes internas, clientes o auditorias. Los registros se manejan mediante archivos y hojas de calculo, lo que ocasiona duplicidad, versiones diferentes y demora al consolidar la informacion. Valora una solucion sencilla que permita centralizar evidencias, calcular indicadores y generar reportes ambientales por periodo.
 
 - **Segmento 2: Corporaciones y medianas empresas industriales**
-
   - **Entrevista E04**
     - **Nombres:** Renzo
     - **Apellidos:** Santos
@@ -865,39 +898,33 @@ El analisis de las seis entrevistas realizadas a los dos segmentos objetivo perm
   El analisis de las tres entrevistas del segmento exportador revela los siguientes patrones:
 
   **Caracteristicas demograficas (objetivas):**
-
   - El 100% de las personas entrevistadas tiene entre 23 y 28 anos.
   - El 100% reside en Lima Metropolitana: San Martin de Porres, Ate y La Victoria.
   - El 33.3% pertenece al sector transporte, el 33.3% a agroindustria y el 33.3% al sector textil.
   - El 66.7% desempena funciones directamente relacionadas con calidad, sostenibilidad o preparacion de evidencias ambientales; el 33.3% aporta informacion desde operaciones de transporte.
 
   **Caracteristicas de personalidad y necesidades (subjetivas):**
-
   - El 100% reconoce que organizar la informacion ambiental aporta valor para la empresa.
   - El 100% muestra interes en centralizar registros y reducir el trabajo manual.
   - El 66.7% enfrenta solicitudes directas de clientes, certificadoras o auditorias; el 33.3% se concentra principalmente en reportes operativos internos.
   - El 100% valora una solucion sencilla que genere calculos, indicadores o reportes por periodo.
 
   **Habilidades y tecnologia:**
-
   - El 100% utiliza Excel o archivos digitales para registrar o consolidar informacion.
   - El 66.7% complementa los registros digitales con cuadernos, fotografias, recibos u otras evidencias fisicas.
   - El 100% reporta dificultades relacionadas con versiones distintas, perdida de datos, dependencia de otras personas o demora en la consolidacion.
   - El 33.3% solicito expresamente carga de informacion desde el celular, mientras que el resto priorizo simplicidad y reportes centralizados.
 
   **Canales de interaccion:**
-
   - El 100% depende de intercambio de informacion entre personas o areas para completar los registros.
   - El 66.7% utiliza reportes o evidencias para comunicarse con actores externos, como clientes, socios comerciales o certificadoras.
   - El 100% considera los reportes digitales un canal importante para comunicar resultados ambientales.
 
   **Dispositivos de preferencia:**
-
   - El 33.3% menciono de forma explicita la necesidad de utilizar el celular para cargar datos y evidencias.
   - No se obtuvo evidencia suficiente para asignar porcentajes confiables sobre marcas, sistemas operativos o preferencia entre computadora y smartphone en las otras entrevistas.
 
   **Marcas e influencias:**
-
   - Microsoft Excel es la herramienta mencionada por el 100% del segmento.
   - El 33.3% esta influido directamente por los requisitos de la certificacion de Buenas Practicas Agricolas.
   - El 66.7% esta condicionado por solicitudes de clientes, auditorias o mercados vinculados con exportacion.
@@ -911,41 +938,35 @@ El analisis de las seis entrevistas realizadas a los dos segmentos objetivo perm
   El analisis de las tres entrevistas del segmento industrial revela los siguientes patrones:
 
   **Caracteristicas demograficas (objetivas):**
-
   - El 100% de las personas entrevistadas tiene entre 26 y 49 anos.
   - El 100% reside en Lima Metropolitana: Pueblo Libre, Los Olivos y Comas.
   - El 33.3% trabaja en produccion industrial, el 33.3% en procesamiento de alimentos y el 33.3% en un taller automotriz.
   - El 100% desempena funciones relacionadas con operaciones, supervision, control de registros o gerencia.
 
   **Caracteristicas de personalidad y necesidades (subjetivas):**
-
   - El 100% relaciona la gestion ambiental con eficiencia operativa, control de costos o mejores decisiones.
   - El 100% considera valioso centralizar dashboards, reportes e historial de resultados.
   - El 100% manifiesta frustracion por datos dispersos, incompletos o dificiles de comparar.
   - El 100% muestra interes en realizar seguimiento de consumos, residuos, emisiones o metas de reduccion.
 
   **Habilidades y tecnologia:**
-
   - El 100% utiliza Excel, documentos, facturas, correos, mensajes o anotaciones manuales para administrar informacion.
   - El 66.7% recibe informacion digital desde diferentes areas mediante archivos o canales de comunicacion; el 33.3% concentra la revision en gerencia, compras y personal operativo.
   - El 100% tiene dificultades para comparar periodos, areas, plantas, procesos o trabajos con un criterio uniforme.
   - El 100% valora dashboards, reportes e historial como herramientas para disminuir el tiempo de consolidacion.
 
   **Canales de interaccion:**
-
   - El 100% depende de informacion generada por mas de un actor o area operativa.
   - El 66.7% utiliza correo, archivos compartidos o mensajeria para recibir datos; el 33.3% depende principalmente de facturas, compras y coordinacion directa.
   - El 100% necesita presentar resultados a gerencia o utilizarlos para decisiones internas.
 
   **Dispositivos de preferencia:**
-
   - Las entrevistas confirman el uso de herramientas digitales y archivos, pero no proporcionan evidencia suficiente para determinar porcentajes confiables sobre dispositivos, marcas o sistemas operativos preferidos.
   - Por esta razon, EcoTrack debe mantener un diseno web responsivo y validar posteriormente el uso real desde computadora, tablet y smartphone.
 
   **Marcas e influencias:**
-
   - Microsoft Excel es la herramienta comun en el 100% de los casos, aunque se combina con documentos, facturas, correo o WhatsApp.
-  - El 100% esta influido por requerimientos de gerencia, eficiencia operativa y control de costos.
+  - El 100% esta influido por requisitos de gerencia, eficiencia operativa y control de costos.
   - No se identificaron marcas de software ambiental especializadas utilizadas actualmente por este segmento.
 
   **Conclusiones del analisis:**
@@ -953,11 +974,11 @@ El analisis de las seis entrevistas realizadas a los dos segmentos objetivo perm
   Las empresas industriales requieren una fuente unica de informacion para comparar sedes, areas, procesos y periodos. EcoTrack debe estandarizar los registros, validar datos, automatizar calculos, presentar indicadores gerenciales y mantener historial. Tambien debe permitir metas con responsables y seguimiento, evitando que la adopcion de la plataforma incremente la carga operativa de los equipos.
 
 - **Conclusiones generales de las entrevistas**
-
   - El 100% de las seis personas entrevistadas depende de hojas de calculo, archivos o registros manuales para gestionar informacion ambiental u operativa.
   - El 100% identifica dificultades de consolidacion, comparacion, respaldo o trazabilidad.
   - El 100% considera valioso contar con dashboards, reportes, calculos o historial dentro de una sola plataforma.
   - Los resultados sustentan las funcionalidades centrales de EcoTrack: registro de fuentes y datos de actividad, calculo de huella de carbono, dashboard, reportes, evidencias, historial, metas de reduccion e importacion de informacion.
+
 ## 2.3. Needfinding.
 
 A continuacion se presentan los User Personas representativos de los segmentos objetivo definidos a partir de la sintesis de hallazgos de las entrevistas y el analisis cualitativo-estadistico realizado para EcoTrack.
@@ -980,16 +1001,16 @@ Las fichas conservan el formato visual de User Persona (Goals, Quote, Demographi
 
 La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que realiza cada tipo de usuario frente a la solucion. Se analizan segun su frecuencia de ejecucion y la importancia estrategica que representan para cumplir las metas descritas en los User Personas.
 
-| Tarea | Responsable de sostenibilidad de empresa exportadora (Frecuencia / Importancia) | Responsable de operaciones industriales (Frecuencia / Importancia) | Gerencia o auditoria (Frecuencia / Importancia) |
-| :--- | :---: | :---: | :---: |
-| Registrar consumos de energia, combustible, agua, transporte y residuos | Alta / Alta | Alta / Alta | Baja / Media |
-| Consolidar informacion ambiental proveniente de diferentes areas o archivos | Alta / Alta | Alta / Alta | Baja / Media |
-| Calcular la huella de carbono por periodo, alcance o fuente de emision | Media / Alta | Alta / Alta | Baja / Alta |
-| Revisar dashboards con indicadores de consumo, emisiones y tendencias | Media / Alta | Alta / Alta | Media / Alta |
-| Comparar resultados entre periodos, sedes, plantas, areas o procesos | Media / Media | Alta / Alta | Media / Alta |
-| Generar reportes ambientales para clientes, certificaciones, auditorias o gerencia | Alta / Alta | Media / Alta | Alta / Alta |
-| Definir metas de reduccion y revisar el avance de las acciones ambientales | Media / Alta | Alta / Alta | Media / Alta |
-| Verificar evidencias, historial y trazabilidad de los registros ambientales | Alta / Alta | Media / Alta | Alta / Alta |
+| Tarea                                                                              | Responsable de sostenibilidad de empresa exportadora (Frecuencia / Importancia) | Responsable de operaciones industriales (Frecuencia / Importancia) | Gerencia o auditoria (Frecuencia / Importancia) |
+| :--------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------: | :----------------------------------------------------------------: | :---------------------------------------------: |
+| Registrar consumos de energia, combustible, agua, transporte y residuos            |                                   Alta / Alta                                   |                            Alta / Alta                             |                  Baja / Media                   |
+| Consolidar informacion ambiental proveniente de diferentes areas o archivos        |                                   Alta / Alta                                   |                            Alta / Alta                             |                  Baja / Media                   |
+| Calcular la huella de carbono por periodo, alcance o fuente de emision             |                                  Media / Alta                                   |                            Alta / Alta                             |                   Baja / Alta                   |
+| Revisar dashboards con indicadores de consumo, emisiones y tendencias              |                                  Media / Alta                                   |                            Alta / Alta                             |                  Media / Alta                   |
+| Comparar resultados entre periodos, sedes, plantas, areas o procesos               |                                  Media / Media                                  |                            Alta / Alta                             |                  Media / Alta                   |
+| Generar reportes ambientales para clientes, certificaciones, auditorias o gerencia |                                   Alta / Alta                                   |                            Media / Alta                            |                   Alta / Alta                   |
+| Definir metas de reduccion y revisar el avance de las acciones ambientales         |                                  Media / Alta                                   |                            Alta / Alta                             |                  Media / Alta                   |
+| Verificar evidencias, historial y trazabilidad de los registros ambientales        |                                   Alta / Alta                                   |                            Media / Alta                            |                   Alta / Alta                   |
 
 - **Hallazgos clave de la matriz:**
 
@@ -998,6 +1019,7 @@ La User Task Matrix (Matriz de Tareas del Usuario) mapea las tareas clave que re
 - **Responsables de operaciones industriales:** Se concentran en centralizar datos provenientes de areas y procesos, comparar resultados, revisar indicadores y realizar seguimiento de consumos, emisiones y metas de reduccion.
 
 - **Gerencia y auditoria:** Su participacion es menos frecuente en el registro operativo, pero tiene alta importancia en la revision de dashboards, reportes, evidencias historicas y resultados que respaldan decisiones o verificaciones.
+
 ### 2.3.3. User Journey Mapping.
 
 A continuacion, se presentan los User Journey Maps de ambos segmentos. Cada mapa mantiene cinco etapas y muestra metas del usuario, proceso y canales, actividades, problemas, evolucion de la experiencia e ideas u oportunidades para EcoTrack.
@@ -1027,6 +1049,7 @@ This map represents a composite persona based on interviews E01, E02, and E03. I
 This map represents a composite persona based on interviews E04, E05, and E06. It focuses on operational data consolidation, consumption monitoring, management reporting, and reduction goals.
 
 ![Empathy Map - Industrial Company](assets/chapter-02/empathy-map-empresa-industrial.png)
+
 ## 2.4. Big Picture Event Storming
 
 El equipo llevo a cabo una sesion colaborativa de **Big Picture Event Storming** utilizando la herramienta Miro, con el objetivo de explorar a alto nivel el dominio de gestion ambiental empresarial de EcoTrack. A diferencia de un flujo tecnico o de una secuencia limitada al registro de usuarios, el Big Picture Event Storming se enfoca en capturar el flujo de negocio completo que ocurre en una organizacion: desde la configuracion de la empresa y sus sedes hasta el registro de datos de actividad, el calculo de la huella de carbono, la definicion de metas de reduccion y la generacion de reportes ambientales.
@@ -1096,102 +1119,103 @@ El Ubiquitous Language establece un vocabulario comun para que el equipo Horizon
 
 - **Identity & Access Management**
 
-| Term (English) | Term (Spanish) | Definition (in Spanish) |
-|---|---|---|
-| User | Usuario | Persona que interactua con EcoTrack de acuerdo con los permisos asignados dentro de una organizacion. |
-| Organization Administrator | Administrador de organizacion | Usuario responsable de configurar la empresa, invitar integrantes y administrar roles y permisos. |
-| Register User | Registrar usuario | Accion de crear una cuenta nueva para acceder a EcoTrack. |
-| Login | Iniciar sesion | Proceso de autenticacion mediante credenciales validas para acceder a la plataforma. |
-| Credentials | Credenciales | Conjunto de datos, como correo y contrasena, utilizados para verificar la identidad de un usuario. |
-| User Invited | Usuario invitado | Evento que indica que una persona fue invitada a formar parte de una organizacion. |
-| User Authenticated | Usuario autenticado | Evento que confirma que las credenciales fueron verificadas y se inicio una sesion valida. |
+| Term (English)             | Term (Spanish)                | Definition (in Spanish)                                                                               |
+| -------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------- |
+| User                       | Usuario                       | Persona que interactua con EcoTrack de acuerdo con los permisos asignados dentro de una organizacion. |
+| Organization Administrator | Administrador de organizacion | Usuario responsable de configurar la empresa, invitar integrantes y administrar roles y permisos.     |
+| Register User              | Registrar usuario             | Accion de crear una cuenta nueva para acceder a EcoTrack.                                             |
+| Login                      | Iniciar sesion                | Proceso de autenticacion mediante credenciales validas para acceder a la plataforma.                  |
+| Credentials                | Credenciales                  | Conjunto de datos, como correo y contrasena, utilizados para verificar la identidad de un usuario.    |
+| User Invited               | Usuario invitado              | Evento que indica que una persona fue invitada a formar parte de una organizacion.                    |
+| User Authenticated         | Usuario autenticado           | Evento que confirma que las credenciales fueron verificadas y se inicio una sesion valida.            |
 
 - **Organization Management**
 
-| Term (English) | Term (Spanish) | Definition (in Spanish) |
-|---|---|---|
-| Organization | Organizacion | Empresa registrada en EcoTrack que centraliza su informacion ambiental, usuarios, sedes y reportes. |
-| Facility | Sede o planta | Ubicacion fisica donde se realizan operaciones y se registran consumos, fuentes y emisiones. |
-| Business Unit | Unidad de negocio | Division organizacional utilizada para agrupar areas, procesos u operaciones dentro de una empresa. |
-| Register Organization | Registrar organizacion | Accion mediante la cual un administrador incorpora los datos generales de una empresa. |
-| Register Facility | Registrar sede | Accion de agregar una sede, planta, almacen o centro operativo a una organizacion. |
-| Organization Registered | Organizacion registrada | Evento que confirma la creacion de una organizacion dentro de EcoTrack. |
-| Facility Registered | Sede registrada | Evento que confirma que una sede o planta fue asociada correctamente con una organizacion. |
+| Term (English)          | Term (Spanish)          | Definition (in Spanish)                                                                             |
+| ----------------------- | ----------------------- | --------------------------------------------------------------------------------------------------- |
+| Organization            | Organizacion            | Empresa registrada en EcoTrack que centraliza su informacion ambiental, usuarios, sedes y reportes. |
+| Facility                | Sede o planta           | Ubicacion fisica donde se realizan operaciones y se registran consumos, fuentes y emisiones.        |
+| Business Unit           | Unidad de negocio       | Division organizacional utilizada para agrupar areas, procesos u operaciones dentro de una empresa. |
+| Register Organization   | Registrar organizacion  | Accion mediante la cual un administrador incorpora los datos generales de una empresa.              |
+| Register Facility       | Registrar sede          | Accion de agregar una sede, planta, almacen o centro operativo a una organizacion.                  |
+| Organization Registered | Organizacion registrada | Evento que confirma la creacion de una organizacion dentro de EcoTrack.                             |
+| Facility Registered     | Sede registrada         | Evento que confirma que una sede o planta fue asociada correctamente con una organizacion.          |
 
 - **Emissions Management**
 
-| Term (English) | Term (Spanish) | Definition (in Spanish) |
-|---|---|---|
-| Emission Source | Fuente de emision | Actividad, equipo, proceso o recurso que genera emisiones de gases de efecto invernadero. |
-| Activity Data | Dato de actividad | Medida operativa utilizada en un calculo, como kWh, litros de combustible, kilometros o toneladas. |
-| Scope 1 | Alcance 1 | Emisiones directas provenientes de fuentes propiedad de la empresa o controladas por ella. |
-| Scope 2 | Alcance 2 | Emisiones indirectas asociadas con la electricidad o energia adquirida por la empresa. |
-| Scope 3 | Alcance 3 | Otras emisiones indirectas generadas a lo largo de la cadena de valor de la organizacion. |
-| Reporting Period | Periodo de reporte | Intervalo de tiempo utilizado para registrar, calcular, comparar y reportar emisiones. |
-| Environmental Evidence | Evidencia ambiental | Archivo, recibo, fotografia o documento que respalda un dato de actividad registrado. |
+| Term (English)         | Term (Spanish)               | Definition (in Spanish)                                                                                |
+| ---------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Emission Source        | Fuente de emision            | Actividad, equipo, proceso o recurso que genera emisiones de gases de efecto invernadero.              |
+| Activity Data          | Dato de actividad            | Medida operativa utilizada en un calculo, como kWh, litros de combustible, kilometros o toneladas.     |
+| Scope 1                | Alcance 1                    | Emisiones directas provenientes de fuentes propiedad de la empresa o controladas por ella.             |
+| Scope 2                | Alcance 2                    | Emisiones indirectas asociadas con la electricidad o energia adquirida por la empresa.                 |
+| Scope 3                | Alcance 3                    | Otras emisiones indirectas generadas a lo largo de la cadena de valor de la organizacion.              |
+| Reporting Period       | Periodo de reporte           | Intervalo de tiempo utilizado para registrar, calcular, comparar y reportar emisiones.                 |
+| Environmental Evidence | Evidencia ambiental          | Archivo, recibo, fotografia o documento que respalda un dato de actividad registrado.                  |
 | Activity Data Recorded | Dato de actividad registrado | Evento que indica que un consumo o actividad fue almacenado para un periodo y una fuente determinados. |
 
 - **Carbon Footprint Calculation**
 
-| Term (English) | Term (Spanish) | Definition (in Spanish) |
-|---|---|---|
-| Emission Factor | Factor de emision | Coeficiente que convierte un dato de actividad en una cantidad estimada de emisiones. |
-| Carbon Footprint | Huella de carbono | Total de emisiones de gases de efecto invernadero generadas por una organizacion durante un periodo. |
-| Carbon Dioxide Equivalent (CO2e) | Dioxido de carbono equivalente (CO2e) | Unidad comun que expresa el efecto climatico de diferentes gases de efecto invernadero. |
-| Calculate Carbon Footprint | Calcular huella de carbono | Accion que aplica factores de emision a los datos de actividad validados. |
-| Carbon Footprint Calculated | Huella de carbono calculada | Evento que confirma la obtencion de resultados de emisiones por alcance, fuente, sede y periodo. |
-| Emissions History | Historial de emisiones | Registro cronologico de los calculos realizados y sus resultados anteriores. |
-| Emission Factor Selected | Factor de emision seleccionado | Evento que indica que se eligio el factor aplicable para procesar un dato de actividad. |
+| Term (English)                   | Term (Spanish)                        | Definition (in Spanish)                                                                              |
+| -------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Emission Factor                  | Factor de emision                     | Coeficiente que convierte un dato de actividad en una cantidad estimada de emisiones.                |
+| Carbon Footprint                 | Huella de carbono                     | Total de emisiones de gases de efecto invernadero generadas por una organizacion durante un periodo. |
+| Carbon Dioxide Equivalent (CO2e) | Dioxido de carbono equivalente (CO2e) | Unidad comun que expresa el efecto climatico de diferentes gases de efecto invernadero.              |
+| Calculate Carbon Footprint       | Calcular huella de carbono            | Accion que aplica factores de emision a los datos de actividad validados.                            |
+| Carbon Footprint Calculated      | Huella de carbono calculada           | Evento que confirma la obtencion de resultados de emisiones por alcance, fuente, sede y periodo.     |
+| Emissions History                | Historial de emisiones                | Registro cronologico de los calculos realizados y sus resultados anteriores.                         |
+| Emission Factor Selected         | Factor de emision seleccionado        | Evento que indica que se eligio el factor aplicable para procesar un dato de actividad.              |
 
 - **Goals & Reduction Plans**
 
-| Term (English) | Term (Spanish) | Definition (in Spanish) |
-|---|---|---|
-| Reduction Goal | Meta de reduccion | Resultado medible definido para disminuir emisiones, consumos o impactos dentro de un plazo. |
-| Reduction Plan | Plan de reduccion | Conjunto organizado de acciones, responsables y fechas para alcanzar una meta ambiental. |
-| Environmental Initiative | Iniciativa ambiental | Accion especifica ejecutada para mejorar el desempeno ambiental de la organizacion. |
-| Progress | Avance | Medida que representa el nivel de cumplimiento alcanzado respecto de una meta. |
-| Create Reduction Goal | Crear meta de reduccion | Accion de establecer un valor objetivo, una linea base y una fecha limite. |
-| Reduction Goal Created | Meta de reduccion creada | Evento que confirma que una meta ambiental fue registrada correctamente. |
-| Progress Reviewed | Avance revisado | Evento que indica que un usuario evaluo resultados e iniciativas asociados con una meta. |
+| Term (English)           | Term (Spanish)           | Definition (in Spanish)                                                                      |
+| ------------------------ | ------------------------ | -------------------------------------------------------------------------------------------- |
+| Reduction Goal           | Meta de reduccion        | Resultado medible definido para disminuir emisiones, consumos o impactos dentro de un plazo. |
+| Reduction Plan           | Plan de reduccion        | Conjunto organizado de acciones, responsables y fechas para alcanzar una meta ambiental.     |
+| Environmental Initiative | Iniciativa ambiental     | Accion especifica ejecutada para mejorar el desempeno ambiental de la organizacion.          |
+| Progress                 | Avance                   | Medida que representa el nivel de cumplimiento alcanzado respecto de una meta.               |
+| Create Reduction Goal    | Crear meta de reduccion  | Accion de establecer un valor objetivo, una linea base y una fecha limite.                   |
+| Reduction Goal Created   | Meta de reduccion creada | Evento que confirma que una meta ambiental fue registrada correctamente.                     |
+| Progress Reviewed        | Avance revisado          | Evento que indica que un usuario evaluo resultados e iniciativas asociados con una meta.     |
 
 - **Analytics & Reports**
 
-| Term (English) | Term (Spanish) | Definition (in Spanish) |
-|---|---|---|
-| Dashboard | Panel de indicadores | Vista que resume consumos, emisiones, tendencias, comparaciones y avance de metas. |
-| Environmental Indicator | Indicador ambiental | Metrica empleada para evaluar el desempeno ambiental de una organizacion. |
-| Environmental Report | Reporte ambiental | Documento que consolida resultados, indicadores, periodos y evidencias ambientales. |
-| Audit Evidence | Evidencia de auditoria | Registro verificable que sustenta un dato, calculo o resultado ante una revision externa. |
-| Generate Environmental Report | Generar reporte ambiental | Accion de consolidar resultados aprobados en un documento descargable. |
-| Environmental Dashboard Updated | Dashboard ambiental actualizado | Evento que confirma que los indicadores reflejan los calculos y datos mas recientes. |
-| Environmental Report Generated | Reporte ambiental generado | Evento que confirma que el reporte fue creado y se encuentra disponible para consulta o descarga. |
+| Term (English)                  | Term (Spanish)                  | Definition (in Spanish)                                                                           |
+| ------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Dashboard                       | Panel de indicadores            | Vista que resume consumos, emisiones, tendencias, comparaciones y avance de metas.                |
+| Environmental Indicator         | Indicador ambiental             | Metrica empleada para evaluar el desempeno ambiental de una organizacion.                         |
+| Environmental Report            | Reporte ambiental               | Documento que consolida resultados, indicadores, periodos y evidencias ambientales.               |
+| Audit Evidence                  | Evidencia de auditoria          | Registro verificable que sustenta un dato, calculo o resultado ante una revision externa.         |
+| Generate Environmental Report   | Generar reporte ambiental       | Accion de consolidar resultados aprobados en un documento descargable.                            |
+| Environmental Dashboard Updated | Dashboard ambiental actualizado | Evento que confirma que los indicadores reflejan los calculos y datos mas recientes.              |
+| Environmental Report Generated  | Reporte ambiental generado      | Evento que confirma que el reporte fue creado y se encuentra disponible para consulta o descarga. |
 
 - **Data Integration**
 
-| Term (English) | Term (Spanish) | Definition (in Spanish) |
-|---|---|---|
-| CSV Import | Importacion CSV | Proceso de carga masiva de datos ambientales mediante un archivo con estructura definida. |
-| EcoTrack API | API de EcoTrack | Interfaz que permite recibir o consultar informacion desde sistemas empresariales externos. |
-| External System | Sistema externo | Aplicacion, ERP u otra fuente que intercambia informacion con EcoTrack. |
-| Import Activity Data | Importar datos de actividad | Accion de cargar multiples registros ambientales desde un archivo o una integracion. |
-| CSV Data Imported | Datos CSV importados | Evento que confirma que las filas validas de un archivo fueron incorporadas a la plataforma. |
-| External System Data Received | Datos de sistema externo recibidos | Evento que indica que EcoTrack recibio informacion mediante una integracion autorizada. |
-| Validation Error | Error de validacion | Resultado que identifica un dato incompleto, inconsistente o incompatible con las reglas del dominio. |
+| Term (English)                | Term (Spanish)                     | Definition (in Spanish)                                                                               |
+| ----------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| CSV Import                    | Importacion CSV                    | Proceso de carga masiva de datos ambientales mediante un archivo con estructura definida.             |
+| EcoTrack API                  | API de EcoTrack                    | Interfaz que permite recibir o consultar informacion desde sistemas empresariales externos.           |
+| External System               | Sistema externo                    | Aplicacion, ERP u otra fuente que intercambia informacion con EcoTrack.                               |
+| Import Activity Data          | Importar datos de actividad        | Accion de cargar multiples registros ambientales desde un archivo o una integracion.                  |
+| CSV Data Imported             | Datos CSV importados               | Evento que confirma que las filas validas de un archivo fueron incorporadas a la plataforma.          |
+| External System Data Received | Datos de sistema externo recibidos | Evento que indica que EcoTrack recibio informacion mediante una integracion autorizada.               |
+| Validation Error              | Error de validacion                | Resultado que identifica un dato incompleto, inconsistente o incompatible con las reglas del dominio. |
 
 - **Plans & Subscriptions**
 
-| Term (English) | Term (Spanish) | Definition (in Spanish) |
-|---|---|---|
-| Subscription | Suscripcion | Relacion activa entre una organizacion y el plan de servicio contratado en EcoTrack. |
-| Basic Plan | Plan Basico | Plan inicial con funcionalidades esenciales para registrar emisiones y consultar resultados. |
-| Pro Plan | Plan Pro | Plan con capacidades ampliadas de analitica, reportes, metas e importacion de datos. |
-| Enterprise Plan | Plan Empresa | Plan orientado a organizaciones con multiples sedes, integraciones y necesidades avanzadas. |
-| Subscription Started | Suscripcion iniciada | Evento que indica que una organizacion comenzo a utilizar un plan determinado. |
-| Plan Changed | Plan modificado | Evento que confirma la actualizacion del plan contratado por una organizacion. |
-| Billing Period | Periodo de facturacion | Intervalo utilizado para calcular y gestionar el cobro recurrente de una suscripcion. |
+| Term (English)       | Term (Spanish)         | Definition (in Spanish)                                                                      |
+| -------------------- | ---------------------- | -------------------------------------------------------------------------------------------- |
+| Subscription         | Suscripcion            | Relacion activa entre una organizacion y el plan de servicio contratado en EcoTrack.         |
+| Basic Plan           | Plan Basico            | Plan inicial con funcionalidades esenciales para registrar emisiones y consultar resultados. |
+| Pro Plan             | Plan Pro               | Plan con capacidades ampliadas de analitica, reportes, metas e importacion de datos.         |
+| Enterprise Plan      | Plan Empresa           | Plan orientado a organizaciones con multiples sedes, integraciones y necesidades avanzadas.  |
+| Subscription Started | Suscripcion iniciada   | Evento que indica que una organizacion comenzo a utilizar un plan determinado.               |
+| Plan Changed         | Plan modificado        | Evento que confirma la actualizacion del plan contratado por una organizacion.               |
+| Billing Period       | Periodo de facturacion | Intervalo utilizado para calcular y gestionar el cobro recurrente de una suscripcion.        |
 
 ---
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
@@ -1199,7 +1223,7 @@ El Ubiquitous Language establece un vocabulario comun para que el equipo Horizon
 En esta sección se presentan las User Stories y Technical Stories identificadas para EcoTrack a partir de las necesidades de los segmentos objetivo y del alcance funcional definido para la solución. Cada User Story describe una necesidad desde la perspectiva de un actor e incluye criterios de aceptación redactados mediante la estructura Given-When-Then.
 
 | Epic / Story ID | Título                                                 | Descripción                                                                                                                                                                                                                            | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Relacionado con (Epic ID) |
-|-----------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| --------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
 | US-01           | Conocer EcoTrack                                       | Como visitante, quiero conocer qué es EcoTrack y cuál es su propósito, para entender cómo puede ayudar a mi empresa con la gestión ambiental.                                                                                          | **Escenario 1:** Given que el visitante accede a la información principal de EcoTrack, When consulta la descripción del producto, Then se presenta a EcoTrack como una plataforma web B2B orientada a centralizar la gestión de emisiones y huella de carbono empresarial y se describe la problemática que busca atender.<br><br>**Escenario 2:** Given que el visitante revisa la propuesta de EcoTrack, When consulta sus capacidades principales, Then se presentan como mínimo la gestión de emisiones, el cálculo de huella de carbono, las metas y planes de reducción y la analítica y generación de reportes.                                                                                     | EP-01                     |
 | US-02           | Conocer los beneficios de EcoTrack                     | Como visitante, quiero conocer los principales beneficios de EcoTrack, para evaluar si la solución puede ser útil para mi empresa.                                                                                                     | **Escenario 1:** Given que el visitante consulta los beneficios de EcoTrack, When revisa la información del producto, Then se presentan beneficios relacionados con la centralización de información ambiental, reducción del trabajo manual y consulta y análisis de resultados.<br><br>**Escenario 2:** Given que el visitante revisa la sección de beneficios, When consulta la información disponible, Then se presentan beneficios vinculados con gestión de emisiones, trazabilidad de información ambiental y generación de reportes.                                                                                                                                                               | EP-01                     |
 | US-03           | Conocer las funcionalidades principales                | Como visitante, quiero conocer las principales funcionalidades de EcoTrack, para saber qué herramientas ofrece la plataforma.                                                                                                          | **Escenario 1:** Given que el visitante consulta las funcionalidades de EcoTrack, When revisa las capacidades del producto, Then se presentan funcionalidades relacionadas con gestión organizacional, gestión de emisiones, cálculo de huella de carbono, metas y planes de reducción y analítica y reportes.<br><br>**Escenario 2:** Given que una funcionalidad es presentada en el Landing Page, When el visitante consulta su información, Then se muestra su nombre y una descripción de su propósito dentro de EcoTrack.                                                                                                                                                                            | EP-01                     |
@@ -1251,18 +1275,20 @@ En esta sección se presentan las User Stories y Technical Stories identificadas
 | TS-02           | Consultar emisiones mediante EcoTrack API              | Como Developer, quiero consultar registros de emisiones mediante la EcoTrack API, para utilizar la información ambiental de EcoTrack desde otros sistemas.                                                                             | **Escenario 1:** Given que existen emisiones registradas y el cliente posee autorización válida, When realiza una solicitud de consulta, Then la API devuelve los registros correspondientes.<br><br>**Escenario 2:** Given que el cliente no posee autorización válida, When realiza la solicitud, Then la API rechaza el acceso.                                                                                                                                                                                                                                                                                                                                                                         | EP-03                     |
 | TS-03           | Consultar resultados de huella de carbono mediante API | Como Developer, quiero consultar resultados de huella de carbono mediante la EcoTrack API, para utilizar los resultados ambientales desde sistemas externos.                                                                           | **Escenario 1:** Given que existen cálculos registrados y el cliente posee autorización válida, When solicita los resultados correspondientes, Then la API devuelve la información disponible.<br><br>**Escenario 2:** Given que no existen resultados para los criterios enviados, When se realiza la consulta, Then la API devuelve una respuesta indicando que no existen datos disponibles.                                                                                                                                                                                                                                                                                                            | EP-04                     |
 | TS-04           | Integrar servicio externo de correo electrónico        | Como Developer, quiero integrar EcoTrack con un Email Provider externo, para permitir el envío de correos relacionados con procesos como recuperación de contraseña e invitación de usuarios.                                          | **Escenario 1:** Given que EcoTrack ejecuta una operación que requiere enviar un correo y dispone de un destinatario válido, When el Backend solicita el envío al Email Provider configurado, Then el proveedor procesa la solicitud y devuelve una respuesta exitosa que puede ser gestionada por EcoTrack.<br><br>**Escenario 2:** Given que el Email Provider no se encuentra disponible o rechaza la solicitud, When EcoTrack intenta realizar el envío, Then el sistema recibe y gestiona la respuesta de error sin registrar falsamente el envío como exitoso.                                                                                                                                       | EP-02                     |
+
 ### Epics
 
 Las User Stories y Technical Stories identificadas para EcoTrack se organizan en seis Epics que representan las principales áreas funcionales del producto, la Landing Page y las capacidades de integración consideradas dentro de la solución.
 
 | Epic ID | Título                                 | Descripción                                                                                                                                                                                                                                                            |
-|---------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | EP-01   | Landing Page e información de EcoTrack | Reúne las funcionalidades destinadas a presentar EcoTrack, sus beneficios, funcionalidades, planes y medios de contacto, además de permitir la selección inicial de un plan y el acceso desde el Landing Page hacia la Web Application.                                |
 | EP-02   | Gestión de usuarios y organización     | Agrupa las funcionalidades relacionadas con registro y autenticación de usuarios, recuperación de acceso, gestión de usuarios, perfil de la organización, sedes, unidades de negocio, roles, permisos y servicios externos asociados a procesos de identidad y acceso. |
 | EP-03   | Gestión de emisiones                   | Comprende las funcionalidades relacionadas con el registro y clasificación de fuentes de emisión, registro de datos de actividad, consulta, edición, eliminación, búsqueda, filtrado e importación de información ambiental.                                           |
 | EP-04   | Cálculo de huella de carbono           | Agrupa las funcionalidades destinadas a la selección y utilización de factores de emisión, cálculo automático de la huella de carbono, consulta de resultados por alcance y periodo, historial de cálculos y consulta de resultados mediante la EcoTrack API.          |
 | EP-05   | Metas y planes de reducción            | Comprende las funcionalidades relacionadas con metas ambientales, planes de reducción, iniciativas ambientales y seguimiento del cumplimiento de objetivos.                                                                                                            |
 | EP-06   | Analítica y reportes                   | Agrupa las funcionalidades orientadas a dashboards, indicadores ambientales, comparación de emisiones entre periodos, análisis de resultados, identificación de las principales fuentes de emisión y generación de reportes ambientales.                               |
+
 ---
 
 ## 3.2. Impact Mapping
@@ -1275,8 +1301,8 @@ El Impact Mapping conecta objetivos de negocio medibles con los actores que pued
 
 **Objetivo SMART:** Lograr que, hasta el **31 de diciembre de 2026**, al menos el **80% de las organizaciones piloto** registre una organizacion, una sede, un periodo mensual y por lo menos **tres fuentes de emision** durante sus primeros **14 dias** de uso.
 
-| Actors | Impacts esperados | Deliverables relacionados |
-|---|---|---|
+| Actors                                                                           | Impacts esperados                                                                                                                              | Deliverables relacionados                                                                                                                         |
+| -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Administrador de organizacion; responsable de sostenibilidad; analista ambiental | Completar la configuracion inicial; reemplazar archivos dispersos por registros centralizados; mantener datos clasificados por alcance y sede. | Registro de organizacion y sedes; gestion de usuarios y roles; registro y clasificacion de fuentes; carga de datos de actividad; importacion CSV. |
 
 **Medicion:** porcentaje de organizaciones piloto que completan los cuatro hitos dentro de 14 dias, medido mediante eventos de uso de la plataforma.
@@ -1285,8 +1311,8 @@ El Impact Mapping conecta objetivos de negocio medibles con los actores que pued
 
 **Objetivo SMART:** Reducir, hasta el **31 de marzo de 2027**, en al menos **40%** el tiempo promedio que las organizaciones piloto emplean para consolidar datos y generar un reporte ambiental mensual, comparado con la linea base obtenida antes de usar EcoTrack.
 
-| Actors | Impacts esperados | Deliverables relacionados |
-|---|---|---|
+| Actors                                                             | Impacts esperados                                                                                                                      | Deliverables relacionados                                                                                                                     |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Responsable de sostenibilidad; supervisor de operaciones; gerencia | Registrar datos con formatos consistentes; revisar resultados sin consolidacion manual; generar reportes con trazabilidad por periodo. | Calculo automatico de huella; dashboard por alcance y periodo; historial de calculos; validacion de datos; generacion y descarga de reportes. |
 
 **Medicion:** minutos promedio desde el inicio de la consolidacion hasta la obtencion del reporte, comparando la linea base declarada con los registros de uso de EcoTrack.
@@ -1295,8 +1321,8 @@ El Impact Mapping conecta objetivos de negocio medibles con los actores que pued
 
 **Objetivo SMART:** Conseguir que, hasta el **30 de junio de 2027**, al menos el **70% de las organizaciones piloto activas** cree una meta de reduccion medible y revise su avance en el dashboard al menos **una vez al mes durante tres meses consecutivos**.
 
-| Actors | Impacts esperados | Deliverables relacionados |
-|---|---|---|
+| Actors                                                               | Impacts esperados                                                                                                           | Deliverables relacionados                                                                                                              |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Gerente de operaciones; responsable de sostenibilidad; lider de sede | Convertir resultados en metas concretas; asignar acciones e iniciativas; revisar tendencias y tomar decisiones correctivas. | Creacion de metas; planes de reduccion; iniciativas; indicadores de avance; comparacion entre periodos; notificaciones de seguimiento. |
 
 **Medicion:** porcentaje de organizaciones piloto activas con una meta vigente y tres revisiones mensuales consecutivas registradas.
@@ -1304,6 +1330,7 @@ El Impact Mapping conecta objetivos de negocio medibles con los actores que pued
 ### Relacion entre los goals
 
 Los tres objetivos forman una secuencia: primero se centralizan datos confiables, luego se reduce el esfuerzo de reporte y finalmente se usan los resultados para gestionar metas de reduccion. Esta relacion asegura que los entregables respondan a los problemas observados en las entrevistas y no se limiten a funcionalidades aisladas.
+
 ## 3.3. Product Backlog
 
 El Product Backlog de EcoTrack reúne y prioriza las User Stories y Technical Stories identificadas para el desarrollo del producto. La priorización considera principalmente el valor que cada historia aporta a los segmentos objetivo, así como las funcionalidades necesarias para construir progresivamente la propuesta de valor de EcoTrack.
@@ -1319,7 +1346,7 @@ Las estimaciones se expresan mediante Story Points utilizando los valores 1, 2, 
 **URL pública del Product Backlog:** https://trello.com/b/Hp12BlSW
 
 | Orden | User Story Id | Título                                                 | Descripción                                                                                                                                                                                                                            | Story Points |
-|------:|---------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------:|
+| ----: | ------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------: |
 |     1 | US-01         | Conocer EcoTrack                                       | Como visitante, quiero conocer qué es EcoTrack y cuál es su propósito, para entender cómo puede ayudar a mi empresa con la gestión ambiental.                                                                                          |            2 |
 |     2 | US-03         | Conocer las funcionalidades principales                | Como visitante, quiero conocer las principales funcionalidades de EcoTrack, para saber qué herramientas ofrece la plataforma.                                                                                                          |            2 |
 |     3 | US-04         | Conocer los planes disponibles                         | Como visitante, quiero conocer los planes ofrecidos por EcoTrack, para identificar cuál se adapta mejor a las necesidades de mi empresa.                                                                                               |            2 |
@@ -1373,7 +1400,6 @@ Las estimaciones se expresan mediante Story Points utilizando los valores 1, 2, 
 |    51 | US-25         | Eliminar una meta                                      | Como responsable de sostenibilidad, quiero eliminar una meta ambiental que ya no deba mantenerse activa, para conservar actualizada la planificación ambiental de la organización.                                                     |            2 |
 
 ---
-
 
 # Capítulo IV: Product Design
 
@@ -1443,8 +1469,7 @@ Los componentes web de EcoTrack se adaptan a diferentes resoluciones de pantalla
 
 En Desktop se aprovecha una distribución más amplia en columnas; en Tablet se reduce el número de columnas manteniendo separación y jerarquía; y en Mobile los componentes se organizan principalmente en una sola columna, priorizando la interacción táctil y la claridad del contenido.
 
-![EcoTrack Responsive Behavior](./assets/chapter-04/style-guidelines/web/responsive-behavior.png)
----
+## ![EcoTrack Responsive Behavior](./assets/chapter-04/style-guidelines/web/responsive-behavior.png)
 
 ## 4.2. Information Architecture
 
@@ -1493,13 +1518,13 @@ Las acciones dentro de la interfaz utilizarán labels cortos y consistentes, por
 
 La selección de estas etiquetas busca mantener simplicidad, facilitar el reconocimiento de la información y mantener una terminología coherente entre el Landing Page y la Web Application.
 
-| Contexto | Labels principales |
-| --- | --- |
-| Landing Page | Home, Features, How It Works, Emission Scopes, Standards, Plans, Contact |
-| Call To Action | Get Started, Learn More |
-| Web Application | Dashboard, Emissions, Goals, Reports, Organization, Profile |
-| Emission Categories | Scope 1, Scope 2, Scope 3 |
-| Actions | Add Emission, View Details, Generate Report, Create Goal, Edit, Delete, Save, Cancel |
+| Contexto            | Labels principales                                                                   |
+| ------------------- | ------------------------------------------------------------------------------------ |
+| Landing Page        | Home, Features, How It Works, Emission Scopes, Standards, Plans, Contact             |
+| Call To Action      | Get Started, Learn More                                                              |
+| Web Application     | Dashboard, Emissions, Goals, Reports, Organization, Profile                          |
+| Emission Categories | Scope 1, Scope 2, Scope 3                                                            |
+| Actions             | Add Emission, View Details, Generate Report, Create Goal, Edit, Delete, Save, Cancel |
 
 ### 4.2.3. SEO Tags and Meta Tags
 
@@ -1517,14 +1542,14 @@ El Landing Page de EcoTrack utilizará los siguientes SEO Tags y Meta Tags:
 <meta
   name="description"
   content="EcoTrack es una plataforma web B2B que permite a las organizaciones centralizar, analizar y gestionar información relacionada con su huella de carbono."
->
+/>
 
 <meta
   name="keywords"
   content="EcoTrack, huella de carbono, emisiones GEI, sostenibilidad empresarial, gestión ambiental, Scope 1, Scope 2, Scope 3, GHG Protocol, ISO 14064"
->
+/>
 
-<meta name="author" content="Horizon">
+<meta name="author" content="Horizon" />
 ```
 
 El Title permite identificar a EcoTrack y relacionarlo directamente con la gestión de la huella de carbono. La Description resume la propuesta principal de la plataforma, mientras que Keywords incluye términos relacionados con el dominio del producto, los tipos de emisiones considerados y los principales estándares ambientales contemplados.
@@ -1539,14 +1564,14 @@ La página principal de la Web Application permitirá visualizar indicadores rel
 <meta
   name="description"
   content="Visualiza indicadores ambientales y consulta información relacionada con las emisiones registradas por la organización en EcoTrack."
->
+/>
 
 <meta
   name="keywords"
   content="EcoTrack, dashboard ambiental, indicadores ambientales, emisiones, huella de carbono"
->
+/>
 
-<meta name="author" content="Horizon">
+<meta name="author" content="Horizon" />
 ```
 
 #### Web Application - Emissions
@@ -1559,14 +1584,14 @@ La sección Emissions estará orientada al registro y consulta de las fuentes de
 <meta
   name="description"
   content="Registra y consulta información relacionada con las fuentes de emisión de Scope 1, Scope 2 y Scope 3 de la organización."
->
+/>
 
 <meta
   name="keywords"
   content="EcoTrack, emisiones, Scope 1, Scope 2, Scope 3, gases de efecto invernadero"
->
+/>
 
-<meta name="author" content="Horizon">
+<meta name="author" content="Horizon" />
 ```
 
 #### Web Application - Goals
@@ -1579,14 +1604,14 @@ La sección Goals permitirá gestionar los objetivos ambientales y realizar segu
 <meta
   name="description"
   content="Define y realiza seguimiento de los objetivos de reducción de emisiones establecidos por la organización."
->
+/>
 
 <meta
   name="keywords"
   content="EcoTrack, metas ambientales, reducción de emisiones, sostenibilidad, objetivos ambientales"
->
+/>
 
-<meta name="author" content="Horizon">
+<meta name="author" content="Horizon" />
 ```
 
 #### Web Application - Reports
@@ -1599,14 +1624,14 @@ La sección Reports estará orientada a la consulta y generación de reportes re
 <meta
   name="description"
   content="Consulta y genera reportes relacionados con la huella de carbono y la gestión ambiental de la organización."
->
+/>
 
 <meta
   name="keywords"
   content="EcoTrack, reportes ambientales, huella de carbono, sostenibilidad, emisiones"
->
+/>
 
-<meta name="author" content="Horizon">
+<meta name="author" content="Horizon" />
 ```
 
 #### General Meta Tags
@@ -1614,8 +1639,8 @@ La sección Reports estará orientada a la consulta y generación de reportes re
 Todas las páginas que forman parte de la experiencia web de EcoTrack considerarán configuraciones básicas para asegurar una correcta interpretación del contenido y su adaptación a diferentes dispositivos.
 
 ```html
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
 El uso de `UTF-8` permite representar correctamente los caracteres utilizados dentro de la interfaz, mientras que el Meta Tag `viewport` permite adaptar el contenido al ancho disponible en dispositivos Desktop, Tablet y Mobile.
@@ -1931,35 +1956,35 @@ El grupo representa el inicio de sesión y la recuperación de contraseña. La i
 
 ![Login](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/login.png)
 
-*Figura 4.1. Wireframe de la pantalla de inicio de sesión.*
+_Figura 4.1. Wireframe de la pantalla de inicio de sesión._
 
 ![Login Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/login-validation.png)
 
-*Figura 4.2. Wireframe del estado de validación del formulario de inicio de sesión.*
+_Figura 4.2. Wireframe del estado de validación del formulario de inicio de sesión._
 
 ![Login Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/login-validation-error.png)
 
-*Figura 4.3. Wireframe del error por credenciales incorrectas.*
+_Figura 4.3. Wireframe del error por credenciales incorrectas._
 
 ![Login Success Dashboard](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/login-success-dashboard.png)
 
-*Figura 4.4. Wireframe del acceso exitoso al Dashboard.*
+_Figura 4.4. Wireframe del acceso exitoso al Dashboard._
 
 ![Forgot Password](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/forgot-password.png)
 
-*Figura 4.5. Wireframe de la solicitud de recuperación de contraseña.*
+_Figura 4.5. Wireframe de la solicitud de recuperación de contraseña._
 
 ![Reset Link Sent](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/reset-link-sent.png)
 
-*Figura 4.6. Wireframe de la confirmación de envío del enlace de recuperación.*
+_Figura 4.6. Wireframe de la confirmación de envío del enlace de recuperación._
 
 ![Reset Password](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/reset-password.png)
 
-*Figura 4.7. Wireframe de la definición de una nueva contraseña.*
+_Figura 4.7. Wireframe de la definición de una nueva contraseña._
 
 ![Password Reset Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/authentication/password-reset-success.png)
 
-*Figura 4.8. Wireframe de la confirmación de contraseña restablecida.*
+_Figura 4.8. Wireframe de la confirmación de contraseña restablecida._
 
 ##### Organization Registration
 
@@ -1967,19 +1992,19 @@ El grupo representa el registro de una nueva organización. Los campos se agrupa
 
 ![Register Org](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-registration/register-org.png)
 
-*Figura 4.9. Wireframe del formulario inicial de registro de una organización.*
+_Figura 4.9. Wireframe del formulario inicial de registro de una organización._
 
 ![Register Org Validation](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-registration/register-org-validation.png)
 
-*Figura 4.10. Wireframe del formulario de registro con la información ingresada.*
+_Figura 4.10. Wireframe del formulario de registro con la información ingresada._
 
 ![Register Org Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-registration/register-org-validation-error.png)
 
-*Figura 4.11. Wireframe de los errores de validación del registro.*
+_Figura 4.11. Wireframe de los errores de validación del registro._
 
 ![Register Org Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-registration/register-org-success.png)
 
-*Figura 4.12. Wireframe de la confirmación del registro de la organización.*
+_Figura 4.12. Wireframe de la confirmación del registro de la organización._
 
 ##### Organization Management
 
@@ -1987,19 +2012,19 @@ El grupo representa la consulta y actualización de los datos de la organizació
 
 ![Org Overview](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-management/org-overview.png)
 
-*Figura 4.13. Wireframe de la información general de la organización.*
+_Figura 4.13. Wireframe de la información general de la organización._
 
 ![Org Edit](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-management/org-edit.png)
 
-*Figura 4.14. Wireframe de la edición de los datos de la organización.*
+_Figura 4.14. Wireframe de la edición de los datos de la organización._
 
 ![Org Edit Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-management/org-edit-validation-error.png)
 
-*Figura 4.15. Wireframe de los errores de validación durante la edición.*
+_Figura 4.15. Wireframe de los errores de validación durante la edición._
 
 ![Org Update Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/organization-management/org-update-success.png)
 
-*Figura 4.16. Wireframe de la confirmación de actualización de la organización.*
+_Figura 4.16. Wireframe de la confirmación de actualización de la organización._
 
 ##### Users, Sites and Business Units
 
@@ -2007,23 +2032,23 @@ El grupo representa la estructura interna de la organización: usuarios con su r
 
 ![Users List](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/users-list.png)
 
-*Figura 4.17. Wireframe del listado de usuarios de la organización.*
+_Figura 4.17. Wireframe del listado de usuarios de la organización._
 
 ![Add User Assign Role](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/add-user-assign-role.png)
 
-*Figura 4.18. Wireframe de la invitación de un usuario con asignación de rol y sede.*
+_Figura 4.18. Wireframe de la invitación de un usuario con asignación de rol y sede._
 
 ![Sites Permissions](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/sites-permissions.png)
 
-*Figura 4.19. Wireframe de las sedes y sus permisos.*
+_Figura 4.19. Wireframe de las sedes y sus permisos._
 
 ![Business Units](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/business-units.png)
 
-*Figura 4.20. Wireframe del listado de unidades de negocio.*
+_Figura 4.20. Wireframe del listado de unidades de negocio._
 
 ![Add Business Unit](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/users-sites-and-business-units/add-business-unit.png)
 
-*Figura 4.21. Wireframe del registro de una unidad de negocio.*
+_Figura 4.21. Wireframe del registro de una unidad de negocio._
 
 ##### Emission Registration
 
@@ -2031,47 +2056,47 @@ El grupo representa el registro y mantenimiento de las emisiones, el proceso cen
 
 ![Emissions](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emissions.png)
 
-*Figura 4.22. Wireframe del listado de emisiones registradas.*
+_Figura 4.22. Wireframe del listado de emisiones registradas._
 
 ![Add Emission Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/add-emission-empty.png)
 
-*Figura 4.23. Wireframe del formulario vacío para registrar una emisión.*
+_Figura 4.23. Wireframe del formulario vacío para registrar una emisión._
 
 ![Add Emission Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/add-emission-completed.png)
 
-*Figura 4.24. Wireframe del formulario de emisión con los datos de actividad ingresados.*
+_Figura 4.24. Wireframe del formulario de emisión con los datos de actividad ingresados._
 
 ![Add Emission Factor Selector](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/add-emission-factor-selector.png)
 
-*Figura 4.25. Wireframe del selector de factores de emisión.*
+_Figura 4.25. Wireframe del selector de factores de emisión._
 
 ![Add Emission Factor Selected](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/add-emission-factor-selected.png)
 
-*Figura 4.26. Wireframe del formulario con el factor de emisión seleccionado y la estimación calculada.*
+_Figura 4.26. Wireframe del formulario con el factor de emisión seleccionado y la estimación calculada._
 
 ![Emission Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emission-validation-error.png)
 
-*Figura 4.27. Wireframe de los errores de validación del registro de emisión.*
+_Figura 4.27. Wireframe de los errores de validación del registro de emisión._
 
 ![Emissions Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emissions-success.png)
 
-*Figura 4.28. Wireframe de la confirmación del registro de una emisión.*
+_Figura 4.28. Wireframe de la confirmación del registro de una emisión._
 
 ![Emissions Row Actions](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emissions-row-actions.png)
 
-*Figura 4.29. Wireframe del menú de acciones de un registro de emisión.*
+_Figura 4.29. Wireframe del menú de acciones de un registro de emisión._
 
 ![Edit Emission](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/edit-emission.png)
 
-*Figura 4.30. Wireframe de la edición de un registro de emisión.*
+_Figura 4.30. Wireframe de la edición de un registro de emisión._
 
 ![Emission Update Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/emission-update-success.png)
 
-*Figura 4.31. Wireframe de la confirmación de actualización de un registro.*
+_Figura 4.31. Wireframe de la confirmación de actualización de un registro._
 
 ![Delete Emission Confirm](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/emission-registration/delete-emission-confirm.png)
 
-*Figura 4.32. Wireframe de la confirmación de eliminación de un registro.*
+_Figura 4.32. Wireframe de la confirmación de eliminación de un registro._
 
 ##### Data Integration
 
@@ -2079,15 +2104,15 @@ El grupo representa la importación masiva de registros desde un archivo CSV. An
 
 ![Import Csv Upload](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/data-integration/import-csv-upload.png)
 
-*Figura 4.33. Wireframe de la carga de un archivo CSV.*
+_Figura 4.33. Wireframe de la carga de un archivo CSV._
 
 ![Import Csv Preview](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/data-integration/import-csv-preview.png)
 
-*Figura 4.34. Wireframe de la vista previa con la validación de filas.*
+_Figura 4.34. Wireframe de la vista previa con la validación de filas._
 
 ![Import Csv Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/data-integration/import-csv-success.png)
 
-*Figura 4.35. Wireframe de la confirmación de la importación.*
+_Figura 4.35. Wireframe de la confirmación de la importación._
 
 ##### Carbon Footprint Calculation
 
@@ -2095,27 +2120,27 @@ El grupo representa el cálculo de la huella de carbono. La información se pres
 
 ![Carbon Footprint Initial](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-initial.png)
 
-*Figura 4.36. Wireframe del estado inicial del cálculo de la huella de carbono.*
+_Figura 4.36. Wireframe del estado inicial del cálculo de la huella de carbono._
 
 ![Carbon Footprint Calculate](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-calculate.png)
 
-*Figura 4.37. Wireframe de la revisión de datos y ejecución del cálculo.*
+_Figura 4.37. Wireframe de la revisión de datos y ejecución del cálculo._
 
 ![Carbon Footprint Results Scope](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-results-scope.png)
 
-*Figura 4.38. Wireframe de los resultados de la huella de carbono por alcance.*
+_Figura 4.38. Wireframe de los resultados de la huella de carbono por alcance._
 
 ![Carbon Footprint Results Period](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-results-period.png)
 
-*Figura 4.39. Wireframe de los resultados de la huella de carbono por periodo.*
+_Figura 4.39. Wireframe de los resultados de la huella de carbono por periodo._
 
 ![Carbon Footprint History](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-history.png)
 
-*Figura 4.40. Wireframe del historial de cálculos.*
+_Figura 4.40. Wireframe del historial de cálculos._
 
 ![Carbon Footprint Insufficient Data](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/carbon-footprint-calculation/carbon-footprint-insufficient-data.png)
 
-*Figura 4.41. Wireframe del estado de datos de actividad insuficientes.*
+_Figura 4.41. Wireframe del estado de datos de actividad insuficientes._
 
 ##### Analytics
 
@@ -2123,23 +2148,23 @@ El grupo representa el análisis de indicadores: el resumen ambiental, las emisi
 
 ![Dashboard Environmental Summary](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/dashboard-environmental-summary.png)
 
-*Figura 4.42. Wireframe del resumen ambiental del Dashboard.*
+_Figura 4.42. Wireframe del resumen ambiental del Dashboard._
 
 ![Dashboard Emissions By Scope](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/dashboard-emissions-by-scope.png)
 
-*Figura 4.43. Wireframe de las emisiones por alcance.*
+_Figura 4.43. Wireframe de las emisiones por alcance._
 
 ![Dashboard Period Comparison](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/dashboard-period-comparison.png)
 
-*Figura 4.44. Wireframe de la comparación de emisiones entre periodos.*
+_Figura 4.44. Wireframe de la comparación de emisiones entre periodos._
 
 ![Dashboard Updated Results](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/dashboard-updated-results.png)
 
-*Figura 4.45. Wireframe de los resultados actualizados tras registrar datos nuevos.*
+_Figura 4.45. Wireframe de los resultados actualizados tras registrar datos nuevos._
 
 ![Reporting Period Comparison](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/analytics/reporting-period-comparison.png)
 
-*Figura 4.46. Wireframe de la comparación de periodos en el módulo de reportes.*
+_Figura 4.46. Wireframe de la comparación de periodos en el módulo de reportes._
 
 ##### Report Generation
 
@@ -2147,31 +2172,31 @@ El grupo representa la generación y descarga de reportes ambientales. Se contem
 
 ![Reports Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/reports-empty.png)
 
-*Figura 4.47. Wireframe del estado inicial del módulo de reportes.*
+_Figura 4.47. Wireframe del estado inicial del módulo de reportes._
 
 ![Generate Report Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/generate-report-empty.png)
 
-*Figura 4.48. Wireframe del formulario inicial para generar un reporte.*
+_Figura 4.48. Wireframe del formulario inicial para generar un reporte._
 
 ![Generate Report Period Selected](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/generate-report-period-selected.png)
 
-*Figura 4.49. Wireframe de la configuración del reporte con el periodo seleccionado.*
+_Figura 4.49. Wireframe de la configuración del reporte con el periodo seleccionado._
 
 ![Generate Report No Data Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/generate-report-no-data-error.png)
 
-*Figura 4.50. Wireframe del estado informativo de periodo sin datos.*
+_Figura 4.50. Wireframe del estado informativo de periodo sin datos._
 
 ![Generate Report Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/generate-report-success.png)
 
-*Figura 4.51. Wireframe de la confirmación de generación del reporte.*
+_Figura 4.51. Wireframe de la confirmación de generación del reporte._
 
 ![Reports Previous Reports](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/reports-previous-reports.png)
 
-*Figura 4.52. Wireframe de la consulta de reportes generados anteriormente.*
+_Figura 4.52. Wireframe de la consulta de reportes generados anteriormente._
 
 ![Report Download Available](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/report-generation/report-download-available.png)
 
-*Figura 4.53. Wireframe del reporte con la descarga disponible.*
+_Figura 4.53. Wireframe del reporte con la descarga disponible._
 
 ##### Goal Creation
 
@@ -2179,35 +2204,35 @@ El grupo representa la creación y gestión de metas de reducción. Incluye el l
 
 ![Goals List](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/goals-list.png)
 
-*Figura 4.54. Wireframe del listado de metas de reducción.*
+_Figura 4.54. Wireframe del listado de metas de reducción._
 
 ![Create Goal Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/create-goal-empty.png)
 
-*Figura 4.55. Wireframe del formulario vacío para crear una meta.*
+_Figura 4.55. Wireframe del formulario vacío para crear una meta._
 
 ![Create Goal Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/create-goal-completed.png)
 
-*Figura 4.56. Wireframe del formulario de meta con los datos completados.*
+_Figura 4.56. Wireframe del formulario de meta con los datos completados._
 
 ![Create Goal Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/create-goal-validation-error.png)
 
-*Figura 4.57. Wireframe de los errores de validación al crear una meta.*
+_Figura 4.57. Wireframe de los errores de validación al crear una meta._
 
 ![Goals Creation Success](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/goals-creation-success.png)
 
-*Figura 4.58. Wireframe de la confirmación de creación de una meta.*
+_Figura 4.58. Wireframe de la confirmación de creación de una meta._
 
 ![Goals Row Actions](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/goals-row-actions.png)
 
-*Figura 4.59. Wireframe del menú de acciones de una meta.*
+_Figura 4.59. Wireframe del menú de acciones de una meta._
 
 ![Edit Goal](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/edit-goal.png)
 
-*Figura 4.60. Wireframe de la edición de una meta.*
+_Figura 4.60. Wireframe de la edición de una meta._
 
 ![Delete Goal Confirm](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-creation/delete-goal-confirm.png)
 
-*Figura 4.61. Wireframe de la confirmación de eliminación de una meta.*
+_Figura 4.61. Wireframe de la confirmación de eliminación de una meta._
 
 ##### Goal Tracking and Reduction Plans
 
@@ -2215,15 +2240,15 @@ El grupo representa el seguimiento de las metas: la actualización de su estado,
 
 ![Goal Status Updated](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-tracking-and-reduction-plans/goal-status-updated.png)
 
-*Figura 4.62. Wireframe de la actualización del estado de una meta.*
+_Figura 4.62. Wireframe de la actualización del estado de una meta._
 
 ![Reduction Plan Details](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-tracking-and-reduction-plans/reduction-plan-details.png)
 
-*Figura 4.63. Wireframe del detalle del plan de reducción.*
+_Figura 4.63. Wireframe del detalle del plan de reducción._
 
 ![Reduction Plan Progress](./assets/chapter-04/web-applications-ui-ux/wireframes/desktop/goal-tracking-and-reduction-plans/reduction-plan-progress.png)
 
-*Figura 4.64. Wireframe del avance de las iniciativas del plan.*
+_Figura 4.64. Wireframe del avance de las iniciativas del plan._
 
 #### Mobile Web Browser
 
@@ -2233,77 +2258,77 @@ La versión mobile prioriza los procesos del core business: autenticación, regi
 
 ![Mobile login](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/authentication/m-login.png)
 
-*Figura 4.65. Wireframe del inicio de sesión en mobile.*
+_Figura 4.65. Wireframe del inicio de sesión en mobile._
 
 ![Mobile login Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/authentication/m-login-validation-error.png)
 
-*Figura 4.66. Wireframe del error por credenciales incorrectas en mobile.*
+_Figura 4.66. Wireframe del error por credenciales incorrectas en mobile._
 
 ##### Analytics (Mobile)
 
 ![Mobile dashboard](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/analytics/m-dashboard.png)
 
-*Figura 4.67. Wireframe del Dashboard en mobile.*
+_Figura 4.67. Wireframe del Dashboard en mobile._
 
 ##### Emission Registration (Mobile)
 
 ![Mobile emissions](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-emissions.png)
 
-*Figura 4.68. Wireframe del listado de emisiones en tarjetas (mobile).*
+_Figura 4.68. Wireframe del listado de emisiones en tarjetas (mobile)._
 
 ![Mobile add Emission Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-add-emission-empty.png)
 
-*Figura 4.69. Wireframe del formulario vacío de emisión en mobile.*
+_Figura 4.69. Wireframe del formulario vacío de emisión en mobile._
 
 ![Mobile emission Validation Error](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-emission-validation-error.png)
 
-*Figura 4.70. Wireframe de los errores de validación de emisión en mobile.*
+_Figura 4.70. Wireframe de los errores de validación de emisión en mobile._
 
 ![Mobile add Emission Completed](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-add-emission-completed.png)
 
-*Figura 4.71. Wireframe del formulario de emisión completado con factor y estimación en mobile.*
+_Figura 4.71. Wireframe del formulario de emisión completado con factor y estimación en mobile._
 
 ![Mobile emissions Success](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/emission-registration/m-emissions-success.png)
 
-*Figura 4.72. Wireframe de la confirmación del registro de emisión en mobile.*
+_Figura 4.72. Wireframe de la confirmación del registro de emisión en mobile._
 
 ##### Report Generation (Mobile)
 
 ![Mobile reports Empty](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-reports-empty.png)
 
-*Figura 4.73. Wireframe del estado inicial de reportes en mobile.*
+_Figura 4.73. Wireframe del estado inicial de reportes en mobile._
 
 ![Mobile generate Report Period Selected](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-generate-report-period-selected.png)
 
-*Figura 4.74. Wireframe de la configuración del reporte en mobile.*
+_Figura 4.74. Wireframe de la configuración del reporte en mobile._
 
 ![Mobile generate Report No Data Error](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-generate-report-no-data-error.png)
 
-*Figura 4.75. Wireframe del estado de periodo sin datos en mobile.*
+_Figura 4.75. Wireframe del estado de periodo sin datos en mobile._
 
 ![Mobile reports Success](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-reports-success.png)
 
-*Figura 4.76. Wireframe del reporte generado en mobile.*
+_Figura 4.76. Wireframe del reporte generado en mobile._
 
 ![Mobile report Download Available](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/report-generation/m-report-download-available.png)
 
-*Figura 4.77. Wireframe del resumen y descarga del reporte en mobile.*
+_Figura 4.77. Wireframe del resumen y descarga del reporte en mobile._
 
 ##### Carbon Footprint Calculation (Mobile)
 
 ![Mobile carbon Footprint Initial](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/carbon-footprint-calculation/m-carbon-footprint-initial.png)
 
-*Figura 4.78. Wireframe de los parámetros del cálculo de huella en mobile.*
+_Figura 4.78. Wireframe de los parámetros del cálculo de huella en mobile._
 
 ![Mobile carbon Footprint Results Scope](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/carbon-footprint-calculation/m-carbon-footprint-results-scope.png)
 
-*Figura 4.79. Wireframe de los resultados por alcance en mobile.*
+_Figura 4.79. Wireframe de los resultados por alcance en mobile._
 
 ##### Goal Creation (Mobile)
 
 ![Mobile goals List](./assets/chapter-04/web-applications-ui-ux/wireframes/mobile/goal-creation/m-goals-list.png)
 
-*Figura 4.80. Wireframe del listado de metas en mobile.*
+_Figura 4.80. Wireframe del listado de metas en mobile._
 
 #### Consideraciones de UX/UI
 
@@ -2327,7 +2352,7 @@ El usuario ingresa su correo y contraseña y selecciona **Sign In**. El sistema 
 
 ![WF01 - Authentication](./assets/chapter-04/web-applications-ui-ux/wireflows/wf01-authentication.png)
 
-*Figura 4.81. Wireflow WF01 — Authentication.*
+_Figura 4.81. Wireflow WF01 — Authentication._
 
 #### WF02 — Organization Registration
 
@@ -2339,7 +2364,7 @@ Desde el inicio de sesión, el usuario selecciona **Create an organization**, co
 
 ![WF02 - Organization Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf02-organization-registration.png)
 
-*Figura 4.82. Wireflow WF02 — Organization Registration.*
+_Figura 4.82. Wireflow WF02 — Organization Registration._
 
 #### WF03 — Organization Management
 
@@ -2351,7 +2376,7 @@ El usuario consulta la información de la organización, selecciona **Edit Organ
 
 ![WF03 - Organization Management](./assets/chapter-04/web-applications-ui-ux/wireflows/wf03-organization-management.png)
 
-*Figura 4.83. Wireflow WF03 — Organization Management.*
+_Figura 4.83. Wireflow WF03 — Organization Management._
 
 #### WF04 — Emission Registration
 
@@ -2363,7 +2388,7 @@ Desde **Emissions**, el usuario selecciona **Add Emission**, ingresa la fuente, 
 
 ![WF04 - Emission Registration](./assets/chapter-04/web-applications-ui-ux/wireflows/wf04-emission-registration.png)
 
-*Figura 4.84. Wireflow WF04 — Emission Registration.*
+_Figura 4.84. Wireflow WF04 — Emission Registration._
 
 #### WF05 — Report Generation
 
@@ -2375,7 +2400,7 @@ Desde **Reports**, el usuario selecciona **Generate Report**, elige el periodo y
 
 ![WF05 - Report Generation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf05-report-generation.png)
 
-*Figura 4.85. Wireflow WF05 — Report Generation.*
+_Figura 4.85. Wireflow WF05 — Report Generation._
 
 #### WF06 — Goal Creation and Reduction Plan
 
@@ -2387,7 +2412,7 @@ Desde **Goals**, el usuario selecciona **Create Goal**, completa la meta y la gu
 
 ![WF06 - Goal Creation and Reduction Plan](./assets/chapter-04/web-applications-ui-ux/wireflows/wf06-goal-creation-and-reduction-plan.png)
 
-*Figura 4.86. Wireflow WF06 — Goal Creation and Reduction Plan.*
+_Figura 4.86. Wireflow WF06 — Goal Creation and Reduction Plan._
 
 #### WF07 — Carbon Footprint Calculation
 
@@ -2399,7 +2424,7 @@ El usuario define el periodo y el alcance y selecciona **Calculate Footprint**. 
 
 ![WF07 - Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/wireflows/wf07-carbon-footprint-calculation.png)
 
-*Figura 4.87. Wireflow WF07 — Carbon Footprint Calculation.*
+_Figura 4.87. Wireflow WF07 — Carbon Footprint Calculation._
 
 #### WF08 — CSV Data Import
 
@@ -2411,7 +2436,7 @@ Desde **Emissions**, el usuario selecciona **Import CSV**, carga el archivo y re
 
 ![WF08 - CSV Data Import](./assets/chapter-04/web-applications-ui-ux/wireflows/wf08-csv-data-import.png)
 
-*Figura 4.88. Wireflow WF08 — CSV Data Import.*
+_Figura 4.88. Wireflow WF08 — CSV Data Import._
 
 #### WF09 — Period Comparison and Indicators
 
@@ -2423,7 +2448,7 @@ Desde el Dashboard, el usuario abre la comparación de periodos (por ejemplo, Q1
 
 ![WF09 - Period Comparison and Indicators](./assets/chapter-04/web-applications-ui-ux/wireflows/wf09-period-comparison-and-indicators.png)
 
-*Figura 4.89. Wireflow WF09 — Period Comparison and Indicators.*
+_Figura 4.89. Wireflow WF09 — Period Comparison and Indicators._
 
 #### WF10 — Organization Structure and Users
 
@@ -2435,7 +2460,7 @@ Desde Organization, la administradora abre **Business Units**, registra una nuev
 
 ![WF10 - Organization Structure and Users](./assets/chapter-04/web-applications-ui-ux/wireflows/wf10-organization-structure-and-users.png)
 
-*Figura 4.90. Wireflow WF10 — Organization Structure and Users.*
+_Figura 4.90. Wireflow WF10 — Organization Structure and Users._
 
 ### 4.4.3. Web Applications Mock-ups
 
@@ -2466,279 +2491,279 @@ Los campos tienen labels visibles e indicadores de obligatoriedad, los errores s
 
 ![Login Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/login.png)
 
-*Figura 4.91. Mock-up de la pantalla de inicio de sesión.*
+_Figura 4.91. Mock-up de la pantalla de inicio de sesión._
 
 ![Login Validation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/login-validation.png)
 
-*Figura 4.92. Mock-up del estado de validación del formulario de inicio de sesión.*
+_Figura 4.92. Mock-up del estado de validación del formulario de inicio de sesión._
 
 ![Login Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/login-validation-error.png)
 
-*Figura 4.93. Mock-up del error por credenciales incorrectas.*
+_Figura 4.93. Mock-up del error por credenciales incorrectas._
 
 ![Login Success Dashboard Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/login-success-dashboard.png)
 
-*Figura 4.94. Mock-up del acceso exitoso al Dashboard.*
+_Figura 4.94. Mock-up del acceso exitoso al Dashboard._
 
 ![Forgot Password Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/forgot-password.png)
 
-*Figura 4.95. Mock-up de la solicitud de recuperación de contraseña.*
+_Figura 4.95. Mock-up de la solicitud de recuperación de contraseña._
 
 ![Reset Link Sent Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/reset-link-sent.png)
 
-*Figura 4.96. Mock-up de la confirmación de envío del enlace de recuperación.*
+_Figura 4.96. Mock-up de la confirmación de envío del enlace de recuperación._
 
 ![Reset Password Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/reset-password.png)
 
-*Figura 4.97. Mock-up de la definición de una nueva contraseña.*
+_Figura 4.97. Mock-up de la definición de una nueva contraseña._
 
 ![Password Reset Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/authentication/password-reset-success.png)
 
-*Figura 4.98. Mock-up de la confirmación de contraseña restablecida.*
+_Figura 4.98. Mock-up de la confirmación de contraseña restablecida._
 
 ##### Organization Registration
 
 ![Register Org Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-registration/register-org.png)
 
-*Figura 4.99. Mock-up del formulario inicial de registro de una organización.*
+_Figura 4.99. Mock-up del formulario inicial de registro de una organización._
 
 ![Register Org Validation Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-registration/register-org-validation.png)
 
-*Figura 4.100. Mock-up del formulario de registro con la información ingresada.*
+_Figura 4.100. Mock-up del formulario de registro con la información ingresada._
 
 ![Register Org Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-registration/register-org-validation-error.png)
 
-*Figura 4.101. Mock-up de los errores de validación del registro.*
+_Figura 4.101. Mock-up de los errores de validación del registro._
 
 ![Register Org Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-registration/register-org-success.png)
 
-*Figura 4.102. Mock-up de la confirmación del registro de la organización.*
+_Figura 4.102. Mock-up de la confirmación del registro de la organización._
 
 ##### Organization Management
 
 ![Org Overview Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-management/org-overview.png)
 
-*Figura 4.103. Mock-up de la información general de la organización.*
+_Figura 4.103. Mock-up de la información general de la organización._
 
 ![Org Edit Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-management/org-edit.png)
 
-*Figura 4.104. Mock-up de la edición de los datos de la organización.*
+_Figura 4.104. Mock-up de la edición de los datos de la organización._
 
 ![Org Edit Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-management/org-edit-validation-error.png)
 
-*Figura 4.105. Mock-up de los errores de validación durante la edición.*
+_Figura 4.105. Mock-up de los errores de validación durante la edición._
 
 ![Org Update Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/organization-management/org-update-success.png)
 
-*Figura 4.106. Mock-up de la confirmación de actualización de la organización.*
+_Figura 4.106. Mock-up de la confirmación de actualización de la organización._
 
 ##### Users, Sites and Business Units
 
 ![Users List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/users-list.png)
 
-*Figura 4.107. Mock-up del listado de usuarios de la organización.*
+_Figura 4.107. Mock-up del listado de usuarios de la organización._
 
 ![Add User Assign Role Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/add-user-assign-role.png)
 
-*Figura 4.108. Mock-up de la invitación de un usuario con asignación de rol y sede.*
+_Figura 4.108. Mock-up de la invitación de un usuario con asignación de rol y sede._
 
 ![Sites Permissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/sites-permissions.png)
 
-*Figura 4.109. Mock-up de las sedes y sus permisos.*
+_Figura 4.109. Mock-up de las sedes y sus permisos._
 
 ![Business Units Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/business-units.png)
 
-*Figura 4.110. Mock-up del listado de unidades de negocio.*
+_Figura 4.110. Mock-up del listado de unidades de negocio._
 
 ![Add Business Unit Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/users-sites-and-business-units/add-business-unit.png)
 
-*Figura 4.111. Mock-up del registro de una unidad de negocio.*
+_Figura 4.111. Mock-up del registro de una unidad de negocio._
 
 ##### Emission Registration
 
 ![Emissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emissions.png)
 
-*Figura 4.112. Mock-up del listado de emisiones registradas.*
+_Figura 4.112. Mock-up del listado de emisiones registradas._
 
 ![Add Emission Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/add-emission-empty.png)
 
-*Figura 4.113. Mock-up del formulario vacío para registrar una emisión.*
+_Figura 4.113. Mock-up del formulario vacío para registrar una emisión._
 
 ![Add Emission Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/add-emission-completed.png)
 
-*Figura 4.114. Mock-up del formulario de emisión con los datos de actividad ingresados.*
+_Figura 4.114. Mock-up del formulario de emisión con los datos de actividad ingresados._
 
 ![Add Emission Factor Selector Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/add-emission-factor-selector.png)
 
-*Figura 4.115. Mock-up del selector de factores de emisión.*
+_Figura 4.115. Mock-up del selector de factores de emisión._
 
 ![Add Emission Factor Selected Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/add-emission-factor-selected.png)
 
-*Figura 4.116. Mock-up del formulario con el factor de emisión seleccionado y la estimación calculada.*
+_Figura 4.116. Mock-up del formulario con el factor de emisión seleccionado y la estimación calculada._
 
 ![Emission Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emission-validation-error.png)
 
-*Figura 4.117. Mock-up de los errores de validación del registro de emisión.*
+_Figura 4.117. Mock-up de los errores de validación del registro de emisión._
 
 ![Emissions Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emissions-success.png)
 
-*Figura 4.118. Mock-up de la confirmación del registro de una emisión.*
+_Figura 4.118. Mock-up de la confirmación del registro de una emisión._
 
 ![Emissions Row Actions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emissions-row-actions.png)
 
-*Figura 4.119. Mock-up del menú de acciones de un registro de emisión.*
+_Figura 4.119. Mock-up del menú de acciones de un registro de emisión._
 
 ![Edit Emission Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/edit-emission.png)
 
-*Figura 4.120. Mock-up de la edición de un registro de emisión.*
+_Figura 4.120. Mock-up de la edición de un registro de emisión._
 
 ![Emission Update Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/emission-update-success.png)
 
-*Figura 4.121. Mock-up de la confirmación de actualización de un registro.*
+_Figura 4.121. Mock-up de la confirmación de actualización de un registro._
 
 ![Delete Emission Confirm Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/emission-registration/delete-emission-confirm.png)
 
-*Figura 4.122. Mock-up de la confirmación de eliminación de un registro.*
+_Figura 4.122. Mock-up de la confirmación de eliminación de un registro._
 
 ##### Data Integration
 
 ![Import Csv Upload Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/data-integration/import-csv-upload.png)
 
-*Figura 4.123. Mock-up de la carga de un archivo CSV.*
+_Figura 4.123. Mock-up de la carga de un archivo CSV._
 
 ![Import Csv Preview Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/data-integration/import-csv-preview.png)
 
-*Figura 4.124. Mock-up de la vista previa con la validación de filas.*
+_Figura 4.124. Mock-up de la vista previa con la validación de filas._
 
 ![Import Csv Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/data-integration/import-csv-success.png)
 
-*Figura 4.125. Mock-up de la confirmación de la importación.*
+_Figura 4.125. Mock-up de la confirmación de la importación._
 
 ##### Carbon Footprint Calculation
 
 ![Carbon Footprint Initial Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-initial.png)
 
-*Figura 4.126. Mock-up del estado inicial del cálculo de la huella de carbono.*
+_Figura 4.126. Mock-up del estado inicial del cálculo de la huella de carbono._
 
 ![Carbon Footprint Calculate Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-calculate.png)
 
-*Figura 4.127. Mock-up de la revisión de datos y ejecución del cálculo.*
+_Figura 4.127. Mock-up de la revisión de datos y ejecución del cálculo._
 
 ![Carbon Footprint Results Scope Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-results-scope.png)
 
-*Figura 4.128. Mock-up de los resultados de la huella de carbono por alcance.*
+_Figura 4.128. Mock-up de los resultados de la huella de carbono por alcance._
 
 ![Carbon Footprint Results Period Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-results-period.png)
 
-*Figura 4.129. Mock-up de los resultados de la huella de carbono por periodo.*
+_Figura 4.129. Mock-up de los resultados de la huella de carbono por periodo._
 
 ![Carbon Footprint History Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-history.png)
 
-*Figura 4.130. Mock-up del historial de cálculos.*
+_Figura 4.130. Mock-up del historial de cálculos._
 
 ![Carbon Footprint Insufficient Data Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/carbon-footprint-calculation/carbon-footprint-insufficient-data.png)
 
-*Figura 4.131. Mock-up del estado de datos de actividad insuficientes.*
+_Figura 4.131. Mock-up del estado de datos de actividad insuficientes._
 
 ##### Analytics
 
 ![Dashboard Environmental Summary Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/dashboard-environmental-summary.png)
 
-*Figura 4.132. Mock-up del resumen ambiental del Dashboard.*
+_Figura 4.132. Mock-up del resumen ambiental del Dashboard._
 
 ![Dashboard Emissions By Scope Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/dashboard-emissions-by-scope.png)
 
-*Figura 4.133. Mock-up de las emisiones por alcance.*
+_Figura 4.133. Mock-up de las emisiones por alcance._
 
 ![Dashboard Period Comparison Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/dashboard-period-comparison.png)
 
-*Figura 4.134. Mock-up de la comparación de emisiones entre periodos.*
+_Figura 4.134. Mock-up de la comparación de emisiones entre periodos._
 
 ![Dashboard Updated Results Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/dashboard-updated-results.png)
 
-*Figura 4.135. Mock-up de los resultados actualizados tras registrar datos nuevos.*
+_Figura 4.135. Mock-up de los resultados actualizados tras registrar datos nuevos._
 
 ![Reporting Period Comparison Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/analytics/reporting-period-comparison.png)
 
-*Figura 4.136. Mock-up de la comparación de periodos en el módulo de reportes.*
+_Figura 4.136. Mock-up de la comparación de periodos en el módulo de reportes._
 
 ##### Report Generation
 
 ![Reports Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/reports-empty.png)
 
-*Figura 4.137. Mock-up del estado inicial del módulo de reportes.*
+_Figura 4.137. Mock-up del estado inicial del módulo de reportes._
 
 ![Generate Report Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/generate-report-empty.png)
 
-*Figura 4.138. Mock-up del formulario inicial para generar un reporte.*
+_Figura 4.138. Mock-up del formulario inicial para generar un reporte._
 
 ![Generate Report Period Selected Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/generate-report-period-selected.png)
 
-*Figura 4.139. Mock-up de la configuración del reporte con el periodo seleccionado.*
+_Figura 4.139. Mock-up de la configuración del reporte con el periodo seleccionado._
 
 ![Generate Report No Data Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/generate-report-no-data-error.png)
 
-*Figura 4.140. Mock-up del estado informativo de periodo sin datos.*
+_Figura 4.140. Mock-up del estado informativo de periodo sin datos._
 
 ![Generate Report Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/generate-report-success.png)
 
-*Figura 4.141. Mock-up de la confirmación de generación del reporte.*
+_Figura 4.141. Mock-up de la confirmación de generación del reporte._
 
 ![Reports Previous Reports Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/reports-previous-reports.png)
 
-*Figura 4.142. Mock-up de la consulta de reportes generados anteriormente.*
+_Figura 4.142. Mock-up de la consulta de reportes generados anteriormente._
 
 ![Report Download Available Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/report-generation/report-download-available.png)
 
-*Figura 4.143. Mock-up del reporte con la descarga disponible.*
+_Figura 4.143. Mock-up del reporte con la descarga disponible._
 
 ##### Goal Creation
 
 ![Goals List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/goals-list.png)
 
-*Figura 4.144. Mock-up del listado de metas de reducción.*
+_Figura 4.144. Mock-up del listado de metas de reducción._
 
 ![Create Goal Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/create-goal-empty.png)
 
-*Figura 4.145. Mock-up del formulario vacío para crear una meta.*
+_Figura 4.145. Mock-up del formulario vacío para crear una meta._
 
 ![Create Goal Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/create-goal-completed.png)
 
-*Figura 4.146. Mock-up del formulario de meta con los datos completados.*
+_Figura 4.146. Mock-up del formulario de meta con los datos completados._
 
 ![Create Goal Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/create-goal-validation-error.png)
 
-*Figura 4.147. Mock-up de los errores de validación al crear una meta.*
+_Figura 4.147. Mock-up de los errores de validación al crear una meta._
 
 ![Goals Creation Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/goals-creation-success.png)
 
-*Figura 4.148. Mock-up de la confirmación de creación de una meta.*
+_Figura 4.148. Mock-up de la confirmación de creación de una meta._
 
 ![Goals Row Actions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/goals-row-actions.png)
 
-*Figura 4.149. Mock-up del menú de acciones de una meta.*
+_Figura 4.149. Mock-up del menú de acciones de una meta._
 
 ![Edit Goal Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/edit-goal.png)
 
-*Figura 4.150. Mock-up de la edición de una meta.*
+_Figura 4.150. Mock-up de la edición de una meta._
 
 ![Delete Goal Confirm Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-creation/delete-goal-confirm.png)
 
-*Figura 4.151. Mock-up de la confirmación de eliminación de una meta.*
+_Figura 4.151. Mock-up de la confirmación de eliminación de una meta._
 
 ##### Goal Tracking and Reduction Plans
 
 ![Goal Status Updated Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-tracking-and-reduction-plans/goal-status-updated.png)
 
-*Figura 4.152. Mock-up de la actualización del estado de una meta.*
+_Figura 4.152. Mock-up de la actualización del estado de una meta._
 
 ![Reduction Plan Details Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-tracking-and-reduction-plans/reduction-plan-details.png)
 
-*Figura 4.153. Mock-up del detalle del plan de reducción.*
+_Figura 4.153. Mock-up del detalle del plan de reducción._
 
 ![Reduction Plan Progress Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/desktop/goal-tracking-and-reduction-plans/reduction-plan-progress.png)
 
-*Figura 4.154. Mock-up del avance de las iniciativas del plan.*
+_Figura 4.154. Mock-up del avance de las iniciativas del plan._
 
 #### Mobile Web Browser
 
@@ -2746,83 +2771,83 @@ La versión mobile aplica el mismo Design System mediante componentes reutilizab
 
 ![Mobile Components](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/mobile-components.png)
 
-*Figura 4.155. Componentes reutilizables de la versión mobile.*
+_Figura 4.155. Componentes reutilizables de la versión mobile._
 
 ##### Authentication (Mobile)
 
 ![Mobile login Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/authentication/m-login.png)
 
-*Figura 4.156. Mock-up del inicio de sesión en mobile.*
+_Figura 4.156. Mock-up del inicio de sesión en mobile._
 
 ![Mobile login Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/authentication/m-login-validation-error.png)
 
-*Figura 4.157. Mock-up del error por credenciales incorrectas en mobile.*
+_Figura 4.157. Mock-up del error por credenciales incorrectas en mobile._
 
 ##### Analytics (Mobile)
 
 ![Mobile dashboard Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/analytics/m-dashboard.png)
 
-*Figura 4.158. Mock-up del Dashboard en mobile.*
+_Figura 4.158. Mock-up del Dashboard en mobile._
 
 ##### Emission Registration (Mobile)
 
 ![Mobile emissions Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-emissions.png)
 
-*Figura 4.159. Mock-up del listado de emisiones en tarjetas (mobile).*
+_Figura 4.159. Mock-up del listado de emisiones en tarjetas (mobile)._
 
 ![Mobile add Emission Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-add-emission-empty.png)
 
-*Figura 4.160. Mock-up del formulario vacío de emisión en mobile.*
+_Figura 4.160. Mock-up del formulario vacío de emisión en mobile._
 
 ![Mobile emission Validation Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-emission-validation-error.png)
 
-*Figura 4.161. Mock-up de los errores de validación de emisión en mobile.*
+_Figura 4.161. Mock-up de los errores de validación de emisión en mobile._
 
 ![Mobile add Emission Completed Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-add-emission-completed.png)
 
-*Figura 4.162. Mock-up del formulario de emisión completado con factor y estimación en mobile.*
+_Figura 4.162. Mock-up del formulario de emisión completado con factor y estimación en mobile._
 
 ![Mobile emissions Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/emission-registration/m-emissions-success.png)
 
-*Figura 4.163. Mock-up de la confirmación del registro de emisión en mobile.*
+_Figura 4.163. Mock-up de la confirmación del registro de emisión en mobile._
 
 ##### Report Generation (Mobile)
 
 ![Mobile reports Empty Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-reports-empty.png)
 
-*Figura 4.164. Mock-up del estado inicial de reportes en mobile.*
+_Figura 4.164. Mock-up del estado inicial de reportes en mobile._
 
 ![Mobile generate Report Period Selected Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-generate-report-period-selected.png)
 
-*Figura 4.165. Mock-up de la configuración del reporte en mobile.*
+_Figura 4.165. Mock-up de la configuración del reporte en mobile._
 
 ![Mobile generate Report No Data Error Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-generate-report-no-data-error.png)
 
-*Figura 4.166. Mock-up del estado de periodo sin datos en mobile.*
+_Figura 4.166. Mock-up del estado de periodo sin datos en mobile._
 
 ![Mobile reports Success Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-reports-success.png)
 
-*Figura 4.167. Mock-up del reporte generado en mobile.*
+_Figura 4.167. Mock-up del reporte generado en mobile._
 
 ![Mobile report Download Available Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/report-generation/m-report-download-available.png)
 
-*Figura 4.168. Mock-up del resumen y descarga del reporte en mobile.*
+_Figura 4.168. Mock-up del resumen y descarga del reporte en mobile._
 
 ##### Carbon Footprint Calculation (Mobile)
 
 ![Mobile carbon Footprint Initial Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/carbon-footprint-calculation/m-carbon-footprint-initial.png)
 
-*Figura 4.169. Mock-up de los parámetros del cálculo de huella en mobile.*
+_Figura 4.169. Mock-up de los parámetros del cálculo de huella en mobile._
 
 ![Mobile carbon Footprint Results Scope Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/carbon-footprint-calculation/m-carbon-footprint-results-scope.png)
 
-*Figura 4.170. Mock-up de los resultados por alcance en mobile.*
+_Figura 4.170. Mock-up de los resultados por alcance en mobile._
 
 ##### Goal Creation (Mobile)
 
 ![Mobile goals List Mock-up](./assets/chapter-04/web-applications-ui-ux/mock-ups/mobile/goal-creation/m-goals-list.png)
 
-*Figura 4.171. Mock-up del listado de metas en mobile.*
+_Figura 4.171. Mock-up del listado de metas en mobile._
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
@@ -2849,7 +2874,7 @@ El usuario ingresa su correo y contraseña y selecciona **Sign In**. El sistema 
 
 ![UF01 - Authentication](./assets/chapter-04/web-applications-ui-ux/user-flows/uf01-authentication.png)
 
-*Figura 4.172. User Flow Diagram UF01 — Authentication.*
+_Figura 4.172. User Flow Diagram UF01 — Authentication._
 
 #### UF02 — Organization Registration
 
@@ -2867,7 +2892,7 @@ Desde el inicio de sesión, el usuario selecciona **Create an organization**, co
 
 ![UF02 - Organization Registration](./assets/chapter-04/web-applications-ui-ux/user-flows/uf02-organization-registration.png)
 
-*Figura 4.173. User Flow Diagram UF02 — Organization Registration.*
+_Figura 4.173. User Flow Diagram UF02 — Organization Registration._
 
 #### UF03 — Organization Management
 
@@ -2887,7 +2912,7 @@ El usuario consulta la información de la organización, selecciona **Edit Organ
 
 ![UF03 - Organization Management](./assets/chapter-04/web-applications-ui-ux/user-flows/uf03-organization-management.png)
 
-*Figura 4.174. User Flow Diagram UF03 — Organization Management.*
+_Figura 4.174. User Flow Diagram UF03 — Organization Management._
 
 #### UF04 — Emission Registration
 
@@ -2907,7 +2932,7 @@ Desde **Emissions**, el usuario selecciona **Add Emission**, ingresa la fuente, 
 
 ![UF04 - Emission Registration](./assets/chapter-04/web-applications-ui-ux/user-flows/uf04-emission-registration.png)
 
-*Figura 4.175. User Flow Diagram UF04 — Emission Registration.*
+_Figura 4.175. User Flow Diagram UF04 — Emission Registration._
 
 #### UF05 — Report Generation
 
@@ -2925,7 +2950,7 @@ Desde **Reports**, el usuario selecciona **Generate Report**, elige el periodo y
 
 ![UF05 - Report Generation](./assets/chapter-04/web-applications-ui-ux/user-flows/uf05-report-generation.png)
 
-*Figura 4.176. User Flow Diagram UF05 — Report Generation.*
+_Figura 4.176. User Flow Diagram UF05 — Report Generation._
 
 #### UF06 — Goal Creation and Reduction Plan
 
@@ -2945,7 +2970,7 @@ Desde **Goals**, el usuario selecciona **Create Goal**, completa la meta y la gu
 
 ![UF06 - Goal Creation and Reduction Plan](./assets/chapter-04/web-applications-ui-ux/user-flows/uf06-goal-creation-and-reduction-plan.png)
 
-*Figura 4.177. User Flow Diagram UF06 — Goal Creation and Reduction Plan.*
+_Figura 4.177. User Flow Diagram UF06 — Goal Creation and Reduction Plan._
 
 #### UF07 — Carbon Footprint Calculation
 
@@ -2963,7 +2988,7 @@ El usuario define el periodo y el alcance y selecciona **Calculate Footprint**. 
 
 ![UF07 - Carbon Footprint Calculation](./assets/chapter-04/web-applications-ui-ux/user-flows/uf07-carbon-footprint-calculation.png)
 
-*Figura 4.178. User Flow Diagram UF07 — Carbon Footprint Calculation.*
+_Figura 4.178. User Flow Diagram UF07 — Carbon Footprint Calculation._
 
 #### UF08 — CSV Data Import
 
@@ -2982,7 +3007,7 @@ Desde **Emissions**, el usuario selecciona **Import CSV**, carga el archivo y re
 
 ![UF08 - CSV Data Import](./assets/chapter-04/web-applications-ui-ux/user-flows/uf08-csv-data-import.png)
 
-*Figura 4.179. User Flow Diagram UF08 — CSV Data Import.*
+_Figura 4.179. User Flow Diagram UF08 — CSV Data Import._
 
 #### UF09 — Period Comparison and Indicators
 
@@ -3002,7 +3027,7 @@ Desde el Dashboard, el usuario abre la comparación de periodos (por ejemplo, Q1
 
 ![UF09 - Period Comparison and Indicators](./assets/chapter-04/web-applications-ui-ux/user-flows/uf09-period-comparison-and-indicators.png)
 
-*Figura 4.180. User Flow Diagram UF09 — Period Comparison and Indicators.*
+_Figura 4.180. User Flow Diagram UF09 — Period Comparison and Indicators._
 
 #### UF10 — Organization Structure and Users
 
@@ -3023,7 +3048,7 @@ Desde Organization, la administradora abre **Business Units**, registra una nuev
 
 ![UF10 - Organization Structure and Users](./assets/chapter-04/web-applications-ui-ux/user-flows/uf10-organization-structure-and-users.png)
 
-*Figura 4.181. User Flow Diagram UF10 — Organization Structure and Users.*
+_Figura 4.181. User Flow Diagram UF10 — Organization Structure and Users._
 
 ## 4.5. Web Applications Prototyping
 
@@ -3035,16 +3060,16 @@ Los prototipos interactivos de EcoTrack se construyeron en Figma sobre los Mock-
 - **Una acción principal por estado:** el botón principal de cada pantalla (Sign In, Save Entry, Generate Report, Save Goal, Calculate Footprint) lleva al siguiente estado del flujo.
 - **Unhappy paths integrados:** al guardar un formulario vacío se muestra su estado de error, y al seleccionar el campo se avanza al formulario completo. Los errores sin un disparador natural (por ejemplo, credenciales incorrectas o datos de actividad insuficientes) tienen su propio punto de inicio.
 - **Acciones contextuales:** los menús ⋯ abren las acciones de cada registro (editar, eliminar, actualizar estado); los diálogos de confirmación permiten confirmar o cancelar, y **Cancel** regresa al estado anterior.
-- **Transiciones:** *Dissolve* de 200 ms en desktop y *Smart Animate* de 250 ms en mobile, para que el cambio de estado se perciba sin distraer.
+- **Transiciones:** _Dissolve_ de 200 ms en desktop y _Smart Animate_ de 250 ms en mobile, para que el cambio de estado se perciba sin distraer.
 - **Puntos de inicio por flujo:** el prototipo desktop tiene 13 flow starting points (uno por User Flow y los unhappy paths que los requieren) y el prototipo mobile tiene 6.
 
 ![Desktop Prototype](./assets/chapter-04/web-applications-ui-ux/prototype/desktop-prototype.png)
 
-*Figura 4.182. Conexiones del prototipo interactivo para Desktop Web Browser.*
+_Figura 4.182. Conexiones del prototipo interactivo para Desktop Web Browser._
 
 ![Mobile Prototype](./assets/chapter-04/web-applications-ui-ux/prototype/mobile-prototype.png)
 
-*Figura 4.183. Conexiones del prototipo interactivo para Mobile Web Browser.*
+_Figura 4.183. Conexiones del prototipo interactivo para Mobile Web Browser._
 
 **Prototipos en Figma:**
 
@@ -3055,7 +3080,7 @@ Los prototipos interactivos de EcoTrack se construyeron en Figma sobre los Mock-
 
 ![Prototype Navigation Video](./assets/chapter-04/web-applications-ui-ux/prototype/prototype-video.png)
 
-*Figura 4.184. Captura del video de navegación del prototipo de la Web Application.*
+_Figura 4.184. Captura del video de navegación del prototipo de la Web Application._
 
 [upc-pre-202620-1asi0729-7753-horizon-prototypenavigation-sprint-2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQB6SMU-w3OHTrLAFR1U8tFHAWK1YURcbl3oQtnIVgughPE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=HSNyaC)
 
@@ -3130,7 +3155,6 @@ Los indicadores ambientales se actualizan automáticamente a partir de los event
 ![EcoTrack - Data Integration Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-data-integration.png)
 
 Este contexto permite importar información mediante archivos CSV y recibir o consultar datos a través de la EcoTrack API, utilizada por sistemas externos.
-
 
 ### 4.6.2. Software Architecture Context Diagram
 
@@ -3650,23 +3674,23 @@ Para el desarrollo de EcoTrack, el equipo Horizon utiliza un conjunto de herrami
 
 La selección de estas herramientas busca mantener un entorno de trabajo colaborativo y consistente entre los miembros del equipo, además de cumplir con las tecnologías y restricciones establecidas para el desarrollo del proyecto.
 
-| Activity | Tool | Purpose in the Project | Reference |
-|---|---|---|---|
-| Project Management | Trello | Gestionar el Product Backlog y los Sprint Backlogs, organizar las actividades del equipo y realizar seguimiento del estado de los User Stories y Work Items durante cada Sprint. | https://trello.com/ |
-| Requirements Management | GitHub / Markdown | Mantener bajo control de versiones los User Stories, Technical Stories, Product Backlog, documentación de requisitos y demás artefactos incluidos en el Project Report. | https://github.com/ |
-| UX Research & Lean UX | UXPressia | Elaborar artefactos relacionados con el análisis de usuarios y Lean UX, como User Personas, Empathy Maps y Lean UX Canvas utilizados durante la definición de EcoTrack. | https://uxpressia.com/ |
-| UX/UI Design | Figma | Diseñar los Wireframes y Mock-ups del Landing Page y de la futura Web Application de EcoTrack, así como mantener los principales lineamientos visuales del producto. | https://www.figma.com/ |
-| Software Development | JetBrains WebStorm | Entorno de desarrollo utilizado para implementar, editar y mantener el código fuente del Landing Page de EcoTrack. | https://www.jetbrains.com/webstorm/ |
-| Landing Page Development | HTML5, CSS3 & JavaScript | Tecnologías utilizadas para desarrollar la estructura, presentación, responsividad, internacionalización e interacciones del Landing Page. | https://developer.mozilla.org/ |
-| Version Control | Git | Gestionar localmente los cambios realizados en el código fuente y la documentación, permitiendo el trabajo mediante ramas y el seguimiento del historial de modificaciones. | https://git-scm.com/ |
-| Source Code Hosting & Collaboration | GitHub | Alojar los repositorios de Horizon y gestionar branches, commits, Pull Requests, merges, releases y colaboración entre los integrantes del equipo. | https://github.com/ |
-| Testing & Browser Inspection | Google Chrome / Chrome DevTools | Verificar la visualización, responsividad, navegación, accesibilidad y comportamiento del Landing Page en diferentes tamaños de pantalla. | https://developer.chrome.com/docs/devtools/ |
-| Software Deployment | GitHub Pages | Publicar la primera versión del Landing Page de EcoTrack a partir del repositorio alojado en GitHub y permitir su acceso mediante una URL pública. | https://pages.github.com/ |
-| Team Communication & Meetings | Discord | Realizar reuniones virtuales de coordinación, planificación y seguimiento del trabajo desarrollado por los integrantes de Horizon. | https://discord.com/ |
-| Team Communication | WhatsApp | Mantener comunicación rápida entre los miembros del equipo para coordinaciones, avisos y seguimiento de actividades del proyecto. | https://www.whatsapp.com/ |
-| Frontend Web Application | Angular, TypeScript & Angular Material | Tecnologías establecidas para el desarrollo de la Web Application de EcoTrack en los siguientes Sprints. Angular será utilizado como framework frontend, TypeScript como lenguaje de programación y Angular Material como biblioteca de componentes UI. | https://angular.dev/ |
-| Backend Web Services | Java, Spring Boot & Spring Data JPA | Tecnologías establecidas para implementar los RESTful Web Services de EcoTrack en las siguientes iteraciones del proyecto. | https://spring.io/projects/spring-boot |
-| API Documentation | OpenAPI / Swagger | Documentar los endpoints REST que se implementarán para los Web Services de EcoTrack, especificando operaciones, parámetros, requests y responses. | https://swagger.io/specification/ |
+| Activity                            | Tool                                   | Purpose in the Project                                                                                                                                                                                                                                  | Reference                                   |
+| ----------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| Project Management                  | Trello                                 | Gestionar el Product Backlog y los Sprint Backlogs, organizar las actividades del equipo y realizar seguimiento del estado de los User Stories y Work Items durante cada Sprint.                                                                        | https://trello.com/                         |
+| Requirements Management             | GitHub / Markdown                      | Mantener bajo control de versiones los User Stories, Technical Stories, Product Backlog, documentación de requisitos y demás artefactos incluidos en el Project Report.                                                                                 | https://github.com/                         |
+| UX Research & Lean UX               | UXPressia                              | Elaborar artefactos relacionados con el análisis de usuarios y Lean UX, como User Personas, Empathy Maps y Lean UX Canvas utilizados durante la definición de EcoTrack.                                                                                 | https://uxpressia.com/                      |
+| UX/UI Design                        | Figma                                  | Diseñar los Wireframes y Mock-ups del Landing Page y de la futura Web Application de EcoTrack, así como mantener los principales lineamientos visuales del producto.                                                                                    | https://www.figma.com/                      |
+| Software Development                | JetBrains WebStorm                     | Entorno de desarrollo utilizado para implementar, editar y mantener el código fuente del Landing Page de EcoTrack.                                                                                                                                      | https://www.jetbrains.com/webstorm/         |
+| Landing Page Development            | HTML5, CSS3 & JavaScript               | Tecnologías utilizadas para desarrollar la estructura, presentación, responsividad, internacionalización e interacciones del Landing Page.                                                                                                              | https://developer.mozilla.org/              |
+| Version Control                     | Git                                    | Gestionar localmente los cambios realizados en el código fuente y la documentación, permitiendo el trabajo mediante ramas y el seguimiento del historial de modificaciones.                                                                             | https://git-scm.com/                        |
+| Source Code Hosting & Collaboration | GitHub                                 | Alojar los repositorios de Horizon y gestionar branches, commits, Pull Requests, merges, releases y colaboración entre los integrantes del equipo.                                                                                                      | https://github.com/                         |
+| Testing & Browser Inspection        | Google Chrome / Chrome DevTools        | Verificar la visualización, responsividad, navegación, accesibilidad y comportamiento del Landing Page en diferentes tamaños de pantalla.                                                                                                               | https://developer.chrome.com/docs/devtools/ |
+| Software Deployment                 | GitHub Pages                           | Publicar la primera versión del Landing Page de EcoTrack a partir del repositorio alojado en GitHub y permitir su acceso mediante una URL pública.                                                                                                      | https://pages.github.com/                   |
+| Team Communication & Meetings       | Discord                                | Realizar reuniones virtuales de coordinación, planificación y seguimiento del trabajo desarrollado por los integrantes de Horizon.                                                                                                                      | https://discord.com/                        |
+| Team Communication                  | WhatsApp                               | Mantener comunicación rápida entre los miembros del equipo para coordinaciones, avisos y seguimiento de actividades del proyecto.                                                                                                                       | https://www.whatsapp.com/                   |
+| Frontend Web Application            | Angular, TypeScript & Angular Material | Tecnologías establecidas para el desarrollo de la Web Application de EcoTrack en los siguientes Sprints. Angular será utilizado como framework frontend, TypeScript como lenguaje de programación y Angular Material como biblioteca de componentes UI. | https://angular.dev/                        |
+| Backend Web Services                | Java, Spring Boot & Spring Data JPA    | Tecnologías establecidas para implementar los RESTful Web Services de EcoTrack en las siguientes iteraciones del proyecto.                                                                                                                              | https://spring.io/projects/spring-boot      |
+| API Documentation                   | OpenAPI / Swagger                      | Documentar los endpoints REST que se implementarán para los Web Services de EcoTrack, especificando operaciones, parámetros, requests y responses.                                                                                                      | https://swagger.io/specification/           |
 
 Durante el Sprint 1, el esfuerzo de implementación se concentra principalmente en el Landing Page de EcoTrack. Este producto es desarrollado utilizando HTML5, CSS3 y JavaScript y se encuentra publicado mediante GitHub Pages.
 
@@ -3690,11 +3714,14 @@ El uso de GitHub permite mantener un historial verificable de modificaciones, tr
 
 Actualmente, Horizon mantiene los siguientes repositorios:
 
-| Product / Artifact | Repository |
-|---|---|
-| Project Report | https://github.com/Horizon-OpenSource/report |
-| Landing Page | https://github.com/Horizon-OpenSource/landing-page |
-| Frontend Web Application | https://github.com/Horizon-OpenSource/frontend-web-application |
+| Product / Artifact         | Repository                                                     |
+| -------------------------- | -------------------------------------------------------------- |
+| Project Report             | https://github.com/Horizon-OpenSource/report                   |
+| Landing Page               | https://github.com/Horizon-OpenSource/landing-page             |
+| Frontend Web Application   | https://github.com/Horizon-OpenSource/frontend-web-application |
+| EcoTrack Platform Mock API | https://github.com/Horizon-OpenSource/ecotrack-platform-mock   |
+| Backend Web Services       | https://github.com/Horizon-OpenSource/backend-web-services     |
+
 La organización de GitHub utilizada por el equipo se encuentra disponible en:
 
 https://github.com/orgs/Horizon-OpenSource/repositories
@@ -3705,13 +3732,13 @@ Para organizar el trabajo colaborativo, Horizon adopta GitFlow como estrategia d
 
 Las ramas consideradas por el equipo son las siguientes:
 
-| Branch | Purpose |
-|---|---|
-| `main` | Contiene versiones estables del producto y sirve como referencia para releases y despliegues. |
-| `develop` | Funciona como rama de integración para los cambios desarrollados durante cada Sprint. |
+| Branch      | Purpose                                                                                                            |
+| ----------- | ------------------------------------------------------------------------------------------------------------------ |
+| `main`      | Contiene versiones estables del producto y sirve como referencia para releases y despliegues.                      |
+| `develop`   | Funciona como rama de integración para los cambios desarrollados durante cada Sprint.                              |
 | `feature/*` | Permite desarrollar funcionalidades, secciones del reporte o mejoras específicas antes de integrarlas a `develop`. |
-| `release/*` | Se utiliza para preparar una nueva versión estable antes de integrarla a `main`. |
-| `hotfix/*` | Permite realizar correcciones urgentes sobre una versión ya publicada. |
+| `release/*` | Se utiliza para preparar una nueva versión estable antes de integrarla a `main`.                                   |
+| `hotfix/*`  | Permite realizar correcciones urgentes sobre una versión ya publicada.                                             |
 
 El flujo general aplicado por el equipo es el siguiente:
 
@@ -3765,6 +3792,7 @@ Ejemplo:
   </div>
 </section>
 ```
+
 ---
 
 ### 5.1.4. Software Deployment Configuration
@@ -3784,15 +3812,15 @@ Para la publicación de la primera versión se utilizó **GitHub Pages** como pl
 
 La configuración utilizada fue la siguiente:
 
-| Deployment Property | Configuration |
-|---|---|
-| Product | EcoTrack Landing Page |
+| Deployment Property    | Configuration                                      |
+| ---------------------- | -------------------------------------------------- |
+| Product                | EcoTrack Landing Page                              |
 | Source Code Repository | https://github.com/Horizon-OpenSource/landing-page |
-| Deployment Platform | GitHub Pages |
-| Deployment Branch | `main` |
-| Deployment Mode | Manual configuration for the first stable version |
-| Release | `v1.0.0` |
-| Public URL | https://horizon-opensource.github.io/landing-page/ |
+| Deployment Platform    | GitHub Pages                                       |
+| Deployment Branch      | `main`                                             |
+| Deployment Mode        | Manual configuration for the first stable version  |
+| Release                | `v1.0.0`                                           |
+| Public URL             | https://horizon-opensource.github.io/landing-page/ |
 
 El proceso realizado para desplegar la primera versión estable del Landing Page fue el siguiente:
 
@@ -3830,43 +3858,43 @@ Durante esta reunión se definió el alcance inicial de implementación para Spr
 
 La coordinación iniciada durante la reunión presencial continuó el mismo día mediante WhatsApp. A lo largo del Sprint, el equipo mantuvo reuniones adicionales antes y después de las clases, además de sesiones virtuales principalmente mediante Discord, con el objetivo de revisar avances, coordinar actividades y resolver observaciones relacionadas con la entrega.
 
-| Sprint Planning Background | Details |
-|---|---|
-| **Sprint #** | Sprint 1 |
-| **Date** | 2026-08-31 |
-| **Time** | 10:30 PM |
-| **Location** | Presencial, salón de clases después de la sesión del curso |
-| **Prepared By** | Tello Murga, Javier Oswaldo |
-| **Attendees to Planning Meeting** | Lacuta Lima, Alex Rodrigo; Espinoza Flores, Aaron André; Payesa Torres, Harrison Hubert; Tello Murga, Javier Oswaldo; Torres Diaz, Rolando Andre |
-| **Sprint 0 Review Summary** | No aplica. Sprint 1 corresponde a la primera iteración de desarrollo del proyecto. |
-| **Sprint 0 Retrospective Summary** | No aplica. Al tratarse del primer Sprint, no existe una iteración anterior sobre la cual realizar una retrospectiva. |
+| Sprint Planning Background         | Details                                                                                                                                          |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Sprint #**                       | Sprint 1                                                                                                                                         |
+| **Date**                           | 2026-08-31                                                                                                                                       |
+| **Time**                           | 10:30 PM                                                                                                                                         |
+| **Location**                       | Presencial, salón de clases después de la sesión del curso                                                                                       |
+| **Prepared By**                    | Tello Murga, Javier Oswaldo                                                                                                                      |
+| **Attendees to Planning Meeting**  | Lacuta Lima, Alex Rodrigo; Espinoza Flores, Aaron André; Payesa Torres, Harrison Hubert; Tello Murga, Javier Oswaldo; Torres Diaz, Rolando Andre |
+| **Sprint 0 Review Summary**        | No aplica. Sprint 1 corresponde a la primera iteración de desarrollo del proyecto.                                                               |
+| **Sprint 0 Retrospective Summary** | No aplica. Al tratarse del primer Sprint, no existe una iteración anterior sobre la cual realizar una retrospectiva.                             |
 
 #### Sprint Goal & User Stories
 
 El objetivo del Sprint 1 se orienta a proporcionar a los potenciales clientes de EcoTrack un primer punto de contacto digital que permita comprender la propuesta de valor de la solución y acceder a información relevante sobre el producto.
 
-**Sprint 1 Goal**
+**Objetivo del Sprint 1**
 
-> Our focus is on providing potential EcoTrack customers with a responsive and publicly available Landing Page that clearly communicates the product purpose, benefits, main capabilities, subscription plans and contact options.
+> **Nuestro enfoque** es proporcionar a los potenciales clientes de EcoTrack un Landing Page responsivo y de acceso público que comunique claramente el propósito del producto, sus beneficios, principales funcionalidades, planes de suscripción y opciones de contacto.
 >
-> We believe it delivers a clear first understanding of EcoTrack to exporting companies, corporations and medium-sized industrial companies interested in improving the management of their environmental information.
+> **Consideramos que** esta primera versión permitirá a las empresas exportadoras, corporaciones y medianas empresas industriales comprender la propuesta de valor de EcoTrack y cómo puede contribuir a mejorar la gestión de su información ambiental.
 >
-> This will be confirmed when visitors can access the deployed Landing Page, navigate through its main sections and identify the EcoTrack value proposition, core capabilities, available plans and contact information.
+> **Confirmaremos el cumplimiento del objetivo cuando** los visitantes puedan acceder al Landing Page desplegado, navegar por sus principales secciones e identificar la propuesta de valor de EcoTrack, sus funcionalidades principales, los planes disponibles y la información de contacto.
 
 Las User Stories consideradas para el alcance de Sprint 1 corresponden a las historias de mayor prioridad relacionadas con el Landing Page:
 
-| User Story Id | User Story Title | Story Points |
-|---|---|---:|
-| US-01 | Conocer EcoTrack | 2 |
-| US-03 | Conocer las funcionalidades principales | 2 |
-| US-04 | Conocer los planes disponibles | 2 |
-| US-02 | Conocer los beneficios de EcoTrack | 2 |
-| US-05 | Contactar al equipo de EcoTrack | 3 |
-| **Total** |  | **11** |
+| User Story Id | User Story Title                        | Story Points |
+| ------------- | --------------------------------------- | -----------: |
+| US-01         | Conocer EcoTrack                        |            2 |
+| US-03         | Conocer las funcionalidades principales |            2 |
+| US-04         | Conocer los planes disponibles          |            2 |
+| US-02         | Conocer los beneficios de EcoTrack      |            2 |
+| US-05         | Contactar al equipo de EcoTrack         |            3 |
+| **Total**     |                                         |       **11** |
 
-| Sprint Metric | Value |
-|---|---:|
-| **Sprint 1 Velocity** | 11 Story Points |
+| Sprint Metric           |           Value |
+| ----------------------- | --------------: |
+| **Sprint 1 Velocity**   | 11 Story Points |
 | **Sum of Story Points** | 11 Story Points |
 
 El alcance seleccionado mantiene coherencia con la prioridad definida en el Product Backlog, donde las primeras User Stories están orientadas al Landing Page. De esta manera, el Sprint permite disponer de una primera versión visible y desplegada de EcoTrack que servirá como base para las siguientes iteraciones del producto.
@@ -3887,13 +3915,13 @@ Los principales aspectos considerados durante Sprint 1 fueron:
 
 La siguiente matriz resume la participación de los integrantes del equipo:
 
-| Team Member | GitHub Username | Landing Page Implementation | UX/UI and Content Integration | Responsive Design and Accessibility | Internationalization | Deployment and Release Management |
-|---|---|---|---|---|---|---|
-| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | C | C | C | C | C |
-| Espinoza Flores, Aaron André | `pisure` | C | C | C | C | C |
-| Payesa Torres, Harrison Hubert | `Harrison1024` | C | C | C | C | C |
-| Tello Murga, Javier Oswaldo | `JavierTello20` | L | L | L | L | L |
-| Torres Diaz, Rolando Andre | `ROLO194` | C | C | C | C | C |
+| Team Member                    | GitHub Username | Landing Page Implementation | UX/UI and Content Integration | Responsive Design and Accessibility | Internationalization | Deployment and Release Management |
+| ------------------------------ | --------------- | --------------------------- | ----------------------------- | ----------------------------------- | -------------------- | --------------------------------- |
+| Lacuta Lima, Alex Rodrigo      | `alexrodrigoll` | C                           | C                             | C                                   | C                    | C                                 |
+| Espinoza Flores, Aaron André   | `pisure`        | C                           | C                             | C                                   | C                    | C                                 |
+| Payesa Torres, Harrison Hubert | `Harrison1024`  | C                           | C                             | C                                   | C                    | C                                 |
+| Tello Murga, Javier Oswaldo    | `JavierTello20` | L                           | L                             | L                                   | L                    | L                                 |
+| Torres Diaz, Rolando Andre     | `ROLO194`       | C                           | C                             | C                                   | C                    | C                                 |
 
 **Legend:**
 
@@ -3921,18 +3949,18 @@ La siguiente captura presenta las User Stories correspondientes al Sprint 1:
 
 Las User Stories fueron descompuestas en Work Items considerando las actividades necesarias para implementar, revisar y desplegar el Landing Page.
 
-| Sprint # | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---|---|---:|---|---|
-| Sprint 1 | US-01 | Conocer EcoTrack | T-01 | Implement Landing Page hero | Implementar el Hero y la presentación principal de EcoTrack, comunicando el propósito y propuesta de valor del producto. | 3 | JavierTello20 | Done |
-| Sprint 1 | US-01 | Conocer EcoTrack | T-02 | Review Landing Page content | Revisar que el contenido principal del Landing Page mantenga coherencia con la propuesta de valor y alcance actualizado de EcoTrack. | 2 | JavierTello20 | Done |
-| Sprint 1 | US-02 | Conocer los beneficios de EcoTrack | T-03 | Implement problem and benefits section | Implementar la sección que explica el problema identificado y los principales beneficios que ofrece EcoTrack a sus segmentos objetivo. | 3 | JavierTello20 / alexrodrigoll | Done |
-| Sprint 1 | US-03 | Conocer las funcionalidades principales | T-04 | Implement core capabilities section | Implementar la sección que presenta las principales capacidades de EcoTrack, incluyendo gestión de emisiones, cálculo de huella, metas, analítica y gestión organizacional. | 3 | JavierTello20 | Done |
-| Sprint 1 | — | Additional Sprint Task | T-12 | Implement environmental standards section | Implementar la sección informativa sobre estándares y referencias ambientales consideradas por EcoTrack, incluyendo los ajustes responsive asociados. | 3 | pisure | Done |
-| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience | T-07 | Implement responsive behavior | Adaptar la interfaz para garantizar una correcta visualización en desktop, tablet y mobile. | 4 | JavierTello20 / pisure / ROLO194 | Done |
-| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience | T-08 | Implement internationalization | Implementar soporte de idioma inglés y español, manteniendo inglés como idioma predeterminado. | 3 | Harrison1024 | Done |
-| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience | T-09 | Improve accessibility | Incorporar atributos ARIA, textos alternativos y ajustes de accesibilidad aplicables al Landing Page. | 2 | Harrison1024 / alexrodrigoll | Done |
-| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page delivery | T-10 | Deploy Landing Page | Configurar GitHub Pages y publicar la primera versión estable del Landing Page desde la rama `main`. | 2 | JavierTello20 | Done |
-| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page delivery | T-11 | Validate Sprint 1 implementation | Revisar navegación, contenido, responsividad, idiomas y versión desplegada antes de consolidar la release inicial. | 2 | JavierTello20 | Done |
+| Sprint # | Story Id                              | Story Title                             | Task Id | Task Title                                | Task Description                                                                                                                                                            | Estimation (Hours) | Assigned To                      | Status |
+| -------- | ------------------------------------- | --------------------------------------- | ------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------------: | -------------------------------- | ------ |
+| Sprint 1 | US-01                                 | Conocer EcoTrack                        | T-01    | Implement Landing Page hero               | Implementar el Hero y la presentación principal de EcoTrack, comunicando el propósito y propuesta de valor del producto.                                                    |                  3 | JavierTello20                    | Done   |
+| Sprint 1 | US-01                                 | Conocer EcoTrack                        | T-02    | Review Landing Page content               | Revisar que el contenido principal del Landing Page mantenga coherencia con la propuesta de valor y alcance actualizado de EcoTrack.                                        |                  2 | JavierTello20                    | Done   |
+| Sprint 1 | US-02                                 | Conocer los beneficios de EcoTrack      | T-03    | Implement problem and benefits section    | Implementar la sección que explica el problema identificado y los principales beneficios que ofrece EcoTrack a sus segmentos objetivo.                                      |                  3 | JavierTello20 / alexrodrigoll    | Done   |
+| Sprint 1 | US-03                                 | Conocer las funcionalidades principales | T-04    | Implement core capabilities section       | Implementar la sección que presenta las principales capacidades de EcoTrack, incluyendo gestión de emisiones, cálculo de huella, metas, analítica y gestión organizacional. |                  3 | JavierTello20                    | Done   |
+| Sprint 1 | —                                     | Additional Sprint Task                  | T-12    | Implement environmental standards section | Implementar la sección informativa sobre estándares y referencias ambientales consideradas por EcoTrack, incluyendo los ajustes responsive asociados.                       |                  3 | pisure                           | Done   |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience                 | T-07    | Implement responsive behavior             | Adaptar la interfaz para garantizar una correcta visualización en desktop, tablet y mobile.                                                                                 |                  4 | JavierTello20 / pisure / ROLO194 | Done   |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience                 | T-08    | Implement internationalization            | Implementar soporte de idioma inglés y español, manteniendo inglés como idioma predeterminado.                                                                              |                  3 | Harrison1024                     | Done   |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page experience                 | T-09    | Improve accessibility                     | Incorporar atributos ARIA, textos alternativos y ajustes de accesibilidad aplicables al Landing Page.                                                                       |                  2 | Harrison1024 / alexrodrigoll     | Done   |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page delivery                   | T-10    | Deploy Landing Page                       | Configurar GitHub Pages y publicar la primera versión estable del Landing Page desde la rama `main`.                                                                        |                  2 | JavierTello20                    | Done   |
+| Sprint 1 | US-01 / US-02 / US-03 / US-04 / US-05 | Landing Page delivery                   | T-11    | Validate Sprint 1 implementation          | Revisar navegación, contenido, responsividad, idiomas y versión desplegada antes de consolidar la release inicial.                                                          |                  2 | JavierTello20                    | Done   |
 
 Al cierre del Sprint 1, las User Stories seleccionadas fueron completadas y la primera versión estable del Landing Page quedó publicada mediante GitHub Pages. Las actividades transversales de responsividad, internacionalización, accesibilidad, revisión y despliegue permitieron complementar las funcionalidades asociadas directamente con cada historia.
 
@@ -3949,39 +3977,39 @@ https://github.com/Horizon-OpenSource/landing-page
 
 Los siguientes commits representan las principales actividades de implementación realizadas durante Sprint 1:
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
-|---|---|---|---|---|---|
-| `Horizon-OpenSource/landing-page` | `main` | `19c8209` | `chore: initialize landing page repository` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/landing-page-structure` | `81d62dc` | `chore(landing): set up landing page project structure` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/header-navigation` | `fa87771` | `feat(header): implement desktop navigation` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/header-navigation` | `679a909` | `feat(header): implement responsive mobile navigation` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/header-navigation` | `c20108c` | `fix(header): add standards navigation link` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/hero-section` | `f635d0f` | `feat(hero): implement responsive EcoTrack hero section` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/hero-section` | `c82e06b` | `fix(header): prevent navigation wrapping on tablet widths` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/problem-benefits` | `19132ab` | `feat(problem): implement problem and benefits section` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/style-modularization` | `81077cf` | `refactor(styles): modularize landing page styles` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/target-segments` | `2bd4430` | `feat(segments): add EcoTrack target segments section` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/features-section` | `43eb7e3` | `feat(features): implement EcoTrack core capabilities section` | — | 2026-09-15 |
-| `Horizon-OpenSource/landing-page` | `feature/features-section` | `7f4074e` | `feat(features): implement core capabilities and component responsive styles` | — | 2026-09-16 |
-| `Horizon-OpenSource/landing-page` | `feature/emission-scopes` | `30f0ab9` | `feat(scopes): implement emission scopes section` | — | 2026-09-16 |
-| `Horizon-OpenSource/landing-page` | `feature/how-it-works` | `4e9bf34` | `feat(process): implement EcoTrack how it works section` | — | 2026-09-16 |
-| `Horizon-OpenSource/landing-page` | `feature/tablet-layout-fixes` | `21b6cfd` | `fix(responsive): improve tablet layout and process connectors` | — | 2026-09-16 |
-| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `2508ba4` | `feat(ui): add accessible scroll reveal animations` | — | 2026-09-16 |
-| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `8b0c2af` | `feat(hero): add subtle entrance animation` | — | 2026-09-16 |
-| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `07c9b4f` | `fix(navigation): offset anchor scrolling for sticky header` | — | 2026-09-16 |
-| `Horizon-OpenSource/landing-page` | `feature/landing-animations` | `ffe96fd` | `feat(navigation): add active section scroll tracking` | — | 2026-09-16 |
-| `Horizon-OpenSource/landing-page` | `feature/content-copy-refinement` | `25e1769` | `feat(content): refine EcoTrack landing page marketing copy` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `standards-section` | `cc31207` | `feat(standards): implement environmental standards section` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `standards-section` | `d18faa7` | `feat(standards): improve responsive layout` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `feature/plans-and-cta` | `aa591b5` | `feat(plans): implement EcoTrack subscription plans` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `feature/plans-and-cta` | `fd306f2` | `fix(plans): improve responsive pricing layout` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `feature/contact-and-about` | `d33f4f7` | `feat(contact): implement EcoTrack contact section` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `feature/contact-and-about` | `0e72891` | `feat(contact): add temporary handling of the form` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `feature/contact-and-about` | `5b3f4c8` | `feat(styles): add the contact and about` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `feature/footer-structure` | `9bfdb72` | `feat(footer): implement footer structure and include contact/plans styles` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `feature/footer-structure` | `e953e3d` | `feat(footer): implement footer styles` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `feature/i18n-accessibility` | `b5916be` | `feat(i18n): add bilingual translations, accessibility labels and localized metadata` | — | 2026-09-17 |
-| `Horizon-OpenSource/landing-page` | `main` | `efd7f96` | `Merge pull request #7 from Horizon-OpenSource/develop` | — | 2026-09-18 |
+| Repository                        | Branch                            | Commit Id | Commit Message                                                                        | Commit Message Body | Committed on |
+| --------------------------------- | --------------------------------- | --------- | ------------------------------------------------------------------------------------- | ------------------- | ------------ |
+| `Horizon-OpenSource/landing-page` | `main`                            | `19c8209` | `chore: initialize landing page repository`                                           | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/landing-page-structure`  | `81d62dc` | `chore(landing): set up landing page project structure`                               | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/header-navigation`       | `fa87771` | `feat(header): implement desktop navigation`                                          | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/header-navigation`       | `679a909` | `feat(header): implement responsive mobile navigation`                                | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/header-navigation`       | `c20108c` | `fix(header): add standards navigation link`                                          | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/hero-section`            | `f635d0f` | `feat(hero): implement responsive EcoTrack hero section`                              | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/hero-section`            | `c82e06b` | `fix(header): prevent navigation wrapping on tablet widths`                           | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/problem-benefits`        | `19132ab` | `feat(problem): implement problem and benefits section`                               | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/style-modularization`    | `81077cf` | `refactor(styles): modularize landing page styles`                                    | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/target-segments`         | `2bd4430` | `feat(segments): add EcoTrack target segments section`                                | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/features-section`        | `43eb7e3` | `feat(features): implement EcoTrack core capabilities section`                        | —                   | 2026-09-15   |
+| `Horizon-OpenSource/landing-page` | `feature/features-section`        | `7f4074e` | `feat(features): implement core capabilities and component responsive styles`         | —                   | 2026-09-16   |
+| `Horizon-OpenSource/landing-page` | `feature/emission-scopes`         | `30f0ab9` | `feat(scopes): implement emission scopes section`                                     | —                   | 2026-09-16   |
+| `Horizon-OpenSource/landing-page` | `feature/how-it-works`            | `4e9bf34` | `feat(process): implement EcoTrack how it works section`                              | —                   | 2026-09-16   |
+| `Horizon-OpenSource/landing-page` | `feature/tablet-layout-fixes`     | `21b6cfd` | `fix(responsive): improve tablet layout and process connectors`                       | —                   | 2026-09-16   |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations`      | `2508ba4` | `feat(ui): add accessible scroll reveal animations`                                   | —                   | 2026-09-16   |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations`      | `8b0c2af` | `feat(hero): add subtle entrance animation`                                           | —                   | 2026-09-16   |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations`      | `07c9b4f` | `fix(navigation): offset anchor scrolling for sticky header`                          | —                   | 2026-09-16   |
+| `Horizon-OpenSource/landing-page` | `feature/landing-animations`      | `ffe96fd` | `feat(navigation): add active section scroll tracking`                                | —                   | 2026-09-16   |
+| `Horizon-OpenSource/landing-page` | `feature/content-copy-refinement` | `25e1769` | `feat(content): refine EcoTrack landing page marketing copy`                          | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `standards-section`               | `cc31207` | `feat(standards): implement environmental standards section`                          | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `standards-section`               | `d18faa7` | `feat(standards): improve responsive layout`                                          | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `feature/plans-and-cta`           | `aa591b5` | `feat(plans): implement EcoTrack subscription plans`                                  | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `feature/plans-and-cta`           | `fd306f2` | `fix(plans): improve responsive pricing layout`                                       | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `feature/contact-and-about`       | `d33f4f7` | `feat(contact): implement EcoTrack contact section`                                   | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `feature/contact-and-about`       | `0e72891` | `feat(contact): add temporary handling of the form`                                   | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `feature/contact-and-about`       | `5b3f4c8` | `feat(styles): add the contact and about`                                             | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `feature/footer-structure`        | `9bfdb72` | `feat(footer): implement footer structure and include contact/plans styles`           | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `feature/footer-structure`        | `e953e3d` | `feat(footer): implement footer styles`                                               | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `feature/i18n-accessibility`      | `b5916be` | `feat(i18n): add bilingual translations, accessibility labels and localized metadata` | —                   | 2026-09-17   |
+| `Horizon-OpenSource/landing-page` | `main`                            | `efd7f96` | `Merge pull request #7 from Horizon-OpenSource/develop`                               | —                   | 2026-09-18   |
 
 Los commits evidencian una estrategia incremental de desarrollo en la que las diferentes secciones y mejoras fueron implementadas de manera independiente antes de su integración. Asimismo, el historial evidencia la participación de distintos miembros del equipo en la implementación del Landing Page.
 
@@ -4073,13 +4101,13 @@ Los Web Services forman parte del alcance técnico definido para EcoTrack y ser�
 
 Para Sprint 1, el estado de documentación de servicios es el siguiente:
 
-| Service Documentation Item | Sprint 1 Status |
-|---|---|
+| Service Documentation Item          | Sprint 1 Status                |
+| ----------------------------------- | ------------------------------ |
 | RESTful Web Services implementation | Not implemented in this Sprint |
-| OpenAPI Specification | Not applicable in Sprint 1 |
-| Swagger documentation | Not applicable in Sprint 1 |
-| Documented endpoints | 0 |
-| Backend repository evidence | Not applicable in Sprint 1 |
+| OpenAPI Specification               | Not applicable in Sprint 1     |
+| Swagger documentation               | Not applicable in Sprint 1     |
+| Documented endpoints                | 0                              |
+| Backend repository evidence         | Not applicable in Sprint 1     |
 
 La ausencia de endpoints documentados en esta iteración responde al alcance planificado del Sprint y no representa una funcionalidad pendiente dentro de los objetivos definidos para Sprint 1. La implementación y documentación de Web Services será incorporada progresivamente cuando estos productos formen parte del alcance de los siguientes Sprints.
 
@@ -4098,16 +4126,16 @@ La configuración inicial del despliegue fue realizada manualmente y se utilizó
 
 La información principal del despliegue es la siguiente:
 
-| Deployment Item | Sprint 1 Configuration |
-|---|---|
-| Product | EcoTrack Landing Page |
-| Repository | https://github.com/Horizon-OpenSource/landing-page |
-| Deployment Platform | GitHub Pages |
-| Source Branch | `main` |
+| Deployment Item          | Sprint 1 Configuration                              |
+| ------------------------ | --------------------------------------------------- |
+| Product                  | EcoTrack Landing Page                               |
+| Repository               | https://github.com/Horizon-OpenSource/landing-page  |
+| Deployment Platform      | GitHub Pages                                        |
+| Source Branch            | `main`                                              |
 | Deployment Configuration | Manual configuration for the first deployed version |
-| Stable Release | `v1.0.0` |
-| Public URL | https://horizon-opensource.github.io/landing-page/ |
-| Status | Deployed |
+| Stable Release           | `v1.0.0`                                            |
+| Public URL               | https://horizon-opensource.github.io/landing-page/  |
+| Status                   | Deployed                                            |
 
 #### GitHub Pages Configuration
 
@@ -4153,13 +4181,13 @@ La coordinación del trabajo se realizó mediante reuniones presenciales antes y
 
 Las principales contribuciones realizadas por los integrantes durante Sprint 1 fueron las siguientes:
 
-| Team Member | GitHub Username | Main Contribution during Sprint 1 |
-|---|---|---|
-| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | Implementación de la sección de contacto, comportamiento inicial del formulario y estilos asociados. También colaboró en actividades de accesibilidad y revisión del Landing Page. |
-| Espinoza Flores, Aaron André | `pisure` | Implementación de la sección de estándares ambientales y mejoras responsive asociadas. |
-| Payesa Torres, Harrison Hubert | `Harrison1024` | Implementación del footer, internacionalización EN/ES, etiquetas de accesibilidad y metadata localizada. |
-| Tello Murga, Javier Oswaldo | `JavierTello20` | Liderazgo e integración general del desarrollo. Implementación de estructura inicial, navegación, Hero, problema y beneficios, segmentos objetivo, capacidades principales, emission scopes, How It Works, responsividad, animaciones, refinamiento de contenido, integración y despliegue. |
-| Torres Diaz, Rolando Andre | `ROLO194` | Implementación de los planes de suscripción y mejoras responsive relacionadas con la sección de pricing. |
+| Team Member                    | GitHub Username | Main Contribution during Sprint 1                                                                                                                                                                                                                                                           |
+| ------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Lacuta Lima, Alex Rodrigo      | `alexrodrigoll` | Implementación de la sección de contacto, comportamiento inicial del formulario y estilos asociados. También colaboró en actividades de accesibilidad y revisión del Landing Page.                                                                                                          |
+| Espinoza Flores, Aaron André   | `pisure`        | Implementación de la sección de estándares ambientales y mejoras responsive asociadas.                                                                                                                                                                                                      |
+| Payesa Torres, Harrison Hubert | `Harrison1024`  | Implementación del footer, internacionalización EN/ES, etiquetas de accesibilidad y metadata localizada.                                                                                                                                                                                    |
+| Tello Murga, Javier Oswaldo    | `JavierTello20` | Liderazgo e integración general del desarrollo. Implementación de estructura inicial, navegación, Hero, problema y beneficios, segmentos objetivo, capacidades principales, emission scopes, How It Works, responsividad, animaciones, refinamiento de contenido, integración y despliegue. |
+| Torres Diaz, Rolando Andre     | `ROLO194`       | Implementación de los planes de suscripción y mejoras responsive relacionadas con la sección de pricing.                                                                                                                                                                                    |
 
 #### GitHub Collaboration Evidence
 
@@ -4213,65 +4241,71 @@ Para Sprint 2, el equipo decidió concentrar el esfuerzo principalmente en el de
 
 La planificación también considera actividades de integración entre los componentes desarrollados, validación de navegación, responsividad y preparación de los productos para su despliegue.
 
-| Sprint Planning Background | Details |
-|---|---|
-| **Sprint #** | Sprint 2 |
-| **Date** | 2026-09-27 |
-| **Time** | 08:30 PM |
-| **Location** | Discord |
-| **Prepared By** | Tello Murga, Javier Oswaldo |
-| **Attendees to Planning Meeting** | Lacuta Lima, Alex Rodrigo; Espinoza Flores, Aaron André; Payesa Torres, Harrison Hubert; Tello Murga, Javier Oswaldo |
-| **Sprint 1 Review Summary** | Durante Sprint 1 se implementó y desplegó la primera versión estable del Landing Page de EcoTrack. Esta versión permitió presentar públicamente la propuesta de valor del producto, sus segmentos objetivo, principales capacidades, planes y mecanismos de contacto. También se establecieron los repositorios, GitFlow Workflow y prácticas iniciales de colaboración utilizadas por Horizon. |
-| **Sprint 1 Retrospective Summary** | Luego de Sprint 1 se identificó la necesidad de mantener una mayor trazabilidad entre Product Backlog, Sprint Backlog, UX/UI e implementación. Asimismo, se decidió distribuir Sprint 2 por áreas funcionales para facilitar el desarrollo paralelo de la Frontend Web Application y posteriormente realizar una integración conjunta de los avances. |
+| Sprint Planning Background         | Details                                                                                                                                                                                                                                                                                                                                                                                         |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sprint #**                       | Sprint 2                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Date**                           | 2026-09-27                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Time**                           | 08:30 PM                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Location**                       | Discord                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Prepared By**                    | Tello Murga, Javier Oswaldo                                                                                                                                                                                                                                                                                                                                                                     |
+| **Attendees to Planning Meeting**  | Lacuta Lima, Alex Rodrigo; Espinoza Flores, Aaron André; Payesa Torres, Harrison Hubert; Tello Murga, Javier Oswaldo                                                                                                                                                                                                                                                                            |
+| **Sprint 1 Review Summary**        | Durante Sprint 1 se implementó y desplegó la primera versión estable del Landing Page de EcoTrack. Esta versión permitió presentar públicamente la propuesta de valor del producto, sus segmentos objetivo, principales capacidades, planes y mecanismos de contacto. También se establecieron los repositorios, GitFlow Workflow y prácticas iniciales de colaboración utilizadas por Horizon. |
+| **Sprint 1 Retrospective Summary** | Luego de Sprint 1 se identificó la necesidad de mantener una mayor trazabilidad entre Product Backlog, Sprint Backlog, UX/UI e implementación. Asimismo, se decidió distribuir Sprint 2 por áreas funcionales para facilitar el desarrollo paralelo de la Frontend Web Application y posteriormente realizar una integración conjunta de los avances.                                           |
 
 ### Sprint Goal & User Stories
 
 El objetivo de Sprint 2 se orienta a implementar y desplegar la primera versión funcional de la Frontend Web Application de EcoTrack, complementada con una nueva versión del Landing Page.
 
-**Sprint 2 Goal**
+**Objetivo del Sprint 2**
 
-> Our focus is on delivering the first functional version of the EcoTrack Frontend Web Application and evolving the Landing Page so that users can move from discovering the product to interacting with its main environmental management capabilities.
+> **Nuestro enfoque** es desarrollar y desplegar la primera versión funcional de la Frontend Web Application de EcoTrack, junto con una versión actualizada del Landing Page, permitiendo que los usuarios pasen de conocer la propuesta de valor del producto a interactuar con sus principales funcionalidades de gestión ambiental.
 >
-> We believe this iteration delivers an initial integrated experience for organizations that need to manage organizational information, register emissions data, calculate carbon footprint results and analyze environmental information.
+> **Consideramos que** esta iteración permitirá ofrecer una primera experiencia integrada para las organizaciones, incorporando funcionalidades de gestión organizacional, registro de emisiones, cálculo de huella de carbono y visualización de indicadores y reportes ambientales.
 >
-> This will be confirmed when users can access the deployed Landing Page and Frontend Web Application and navigate through the main functional flows selected for Sprint 2 using responsive and consistent web interfaces.
+> **Confirmaremos el cumplimiento del objetivo cuando** los usuarios puedan acceder a las versiones desplegadas del Landing Page y de la Frontend Web Application, navegar por los principales flujos funcionales seleccionados para Sprint 2 y utilizar interfaces web responsivas y consistentes.
 
 Las User Stories seleccionadas para Sprint 2 corresponden a los cuatro aspectos funcionales priorizados para esta iteración:
 
-| User Story Id | User Story Title | Story Points | Main Aspect |
-|---|---|---:|---|
-| US-06 | Registrar una empresa | 5 | Organization Management |
-| US-09 | Consultar perfil de la empresa | 2 | Organization Management |
-| US-10 | Actualizar datos de la empresa | 3 | Organization Management |
-| US-32 | Gestionar sedes | 5 | Organization Management |
-| US-44 | Gestionar unidades de negocio | 5 | Organization Management |
-| US-11 | Registrar una fuente de emisión | 5 | Emissions Management |
-| US-12 | Clasificar una fuente de emisión por alcance | 3 | Emissions Management |
-| US-13 | Consultar registros de emisiones | 3 | Emissions Management |
-| US-14 | Editar un registro de emisión | 3 | Emissions Management |
-| US-15 | Eliminar un registro de emisión | 2 | Emissions Management |
-| US-18 | Buscar registros de emisión | 2 | Emissions Management |
-| US-19 | Filtrar registros de emisiones por alcance | 3 | Emissions Management |
-| US-45 | Registrar datos de actividad | 5 | Emissions Management |
-| US-34 | Calcular huella de carbono | 8 | Carbon Footprint Calculation |
-| US-35 | Consultar resultados por alcance | 3 | Carbon Footprint Calculation |
-| US-36 | Consultar resultados por periodo | 3 | Carbon Footprint Calculation |
-| US-37 | Consultar historial de cálculos | 3 | Carbon Footprint Calculation |
-| US-46 | Seleccionar factor de emisión | 3 | Carbon Footprint Calculation |
-| US-16 | Visualizar el total de emisiones calculadas | 3 | Analytics & Reports |
-| US-17 | Visualizar emisiones calculadas por alcance | 5 | Analytics & Reports |
-| US-20 | Comparar emisiones entre periodos | 5 | Analytics & Reports |
-| US-26 | Consultar resumen ambiental | 3 | Analytics & Reports |
-| US-27 | Generar reporte ambiental consolidado | 5 | Analytics & Reports |
-| US-28 | Descargar reporte ambiental | 3 | Analytics & Reports |
-| US-29 | Generar reporte por periodo | 5 | Analytics & Reports |
-| US-30 | Consultar reportes anteriores | 3 | Analytics & Reports |
-| **Total** |  | **98** | |
+| User Story Id | User Story Title                             | Story Points | Main Aspect                  |
+| ------------- | -------------------------------------------- | -----------: | ---------------------------- |
+| US-06         | Registrar una empresa                        |            5 | Organization Management      |
+| US-09         | Consultar perfil de la empresa               |            2 | Organization Management      |
+| US-10         | Actualizar datos de la empresa               |            3 | Organization Management      |
+| US-32         | Gestionar sedes                              |            5 | Organization Management      |
+| US-44         | Gestionar unidades de negocio                |            5 | Organization Management      |
+| US-11         | Registrar una fuente de emisión              |            5 | Emissions Management         |
+| US-12         | Clasificar una fuente de emisión por alcance |            3 | Emissions Management         |
+| US-13         | Consultar registros de emisiones             |            3 | Emissions Management         |
+| US-14         | Editar un registro de emisión                |            3 | Emissions Management         |
+| US-15         | Eliminar un registro de emisión              |            2 | Emissions Management         |
+| US-18         | Buscar registros de emisión                  |            2 | Emissions Management         |
+| US-19         | Filtrar registros de emisiones por alcance   |            3 | Emissions Management         |
+| US-45         | Registrar datos de actividad                 |            5 | Emissions Management         |
+| US-34         | Calcular huella de carbono                   |            8 | Carbon Footprint Calculation |
+| US-35         | Consultar resultados por alcance             |            3 | Carbon Footprint Calculation |
+| US-36         | Consultar resultados por periodo             |            3 | Carbon Footprint Calculation |
+| US-37         | Consultar historial de cálculos              |            3 | Carbon Footprint Calculation |
+| US-46         | Seleccionar factor de emisión                |            3 | Carbon Footprint Calculation |
+| US-16         | Visualizar el total de emisiones calculadas  |            3 | Analytics & Reports          |
+| US-17         | Visualizar emisiones calculadas por alcance  |            5 | Analytics & Reports          |
+| US-20         | Comparar emisiones entre periodos            |            5 | Analytics & Reports          |
+| US-26         | Consultar resumen ambiental                  |            3 | Analytics & Reports          |
+| US-27         | Generar reporte ambiental consolidado        |            5 | Analytics & Reports          |
+| US-28         | Descargar reporte ambiental                  |            3 | Analytics & Reports          |
+| US-29         | Generar reporte por periodo                  |            5 | Analytics & Reports          |
+| US-30         | Consultar reportes anteriores                |            3 | Analytics & Reports          |
+| **Total**     |                                              |       **98** |                              |
 
-| Sprint Metric | Value |
-|---|---:|
-| **Sprint 2 Velocity** | 98 Story Points |
-| **Sum of Story Points** | 98 Story Points |
+| Sprint Metric                            |           Value |
+| ---------------------------------------- | --------------: |
+| **Planned Story Points**                 | 98 Story Points |
+| **Completed Story Points (provisional)** | 78 Story Points |
+| **Incomplete Story Points**              | 20 Story Points |
+| **Sprint 2 Velocity (provisional)**      | 78 Story Points |
+
+La planificación de Sprint 2 contempló 26 User Stories, equivalentes a 98 Story Points. A partir de la revisión posterior de los avances y evidencias disponibles, se identificaron 21 User Stories clasificadas como completadas, equivalentes a 78 Story Points, mientras que cinco User Stories de Carbon Footprint Calculation permanecen en progreso, con 20 Story Points.
+
+Estas cifras corresponden a una reconstrucción documental del estado al cierre de TB1 y requieren validación funcional para confirmar la velocidad definitiva del Sprint.
 
 El alcance seleccionado permite avanzar sobre los principales procesos operativos de EcoTrack sin intentar implementar la totalidad del Product Backlog dentro de una sola iteración. Las funcionalidades que no forman parte de Sprint 2 permanecerán disponibles para su planificación en los siguientes Sprints.
 
@@ -4291,12 +4325,12 @@ Los principales aspectos considerados durante Sprint 2 son:
 
 La siguiente matriz resume la distribución utilizada durante Sprint 2:
 
-| Team Member | GitHub Username | Organization Management | Emissions Management | Carbon Footprint Calculation | Analytics & Reports | Landing Page and Frontend Integration |
-|---|---|---|---|---|---|---|
-| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | C | C | L | C | C |
-| Espinoza Flores, Aaron André | `pisure` | C | L | C | C | C |
-| Payesa Torres, Harrison Hubert | `Harrison1024` | C | C | C | L | C |
-| Tello Murga, Javier Oswaldo | `JavierTello20` | L | C | C | C | L |
+| Team Member                    | GitHub Username | Organization Management | Emissions Management | Carbon Footprint Calculation | Analytics & Reports | Landing Page and Frontend Integration |
+| ------------------------------ | --------------- | ----------------------- | -------------------- | ---------------------------- | ------------------- | ------------------------------------- |
+| Lacuta Lima, Alex Rodrigo      | `alexrodrigoll` | C                       | C                    | L                            | C                   | C                                     |
+| Espinoza Flores, Aaron André   | `pisure`        | C                       | L                    | C                            | C                   | C                                     |
+| Payesa Torres, Harrison Hubert | `Harrison1024`  | C                       | C                    | C                            | L                   | C                                     |
+| Tello Murga, Javier Oswaldo    | `JavierTello20` | L                       | C                    | C                            | C                   | L                                     |
 
 **Legend:**
 
@@ -4324,46 +4358,93 @@ Para organizar y realizar seguimiento a las actividades del Sprint, Horizon util
 **Sprint Board:**  
 https://trello.com/b/Hp12BlSW/horizon-ecotrack
 
-La siguiente captura presenta el estado del Board utilizado para Sprint 2:
-
-![Sprint 2 Backlog Board](assets/chapter-05/sprint-02-backlog-board.png)
-
 Las User Stories fueron descompuestas en Work Items de acuerdo con las principales actividades necesarias para desarrollar cada flujo funcional.
 
-| Sprint # | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---|---|---:|---|---|
-| Sprint 2 | US-06 | Registrar una empresa | T-13 | Implement organization registration | Implementar la vista y formulario requerido para registrar la información principal de una organización en EcoTrack. | 6 | JavierTello20 | To-do |
-| Sprint 2 | US-09 | Consultar perfil de la empresa | T-14 | Implement organization profile | Implementar la vista que permita consultar la información registrada de la organización. | 3 | JavierTello20 | To-do |
-| Sprint 2 | US-10 | Actualizar datos de la empresa | T-15 | Implement organization update | Implementar el flujo de edición y actualización de los datos principales de la organización. | 4 | JavierTello20 | To-do |
-| Sprint 2 | US-32 | Gestionar sedes | T-16 | Implement site management | Implementar las vistas necesarias para registrar y consultar las sedes asociadas a la organización. | 6 | JavierTello20 | To-do |
-| Sprint 2 | US-44 | Gestionar unidades de negocio | T-17 | Implement business unit management | Implementar las vistas para registrar y consultar unidades de negocio asociadas a una organización. | 6 | JavierTello20 | To-do |
-| Sprint 2 | US-11 | Registrar una fuente de emisión | T-18 | Implement emission source registration | Implementar el formulario y flujo necesario para registrar una nueva fuente de emisión. | 6 | pisure | To-do |
-| Sprint 2 | US-12 | Clasificar una fuente de emisión por alcance | T-19 | Implement emission scope classification | Incorporar la clasificación de las fuentes registradas según Scope 1, Scope 2 o Scope 3. | 4 | pisure | To-do |
-| Sprint 2 | US-13 | Consultar registros de emisiones | T-20 | Implement emission records view | Implementar la vista de consulta de los registros de emisiones asociados a la organización. | 4 | pisure | To-do |
-| Sprint 2 | US-14 | Editar un registro de emisión | T-21 | Implement emission editing | Incorporar el flujo para editar información existente de los registros de emisiones. | 4 | pisure | To-do |
-| Sprint 2 | US-15 | Eliminar un registro de emisión | T-22 | Implement emission deletion | Incorporar la interacción de eliminación y confirmación de un registro de emisión. | 3 | pisure | To-do |
-| Sprint 2 | US-18 | Buscar registros de emisión | T-23 | Implement emissions search | Incorporar búsqueda de registros de emisión dentro del listado correspondiente. | 3 | pisure | To-do |
-| Sprint 2 | US-19 | Filtrar registros de emisiones por alcance | T-24 | Implement scope filters | Implementar filtros que permitan consultar registros de acuerdo con Scope 1, Scope 2 o Scope 3. | 4 | pisure | To-do |
-| Sprint 2 | US-45 | Registrar datos de actividad | T-25 | Implement activity data registration | Implementar el formulario de registro de datos de actividad requeridos para los procesos de cálculo. | 6 | pisure | To-do |
-| Sprint 2 | US-34 | Calcular huella de carbono | T-26 | Implement carbon footprint calculation flow | Implementar la experiencia frontend correspondiente al proceso de cálculo de huella de carbono. | 10 | alexrodrigoll | To-do |
-| Sprint 2 | US-35 | Consultar resultados por alcance | T-27 | Implement results by scope | Implementar la visualización de resultados de huella de carbono clasificados por alcance. | 4 | alexrodrigoll | To-do |
-| Sprint 2 | US-36 | Consultar resultados por periodo | T-28 | Implement results by period | Implementar la visualización de resultados correspondientes a un periodo seleccionado. | 4 | alexrodrigoll | To-do |
-| Sprint 2 | US-37 | Consultar historial de cálculos | T-29 | Implement calculation history | Implementar una vista para consultar cálculos realizados en periodos anteriores. | 4 | alexrodrigoll | To-do |
-| Sprint 2 | US-46 | Seleccionar factor de emisión | T-30 | Implement emission factor selection | Implementar la interacción para seleccionar factores de emisión dentro del flujo de cálculo. | 4 | alexrodrigoll | To-do |
-| Sprint 2 | US-16 | Visualizar el total de emisiones calculadas | T-31 | Implement total emissions indicator | Implementar el indicador principal con el total de emisiones calculadas para un periodo. | 4 | Harrison1024 | To-do |
-| Sprint 2 | US-17 | Visualizar emisiones calculadas por alcance | T-32 | Implement emissions by scope visualization | Implementar componentes visuales para representar emisiones correspondientes a cada alcance. | 6 | Harrison1024 | To-do |
-| Sprint 2 | US-20 | Comparar emisiones entre periodos | T-33 | Implement period comparison | Implementar una visualización que permita comparar resultados ambientales de diferentes periodos. | 6 | Harrison1024 | To-do |
-| Sprint 2 | US-26 | Consultar resumen ambiental | T-34 | Implement environmental dashboard | Implementar el resumen de indicadores ambientales principales de la organización. | 4 | Harrison1024 | To-do |
-| Sprint 2 | US-27 | Generar reporte ambiental consolidado | T-35 | Implement consolidated report flow | Implementar la experiencia asociada con la generación de un reporte ambiental consolidado. | 6 | Harrison1024 | To-do |
-| Sprint 2 | US-28 | Descargar reporte ambiental | T-36 | Implement report download | Implementar la interacción necesaria para descargar reportes generados desde EcoTrack. | 4 | Harrison1024 | To-do |
-| Sprint 2 | US-29 | Generar reporte por periodo | T-37 | Implement period report flow | Implementar la generación de reportes de acuerdo con un periodo seleccionado. | 6 | Harrison1024 | To-do |
-| Sprint 2 | US-30 | Consultar reportes anteriores | T-38 | Implement report history | Implementar una vista para consultar reportes ambientales generados anteriormente. | 4 | Harrison1024 | To-do |
-| Sprint 2 | — | Additional Sprint Task | T-39 | Refine Landing Page V2 | Realizar mejoras de contenido, navegación, responsividad y consistencia visual sobre la nueva versión del Landing Page. | 5 | JavierTello20 | To-do |
-| Sprint 2 | — | Additional Sprint Task | T-40 | Integrate and deploy Frontend Web Application | Integrar los módulos desarrollados, revisar navegación general y preparar la primera versión desplegada de la Frontend Web Application. | 6 | JavierTello20 | To-do |
+| Sprint # | Story Id | Story Title                                  | Task Id | Task Title                                         | Task Description                                                                                                                                          | Estimation (Hours) | Assigned To   | Status      |
+| -------- | -------- | -------------------------------------------- | ------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------------: | ------------- | ----------- |
+| Sprint 2 | US-06    | Registrar una empresa                        | T-13    | Implementar formulario de registro de organización | Crear formulario reactivo de organización con validaciones.                                                                                               |                  4 | JavierTello20 | Done        |
+| Sprint 2 | US-06    | Registrar una empresa                        | T-41    | Conectar registro de organización con Mock API     | Implementar registro HTTP y actualizar el estado de organización.                                                                                         |                  2 | JavierTello20 | Done        |
+| Sprint 2 | US-09    | Consultar perfil de la empresa               | T-14    | Implementar vista general de la organización       | Crear vista de información y resumen de la empresa.                                                                                                       |                  2 | JavierTello20 | Done        |
+| Sprint 2 | US-09    | Consultar perfil de la empresa               | T-42    | Cargar información del perfil de la organización   | Consultar datos de organización mediante el store y Mock API.                                                                                             |                  1 | JavierTello20 | Done        |
+| Sprint 2 | US-10    | Actualizar datos de la empresa               | T-15    | Implementar formulario de edición de organización  | Crear formulario para editar datos de la empresa.                                                                                                         |                  2 | JavierTello20 | Done        |
+| Sprint 2 | US-10    | Actualizar datos de la empresa               | T-43    | Conectar actualización de organización             | Persistir cambios mediante servicio HTTP y sincronizar el estado.                                                                                         |                  2 | JavierTello20 | Done        |
+| Sprint 2 | US-32    | Gestionar sedes                              | T-16    | Implementar registro de sedes                      | Crear formulario y diálogo de registro de sedes.                                                                                                          |                  3 | JavierTello20 | Done        |
+| Sprint 2 | US-32    | Gestionar sedes                              | T-44    | Implementar listado de sedes                       | Consultar y visualizar sedes de la organización.                                                                                                          |                  3 | JavierTello20 | Done        |
+| Sprint 2 | US-32    | Gestionar sedes                              | T-67    | Implementar edición de sedes                       | Editar datos de sedes existentes.                                                                                                                         |                  2 | JavierTello20 | Done        |
+| Sprint 2 | US-32    | Gestionar sedes                              | T-68    | Implementar eliminación de sedes                   | Confirmar y eliminar sedes mediante servicio.                                                                                                             |                  1 | JavierTello20 | Done        |
+| Sprint 2 | US-44    | Gestionar unidades de negocio                | T-17    | Implementar registro de unidades de negocio        | Crear formulario de registro de unidades de negocio.                                                                                                      |                  3 | JavierTello20 | Done        |
+| Sprint 2 | US-44    | Gestionar unidades de negocio                | T-45    | Implementar listado de unidades de negocio         | Consultar y visualizar unidades de negocio.                                                                                                               |                  3 | JavierTello20 | Done        |
+| Sprint 2 | US-44    | Gestionar unidades de negocio                | T-69    | Implementar edición de unidades de negocio         | Editar unidades de negocio existentes.                                                                                                                    |                  2 | JavierTello20 | Done        |
+| Sprint 2 | US-44    | Gestionar unidades de negocio                | T-70    | Implementar eliminación de unidades de negocio     | Confirmar y eliminar unidades de negocio mediante servicio.                                                                                               |                  1 | JavierTello20 | Done        |
+| Sprint 2 | US-11    | Registrar una fuente de emisión              | T-18    | Implementar formulario de fuente de emisión        | Crear formulario para registrar fuentes de emisión.                                                                                                       |                  4 | pisure        | Done        |
+| Sprint 2 | US-11    | Registrar una fuente de emisión              | T-46    | Registrar fuentes de emisión en Mock API           | Conectar creación de fuentes con Mock API.                                                                                                                |                  2 | pisure        | Done        |
+| Sprint 2 | US-12    | Clasificar una fuente de emisión por alcance | T-19    | Implementar selector de alcance (Scope)            | Incorporar selección de Scope 1, 2 y 3.                                                                                                                   |                  2 | pisure        | Done        |
+| Sprint 2 | US-12    | Clasificar una fuente de emisión por alcance | T-47    | Validar clasificación por alcance                  | Incorporar clasificación y validaciones en el registro.                                                                                                   |                  2 | pisure        | Done        |
+| Sprint 2 | US-13    | Consultar registros de emisiones             | T-20    | Implementar tabla de registros de emisiones        | Crear tabla para consultar registros de emisiones.                                                                                                        |                  2 | pisure        | Done        |
+| Sprint 2 | US-13    | Consultar registros de emisiones             | T-48    | Cargar registros de emisiones                      | Consultar fuentes y actividades desde el servicio HTTP.                                                                                                   |                  2 | pisure        | Done        |
+| Sprint 2 | US-14    | Editar un registro de emisión                | T-21    | Implementar diálogo de edición de emisiones        | Reutilizar formulario para editar registros.                                                                                                              |                  2 | pisure        | Done        |
+| Sprint 2 | US-14    | Editar un registro de emisión                | T-49    | Guardar modificaciones de emisiones                | Guardar modificaciones mediante el store y Mock API.                                                                                                      |                  2 | pisure        | Done        |
+| Sprint 2 | US-15    | Eliminar un registro de emisión              | T-22    | Implementar confirmación de eliminación            | Crear diálogo de confirmación de eliminación.                                                                                                             |                  2 | pisure        | Done        |
+| Sprint 2 | US-15    | Eliminar un registro de emisión              | T-50    | Eliminar registros mediante servicio               | Eliminar registro y actualizar listado.                                                                                                                   |                  1 | pisure        | Done        |
+| Sprint 2 | US-18    | Buscar registros de emisión                  | T-23    | Implementar campo de búsqueda                      | Incorporar entrada de búsqueda.                                                                                                                           |                  2 | pisure        | Done        |
+| Sprint 2 | US-18    | Buscar registros de emisión                  | T-51    | Filtrar registros por término de búsqueda          | Buscar registros según campos disponibles.                                                                                                                |                  1 | pisure        | Done        |
+| Sprint 2 | US-19    | Filtrar registros de emisiones por alcance   | T-24    | Implementar filtro por alcance (Scope)             | Incorporar selector de alcance al listado.                                                                                                                |                  2 | pisure        | Done        |
+| Sprint 2 | US-19    | Filtrar registros de emisiones por alcance   | T-52    | Aplicar filtros por alcance                        | Aplicar filtro por Scope en el store.                                                                                                                     |                  2 | pisure        | Done        |
+| Sprint 2 | US-45    | Registrar datos de actividad                 | T-25    | Implementar campos de datos de actividad           | Incorporar campos de actividad al formulario compartido.                                                                                                  |                  4 | pisure        | Done        |
+| Sprint 2 | US-45    | Registrar datos de actividad                 | T-53    | Guardar datos de actividad en Mock API             | Conectar registro de actividades con Mock API.                                                                                                            |                  2 | pisure        | Done        |
+| Sprint 2 | US-34    | Calcular huella de carbono                   | T-26    | Implementar flujo de cálculo de huella de carbono  | Crear interfaz para seleccionar periodo y ejecutar cálculo.                                                                                               |                  4 | alexrodrigoll | In Progress |
+| Sprint 2 | US-34    | Calcular huella de carbono                   | T-54    | Implementar reglas de cálculo y resultados         | Desarrollar reglas de cálculo, validación y resultados CO₂e.                                                                                              |                  4 | alexrodrigoll | Done        |
+| Sprint 2 | US-35    | Consultar resultados por alcance             | T-27    | Implementar vista de resultados por alcance        | Crear visualización de resultados por Scope.                                                                                                              |                  2 | alexrodrigoll | In Progress |
+| Sprint 2 | US-35    | Consultar resultados por alcance             | T-55    | Agrupar resultados por alcance                     | Agrupar resultados calculados por alcance.                                                                                                                |                  2 | alexrodrigoll | Done        |
+| Sprint 2 | US-36    | Consultar resultados por periodo             | T-28    | Implementar selector de periodo de cálculo         | Crear selector de periodo de cálculo.                                                                                                                     |                  2 | alexrodrigoll | In Progress |
+| Sprint 2 | US-36    | Consultar resultados por periodo             | T-56    | Consultar resultados por periodo                   | Filtrar resultados según periodo seleccionado.                                                                                                            |                  2 | alexrodrigoll | In Progress |
+| Sprint 2 | US-37    | Consultar historial de cálculos              | T-29    | Implementar vista de historial de cálculos         | Crear tabla de historial de cálculos.                                                                                                                     |                  2 | alexrodrigoll | In Progress |
+| Sprint 2 | US-37    | Consultar historial de cálculos              | T-57    | Cargar cálculos anteriores                         | Recuperar y organizar cálculos anteriores.                                                                                                                |                  2 | alexrodrigoll | In Progress |
+| Sprint 2 | US-46    | Seleccionar factor de emisión                | T-30    | Implementar selector de factores de emisión        | Crear selector de factores compatibles con actividades.                                                                                                   |                  2 | alexrodrigoll | In Progress |
+| Sprint 2 | US-46    | Seleccionar factor de emisión                | T-58    | Guardar asignación de factores de emisión          | Validar y persistir asignaciones de factores.                                                                                                             |                  2 | alexrodrigoll | In Progress |
+| Sprint 2 | US-16    | Visualizar el total de emisiones calculadas  | T-31    | Implementar indicador de emisiones totales         | Crear indicador con total de emisiones del periodo.                                                                                                       |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-16    | Visualizar el total de emisiones calculadas  | T-59    | Cargar datos de emisiones totales                  | Obtener y agregar datos para el indicador.                                                                                                                |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-17    | Visualizar emisiones calculadas por alcance  | T-32    | Implementar vista de distribución por alcance      | Crear visualización de distribución por Scope.                                                                                                            |                  4 | Harrison1024  | Done        |
+| Sprint 2 | US-17    | Visualizar emisiones calculadas por alcance  | T-60    | Vincular datos de distribución por alcance         | Conectar visualización con valores por alcance.                                                                                                           |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-20    | Comparar emisiones entre periodos            | T-33    | Implementar vista comparativa de periodos          | Crear componente de comparación entre periodos.                                                                                                           |                  4 | Harrison1024  | Done        |
+| Sprint 2 | US-20    | Comparar emisiones entre periodos            | T-61    | Implementar selección y comparación de periodos    | Seleccionar periodos y calcular variaciones.                                                                                                              |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-26    | Consultar resumen ambiental                  | T-34    | Implementar dashboard ambiental                    | Crear dashboard de resumen ambiental.                                                                                                                     |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-26    | Consultar resumen ambiental                  | T-62    | Integrar indicadores en el dashboard               | Incorporar indicadores y resumen de metas.                                                                                                                |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-27    | Generar reporte ambiental consolidado        | T-35    | Implementar interfaz de reporte consolidado        | Crear interfaz para solicitar reporte consolidado.                                                                                                        |                  4 | Harrison1024  | Done        |
+| Sprint 2 | US-27    | Generar reporte ambiental consolidado        | T-63    | Registrar metadatos del reporte consolidado        | Guardar metadatos del reporte en Mock API.                                                                                                                |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-28    | Descargar reporte ambiental                  | T-36    | Implementar acción de descarga de reportes         | Incorporar botón para descargar reportes.                                                                                                                 |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-28    | Descargar reporte ambiental                  | T-64    | Implementar exportación de reportes CSV            | Construir y descargar reportes en CSV.                                                                                                                    |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-29    | Generar reporte por periodo                  | T-37    | Implementar selección de periodo para reporte      | Incorporar selección de periodo al reporte.                                                                                                               |                  4 | Harrison1024  | Done        |
+| Sprint 2 | US-29    | Generar reporte por periodo                  | T-65    | Registrar metadatos del reporte por periodo        | Guardar registro de reporte asociado a un periodo.                                                                                                        |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-30    | Consultar reportes anteriores                | T-38    | Implementar vista de historial de reportes         | Crear listado de reportes anteriores.                                                                                                                     |                  2 | Harrison1024  | Done        |
+| Sprint 2 | US-30    | Consultar reportes anteriores                | T-66    | Consultar historial de reportes                    | Consultar y filtrar historial de reportes.                                                                                                                |                  2 | Harrison1024  | Done        |
+| Sprint 2 | —        | Tarea transversal del Sprint                 | T-39    | Mejorar Landing Page para v1.1.0                   | Planificar las mejoras de contenido, responsive, navegación e internacionalización para la versión v1.1.0; estas mejoras se implementaron después de TB1. |                  5 | JavierTello20 | To-do       |
+| Sprint 2 | —        | Tarea transversal del Sprint                 | T-40    | Integrar los módulos del frontend                  | Integrar rutas y navegación de los cuatro bounded contexts.                                                                                               |                  3 | JavierTello20 | Done        |
+| Sprint 2 | —        | Tarea transversal del Sprint                 | T-71    | Desplegar la aplicación frontend en Azure          | Desplegar y verificar la primera versión del frontend en Azure App Service; implementación registrada el 05/10/2026.                                      |                  3 | JavierTello20 | Done        |
 
-Los estados presentados corresponden a la planificación inicial del Sprint y deberán actualizarse conforme los Work Items avancen a través de las etapas `Sprint 2 Backlog`, `In Progress`, `Review / Testing` y `Done` del Board de Trello.
+### Evidencia de organización y seguimiento en Trello
 
-Las funcionalidades que no forman parte del alcance de Sprint 2 permanecen en el Product Backlog y podrán ser consideradas durante las siguientes iteraciones del proyecto.
+El equipo Horizon utilizó Trello para organizar y dar seguimiento a las User Stories seleccionadas para Sprint 2, distribuyendo las actividades según los Bounded Contexts y responsabilidades asignadas.
+
+Como parte de las correcciones realizadas después de TB1, se reorganizó el tablero para representar el estado de las actividades al cierre del Sprint 2, diferenciando las historias terminadas, las que permanecían en progreso y las tareas pendientes.
+
+Esta actualización constituye una reconstrucción documental basada en las funcionalidades implementadas y las evidencias disponibles; no representa el historial original de movimientos del tablero durante octubre de 2026.
+
+![Tablero Trello Sprint 2](assets/chapter-05/sprint-02-trello-board.png)
+
+_Figura: Organización del Sprint 2 en Trello, con User Stories distribuidas según su estado documentado al cierre de TB1._
+
+### Desglose de tareas por User Story
+
+Para mejorar la trazabilidad del trabajo, las User Stories fueron organizadas en tareas específicas de implementación, integración y verificación, procurando que ninguna tarea supere las ocho horas estimadas.
+
+Cada tarjeta del Sprint 2 contiene una checklist con los identificadores de las tareas, sus descripciones y estimaciones. Las actividades completadas se encuentran marcadas, mientras que las pendientes conservan su estado correspondiente.
+
+![Desglose de tareas en Trello](assets/chapter-05/sprint-02-trello-tasks.png)
+
+_Figura: Ejemplo de desglose de la User Story US-06, correspondiente al registro de organizaciones, en tareas de desarrollo e integración con Mock API._
+
+**Tablero de Trello:** [HORIZON-ECOTRACK](https://trello.com/b/Hp12BlSW/horizon-ecotrack)
 
 ---
 
@@ -4385,19 +4466,85 @@ https://github.com/Horizon-OpenSource/landing-page
 **Frontend Web Application Repository:**  
 https://github.com/Horizon-OpenSource/frontend-web-application
 
-Los principales commits relacionados con la implementación de Sprint 2 se registrarán en la siguiente tabla:
+Los siguientes registros documentan los commits verificados correspondientes a la actualización correctiva del Landing Page v1.1.0, realizada posteriormente para atender las observaciones de TB1.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
-|---|---|---|---|---|---|
-| `Horizon-OpenSource/landing-page` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
-| `Horizon-OpenSource/landing-page` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
-| `Horizon-OpenSource/frontend-web-application` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
-| `Horizon-OpenSource/frontend-web-application` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
-| `Horizon-OpenSource/frontend-web-application` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
+| Repositorio                       | Rama                             | Commit ID | Commit Message                                                          | Cambio implementado                                                                                |
+| --------------------------------- | -------------------------------- | --------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `Horizon-OpenSource/landing-page` | `feature/landing-sprint2-v1.1.0` | `77a40b4` | `fix(animations): correct scroll reveal selectors for landing sections` | Corrección de los selectores utilizados por las animaciones de Final CTA, Contact y About Horizon. |
+| `Horizon-OpenSource/landing-page` | `feature/landing-sprint2-v1.1.0` | `7d7177b` | `fix(a11y): localize mobile navigation accessibility labels`            | Internacionalización de las etiquetas accesibles del menú móvil en español e inglés.               |
 
-Al cierre de Sprint 2, las filas anteriores deberán reemplazarse o ampliarse utilizando exclusivamente commits reales generados durante la implementación.
+Ambos commits se integraron a la rama `develop` mediante la Pull Request #8.
 
-La evidencia permitirá mantener trazabilidad entre los User Stories y Work Items registrados en el Sprint Backlog y las modificaciones realizadas dentro de los repositorios de código fuente.
+**Commits del Frontend Web Application**
+
+Durante Sprint 2, los integrantes de Horizon desarrollaron los cuatro Bounded Contexts principales de la Frontend Web Application de EcoTrack, utilizando Angular y una Mock REST API para gestionar y consultar información.
+
+El trabajo se registró mediante commits individuales, siguiendo la convención Conventional Commits. Posteriormente, Javier Tello realizó actividades de integración para consolidar los módulos en la rama `develop`.
+
+La siguiente tabla presenta commits representativos del desarrollo realizado durante Sprint 2.
+
+| Integrante      | Bounded Context              | Commit ID | Descripción del aporte                                                                     |
+| --------------- | ---------------------------- | --------- | ------------------------------------------------------------------------------------------ |
+| Javier Tello    | Organization Management      | `d437272` | Implementación del flujo de registro de organizaciones.                                    |
+| Javier Tello    | Organization Management      | `98fc16e` | Incorporación de edición, eliminación y seguimiento de actividades.                        |
+| Aaron Espinoza  | Emissions Management         | `cee16fd` | Implementación de modelos de dominio y repositorio Mock.                                   |
+| Aaron Espinoza  | Emissions Management         | `b30f237` | Desarrollo de formularios y diálogos para crear, editar, consultar y eliminar registros.   |
+| Alex Lacuta     | Carbon Footprint Calculation | `459ddc2` | Implementación de modelos de dominio, reglas de cálculo y repositorio Mock.                |
+| Alex Lacuta     | Carbon Footprint Calculation | `6ce2a01` | Incorporación de pruebas de las reglas de cálculo, el almacenamiento reactivo y la página. |
+| Harrison Payesa | Analytics & Reports          | `8389493` | Implementación del modelo de dominio para resúmenes, comparaciones y reportes.             |
+| Harrison Payesa | Analytics & Reports          | `c1e3270` | Desarrollo del dashboard ambiental con datos Mock.                                         |
+
+**Evidencias de desarrollo e integración**
+
+![Commits de integración del Frontend](assets/chapter-05/sprint-02-frontend-commits-integration.png)
+
+_Figura: Historial de commits de Organization Management y actividades de integración del Frontend Web Application durante Sprint 2._
+
+![Commits de Carbon Footprint Calculation y Analytics](assets/chapter-05/sprint-02-frontend-commits-carbon-analytics.png)
+
+_Figura: Evidencia de contribuciones realizadas por Alex Lacuta y Harrison Payesa en sus respectivos Bounded Contexts._
+
+![Commits de Emissions Management](assets/chapter-05/sprint-02-frontend-commits-emissions.png)
+
+_Figura: Evidencia de contribuciones realizadas por Aaron Espinoza en Emissions Management._
+
+**Integración de los Bounded Contexts**
+
+Los módulos desarrollados individualmente fueron integrados para conformar la primera versión funcional de la aplicación web.
+
+Como parte del proceso, se incorporaron las funcionalidades de Emissions Management, Carbon Footprint Calculation y Analytics & Reports, conectándolas con la Mock REST API utilizada durante Sprint 2.
+
+El historial de GitHub registra el commit `cd5ad99`, correspondiente a la integración de la rama `integration/sprint-2` en `develop`, realizada por Javier Tello el 5 de octubre de 2026.
+
+Estas evidencias permiten identificar tanto las contribuciones individuales como las actividades de integración del equipo.
+
+**Repositorio:** [EcoTrack Frontend Web Application](https://github.com/Horizon-OpenSource/frontend-web-application)
+
+#### Actualización correctiva del Landing Page — v1.1.0
+
+Como parte de la atención a las observaciones recibidas en TB1, se desarrollaron posteriormente mejoras correctivas sobre el Landing Page de EcoTrack, correspondientes a la versión v1.1.0.
+
+Los cambios se implementaron en la rama `feature/landing-sprint2-v1.1.0` y se integraron a `develop` mediante la Pull Request #8.
+
+Las mejoras comprendieron la corrección de los selectores utilizados para las animaciones de aparición en las secciones Final CTA, Contact y About Horizon, así como la actualización de las etiquetas accesibles del menú móvil según el idioma seleccionado.
+
+La Pull Request incluyó dos commits y modificaciones en los archivos `js/main.js` y `js/i18n.js`.
+
+![Pull Request #8 del Landing Page v1.1.0](assets/chapter-05/sprint-02-landing-pr-08.png)
+
+_Figura: Pull Request #8 integrada a la rama develop, correspondiente a las mejoras correctivas del Landing Page v1.1.0._
+
+**Pull Request:** [PR #8 — Landing Page v1.1.0](https://github.com/Horizon-OpenSource/landing-page/pull/8)
+
+**Evidencia de commits e integración**
+
+La actualización correctiva del Landing Page v1.1.0 incluyó dos commits realizados por Javier Tello: `77a40b4`, correspondiente a la corrección de animaciones, y `7d7177b`, correspondiente a las mejoras de accesibilidad del menú móvil.
+
+Ambos cambios fueron integrados a la rama `develop` mediante la Pull Request #8, con el commit de merge `9517ba3`.
+
+![Commits e integración del Landing Page v1.1.0](assets/chapter-05/sprint-02-landing-commits.png)
+
+_Figura: Commits y confirmación de integración de la Pull Request #8 en la rama develop._
 
 ---
 
@@ -4407,14 +4554,32 @@ La evidencia de ejecución de Sprint 2 se organiza considerando los dos producto
 
 Las principales vistas implementadas deberán evidenciar los cuatro aspectos funcionales desarrollados durante la iteración y los principales flujos de navegación disponibles.
 
-### Landing Page V2
+### Landing Page V2 — v1.1.0
 
-La nueva versión del Landing Page continúa funcionando como el principal punto de entrada público de EcoTrack. Durante Sprint 2 se realizan mejoras de contenido, consistencia visual, navegación y experiencia responsive.
+Como parte de la atención a las observaciones de TB1, se realizó posteriormente una actualización correctiva del Landing Page de EcoTrack, correspondiente a la versión v1.1.0.
 
-**Public URL:**  
+Esta actualización incluyó la corrección de las animaciones de aparición de las secciones Final CTA, Contact y About Horizon, así como mejoras en las etiquetas accesibles del menú móvil para los idiomas español e inglés.
+
+Las funcionalidades fueron verificadas manualmente mediante Live Server, comprobando las animaciones, la navegación responsive, el cambio de idioma EN/ES y el enlace hacia Emission Scopes.
+
+Posteriormente, se verificó el funcionamiento del Landing Page publicado mediante GitHub Pages.
+
+**URL pública:**  
 https://horizon-opensource.github.io/landing-page/
 
-![Sprint 2 Landing Page V2](assets/chapter-05/sprint-02-landing-page.png)
+![Landing Page EcoTrack v1.1.0](assets/chapter-05/sprint-02-landing-page.png)
+
+_Figura: Vista principal del Landing Page de EcoTrack tras la actualización correctiva v1.1.0._
+
+**Verificación de navegación responsive**
+
+Se verificó manualmente el funcionamiento del menú de navegación en una resolución móvil, comprobando su apertura, cierre y adaptación al tamaño de pantalla.
+
+Asimismo, se revisó la internacionalización de las etiquetas accesibles del menú para los idiomas español e inglés, como parte de las mejoras correctivas implementadas en la versión v1.1.0.
+
+![Navegación móvil del Landing Page](assets/chapter-05/sprint-02-landing-mobile-navigation.png)
+
+_Figura: Verificación del menú de navegación responsive de EcoTrack en vista móvil._
 
 ### Organization Management
 
@@ -4442,14 +4607,24 @@ Analytics & Reports comprende la visualización de indicadores ambientales, emis
 
 ### Sprint 2 Product Navigation Video
 
-Como evidencia complementaria de ejecución, Horizon registra un Product Navigation Video correspondiente a Sprint 2. Este video presenta la navegación lograda en los productos implementados y prioriza los principales User Flows relacionados con el core business de EcoTrack.
+Con el propósito de evidenciar el funcionamiento de la primera versión de EcoTrack, se elaboró un video de navegación que presenta los principales flujos de la Frontend Web Application desarrollada durante Sprint 2.
 
-El video muestra la nueva versión del Landing Page y los principales flujos disponibles en la Frontend Web Application.
+La demostración contempla la navegación por el Landing Page y los cuatro Bounded Contexts principales:
 
-**Video URL:**  
-[COMPLETAR URL DEL PRODUCT NAVIGATION VIDEO]
+- **Organization Management:** gestión de organizaciones, sedes y unidades de negocio.
+- **Emissions Management:** registro y administración de información de emisiones.
+- **Carbon Footprint Calculation:** proceso de cálculo y consulta de resultados de huella de carbono.
+- **Analytics & Reports:** visualización de indicadores, dashboards y reportes ambientales.
 
-La evidencia de ejecución permitirá contrastar el Sprint Goal con las funcionalidades efectivamente implementadas durante Sprint 2.
+Durante esta iteración, la aplicación frontend utilizó una Mock REST API para gestionar los datos necesarios para la demostración de sus funcionalidades.
+
+El video permite observar la navegación entre los módulos y el funcionamiento de los flujos implementados para la primera versión de la aplicación web.
+
+**Video:** [Product Navigation — Sprint 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQAF7UDfQ8soSr4iwG0kczh8AfdcfezxRUg_A3CrmGQ4v0o?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tSc3f6)
+
+![Product Navigation Video - Sprint 2](assets/chapter-05/sprint-02-product-navigation-video.png)
+
+_Figura: Evidencia del video de navegación de la Frontend Web Application de EcoTrack correspondiente a Sprint 2._
 
 ---
 
@@ -4465,14 +4640,14 @@ Una vez iniciada su implementación, OpenAPI Specification y Swagger serán util
 
 Para Sprint 2, el estado de documentación de servicios es el siguiente:
 
-| Service Documentation Item | Sprint 2 Status |
-|---|---|
-| RESTful Web Services implementation | Planned for subsequent Sprint |
-| Spring Boot implementation | Planned for subsequent Sprint |
-| OpenAPI Specification | Not applicable during Sprint 2 |
-| Swagger Documentation | Not applicable during Sprint 2 |
-| Documented Endpoints | 0 |
-| Web Services Deployment | Not included during Sprint 2 |
+| Service Documentation Item          | Sprint 2 Status                |
+| ----------------------------------- | ------------------------------ |
+| RESTful Web Services implementation | Planned for subsequent Sprint  |
+| Spring Boot implementation          | Planned for subsequent Sprint  |
+| OpenAPI Specification               | Not applicable during Sprint 2 |
+| Swagger Documentation               | Not applicable during Sprint 2 |
+| Documented Endpoints                | 0                              |
+| Web Services Deployment             | Not included during Sprint 2   |
 
 Las definiciones del dominio, User Stories, arquitectura y flujos funcionales establecidos durante las etapas anteriores servirán como base para la implementación de los RESTful Web Services durante la siguiente iteración.
 
@@ -4484,55 +4659,98 @@ Durante Sprint 2, Horizon considera el despliegue de una nueva versión del EcoT
 
 ### Landing Page V2 Deployment
 
-La nueva versión del Landing Page continúa siendo publicada desde el repositorio oficial de Horizon mediante GitHub Pages.
+La actualización del Landing Page correspondiente a la versión objetivo v1.1.0 se realizó posteriormente a la entrega original de TB1, como parte de las acciones correctivas implementadas por el equipo Horizon.
 
-**Repository:**  
-https://github.com/Horizon-OpenSource/landing-page
+El despliegue se efectuó mediante GitHub Pages, utilizando la rama `main` como origen de publicación.
 
-**Public URL:**  
-https://horizon-opensource.github.io/landing-page/
+Las evidencias de GitHub Actions, la configuración de GitHub Pages y los datos del despliegue se presentan en el apartado **Despliegue correctivo del Landing Page — v1.1.0**, dentro de esta misma sección.
 
-La información correspondiente al deployment es la siguiente:
-
-| Deployment Item | Sprint 2 Configuration |
-|---|---|
-| Product | EcoTrack Landing Page |
-| Repository | https://github.com/Horizon-OpenSource/landing-page |
-| Deployment Platform | GitHub Pages |
-| Source Branch | `main` |
-| Stable Release | `v1.1.0` |
-| Public URL | https://horizon-opensource.github.io/landing-page/ |
-| Status | Deployed |
-
-La siguiente evidencia muestra la nueva versión publicada del Landing Page:
-
-![Sprint 2 Landing Page Deployment](assets/chapter-05/sprint-02-landing-deployment.png)
+**URL pública:** [EcoTrack Landing Page](https://horizon-opensource.github.io/landing-page/)
 
 ### Frontend Web Application Deployment
 
-La primera versión estable de la Frontend Web Application será publicada desde el repositorio oficial de Horizon.
+Durante Sprint 2, el equipo Horizon desarrolló y publicó la primera versión de la Frontend Web Application de EcoTrack, implementada con Angular e integrada con una Mock REST API.
 
-**Repository:**  
+Esta versión incorporó los Bounded Contexts Organization Management, Emissions Management, Carbon Footprint Calculation y Analytics & Reports, permitiendo a los usuarios interactuar con las principales funcionalidades de gestión ambiental del producto.
+
+Para su publicación se utilizó Microsoft Azure App Service, mediante una aplicación web configurada sobre Linux. El proceso de implementación se gestionó con GitHub Actions, vinculando el repositorio de la aplicación con el servicio de alojamiento en Azure.
+
+La evidencia del portal de Azure registra una implementación correcta el 5 de octubre de 2026, a las 9:26 p. m., y muestra el servicio en estado de ejecución.
+
+**Información del despliegue:**
+
+| Elemento                         | Descripción                                                                                                           |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Producto                         | EcoTrack Frontend Web Application                                                                                     |
+| Repositorio                      | [frontend-web-application](https://github.com/Horizon-OpenSource/frontend-web-application)                            |
+| Framework                        | Angular                                                                                                               |
+| Plataforma de despliegue         | Microsoft Azure App Service                                                                                           |
+| Nombre del recurso               | `frontend-web-application`                                                                                            |
+| Sistema operativo                | Linux                                                                                                                 |
+| Entorno de ejecución             | Node.js 22 LTS                                                                                                        |
+| Proveedor de implementación      | GitHub Actions                                                                                                        |
+| Grupo de recursos                | EcoTrack                                                                                                              |
+| Región                           | North Central US                                                                                                      |
+| Última implementación registrada | 5 de octubre de 2026, 9:26 p. m. (hora mostrada en Azure)                                                             |
+| Estado del servicio              | En ejecución                                                                                                          |
+| Versión                          | Primera versión desplegada en Sprint 2; tag pendiente de verificar                                                    |
+| URL pública                      | [Acceder a EcoTrack Frontend](https://frontend-web-application-hsguchejhuepgybe.northcentralus-01.azurewebsites.net/) |
+
+**Evidencia del despliegue en Microsoft Azure**
+
+La siguiente captura presenta la configuración general del recurso `frontend-web-application` en Azure App Service. Se observa el estado de ejecución del servicio, el dominio asignado y la implementación realizada mediante GitHub Actions.
+
+![Despliegue de EcoTrack Frontend en Microsoft Azure](assets/chapter-05/sprint-02-frontend-deployment.png)
+
+_Figura: Evidencia de la primera versión de la Frontend Web Application de EcoTrack desplegada en Microsoft Azure App Service durante Sprint 2._
+
+**URL de la aplicación:**
+
+https://frontend-web-application-hsguchejhuepgybe.northcentralus-01.azurewebsites.net/
+
+**Repositorio del Frontend:**
+
 https://github.com/Horizon-OpenSource/frontend-web-application
 
-La información correspondiente al deployment será completada una vez concluida la publicación de la primera versión estable:
+#### Despliegue correctivo del Landing Page — v1.1.0
 
-| Deployment Item | Sprint 2 Configuration |
-|---|---|
-| Product | EcoTrack Frontend Web Application |
-| Repository | https://github.com/Horizon-OpenSource/frontend-web-application |
-| Framework | Angular |
-| Source Branch | `main` |
-| Stable Release | `v1.0.0` |
-| Deployment Platform | [COMPLETAR] |
-| Public URL | [COMPLETAR] |
-| Status | [COMPLETAR] |
+Como parte de la atención a las observaciones recibidas en TB1, se realizó posteriormente el despliegue de una actualización correctiva del Landing Page de EcoTrack.
 
-La siguiente evidencia mostrará la aplicación publicada en su entorno de operación:
+Los cambios desarrollados para la versión v1.1.0 fueron integrados mediante Pull Request y publicados utilizando GitHub Pages, con la rama `main` como origen del despliegue.
 
-![Sprint 2 Frontend Web Application Deployment](assets/chapter-05/sprint-02-frontend-deployment.png)
+El proceso se verificó mediante GitHub Actions, donde la ejecución `pages build and deployment #2` finalizó correctamente, incluyendo las etapas de construcción y despliegue.
 
-Antes del cierre de TB1 se verificará que ambas URLs públicas se encuentren accesibles y que los principales flujos desarrollados durante Sprint 2 puedan ser demostrados desde sus respectivas versiones desplegadas.
+![Despliegue del Landing Page mediante GitHub Actions](assets/chapter-05/sprint-02-landing-github-actions.png)
+
+_Figura: Ejecución exitosa del workflow de GitHub Pages para la actualización correctiva del Landing Page._
+
+**URL pública:** https://horizon-opensource.github.io/landing-page/
+
+**Configuración de GitHub Pages**
+
+El Landing Page de EcoTrack se encuentra alojado en GitHub Pages, utilizando la rama `main` como origen de publicación y la carpeta raíz del repositorio, identificada en GitHub Pages como / (root)
+
+La actualización correctiva correspondiente a la versión v1.1.0 se incorporó al entorno publicado después de su integración. Para verificar el despliegue, se revisó la configuración de GitHub Pages y la ejecución `pages build and deployment #2` de GitHub Actions, que finalizó con estado `Success`.
+
+La ejecución incluyó las etapas `build`, `report-build-status` y `deploy`, todas completadas correctamente. Esta evidencia corresponde al despliegue correctivo realizado después de la entrega original de TB1.
+
+![Configuración de GitHub Pages](assets/chapter-05/sprint-02-landing-pages-config.png)
+
+_Figura: Configuración de GitHub Pages para la publicación del Landing Page desde la rama main._
+
+**Información del despliegue:**
+
+| Elemento              | Descripción                                        |
+| --------------------- | -------------------------------------------------- |
+| Producto              | EcoTrack Landing Page                              |
+| Versión objetivo      | v1.1.0                                             |
+| Plataforma            | GitHub Pages                                       |
+| Origen de publicación | Rama `main`, carpeta `/ (root)`                    |
+| Workflow              | `pages build and deployment #2`                    |
+| Commit desplegado     | `d00d8e1`                                          |
+| Resultado             | Despliegue exitoso                                 |
+| URL pública           | https://horizon-opensource.github.io/landing-page/ |
+| Fecha                 | Actualización correctiva posterior a TB1           |
 
 ---
 
@@ -4544,32 +4762,81 @@ La distribución del desarrollo se realizó de acuerdo con los cuatro aspectos f
 
 Las principales responsabilidades consideradas durante Sprint 2 son las siguientes:
 
-| Team Member | GitHub Username | Main Contribution during Sprint 2 |
-|---|---|---|
-| Lacuta Lima, Alex Rodrigo | `alexrodrigoll` | Liderazgo e implementación del aspecto Carbon Footprint Calculation, incluyendo selección de factores de emisión, flujo de cálculo y consulta de resultados por alcance y periodo. |
-| Espinoza Flores, Aaron André | `pisure` | Liderazgo e implementación del aspecto Emissions Management, incluyendo registro, clasificación, consulta, edición, eliminación, búsqueda y filtrado de emisiones y datos de actividad. |
-| Payesa Torres, Harrison Hubert | `Harrison1024` | Liderazgo e implementación del aspecto Analytics & Reports, incluyendo indicadores ambientales, visualización por alcance, comparación de periodos y funcionalidades relacionadas con reportes. |
-| Tello Murga, Javier Oswaldo | `JavierTello20` | Liderazgo e implementación de Organization Management, evolución del Landing Page, integración general de la Frontend Web Application, documentación del Sprint y preparación de deployment. |
+| Team Member                    | GitHub Username | Main Contribution during Sprint 2                                                                                                                                                               |
+| ------------------------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Lacuta Lima, Alex Rodrigo      | `alexrodrigoll` | Liderazgo e implementación del aspecto Carbon Footprint Calculation, incluyendo selección de factores de emisión, flujo de cálculo y consulta de resultados por alcance y periodo.              |
+| Espinoza Flores, Aaron André   | `pisure`        | Liderazgo e implementación del aspecto Emissions Management, incluyendo registro, clasificación, consulta, edición, eliminación, búsqueda y filtrado de emisiones y datos de actividad.         |
+| Payesa Torres, Harrison Hubert | `Harrison1024`  | Liderazgo e implementación del aspecto Analytics & Reports, incluyendo indicadores ambientales, visualización por alcance, comparación de periodos y funcionalidades relacionadas con reportes. |
+| Tello Murga, Javier Oswaldo    | `JavierTello20` | Liderazgo e implementación de Organization Management, evolución del Landing Page, integración general de la Frontend Web Application, documentación del Sprint y preparación de deployment.    |
 
 ### Landing Page Collaboration Evidence
 
-La siguiente evidencia permitirá visualizar las contribuciones realizadas en el repositorio del Landing Page durante Sprint 2:
+La evidencia de desarrollo y colaboración correspondiente a la actualización correctiva del Landing Page v1.1.0 se encuentra documentada en la sección `5.2.2.4 Development Evidence for Sprint Review`.
 
-![Sprint 2 Landing Page Contributors](assets/chapter-05/sprint-02-landing-contributors.png)
+En dicha sección se presentan los commits realizados, la Pull Request #8 y su integración a la rama `develop`.
 
-![Sprint 2 Landing Page Commits](assets/chapter-05/sprint-02-landing-commits.png)
+La descripción de las responsabilidades y actividades realizadas durante esta actualización se detalla posteriormente en el apartado **Colaboración en la actualización correctiva del Landing Page — v1.1.0**.
 
 ### Frontend Web Application Collaboration Evidence
 
-La siguiente evidencia permitirá visualizar las contribuciones realizadas en el repositorio de la Frontend Web Application durante Sprint 2:
+Durante Sprint 2, el equipo Horizon organizó el desarrollo de la Frontend Web Application de EcoTrack mediante la distribución de responsabilidades por Bounded Context. Cada integrante asumió la implementación de un módulo funcional, utilizando Angular y los servicios proporcionados por la Mock REST API.
 
-![Sprint 2 Frontend Contributors](assets/chapter-05/sprint-02-frontend-contributors.png)
+El trabajo fue registrado mediante commits individuales en GitHub, permitiendo identificar las contribuciones realizadas por los integrantes y su posterior integración.
 
-![Sprint 2 Frontend Commits](assets/chapter-05/sprint-02-frontend-commits.png)
+**Contribuciones de los integrantes**
 
-Al cierre del Sprint, las evidencias de GitHub deberán guardar coherencia con las responsabilidades descritas, los Work Items registrados en Trello y los commits realizados por cada integrante.
+| Integrante      | Usuario de GitHub | Bounded Context              | Evidencia de commits |
+| --------------- | ----------------- | ---------------------------- | -------------------- |
+| Javier Tello    | `JavierTello20`   | Organization Management      | `d437272`, `98fc16e` |
+| Aaron Espinoza  | `pisure`          | Emissions Management         | `cee16fd`, `b30f237` |
+| Alex Lacuta     | `alexrodrigoll`   | Carbon Footprint Calculation | `459ddc2`, `6ce2a01` |
+| Harrison Payesa | `Harrison1024`    | Analytics & Reports          | `8389493`, `c1e3270` |
 
-De manera paralela al desarrollo de los productos, Javier Tello realizó la actualización y corrección del Project Report correspondiente al avance de TB1, manteniendo la documentación alineada con los cambios realizados sobre Product Backlog, alcance funcional y Sprint 2.
+**Integración del trabajo colaborativo**
+
+Una vez desarrollados los módulos funcionales, Javier Tello, como Team Leader, realizó actividades de integración para consolidar los cuatro Bounded Contexts en la Frontend Web Application.
+
+Durante este proceso se incorporaron las funcionalidades de gestión organizacional, registro de emisiones, cálculo de huella de carbono y visualización de indicadores ambientales, utilizando la Mock REST API como fuente de datos.
+
+El historial de GitHub registra el commit `cd5ad99`, correspondiente a la integración de la rama `integration/sprint-2` en `develop`, realizada el 5 de octubre de 2026.
+
+La distribución de responsabilidades permitió desarrollar los módulos de manera independiente y posteriormente consolidarlos en una aplicación web común.
+
+**Evidencias de colaboración**
+
+Las capturas del historial de commits de los cuatro integrantes y de las actividades de integración se encuentran documentadas en la sección `5.2.2.4 Development Evidence for Sprint Review`.
+
+Estas evidencias permiten verificar la participación individual en el desarrollo del frontend, así como las actividades de integración registradas en GitHub.
+
+**Repositorio:** [EcoTrack Frontend Web Application](https://github.com/Horizon-OpenSource/frontend-web-application)
+
+#### Colaboración en la actualización correctiva del Landing Page — v1.1.0
+
+Durante la revisión posterior a TB1, se identificó que la primera versión del Landing Page de EcoTrack ya contaba con una estructura funcional y las principales secciones necesarias para comunicar la propuesta de valor del producto.
+
+Por este motivo, la actualización correctiva v1.1.0 se concentró en mejoras puntuales de comportamiento y accesibilidad, sin requerir una reorganización completa del Landing Page ni modificaciones extensas en sus componentes.
+
+Estas actividades fueron asumidas por Javier Tello, en su función de Team Leader, quien realizó las correcciones de animaciones e internacionalización de las etiquetas accesibles del menú móvil.
+
+El trabajo se desarrolló mediante la rama `feature/landing-sprint2-v1.1.0`, registrando dos commits con Conventional Commits y utilizando la Pull Request #8 para integrar los cambios a `develop`.
+
+En esta actualización específica, los demás integrantes no registraron commits adicionales en el repositorio del Landing Page, debido al alcance limitado de las correcciones realizadas. Esto no representa la totalidad de las contribuciones del equipo Horizon, cuyo trabajo también se desarrolla en los demás productos y artefactos del proyecto.
+
+La integración quedó registrada en GitHub mediante el merge de la Pull Request #8, efectuado por Javier Tello.
+
+**Evidencias de colaboración:**
+
+| Elemento                        | Evidencia                                                          |
+| ------------------------------- | ------------------------------------------------------------------ |
+| Responsable de la actualización | Javier Tello                                                       |
+| Rama de trabajo                 | `feature/landing-sprint2-v1.1.0`                                   |
+| Commits registrados             | 2                                                                  |
+| Pull Request                    | [PR #8](https://github.com/Horizon-OpenSource/landing-page/pull/8) |
+| Rama de integración             | `develop`                                                          |
+| Merge commit                    | `9517ba3`                                                          |
+| Estado de integración           | Completado                                                         |
+
+Las evidencias visuales de los commits y de la Pull Request se encuentran documentadas en la sección `5.2.2.4 Development Evidence for Sprint Review`.
 
 ---
 
@@ -4679,13 +4946,13 @@ El proceso de Lean UX permitió identificar como principales dificultades la dis
 
 Las entrevistas realizadas a representantes de los segmentos objetivo permitieron complementar la definición inicial del problema e identificar necesidades relacionadas con la organización de información, el seguimiento de emisiones, la generación de resultados y la disponibilidad de información ambiental para la toma de decisiones. Los resultados obtenidos sirvieron como base para la elaboración de los User Personas, User Task Matrix, User Journey Maps, Empathy Maps, Big Picture Event Storming y Ubiquitous Language.
 
-Asimismo, se definieron las principales funcionalidades de EcoTrack mediante User Stories, Epics y un Product Backlog priorizado. Estos artefactos permitieron transformar las necesidades identificadas durante el proceso de investigación en requerimientos funcionales que orientan el desarrollo progresivo de la solución.
+Asimismo, se definieron las principales funcionalidades de EcoTrack mediante User Stories, Epics y un Product Backlog priorizado. Estos artefactos permitieron transformar las necesidades identificadas durante el proceso de investigación en requisitos funcionales que orientan el desarrollo progresivo de la solución.
 
 En relación con Product Design, se establecieron los principales lineamientos de Information Architecture, UX/UI Design y arquitectura de software, permitiendo definir una visión inicial de la experiencia de usuario y de la organización técnica de EcoTrack.
 
 A nivel de implementación, el Sprint 1 permitió desarrollar y desplegar la primera versión del Landing Page de EcoTrack. Este producto permitió presentar la propuesta de valor, los segmentos objetivo, los beneficios, las principales funcionalidades y el funcionamiento general de la solución, constituyendo el primer producto digital disponible públicamente del proyecto.
 
-Como conclusión del AV1, se determinó que existe coherencia entre la problemática identificada, las necesidades de los segmentos objetivo, los requerimientos especificados y la propuesta de solución de EcoTrack. No obstante, los criterios de éxito definidos mediante Lean UX deben considerarse todavía como hipótesis que requieren validación con usuarios reales mediante versiones funcionales del producto.
+Como conclusión del AV1, se determinó que existe coherencia entre la problemática identificada, las necesidades de los segmentos objetivo, los requisitos especificados y la propuesta de solución de EcoTrack. No obstante, los criterios de éxito definidos mediante Lean UX deben considerarse todavía como hipótesis que requieren validación con usuarios reales mediante versiones funcionales del producto.
 
 Como recomendación, se planteó continuar desarrollando los principales flujos de negocio de EcoTrack, mantener la trazabilidad entre los artefactos de análisis, diseño e implementación y utilizar las siguientes iteraciones para comprobar progresivamente las hipótesis y criterios de éxito establecidos.
 
@@ -4695,7 +4962,7 @@ Durante el TB1, el equipo Horizon logró evolucionar EcoTrack desde una etapa pr
 
 A partir de la retroalimentación obtenida en el AV1, se mejoraron los artefactos correspondientes a Requirements Elicitation & Analysis. Se corrigieron los registros y timings de las entrevistas, se fortaleció la trazabilidad entre los resultados obtenidos y los User Personas, y se actualizaron los artefactos de Needfinding. Asimismo, se completaron y mejoraron el Big Picture Event Storming y el Ubiquitous Language, permitiendo representar con mayor claridad los procesos y conceptos principales del dominio de EcoTrack.
 
-En Requirements Specification se revisaron y actualizaron las User Stories y Epics, incorporando requerimientos necesarios para completar los principales flujos de negocio del producto. El Product Backlog fue reconstruido y priorizado hasta contar con 51 historias relacionadas con las seis Epics definidas para EcoTrack. Esta priorización permitió dar mayor importancia a funcionalidades vinculadas directamente con la generación de valor para los usuarios, tales como el registro de información ambiental, la gestión de emisiones, el cálculo de huella de carbono, el análisis de resultados, la generación de reportes y el seguimiento de metas ambientales.
+En Requirements Specification se revisaron y actualizaron las User Stories y Epics, incorporando requisitos necesarios para completar los principales flujos de negocio del producto. El Product Backlog fue reconstruido y priorizado hasta contar con 51 historias relacionadas con las seis Epics definidas para EcoTrack. Esta priorización permitió dar mayor importancia a funcionalidades vinculadas directamente con la generación de valor para los usuarios, tales como el registro de información ambiental, la gestión de emisiones, el cálculo de huella de carbono, el análisis de resultados, la generación de reportes y el seguimiento de metas ambientales.
 
 También se mejoró el Impact Mapping, definiendo objetivos, actores, impactos y entregables relacionados con los resultados esperados del producto. Estos elementos permitieron establecer una relación más clara entre las funcionalidades desarrolladas y los objetivos de negocio planteados durante el proceso de Lean UX.
 
@@ -4707,7 +4974,9 @@ Durante el Sprint 2 se completó la primera versión de la Frontend Web Applicat
 
 El trabajo colaborativo se realizó utilizando Git y GitHub mediante ramas `feature/*`, Conventional Commits y Pull Requests hacia la rama de integración `develop`. Esta estrategia permitió que los integrantes trabajaran de forma paralela sobre diferentes partes del producto y que posteriormente las funcionalidades fueran revisadas e integradas dentro de una única aplicación.
 
-Además, se mantuvo una nueva versión del Landing Page y se desplegó la primera versión de la Frontend Web Application, permitiendo disponer de productos digitales accesibles para demostrar los principales escenarios implementados durante el Sprint 2.
+Durante Sprint 2 se desplegó la primera versión de la Frontend Web Application de EcoTrack mediante Microsoft Azure App Service, permitiendo demostrar los principales flujos implementados con Angular y la Mock REST API.
+
+En cuanto al Landing Page, la actualización correspondiente a la versión v1.1.0 no fue publicada durante la entrega original de TB1. Por ello, posteriormente se realizaron mejoras correctivas relacionadas con las animaciones de navegación y accesibilidad multilingüe, las cuales fueron integradas y desplegadas mediante GitHub Pages como parte de la atención a las observaciones del docente.
 
 La implementación desarrollada durante el TB1 permitió comprobar la viabilidad técnica de la arquitectura planteada y establecer una base funcional sobre la cual continuar incorporando funcionalidades en los siguientes Sprints. Sin embargo, las métricas planteadas en los Business Outcome Assumptions e Hypothesis Statements aún requieren sesiones de validación con usuarios reales antes de poder determinar su grado de cumplimiento.
 
@@ -4715,7 +4984,7 @@ Como recomendación para las siguientes iteraciones, el equipo debe continuar in
 
 También se recomienda realizar sesiones de validación con representantes de los segmentos objetivo una vez que los principales flujos se encuentren completamente operativos. Estas sesiones permitirán evaluar la facilidad de uso de la plataforma, identificar oportunidades de mejora y contrastar los resultados obtenidos con los criterios de éxito definidos mediante Lean UX.
 
-Finalmente, se concluye que el TB1 permitió consolidar la transición de EcoTrack desde una propuesta documentada hacia un producto de software funcional. Las correcciones realizadas sobre los artefactos del AV1, la actualización de los requerimientos, el fortalecimiento del diseño técnico y la implementación de la primera versión de la Frontend Web Application contribuyen a mantener una relación coherente entre la problemática identificada, las necesidades de los usuarios, el diseño de la solución y su implementación.
+Finalmente, se concluye que el TB1 permitió consolidar la transición de EcoTrack desde una propuesta documentada hacia un producto de software funcional. Las correcciones realizadas sobre los artefactos del AV1, la actualización de los requisitos, el fortalecimiento del diseño técnico y la implementación de la primera versión de la Frontend Web Application contribuyen a mantener una relación coherente entre la problemática identificada, las necesidades de los usuarios, el diseño de la solución y su implementación.
 
 ---
 
@@ -4727,19 +4996,19 @@ Finalmente, se concluye que el TB1 permitió consolidar la transición de EcoTra
 
 # Bibliografía
 
-Greenhouse Gas Protocol. (s. f.). *Corporate Standard*. World Resources Institute & World Business Council for Sustainable Development. https://ghgprotocol.org/corporate-standard
+Greenhouse Gas Protocol. (s. f.). _Corporate Standard_. World Resources Institute & World Business Council for Sustainable Development. https://ghgprotocol.org/corporate-standard
 
-Greenhouse Gas Protocol. (s. f.). *Standards & Guidance*. World Resources Institute & World Business Council for Sustainable Development. https://ghgprotocol.org/standards-guidance
+Greenhouse Gas Protocol. (s. f.). _Standards & Guidance_. World Resources Institute & World Business Council for Sustainable Development. https://ghgprotocol.org/standards-guidance
 
-International Organization for Standardization. (2018). *ISO 14064-1:2018 Greenhouse gases — Part 1: Specification with guidance at the organization level for quantification and reporting of greenhouse gas emissions and removals*. ISO. https://www.iso.org/standard/66453.html
+International Organization for Standardization. (2018). _ISO 14064-1:2018 Greenhouse gases — Part 1: Specification with guidance at the organization level for quantification and reporting of greenhouse gas emissions and removals_. ISO. https://www.iso.org/standard/66453.html
 
-IBM. (2023). *What is carbon accounting?* IBM. https://www.ibm.com/think/topics/carbon-accounting
+IBM. (2023). _What is carbon accounting?_ IBM. https://www.ibm.com/think/topics/carbon-accounting
 
-Ministerio de Comercio Exterior y Turismo. (2026, 28 de enero). *Mincetur: Mipymes exportadoras impulsan exportaciones y crecen 3,2% entre enero y noviembre de 2025*. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/institucion/mincetur/noticias/1341967-mincetur-mipymes-exportadoras-impulsan-exportaciones-y-crecen-3-2-entre-enero-y-noviembre-de-2025
+Ministerio de Comercio Exterior y Turismo. (2026, 28 de enero). _Mincetur: Mipymes exportadoras impulsan exportaciones y crecen 3,2% entre enero y noviembre de 2025_. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/institucion/mincetur/noticias/1341967-mincetur-mipymes-exportadoras-impulsan-exportaciones-y-crecen-3-2-entre-enero-y-noviembre-de-2025
 
-Ministerio de Comercio Exterior y Turismo. (2026, 3 de febrero). *Mincetur: Exportaciones del Perú alcanzaron los US$ 90 082 millones y consolidan al país como potencia comercial de Sudamérica*. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/institucion/mincetur/noticias/1346927-mincetur-exportaciones-del-peru-alcanzaron-los-us-90-082-millones-y-consolidan-al-pais-como-potencia-comercial-de-sudamerica
+Ministerio de Comercio Exterior y Turismo. (2026, 3 de febrero). _Mincetur: Exportaciones del Perú alcanzaron los US$ 90 082 millones y consolidan al país como potencia comercial de Sudamérica_. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/institucion/mincetur/noticias/1346927-mincetur-exportaciones-del-peru-alcanzaron-los-us-90-082-millones-y-consolidan-al-pais-como-potencia-comercial-de-sudamerica
 
-Instituto Nacional de Estadística e Informática. (2025). *Perú: Estructura Empresarial, 2024*. INEI. https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib2045/libro.pdf
+Instituto Nacional de Estadística e Informática. (2025). _Perú: Estructura Empresarial, 2024_. INEI. https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib2045/libro.pdf
 
 ---
 
@@ -4749,10 +5018,10 @@ Instituto Nacional de Estadística e Informática. (2025). *Perú: Estructura Em
 
 En el presente anexo se registran de manera progresiva los videos de exposición correspondientes a las diferentes entregas del proyecto EcoTrack. Cada video presenta los principales artefactos desarrollados, las mejoras realizadas y los productos de software implementados por el equipo Horizon.
 
-| Entrega | Título del video | Enlace |
-|---------|------------------|--------|
-| AV1 | EcoTrack - Exposición AV1 | [Video de Exposición AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDkJugSWGACS7no1S8vH57WAX2XN8u_QVTTxHqsGHMz4I8?e=gDwAez&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| TB1 | EcoTrack - Exposición TB1 | [Video de Exposición TB1](COLOCAR_URL_REAL_TB1) |
+| Entrega | Título del video          | Enlace                                                                                                                                                                                                                                                                                                                                                  |
+| ------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AV1     | EcoTrack - Exposición AV1 | [Video de Exposición AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDkJugSWGACS7no1S8vH57WAX2XN8u_QVTTxHqsGHMz4I8?e=gDwAez&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)      |
+| TB1     | EcoTrack - Exposición TB1 | [Video de Exposición TB1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8SwTTqZMDQJhLGBDxm6TsAaDrHKqwEz0q-pq9FvZZmHY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9Y4hJ3) |
 
 ### AV1
 
@@ -4772,4 +5041,4 @@ La exposición correspondiente al AV1 presenta la problemática abordada por Eco
 La exposición correspondiente al TB1 presenta las correcciones realizadas a partir del feedback recibido en el AV1, la evolución de los artefactos del Project Report y el avance de implementación correspondiente al Sprint 2, incluyendo la primera versión de la Frontend Web Application de EcoTrack.
 
 **Microsoft Stream / Clipchamp:**  
-[Video de Exposición TB1](COLOCAR_URL_REAL_TB1)
+[Video de Exposición TB1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8SwTTqZMDQJhLGBDxm6TsAaDrHKqwEz0q-pq9FvZZmHY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9Y4hJ3)
