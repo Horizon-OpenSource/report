@@ -4373,7 +4373,7 @@ Las User Stories fueron descompuestas en Work Items de acuerdo con las principal
 | Sprint 2 | US-18    | Buscar registros de emisión                  | T-23    | Implement emissions search                    | Incorporar búsqueda de registros de emisión dentro del listado correspondiente.                                                         |                  3 | pisure        | To-do  |
 | Sprint 2 | US-19    | Filtrar registros de emisiones por alcance   | T-24    | Implement scope filters                       | Implementar filtros que permitan consultar registros de acuerdo con Scope 1, Scope 2 o Scope 3.                                         |                  4 | pisure        | To-do  |
 | Sprint 2 | US-45    | Registrar datos de actividad                 | T-25    | Implement activity data registration          | Implementar el formulario de registro de datos de actividad requeridos para los procesos de cálculo.                                    |                  6 | pisure        | To-do  |
-| Sprint 2 | US-34    | Calcular huella de carbono                   | T-26    | Implement carbon footprint calculation flow   | Implementar la experiencia frontend correspondiente al proceso de cálculo de huella de carbono.                                         |                 10 | alexrodrigoll | To-do  |
+| Sprint 2 | US-34    | Calcular huella de carbono                   | T-26    | Implement carbon footprint calculation flow   | Implementar la experiencia frontend correspondiente al proceso de cálculo de huella de carbono.                                         |                  8 | alexrodrigoll | To-do  |
 | Sprint 2 | US-35    | Consultar resultados por alcance             | T-27    | Implement results by scope                    | Implementar la visualización de resultados de huella de carbono clasificados por alcance.                                               |                  4 | alexrodrigoll | To-do  |
 | Sprint 2 | US-36    | Consultar resultados por periodo             | T-28    | Implement results by period                   | Implementar la visualización de resultados correspondientes a un periodo seleccionado.                                                  |                  4 | alexrodrigoll | To-do  |
 | Sprint 2 | US-37    | Consultar historial de cálculos              | T-29    | Implement calculation history                 | Implementar una vista para consultar cálculos realizados en periodos anteriores.                                                        |                  4 | alexrodrigoll | To-do  |
@@ -4413,19 +4413,59 @@ https://github.com/Horizon-OpenSource/landing-page
 **Frontend Web Application Repository:**  
 https://github.com/Horizon-OpenSource/frontend-web-application
 
-Los principales commits relacionados con la implementación de Sprint 2 se registrarán en la siguiente tabla:
+Los siguientes registros documentan los commits verificados correspondientes a la actualización correctiva del Landing Page v1.1.0, realizada posteriormente para atender las observaciones de TB1.
 
-| Repository                                    | Branch        | Commit Id     | Commit Message | Commit Message Body | Committed on  |
-| --------------------------------------------- | ------------- | ------------- | -------------- | ------------------- | ------------- |
-| `Horizon-OpenSource/landing-page`             | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]`  | `[COMPLETAR]`       | `[COMPLETAR]` |
-| `Horizon-OpenSource/landing-page`             | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]`  | `[COMPLETAR]`       | `[COMPLETAR]` |
-| `Horizon-OpenSource/frontend-web-application` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]`  | `[COMPLETAR]`       | `[COMPLETAR]` |
-| `Horizon-OpenSource/frontend-web-application` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]`  | `[COMPLETAR]`       | `[COMPLETAR]` |
-| `Horizon-OpenSource/frontend-web-application` | `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]`  | `[COMPLETAR]`       | `[COMPLETAR]` |
+| Repositorio                       | Rama                             | Commit ID | Commit Message                                                          | Cambio implementado                                                                                |
+| --------------------------------- | -------------------------------- | --------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `Horizon-OpenSource/landing-page` | `feature/landing-sprint2-v1.1.0` | `77a40b4` | `fix(animations): correct scroll reveal selectors for landing sections` | Corrección de los selectores utilizados por las animaciones de Final CTA, Contact y About Horizon. |
+| `Horizon-OpenSource/landing-page` | `feature/landing-sprint2-v1.1.0` | `7d7177b` | `fix(a11y): localize mobile navigation accessibility labels`            | Internacionalización de las etiquetas accesibles del menú móvil en español e inglés.               |
 
-Al cierre de Sprint 2, las filas anteriores deberán reemplazarse o ampliarse utilizando exclusivamente commits reales generados durante la implementación.
+Ambos commits se integraron a la rama `develop` mediante la Pull Request #8.
 
-La evidencia permitirá mantener trazabilidad entre los User Stories y Work Items registrados en el Sprint Backlog y las modificaciones realizadas dentro de los repositorios de código fuente.
+**Commits del Frontend Web Application**
+
+Durante Sprint 2, los integrantes de Horizon desarrollaron los cuatro Bounded Contexts principales de la Frontend Web Application de EcoTrack, utilizando Angular y una Mock REST API para gestionar y consultar información.
+
+El trabajo se registró mediante commits individuales, siguiendo la convención Conventional Commits. Posteriormente, Javier Tello realizó actividades de integración para consolidar los módulos en la rama `develop`.
+
+La siguiente tabla presenta commits representativos del desarrollo realizado durante Sprint 2.
+
+| Integrante      | Bounded Context              | Commit ID | Descripción del aporte                                                                     |
+| --------------- | ---------------------------- | --------- | ------------------------------------------------------------------------------------------ |
+| Javier Tello    | Organization Management      | `d437272` | Implementación del flujo de registro de organizaciones.                                    |
+| Javier Tello    | Organization Management      | `98fc16e` | Incorporación de edición, eliminación y seguimiento de actividades.                        |
+| Aaron Espinoza  | Emissions Management         | `cee16fd` | Implementación de modelos de dominio y repositorio Mock.                                   |
+| Aaron Espinoza  | Emissions Management         | `b30f237` | Desarrollo de formularios y diálogos para crear, editar, consultar y eliminar registros.   |
+| Alex Lacuta     | Carbon Footprint Calculation | `459ddc2` | Implementación de modelos de dominio, reglas de cálculo y repositorio Mock.                |
+| Alex Lacuta     | Carbon Footprint Calculation | `6ce2a01` | Incorporación de pruebas de las reglas de cálculo, el almacenamiento reactivo y la página. |
+| Harrison Payesa | Analytics & Reports          | `8389493` | Implementación del modelo de dominio para resúmenes, comparaciones y reportes.             |
+| Harrison Payesa | Analytics & Reports          | `c1e3270` | Desarrollo del dashboard ambiental con datos Mock.                                         |
+
+**Evidencias de desarrollo e integración**
+
+![Commits de integración del Frontend](assets/chapter-05/sprint-02-frontend-commits-integration.png)
+
+_Figura: Historial de commits de Organization Management y actividades de integración del Frontend Web Application durante Sprint 2._
+
+![Commits de Carbon Footprint Calculation y Analytics](assets/chapter-05/sprint-02-frontend-commits-carbon-analytics.png)
+
+_Figura: Evidencia de contribuciones realizadas por Alex Lacuta y Harrison Payesa en sus respectivos Bounded Contexts._
+
+![Commits de Emissions Management](assets/chapter-05/sprint-02-frontend-commits-emissions.png)
+
+_Figura: Evidencia de contribuciones realizadas por Aaron Espinoza en Emissions Management._
+
+**Integración de los Bounded Contexts**
+
+Los módulos desarrollados individualmente fueron integrados para conformar la primera versión funcional de la aplicación web.
+
+Como parte del proceso, se incorporaron las funcionalidades de Emissions Management, Carbon Footprint Calculation y Analytics & Reports, conectándolas con la Mock REST API utilizada durante Sprint 2.
+
+El historial de GitHub registra el commit `cd5ad99`, correspondiente a la integración de la rama `integration/sprint-2` en `develop`, realizada por Javier Tello el 5 de octubre de 2026.
+
+Estas evidencias permiten identificar tanto las contribuciones individuales como las actividades de integración del equipo.
+
+**Repositorio:** [EcoTrack Frontend Web Application](https://github.com/Horizon-OpenSource/frontend-web-application)
 
 #### Actualización correctiva del Landing Page — v1.1.0
 
@@ -4514,14 +4554,24 @@ Analytics & Reports comprende la visualización de indicadores ambientales, emis
 
 ### Sprint 2 Product Navigation Video
 
-Como evidencia complementaria de ejecución, Horizon registra un Product Navigation Video correspondiente a Sprint 2. Este video presenta la navegación lograda en los productos implementados y prioriza los principales User Flows relacionados con el core business de EcoTrack.
+Con el propósito de evidenciar el funcionamiento de la primera versión de EcoTrack, se elaboró un video de navegación que presenta los principales flujos de la Frontend Web Application desarrollada durante Sprint 2.
 
-El video muestra la nueva versión del Landing Page y los principales flujos disponibles en la Frontend Web Application.
+La demostración contempla la navegación por el Landing Page y los cuatro Bounded Contexts principales:
 
-**Video URL:**  
-[COMPLETAR URL DEL PRODUCT NAVIGATION VIDEO]
+- **Organization Management:** gestión de organizaciones, sedes y unidades de negocio.
+- **Emissions Management:** registro y administración de información de emisiones.
+- **Carbon Footprint Calculation:** proceso de cálculo y consulta de resultados de huella de carbono.
+- **Analytics & Reports:** visualización de indicadores, dashboards y reportes ambientales.
 
-La evidencia de ejecución permitirá contrastar el Sprint Goal con las funcionalidades efectivamente implementadas durante Sprint 2.
+Durante esta iteración, la aplicación frontend utilizó una Mock REST API para gestionar los datos necesarios para la demostración de sus funcionalidades.
+
+El video permite observar la navegación entre los módulos y el funcionamiento de los flujos implementados para la primera versión de la aplicación web.
+
+**Video:** [Product Navigation — Sprint 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQAF7UDfQ8soSr4iwG0kczh8AfdcfezxRUg_A3CrmGQ4v0o?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tSc3f6)
+
+![Product Navigation Video - Sprint 2](assets/chapter-05/sprint-02-product-navigation-video.png)
+
+_Figura: Evidencia del video de navegación de la Frontend Web Application de EcoTrack correspondiente a Sprint 2._
 
 ---
 
@@ -4556,55 +4606,58 @@ Durante Sprint 2, Horizon considera el despliegue de una nueva versión del EcoT
 
 ### Landing Page V2 Deployment
 
-La nueva versión del Landing Page continúa siendo publicada desde el repositorio oficial de Horizon mediante GitHub Pages.
+La actualización del Landing Page correspondiente a la versión objetivo v1.1.0 se realizó posteriormente a la entrega original de TB1, como parte de las acciones correctivas implementadas por el equipo Horizon.
 
-**Repository:**  
-https://github.com/Horizon-OpenSource/landing-page
+El despliegue se efectuó mediante GitHub Pages, utilizando la rama `main` como origen de publicación.
 
-**Public URL:**  
-https://horizon-opensource.github.io/landing-page/
+Las evidencias de GitHub Actions, la configuración de GitHub Pages y los datos del despliegue se presentan en el apartado **Despliegue correctivo del Landing Page — v1.1.0**, dentro de esta misma sección.
 
-La información correspondiente al deployment es la siguiente:
-
-| Deployment Item     | Sprint 2 Configuration                             |
-| ------------------- | -------------------------------------------------- |
-| Product             | EcoTrack Landing Page                              |
-| Repository          | https://github.com/Horizon-OpenSource/landing-page |
-| Deployment Platform | GitHub Pages                                       |
-| Source Branch       | `main`                                             |
-| Stable Release      | `v1.1.0`                                           |
-| Public URL          | https://horizon-opensource.github.io/landing-page/ |
-| Status              | Deployed                                           |
-
-La siguiente evidencia muestra la nueva versión publicada del Landing Page:
-
-![Sprint 2 Landing Page Deployment](assets/chapter-05/sprint-02-landing-deployment.png)
+**URL pública:** [EcoTrack Landing Page](https://horizon-opensource.github.io/landing-page/)
 
 ### Frontend Web Application Deployment
 
-La primera versión estable de la Frontend Web Application será publicada desde el repositorio oficial de Horizon.
+Durante Sprint 2, el equipo Horizon desarrolló y publicó la primera versión de la Frontend Web Application de EcoTrack, implementada con Angular e integrada con una Mock REST API.
 
-**Repository:**  
+Esta versión incorporó los Bounded Contexts Organization Management, Emissions Management, Carbon Footprint Calculation y Analytics & Reports, permitiendo a los usuarios interactuar con las principales funcionalidades de gestión ambiental del producto.
+
+Para su publicación se utilizó Microsoft Azure App Service, mediante una aplicación web configurada sobre Linux. El proceso de implementación se gestionó con GitHub Actions, vinculando el repositorio de la aplicación con el servicio de alojamiento en Azure.
+
+La evidencia del portal de Azure registra una implementación correcta el 5 de octubre de 2026, a las 9:26 p. m., y muestra el servicio en estado de ejecución.
+
+**Información del despliegue:**
+
+| Elemento                         | Descripción                                                                                                           |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Producto                         | EcoTrack Frontend Web Application                                                                                     |
+| Repositorio                      | [frontend-web-application](https://github.com/Horizon-OpenSource/frontend-web-application)                            |
+| Framework                        | Angular                                                                                                               |
+| Plataforma de despliegue         | Microsoft Azure App Service                                                                                           |
+| Nombre del recurso               | `frontend-web-application`                                                                                            |
+| Sistema operativo                | Linux                                                                                                                 |
+| Entorno de ejecución             | Node.js 22 LTS                                                                                                        |
+| Proveedor de implementación      | GitHub Actions                                                                                                        |
+| Grupo de recursos                | EcoTrack                                                                                                              |
+| Región                           | North Central US                                                                                                      |
+| Última implementación registrada | 5 de octubre de 2026, 9:26 p. m. (hora mostrada en Azure)                                                             |
+| Estado del servicio              | En ejecución                                                                                                          |
+| Versión                          | Primera versión desplegada en Sprint 2; tag pendiente de verificar                                                    |
+| URL pública                      | [Acceder a EcoTrack Frontend](https://frontend-web-application-hsguchejhuepgybe.northcentralus-01.azurewebsites.net/) |
+
+**Evidencia del despliegue en Microsoft Azure**
+
+La siguiente captura presenta la configuración general del recurso `frontend-web-application` en Azure App Service. Se observa el estado de ejecución del servicio, el dominio asignado y la implementación realizada mediante GitHub Actions.
+
+![Despliegue de EcoTrack Frontend en Microsoft Azure](assets/chapter-05/sprint-02-frontend-deployment.png)
+
+_Figura: Evidencia de la primera versión de la Frontend Web Application de EcoTrack desplegada en Microsoft Azure App Service durante Sprint 2._
+
+**URL de la aplicación:**
+
+https://frontend-web-application-hsguchejhuepgybe.northcentralus-01.azurewebsites.net/
+
+**Repositorio del Frontend:**
+
 https://github.com/Horizon-OpenSource/frontend-web-application
-
-La información correspondiente al deployment será completada una vez concluida la publicación de la primera versión estable:
-
-| Deployment Item     | Sprint 2 Configuration                                         |
-| ------------------- | -------------------------------------------------------------- |
-| Product             | EcoTrack Frontend Web Application                              |
-| Repository          | https://github.com/Horizon-OpenSource/frontend-web-application |
-| Framework           | Angular                                                        |
-| Source Branch       | `main`                                                         |
-| Stable Release      | `v1.0.0`                                                       |
-| Deployment Platform | [COMPLETAR]                                                    |
-| Public URL          | [COMPLETAR]                                                    |
-| Status              | [COMPLETAR]                                                    |
-
-La siguiente evidencia mostrará la aplicación publicada en su entorno de operación:
-
-![Sprint 2 Frontend Web Application Deployment](assets/chapter-05/sprint-02-frontend-deployment.png)
-
-Antes del cierre de TB1 se verificará que ambas URLs públicas se encuentren accesibles y que los principales flujos desarrollados durante Sprint 2 puedan ser demostrados desde sus respectivas versiones desplegadas.
 
 #### Despliegue correctivo del Landing Page — v1.1.0
 
@@ -4665,23 +4718,44 @@ Las principales responsabilidades consideradas durante Sprint 2 son las siguient
 
 ### Landing Page Collaboration Evidence
 
-La siguiente evidencia permitirá visualizar las contribuciones realizadas en el repositorio del Landing Page durante Sprint 2:
+La evidencia de desarrollo y colaboración correspondiente a la actualización correctiva del Landing Page v1.1.0 se encuentra documentada en la sección `5.2.2.4 Development Evidence for Sprint Review`.
 
-![Sprint 2 Landing Page Contributors](assets/chapter-05/sprint-02-landing-contributors.png)
+En dicha sección se presentan los commits realizados, la Pull Request #8 y su integración a la rama `develop`.
 
-![Sprint 2 Landing Page Commits](assets/chapter-05/sprint-02-landing-commits.png)
+La descripción de las responsabilidades y actividades realizadas durante esta actualización se detalla posteriormente en el apartado **Colaboración en la actualización correctiva del Landing Page — v1.1.0**.
 
 ### Frontend Web Application Collaboration Evidence
 
-La siguiente evidencia permitirá visualizar las contribuciones realizadas en el repositorio de la Frontend Web Application durante Sprint 2:
+Durante Sprint 2, el equipo Horizon organizó el desarrollo de la Frontend Web Application de EcoTrack mediante la distribución de responsabilidades por Bounded Context. Cada integrante asumió la implementación de un módulo funcional, utilizando Angular y los servicios proporcionados por la Mock REST API.
 
-![Sprint 2 Frontend Contributors](assets/chapter-05/sprint-02-frontend-contributors.png)
+El trabajo fue registrado mediante commits individuales en GitHub, permitiendo identificar las contribuciones realizadas por los integrantes y su posterior integración.
 
-![Sprint 2 Frontend Commits](assets/chapter-05/sprint-02-frontend-commits.png)
+**Contribuciones de los integrantes**
 
-Al cierre del Sprint, las evidencias de GitHub deberán guardar coherencia con las responsabilidades descritas, los Work Items registrados en Trello y los commits realizados por cada integrante.
+| Integrante      | Usuario de GitHub | Bounded Context              | Evidencia de commits |
+| --------------- | ----------------- | ---------------------------- | -------------------- |
+| Javier Tello    | `JavierTello20`   | Organization Management      | `d437272`, `98fc16e` |
+| Aaron Espinoza  | `pisure`          | Emissions Management         | `cee16fd`, `b30f237` |
+| Alex Lacuta     | `alexrodrigoll`   | Carbon Footprint Calculation | `459ddc2`, `6ce2a01` |
+| Harrison Payesa | `Harrison1024`    | Analytics & Reports          | `8389493`, `c1e3270` |
 
-De manera paralela al desarrollo de los productos, Javier Tello realizó la actualización y corrección del Project Report correspondiente al avance de TB1, manteniendo la documentación alineada con los cambios realizados sobre Product Backlog, alcance funcional y Sprint 2.
+**Integración del trabajo colaborativo**
+
+Una vez desarrollados los módulos funcionales, Javier Tello, como Team Leader, realizó actividades de integración para consolidar los cuatro Bounded Contexts en la Frontend Web Application.
+
+Durante este proceso se incorporaron las funcionalidades de gestión organizacional, registro de emisiones, cálculo de huella de carbono y visualización de indicadores ambientales, utilizando la Mock REST API como fuente de datos.
+
+El historial de GitHub registra el commit `cd5ad99`, correspondiente a la integración de la rama `integration/sprint-2` en `develop`, realizada el 5 de octubre de 2026.
+
+La distribución de responsabilidades permitió desarrollar los módulos de manera independiente y posteriormente consolidarlos en una aplicación web común.
+
+**Evidencias de colaboración**
+
+Las capturas del historial de commits de los cuatro integrantes y de las actividades de integración se encuentran documentadas en la sección `5.2.2.4 Development Evidence for Sprint Review`.
+
+Estas evidencias permiten verificar la participación individual en el desarrollo del frontend, así como las actividades de integración registradas en GitHub.
+
+**Repositorio:** [EcoTrack Frontend Web Application](https://github.com/Horizon-OpenSource/frontend-web-application)
 
 #### Colaboración en la actualización correctiva del Landing Page — v1.1.0
 
