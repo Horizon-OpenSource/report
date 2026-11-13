@@ -78,20 +78,23 @@ Noviembre 2026
 
 # Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                          | Descripción de modificación                                                                                                                                                                                                                                        |
-| ------- | ---------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 0.1     | 10/09/2026 | Tello Murga, Javier Oswaldo    | Se creó la estructura base del Project Report y se inició la integración de la documentación del proyecto EcoTrack.                                                                                                                                                |
-| 0.2     | 14/09/2026 | Espinoza Flores, Aaron André   | Se desarrolló el Capítulo II: Requirements Elicitation & Analysis, incluyendo Competitive Analysis, entrevistas, análisis de resultados, User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language. |
-| 0.3     | 16/09/2026 | Torres Diaz, Rolando Andre     | Se desarrollaron artefactos del Capítulo III: Requirements Specification, incluyendo User Stories, Epics, Product Backlog e Impact Mapping, además de apoyar en la organización de referencias bibliográficas.                                                     |
-| 0.4     | 18/09/2026 | Payesa Torres, Harrison Hubert | Se desarrollaron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incluyendo Wireframes, Mock-ups, User Flow Diagrams y prototipos de la Web Application.                                                                       |
-| 0.5     | 19/09/2026 | Lacuta Lima, Alex Rodrigo      | Se desarrollaron las secciones desde 4.6 Domain-Driven Software Architecture hasta el cierre del Capítulo IV, incluyendo Design-Level Event Storming, Software Architecture Context, Container and Components Diagrams, Class Diagrams y Database Design.          |
-| 0.6     | 20/09/2026 | Tello Murga, Javier Oswaldo    | Se integraron y revisaron los artefactos del AV1, incluyendo el Capítulo I, Style Guidelines, Information Architecture, Student Outcome y la documentación correspondiente al Sprint 1.                                                                            |
-| 0.7     | 01/10/2026 | Espinoza Flores, Aaron André   | Se corrigieron timings de entrevistas, trazabilidad de User Personas, Big Picture Event Storming e Impact Mapping con objetivos SMART de acuerdo con el feedback del AV1.                                                                                          |
-| 0.8     | 02/10/2026 | Payesa Torres, Harrison Hubert | Se corrigieron y ampliaron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incorporando wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1.                                                      |
-| 0.9     | 03/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completó y corrigió el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack.                                                                                                                                                             |
-| 0.10    | 04/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completaron y actualizaron los Class Diagrams de Frontend y Backend y el Database Design correspondientes al Capítulo IV.                                                                                                                                       |
-| 0.11    | 05/10/2026 | Tello Murga, Javier Oswaldo    | Se corrigió el Capítulo I, se actualizaron User Stories y Epics, se reconstruyó y priorizó el Product Backlog, se actualizó el enlace público de Trello y se corrigieron referencias del repositorio Frontend y perfiles del equipo.                               |
-| 0.12    | 13/11/2026 | Payesa Torres, Harrison Hubert | Se corrigieron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, relacionando los wireframes y mock-ups con las User Stories, se actualizó la sección Student Outcome con las acciones del AV2 y se unieron las entrevistas de la sección 2.2.2 en un único video de Stream. |
+| Versión | Fecha      | Autor                          | Descripción de modificación                                                                                                                                                                                                                                                                                                                            |
+| ------- | ---------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0.1     | 10/09/2026 | Tello Murga, Javier Oswaldo    | Se creó la estructura base del Project Report y se inició la integración de la documentación del proyecto EcoTrack.                                                                                                                                                                                                                                    |
+| 0.2     | 14/09/2026 | Espinoza Flores, Aaron André   | Se desarrolló el Capítulo II: Requirements Elicitation & Analysis, incluyendo Competitive Analysis, entrevistas, análisis de resultados, User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language.                                                                                     |
+| 0.3     | 16/09/2026 | Torres Diaz, Rolando Andre     | Se desarrollaron artefactos del Capítulo III: Requirements Specification, incluyendo User Stories, Epics, Product Backlog e Impact Mapping, además de apoyar en la organización de referencias bibliográficas.                                                                                                                                         |
+| 0.4     | 18/09/2026 | Payesa Torres, Harrison Hubert | Se desarrollaron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incluyendo Wireframes, Mock-ups, User Flow Diagrams y prototipos de la Web Application.                                                                                                                                                           |
+| 0.5     | 19/09/2026 | Lacuta Lima, Alex Rodrigo      | Se desarrollaron las secciones desde 4.6 Domain-Driven Software Architecture hasta el cierre del Capítulo IV, incluyendo Design-Level Event Storming, Software Architecture Context, Container and Components Diagrams, Class Diagrams y Database Design.                                                                                              |
+| 0.6     | 20/09/2026 | Tello Murga, Javier Oswaldo    | Se integraron y revisaron los artefactos del AV1, incluyendo el Capítulo I, Style Guidelines, Information Architecture, Student Outcome y la documentación correspondiente al Sprint 1.                                                                                                                                                                |
+| 0.7     | 01/10/2026 | Espinoza Flores, Aaron André   | Se corrigieron timings de entrevistas, trazabilidad de User Personas, Big Picture Event Storming e Impact Mapping con objetivos SMART de acuerdo con el feedback del AV1.                                                                                                                                                                              |
+| 0.8     | 02/10/2026 | Payesa Torres, Harrison Hubert | Se corrigieron y ampliaron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incorporando wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1.                                                                                                                                          |
+| 0.9     | 03/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completó y corrigió el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack.                                                                                                                                                                                                                                                 |
+| 0.10    | 04/10/2026 | Lacuta Lima, Alex Rodrigo      | Se completaron y actualizaron los Class Diagrams de Frontend y Backend y el Database Design correspondientes al Capítulo IV.                                                                                                                                                                                                                           |
+| 0.11    | 05/10/2026 | Tello Murga, Javier Oswaldo    | Se corrigió el Capítulo I, se actualizaron User Stories y Epics, se reconstruyó y priorizó el Product Backlog, se actualizó el enlace público de Trello y se corrigieron referencias del repositorio Frontend y perfiles del equipo.                                                                                                                   |
+| 0.12    | 13/11/2026 | Payesa Torres, Harrison Hubert | Se corrigieron las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, relacionando los wireframes y mock-ups con las User Stories, se actualizó la sección Student Outcome con las acciones del AV2 y se unieron las entrevistas de la sección 2.2.2 en un único video de Stream.                                         |
+| 0.13    | 13/11/2026 | Espinoza Flores, Aaron André   | Se actualizaron las correcciones del Capítulo III, incluyendo criterios de aceptación, terminología de eventos y métricas del Impact Mapping. Se incorporaron evidencias del backend de Emissions Management y sus mejoras en Angular.                                                                                                                 |
+| 0.14    | 13/11/2026 | Lacuta Lima, Alex Rodrigo      | Se actualizaron los diagramas de Event Storming, arquitectura, clases y base de datos del Capítulo IV. Se documentaron los avances de implementación de Carbon Footprint Calculation en Spring Boot y Angular.                                                                                                                                         |
+| 0.15    | 13/11/2026 | Tello Murga, Javier Oswaldo    | Se integraron las correcciones del informe correspondientes al AV2, se documentó el Sprint 3 con evidencias de los repositorios, pruebas de Swagger, colaboración y despliegues. Se incorporó la actualización del Landing Page con los videos About-the-Product y About-the-Team, las conclusiones del AV2 y las actualizaciones del Student Outcome. |
 
 ---
 
@@ -286,6 +289,14 @@ La siguiente evidencia muestra los Pull Requests utilizados para integrar las co
 
 # Student Outcome
 
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC - Student Outcome 3**
+
+**Criterio:** Capacidad de comunicarse efectivamente con un rango de audiencias.
+
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
+
 ## Criterio específico 1
 
 ### Comunica oralmente con efectividad a diferentes rangos de audiencia
@@ -299,9 +310,15 @@ La siguiente evidencia muestra los Pull Requests utilizados para integrar las co
 | Espinoza Flores, Aaron André   | TB1     | Participé en las reuniones del equipo explicando las correcciones realizadas a partir del feedback del AV1, relacionadas con los timings de las entrevistas, la trazabilidad de los User Personas, el Big Picture Event Storming y el Impact Mapping con objetivos SMART. Durante el Sprint 2 lideré el aspecto Emissions Management, comunicando al equipo los avances en el registro, clasificación, consulta, edición, eliminación, búsqueda y filtrado de emisiones.                                    | Durante el TB1 mejoré mi capacidad para comunicar correcciones y avances de manera ordenada, explicando cómo los ajustes realizados en los artefactos de investigación se relacionan con las funcionalidades implementadas en EcoTrack.                                                                                                                                        |
 | Payesa Torres, Harrison Hubert | AV1     | Participé en las reuniones y discusiones del equipo relacionadas con el funcionamiento y objetivo de EcoTrack, aportando ideas sobre la estructura y comportamiento de la Web Application. También expliqué las decisiones tomadas para el diseño de las interfaces y los diferentes flujos de interacción desarrollados en Figma.                                                                                                                                                                          | Durante el AV1 fortalecí mi capacidad para comunicar ideas de diseño y explicar de manera clara las decisiones relacionadas con el funcionamiento de la aplicación, adaptando la explicación según los integrantes y el contexto de la discusión.                                                                                                                              |
 | Payesa Torres, Harrison Hubert | TB1     | Participé en las reuniones del equipo explicando las correcciones y ampliaciones realizadas en el diseño UX/UI de la Web Application, incluyendo wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1. Durante el Sprint 2 lideré el aspecto Analytics & Reports, comunicando al equipo los avances en indicadores ambientales, visualización por alcance, comparación de periodos y reportes.                                                                                  | Durante el TB1 fortalecí mi capacidad para comunicar decisiones de diseño y su implementación, explicando de forma clara cómo las interfaces diseñadas en Figma se trasladan a la Frontend Web Application y adaptando la explicación según el contexto de la discusión.                                                                                                       |
-| Payesa Torres, Harrison Hubert | AV2     | Participé en las reuniones del equipo explicando cómo la Frontend Web Application se conecta con el backend de Analytics & Reports desarrollado con Spring Boot, los endpoints de indicadores, comparación de periodos y reportes documentados con Swagger, y las correcciones realizadas a los wireframes y mock-ups para relacionarlos con las User Stories. | Durante el AV2 fortalecí mi capacidad para explicar decisiones técnicas a distintos interlocutores, adaptando el nivel de detalle entre la conexión del frontend con el backend y las decisiones de diseño de las interfaces. |
+| Payesa Torres, Harrison Hubert | AV2     | Participé en las reuniones del equipo explicando cómo la Frontend Web Application se conecta con el backend de Analytics & Reports desarrollado con Spring Boot, los endpoints de indicadores, comparación de periodos y reportes documentados con Swagger, y las correcciones realizadas a los wireframes y mock-ups para relacionarlos con las User Stories.                                                                                                                                              | Durante el AV2 fortalecí mi capacidad para explicar decisiones técnicas a distintos interlocutores, adaptando el nivel de detalle entre la conexión del frontend con el backend y las decisiones de diseño de las interfaces.                                                                                                                                                  |
 | Tello Murga, Javier Oswaldo    | AV1     | Lideré gran parte de las reuniones de coordinación de la primera entrega, organizando los avances del equipo y explicando las decisiones relacionadas con la propuesta de EcoTrack, el alcance del producto, la estructura del reporte y la implementación del Landing Page. También comuniqué los avances del Sprint 1, el proceso de integración mediante GitHub y el despliegue de la primera versión del Landing Page.                                                                                  | Durante el AV1 fortalecí mi capacidad de liderazgo y comunicación oral al coordinar el trabajo de los integrantes, explicar decisiones funcionales y técnicas y comunicar los avances del proyecto de forma clara. Esto me permitió adaptar la información según se tratara de coordinación interna, revisión del producto o preparación para la exposición frente al docente. |
 | Tello Murga, Javier Oswaldo    | TB1     | Lideré las reuniones de coordinación del TB1, incluyendo el Sprint Planning 2, en el que se revisaron los resultados del Sprint 1 y se definió el alcance de la segunda iteración. Comuniqué la distribución del trabajo por aspectos funcionales, lideré Organization Management y coordiné la integración entre el Landing Page y la Frontend Web Application. También expliqué al equipo las correcciones realizadas al Capítulo I, las User Stories, Epics y la nueva priorización del Product Backlog. | Durante el TB1 fortalecí mi capacidad de liderazgo y comunicación oral al coordinar el desarrollo paralelo de los integrantes, comunicar decisiones de alcance y prioridad, y mantener alineado al equipo durante la integración de los avances del Sprint 2.                                                                                                                  |
+| Integrante                     | Entrega | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Conclusiones                                                                                                                                                                                                                                                                                                                                                                   |
+| ---                            | ---     | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | ---                                                                                                                                                                                                                                                                                                                                                                            |
+| Tello Murga, Javier Oswaldo    | AV2     | Coordiné los avances del Sprint 3 y comuniqué al equipo las decisiones relacionadas con Organization Management, la integración de los servicios Spring Boot, el despliegue del backend en Azure y las actualizaciones del Landing Page. Asimismo, participé en la coordinación de evidencias técnicas y la preparación de los materiales audiovisuales About-the-Product y About-the-Team.                                                                                                                 | Fortalecí mi capacidad de comunicación oral y coordinación, explicando avances técnicos de forma organizada y adaptando la información a las necesidades del equipo y de la presentación del proyecto.                                                                                                                                                                         |
+| Espinoza Flores, Aaron André   | AV2     | Comuniqué los avances y correcciones correspondientes a Emissions Management, incluyendo el desarrollo de servicios REST, la persistencia de datos, las validaciones de formularios y las mejoras de la interfaz Angular. También abordé las correcciones de los criterios de aceptación y la relación entre los requisitos y las funcionalidades implementadas.                                                                                                                                            | Mejoré mi capacidad para transmitir información técnica de manera clara, relacionando las necesidades de los usuarios con la implementación de los servicios y las mejoras de la aplicación.                                                                                                                                                                                   |
+| Lacuta Lima, Alex Rodrigo      | AV2     | Expliqué las mejoras realizadas en los artefactos de arquitectura y diseño del Capítulo IV, así como los avances del backend de Carbon Footprint Calculation. Participé en la coordinación de los componentes relacionados con factores de emisión, cálculos de huella de carbono y pruebas de los servicios desarrollados.                                                                                                                                                                                 | Fortalecí mi capacidad para comunicar decisiones de arquitectura e implementación, relacionando conceptos técnicos con los objetivos funcionales de EcoTrack.                                                                                                                                                                                                                  |
+| Payesa Torres, Harrison Hubert | AV2     | Comuniqué los avances del Bounded Context Analytics & Reports, explicando la implementación de servicios REST, la consulta de indicadores ambientales y la integración parcial con Angular. Asimismo, participé en la revisión de los diseños UX/UI y su relación con las User Stories, además de la documentación y organización de evidencias del AV2.                                                                                                                                                    | Mejoré mi capacidad para explicar soluciones técnicas y decisiones de diseño, manteniendo coherencia entre los requisitos, las interfaces y los servicios implementados.                                                                                                                                                                                                       |
 
 ---
 
@@ -309,18 +326,24 @@ La siguiente evidencia muestra los Pull Requests utilizados para integrar las co
 
 ### Comunica por escrito con efectividad a diferentes rangos de audiencia
 
-| Integrante                     | Entrega | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Rolando Andre Torres Diaz      | AV1     | Participé en la redacción y actualización de diferentes partes del Project Report de EcoTrack, principalmente en las User Stories, Epics, Product Backlog, Requirements Specification, bibliografía e Impact Mapping. También organicé la información en Markdown y registré los avances realizados mediante commits en GitHub.                                                                                                                                                                                                                       | Durante el AV1 pude mejorar mi forma de redactar y organizar la información del proyecto, procurando que las ideas sean claras, mantengan un orden adecuado y tengan relación con los demás artefactos desarrollados en EcoTrack.                                                                                                                                                                                               |
-| Lacuta Lima, Alex Rodrigo      | AV1     | Participé en la documentación del diseño técnico y arquitectura de EcoTrack, desarrollando las secciones correspondientes al Design-Level Event Storming, Software Architecture Context Diagram, Container Diagrams, Components Diagrams, Class Diagrams y Database Diagrams. También redacté las explicaciones necesarias para relacionar estos artefactos con los componentes y responsabilidades de la solución.                                                                                                                                   | Durante el AV1 fortalecí mi capacidad para comunicar por escrito decisiones técnicas y arquitectónicas, procurando que los diagramas y sus explicaciones mantengan consistencia entre sí y permitan comprender de manera progresiva la estructura propuesta para EcoTrack.                                                                                                                                                      |
-| Lacuta Lima, Alex Rodrigo      | TB1     | Completé y corregí el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack, y actualicé los Class Diagrams de Frontend y Backend junto con el Database Design del Capítulo IV. Durante el Sprint 2 implementé el aspecto Carbon Footprint Calculation y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                                                                       | Durante el TB1 fortalecí mi capacidad para documentar por escrito decisiones técnicas de manera consistente, manteniendo la coherencia entre los artefactos de arquitectura y la implementación realizada en la Frontend Web Application.                                                                                                                                                                                       |
-| Espinoza Flores, Aaron André   | AV1     | Participé en la elaboración del Capítulo II del Project Report, documentando el análisis competitivo, las estrategias frente a competidores, el diseño y registro de entrevistas, el análisis de los resultados y los artefactos de Needfinding. Asimismo, desarrollé User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language.                                                                                                                                                       | Durante el AV1 mejoré mi capacidad para organizar y comunicar por escrito información obtenida de investigación y entrevistas, transformando los hallazgos de los usuarios en artefactos claros que permiten comprender mejor sus necesidades y relacionarlas con el desarrollo de EcoTrack.                                                                                                                                    |
-| Espinoza Flores, Aaron André   | TB1     | Corregí y actualicé artefactos del Capítulo II y del Capítulo III a partir del feedback del AV1, incluyendo los timings de las entrevistas, la trazabilidad de los User Personas, el Big Picture Event Storming y el Impact Mapping con objetivos SMART. Durante el Sprint 2 implementé el aspecto Emissions Management y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                            | Durante el TB1 mejoré mi capacidad para corregir y precisar documentación escrita, asegurando que los artefactos de investigación mantengan trazabilidad con los requisitos y funcionalidades desarrolladas en EcoTrack.                                                                                                                                                                                                        |
-| Payesa Torres, Harrison Hubert | AV1     | Participé en la documentación del diseño de la Web Application de EcoTrack, desarrollando en Figma los Mock-ups, Wireframes, User Flow Diagrams y el prototipo de las principales funcionalidades. También contribuí a documentar estos avances en el Project Report y a mantener una organización consistente de las interfaces y sus respectivos flujos.                                                                                                                                                                                            | Durante el AV1 mejoré mi capacidad para comunicar por escrito las decisiones de diseño y funcionamiento de la aplicación, organizando la información de manera clara y coherente con los diferentes artefactos desarrollados para EcoTrack.                                                                                                                                                                                     |
-| Payesa Torres, Harrison Hubert | TB1     | Corregí y amplié las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incorporando los wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1. Durante el Sprint 2 implementé el aspecto Analytics & Reports y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                                                                              | Durante el TB1 mejoré mi capacidad para documentar decisiones de diseño de manera completa y organizada, manteniendo la coherencia entre los artefactos UX/UI, las User Stories y la implementación de la Frontend Web Application.                                                                                                                                                                                             |
-| Payesa Torres, Harrison Hubert | AV2     | Corregí las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, relacionando los wireframes y mock-ups con las User Stories. Durante el Sprint 3 implementé el primer avance del backend de Analytics & Reports con Spring Boot, documenté sus endpoints con OpenAPI, actualicé el README del contexto en el frontend y registré los avances mediante commits y Pull Requests en GitHub. | Durante el AV2 mejoré mi capacidad para documentar por escrito decisiones técnicas, manteniendo la trazabilidad entre las User Stories, los diseños UX/UI, la documentación de los endpoints y su implementación. |
-| Tello Murga, Javier Oswaldo    | AV1     | Participé en la redacción, revisión e integración de diferentes secciones del Project Report, incluyendo Student Outcome, Capítulo I, Style Guidelines, Information Architecture y el Capítulo V. Asimismo, documenté el proceso de implementación del Sprint 1, las herramientas y convenciones de desarrollo, los commits realizados, las evidencias de ejecución, colaboración y despliegue del Landing Page. También realicé revisiones para mantener consistencia entre el alcance de EcoTrack, las User Stories, el diseño y la implementación. | Durante el AV1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión de manera estructurada. La elaboración e integración de diferentes capítulos me permitió mejorar la coherencia entre los artefactos del proyecto y presentar evidencias claras sobre el proceso seguido por el equipo desde la definición del producto hasta la implementación y despliegue de su primera versión. |
-| Tello Murga, Javier Oswaldo    | TB1     | Corregí el Capítulo I, actualicé las User Stories y Epics, reconstruí y prioricé el Product Backlog, actualicé el enlace público de Trello y corregí las referencias del repositorio Frontend y los perfiles del equipo. También documenté el Sprint 2, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog y evidencias de deployment, y mantuve actualizado el Project Report correspondiente al TB1.                                                                                                                      | Durante el TB1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión, manteniendo la documentación del proyecto alineada con los cambios realizados en el Product Backlog, el alcance funcional y la implementación del Sprint 2.                                                                                                                                                       |
+| Integrante                     | Entrega | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Rolando Andre Torres Diaz      | AV1     | Participé en la redacción y actualización de diferentes partes del Project Report de EcoTrack, principalmente en las User Stories, Epics, Product Backlog, Requirements Specification, bibliografía e Impact Mapping. También organicé la información en Markdown y registré los avances realizados mediante commits en GitHub.                                                                                                                                                                                                                                                       | Durante el AV1 pude mejorar mi forma de redactar y organizar la información del proyecto, procurando que las ideas sean claras, mantengan un orden adecuado y tengan relación con los demás artefactos desarrollados en EcoTrack.                                                                                                                                                                                               |
+| Lacuta Lima, Alex Rodrigo      | AV1     | Participé en la documentación del diseño técnico y arquitectura de EcoTrack, desarrollando las secciones correspondientes al Design-Level Event Storming, Software Architecture Context Diagram, Container Diagrams, Components Diagrams, Class Diagrams y Database Diagrams. También redacté las explicaciones necesarias para relacionar estos artefactos con los componentes y responsabilidades de la solución.                                                                                                                                                                   | Durante el AV1 fortalecí mi capacidad para comunicar por escrito decisiones técnicas y arquitectónicas, procurando que los diagramas y sus explicaciones mantengan consistencia entre sí y permitan comprender de manera progresiva la estructura propuesta para EcoTrack.                                                                                                                                                      |
+| Lacuta Lima, Alex Rodrigo      | TB1     | Completé y corregí el Design-Level Event Storming para los Bounded Contexts definidos en EcoTrack, y actualicé los Class Diagrams de Frontend y Backend junto con el Database Design del Capítulo IV. Durante el Sprint 2 implementé el aspecto Carbon Footprint Calculation y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                                                                                                       | Durante el TB1 fortalecí mi capacidad para documentar por escrito decisiones técnicas de manera consistente, manteniendo la coherencia entre los artefactos de arquitectura y la implementación realizada en la Frontend Web Application.                                                                                                                                                                                       |
+| Espinoza Flores, Aaron André   | AV1     | Participé en la elaboración del Capítulo II del Project Report, documentando el análisis competitivo, las estrategias frente a competidores, el diseño y registro de entrevistas, el análisis de los resultados y los artefactos de Needfinding. Asimismo, desarrollé User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture Event Storming y Ubiquitous Language.                                                                                                                                                                                       | Durante el AV1 mejoré mi capacidad para organizar y comunicar por escrito información obtenida de investigación y entrevistas, transformando los hallazgos de los usuarios en artefactos claros que permiten comprender mejor sus necesidades y relacionarlas con el desarrollo de EcoTrack.                                                                                                                                    |
+| Espinoza Flores, Aaron André   | TB1     | Corregí y actualicé artefactos del Capítulo II y del Capítulo III a partir del feedback del AV1, incluyendo los timings de las entrevistas, la trazabilidad de los User Personas, el Big Picture Event Storming y el Impact Mapping con objetivos SMART. Durante el Sprint 2 implementé el aspecto Emissions Management y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                                                            | Durante el TB1 mejoré mi capacidad para corregir y precisar documentación escrita, asegurando que los artefactos de investigación mantengan trazabilidad con los requisitos y funcionalidades desarrolladas en EcoTrack.                                                                                                                                                                                                        |
+| Payesa Torres, Harrison Hubert | AV1     | Participé en la documentación del diseño de la Web Application de EcoTrack, desarrollando en Figma los Mock-ups, Wireframes, User Flow Diagrams y el prototipo de las principales funcionalidades. También contribuí a documentar estos avances en el Project Report y a mantener una organización consistente de las interfaces y sus respectivos flujos.                                                                                                                                                                                                                            | Durante el AV1 mejoré mi capacidad para comunicar por escrito las decisiones de diseño y funcionamiento de la aplicación, organizando la información de manera clara y coherente con los diferentes artefactos desarrollados para EcoTrack.                                                                                                                                                                                     |
+| Payesa Torres, Harrison Hubert | TB1     | Corregí y amplié las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, incorporando los wireframes, wireflows, mock-ups y user flows faltantes según el feedback del AV1. Durante el Sprint 2 implementé el aspecto Analytics & Reports y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                                                                                                              | Durante el TB1 mejoré mi capacidad para documentar decisiones de diseño de manera completa y organizada, manteniendo la coherencia entre los artefactos UX/UI, las User Stories y la implementación de la Frontend Web Application.                                                                                                                                                                                             |
+| Payesa Torres, Harrison Hubert | AV2     | Corregí las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, relacionando los wireframes y mock-ups con las User Stories. Durante el Sprint 3 implementé el primer avance del backend de Analytics & Reports con Spring Boot, documenté sus endpoints con OpenAPI, actualicé el README del contexto en el frontend y registré los avances mediante commits y Pull Requests en GitHub.                                                                                                                                                                  | Durante el AV2 mejoré mi capacidad para documentar por escrito decisiones técnicas, manteniendo la trazabilidad entre las User Stories, los diseños UX/UI, la documentación de los endpoints y su implementación.                                                                                                                                                                                                               |
+| Tello Murga, Javier Oswaldo    | AV1     | Participé en la redacción, revisión e integración de diferentes secciones del Project Report, incluyendo Student Outcome, Capítulo I, Style Guidelines, Information Architecture y el Capítulo V. Asimismo, documenté el proceso de implementación del Sprint 1, las herramientas y convenciones de desarrollo, los commits realizados, las evidencias de ejecución, colaboración y despliegue del Landing Page. También realicé revisiones para mantener consistencia entre el alcance de EcoTrack, las User Stories, el diseño y la implementación.                                 | Durante el AV1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión de manera estructurada. La elaboración e integración de diferentes capítulos me permitió mejorar la coherencia entre los artefactos del proyecto y presentar evidencias claras sobre el proceso seguido por el equipo desde la definición del producto hasta la implementación y despliegue de su primera versión. |
+| Tello Murga, Javier Oswaldo    | TB1     | Corregí el Capítulo I, actualicé las User Stories y Epics, reconstruí y prioricé el Product Backlog, actualicé el enlace público de Trello y corregí las referencias del repositorio Frontend y los perfiles del equipo. También documenté el Sprint 2, incluyendo Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog y evidencias de deployment, y mantuve actualizado el Project Report correspondiente al TB1.                                                                                                                                                      | Durante el TB1 fortalecí mi capacidad para comunicar por escrito información funcional, técnica y de gestión, manteniendo la documentación del proyecto alineada con los cambios realizados en el Product Backlog, el alcance funcional y la implementación del Sprint 2.                                                                                                                                                       |
+| Integrante                     | Entrega | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ---                            | ---     | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | ---                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Tello Murga, Javier Oswaldo    | AV2     | Realicé correcciones e integración del Project Report, documentando el Sprint 3, sus Work Items, evidencias de desarrollo, ejecución de servicios, documentación OpenAPI y despliegues. Implementé los servicios REST de Organization Management utilizando Spring Boot, CQRS y JPA, además de integrar parcialmente el frontend con dichos servicios. Actualicé la Landing Page incorporando los videos About-the-Product y About-the-Team y los botones de acceso a la Web Application. También organicé las tareas del Sprint 3 en Trello y documenté los avances mediante GitHub. | Fortalecí mi capacidad para elaborar documentación técnica, integrando evidencias de diferentes repositorios y manteniendo coherencia entre la implementación, los requisitos y los entregables.                                                                                                                                                                                                                                |
+| Espinoza Flores, Aaron André   | AV2     | Actualicé la documentación de requisitos y criterios de aceptación del Project Report, mejorando la terminología y las métricas relacionadas con las funcionalidades del producto. Desarrollé los servicios backend de Emissions Management, incluyendo controladores REST, persistencia JPA, manejo de errores y documentación técnica. En Angular implementé mejoras relacionadas con validaciones, búsqueda, filtros, sincronización y gestión de registros. Registré los cambios mediante commits y Pull Requests.                                                                | Mejoré mi capacidad para documentar requisitos y soluciones técnicas de manera precisa, manteniendo la trazabilidad entre las funcionalidades implementadas y las necesidades del producto.                                                                                                                                                                                                                                     |
+| Lacuta Lima, Alex Rodrigo      | AV2     | Realicé correcciones en los diagramas de Event Storming, arquitectura, clases y base de datos del Project Report. Desarrollé avances del backend de Carbon Footprint Calculation, incluyendo factores de emisión, operaciones de cálculo y consultas de resultados. También incorporé ajustes relacionados con las pruebas del módulo Angular y documenté mis contribuciones mediante commits y Pull Requests en GitHub.                                                                                                                                                              | Fortalecí mi capacidad para representar y documentar decisiones técnicas mediante diagramas, código y evidencias que explican la arquitectura de EcoTrack.                                                                                                                                                                                                                                                                      |
+| Payesa Torres, Harrison Hubert | AV2     | Actualicé las secciones 4.4 Web Applications UX/UI Design y 4.5 Web Applications Prototyping, relacionando los diseños con las User Stories. Desarrollé los servicios backend de Analytics & Reports mediante Spring Boot, incorporando consultas de indicadores, generación de reportes, persistencia JPA y documentación OpenAPI. Implementé avances de integración con Angular, actualicé la documentación de su Bounded Context y consolidé las grabaciones de entrevistas en un video de Microsoft Stream.                                                                       | Mejoré mi capacidad para comunicar por escrito decisiones funcionales y técnicas, relacionando los artefactos UX/UI, los servicios backend y la documentación del proyecto.                                                                                                                                                                                                                                                     |
 
 ---
 
@@ -4995,35 +5018,382 @@ Las evidencias visuales de los commits y de la Pull Request se encuentran docume
 
 ## 5.2.3.1. Sprint Planning 3
 
-<!-- Completar -->
+El Sprint Planning 3 se realizó el 19 de octubre de 2026, a las 11:00 p. m., mediante Discord, con la participación de los cuatro integrantes del equipo Horizon.
+
+Durante la reunión se revisaron los avances alcanzados en Sprint 2 y se definieron las actividades correspondientes a Sprint 3, orientadas principalmente a la implementación de los Web Services de EcoTrack y al mejoramiento de la Frontend Web Application.
+
+El equipo acordó mantener la distribución de responsabilidades por Bounded Context establecida durante Sprint 2. De esta manera, cada integrante asumiría la implementación del backend y las mejoras del frontend relacionadas con su respectivo dominio funcional, utilizando Java y Spring Boot para los servicios y Angular para la aplicación web.
+
+Asimismo, se consideraron actividades complementarias relacionadas con la evolución del Landing Page, la integración de componentes, el despliegue de los productos y la preparación de evidencias para AV2.
+
+| Sprint Planning Background         | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sprint #**                       | Sprint 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Date**                           | 2026-10-19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Time**                           | 11:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Location**                       | Discord (reunión virtual)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Prepared By**                    | Tello Murga, Javier Oswaldo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Attendees to Planning Meeting**  | Tello Murga, Javier Oswaldo; Espinoza Flores, Aaron André; Lacuta Lima, Alex Rodrigo; Payesa Torres, Harrison Hubert                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Sprint 2 Review Summary**        | Durante Sprint 2 se desarrolló la primera versión de la Frontend Web Application de EcoTrack utilizando Angular y una Mock REST API. El equipo implementó funcionalidades correspondientes a los cuatro Bounded Contexts, realizó actividades de integración y desplegó una primera versión de la aplicación en Microsoft Azure. A partir de la revisión posterior de las evidencias, se identificaron funcionalidades de Carbon Footprint Calculation que requerían trabajo adicional para completar su integración. |
+| **Sprint 2 Retrospective Summary** | La revisión del trabajo realizado en Sprint 2 permitió identificar oportunidades para mejorar las pruebas de integración, fortalecer la coordinación entre los componentes desarrollados de manera independiente y reemplazar progresivamente los datos simulados por servicios reales. También se consideró necesario mejorar la documentación técnica y mantener una mayor trazabilidad de las tareas y los cambios implementados.                                                                                  |
+
+### Sprint Goal & User Stories
+
+El objetivo de Sprint 3 se centra en evolucionar EcoTrack hacia una aplicación que disponga de servicios backend propios, manteniendo la continuidad funcional de los cuatro Bounded Contexts desarrollados en el Sprint anterior.
+
+**Objetivo del Sprint 3**
+
+> **Nuestro enfoque** es implementar los Web Services de EcoTrack y mejorar las funcionalidades de la aplicación Angular para que las organizaciones puedan gestionar su información ambiental mediante una solución con servicios backend propios.
+>
+> **Consideramos que** esta evolución permitirá mejorar la persistencia, consistencia y disponibilidad de la información ambiental, facilitando el registro de actividades, el cálculo de emisiones y la consulta de resultados para apoyar la toma de decisiones.
+>
+> **Confirmaremos el cumplimiento del objetivo cuando** los servicios correspondientes a los cuatro Bounded Contexts estén implementados, se encuentren disponibles en el entorno desplegado y puedan someterse a pruebas funcionales, mientras la aplicación Angular avance en su integración con dichos servicios.
+
+### Distribución del trabajo planificado
+
+Para Sprint 3, el equipo mantuvo la asignación de responsabilidades por Bounded Context, considerando tanto la implementación de los Web Services como las mejoras de la Frontend Web Application.
+
+| Team Member                    | Bounded Context              | Planned Development Activities                                                                                                                             |
+| ------------------------------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tello Murga, Javier Oswaldo    | Organization Management      | Desarrollo de los servicios backend para la gestión de organizaciones y mejoras de las funcionalidades correspondientes en Angular.                        |
+| Espinoza Flores, Aaron André   | Emissions Management         | Desarrollo de los servicios backend relacionados con el registro y la gestión de emisiones, junto con las mejoras del módulo frontend.                     |
+| Lacuta Lima, Alex Rodrigo      | Carbon Footprint Calculation | Desarrollo de los servicios backend para los procesos de cálculo de huella de carbono y continuación de las funcionalidades correspondientes del frontend. |
+| Payesa Torres, Harrison Hubert | Analytics & Reports          | Desarrollo de los servicios backend orientados a la consulta y presentación de información ambiental, además de las mejoras del módulo frontend.           |
+
+Adicionalmente, se contempló la actualización del Landing Page, la publicación de materiales audiovisuales del proyecto y las actividades de validación del producto con usuarios de los segmentos objetivo.
+
+La descomposición de estas actividades en Work Items, sus estimaciones y su relación con las User Stories se desarrolla en el Sprint Backlog 3.
 
 ## 5.2.3.2. Aspect Leaders and Collaborators
 
-<!-- Completar -->
+Durante Sprint 3, el equipo Horizon mantuvo la distribución de responsabilidades establecida durante el Sprint anterior, utilizando una Leadership-and-Collaboration Matrix (LACX) para identificar al líder de cada Bounded Context y la participación colaborativa de los demás integrantes.
+
+A diferencia de Sprint 2, donde el desarrollo se concentró principalmente en la Frontend Web Application con Angular y una Mock REST API, en Sprint 3 cada integrante asumió la implementación de los servicios backend con Java y Spring Boot, además de continuar mejorando las funcionalidades frontend de su dominio correspondiente.
+
+La siguiente matriz presenta la distribución de responsabilidades:
+
+| Team Member                    | GitHub Username | Organization Management | Emissions Management | Carbon Footprint Calculation | Analytics & Reports |
+| ------------------------------ | --------------- | ----------------------- | -------------------- | ---------------------------- | ------------------- |
+| Lacuta Lima, Alex Rodrigo      | `alexrodrigoll` | C                       | C                    | L                            | C                   |
+| Espinoza Flores, Aaron André   | `pisure`        | C                       | L                    | C                            | C                   |
+| Payesa Torres, Harrison Hubert | `Harrison1024`  | C                       | C                    | C                            | L                   |
+| Tello Murga, Javier Oswaldo    | `JavierTello20` | L                       | C                    | C                            | C                   |
+
+**Legend:**
+
+- `L`: Leader.
+- `C`: Collaborator.
+
+La asignación de responsabilidades se organizó de la siguiente manera:
+
+- **Javier Tello:** responsable de Organization Management, desarrollando los servicios backend de gestión de organizaciones y realizando mejoras en las funcionalidades del módulo Angular. Asimismo, participó en la coordinación general del proyecto y la documentación correspondiente al AV2.
+
+- **Aaron Espinoza:** responsable de Emissions Management, desarrollando los servicios backend relacionados con la gestión de emisiones y mejorando las funcionalidades frontend de su Bounded Context.
+
+- **Alex Lacuta:** responsable de Carbon Footprint Calculation, desarrollando los servicios backend correspondientes al cálculo de huella de carbono y realizando mejoras en las funcionalidades de su módulo Angular.
+
+- **Harrison Payesa:** responsable de Analytics & Reports, desarrollando los servicios backend orientados al análisis y presentación de información ambiental y mejorando las funcionalidades frontend de su Bounded Context.
+
+La colaboración entre los integrantes comprendió actividades de coordinación, revisión de avances, integración y preparación de las evidencias del proyecto. La clasificación como colaborador representa la participación en estas actividades generales, sin implicar que cada integrante haya desarrollado código en todos los Bounded Contexts.
+
+Adicionalmente, durante Sprint 3 se trabajó en la evolución del Landing Page, la incorporación de los videos About-the-Product y About-the-Team, la realización de entrevistas de validación y la preparación de los entregables correspondientes al AV2.
+
+La coordinación del equipo se realizó principalmente mediante Discord, GitHub y otros canales de comunicación utilizados por Horizon.
 
 ## 5.2.3.3. Sprint Backlog 3
 
-<!-- Completar -->
+El Sprint Backlog 3 comprende las actividades de desarrollo realizadas por el equipo Horizon para evolucionar EcoTrack hacia una solución que incorpore servicios backend propios, manteniendo las funcionalidades de la Frontend Web Application.
+
+Durante esta iteración, los integrantes continuaron trabajando sobre los cuatro Bounded Contexts definidos para el proyecto: Organization Management, Emissions Management, Carbon Footprint Calculation y Analytics & Reports.
+
+El trabajo se concentró en la implementación de RESTful Web Services con Java y Spring Boot, las mejoras de los módulos frontend con Angular y las actividades de integración necesarias para conectar ambas capas de la aplicación.
+
+Adicionalmente, se realizaron actividades transversales relacionadas con el despliegue de los servicios backend, la actualización del Landing Page, la incorporación de los videos About-the-Product y About-the-Team, y las validaciones del producto.
+
+El seguimiento de estas actividades se consolidará posteriormente en el tablero de Trello, tomando como referencia las implementaciones y evidencias de los repositorios del proyecto. Esta actualización documental no representa un registro histórico de movimientos realizados durante el Sprint.
+
+**Sprint Board:** https://trello.com/b/Hp12BlSW/horizon-ecotrack
+
+### Sprint 3 Work Items
+
+A partir de la revisión de los repositorios `backend-web-services` y `frontend-web-application`, se identificaron las siguientes actividades correspondientes a Sprint 3.
+
+Las tareas se relacionan con User Stories previamente definidas en el Product Backlog. Esta relación permite dar continuidad a las funcionalidades desarrolladas durante Sprint 2, sin contabilizar nuevamente sus Story Points como historias nuevas.
+
+| Task ID | Related User Stories | Task Title                                                                     | Estimation (Hours) | Assigned To    | Status      |
+| ------- | -------------------- | ------------------------------------------------------------------------------ | -----------------: | -------------- | ----------- |
+| T-72    | US-06                | Implementar endpoint REST para registrar organizaciones                        |                  4 | JavierTello20  | Done        |
+| T-73    | US-09                | Implementar consultas de organizaciones por identificador y listado            |                  3 | JavierTello20  | Done        |
+| T-74    | US-10                | Implementar actualización de información organizacional mediante PATCH         |                  3 | JavierTello20  | Done        |
+| T-75    | US-06, US-09, US-10  | Implementar dominio, servicios de aplicación y persistencia JPA                |                  5 | JavierTello20  | Done        |
+| T-76    | US-06, US-09, US-10  | Incorporar repositorio Angular que consuma el backend de organizaciones        |                  4 | JavierTello20  | Done        |
+| T-77    | US-32, US-44         | Completar migración de sedes y unidades de negocio desde Mock API              |                  3 | JavierTello20  | In Progress |
+| T-78    | US-11                | Implementar servicios REST y persistencia para fuentes de emisión              |                  5 | pisure         | Done        |
+| T-79    | US-12                | Implementar clasificación y filtrado de fuentes por alcance                    |                  3 | pisure         | Done        |
+| T-80    | US-45                | Implementar operaciones CRUD y persistencia de datos de actividad              |                  4 | pisure         | Done        |
+| T-81    | US-13, US-14         | Implementar consulta y edición de registros de emisiones                       |                  3 | pisure         | Done        |
+| T-82    | US-15                | Implementar eliminación de registros de emisiones                              |                  3 | pisure         | Done        |
+| T-83    | US-18, US-19         | Mantener búsqueda y filtros de emisiones en la interfaz Angular                |                  3 | pisure         | Done        |
+| T-84    | US-11, US-45         | Migrar el consumo del módulo Angular de Mock API a Spring Boot                 |                  4 | pisure         | In Progress |
+| T-85    | US-46                | Implementar servicios REST para gestionar factores de emisión                  |                  4 | alexrodrigoll  | Done        |
+| T-86    | US-34                | Implementar servicio de cálculo de huella de carbono                           |                  6 | alexrodrigoll  | Done        |
+| T-87    | US-35, US-36         | Implementar consultas de resultados por alcance y periodo                      |                  4 | alexrodrigoll  | Done        |
+| T-88    | US-37                | Implementar consulta del historial de cálculos                                 |                  3 | alexrodrigoll  | Done        |
+| T-89    | US-34                | Implementar persistencia y pruebas del cálculo de huella                       |                  5 | alexrodrigoll  | Done        |
+| T-90    | US-34, US-46         | Integrar módulo Angular de huella de carbono con backend real                  |                  4 | alexrodrigoll  | In Progress |
+| T-91    | US-16                | Implementar consulta de emisiones totales por periodo                          |                  3 | Harrison1024   | Done        |
+| T-92    | US-17                | Implementar consulta de emisiones clasificadas por alcance                     |                  3 | Harrison1024   | Done        |
+| T-93    | US-20                | Implementar comparación de resultados entre periodos                           |                  4 | Harrison1024   | Done        |
+| T-94    | US-26                | Implementar servicio de indicadores para el dashboard                          |                  3 | Harrison1024   | Done        |
+| T-95    | US-27                | Implementar generación y persistencia de reportes consolidados                 |                  5 | Harrison1024   | Done        |
+| T-96    | US-29                | Implementar generación de reportes por periodo                                 |                  4 | Harrison1024   | Done        |
+| T-97    | US-30                | Implementar consulta del historial de reportes                                 |                  3 | Harrison1024   | Done        |
+| T-98    | US-28                | Implementar endpoint de descarga de reportes                                   |                  3 | Harrison1024   | Done        |
+| T-99    | US-16, US-27         | Integrar el repositorio Angular de Analytics con Spring Boot                   |                  4 | Harrison1024   | Done        |
+| T-100   | US-28                | Migrar descarga CSV del frontend al endpoint del backend                       |                  2 | Harrison1024   | In Progress |
+| T-101   | —                    | Preparar y desplegar Backend Web Services en Azure                             |                  4 | JavierTello20  | Done        |
+| T-102   | —                    | Configurar documentación OpenAPI/Swagger del backend                           |                  3 | JavierTello20  | Done        |
+| T-103   | —                    | Incorporar pruebas automatizadas de servicios y componentes                    |                  4 | Equipo Horizon | Done        |
+| T-104   | —                    | Desplegar nueva versión de Frontend Web Application                            |                  4 | Equipo Horizon | To-do       |
+| T-105   | —                    | Actualizar Landing Page e incorporar videos About-the-Product y About-the-Team |                  3 | Equipo Horizon | Done        |
+| T-106   | —                    | Realizar entrevistas de validación con usuarios objetivo                       |                  4 | Equipo Horizon | Done        |
+| T-107   | —                    | Completar y verificar integración funcional entre Angular y Spring Boot        |                  4 | Equipo Horizon | In Progress |
+
+**Resumen de tareas documentadas:**
+
+| Metric           |     Value |
+| ---------------- | --------: |
+| Total Work Items |        36 |
+| Estimated Effort | 133 hours |
+| Done             |        30 |
+| In Progress      |         5 |
+| To-do            |         1 |
+
+Los estados anteriores representan una evaluación documental posterior basada en el código disponible y en los avances reportados por el equipo. El estado `Done` indica que se identificó la implementación correspondiente o que su realización fue confirmada por el equipo; no implica necesariamente que todas las pruebas de integración hayan sido ejecutadas satisfactoriamente.
+
+El despliegue de la nueva versión frontend y la integración completa entre los cuatro Bounded Contexts y Spring Boot permanecen como actividades pendientes de verificación.
+
+El tablero Trello será actualizado posteriormente para reflejar esta reconstrucción documental, sin atribuirle un historial de movimientos que no fue registrado durante el Sprint.
 
 ## 5.2.3.4. Development Evidence for Sprint Review
 
-<!-- Completar -->
+### Backend Web Services Development Evidence
+
+Durante Sprint 3, los integrantes de Horizon implementaron los servicios backend correspondientes a los cuatro Bounded Contexts de EcoTrack, utilizando Java, Spring Boot y Spring Data JPA.
+
+Los commits registrados entre el 11 y el 13 de noviembre de 2026 evidencian la implementación de servicios REST, componentes de dominio, persistencia de información y documentación OpenAPI.
+
+| Bounded Context              | GitHub User   | Commit ID | Commit Message                                                                       | Date       |
+| ---------------------------- | ------------- | --------- | ------------------------------------------------------------------------------------ | ---------- |
+| Organization Management      | JavierTello20 | `50ae7e6` | feat(organization): implement JPA persistence and REST API                           | 2026-11-13 |
+| Emissions Management         | pisure        | `fec2537` | feat(emissions): expose source REST endpoints                                        | 2026-11-11 |
+| Carbon Footprint Calculation | alexrodrigoll | `e360e8f` | feat(carbon-footprint): add first functional advance of Carbon Footprint Calculation | 2026-11-12 |
+| Analytics & Reports          | Harrison1024  | `c78f20b` | feat(analytics): expose analytics and reports endpoints documented with OpenAPI      | 2026-11-13 |
+
+**Figure: Backend Web Services — Commit History (1)**
+
+![Backend Commits 1](assets/chapter-05/sprint-03-backend-commits-01.png)
+
+**Figure: Backend Web Services — Commit History (2)**
+
+![Backend Commits 2](assets/chapter-05/sprint-03-backend-commits-02.png)
+
+**Figure: Backend Web Services — Commit History (3)**
+
+![Backend Commits 3](assets/chapter-05/sprint-03-backend-commits-03.png)
+
+### Frontend Web Application Development Evidence
+
+Durante Sprint 3, el equipo Horizon realizó mejoras en los módulos Angular de EcoTrack, incorporando validaciones, correcciones funcionales, pruebas automatizadas y avances en la integración con los servicios Spring Boot.
+
+Los commits evidencian la participación de los integrantes en sus respectivos Bounded Contexts, así como la configuración de URLs públicas para preparar el despliegue de la aplicación.
+
+| Bounded Context              | GitHub User   | Commit ID | Commit Message                                                                          | Date       |
+| ---------------------------- | ------------- | --------- | --------------------------------------------------------------------------------------- | ---------- |
+| Organization Management      | JavierTello20 | `804b671` | feat(organization-management): integrate Angular with Spring Boot API                   | 2026-11-13 |
+| Emissions Management         | pisure        | `2ea27e6` | feat(emissions): validate complete registration and edit forms                          | 2026-11-11 |
+| Carbon Footprint Calculation | alexrodrigoll | `daf60a4` | test(carbon-footprint): use an in-memory repository in specs after the HTTP integration | 2026-11-12 |
+| Analytics & Reports          | Harrison1024  | `dd9ef86` | feat(analytics-reports): consume summaries and reports from the Spring Boot API         | 2026-11-13 |
+| Deployment Configuration     | JavierTello20 | `96595ea` | chore(deploy): configure public API URLs for AV2                                        | 2026-11-13 |
+
+**Figure: Frontend Web Application — Commit History (1)**
+
+![Frontend Commits 1](assets/chapter-05/sprint-03-frontend-commits-01.png)
+
+**Figure: Frontend Web Application — Commit History (2)**
+
+![Frontend Commits 2](assets/chapter-05/sprint-03-frontend-commits-02.png)
+
+**Figure: Frontend Web Application — Commit History (3)**
+
+![Frontend Commits 3](assets/chapter-05/sprint-03-frontend-commits-03.png)
+
+### Landing Page Development Evidence
+
+Durante Sprint 3, Javier Tello realizó la actualización del Landing Page de EcoTrack, incorporando las secciones audiovisuales About-the-Product y About-the-Team.
+
+Asimismo, se configuró el botón **Get Started** para redirigir a los visitantes hacia la Frontend Web Application desplegada previamente.
+
+Estos cambios fueron integrados mediante un Pull Request a la rama `develop`.
+
+| GitHub User   | Commit ID | Commit Message                                                           | Date       |
+| ------------- | --------- | ------------------------------------------------------------------------ | ---------- |
+| JavierTello20 | `3ae04b6` | feat(videos): add responsive bilingual video sections with embed support | 2026-11-13 |
+| JavierTello20 | `e794d1d` | feat(videos): integrate published product and team videos                | 2026-11-13 |
+| JavierTello20 | `d9188cd` | feat(navigation): connect landing CTAs to EcoTrack web application       | 2026-11-13 |
+
+**Figure: Landing Page — Sprint 3 Commit History**
+
+![Landing Page Commits](assets/chapter-05/sprint-03-landing-commits.png)
+
+### Project Report Development Evidence
+
+Durante la preparación del AV2, los integrantes de Horizon realizaron mejoras colaborativas en el Project Report, incorporando correcciones de requisitos, actualizaciones de diagramas, evidencias de implementación y documentación de entrevistas.
+
+Los commits registrados entre el 11 y el 13 de noviembre de 2026 evidencian la participación del equipo en la evolución del informe. Estas modificaciones incluyen tanto mejoras de entregas anteriores como preparación documental para AV2.
+
+| GitHub User   | Commit ID | Commit Message                                                                                 | Date       |
+| ------------- | --------- | ---------------------------------------------------------------------------------------------- | ---------- |
+| JavierTello20 | `e8c0172` | docs(report): finalize TB1 feedback corrections and sprint 2 evidence                          | 2026-11-13 |
+| pisure        | `d0efb19` | docs(chapter-03): refine acceptance criteria and impact metrics                                | 2026-11-11 |
+| alexrodrigoll | `973366f` | docs(report): improve event storming, architecture, class and database diagrams                | 2026-11-12 |
+| Harrison1024  | `be3c598` | docs(chapter-04): update analytics and report generation mock-ups to match the implemented app | 2026-11-13 |
+
+**Figure: Project Report — Commit History (1)**
+
+![Report Commits 1](assets/chapter-05/sprint-03-report-commits-01.png)
+
+**Figure: Project Report — Commit History (2)**
+
+![Report Commits 2](assets/chapter-05/sprint-03-report-commits-02.png)
 
 ## 5.2.3.5. Execution Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 3, el equipo Horizon realizó pruebas de ejecución de los RESTful Web Services de EcoTrack mediante Swagger UI, utilizando el backend desplegado en Microsoft Azure.
+
+Las siguientes evidencias muestran la ejecución de endpoints correspondientes a los Bounded Contexts implementados.
+
+### Organization Management Execution Evidence
+
+Se ejecutó el endpoint `GET /api/v1/organizations`, obteniendo una respuesta HTTP `200 OK` con los registros de organizaciones almacenados en la base de datos.
+
+La respuesta JSON permitió verificar la consulta de información organizacional desde el servicio backend desplegado.
+
+**Figure: Organization Management — GET Organizations Execution**
+
+![Organization Management Execution](assets/chapter-05/sprint-03-execution-organizations-get.png)
+
+### Carbon Footprint Calculation Execution Evidence
+
+Se ejecutó el endpoint `GET /api/v1/emission-factors`, aplicando el filtro `SCOPE_1`.
+
+El servicio respondió con HTTP `200 OK`, confirmando que la consulta fue procesada correctamente. Sin embargo, devolvió una lista vacía, por lo que esta prueba no demuestra la recuperación de factores registrados.
+
+**Figure: Emission Factors — GET Execution**
+
+![Emission Factors Execution](assets/chapter-05/sprint-03-execution-emission-factors.png)
+
+### Analytics & Reports Execution Evidence
+
+Se ejecutó el endpoint `GET /api/v1/analytics/dashboard`, utilizando el identificador de organización `1`.
+
+El servicio respondió con HTTP `200 OK` y devolvió información ambiental en formato JSON, incluyendo indicadores de emisiones clasificados por alcance y periodo.
+
+**Figure: Analytics & Reports — Dashboard Execution**
+
+![Analytics Dashboard Execution](assets/chapter-05/sprint-03-execution-analytics.png)
+
+Las evidencias presentadas permiten verificar la ejecución de consultas REST del backend desplegado en Microsoft Azure. No obstante, no representan una validación completa de todos los endpoints ni de la integración con Angular.
 
 ## 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 3, el equipo Horizon incorporó documentación OpenAPI 3.1 mediante Swagger UI para los RESTful Web Services de EcoTrack desarrollados con Java y Spring Boot.
+
+La documentación se encuentra disponible en el backend desplegado en Microsoft Azure y permite consultar los endpoints, métodos HTTP, parámetros y estructuras de respuesta de los servicios correspondientes a los distintos Bounded Contexts.
+
+**Swagger UI:** https://ecotrack-backend-av2-a2cdbrbab9f0hfax.northcentralus-01.azurewebsites.net/swagger-ui/index.html
+
+**OpenAPI Specification:** https://ecotrack-backend-av2-a2cdbrbab9f0hfax.northcentralus-01.azurewebsites.net/v3/api-docs
+
+Las siguientes capturas muestran la documentación de servicios para factores de emisión, cálculo de huella de carbono, fuentes de emisión, datos de actividad y gestión de organizaciones.
+
+**Figure: EcoTrack Swagger UI — Emission Factors and Footprint Calculations**
+
+![Swagger Documentation 1](assets/chapter-05/sprint-03-swagger-documentation-01.png)
+
+**Figure: EcoTrack Swagger UI — Emissions and Organization Management**
+
+![Swagger Documentation 2](assets/chapter-05/sprint-03-swagger-documentation-02.png)
+
+Estas evidencias permiten verificar la disponibilidad de la documentación técnica del backend y la definición de operaciones REST para los módulos implementados.
 
 ## 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-<!-- Completar -->
+Durante Sprint 3, el equipo Horizon realizó el despliegue de los Backend Web Services y actualizó la Landing Page de EcoTrack, permitiendo acceder públicamente a ambos componentes.
+
+### Backend Web Services Deployment
+
+El backend de EcoTrack fue desplegado en Microsoft Azure mediante Azure App Service, utilizando Java y Spring Boot sobre un entorno Linux.
+
+La evidencia muestra el recurso `ecotrack-backend-av2` en estado **En ejecución**, con una implementación registrada correctamente el 13 de noviembre de 2026.
+
+**Deployment URL:** https://ecotrack-backend-av2-a2cdbrbab9f0hfax.northcentralus-01.azurewebsites.net
+
+**Figure: Sprint 3 — Backend Web Services Deployment in Microsoft Azure**
+
+![Backend Deployment](assets/chapter-05/sprint-03-backend-deployment.png)
+
+### Landing Page Deployment
+
+La Landing Page de EcoTrack se encuentra publicada mediante GitHub Pages. Durante Sprint 3, Javier Tello incorporó los videos About-the-Product y About-the-Team, además de configurar los botones de acceso a la Frontend Web Application.
+
+La captura evidencia la disponibilidad pública del sitio web y su interfaz principal.
+
+**Deployment URL:** https://horizon-opensource.github.io/landing-page/
+
+**Figure: Sprint 3 — Landing Page Deployment in GitHub Pages**
+
+![Landing Page Deployment](assets/chapter-05/sprint-03-landing-deployment.png)
+
+Estas evidencias muestran la publicación del backend y la Landing Page de EcoTrack. La integración completa y el despliegue de la nueva versión frontend no forman parte de las evidencias presentadas en esta sección.
 
 ## 5.2.3.8. Team Collaboration Insights during Sprint
 
-<!-- Completar -->
+Durante Sprint 3, el equipo Horizon trabajó colaborativamente en el desarrollo de EcoTrack mediante GitHub, utilizando ramas de desarrollo, commits y Pull Requests para integrar los avances de cada Bounded Context.
+
+Cada integrante asumió responsabilidades específicas, manteniendo la coordinación para la implementación de servicios backend, mejoras frontend y actualización del informe.
+
+### Backend Web Services Collaboration
+
+Durante el periodo del 6 al 13 de noviembre de 2026, GitHub registró 42 commits en todas las ramas, realizados por cuatro autores, y cuatro Pull Requests integrados correspondientes a los Bounded Contexts del backend.
+
+![Backend Collaboration](assets/chapter-05/sprint-03-backend-collaboration.png)
+
+### Landing Page Collaboration
+
+Javier Tello realizó las actualizaciones del Landing Page, incorporando los videos About-the-Product y About-the-Team, además de configurar el acceso hacia la aplicación web.
+
+GitHub registra la publicación de la versión `v1.2.0` correspondiente a Sprint 3.
+
+![Landing Collaboration](assets/chapter-05/sprint-03-landing-collaboration.png)
+
+### Frontend Web Application Collaboration
+
+Los integrantes desarrollaron mejoras de forma independiente en sus respectivos Bounded Contexts de Angular.
+
+La gráfica de Contributors presenta el historial general de participación. Los commits específicos de noviembre, documentados en la sección 5.2.3.4, complementan esta evidencia del trabajo realizado para AV2.
+
+![Frontend Collaboration](assets/chapter-05/sprint-03-frontend-collaboration.png)
+
+### Project Report Collaboration
+
+El equipo también participó en la actualización del Project Report, incorporando correcciones de requisitos, mejoras de diagramas y documentación de evidencias.
+
+La siguiente captura muestra las cuentas con acceso al repositorio. La participación efectiva de los cuatro integrantes se evidencia mediante los commits registrados anteriormente.
+
+![Report Collaboration](assets/chapter-05/sprint-03-report-collaboration.png)
+
+En conclusión, Sprint 3 permitió avanzar en el desarrollo colaborativo de los Web Services y la documentación de EcoTrack. Asimismo, se identificaron actividades pendientes de integración frontend-backend que deberán considerarse en la siguiente iteración.
 
 ---
 
@@ -5081,7 +5451,21 @@ Las evidencias visuales de los commits y de la Pull Request se encuentran docume
 
 ## 5.4. Video About-the-Product
 
-<!-- Completar -->
+El equipo Horizon elaboró el video About-the-Product con el propósito de presentar EcoTrack, una plataforma web orientada a facilitar la gestión de emisiones y el cálculo de la huella de carbono en las organizaciones.
+
+El video presenta las principales características y beneficios del producto, incluyendo la gestión de información ambiental, el cálculo de emisiones, la visualización de resultados y el seguimiento de objetivos de reducción.
+
+Asimismo, se muestran las interfaces de EcoTrack para dar a conocer su funcionamiento y propuesta de valor a los segmentos objetivo.
+
+**Video About-the-Product:**
+
+- **Microsoft Stream:** [Ver video en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQBNQ0ReOzCUQ6fVcRckNCpiAZuD37qzTzPNyMf5mEDdGns?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=JcbKrf)
+- **YouTube:** https://www.youtube.com/watch?v=3iLadLkXpX8
+- **Duración:** [Completar duración exacta]
+
+**Figure: EcoTrack — About-the-Product Video**
+
+![About the Product](assets/chapter-05/about-the-product.png)
 
 ---
 
@@ -5137,11 +5521,47 @@ También se recomienda realizar sesiones de validación con representantes de lo
 
 Finalmente, se concluye que el TB1 permitió consolidar la transición de EcoTrack desde una propuesta documentada hacia un producto de software funcional. Las correcciones realizadas sobre los artefactos del AV1, la actualización de los requisitos, el fortalecimiento del diseño técnico y la implementación de la primera versión de la Frontend Web Application contribuyen a mantener una relación coherente entre la problemática identificada, las necesidades de los usuarios, el diseño de la solución y su implementación.
 
+### AV2
+
+Durante el AV2, el equipo Horizon logró avanzar en la implementación de EcoTrack, evolucionando desde una aplicación frontend que utilizaba principalmente una Mock REST API hacia una solución con servicios backend propios desarrollados mediante Java y Spring Boot.
+
+En esta entrega se implementaron servicios correspondientes a los cuatro Bounded Contexts: Organization Management, Emissions Management, Carbon Footprint Calculation y Analytics & Reports. Estos servicios permiten gestionar información organizacional, registrar actividades y fuentes de emisión, realizar operaciones relacionadas con el cálculo de huella de carbono y consultar indicadores ambientales.
+
+La implementación backend se organizó utilizando principios de Domain-Driven Design, CQRS y una separación de responsabilidades entre dominio, aplicación e infraestructura. Asimismo, se incorporaron mecanismos de persistencia mediante Spring Data JPA y documentación OpenAPI accesible desde Swagger UI.
+
+Como parte de las evidencias de ejecución, se comprobó que el backend desplegado en Microsoft Azure responde correctamente a consultas de organizaciones y de indicadores ambientales. También se verificó el acceso al servicio de factores de emisión, aunque la consulta realizada con el filtro SCOPE_1 devolvió una lista vacía.
+
+En cuanto a la Frontend Web Application, se desarrollaron mejoras relacionadas con las validaciones, la gestión de información ambiental y la integración progresiva con los servicios backend. Sin embargo, esta integración todavía es parcial y requiere completar la migración de los módulos que continúan dependiendo de la Mock REST API.
+
+Asimismo, se actualizó la Landing Page de EcoTrack, incorporando los videos About-the-Product y About-the-Team y configurando los botones de acceso a la aplicación web. La versión actualizada fue publicada mediante GitHub Pages, permitiendo presentar públicamente las principales características del producto y del equipo Horizon.
+
+En relación con el proceso de ingeniería, se realizaron correcciones en los artefactos de Requirements Specification, Product Design y Software Architecture, mejorando la relación entre los requisitos, los diagramas y las funcionalidades desarrolladas. El trabajo colaborativo se evidenció mediante commits, ramas de desarrollo y Pull Requests registrados en GitHub.
+
+Respecto a las hipótesis formuladas durante Lean UX, los avances del AV2 permiten demostrar la viabilidad técnica de diversas funcionalidades propuestas para atender la problemática de gestión de emisiones. No obstante, todavía es necesario consolidar y analizar los resultados de las entrevistas de validación para determinar si los beneficios esperados y los criterios de éxito definidos se cumplen desde la perspectiva de los segmentos objetivo.
+
+Como recomendaciones para las siguientes iteraciones, se propone completar la integración entre Angular y Spring Boot, verificar el funcionamiento de los principales flujos de negocio, reforzar las pruebas automatizadas, validar las configuraciones de seguridad y CORS, y desplegar la versión actualizada de la Frontend Web Application.
+
+Finalmente, se concluye que el AV2 representó un avance importante en la construcción de EcoTrack al incorporar servicios backend reales, fortalecer la arquitectura del producto, actualizar la documentación técnica y mejorar los materiales de comunicación. Sin embargo, el cumplimiento integral de los objetivos funcionales y de las hipótesis de negocio requerirá finalizar la integración de componentes y completar la validación con los usuarios objetivo.
+
 ---
 
-# Video About-the-Team
+## Video About-the-Team
 
-<!-- Completar -->
+El equipo Horizon elaboró el video About-the-Team con el objetivo de presentar a sus integrantes y comunicar el proceso de desarrollo del proyecto EcoTrack durante el ciclo académico 2026-20.
+
+El material audiovisual presenta a los cuatro integrantes del equipo: Javier Tello, Aaron Espinoza, Alex Lacuta y Harrison Payesa, quienes asumieron responsabilidades en los diferentes Bounded Contexts del proyecto.
+
+El video tiene como finalidad comunicar las experiencias de trabajo colaborativo, los desafíos del desarrollo de software y los aprendizajes adquiridos durante la implementación de EcoTrack.
+
+**Video About-the-Team:**
+
+- **Microsoft Stream:** [Ver video en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQAFBjnBRmXkQa2c-vyXxzIgAa0BE3k-NJIoUeiQuUkofJY?e=NXGqhN&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+- **YouTube:** https://youtu.be/nA3qwXaTrcs
+- **Duración:** 7 minutos y 39 segundos.
+
+**Figure: Horizon — About-the-Team Video**
+
+![About the Team](assets/chapter-05/about-the-team.png)
 
 ---
 
@@ -5193,3 +5613,19 @@ La exposición correspondiente al TB1 presenta las correcciones realizadas a par
 
 **Microsoft Stream / Clipchamp:**  
 [Video de Exposición TB1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8SwTTqZMDQJhLGBDxm6TsAaDrHKqwEz0q-pq9FvZZmHY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9Y4hJ3)
+
+### AV2
+
+**Nombre del archivo:**
+
+`upc-pre-202620-1asi0729-7753-horizon-expo-av2.mp4`
+
+La exposición correspondiente al AV2 presenta las correcciones realizadas sobre los artefactos de análisis, requisitos, diseño y arquitectura de EcoTrack, junto con los avances de implementación desarrollados durante Sprint 3.
+
+Se presentan los RESTful Web Services implementados mediante Java y Spring Boot para los cuatro Bounded Contexts, las pruebas realizadas mediante Swagger UI, las mejoras de la Frontend Web Application y las evidencias del despliegue del backend en Microsoft Azure y del Landing Page en GitHub Pages.
+
+Asimismo, se explica la colaboración del equipo mediante GitHub, incluyendo commits, Pull Requests y las responsabilidades asumidas durante el desarrollo.
+
+**Microsoft Stream / Clipchamp:**
+
+[Pendiente de insertar el enlace de la exposición AV2]
