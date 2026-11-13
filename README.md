@@ -5435,17 +5435,307 @@ En conclusión, Sprint 3 permitió avanzar en el desarrollo colaborativo de los 
 
 ## 5.3. Validation Interviews
 
+Las entrevistas de validación contrastan, con personas de los segmentos objetivo de EcoTrack, la propuesta de valor y las funcionalidades implementadas en la Web Application, y permiten detectar problemas de usabilidad antes del siguiente Sprint. En este Sprint se registraron cuatro sesiones en video: tres con participantes reales (una del segmento de empresas exportadoras y dos del segmento de corporaciones y medianas empresas industriales) y una sesión reconstruida con apoyo de inteligencia artificial. La grabación original de la entrevista del segmento exportador a cargo de Harrison Payesa se dañó (el audio quedó corrupto) y no fue posible repetirla con la misma persona; el docente fue informado de esta situación. La sesión reconstruida se identifica como tal en el video y en este informe, y no se utiliza como evidencia en las evaluaciones heurísticas de la sección 5.3.3.
+
 ### 5.3.1. Diseño de Entrevistas
 
-<!-- Completar -->
+Las entrevistas de validación tienen como objetivo contrastar, con representantes de los segmentos objetivo, la propuesta de valor presentada en la Landing Page y las funcionalidades implementadas en la Web Application de EcoTrack, y comprobar si respaldan los supuestos e hipótesis planteados en el proceso Lean UX (sección 1.2.2.3).
+
+**Modalidad.** Sesiones moderadas a distancia, en formato de videollamada, de entre cuatro y ocho minutos. Se aplicaron dos dinámicas: una prueba con tareas, en la que el participante comparte su pantalla, ejecuta tareas definidas y piensa en voz alta (segmento 1), y un recorrido guiado, en el que el entrevistador comparte su pantalla, recorre el módulo y formula una pregunta después de cada pantalla (segmento 2). Todas las sesiones se registraron en video para su análisis académico.
+
+**Producto presentado.** En las sesiones con participantes reales se utilizó la Web Application con datos de demostración. No se recorrió el Landing Page en estas sesiones; su validación con usuarios queda para las siguientes entrevistas.
+
+**Elementos y user flows por segmento.**
+
+| Segmento | Módulo de la Web Application | User flows y User Stories validadas | Dinámica |
+| --- | --- | --- | --- |
+| Segmento 1: Empresas exportadoras | Carbon Footprint | Calcular la huella de carbono de un periodo y seleccionar el factor de emisión de cada dato (US-34, US-46), consultar los resultados por alcance (US-35, US-36) y consultar el historial de cálculos (US-37) | Prueba con tres tareas |
+| Segmento 2: Corporaciones y medianas empresas industriales | Emissions | Consultar los registros de emisión (US-13), registrar una fuente y su dato de actividad (US-11, US-45), clasificarla por alcance (US-12), buscar y filtrar registros (US-18, US-19), y consultar, editar y eliminar un registro con confirmación (US-14, US-15) | Recorrido guiado |
+
+**Participantes.** Se registraron cuatro sesiones, dos por segmento. En el segmento 1, con dos participantes (V01 y V02); en el segmento 2, dos con participantes (V03 y V04).
+
+**Guion del segmento 1 · prueba con tareas (V01).** El participante realiza tres tareas con los datos de demostración del periodo 2026-08 y responde cinco preguntas finales.
+
+| N.° | Momento | Tarea o pregunta | Qué se busca validar |
+| --- | --- | --- | --- |
+| 1 | Contexto | ¿Cuál es su nombre, cargo, empresa y a qué se dedica? ¿Cómo registran hoy la información ambiental? | Perfil del participante y situación actual. |
+| 2 | Tarea 1 | Calcular la huella de carbono de un periodo con los datos de ejemplo. | Claridad del cálculo, de los estados y del aviso de datos incompletos (US-34, US-46). |
+| 3 | Tarea 2 | Decir cuál de los tres alcances emite más y cuánto. | Lectura de los resultados por alcance (US-35). |
+| 4 | Tarea 3 | Encontrar el cálculo de otro periodo en el historial. | Facilidad para encontrar el historial (US-37). |
+| 5 | Cierre | Del 1 al 5, ¿qué tan fácil fue usarla y por qué? ¿Entendió los resultados y las unidades? | Facilidad percibida y comprensión de los resultados. |
+| 6 | Cierre | ¿Qué función le pareció más útil? ¿Qué le faltó para su trabajo diario? | Valor percibido y funcionalidades faltantes. |
+| 7 | Cierre | ¿Lo usaría su empresa? ¿Qué le preocuparía antes de adoptarlo? | Barreras de adopción. |
+
+**Guion ampliado del segmento 1 (V02).** La sesión V02 se realizó con un guion de doce preguntas que recorre la Landing Page, el registro de la organización y sus sedes, el registro de emisiones, el cálculo de la huella, el dashboard, las metas y los reportes. Las preguntas parten del diseño de entrevistas de la sección 2.2.1 y de las hipótesis de la sección 1.2.2.3.
+
+| N.° | Momento | Pregunta | Qué se busca validar |
+| --- | --- | --- | --- |
+| 1 | Contexto | ¿Podría contarme cuál es su rol en la empresa y cómo gestionan hoy su información ambiental? | Perfil y situación actual (2.2.1, P1 y P5). |
+| 2 | Landing Page | Después de recorrer la página, ¿qué entiende que hace EcoTrack y para qué tipo de empresa cree que es? | Comprensión de la propuesta de valor. |
+| 3 | Landing Page | Los planes Basic, Pro y Enterprise, con precios mensuales en soles, ¿le parecen claros y razonables? | Claridad y aceptación de los planes de suscripción. |
+| 4 | Registro de organización y sedes | ¿Qué tan claro le resulta este registro y qué dato le faltó? | Claridad del registro inicial. |
+| 5 | Registro de emisiones | Comparado con hacerlo en Excel, ¿cuánto tiempo cree que ahorraría? | Hipótesis 1 (reducción del 30 % del tiempo para organizar la información). |
+| 6 | Registro de emisiones | En su caso, ¿le sería útil importar datos desde Excel o subir evidencias desde el celular? | Necesidad de importación y carga de evidencias (2.2.1, P13). |
+| 7 | Huella de carbono | ¿Confiaría en este resultado y qué necesitaría ver para confiar en él? | Hipótesis 2 y confianza en el cálculo. |
+| 8 | Dashboard | ¿Qué entiende de esta pantalla, qué indicador le falta y lo revisaría cada mes? | Hipótesis 3 e indicadores esperados (2.2.1, P12). |
+| 9 | Metas | ¿Las definiría en la plataforma y consultaría su avance? | Hipótesis 4 (seguimiento de metas). |
+| 10 | Reportes | ¿Le serviría para sus clientes o auditorías y qué otro formato necesitaría? | Hipótesis 5 y uso ante clientes (2.2.1, P3). |
+| 11 | Cierre | ¿Qué cambiaría o qué le falta para usarlo a diario y qué le preocuparía antes de adoptarlo? | Barreras de adopción (2.2.1, P14). |
+| 12 | Cierre | Del uno al cinco, ¿qué tan probable es que lo use y lo recomiende? | Intención de uso y recomendación. |
+
+**Guion del segmento 2 · recorrido guiado del módulo Emissions (V03 y V04).**
+
+| N.° | Momento | Pregunta | Qué se busca validar |
+| --- | --- | --- | --- |
+| 1 | Contexto | ¿Cuál es su nombre, cargo y a qué se dedica su empresa? | Perfil del participante. |
+| 2 | Listado de registros | Al ver esta pantalla por primera vez, ¿qué entiende, qué puede hacer aquí y la información le parece clara? | Comprensión del listado de emisiones (US-13). |
+| 3 | Formulario de registro | ¿Los datos que solicita el formulario le parecen claros y adecuados para registrar una actividad de su empresa? ¿Agregaría, cambiaría o eliminaría algo? | Claridad del formulario (US-11, US-45). |
+| 4 | Alcances | ¿Le resulta fácil entender qué alcance debería seleccionar y qué información le ayudaría a elegir? | Comprensión de la clasificación por alcance (US-12). |
+| 5 | Búsqueda y filtros | ¿Considera que la búsqueda y los filtros le ayudarían a encontrar la información que necesita? ¿Qué otro filtro le sería útil? | Utilidad de la búsqueda y los filtros (US-18, US-19). |
+| 6 | Detalle, edición y eliminación | ¿Qué opina de estas opciones? ¿Hay algo que le genere dudas o temor de modificar un registro? | Confianza al editar y eliminar (US-14, US-15). |
+| 7 | Cierre | En general, ¿qué fue lo más fácil de entender y qué mejoraría de esta parte? | Facilidad percibida y mejoras. |
 
 ### 5.3.2. Registro de Entrevistas
 
-<!-- Completar -->
+Las cuatro sesiones se registraron en video y se unieron, en el orden V01 a V04, en un único video publicado en Microsoft Stream con el nombre [upc-pre-202620-1asi0729-7753-horizon-validation-sprint-3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQBnPSCa-GyvTr-rPfRs7j5FAW__vvhbRfVhO0OyoJOEsjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0qvmN2), con una duración total de 21 minutos con 9 segundos. Cada entrevista inicia con un rótulo con el nombre del entrevistado, el segmento objetivo, el entrevistador y la fecha de la entrevista. El *timing* (hh:mm:ss) indica en qué parte del video unido se encuentra cada entrevista, y la duración indicada se calcula como fin menos inicio. La entrevista V01, de casi nueve minutos, se editó para dejarla en unos cinco minutos, conservando la presentación, las tres tareas y las preguntas finales. Los datos que no figuran en las grabaciones ni en los registros del equipo se dejan en blanco para completarlos con los datos de cada participante.
+
+
+- **Segmento 1: Empresas exportadoras**
+  - **Entrevista V01**
+    - **Nombres:** Edson
+    - **Apellidos:** Tello
+    - **Edad:** 25 años
+    - **Distrito:**
+    - **Ocupación / cargo:** Asistente de producción
+    - **Empresa / sector:** Empresa agroindustrial peruana que procesa y empaca alimentos
+    - **Entrevistador:** Alex Lacuta (Horizon)
+    - **Fecha de la entrevista:** 12/11/2026
+    - **Screenshot:**
+
+      ![Entrevista V01](assets/chapter-05/interviews/validacion-v01.jpg)
+
+    - **Video URL:** [Video unido de entrevistas de validación (V01 a V04)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQBnPSCa-GyvTr-rPfRs7j5FAW__vvhbRfVhO0OyoJOEsjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0qvmN2)
+    - **Timing:** 00:00:00 - 00:05:11
+    - **Duración del intervalo indicado:** 5 minutos con 11 segundos
+    - **Tareas realizadas:** (1) Calcular la huella de carbono del periodo 2026-08 con los datos de ejemplo. (2) Indicar cuál de los tres alcances emite más y cuánto. (3) Encontrar el cálculo de otro periodo en el historial.
+    - **Resumen:** Edson lleva dos años en una empresa agroindustrial peruana que procesa y empaca alimentos y, desde hace poco, apoya el registro del consumo de energía y combustible. Hoy registra los datos en Excel por área y los entrega cada mes a administración, sin calcular la huella de carbono de forma centralizada. Compartió su pantalla y, pensando en voz alta, calculó la huella del periodo 2026-08: el sistema le avisó que faltaba seleccionar el factor de emisión de una fila, lo seleccionó sin ayuda y obtuvo 8,215.5 kgCO₂e. Identificó que el Alcance 2 es el que más emite (3,125 kgCO₂e), seguido por el Alcance 3 (2,812.5) y el Alcance 1 (2,278), y encontró en el historial el cálculo de otro periodo (2026-09, 5,850 kgCO₂e) para compararlo con agosto. Calificó con 3 sobre 5 la facilidad de uso porque el cálculo se entiende, pero el historial no fue directo de encontrar y le tomó más tiempo del necesario. Entendió que los resultados se separan por alcance y están en kilogramos de dióxido de carbono equivalente, pero no le quedó claro qué factor de emisión se usa por defecto ni si el periodo es mensual o anual. Consideró más útil el desglose por alcance y el historial, porque permitirían comparar meses y ver qué área consume más. Le faltó importar datos desde Excel, exportar el reporte (también en formatos como Word o PowerPoint), un botón «Calcular huella» más visible y factores de emisión adaptados al Perú. Usaría la herramienta, y le preocupa que los datos sean exactos, que no se duplique el trabajo que hace en Excel y que sea fácil de usar para el personal de planta.
+  - **Entrevista V02**
+    - **Nombres:** Carlos
+    - **Apellidos:** Mendoza
+    - **Edad:** 34
+    - **Distrito:** Surquillo
+    - **Ocupación / cargo:** Jefe de Calidad y Sostenibilidad
+    - **Empresa / sector:**
+    - **Entrevistador:** Harrison Payesa (Horizon)
+    - **Fecha de la entrevista:**
+    - **Screenshot:**
+
+      ![Entrevista V02](assets/chapter-05/interviews/validacion-v02.jpg)
+
+    - **Video URL:** [Video unido de entrevistas de validación (V01 a V04)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQBnPSCa-GyvTr-rPfRs7j5FAW__vvhbRfVhO0OyoJOEsjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0qvmN2)
+    - **Timing:** 00:05:11 - 00:11:23
+    - **Duración del intervalo indicado:** 6 minutos con 12 segundos
+    - **Tareas realizadas:** Recorrido del guion ampliado de la sección 5.3.1: Landing Page, registro de la organización y sus sedes, registro de emisiones, cálculo de huella, dashboard, metas y reportes.
+    - **Resumen:** Sesión reconstruida por daño en el archivo oroginal. Carlos es jefe de calidad y sostenibilidad de una agroexportadora de café y cacao orgánicos. Hoy reúne el consumo de energía, combustible y agua en hojas de Excel y guarda las fotos de los registros en una carpeta compartida. Tras recorrer el landing, entendió que EcoTrack sirve para medir y controlar las emisiones de una empresa en un solo lugar y que está pensado para empresas exportadoras; consideró que el plan Pro sería el apropiado y que su precio es razonable frente a contratar una consultora cada vez que un cliente solicita un informe. El registro de la organización y sus sedes le resultó claro y rápido, aunque echó de menos indicar las certificaciones de cada sede. Estimó que registrar los datos desde el inicio le ahorraría alrededor de un tercio del tiempo que hoy dedica al cierre mensual, que le toma casi dos días, y valoró poder importar desde Excel y subir fotos desde el celular. Sobre el cálculo de la huella, valoró poder elegir el factor de emisión y señaló que confiaría más si se indica de dónde provienen, porque se lo pedirían en una auditoría. Comprendió el dashboard, pidió ver también el consumo de energía por sede y dijo que lo revisaría cada mes antes de preparar el reporte; definiría metas, por ejemplo reducir el combustible del transporte, y las revisaría con su gerente cada trimestre. El CSV le sirve para armar el informe, pero a los clientes europeos les envían PDF, por lo que necesitaría ese formato con el logo de la empresa y gráficos. Como mejoras mencionó la carga de evidencias y el uso de la plataforma por varias personas con distintos permisos, y como preocupación el trabajo de migrar la información que ya tiene en Excel. Calificó con 4 sobre 5 la probabilidad de usar y recomendar la plataforma, condicionada a que incorporen el PDF y la carga desde el celular.
+
+- **Segmento 2: Corporaciones y medianas empresas industriales**
+  - **Entrevista V03**
+    - **Nombres:** María
+    - **Apellidos:**
+    - **Edad:**
+    - **Distrito:**
+    - **Ocupación / cargo:** Supervisora de operaciones
+    - **Empresa / sector:** Empresa industrial
+    - **Entrevistador:** Aaron Espinoza (Horizon)
+    - **Fecha de la entrevista:** 13/11/2026
+    - **Screenshot:**
+
+      ![Entrevista V03](assets/chapter-05/interviews/validacion-v03.jpg)
+
+    - **Video URL:** [Video unido de entrevistas de validación (V01 a V04)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQBnPSCa-GyvTr-rPfRs7j5FAW__vvhbRfVhO0OyoJOEsjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0qvmN2)
+    - **Timing:** 00:11:23 - 00:15:39
+    - **Duración del intervalo indicado:** 4 minutos con 16 segundos
+    - **Tareas realizadas:** Recorrido guiado del módulo Emissions: revisar el listado de emisiones, el formulario de registro, la clasificación por alcance, la búsqueda y los filtros, y las opciones de detalle, edición y eliminación.
+    - **Resumen:** María es supervisora de operaciones en una empresa industrial. Al ver el listado de emisiones entendió que puede revisar las fuentes de emisión y la información de cada una, aunque no tenía claro qué significan los diferentes scopes. Consideró que la mayoría de los campos del formulario se entiende, aunque le gustaría que hubiera un ejemplo de cómo llenarlo. Sobre la clasificación por alcance, la explicación del entrevistador le ayudó a entenderla mejor, pero le ayudaría más que la aplicación tuviera ejemplos para cada alcance. Valoró la búsqueda y los filtros, sobre todo cuando hay muchos registros, y pidió poder filtrar también por instalación. Le pareció bien que se pida confirmación antes de eliminar un registro y pidió saber quién hizo el último cambio y cuándo lo realizó. En general, la tabla y los filtros le parecieron fáciles de entender; mejoraría las explicaciones de los alcances y agregaría ejemplos en el formulario.
+  - **Entrevista V04**
+    - **Nombres:** Carlos
+    - **Apellidos:**
+    - **Edad:**
+    - **Distrito:**
+    - **Ocupación / cargo:** Supervisor de operaciones
+    - **Empresa / sector:** Empresa industrial
+    - **Entrevistador:** Aaron Espinoza (Horizon)
+    - **Fecha de la entrevista:** 13/11/2026
+    - **Screenshot:**
+
+      ![Entrevista V04](assets/chapter-05/interviews/validacion-v04.jpg)
+
+    - **Video URL:** [Video unido de entrevistas de validación (V01 a V04)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQBnPSCa-GyvTr-rPfRs7j5FAW__vvhbRfVhO0OyoJOEsjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0qvmN2)
+    - **Timing:** 00:15:39 - 00:21:09
+    - **Duración del intervalo indicado:** 5 minutos con 30 segundos
+    - **Tareas realizadas:** Recorrido guiado del módulo Emissions: revisar el listado de emisiones, el formulario de registro, la clasificación por alcance, la búsqueda y los filtros, y las opciones de detalle, edición y eliminación.
+    - **Resumen:** Carlos es supervisor de operaciones en una empresa industrial. Entendió que en el listado puede revisar las fuentes de emisión y la información de cada una; la tabla le pareció bien ordenada visualmente, aunque no tenía claro qué significan los diferentes scopes. Indicó que la mayoría de los campos del formulario se entiende bastante bien, y pidió un ejemplo de cómo llenarlo con más exactitud. Con la explicación del entrevistador comprendió mucho mejor los alcances, aunque también ayudaría que la aplicación tuviera ejemplos para cada alcance. Estuvo de acuerdo en que la búsqueda y los filtros ayudan, sobre todo si hay muchos registros, y pidió poder filtrar por instalaciones. Sobre la confirmación antes de eliminar dijo que le parece excelente, por si alguien comete un error mientras trabaja, y pidió saber quién hizo el último cambio y cuándo, como un registro de auditoría. Concluyó que las tablas y los filtros le parecieron fáciles de entender, tanto visual como funcionalmente, y que mejoraría las explicaciones de los alcances y agregaría ejemplos para los formularios.
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-<!-- Completar -->
+Las evaluaciones siguen el formato del Anexo D (Usability, Inclusive Design e Information Architecture). Se presentan dos evaluaciones: la del módulo Carbon Footprint (segmento 1, sesiones V01 y V02) y la del módulo Emissions (segmento 2, sesiones V03 y V04).
+
+**Escala de severidad**
+
+| Nivel | Descripción |
+| --- | --- |
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+#### Evaluación 1 · Carbon Footprint (segmento 1)
+
+| Campo | Valor |
+| --- | --- |
+| Carrera | Ingeniería de Software |
+| Curso | Desarrollo de Aplicaciones Open Source |
+| Sección | 1ASI0729 · NRC 7753 |
+| Profesores | Todos |
+| Auditor | Horizon |
+| Cliente | Edson Tello (sesión V01) |
+| App evaluada | EcoTrack Web Application · módulo Carbon Footprint |
+
+**Tareas evaluadas:** (1) Calcular la huella de carbono de un periodo con datos de ejemplo. (2) Identificar el alcance que más emite. (3) Encontrar el cálculo de otro periodo en el historial.
+
+**Tareas no evaluadas:** Registro de emisiones, dashboard, metas, generación y descarga de reportes, y Landing Page.
+
+**Tabla resumen**
+
+| # | Problema | Severidad | Heurística / principio violada(o) |
+| --- | --- | --- | --- |
+| 1 | El historial de cálculos está al final de la página y costó encontrarlo | 2 | Usability: Reconocimiento antes que recuerdo · Information Architecture: Is it findable? |
+| 2 | No se explica qué factor de emisión se usa por defecto ni si el periodo es mensual o anual | 2 | Usability: Ayuda y documentación |
+| 3 | El botón «Calcular huella» no resalta lo suficiente | 1 | Information Architecture: Is it findable? |
+| 4 | No hay importación de datos desde Excel ni acceso al reporte desde la vista de cálculo | 3 | Usability: Flexibilidad y eficiencia de uso |
+
+**Descripción de problemas**
+
+**PROBLEMA #1:** El historial de cálculos está al final de la página y costó encontrarlo
+
+Severidad: 2
+Heurística violada: Usability: Reconocimiento antes que recuerdo · Information Architecture: Is it findable?
+
+Problema: Para encontrar el cálculo de otro periodo, Edson tuvo que desplazarse hasta el final de la página, después del bloque de resultados, y no lo ubicó de inmediato. Calificó con 3 sobre 5 la facilidad de uso por este motivo y señaló que es información que debería tenerse a mano.
+
+![Problema 1 · historial de cálculos](assets/chapter-05/heuristics/h1-historial.jpg)
+
+Recomendación: Colocar el historial junto a los resultados o en una pestaña propia, y agregar un enlace «Ver historial» cerca del botón de cálculo.
+
+**PROBLEMA #2:** No se explica qué factor de emisión se usa por defecto ni si el periodo es mensual o anual
+
+Severidad: 2
+Heurística violada: Usability: Ayuda y documentación
+
+Problema: Edson entendió que los resultados se separan por alcance y están en kgCO₂e, pero no le quedó claro qué factor de emisión se aplica por defecto ni si el periodo seleccionado es mensual o anual.
+
+![Problema 2 · periodo y factor de emisión](assets/chapter-05/heuristics/h1-periodo-factor.jpg)
+
+Recomendación: Indicar bajo el selector que el periodo es mensual (formato AAAA-MM) y mostrar, junto a cada factor, su fuente y una etiqueta de «sugerido» en el factor por defecto.
+
+**PROBLEMA #3:** El botón «Calcular huella» no resalta lo suficiente
+
+Severidad: 1
+Heurística violada: Information Architecture: Is it findable?
+
+Problema: Edson sugirió que el botón principal sea más visible. Lo encontró y lo usó sin ayuda (ver la captura del problema 2), por lo que el impacto es bajo.
+
+Recomendación: Aumentar el contraste o el tamaño del botón, o dejarlo fijo al desplazarse por la tabla de datos de actividad.
+
+**PROBLEMA #4:** No hay importación de datos desde Excel ni acceso al reporte desde la vista de cálculo
+
+Severidad: 3
+Heurística violada: Usability: Flexibilidad y eficiencia de uso
+
+Problema: Edson y Carlos hoy registran sus datos en Excel y echó en falta importarlos desde allí y exportar el reporte, incluso en formatos como Word o PowerPoint. La generación de reportes existe en el módulo Reportes (formato CSV), pero no hay acceso a ella desde la vista de cálculo, y la importación de datos no está implementada en esta versión.
+
+Recomendación: Agregar una acción «Generar reporte» desde los resultados del cálculo y planificar la importación desde Excel o CSV para el siguiente Sprint.
+
+**Aspectos que cumplen:** Visibilidad del estado del sistema (la columna Estado y el mensaje con la huella calculada) y prevención y recuperación de errores (el aviso «No se pudo completar el cálculo» indicó la fila con el factor faltante y Edson lo corrigió sin ayuda).
+
+#### Evaluación 2 · Emissions (segmento 2)
+
+| Campo | Valor |
+| --- | --- |
+| Carrera | Ingeniería de Software |
+| Curso | Desarrollo de Aplicaciones Open Source |
+| Sección | 1ASI0729 · NRC 7753 |
+| Profesores | Todos |
+| Auditor | Horizon |
+| Clientes | María (sesión V03) y Carlos (sesión V04) |
+| App evaluada | EcoTrack Web Application · módulo Emissions |
+
+**Tareas evaluadas:** (1) Revisar el listado de emisiones. (2) Revisar el formulario de registro de una fuente y su dato de actividad. (3) Entender la clasificación por alcance. (4) Buscar y filtrar registros. (5) Consultar el detalle y entender la edición y la eliminación con confirmación.
+
+**Tareas no evaluadas:** Cálculo de huella, dashboard, metas, generación y descarga de reportes, y Landing Page.
+
+**Tabla resumen**
+
+| # | Problema | Severidad | Heurística / principio violada(o) |
+| --- | --- | --- | --- |
+| 1 | Los alcances (Scope 1, 2 y 3) no se explican en la pantalla | 3 | Usability: Ayuda y documentación · Information Architecture: Is it usable? |
+| 2 | El formulario no ofrece ejemplos de cómo llenarlo | 2 | Usability: Ayuda y documentación |
+| 3 | No se puede filtrar por instalación | 2 | Usability: Flexibilidad y eficiencia de uso |
+| 4 | No se muestra quién hizo el último cambio ni cuándo | 2 | Usability: Visibilidad del estado del sistema |
+| 5 | La interfaz se muestra en inglés por defecto y el idioma no se conserva | 2 | Usability: Consistencia y estándares · Inclusive Design: Ofrece opciones |
+
+**Descripción de problemas**
+
+**PROBLEMA #1:** Los alcances (Scope 1, 2 y 3) no se explican en la pantalla
+
+Severidad: 3
+Heurística violada: Usability: Ayuda y documentación · Information Architecture: Is it usable?
+
+Problema: María y Carlos indicaron que no tenían claro qué significan los diferentes scopes. En ambas sesiones fue necesaria la explicación del entrevistador para entenderlos, y ambos señalaron que les ayudaría que la aplicación tuviera ejemplos para cada alcance.
+
+![Problema 1 · listado con los alcances](assets/chapter-05/heuristics/h2-listado-alcances.jpg)
+
+Recomendación: Agregar una descripción breve con ejemplos en la etiqueta de cada alcance (por ejemplo, un texto de ayuda con combustibles propios para el Alcance 1 y electricidad adquirida para el Alcance 2) y en el selector del formulario.
+
+**PROBLEMA #2:** El formulario no ofrece ejemplos de cómo llenarlo
+
+Severidad: 2
+Heurística violada: Usability: Ayuda y documentación
+
+Problema: Ambos participantes consideraron que la mayoría de los campos se entiende, pero pidieron un ejemplo de cómo completar el formulario de registro.
+
+![Problema 2 · formulario de registro](assets/chapter-05/heuristics/h2-formulario.jpg)
+
+Recomendación: Incluir textos de ejemplo en los campos (por ejemplo, «Caldera de gas natural» en Fuente de emisión y «kWh, L, km» en Unidad) y un enlace de ayuda en el diálogo.
+
+**PROBLEMA #3:** No se puede filtrar por instalación
+
+Severidad: 2
+Heurística violada: Usability: Flexibilidad y eficiencia de uso
+
+Problema: María y Carlos valoraron la búsqueda y los filtros por alcance, periodo y origen, y los dos pidieron poder filtrar también por instalación (sede), sobre todo cuando hay muchos registros (ver la captura del problema 1).
+
+Recomendación: Agregar el filtro «Instalación» junto a los filtros de alcance, periodo y origen.
+
+**PROBLEMA #4:** No se muestra quién hizo el último cambio ni cuándo
+
+Severidad: 2
+Heurística violada: Usability: Visibilidad del estado del sistema
+
+Problema: Ambos participantes pidieron saber quién hizo el último cambio de un registro y cuándo se realizó; Carlos lo describió como una pequeña auditoría o registro de auditoría. Hoy el detalle del registro no muestra esa información.
+
+Recomendación: Mostrar en el detalle del registro el usuario y la fecha de la última modificación, y evaluar un historial de cambios por registro.
+
+**PROBLEMA #5:** La interfaz se muestra en inglés por defecto y el idioma no se conserva
+
+Severidad: 2
+Heurística violada: Usability: Consistencia y estándares · Inclusive Design: Ofrece opciones
+
+Problema: Observado por el equipo durante las sesiones: las pantallas se mostraron en inglés (Emission records, Add emission, Scope) a participantes hispanohablantes, y el idioma elegido en el selector EN / ES no se conserva al recargar la página.
+
+Recomendación: Usar el idioma del navegador como valor por defecto y guardar la elección del usuario.
+
+**Aspectos que cumplen:** Prevención de errores (Carlos calificó de «excelente» la confirmación antes de eliminar, y María la consideró buena) y facilidad de lectura de la tabla y de los filtros (ambos los calificaron de fáciles de entender; Carlos destacó que están bien «tanto visual como funcionalmente»).
 
 ---
 
