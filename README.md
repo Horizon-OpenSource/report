@@ -3873,7 +3873,7 @@ La coordinación iniciada durante la reunión presencial continuó el mismo día
 
 El objetivo del Sprint 1 se orienta a proporcionar a los potenciales clientes de EcoTrack un primer punto de contacto digital que permita comprender la propuesta de valor de la solución y acceder a información relevante sobre el producto.
 
-**Sprint 1 Goal**
+**Objetivo del Sprint 1**
 
 > **Nuestro enfoque** es proporcionar a los potenciales clientes de EcoTrack un Landing Page responsivo y de acceso público que comunique claramente el propósito del producto, sus beneficios, principales funcionalidades, planes de suscripción y opciones de contacto.
 >
@@ -4256,7 +4256,7 @@ La planificación también considera actividades de integración entre los compo
 
 El objetivo de Sprint 2 se orienta a implementar y desplegar la primera versión funcional de la Frontend Web Application de EcoTrack, complementada con una nueva versión del Landing Page.
 
-**Sprint 2 Goal**
+**Objetivo del Sprint 2**
 
 > **Nuestro enfoque** es desarrollar y desplegar la primera versión funcional de la Frontend Web Application de EcoTrack, junto con una versión actualizada del Landing Page, permitiendo que los usuarios pasen de conocer la propuesta de valor del producto a interactuar con sus principales funcionalidades de gestión ambiental.
 >
@@ -4296,10 +4296,16 @@ Las User Stories seleccionadas para Sprint 2 corresponden a los cuatro aspectos 
 | US-30         | Consultar reportes anteriores                |            3 | Analytics & Reports          |
 | **Total**     |                                              |       **98** |                              |
 
-| Sprint Metric           |           Value |
-| ----------------------- | --------------: |
-| **Sprint 2 Velocity**   | 98 Story Points |
-| **Sum of Story Points** | 98 Story Points |
+| Sprint Metric                            |           Value |
+| ---------------------------------------- | --------------: |
+| **Planned Story Points**                 | 98 Story Points |
+| **Completed Story Points (provisional)** | 78 Story Points |
+| **Incomplete Story Points**              | 20 Story Points |
+| **Sprint 2 Velocity (provisional)**      | 78 Story Points |
+
+La planificación de Sprint 2 contempló 26 User Stories, equivalentes a 98 Story Points. A partir de la revisión posterior de los avances y evidencias disponibles, se identificaron 21 User Stories clasificadas como completadas, equivalentes a 78 Story Points, mientras que cinco User Stories de Carbon Footprint Calculation permanecen en progreso, con 20 Story Points.
+
+Estas cifras corresponden a una reconstrucción documental del estado al cierre de TB1 y requieren validación funcional para confirmar la velocidad definitiva del Sprint.
 
 El alcance seleccionado permite avanzar sobre los principales procesos operativos de EcoTrack sin intentar implementar la totalidad del Product Backlog dentro de una sola iteración. Las funcionalidades que no forman parte de Sprint 2 permanecerán disponibles para su planificación en los siguientes Sprints.
 
@@ -4351,10 +4357,6 @@ Para organizar y realizar seguimiento a las actividades del Sprint, Horizon util
 
 **Sprint Board:**  
 https://trello.com/b/Hp12BlSW/horizon-ecotrack
-
-La siguiente captura presenta el estado del Board utilizado para Sprint 2:
-
-![Sprint 2 Backlog Board](assets/chapter-05/sprint-02-backlog-board.png)
 
 Las User Stories fueron descompuestas en Work Items de acuerdo con las principales actividades necesarias para desarrollar cada flujo funcional.
 
@@ -4972,7 +4974,9 @@ Durante el Sprint 2 se completó la primera versión de la Frontend Web Applicat
 
 El trabajo colaborativo se realizó utilizando Git y GitHub mediante ramas `feature/*`, Conventional Commits y Pull Requests hacia la rama de integración `develop`. Esta estrategia permitió que los integrantes trabajaran de forma paralela sobre diferentes partes del producto y que posteriormente las funcionalidades fueran revisadas e integradas dentro de una única aplicación.
 
-Además, se mantuvo una nueva versión del Landing Page y se desplegó la primera versión de la Frontend Web Application, permitiendo disponer de productos digitales accesibles para demostrar los principales escenarios implementados durante el Sprint 2.
+Durante Sprint 2 se desplegó la primera versión de la Frontend Web Application de EcoTrack mediante Microsoft Azure App Service, permitiendo demostrar los principales flujos implementados con Angular y la Mock REST API.
+
+En cuanto al Landing Page, la actualización correspondiente a la versión v1.1.0 no fue publicada durante la entrega original de TB1. Por ello, posteriormente se realizaron mejoras correctivas relacionadas con las animaciones de navegación y accesibilidad multilingüe, las cuales fueron integradas y desplegadas mediante GitHub Pages como parte de la atención a las observaciones del docente.
 
 La implementación desarrollada durante el TB1 permitió comprobar la viabilidad técnica de la arquitectura planteada y establecer una base funcional sobre la cual continuar incorporando funcionalidades en los siguientes Sprints. Sin embargo, las métricas planteadas en los Business Outcome Assumptions e Hypothesis Statements aún requieren sesiones de validación con usuarios reales antes de poder determinar su grado de cumplimiento.
 
@@ -5014,10 +5018,10 @@ Instituto Nacional de Estadística e Informática. (2025). _Perú: Estructura Em
 
 En el presente anexo se registran de manera progresiva los videos de exposición correspondientes a las diferentes entregas del proyecto EcoTrack. Cada video presenta los principales artefactos desarrollados, las mejoras realizadas y los productos de software implementados por el equipo Horizon.
 
-| Entrega | Título del video          | Enlace                                                                                                                                                                                                                                                                                                                                             |
-| ------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AV1     | EcoTrack - Exposición AV1 | [Video de Exposición AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDkJugSWGACS7no1S8vH57WAX2XN8u_QVTTxHqsGHMz4I8?e=gDwAez&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| TB1     | EcoTrack - Exposición TB1 | [Video de Exposición TB1](COLOCAR_URL_REAL_TB1)                                                                                                                                                                                                                                                                                                    |
+| Entrega | Título del video          | Enlace                                                                                                                                                                                                                                                                                                                                                  |
+| ------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AV1     | EcoTrack - Exposición AV1 | [Video de Exposición AV1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQDkJugSWGACS7no1S8vH57WAX2XN8u_QVTTxHqsGHMz4I8?e=gDwAez&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)      |
+| TB1     | EcoTrack - Exposición TB1 | [Video de Exposición TB1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8SwTTqZMDQJhLGBDxm6TsAaDrHKqwEz0q-pq9FvZZmHY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9Y4hJ3) |
 
 ### AV1
 
@@ -5037,4 +5041,4 @@ La exposición correspondiente al AV1 presenta la problemática abordada por Eco
 La exposición correspondiente al TB1 presenta las correcciones realizadas a partir del feedback recibido en el AV1, la evolución de los artefactos del Project Report y el avance de implementación correspondiente al Sprint 2, incluyendo la primera versión de la Frontend Web Application de EcoTrack.
 
 **Microsoft Stream / Clipchamp:**  
-[Video de Exposición TB1](COLOCAR_URL_REAL_TB1)
+[Video de Exposición TB1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218387_upc_edu_pe/IQD8SwTTqZMDQJhLGBDxm6TsAaDrHKqwEz0q-pq9FvZZmHY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9Y4hJ3)
