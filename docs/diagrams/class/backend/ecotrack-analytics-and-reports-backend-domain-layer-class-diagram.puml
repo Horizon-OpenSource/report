@@ -20,61 +20,84 @@ hide circle
 package "Domain" {
   package "Aggregates" {
     class EnvironmentalIndicator <<Aggregate Root>> {
-      +id: Long
-      +organizationId: Long
-      +type: String
-      +value: Double
-      +period: String
+      -id: IndicatorId
+      -organizationId: OrganizationId
+      -type: IndicatorType
+      -value: IndicatorValue
+      -period: ReportingPeriod
     }
     class SustainabilityReport <<Aggregate Root>> {
-      +id: Long
-      +organizationId: Long
-      +period: String
+      -id: ReportId
+      -organizationId: OrganizationId
+      -period: ReportingPeriod
       -status: ReportStatus
-      +generatedAt: LocalDateTime
+      -generatedAt: LocalDateTime
       +markAsDownloaded(): void
     }
   }
 
   package "Value Objects" {
-    enum ReportStatus {
+    class IndicatorId <<Value Object>> {
+      -value: UUID
+    }
+    class OrganizationId <<Value Object>> {
+      -value: UUID
+    }
+    class ReportId <<Value Object>> {
+      -value: UUID
+    }
+    enum ReportStatus <<Value Object>> {
       GENERATED
       DOWNLOADED
+    }
+    enum IndicatorType <<Value Object>> {
+      TOTAL_EMISSIONS
+      EMISSIONS_BY_SCOPE
+      GOAL_PROGRESS
+    }
+    class ReportingPeriod <<Value Object>> {
+      -year: int
+      -month: int
+      +toString(): String
+    }
+    class IndicatorValue <<Value Object>> {
+      -amount: BigDecimal
+      -unit: String
     }
   }
 
   package "Commands" {
     class GenerateConsolidatedReportCommand {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
     class GenerateReportByPeriodCommand {
-      +organizationId: Long
-      +period: String
+      +organizationId: OrganizationId
+      +period: ReportingPeriod
     }
     class DownloadReportCommand {
-      +reportId: Long
+      +reportId: ReportId
     }
   }
 
   package "Queries" {
     class GetDashboardQuery {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
     class ComparePeriodsQuery {
-      +from: String
-      +to: String
+      +from: ReportingPeriod
+      +to: ReportingPeriod
     }
     class GetSummaryQuery {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
     class GetReportsHistoryQuery {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
   }
 
   package "Events" {
     class SustainabilityReportGeneratedEvent {
-      +reportId: Long
+      +reportId: ReportId
       +occurredOn: LocalDateTime
     }
   }
@@ -82,19 +105,25 @@ package "Domain" {
   package "Repositories" {
     interface EnvironmentalIndicatorRepository {
       +save(indicator: EnvironmentalIndicator): EnvironmentalIndicator
-      +findByOrganizationId(organizationId: Long): List<EnvironmentalIndicator>
+      +findByOrganizationId(organizationId: OrganizationId): List<EnvironmentalIndicator>
     }
     interface SustainabilityReportRepository {
-      +findById(id: Long): SustainabilityReport
-      +findByOrganizationId(organizationId: Long): List<SustainabilityReport>
+      +findById(id: ReportId): SustainabilityReport
+      +findByOrganizationId(organizationId: OrganizationId): List<SustainabilityReport>
       +save(report: SustainabilityReport): SustainabilityReport
     }
   }
 
   SustainabilityReport "1" *-- "1" ReportStatus : currently in
+  SustainabilityReport "1" *-- "1" ReportingPeriod : covers
+  EnvironmentalIndicator "1" *-- "1" IndicatorType : classified as
+  EnvironmentalIndicator "1" *-- "1" IndicatorValue : measured as
+  EnvironmentalIndicator "1" *-- "1" ReportingPeriod : covers
   SustainabilityReport "0..*" --> "0..*" EnvironmentalIndicator : summarizes
   EnvironmentalIndicatorRepository ..> EnvironmentalIndicator : persists
   SustainabilityReportRepository ..> SustainabilityReport : persists
+  EnvironmentalIndicator "1" *-- "1" IndicatorId : identified by
+  SustainabilityReport "1" *-- "1" ReportId : identified by
 }
 
 package "Interfaces REST" as Backend_analytics_Interfaces_REST <<layer>> {

@@ -1,62 +1,96 @@
 @startuml
-title EcoTrack - Analytics and Reports Event Storming
 left to right direction
-skinparam packageStyle rectangle
 skinparam shadowing false
-skinparam defaultFontName Arial
-skinparam rectangle {
-  BorderColor #4A4A4A
-  FontColor #FFFFFF
-  FontStyle bold
-  FontSize 12
-}
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 13
+skinparam backgroundColor white
+skinparam nodesep 25
+skinparam ranksep 70
 skinparam ArrowColor #4A4A4A
+skinparam RectangleBorderColor #555555
+skinparam RectangleFontStyle bold
+skinparam roundCorner 12
+skinparam rectangle<<ext>> {
+  BackgroundColor #828282
+  FontColor white
+}
+skinparam rectangle<<rm>> {
+  BackgroundColor #27AE60
+  FontColor white
+}
+skinparam rectangle<<pol>> {
+  BackgroundColor #EB5757
+  FontColor white
+}
+skinparam rectangle<<evt>> {
+  BackgroundColor #F2994A
+  FontColor white
+}
+skinparam rectangle<<agg>> {
+  BackgroundColor #F2C94C
+  FontColor #17324D
+}
+skinparam rectangle<<cmd>> {
+  BackgroundColor #2D9CDB
+  FontColor white
+}
+skinparam rectangle<<actor>> {
+  BackgroundColor #9B51E0
+  FontColor white
+}
+skinparam titleFontSize 20
+hide stereotype
+title EcoTrack - Analytics and Reports Event Storming (Supporting)
 
-legend top left
-  |<#2D9CDB> Command |
-  |<#F2C94C> Aggregate |
-  |<#F2994A> Domain Event |
-  |<#EB5757> Policy |
-  |<#27AE60> Read Model |
-  |<#9B51E0> Actor |
-  |<#828282> External Infrastructure |
+rectangle "Integration Event Bus\n(events from other contexts)" as x <<ext>>
+rectangle "Update Indicators" as p <<pol>>
+rectangle "EnvironmentalIndicator" as g1 <<agg>>
+rectangle "Total Emissions / By Scope\nGetDashboardQuery" as r1 <<rm>>
+rectangle "Period Comparison\nComparePeriodsQuery" as r2 <<rm>>
+rectangle "Environmental Summary\nGetSummaryQuery" as r3 <<rm>>
+rectangle "Sustainability\nManager" as a <<actor>>
+rectangle "GenerateConsolidatedReport" as c1 <<cmd>>
+rectangle "GenerateReportByPeriod" as c2 <<cmd>>
+rectangle "DownloadReport" as c3 <<cmd>>
+rectangle "SustainabilityReport" as g2 <<agg>>
+rectangle "SustainabilityReportGenerated" as e1 <<evt>>
+rectangle "SustainabilityReportDownloaded" as e2 <<evt>>
+rectangle "Reports History\nGetReportsHistoryQuery" as r4 <<rm>>
+
+x --> p
+p --> g1
+g1 --> r1
+g1 --> r2
+g1 --> r3
+a --> c1
+a --> c2
+a --> c3
+c1 --> g2
+c2 --> g2
+c3 --> g2
+g2 --> e1
+g2 --> e2
+e1 --> r4
+x -[hidden]down-> a
+p -[hidden]down-> c1
+c1 -[hidden]down-> c2
+c2 -[hidden]down-> c3
+g1 -[hidden]down-> g2
+r1 -[hidden]down-> r2
+r2 -[hidden]down-> r3
+r3 -[hidden]down-> r4
+e1 -[hidden]down-> e2
+x -[hidden]right-> p
+p -[hidden]right-> g1
+g1 -[hidden]right-> e1
+e1 -[hidden]right-> r1
+legend right
+  |<#9B51E0><color:white> Actor </color>|
+  |<#2D9CDB><color:white> Command </color>|
+  |<#F2C94C><color:#17324D> Aggregate </color>|
+  |<#F2994A><color:white> Domain Event </color>|
+  |<#EB5757><color:white> Policy </color>|
+  |<#27AE60><color:white> Read Model / Query </color>|
+  |<#828282><color:white> External </color>|
 endlegend
-
-actor "Sustainability\nManager" as Manager #9B51E0
-rectangle "Integration Event Bus\n<i>External Infrastructure</i>" as EventBus #828282
-
-rectangle "Update Indicators\n<i>Policy</i>" as PolicyUpdate #EB5757
-rectangle "EnvironmentalIndicator\n<i>Aggregate</i>" as AggIndicator #F2C94C
-
-rectangle "GenerateConsolidatedReport\n<i>Command</i>" as CmdConsolidated #2D9CDB
-rectangle "SustainabilityReport\n<i>Aggregate</i>" as AggReport #F2C94C
-rectangle "SustainabilityReportGenerated\n<i>Event</i>" as EvtReport #F2994A
-
-rectangle "GenerateReportByPeriod\n<i>Command</i>" as CmdPeriod #2D9CDB
-
-rectangle "DownloadReport\n<i>Command</i>" as CmdDownload #2D9CDB
-rectangle "SustainabilityReportDownloaded\n<i>Event</i>" as EvtDownload #F2994A
-
-rectangle "Total Emissions /\nBy Scope View\n<i>Read Model</i>" as RmTotals #27AE60
-rectangle "Period Comparison\n<i>Read Model</i>" as RmCompare #27AE60
-rectangle "Environmental Summary\n<i>Read Model</i>" as RmSummary #27AE60
-rectangle "Reports History\n<i>Read Model</i>" as RmHistory #27AE60
-
-EventBus --> PolicyUpdate : OrganizationRegistered,\nEmissionSourceRegistered,\nCarbonFootprintCalculated,\nReductionGoalRegistered, etc.
-PolicyUpdate --> AggIndicator
-AggIndicator --> RmTotals
-AggIndicator --> RmCompare
-AggIndicator --> RmSummary
-
-Manager --> CmdConsolidated
-Manager --> CmdPeriod
-CmdConsolidated --> AggReport
-CmdPeriod --> AggReport
-AggReport --> EvtReport
-EvtReport --> RmHistory
-
-Manager --> CmdDownload
-CmdDownload --> AggReport
-AggReport --> EvtDownload
-
 @enduml

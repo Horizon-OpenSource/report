@@ -21,20 +21,41 @@ package "Domain / Invitation Aggregate" {
 
   package "Aggregates" {
     class Invitation <<Aggregate Root>> {
-      +id: Long
-      +organizationId: Long
+      -id: InvitationId
+      -organizationId: OrganizationId
       -email: Email
       -role: RoleType
-      -token: String
+      -token: InvitationToken
       -status: InvitationStatus
-      +invitedBy: Long
-      +expiresAt: LocalDateTime
+      -invitedByUserId: UserId
+      -expiresAt: LocalDateTime
       +accept(): void
       +isExpired(): boolean
     }
   }
 
   package "Value Objects" {
+    enum RoleType {
+      ADMINISTRATOR
+      ENVIRONMENTAL_ANALYST
+      SUSTAINABILITY_MANAGER
+    }
+    class InvitationId <<Value Object>> {
+      -value: UUID
+    }
+    class OrganizationId <<Value Object>> {
+      -value: UUID
+    }
+    class UserId <<Value Object>> {
+      -value: UUID
+    }
+    class Email <<Value Object>> {
+      -value: String
+      +isValid(): boolean
+    }
+    class InvitationToken <<Value Object>> {
+      -value: String
+    }
     enum InvitationStatus {
       PENDING
       ACCEPTED
@@ -44,12 +65,12 @@ package "Domain / Invitation Aggregate" {
 
   package "Commands" {
     class InviteUserCommand {
-      +organizationId: Long
-      +email: String
+      +organizationId: OrganizationId
+      +email: Email
       +role: RoleType
     }
     class AcceptInvitationCommand {
-      +token: String
+      +token: InvitationToken
       +fullName: String
       +password: String
     }
@@ -57,28 +78,31 @@ package "Domain / Invitation Aggregate" {
 
   package "Events" {
     class UserInvitedEvent {
-      +invitationId: Long
-      +organizationId: Long
-      +email: String
+      +invitationId: InvitationId
+      +organizationId: OrganizationId
+      +email: Email
       +occurredOn: LocalDateTime
     }
     class InvitationAcceptedEvent {
-      +invitationId: Long
-      +userId: Long
+      +invitationId: InvitationId
+      +userId: UserId
       +occurredOn: LocalDateTime
     }
   }
 
   package "Repositories" {
     interface InvitationRepository {
-      +findByToken(token: String): Invitation
-      +findByOrganizationId(organizationId: Long): List<Invitation>
+      +findByToken(token: InvitationToken): Invitation
+      +findByOrganizationId(organizationId: OrganizationId): List<Invitation>
       +save(invitation: Invitation): Invitation
     }
   }
 
+  Invitation "1" *-- "1" RoleType : assigned
+  Invitation "1" *-- "1" InvitationToken : secured by
   Invitation "1" *-- "1" InvitationStatus : currently in
   InvitationRepository ..> Invitation : persists
+  Invitation "1" *-- "1" InvitationId : identified by
 }
 
 package "Interfaces REST" as Backend_iam_Interfaces_REST <<layer>> {

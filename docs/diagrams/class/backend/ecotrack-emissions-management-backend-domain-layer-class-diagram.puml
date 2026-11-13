@@ -20,61 +20,77 @@ hide circle
 package "Domain" {
   package "Aggregates" {
     class EmissionSource <<Aggregate Root>> {
-      +id: Long
-      +facilityId: Long
-      +name: String
-      +type: String
+      -id: EmissionSourceId
+      -facilityId: FacilityId
+      -name: String
+      -type: String
       -scope: ScopeType
-      +createdAt: LocalDateTime
+      -createdAt: LocalDateTime
       +edit(name: String, scope: ScopeType): void
-      +recordActivityData(quantity: Double, unit: String, period: String, origin: ActivityOrigin): ActivityData
+      +recordActivityData(quantity: ActivityQuantity, period: ReportingPeriod, origin: ActivityOrigin): ActivityData
     }
   }
 
   package "Entities" {
-    class ActivityData {
-      +id: Long
-      +emissionSourceId: Long
-      +quantity: Double
-      +unit: String
-      +period: String
+    class ActivityData <<Entity>> {
+      -id: ActivityDataId
+      -quantity: ActivityQuantity
+      -period: ReportingPeriod
       -origin: ActivityOrigin
-      +recordedAt: LocalDateTime
+      -recordedAt: LocalDateTime
     }
   }
 
   package "Value Objects" {
-    enum ScopeType {
+    class EmissionSourceId <<Value Object>> {
+      -value: UUID
+    }
+    class ActivityDataId <<Value Object>> {
+      -value: UUID
+    }
+    enum ScopeType <<Value Object>> {
       SCOPE_1
       SCOPE_2
       SCOPE_3
     }
-    enum ActivityOrigin {
+    enum ActivityOrigin <<Value Object>> {
       MANUAL
       IMPORTED
+    }
+    class FacilityId <<Value Object>> {
+      -value: UUID
+    }
+    class ActivityQuantity <<Value Object>> {
+      -amount: BigDecimal
+      -unit: String
+      +isPositive(): boolean
+    }
+    class ReportingPeriod <<Value Object>> {
+      -year: int
+      -month: int
+      +toString(): String
     }
   }
 
   package "Commands" {
     class RegisterEmissionSourceCommand {
-      +facilityId: Long
+      +facilityId: FacilityId
       +name: String
       +type: String
       +scope: ScopeType
     }
     class EditEmissionSourceCommand {
-      +sourceId: Long
+      +sourceId: EmissionSourceId
       +name: String
       +scope: ScopeType
     }
     class DeleteEmissionSourceCommand {
-      +sourceId: Long
+      +sourceId: EmissionSourceId
     }
     class RecordActivityDataCommand {
-      +emissionSourceId: Long
-      +quantity: Double
-      +unit: String
-      +period: String
+      +emissionSourceId: EmissionSourceId
+      +quantity: ActivityQuantity
+      +period: ReportingPeriod
       +origin: ActivityOrigin
     }
   }
@@ -90,29 +106,34 @@ package "Domain" {
 
   package "Events" {
     class EmissionSourceRegisteredEvent {
-      +sourceId: Long
+      +sourceId: EmissionSourceId
       +occurredOn: LocalDateTime
     }
     class ActivityDataRecordedEvent {
-      +sourceId: Long
-      +activityDataId: Long
+      +sourceId: EmissionSourceId
+      +activityDataId: ActivityDataId
       +occurredOn: LocalDateTime
     }
   }
 
   package "Repositories" {
     interface EmissionSourceRepository {
-      +findById(id: Long): EmissionSource
+      +findById(id: EmissionSourceId): Optional<EmissionSource>
       +search(term: String): List<EmissionSource>
       +findByScope(scope: ScopeType): List<EmissionSource>
       +save(source: EmissionSource): EmissionSource
     }
   }
 
-  EmissionSource "1" *-- "1" ScopeType : classified by
-  EmissionSource "1" *-- "0..*" ActivityData : has
-  ActivityData "1" *-- "1" ActivityOrigin : recorded as
+  EmissionSource "1" *-- "0..*" ActivityData : has >
+  EmissionSource "1" *-- "1" ScopeType : classified by >
+  EmissionSource "1" *-- "1" FacilityId : located at >
+  ActivityData "1" *-- "1" ActivityQuantity : measured as >
+  ActivityData "1" *-- "1" ReportingPeriod : covers >
+  ActivityData "1" *-- "1" ActivityOrigin : recorded as >
   EmissionSourceRepository ..> EmissionSource : persists
+  EmissionSource "1" *-- "1" EmissionSourceId : identified by
+  ActivityData "1" *-- "1" ActivityDataId : identified by
 }
 
 package "Interfaces REST" as Backend_emissions_Interfaces_REST <<layer>> {

@@ -1,82 +1,136 @@
 @startuml
-title EcoTrack - IAM Event Storming
 left to right direction
-skinparam packageStyle rectangle
 skinparam shadowing false
-skinparam defaultFontName Arial
-skinparam rectangle {
-  BorderColor #4A4A4A
-  FontColor #FFFFFF
-  FontStyle bold
-  FontSize 12
-}
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 13
+skinparam backgroundColor white
+skinparam nodesep 25
+skinparam ranksep 70
 skinparam ArrowColor #4A4A4A
+skinparam RectangleBorderColor #555555
+skinparam RectangleFontStyle bold
+skinparam roundCorner 12
+skinparam rectangle<<ext>> {
+  BackgroundColor #828282
+  FontColor white
+}
+skinparam rectangle<<rm>> {
+  BackgroundColor #27AE60
+  FontColor white
+}
+skinparam rectangle<<pol>> {
+  BackgroundColor #EB5757
+  FontColor white
+}
+skinparam rectangle<<evt>> {
+  BackgroundColor #F2994A
+  FontColor white
+}
+skinparam rectangle<<agg>> {
+  BackgroundColor #F2C94C
+  FontColor #17324D
+}
+skinparam rectangle<<cmd>> {
+  BackgroundColor #2D9CDB
+  FontColor white
+}
+skinparam rectangle<<actor>> {
+  BackgroundColor #9B51E0
+  FontColor white
+}
+skinparam titleFontSize 20
+hide stereotype
+title EcoTrack - IAM Event Storming (Generic)
 
-legend top left
-  |<#2D9CDB> Command |
-  |<#F2C94C> Aggregate |
-  |<#F2994A> Domain Event |
-  |<#EB5757> Policy |
-  |<#9B51E0> Actor |
-  |<#828282> External System |
+rectangle "Business\nRepresentative" as a1 <<actor>>
+rectangle "Administrator" as a2 <<actor>>
+rectangle "Invited User" as a3 <<actor>>
+rectangle "CreateUserAccount" as c1 <<cmd>>
+rectangle "SignIn" as c2 <<cmd>>
+rectangle "RequestPasswordReset" as c3 <<cmd>>
+rectangle "ResetPassword" as c4 <<cmd>>
+rectangle "InviteUser" as c5 <<cmd>>
+rectangle "AssignRole" as c6 <<cmd>>
+rectangle "AcceptInvitation" as c7 <<cmd>>
+rectangle "User" as g1 <<agg>>
+rectangle "User" as g2 <<agg>>
+rectangle "PasswordResetToken" as g3 <<agg>>
+rectangle "PasswordResetToken" as g4 <<agg>>
+rectangle "Invitation" as g5 <<agg>>
+rectangle "User" as g6 <<agg>>
+rectangle "Invitation" as g7 <<agg>>
+rectangle "UserAccountCreated" as e1 <<evt>>
+rectangle "UserSignedIn" as e2 <<evt>>
+rectangle "PasswordResetRequested" as e3 <<evt>>
+rectangle "PasswordResetCompleted" as e4 <<evt>>
+rectangle "UserInvited" as e5 <<evt>>
+rectangle "RoleAssigned" as e6 <<evt>>
+rectangle "InvitationAccepted" as e7 <<evt>>
+rectangle "Send recovery email" as p1 <<pol>>
+rectangle "Send invitation email" as p2 <<pol>>
+rectangle "Email Provider\n(external system)" as x <<ext>>
+rectangle "Users of the organization\nGetUsersByOrganizationQuery\nGetUserByIdQuery" as r <<rm>>
+
+a1 --> c1
+a1 --> c2
+a1 --> c3
+a1 --> c4
+a2 --> c5
+a2 --> c6
+a3 --> c7
+c1 --> g1
+c2 --> g2
+c3 --> g3
+c4 --> g4
+c5 --> g5
+c6 --> g6
+c7 --> g7
+g1 --> e1
+g2 --> e2
+g3 --> e3
+g4 --> e4
+g5 --> e5
+g6 --> e6
+g7 --> e7
+e3 --> p1
+e5 --> p2
+p1 --> x
+p2 --> x
+e6 --> r
+a1 -[hidden]down-> a2
+a2 -[hidden]down-> a3
+c1 -[hidden]down-> c2
+c2 -[hidden]down-> c3
+c3 -[hidden]down-> c4
+c4 -[hidden]down-> c5
+c5 -[hidden]down-> c6
+c6 -[hidden]down-> c7
+g1 -[hidden]down-> g2
+g2 -[hidden]down-> g3
+g3 -[hidden]down-> g4
+g4 -[hidden]down-> g5
+g5 -[hidden]down-> g6
+g6 -[hidden]down-> g7
+e1 -[hidden]down-> e2
+e2 -[hidden]down-> e3
+e3 -[hidden]down-> e4
+e4 -[hidden]down-> e5
+e5 -[hidden]down-> e6
+e6 -[hidden]down-> e7
+p1 -[hidden]down-> p2
+x -[hidden]down-> r
+a1 -[hidden]right-> c1
+c1 -[hidden]right-> g1
+g1 -[hidden]right-> e1
+e1 -[hidden]right-> p1
+p1 -[hidden]right-> x
+legend right
+  |<#9B51E0><color:white> Actor </color>|
+  |<#2D9CDB><color:white> Command </color>|
+  |<#F2C94C><color:#17324D> Aggregate </color>|
+  |<#F2994A><color:white> Domain Event </color>|
+  |<#EB5757><color:white> Policy </color>|
+  |<#27AE60><color:white> Read Model / Query </color>|
+  |<#828282><color:white> External </color>|
 endlegend
-
-actor "Invited\nUser" as InvitedUser #9B51E0
-actor "Administrator" as Admin #9B51E0
-actor "Business\nRepresentative" as Rep #9B51E0
-
-rectangle "CreateUserAccount\n<i>Command</i>" as CmdCreate #2D9CDB
-rectangle "User\n<i>Aggregate</i>" as AggUser #F2C94C
-rectangle "UserAccountCreated\n<i>Event</i>" as EvtCreate #F2994A
-
-rectangle "SignIn\n<i>Command</i>" as CmdSignIn #2D9CDB
-rectangle "UserSignedIn\n<i>Event</i>" as EvtSignIn #F2994A
-
-rectangle "RequestPasswordReset\n<i>Command</i>" as CmdReqReset #2D9CDB
-rectangle "PasswordResetToken\n<i>Aggregate</i>" as AggToken #F2C94C
-rectangle "PasswordResetRequested\n<i>Event</i>" as EvtReqReset #F2994A
-
-rectangle "ResetPassword\n<i>Command</i>" as CmdReset #2D9CDB
-rectangle "PasswordResetCompleted\n<i>Event</i>" as EvtResetDone #F2994A
-
-rectangle "InviteUser\n<i>Command</i>" as CmdInvite #2D9CDB
-rectangle "Invitation\n<i>Aggregate</i>" as AggInvite #F2C94C
-rectangle "UserInvited\n<i>Event</i>" as EvtInvited #F2994A
-
-rectangle "AcceptInvitation\n<i>Command</i>" as CmdAccept #2D9CDB
-rectangle "InvitationAccepted\n<i>Event</i>" as EvtAccepted #F2994A
-
-rectangle "AssignRole\n<i>Command</i>" as CmdRole #2D9CDB
-rectangle "RoleAssigned\n<i>Event</i>" as EvtRole #F2994A
-
-rectangle "Send invitation /\nrecovery email\n<i>Policy</i>" as PolicyEmail #EB5757
-rectangle "Email Provider\n<i>External System</i>" as EmailProvider #828282
-
-Rep --> CmdCreate
-CmdCreate --> AggUser
-AggUser --> EvtCreate
-
-Rep --> CmdSignIn
-CmdSignIn --> EvtSignIn
-
-Rep --> CmdReqReset
-CmdReqReset --> AggToken
-AggToken --> EvtReqReset
-EvtReqReset --> PolicyEmail
-Rep --> CmdReset
-CmdReset --> EvtResetDone
-
-Admin --> CmdInvite
-CmdInvite --> AggInvite
-AggInvite --> EvtInvited
-EvtInvited --> PolicyEmail
-PolicyEmail --> EmailProvider : TS-04
-InvitedUser --> CmdAccept
-CmdAccept --> EvtAccepted
-EvtAccepted --> AggUser
-
-Admin --> CmdRole
-CmdRole --> AggUser
-AggUser --> EvtRole
-
 @enduml

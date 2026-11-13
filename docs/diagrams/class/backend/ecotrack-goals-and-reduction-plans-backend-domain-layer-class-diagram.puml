@@ -20,112 +20,139 @@ hide circle
 package "Domain" {
   package "Aggregates" {
     class ReductionGoal <<Aggregate Root>> {
-      +id: Long
-      +organizationId: Long
-      +name: String
-      +targetValue: Double
-      +targetDate: LocalDate
+      -id: ReductionGoalId
+      -organizationId: OrganizationId
+      -name: String
+      -target: GoalTarget
       -status: GoalStatus
-      +edit(name: String, targetValue: Double, targetDate: LocalDate): void
+      +edit(name: String, target: GoalTarget): void
       +updateStatus(status: GoalStatus): void
       +createReductionPlan(name: String, description: String): ReductionPlan
+      +progress(current: CarbonEmissions): double
     }
   }
 
   package "Entities" {
-    class ReductionPlan {
-      +id: Long
-      +reductionGoalId: Long
-      +name: String
-      +description: String
+    class ReductionPlan <<Entity>> {
+      -id: ReductionPlanId
+      -name: String
+      -description: String
       +registerInitiative(name: String, description: String): EnvironmentalInitiative
     }
-    class EnvironmentalInitiative {
-      +id: Long
-      +reductionPlanId: Long
-      +name: String
-      +description: String
+    class EnvironmentalInitiative <<Entity>> {
+      -id: EnvironmentalInitiativeId
+      -name: String
+      -description: String
     }
   }
 
   package "Value Objects" {
-    enum GoalStatus {
+    class EnvironmentalInitiativeId <<Value Object>> {
+      -value: UUID
+    }
+    class ReductionGoalId <<Value Object>> {
+      -value: UUID
+    }
+    class ReductionPlanId <<Value Object>> {
+      -value: UUID
+    }
+    enum GoalStatus <<Value Object>> {
       ACTIVE
       ACHIEVED
       AT_RISK
+    }
+    class OrganizationId <<Value Object>> {
+      -value: UUID
+    }
+    class GoalTarget <<Value Object>> {
+      -reductionValue: BigDecimal
+      -unit: String = "kgCO2e"
+      -targetDate: LocalDate
+      +isReachedBy(current: CarbonEmissions): boolean
+    }
+    class CarbonEmissions <<Value Object>> {
+      -amount: BigDecimal
+      -unit: String
     }
   }
 
   package "Commands" {
     class RegisterReductionGoalCommand {
-      +organizationId: Long
+      +organizationId: OrganizationId
       +name: String
-      +targetValue: Double
-      +targetDate: LocalDate
+      +target: GoalTarget
     }
     class EditReductionGoalCommand {
-      +goalId: Long
+      +goalId: ReductionGoalId
       +name: String
-      +targetValue: Double
-      +targetDate: LocalDate
+      +target: GoalTarget
     }
     class UpdateGoalStatusCommand {
-      +goalId: Long
+      +goalId: ReductionGoalId
       +status: GoalStatus
     }
     class DeleteReductionGoalCommand {
-      +goalId: Long
+      +goalId: ReductionGoalId
     }
     class CreateReductionPlanCommand {
-      +reductionGoalId: Long
+      +reductionGoalId: ReductionGoalId
       +name: String
       +description: String
     }
     class RegisterInitiativeCommand {
-      +reductionPlanId: Long
+      +reductionPlanId: ReductionPlanId
       +name: String
       +description: String
     }
   }
 
   package "Queries" {
+    class GetReductionGoalsQuery {
+      +organizationId: OrganizationId
+    }
     class GetProgressQuery {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
   }
 
   package "Events" {
     class ReductionGoalRegisteredEvent {
-      +goalId: Long
+      +goalId: ReductionGoalId
       +occurredOn: LocalDateTime
     }
     class GoalStatusUpdatedEvent {
-      +goalId: Long
+      +goalId: ReductionGoalId
       +status: GoalStatus
       +occurredOn: LocalDateTime
     }
     class ReductionPlanCreatedEvent {
-      +planId: Long
+      +planId: ReductionPlanId
       +occurredOn: LocalDateTime
     }
     class EnvironmentalInitiativeRegisteredEvent {
-      +initiativeId: Long
+      +initiativeId: EnvironmentalInitiativeId
       +occurredOn: LocalDateTime
     }
   }
 
   package "Repositories" {
     interface ReductionGoalRepository {
-      +findById(id: Long): ReductionGoal
-      +findByOrganizationId(organizationId: Long): List<ReductionGoal>
+      +findById(id: ReductionGoalId): Optional<ReductionGoal>
+      +findByOrganizationId(organizationId: OrganizationId): List<ReductionGoal>
       +save(goal: ReductionGoal): ReductionGoal
     }
   }
 
-  ReductionGoal "1" *-- "1" GoalStatus : currently in
-  ReductionGoal "1" *-- "0..*" ReductionPlan : has
-  ReductionPlan "1" *-- "0..*" EnvironmentalInitiative : has
+  ReductionGoal "1" *-- "0..*" ReductionPlan : has >
+  ReductionPlan "1" *-- "0..*" EnvironmentalInitiative : has >
+  ReductionGoal "1" *-- "1" GoalTarget : aims for >
+  ReductionGoal "1" *-- "1" GoalStatus : currently in >
+  ReductionGoal "1" *-- "1" OrganizationId : belongs to >
+  GoalTarget ..> CarbonEmissions : compared with
   ReductionGoalRepository ..> ReductionGoal : persists
+  ReductionGoal "1" *-- "1" ReductionGoalId : identified by
+  ReductionPlan "1" *-- "1" ReductionPlanId : identified by
+  EnvironmentalInitiative "1" *-- "1" EnvironmentalInitiativeId : identified by
 }
 
 package "Interfaces REST" as Backend_goals_Interfaces_REST <<layer>> {

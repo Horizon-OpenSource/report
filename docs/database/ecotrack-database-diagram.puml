@@ -1,224 +1,186 @@
 @startuml
-title EcoTrack - Database Diagram
+title EcoTrack Platform - Database Diagram
 hide circle
 skinparam linetype ortho
-skinparam roundcorner 5
-skinparam class {
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam nodesep 40
+skinparam ranksep 40
+skinparam object {
   BackgroundColor #FFFFFF
-  BorderColor #4A4A4A
-  ArrowColor #4A4A4A
+  BorderColor #555555
+  HeaderBackgroundColor #C9C9C9
   FontColor #17324D
-  AttributeFontColor #333333
-  AttributeFontSize 12
-  FontSize 13
-  FontStyle bold
+  FontStyle italic
+}
+skinparam ArrowColor #444444
+
+map organizations {
+  PK id => uuid
+     name => varchar(255)
+     sector => varchar(100)
+     plan_name => varchar(50)
+     created_at => timestamp
+}
+map business_units {
+  PK id => uuid
+  FK organization_id => uuid
+     name => varchar(255)
+}
+map facilities {
+  PK id => uuid
+  FK organization_id => uuid
+     name => varchar(255)
+     address => varchar(255)
+     created_at => timestamp
+}
+map users {
+  PK id => uuid
+  FK organization_id => uuid
+     full_name => varchar(255)
+     email => varchar(255)
+     password_hash => varchar(255)
+     role => varchar(30)
+     status => varchar(20)
+     registered_at => timestamp
+}
+map invitations {
+  PK id => uuid
+  FK organization_id => uuid
+  FK invited_by_user_id => uuid
+     role => varchar(30)
+     email => varchar(255)
+     token => varchar(255)
+     status => varchar(20)
+     expires_at => timestamp
+}
+map password_reset_tokens {
+  PK id => uuid
+  FK user_id => uuid
+     token => varchar(255)
+     expires_at => timestamp
+     used => boolean
+}
+map emission_sources {
+  PK id => uuid
+  FK facility_id => uuid
+     name => varchar(255)
+     source_type => varchar(100)
+     scope => varchar(10)
+     created_at => timestamp
+}
+map activity_data {
+  PK id => uuid
+  FK emission_source_id => uuid
+     quantity => decimal(18,4)
+     unit => varchar(20)
+     period_year => smallint
+     period_month => smallint
+     origin => varchar(20)
+     recorded_at => timestamp
+}
+map emission_factors {
+  PK id => uuid
+     name => varchar(255)
+     scope => varchar(10)
+     factor_value => decimal(18,6)
+     unit => varchar(20)
+     source_name => varchar(255)
+}
+map footprint_calculations {
+  PK id => uuid
+  FK organization_id => uuid
+     period_year => smallint
+     period_month => smallint
+     calculated_at => timestamp
+}
+map calculation_items {
+  PK id => uuid
+  FK footprint_calculation_id => uuid
+  FK emission_factor_id => uuid
+  FK activity_data_id => uuid
+     scope => varchar(10)
+     emissions_kg_co2e => decimal(18,4)
+}
+map reduction_goals {
+  PK id => uuid
+  FK organization_id => uuid
+     name => varchar(255)
+     target_reduction_kg_co2e => decimal(18,4)
+     target_date => date
+     status => varchar(20)
+}
+map reduction_plans {
+  PK id => uuid
+  FK reduction_goal_id => uuid
+     name => varchar(255)
+     description => varchar(500)
+     status => varchar(20)
+}
+map environmental_initiatives {
+  PK id => uuid
+  FK reduction_plan_id => uuid
+     name => varchar(255)
+     description => varchar(500)
+     status => varchar(20)
+}
+map environmental_indicators {
+  PK id => uuid
+  FK organization_id => uuid
+     indicator_type => varchar(50)
+     indicator_value => decimal(18,4)
+     period_year => smallint
+     period_month => smallint
+}
+map sustainability_reports {
+  PK id => uuid
+  FK organization_id => uuid
+     period_year => smallint
+     period_month => smallint
+     status => varchar(20)
+     generated_at => timestamp
+     file_url => varchar(255)
+}
+map import_batches {
+  PK id => uuid
+  FK organization_id => uuid
+     file_name => varchar(255)
+     status => varchar(20)
+     imported_at => timestamp
+}
+map api_keys {
+  PK id => uuid
+  FK organization_id => uuid
+     key_hash => varchar(255)
+     created_at => timestamp
+     revoked_at => timestamp
 }
 
-' ===================== Organization Management =====================
-entity Organization {
-  * id : UUID <<PK>>
-  --
-  name : VARCHAR(255)
-  sector : VARCHAR(100)
-  plan : VARCHAR(50)
-  created_at : DATETIME
-}
+organizations ||--o{ facilities
+organizations ||--o{ business_units
+organizations ||--o{ users
+organizations ||--o{ invitations
+users ||--o{ invitations
+users ||--o{ password_reset_tokens
+facilities ||--o{ emission_sources
+emission_sources ||--o{ activity_data
+organizations ||--o{ footprint_calculations
+footprint_calculations ||--|{ calculation_items
+emission_factors ||--o{ calculation_items
+activity_data ||--o{ calculation_items
+organizations ||--o{ reduction_goals
+reduction_goals ||--o{ reduction_plans
+reduction_plans ||--o{ environmental_initiatives
+organizations ||--o{ environmental_indicators
+organizations ||--o{ sustainability_reports
+organizations ||--o{ import_batches
+organizations ||--o{ api_keys
 
-entity Facility {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  name : VARCHAR(255)
-  address : VARCHAR(255)
-  created_at : DATETIME
-}
-
-entity BusinessUnit {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  name : VARCHAR(255)
-}
-
-' ===================== IAM =====================
-entity "User" as UserTable {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  full_name : VARCHAR(255)
-  email : VARCHAR(255)
-  password_hash : VARCHAR(255)
-  role : VARCHAR(50)
-  status : VARCHAR(50)
-  registered_at : DATETIME
-}
-
-entity PasswordResetToken {
-  * id : UUID <<PK>>
-  --
-  * user_id : UUID <<FK>>
-  token : VARCHAR(255)
-  expires_at : DATETIME
-  used : BOOLEAN
-}
-
-entity Invitation {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  email : VARCHAR(255)
-  role : VARCHAR(50)
-  token : VARCHAR(255)
-  status : VARCHAR(50)
-  invited_by : UUID
-  expires_at : DATETIME
-}
-
-' ===================== Emissions Management =====================
-entity EmissionSource {
-  * id : UUID <<PK>>
-  --
-  * facility_id : UUID <<FK>>
-  name : VARCHAR(255)
-  type : VARCHAR(100)
-  scope : VARCHAR(20)
-  created_at : DATETIME
-}
-
-entity ActivityData {
-  * id : UUID <<PK>>
-  --
-  * emission_source_id : UUID <<FK>>
-  period : VARCHAR(20)
-  quantity : DOUBLE
-  unit : VARCHAR(20)
-  origin : VARCHAR(20)
-  recorded_at : DATETIME
-}
-
-' ===================== Carbon Footprint Calculation =====================
-entity EmissionFactor {
-  * id : UUID <<PK>>
-  --
-  name : VARCHAR(255)
-  scope : VARCHAR(20)
-  value : DOUBLE
-  unit : VARCHAR(20)
-  source : VARCHAR(255)
-}
-
-entity FootprintCalculation {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  * activity_data_id : UUID <<FK>>
-  * emission_factor_id : UUID <<FK>>
-  result_value : DOUBLE
-  period : VARCHAR(20)
-  calculated_at : DATETIME
-}
-
-' ===================== Goals and Reduction Plans =====================
-entity ReductionGoal {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  name : VARCHAR(255)
-  target_value : DOUBLE
-  target_date : DATE
-  status : VARCHAR(50)
-}
-
-entity ReductionPlan {
-  * id : UUID <<PK>>
-  --
-  * reduction_goal_id : UUID <<FK>>
-  name : VARCHAR(255)
-  description : VARCHAR(500)
-  status : VARCHAR(50)
-}
-
-entity EnvironmentalInitiative {
-  * id : UUID <<PK>>
-  --
-  * reduction_plan_id : UUID <<FK>>
-  name : VARCHAR(255)
-  description : VARCHAR(500)
-  status : VARCHAR(50)
-}
-
-' ===================== Analytics and Reports =====================
-entity EnvironmentalIndicator {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  type : VARCHAR(50)
-  value : DOUBLE
-  period : VARCHAR(20)
-}
-
-entity SustainabilityReport {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  period : VARCHAR(20)
-  generated_at : DATETIME
-  file_url : VARCHAR(255)
-}
-
-' ===================== Data Integration =====================
-entity ImportBatch {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  file_name : VARCHAR(255)
-  status : VARCHAR(50)
-  imported_at : DATETIME
-}
-
-entity ExternalDataRecord {
-  * id : UUID <<PK>>
-  --
-  * import_batch_id : UUID <<FK>>
-  activity_data_id : UUID <<FK>>
-  raw_payload : VARCHAR(2000)
-  processed_at : DATETIME
-}
-
-entity ApiKey {
-  * id : UUID <<PK>>
-  --
-  * organization_id : UUID <<FK>>
-  key_hash : VARCHAR(255)
-  created_at : DATETIME
-  revoked_at : DATETIME
-}
-
-' ===================== Relationships =====================
-Organization ||--o{ Facility
-Organization ||--o{ BusinessUnit
-Organization ||--o{ UserTable
-Organization ||--o{ Invitation
-Organization ||--o{ FootprintCalculation
-Organization ||--o{ ReductionGoal
-Organization ||--o{ EnvironmentalIndicator
-Organization ||--o{ SustainabilityReport
-Organization ||--o{ ImportBatch
-Organization ||--o{ ApiKey
-
-UserTable ||--o{ PasswordResetToken
-
-Facility ||--o{ EmissionSource
-
-EmissionSource ||--o{ ActivityData
-
-ActivityData ||--o{ FootprintCalculation
-EmissionFactor ||--o{ FootprintCalculation
-
-ReductionGoal ||--o{ ReductionPlan
-ReductionPlan ||--o{ EnvironmentalInitiative
-
-ImportBatch ||--o{ ExternalDataRecord
-ActivityData ||--o{ ExternalDataRecord
-
+' --- layout helpers (hidden) ---
+business_units -[hidden]down-> environmental_indicators
+environmental_indicators -[hidden]down-> import_batches
+reduction_goals -[hidden]down-> sustainability_reports
+sustainability_reports -[hidden]down-> footprint_calculations
+invitations -[hidden]down-> api_keys
+password_reset_tokens -[hidden]down-> emission_factors
 @enduml

@@ -21,14 +21,14 @@ package "Domain / User Aggregate" {
 
   package "Aggregates" {
     class User <<Aggregate Root>> {
-      +id: Long
-      +organizationId: Long
-      +fullName: String
+      -id: UserId
+      -organizationId: OrganizationId
+      -fullName: String
       -email: Email
       -passwordHash: PasswordHash
       -role: RoleType
       -status: UserStatus
-      +registeredAt: LocalDateTime
+      -registeredAt: LocalDateTime
       +signIn(rawPassword: String, hasher: PasswordHasher): boolean
       +assignRole(role: RoleType): void
       +disable(): void
@@ -36,6 +36,12 @@ package "Domain / User Aggregate" {
   }
 
   package "Value Objects" {
+    class OrganizationId <<Value Object>> {
+      -value: UUID
+    }
+    class UserId <<Value Object>> {
+      -value: UUID
+    }
     class Email <<record>> {
       +value: String
       +Email(value: String)
@@ -57,31 +63,31 @@ package "Domain / User Aggregate" {
   package "Commands" {
     class CreateUserAccountCommand {
       +fullName: String
-      +email: String
+      +email: Email
       +password: String
     }
     class AssignRoleCommand {
-      +userId: Long
+      +userId: UserId
       +role: RoleType
     }
   }
 
   package "Queries" {
     class GetUserByIdQuery {
-      +userId: Long
+      +userId: UserId
     }
     class GetUsersByOrganizationQuery {
-      +organizationId: Long
+      +organizationId: OrganizationId
     }
   }
 
   package "Events" {
     class UserAccountCreatedEvent {
-      +userId: Long
+      +userId: UserId
       +occurredOn: LocalDateTime
     }
     class RoleAssignedEvent {
-      +userId: Long
+      +userId: UserId
       +role: RoleType
       +occurredOn: LocalDateTime
     }
@@ -93,15 +99,15 @@ package "Domain / User Aggregate" {
       +matches(rawPassword: String, hash: PasswordHash): boolean
     }
     interface AuthenticationService {
-      +authenticate(email: String, password: String): String
+      +authenticate(email: Email, password: String): String
     }
   }
 
   package "Repositories" {
     interface UserRepository {
-      +findById(id: Long): User
+      +findById(id: UserId): User
       +findByEmail(email: Email): User
-      +findByOrganizationId(organizationId: Long): List<User>
+      +findByOrganizationId(organizationId: OrganizationId): List<User>
       +save(user: User): User
     }
   }
@@ -112,6 +118,7 @@ package "Domain / User Aggregate" {
   User "1" *-- "1" UserStatus : currently in
   User ..> PasswordHasher : verifies with
   UserRepository ..> User : persists
+  User "1" *-- "1" UserId : identified by
 }
 
 package "Interfaces REST" as Backend_iam_Interfaces_REST <<layer>> {

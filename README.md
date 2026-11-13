@@ -3150,63 +3150,63 @@ Esta sección presenta el Event Storming a nivel de diseño para cada bounded co
 
 ![EcoTrack - Design-Level Event Storming - Bounded Contexts Overview](docs/diagrams/event-storming/ecotrack-event-storming-bounded-contexts-overview.png)
 
-Este diagrama muestra los 7 bounded contexts de EcoTrack y cómo se relacionan entre sí, desde el registro de una organización hasta la generación de reportes.
+Este diagrama junta los siete bounded contexts en un solo flujo y muestra a qué tipo pertenece cada uno. Empieza con el registro de la organización y de sus usuarios, sigue con el registro de emisiones, el cálculo de la huella y las metas de reducción, y termina en los indicadores y reportes. Los contextos se comunican por medio de eventos de dominio: por ejemplo, `ActivityDataRecorded` alimenta el cálculo, y `CarbonFootprintCalculated` permite medir el avance de las metas y actualizar los indicadores a través del Integration Event Bus.
 
-#### 4.6.1.2. IAM Event Storming
-
-**EcoTrack - IAM Event Storming**
-
-![EcoTrack - IAM Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-iam.png)
-
-Aquí se modela la creación de cuentas, el inicio de sesión, la recuperación de contraseña y la invitación de nuevos usuarios a una organización.
-
-#### 4.6.1.3. Organization Management Event Storming
-
-**EcoTrack - Organization Management Event Storming**
-
-![EcoTrack - Organization Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-organization-management.png)
-
-Este contexto gestiona el registro de la organización, así como las sedes y unidades de negocio que pueden asociarse a ella.
-
-#### 4.6.1.4. Emissions Management Event Storming
-
-**EcoTrack - Emissions Management Event Storming**
-
-![EcoTrack - Emissions Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-emissions-management.png)
-
-Se registran las fuentes de emisión y los datos de actividad de la organización, ya sea de forma manual o mediante los datos que llegan desde Data Integration.
-
-#### 4.6.1.5. Carbon Footprint Calculation Event Storming
+#### 4.6.1.2. Carbon Footprint Calculation Event Storming (Core)
 
 **EcoTrack - Carbon Footprint Calculation Event Storming**
 
 ![EcoTrack - Carbon Footprint Calculation Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-carbon-footprint-calculation.png)
 
-A partir de los datos de actividad y un factor de emisión seleccionado, este contexto calcula la huella de carbono de la organización.
+Es el contexto central del producto. El analista ambiental elige un factor de emisión del catálogo y solicita el cálculo para un periodo; con los datos de actividad que llegan desde Emissions Management, el sistema multiplica cada dato por su factor y obtiene las emisiones en kgCO₂e. Un factor solo se puede aplicar si coincide con el Scope y la unidad del dato de actividad, y el cálculo se hace completo o no se hace.
 
-#### 4.6.1.6. Goals and Reduction Plans Event Storming
+#### 4.6.1.3. Emissions Management Event Storming (Core)
+
+**EcoTrack - Emissions Management Event Storming**
+
+![EcoTrack - Emissions Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-emissions-management.png)
+
+Aquí se registran las fuentes de emisión de la empresa (por ejemplo una caldera o una flota de vehículos), clasificadas por Scope, y los datos de actividad de cada una por periodo. Los datos pueden ingresarse manualmente o llegar desde Data Integration, y el agregado `ActivityData` guarda de dónde proviene cada uno.
+
+#### 4.6.1.4. Goals and Reduction Plans Event Storming (Core)
 
 **EcoTrack - Goals and Reduction Plans Event Storming**
 
 ![EcoTrack - Goals and Reduction Plans Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-goals-and-reduction-plans.png)
 
-Este contexto permite registrar metas de reducción de emisiones, crear planes asociados a cada meta y definir iniciativas ambientales dentro de esos planes.
+El responsable de sostenibilidad define metas de reducción de emisiones, y a cada meta se le asocian planes de reducción con sus iniciativas ambientales. El avance de cada meta se mide con los resultados que publica Carbon Footprint Calculation al emitir `CarbonFootprintCalculated`.
 
-#### 4.6.1.7. Analytics and Reports Event Storming
+#### 4.6.1.5. Organization Management Event Storming (Supporting)
+
+**EcoTrack - Organization Management Event Storming**
+
+![EcoTrack - Organization Management Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-organization-management.png)
+
+Gestiona la organización cliente y su estructura: sedes y unidades de negocio. Es la base sobre la que el resto de los contextos identifica a quién pertenece cada dato.
+
+#### 4.6.1.6. Analytics and Reports Event Storming (Supporting)
 
 **EcoTrack - Analytics and Reports Event Storming**
 
 ![EcoTrack - Analytics and Reports Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-analytics-and-reports.png)
 
-Los indicadores ambientales se actualizan automáticamente a partir de los eventos generados por los demás contextos, mientras que los reportes se generan bajo solicitud del usuario.
+Este contexto no registra datos propios: escucha los eventos de los demás contextos mediante el Integration Event Bus y una política (`Update Indicators`) mantiene actualizados los indicadores ambientales. Los reportes sí se generan cuando el usuario los pide.
 
-#### 4.6.1.8. Data Integration Event Storming
+#### 4.6.1.7. Data Integration Event Storming (Supporting)
 
 **EcoTrack - Data Integration Event Storming**
 
 ![EcoTrack - Data Integration Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-data-integration.png)
 
-Este contexto permite importar información mediante archivos CSV y recibir o consultar datos a través de la EcoTrack API, utilizada por sistemas externos.
+Permite cargar datos de forma masiva con archivos CSV y que un sistema externo envíe o consulte información con la EcoTrack API usando una API Key. Una política entrega los datos importados a Emissions Management, donde se registran como datos de actividad.
+
+#### 4.6.1.8. IAM Event Storming (Generic)
+
+**EcoTrack - IAM Event Storming**
+
+![EcoTrack - IAM Event Storming](docs/diagrams/event-storming/ecotrack-event-storming-iam.png)
+
+Cubre la creación de cuentas, el inicio de sesión, la recuperación de contraseña y la invitación de usuarios a una organización, con los roles de administrador, analista ambiental y responsable de sostenibilidad. Una política envía los correos de invitación y de recuperación a través del proveedor de correo externo.
 
 ### 4.6.2. Software Architecture Context Diagram
 
@@ -3344,25 +3344,21 @@ Vista general de los bounded contexts del backend y, para cada uno de ellos, el 
 
 ![EcoTrack Platform - Backend Bounded Contexts](docs/diagrams/class/backend/ecotrack-backend-general-bounded-contexts-class-diagram.png)
 
-**EcoTrack Platform - IAM Backend Bounded Context Layers**
+**EcoTrack Platform - Carbon Footprint Calculation Backend Bounded Context Layers**
 
-![EcoTrack Platform - IAM Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-iam-backend-class-diagram.png)
-
-**EcoTrack Platform - Organization Management Backend Bounded Context Layers**
-
-![EcoTrack Platform - Organization Management Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-organization-management-backend-class-diagram.png)
+![EcoTrack Platform - Carbon Footprint Calculation Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-class-diagram.png)
 
 **EcoTrack Platform - Emissions Management Backend Bounded Context Layers**
 
 ![EcoTrack Platform - Emissions Management Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-emissions-management-backend-class-diagram.png)
 
-**EcoTrack Platform - Carbon Footprint Calculation Backend Bounded Context Layers**
-
-![EcoTrack Platform - Carbon Footprint Calculation Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-class-diagram.png)
-
 **EcoTrack Platform - Goals and Reduction Plans Backend Bounded Context Layers**
 
 ![EcoTrack Platform - Goals and Reduction Plans Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-goals-and-reduction-plans-backend-class-diagram.png)
+
+**EcoTrack Platform - Organization Management Backend Bounded Context Layers**
+
+![EcoTrack Platform - Organization Management Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-organization-management-backend-class-diagram.png)
 
 **EcoTrack Platform - Analytics and Reports Backend Bounded Context Layers**
 
@@ -3372,11 +3368,149 @@ Vista general de los bounded contexts del backend y, para cada uno de ellos, el 
 
 ![EcoTrack Platform - Data Integration Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-data-integration-backend-class-diagram.png)
 
+**EcoTrack Platform - IAM Backend Bounded Context Layers**
+
+![EcoTrack Platform - IAM Backend Bounded Context Layers](docs/diagrams/class/backend/ecotrack-iam-backend-class-diagram.png)
+
 #### 4.7.1.2. Backend Layer Class Diagrams
 
 Detalle de cada capa del backend con sus clases, interfaces, atributos y métodos. En IAM la capa Domain se divide por agregado para que cada diagrama siga siendo legible; en los demás bounded contexts el Domain se muestra completo en un solo diagrama.
 
-##### IAM
+##### Carbon Footprint Calculation (Core)
+
+**User Stories:** US-34, US-35, US-36, US-37, US-46
+
+Factores de emisión y cálculo de la huella de carbono por alcance y periodo.
+
+**EcoTrack Platform - Carbon Footprint Calculation Backend Interfaces REST Layer**
+
+![EcoTrack Platform - Carbon Footprint Calculation Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-interfaces-layer-class-diagram.png)
+
+**EcoTrack Platform - Carbon Footprint Calculation Backend Application Layer**
+
+![EcoTrack Platform - Carbon Footprint Calculation Backend Application Layer](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-application-layer-class-diagram.png)
+
+**EcoTrack Platform - Carbon Footprint Calculation Backend Domain Layer**
+
+![EcoTrack Platform - Carbon Footprint Calculation Backend Domain Layer](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-domain-layer-class-diagram.png)
+
+**EcoTrack Platform - Carbon Footprint Calculation Backend Infrastructure Layer**
+
+![EcoTrack Platform - Carbon Footprint Calculation Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-infrastructure-layer-class-diagram.png)
+
+##### Emissions Management (Core)
+
+**User Stories:** US-11, US-12, US-13, US-14, US-15, US-18, US-19, US-45
+
+Fuentes de emisión y datos de actividad, registrados de forma manual o importados.
+
+**EcoTrack Platform - Emissions Management Backend Interfaces REST Layer**
+
+![EcoTrack Platform - Emissions Management Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-emissions-management-backend-interfaces-layer-class-diagram.png)
+
+**EcoTrack Platform - Emissions Management Backend Application Layer**
+
+![EcoTrack Platform - Emissions Management Backend Application Layer](docs/diagrams/class/backend/ecotrack-emissions-management-backend-application-layer-class-diagram.png)
+
+**EcoTrack Platform - Emissions Management Backend Domain Layer**
+
+![EcoTrack Platform - Emissions Management Backend Domain Layer](docs/diagrams/class/backend/ecotrack-emissions-management-backend-domain-layer-class-diagram.png)
+
+**EcoTrack Platform - Emissions Management Backend Infrastructure Layer**
+
+![EcoTrack Platform - Emissions Management Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-emissions-management-backend-infrastructure-layer-class-diagram.png)
+
+##### Goals and Reduction Plans (Core)
+
+**User Stories:** US-21, US-22, US-23, US-24, US-25, US-38, US-39, US-40
+
+Metas de reducción de emisiones, con sus planes de reducción e iniciativas ambientales.
+
+**EcoTrack Platform - Goals and Reduction Plans Backend Interfaces REST Layer**
+
+![EcoTrack Platform - Goals and Reduction Plans Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-goals-and-reduction-plans-backend-interfaces-layer-class-diagram.png)
+
+**EcoTrack Platform - Goals and Reduction Plans Backend Application Layer**
+
+![EcoTrack Platform - Goals and Reduction Plans Backend Application Layer](docs/diagrams/class/backend/ecotrack-goals-and-reduction-plans-backend-application-layer-class-diagram.png)
+
+**EcoTrack Platform - Goals and Reduction Plans Backend Domain Layer**
+
+![EcoTrack Platform - Goals and Reduction Plans Backend Domain Layer](docs/diagrams/class/backend/ecotrack-goals-and-reduction-plans-backend-domain-layer-class-diagram.png)
+
+**EcoTrack Platform - Goals and Reduction Plans Backend Infrastructure Layer**
+
+![EcoTrack Platform - Goals and Reduction Plans Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-goals-and-reduction-plans-backend-infrastructure-layer-class-diagram.png)
+
+##### Organization Management (Supporting)
+
+**User Stories:** US-06, US-09, US-10, US-32, US-44
+
+Registro de la organización y de las sedes y unidades de negocio que le pertenecen.
+
+**EcoTrack Platform - Organization Management Backend Interfaces REST Layer**
+
+![EcoTrack Platform - Organization Management Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-organization-management-backend-interfaces-layer-class-diagram.png)
+
+**EcoTrack Platform - Organization Management Backend Application Layer**
+
+![EcoTrack Platform - Organization Management Backend Application Layer](docs/diagrams/class/backend/ecotrack-organization-management-backend-application-layer-class-diagram.png)
+
+**EcoTrack Platform - Organization Management Backend Domain Layer**
+
+![EcoTrack Platform - Organization Management Backend Domain Layer](docs/diagrams/class/backend/ecotrack-organization-management-backend-domain-layer-class-diagram.png)
+
+**EcoTrack Platform - Organization Management Backend Infrastructure Layer**
+
+![EcoTrack Platform - Organization Management Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-organization-management-backend-infrastructure-layer-class-diagram.png)
+
+##### Analytics and Reports (Supporting)
+
+**User Stories:** US-16, US-17, US-20, US-26, US-27, US-28, US-29, US-30
+
+Indicadores ambientales y reportes de sostenibilidad.
+
+**EcoTrack Platform - Analytics and Reports Backend Interfaces REST Layer**
+
+![EcoTrack Platform - Analytics and Reports Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-analytics-and-reports-backend-interfaces-layer-class-diagram.png)
+
+**EcoTrack Platform - Analytics and Reports Backend Application Layer**
+
+![EcoTrack Platform - Analytics and Reports Backend Application Layer](docs/diagrams/class/backend/ecotrack-analytics-and-reports-backend-application-layer-class-diagram.png)
+
+**EcoTrack Platform - Analytics and Reports Backend Domain Layer**
+
+![EcoTrack Platform - Analytics and Reports Backend Domain Layer](docs/diagrams/class/backend/ecotrack-analytics-and-reports-backend-domain-layer-class-diagram.png)
+
+**EcoTrack Platform - Analytics and Reports Backend Infrastructure Layer**
+
+![EcoTrack Platform - Analytics and Reports Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-analytics-and-reports-backend-infrastructure-layer-class-diagram.png)
+
+##### Data Integration (Supporting)
+
+**User Stories:** US-41
+
+Importación de datos por CSV y acceso de sistemas externos mediante la EcoTrack API.
+
+**EcoTrack Platform - Data Integration Backend Interfaces REST Layer**
+
+![EcoTrack Platform - Data Integration Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-data-integration-backend-interfaces-layer-class-diagram.png)
+
+**EcoTrack Platform - Data Integration Backend Application Layer**
+
+![EcoTrack Platform - Data Integration Backend Application Layer](docs/diagrams/class/backend/ecotrack-data-integration-backend-application-layer-class-diagram.png)
+
+**EcoTrack Platform - Data Integration Backend Domain Layer**
+
+![EcoTrack Platform - Data Integration Backend Domain Layer](docs/diagrams/class/backend/ecotrack-data-integration-backend-domain-layer-class-diagram.png)
+
+**EcoTrack Platform - Data Integration Backend Infrastructure Layer**
+
+![EcoTrack Platform - Data Integration Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-data-integration-backend-infrastructure-layer-class-diagram.png)
+
+##### IAM (Generic)
+
+**User Stories:** US-07, US-08, US-31, US-33, US-47
 
 Creación de cuentas, inicio de sesión, recuperación de contraseña, invitación de usuarios y asignación de roles. La capa Domain se divide en tres agregados: User, Invitation y PasswordResetToken.
 
@@ -3404,126 +3538,6 @@ Creación de cuentas, inicio de sesión, recuperación de contraseña, invitaci�
 
 ![EcoTrack Platform - IAM Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-iam-backend-infrastructure-layer-class-diagram.png)
 
-##### Organization Management
-
-Registro de la organización y de las sedes y unidades de negocio que le pertenecen.
-
-**EcoTrack Platform - Organization Management Backend Interfaces REST Layer**
-
-![EcoTrack Platform - Organization Management Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-organization-management-backend-interfaces-layer-class-diagram.png)
-
-**EcoTrack Platform - Organization Management Backend Application Layer**
-
-![EcoTrack Platform - Organization Management Backend Application Layer](docs/diagrams/class/backend/ecotrack-organization-management-backend-application-layer-class-diagram.png)
-
-**EcoTrack Platform - Organization Management Backend Domain Layer**
-
-![EcoTrack Platform - Organization Management Backend Domain Layer](docs/diagrams/class/backend/ecotrack-organization-management-backend-domain-layer-class-diagram.png)
-
-**EcoTrack Platform - Organization Management Backend Infrastructure Layer**
-
-![EcoTrack Platform - Organization Management Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-organization-management-backend-infrastructure-layer-class-diagram.png)
-
-##### Emissions Management
-
-Fuentes de emisión y datos de actividad, registrados de forma manual o importados.
-
-**EcoTrack Platform - Emissions Management Backend Interfaces REST Layer**
-
-![EcoTrack Platform - Emissions Management Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-emissions-management-backend-interfaces-layer-class-diagram.png)
-
-**EcoTrack Platform - Emissions Management Backend Application Layer**
-
-![EcoTrack Platform - Emissions Management Backend Application Layer](docs/diagrams/class/backend/ecotrack-emissions-management-backend-application-layer-class-diagram.png)
-
-**EcoTrack Platform - Emissions Management Backend Domain Layer**
-
-![EcoTrack Platform - Emissions Management Backend Domain Layer](docs/diagrams/class/backend/ecotrack-emissions-management-backend-domain-layer-class-diagram.png)
-
-**EcoTrack Platform - Emissions Management Backend Infrastructure Layer**
-
-![EcoTrack Platform - Emissions Management Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-emissions-management-backend-infrastructure-layer-class-diagram.png)
-
-##### Carbon Footprint Calculation
-
-Factores de emisión y cálculo de la huella de carbono por alcance y periodo.
-
-**EcoTrack Platform - Carbon Footprint Calculation Backend Interfaces REST Layer**
-
-![EcoTrack Platform - Carbon Footprint Calculation Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-interfaces-layer-class-diagram.png)
-
-**EcoTrack Platform - Carbon Footprint Calculation Backend Application Layer**
-
-![EcoTrack Platform - Carbon Footprint Calculation Backend Application Layer](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-application-layer-class-diagram.png)
-
-**EcoTrack Platform - Carbon Footprint Calculation Backend Domain Layer**
-
-![EcoTrack Platform - Carbon Footprint Calculation Backend Domain Layer](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-domain-layer-class-diagram.png)
-
-**EcoTrack Platform - Carbon Footprint Calculation Backend Infrastructure Layer**
-
-![EcoTrack Platform - Carbon Footprint Calculation Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-carbon-footprint-calculation-backend-infrastructure-layer-class-diagram.png)
-
-##### Goals and Reduction Plans
-
-Metas de reducción de emisiones, con sus planes de reducción e iniciativas ambientales.
-
-**EcoTrack Platform - Goals and Reduction Plans Backend Interfaces REST Layer**
-
-![EcoTrack Platform - Goals and Reduction Plans Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-goals-and-reduction-plans-backend-interfaces-layer-class-diagram.png)
-
-**EcoTrack Platform - Goals and Reduction Plans Backend Application Layer**
-
-![EcoTrack Platform - Goals and Reduction Plans Backend Application Layer](docs/diagrams/class/backend/ecotrack-goals-and-reduction-plans-backend-application-layer-class-diagram.png)
-
-**EcoTrack Platform - Goals and Reduction Plans Backend Domain Layer**
-
-![EcoTrack Platform - Goals and Reduction Plans Backend Domain Layer](docs/diagrams/class/backend/ecotrack-goals-and-reduction-plans-backend-domain-layer-class-diagram.png)
-
-**EcoTrack Platform - Goals and Reduction Plans Backend Infrastructure Layer**
-
-![EcoTrack Platform - Goals and Reduction Plans Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-goals-and-reduction-plans-backend-infrastructure-layer-class-diagram.png)
-
-##### Analytics and Reports
-
-Indicadores ambientales y reportes de sostenibilidad.
-
-**EcoTrack Platform - Analytics and Reports Backend Interfaces REST Layer**
-
-![EcoTrack Platform - Analytics and Reports Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-analytics-and-reports-backend-interfaces-layer-class-diagram.png)
-
-**EcoTrack Platform - Analytics and Reports Backend Application Layer**
-
-![EcoTrack Platform - Analytics and Reports Backend Application Layer](docs/diagrams/class/backend/ecotrack-analytics-and-reports-backend-application-layer-class-diagram.png)
-
-**EcoTrack Platform - Analytics and Reports Backend Domain Layer**
-
-![EcoTrack Platform - Analytics and Reports Backend Domain Layer](docs/diagrams/class/backend/ecotrack-analytics-and-reports-backend-domain-layer-class-diagram.png)
-
-**EcoTrack Platform - Analytics and Reports Backend Infrastructure Layer**
-
-![EcoTrack Platform - Analytics and Reports Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-analytics-and-reports-backend-infrastructure-layer-class-diagram.png)
-
-##### Data Integration
-
-Importación de datos por CSV y acceso de sistemas externos mediante la EcoTrack API.
-
-**EcoTrack Platform - Data Integration Backend Interfaces REST Layer**
-
-![EcoTrack Platform - Data Integration Backend Interfaces REST Layer](docs/diagrams/class/backend/ecotrack-data-integration-backend-interfaces-layer-class-diagram.png)
-
-**EcoTrack Platform - Data Integration Backend Application Layer**
-
-![EcoTrack Platform - Data Integration Backend Application Layer](docs/diagrams/class/backend/ecotrack-data-integration-backend-application-layer-class-diagram.png)
-
-**EcoTrack Platform - Data Integration Backend Domain Layer**
-
-![EcoTrack Platform - Data Integration Backend Domain Layer](docs/diagrams/class/backend/ecotrack-data-integration-backend-domain-layer-class-diagram.png)
-
-**EcoTrack Platform - Data Integration Backend Infrastructure Layer**
-
-![EcoTrack Platform - Data Integration Backend Infrastructure Layer](docs/diagrams/class/backend/ecotrack-data-integration-backend-infrastructure-layer-class-diagram.png)
-
 #### 4.7.1.3. Frontend Class Diagrams
 
 Vista general de los bounded contexts del frontend y, para cada uno, el diagrama de sus cuatro capas Presentation, Application, Domain e Infrastructure.
@@ -3532,25 +3546,21 @@ Vista general de los bounded contexts del frontend y, para cada uno, el diagrama
 
 ![EcoTrack WebApp - Frontend Bounded Contexts](docs/diagrams/class/frontend/ecotrack-frontend-general-bounded-contexts-class-diagram.png)
 
-**EcoTrack Platform - IAM Frontend Bounded Context Layers**
+**EcoTrack Platform - Carbon Footprint Calculation Frontend Bounded Context Layers**
 
-![EcoTrack Platform - IAM Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-iam-frontend-class-diagram.png)
-
-**EcoTrack Platform - Organization Management Frontend Bounded Context Layers**
-
-![EcoTrack Platform - Organization Management Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-class-diagram.png)
+![EcoTrack Platform - Carbon Footprint Calculation Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-carbon-footprint-calculation-frontend-class-diagram.png)
 
 **EcoTrack Platform - Emissions Management Frontend Bounded Context Layers**
 
 ![EcoTrack Platform - Emissions Management Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-emissions-management-frontend-class-diagram.png)
 
-**EcoTrack Platform - Carbon Footprint Calculation Frontend Bounded Context Layers**
-
-![EcoTrack Platform - Carbon Footprint Calculation Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-carbon-footprint-calculation-frontend-class-diagram.png)
-
 **EcoTrack Platform - Goals and Reduction Plans Frontend Bounded Context Layers**
 
 ![EcoTrack Platform - Goals and Reduction Plans Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-goals-and-reduction-plans-frontend-class-diagram.png)
+
+**EcoTrack Platform - Organization Management Frontend Bounded Context Layers**
+
+![EcoTrack Platform - Organization Management Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-class-diagram.png)
 
 **EcoTrack Platform - Analytics and Reports Frontend Bounded Context Layers**
 
@@ -3560,71 +3570,17 @@ Vista general de los bounded contexts del frontend y, para cada uno, el diagrama
 
 ![EcoTrack Platform - Data Integration Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-data-integration-frontend-class-diagram.png)
 
+**EcoTrack Platform - IAM Frontend Bounded Context Layers**
+
+![EcoTrack Platform - IAM Frontend Bounded Context Layers](docs/diagrams/class/frontend/ecotrack-iam-frontend-class-diagram.png)
+
 #### 4.7.1.4. Frontend Layer Class Diagrams
 
 Detalle de cada capa del frontend los componentes de Presentation, los facades y stores de Application, los view models de Domain y los servicios de acceso a la API en Infrastructure.
 
-##### IAM
+##### Carbon Footprint Calculation (Core)
 
-Creación de cuentas, inicio de sesión, recuperación de contraseña, invitación de usuarios y asignación de roles.
-
-**EcoTrack Platform - IAM Frontend Presentation Layer**
-
-![EcoTrack Platform - IAM Frontend Presentation Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-presentation-layer-class-diagram.png)
-
-**EcoTrack Platform - IAM Frontend Application Layer**
-
-![EcoTrack Platform - IAM Frontend Application Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-application-layer-class-diagram.png)
-
-**EcoTrack Platform - IAM Frontend Domain Layer**
-
-![EcoTrack Platform - IAM Frontend Domain Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-domain-layer-class-diagram.png)
-
-**EcoTrack Platform - IAM Frontend Infrastructure Layer**
-
-![EcoTrack Platform - IAM Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-infrastructure-layer-class-diagram.png)
-
-##### Organization Management
-
-Registro de la organización y de las sedes y unidades de negocio que le pertenecen.
-
-**EcoTrack Platform - Organization Management Frontend Presentation Layer**
-
-![EcoTrack Platform - Organization Management Frontend Presentation Layer](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-presentation-layer-class-diagram.png)
-
-**EcoTrack Platform - Organization Management Frontend Application Layer**
-
-![EcoTrack Platform - Organization Management Frontend Application Layer](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-application-layer-class-diagram.png)
-
-**EcoTrack Platform - Organization Management Frontend Domain Layer**
-
-![EcoTrack Platform - Organization Management Frontend Domain Layer](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-domain-layer-class-diagram.png)
-
-**EcoTrack Platform - Organization Management Frontend Infrastructure Layer**
-
-![EcoTrack Platform - Organization Management Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-infrastructure-layer-class-diagram.png)
-
-##### Emissions Management
-
-Fuentes de emisión y datos de actividad, registrados de forma manual o importados.
-
-**EcoTrack Platform - Emissions Management Frontend Presentation Layer**
-
-![EcoTrack Platform - Emissions Management Frontend Presentation Layer](docs/diagrams/class/frontend/ecotrack-emissions-management-frontend-presentation-layer-class-diagram.png)
-
-**EcoTrack Platform - Emissions Management Frontend Application Layer**
-
-![EcoTrack Platform - Emissions Management Frontend Application Layer](docs/diagrams/class/frontend/ecotrack-emissions-management-frontend-application-layer-class-diagram.png)
-
-**EcoTrack Platform - Emissions Management Frontend Domain Layer**
-
-![EcoTrack Platform - Emissions Management Frontend Domain Layer](docs/diagrams/class/frontend/ecotrack-emissions-management-frontend-domain-layer-class-diagram.png)
-
-**EcoTrack Platform - Emissions Management Frontend Infrastructure Layer**
-
-![EcoTrack Platform - Emissions Management Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-emissions-management-frontend-infrastructure-layer-class-diagram.png)
-
-##### Carbon Footprint Calculation
+**User Stories:** US-34, US-35, US-36, US-37, US-46
 
 Factores de emisión y cálculo de la huella de carbono por alcance y periodo.
 
@@ -3644,7 +3600,31 @@ Factores de emisión y cálculo de la huella de carbono por alcance y periodo.
 
 ![EcoTrack Platform - Carbon Footprint Calculation Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-carbon-footprint-calculation-frontend-infrastructure-layer-class-diagram.png)
 
-##### Goals and Reduction Plans
+##### Emissions Management (Core)
+
+**User Stories:** US-11, US-12, US-13, US-14, US-15, US-18, US-19, US-45
+
+Fuentes de emisión y datos de actividad, registrados de forma manual o importados.
+
+**EcoTrack Platform - Emissions Management Frontend Presentation Layer**
+
+![EcoTrack Platform - Emissions Management Frontend Presentation Layer](docs/diagrams/class/frontend/ecotrack-emissions-management-frontend-presentation-layer-class-diagram.png)
+
+**EcoTrack Platform - Emissions Management Frontend Application Layer**
+
+![EcoTrack Platform - Emissions Management Frontend Application Layer](docs/diagrams/class/frontend/ecotrack-emissions-management-frontend-application-layer-class-diagram.png)
+
+**EcoTrack Platform - Emissions Management Frontend Domain Layer**
+
+![EcoTrack Platform - Emissions Management Frontend Domain Layer](docs/diagrams/class/frontend/ecotrack-emissions-management-frontend-domain-layer-class-diagram.png)
+
+**EcoTrack Platform - Emissions Management Frontend Infrastructure Layer**
+
+![EcoTrack Platform - Emissions Management Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-emissions-management-frontend-infrastructure-layer-class-diagram.png)
+
+##### Goals and Reduction Plans (Core)
+
+**User Stories:** US-21, US-22, US-23, US-24, US-25, US-38, US-39, US-40
 
 Metas de reducción de emisiones, con sus planes de reducción e iniciativas ambientales.
 
@@ -3664,7 +3644,31 @@ Metas de reducción de emisiones, con sus planes de reducción e iniciativas amb
 
 ![EcoTrack Platform - Goals and Reduction Plans Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-goals-and-reduction-plans-frontend-infrastructure-layer-class-diagram.png)
 
-##### Analytics and Reports
+##### Organization Management (Supporting)
+
+**User Stories:** US-06, US-09, US-10, US-32, US-44
+
+Registro de la organización y de las sedes y unidades de negocio que le pertenecen.
+
+**EcoTrack Platform - Organization Management Frontend Presentation Layer**
+
+![EcoTrack Platform - Organization Management Frontend Presentation Layer](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-presentation-layer-class-diagram.png)
+
+**EcoTrack Platform - Organization Management Frontend Application Layer**
+
+![EcoTrack Platform - Organization Management Frontend Application Layer](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-application-layer-class-diagram.png)
+
+**EcoTrack Platform - Organization Management Frontend Domain Layer**
+
+![EcoTrack Platform - Organization Management Frontend Domain Layer](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-domain-layer-class-diagram.png)
+
+**EcoTrack Platform - Organization Management Frontend Infrastructure Layer**
+
+![EcoTrack Platform - Organization Management Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-organization-management-frontend-infrastructure-layer-class-diagram.png)
+
+##### Analytics and Reports (Supporting)
+
+**User Stories:** US-16, US-17, US-20, US-26, US-27, US-28, US-29, US-30
 
 Indicadores ambientales y reportes de sostenibilidad.
 
@@ -3684,7 +3688,9 @@ Indicadores ambientales y reportes de sostenibilidad.
 
 ![EcoTrack Platform - Analytics and Reports Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-analytics-and-reports-frontend-infrastructure-layer-class-diagram.png)
 
-##### Data Integration
+##### Data Integration (Supporting)
+
+**User Stories:** US-41
 
 Importación de datos por CSV y acceso de sistemas externos mediante la EcoTrack API.
 
@@ -3703,6 +3709,28 @@ Importación de datos por CSV y acceso de sistemas externos mediante la EcoTrack
 **EcoTrack Platform - Data Integration Frontend Infrastructure Layer**
 
 ![EcoTrack Platform - Data Integration Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-data-integration-frontend-infrastructure-layer-class-diagram.png)
+
+##### IAM (Generic)
+
+**User Stories:** US-07, US-08, US-31, US-33, US-47
+
+Creación de cuentas, inicio de sesión, recuperación de contraseña, invitación de usuarios y asignación de roles.
+
+**EcoTrack Platform - IAM Frontend Presentation Layer**
+
+![EcoTrack Platform - IAM Frontend Presentation Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-presentation-layer-class-diagram.png)
+
+**EcoTrack Platform - IAM Frontend Application Layer**
+
+![EcoTrack Platform - IAM Frontend Application Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-application-layer-class-diagram.png)
+
+**EcoTrack Platform - IAM Frontend Domain Layer**
+
+![EcoTrack Platform - IAM Frontend Domain Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-domain-layer-class-diagram.png)
+
+**EcoTrack Platform - IAM Frontend Infrastructure Layer**
+
+![EcoTrack Platform - IAM Frontend Infrastructure Layer](docs/diagrams/class/frontend/ecotrack-iam-frontend-infrastructure-layer-class-diagram.png)
 
 ## 4.8. Database Design
 
